@@ -1,0 +1,159 @@
+.backgroundcolor {
+  background-image: url("../public/Rectangle\ 9.png");
+  width: 914.18px;
+  position: absolute;
+  top: 0;
+  right: -147px;
+  z-index: 1;
+  height: 100vh;
+  background-repeat: no-repeat;
+}
+.backgroundbox {
+  background-image: url("../public/section\ 2\ box.png");
+  width: 1080px;
+  position: absolute;
+  top: 101px;
+  right: -420px;
+  z-index: 1;
+  height: calc(100vh - 101px);
+  background-repeat: no-repeat;
+}
+.backgroundboxworkshop {
+  background-image: url("../public/section\ 2\ box.png");
+  width: 1440px;
+  position: absolute;
+  top: 101px;
+  z-index: 1;
+  height: calc(100vh);
+  background-repeat: no-repeat;
+}
+.backgroundcolor2 {
+  background-image: url("../public/section\ 2\ color.png");
+  width: 914.18px;
+  position: absolute;
+  top: 0;
+  right: -147px;
+  z-index: 1;
+  height: 100vh;
+  background-repeat: no-repeat;
+}
+.backgroundbox2 {
+  background-image: url("../public/Group\ 1.png");
+  width: 1080px;
+  position: absolute;
+  top: -50px;
+  right: -420px;
+  z-index: 1;
+  height: 100vh;
+  background-repeat: no-repeat;
+}
+.bordergradient {
+  border: 1px solid
+    linear-gradient(180deg, rgba(255, 255, 255, 0.52) 0%, #3a3a3a 67.79%);
+}
+.gradientcard {
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.05),
+      rgba(255, 255, 255, 0.05)
+    ),
+    radial-gradient(rgba(14, 22, 245, 0.25), rgba(12, 21, 244, 0.025)),
+    radial-gradient(rgba(48, 226, 157, 0.25), rgba(12, 21, 244, 0.025)),
+    radial-gradient(rgba(226, 48, 48, 0.1), rgba(48, 226, 157, 0.041));
+}
+.hovercard {
+  transition: 0.3s;
+}
+.gradientcard:hover .hovercard {
+  bottom: 320.08px;
+  font-size: 85.48px;
+  line-height: 73.51px;
+  letter-spacing: -3%;
+  opacity: 1;
+  width: 332.41px;
+}
+.cardbg {
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.05),
+      rgba(255, 255, 255, 0.05)
+    ),
+    radial-gradient(
+        89.81% 45.98% at 51.76% 26.74%,
+        rgba(14, 22, 245, 0.5) 0%,
+        rgba(12, 21, 244, 0.05) 100%
+      )
+      linear-gradient(
+        0.91deg,
+        rgba(48, 226, 157, 0.1) -13.79%,
+        rgba(48, 226, 157, 0) 20.34%
+      );
+}
+.circle {
+  width: 766.17px;
+  height: 766.17px;
+  border-radius: 100%;
+  position: absolute;
+  top: 116px;
+  right: -191.61px;
+  filter: blur(160px);
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    #1bd44f 0%,
+    rgba(14, 11, 180, 0.43) 100%
+  );
+}
+.footer {
+  border-radius: 100%;
+  filter: blur(160px);
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    #1bd44f 0%,
+    rgba(14, 11, 180, 0.43) 100%
+  );
+  opacity: 0.7;
+}
+
+.learncard {
+  background: linear-gradient(0deg, rgba(10, 10, 10, 0), rgba(10, 10, 10, 0.1)),
+    linear-gradient(
+      90.41deg,
+      rgba(37, 20, 108, 0) 30.71%,
+      rgba(45, 22, 141, 0.6) 99.65%
+    ),
+    linear-gradient(
+      329.51deg,
+      rgba(37, 20, 108, 0) 68.4%,
+      rgba(22, 141, 134, 0.6) 126.82%
+    );
+}
+.circle1 {
+  width: 849.12px;
+  height: 849.12px;
+  border-radius: 100%;
+  position: absolute;
+  bottom: -386px;
+  right: -215.61px;
+  filter: blur(120px);
+  opacity: 0.9;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    #1bd44f 0%,
+    rgba(14, 11, 180, 0.43) 100%
+  );
+}
+.circle2 {
+  width: 766.17px;
+  height: 766.17px;
+  border-radius: 100%;
+  position: absolute;
+  top: -116px;
+  left: -191.61px;
+  filter: blur(160px);
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    #1bd44f 0%,
+    rgba(14, 11, 180, 0.43) 100%
+  );
+  opacity: 0.3;
+}
