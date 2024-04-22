@@ -6,6 +6,7 @@ import { useRef, useState, useEffect } from "react";
 
 export default function Navbar() {
   const [openHamburger, setOpenHamburger] = useState(false);
+  let [width, setWidth] = useState();
   const Hamburger = useRef(null);
   const Menu = useRef(null);
   const Cross = useRef(null);
@@ -19,16 +20,19 @@ export default function Navbar() {
     console.log(openHamburger);
   };
   useEffect(() => {
-    if (openHamburger) {
-      gsap.to(Hamburger.current, 0, { display: "none" });
-      gsap.to(Cross.current, 0, { display: "block" });
-      gsap.to(Menu.current, 0.8, { display: "flex", opacity: 1 });
-      gsap.to(Background.current, 0.8, { display: "block", opacity: 1 });
-    } else {
-      gsap.to(Hamburger.current, 0, { display: "block" });
-      gsap.to(Cross.current, 0, { display: "none" });
-      gsap.to(Menu.current, 0.8, { display: "none", opacity: 0 });
-      gsap.to(Background.current, 0.8, { display: "none", opacity: 0 });
+    window.addEventListener("resize", () => setWidth(window.innerWidth));
+    if (width <= 980) {
+      if (openHamburger === true) {
+        gsap.to(Hamburger.current, 0, { display: "none" });
+        gsap.to(Cross.current, 0, { display: "block" });
+        gsap.to(Menu.current, 0.8, { display: "flex", opacity: 1 });
+        gsap.to(Background.current, 0.8, { display: "block", opacity: 1 });
+      } else {
+        gsap.to(Hamburger.current, 0, { display: "block" });
+        gsap.to(Cross.current, 0, { display: "none" });
+        gsap.to(Menu.current, 0.8, { display: "none", opacity: 0 });
+        gsap.to(Background.current, 0.8, { display: "none", opacity: 0 });
+      }
     }
   }, [openHamburger]);
 
@@ -53,11 +57,7 @@ export default function Navbar() {
         className="w-[40px] text-3xl z-50 invert text-right font-['Graphikthin'] hidden border-white curser-pointer"
       >
         {" "}
-        <Image
-          src="/close.svg"
-          width={36}
-          height={36}
-        />
+        <Image src="/close.svg" width={36} height={36} />
       </div>
       <div
         ref={Background}
