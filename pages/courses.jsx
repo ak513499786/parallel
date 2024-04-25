@@ -9,14 +9,14 @@ export default function Courses() {
   return (
     <>
       <Navbar />
-      <main className="pt-[190.35px] pb-[111.65px] flex justify-center">
-        <p className="w-[1016.16px] font-thin leading-[106.66px] tracking-[-5.2px] text-[104.57px] font-['Graphikthin'] text-[#E5E5E5] text-center">
+      <main className="pt-[190.35px] pb-[111.65px] max-md:pt-[100px] max-sm:pt-[80px] flex justify-center">
+        <p className="w-[1016.16px] max-lg:w-full max-lg:px-[80px] max-md:px-[40px] max-sm:px-[20px] max-smalllaptop:tracking-[-2.56px] max-smalllaptop:text-[84px] max-sm:text-[64px] max-smalllaptop:leading-[102%] font-thin leading-[106.66px] tracking-[-5.2px] text-[104.57px] font-['Graphikthin'] text-[#E5E5E5] text-center">
           A plethora of topics to upskill on
         </p>
       </main>
-      <section className="py-[71px] flex justify-center flex-wrap gap-[84px] px-[100px]">
+      <section className="py-[71px] max-md:px-[40px] max-sm:px-[20px] max-smalllaptop:px-[80px] max-smalllaptop:gap-[22px] flex justify-center flex-wrap gap-[84px] px-[100px]">
         <div
-          className={`px-[18px] border-[1px] w-[413px] border-white rounded-[10px] py-[20px] ${style.cardbg}`}
+          className={`px-[18px] max-sm:px-[20px] max-sm:py-[16px] w-[33%] max-lg:w-[48%] max-md:w-full border-[1px] w-[413px] border-white rounded-[10px] py-[20px] ${style.cardbg}`}
         >
           <Image
             src="/Frame 46.png"
@@ -28,10 +28,10 @@ export default function Courses() {
             Product Design Mastery
           </h1>
           <div className="flex gap-[8px]">
-            <p className="px-[8px] py-[4px] rounded-[5px] text-[#797979] text-base border-[1px] border-[#797979]">
+              <p className="px-[8px] max-sm:px-[6px] py-[4px] rounded-[5px] text-[#797979] text-base max-sm:text-sm border-[1px] border-[#797979]">
               UI/UX design{" "}
             </p>
-            <p className="px-[8px] py-[4px] rounded-[5px] text-[#797979] text-base border-[1px] border-[#797979]">
+              <p className="px-[8px] max-sm:px-[6px] py-[4px] rounded-[5px] text-[#797979] text-base max-sm:text-sm border-[1px] border-[#797979]">
               Beginner friendly{" "}
             </p>
           </div>
@@ -48,7 +48,7 @@ export default function Courses() {
           </button>
         </div>
         <div
-          className={`px-[18px] border-[1px] w-[413px] border-white rounded-[10px] py-[20px] ${style.cardbg}`}
+          className={`px-[18px] max-sm:px-[20px] max-sm:py-[16px] w-[33%] max-lg:w-[48%] max-md:w-full border-[1px] w-[413px] border-white rounded-[10px] py-[20px] ${style.cardbg}`}
         >
           <Image
             src="/Frame 46.png"
@@ -60,10 +60,10 @@ export default function Courses() {
             Product Design Mastery
           </h1>
           <div className="flex gap-[8px]">
-            <p className="px-[8px] py-[4px] rounded-[5px] text-[#797979] text-base border-[1px] border-[#797979]">
+              <p className="px-[8px] max-sm:px-[6px] py-[4px] rounded-[5px] text-[#797979] text-base max-sm:text-sm border-[1px] border-[#797979]">
               UI/UX design{" "}
             </p>
-            <p className="px-[8px] py-[4px] rounded-[5px] text-[#797979] text-base border-[1px] border-[#797979]">
+              <p className="px-[8px] max-sm:px-[6px] py-[4px] rounded-[5px] text-[#797979] text-base max-sm:text-sm border-[1px] border-[#797979]">
               Beginner friendly{" "}
             </p>
           </div>
@@ -80,7 +80,7 @@ export default function Courses() {
           </button>
         </div>
         <div
-          className={`px-[18px] border-[1px] w-[413px] border-white rounded-[10px] py-[20px] ${style.cardbg}`}
+          className={`px-[18px] max-sm:px-[20px] max-sm:py-[16px] w-[33%] max-lg:w-[48%] max-md:w-full border-[1px] w-[413px] border-white rounded-[10px] py-[20px] ${style.cardbg}`}
         >
           <Image
             src="/Frame 46.png"
@@ -92,10 +92,10 @@ export default function Courses() {
             Product Design Mastery
           </h1>
           <div className="flex gap-[8px]">
-            <p className="px-[8px] py-[4px] rounded-[5px] text-[#797979] text-base border-[1px] border-[#797979]">
+              <p className="px-[8px] max-sm:px-[6px] py-[4px] rounded-[5px] text-[#797979] text-base max-sm:text-sm border-[1px] border-[#797979]">
               UI/UX design{" "}
             </p>
-            <p className="px-[8px] py-[4px] rounded-[5px] text-[#797979] text-base border-[1px] border-[#797979]">
+              <p className="px-[8px] max-sm:px-[6px] py-[4px] rounded-[5px] text-[#797979] text-base max-sm:text-sm border-[1px] border-[#797979]">
               Beginner friendly{" "}
             </p>
           </div>
@@ -112,7 +112,7 @@ export default function Courses() {
           </button>
         </div>
         <div
-          className={`px-[18px] border-[1px] w-[413px] border-white rounded-[10px] py-[20px] ${style.cardbg}`}
+          className={`px-[18px] max-sm:px-[20px] max-sm:py-[16px] w-[33%] max-lg:w-[48%] max-md:w-full border-[1px] w-[413px] border-white rounded-[10px] py-[20px] ${style.cardbg}`}
         >
           <Image
             src="/Frame 46.png"
@@ -124,10 +124,10 @@ export default function Courses() {
             Product Design Mastery
           </h1>
           <div className="flex gap-[8px]">
-            <p className="px-[8px] py-[4px] rounded-[5px] text-[#797979] text-base border-[1px] border-[#797979]">
+              <p className="px-[8px] max-sm:px-[6px] py-[4px] rounded-[5px] text-[#797979] text-base max-sm:text-sm border-[1px] border-[#797979]">
               UI/UX design{" "}
             </p>
-            <p className="px-[8px] py-[4px] rounded-[5px] text-[#797979] text-base border-[1px] border-[#797979]">
+              <p className="px-[8px] max-sm:px-[6px] py-[4px] rounded-[5px] text-[#797979] text-base max-sm:text-sm border-[1px] border-[#797979]">
               Beginner friendly{" "}
             </p>
           </div>

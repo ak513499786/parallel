@@ -3,15 +3,15 @@ import style from "@/styles/style.module.css";
 
 export default function Success() {
   return (
-    <section className="py-[80px]">
-      <p className="text-[20px] pl-20 leading-[19.28px] text-[#E5E5E5] opacity-80 font-['Graphikthin'] font-light mb-[20px]">
+    <section className="relative z-20 py-[80px]">
+      <p className="text-[20px] pl-20 max-md:px-[40px] max-sm:px-[20px] leading-[19.28px] text-[#E5E5E5] opacity-80 font-['Graphikthin'] font-light mb-[20px]">
         Success stories
       </p>
-      <h1 className="w-[813.91px] pl-20 text-[64px] leading-[61.68px] font-['Graphikthin'] font-light text-[#E5E5E5] mb-[58px] tracking-[-2.56px]">
+      <h1 className="w-[813.91px] max-hamburger:w-full pl-20 max-md:px-[40px] max-sm:px-[20px] text-[64px] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] leading-[61.68px] font-['Graphikthin'] font-light text-[#E5E5E5] mb-[58px] max-sm:mb-[50px] tracking-[-2.56px]">
         People benefitting from our learn now pay later model.
       </h1>
       <div className="overflow-x-scroll w-full">
-        <div className="flex gap-[20px] ml-20 w-[3880px]">
+        <div className="flex gap-[20px] ml-20 max-sm:ml-[25px] max-md:ml-[50px] w-[3880px]">
           <div className="w-[630px] border-[1px] border-[#FFFFFFBF] rounded-[6px] pl-[27.94px] pt-[33.07px] pr-[24.8px] pb-[39.11px] h-[395px]">
             <div className="flex gap-[42.5px]">
               <Image

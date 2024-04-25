@@ -4,14 +4,14 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="pl-[80px] pt-[125.58px] pb-[14px] flex flex-col gap-[175.42px] relative pr-[76px]">
+    <footer className="pl-[80px] max-md:px-[40px] max-sm:px-[20px] pt-[125.58px] pb-[14px] flex flex-col gap-[175.42px] max-sm:gap-[120px] relative pr-[76px]">
       <div className="overflow-hidden absolute w-[100%] bottom-[0] left-0 h-[1449.12px]">
         <div
           className={`w-[100%] h-[849.12px] absolute bottom-[275.86px] ${style.footer}`}
         ></div>
       </div>
-      <div className="flex justify-between z-20">
-        <div className="flex w-[390px] flex-wrap gap-x-[27px] gap-y-[41.34px]">
+      <div className="flex justify-between max-sm:flex-col max-hamburger:gap-[50px] z-20">
+        <div className="flex w-[390px] max-sm:w-full flex-wrap gap-x-[27px] gap-y-[41.34px]">
           <div className="w-[190px]">
             <h1 className="text-[#E5E5E5] opacity-80 text-base">Address</h1>
             <p className="mt-[12px] text-[#E5E5E5] text-base">
@@ -35,7 +35,7 @@ export default function Footer() {
             </p>
           </div>
         </div>
-        <div className="flex gap-[127.27px]">
+        <div className="flex max-hamburger:gap-[50px] max-md:flex-wrap-reverse gap-[127.27px]">
           <div className="w-[197.73px]">
             <h1 className="text-[#E5E5E5] opacity-80 text-base">Courses</h1>
             <Link

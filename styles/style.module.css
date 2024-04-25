@@ -5,7 +5,7 @@
   top: 0;
   right: -147px;
   z-index: 1;
-  height: 100vh;
+  height: 811px;
   background-repeat: no-repeat;
 }
 .backgroundbox {
@@ -15,7 +15,7 @@
   top: 101px;
   right: -420px;
   z-index: 1;
-  height: calc(100vh - 101px);
+  height: 710px;
   background-repeat: no-repeat;
 }
 .backgroundboxworkshop {
@@ -24,7 +24,7 @@
   position: absolute;
   top: 101px;
   z-index: 1;
-  height: calc(100vh);
+  height: 811px;
   background-repeat: no-repeat;
 }
 .backgroundcolor2 {
@@ -34,7 +34,7 @@
   top: 0;
   right: -147px;
   z-index: 1;
-  height: 100vh;
+  height: 811px;
   background-repeat: no-repeat;
 }
 .backgroundbox2 {
@@ -44,7 +44,7 @@
   top: -50px;
   right: -420px;
   z-index: 1;
-  height: 100vh;
+  height: 811px;
   background-repeat: no-repeat;
 }
 .bordergradient {

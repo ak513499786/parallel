@@ -14,8 +14,11 @@ module.exports = {
       },
       screens: {
         'hamburger': '980px',
+        'bigscreen': '1360px',
+        'biggerscreen': '1440px',
+        'smalllaptop': '1180px',
+        'smallphone': '380px',
       },
-  
     },
   },
   plugins: [],
