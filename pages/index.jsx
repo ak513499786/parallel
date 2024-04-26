@@ -32,13 +32,26 @@ export default function Home() {
         { x: 50 },
         { ease: Linear.easeNone, x: -1043, duration: 10 }
       );
-    gsap
-      .timeline({ repeat: -1 })
-      .fromTo(
+    let tl = gsap.timeline({ repeat: -1 });
+    const width = window.innerWidth;
+
+    if (width > 639) {
+      tl.fromTo(
         leadinganimation.current,
         { y: 0 },
         { ease: Linear.easeNone, y: -180, duration: 3 }
       );
+    } else if (width < 640) {
+      tl.fromTo(
+        leadinganimation.current,
+        { y: 0 },
+        { ease: Linear.easeNone, y: -100, duration: 3 }
+      );
+    }
+
+    return () => {
+      tl.kill();
+    };
   }, []);
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -713,10 +726,48 @@ export default function Home() {
         <h1 className="w-[600px] max-hamburger:w-full  max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] text-[64px] leading-[61.68px] font-['Graphikthin'] tracking-[-2.56px] text-[#E5E5E5]">
           Learn from leading industry experts
         </h1>
-        <div className="w-[640px] shadow-inner overflow-hidden max-md:w-full h-[530.76px] max-sm:h-auto">
+        <div className="w-[640px] shadow-inner overflow-hidden max-md:w-full h-[530.76px] max-sm:h-[300.76px]">
           <div ref={leadinganimation} className="h-[705px] max-sm:h-auto">
             <div
               className={`w-[630px] max-hamburger:w-full max-md:w-full max-sm:pl-[20px] max-hamburger:gap-[20px] pl-[28.7px] flex gap-[40px] items-center h-[159px] max-sm:h-[80px] rounded-[8px] ${style.learncard}`}
+            >
+              {" "}
+              <Image
+                src="/Frame 1000002775.png"
+                width={107.16}
+                height={107.16}
+                className="max-sm:w-[50px]"
+              />
+              <div>
+                <h1 className="text-[#E5E5E5] max-hamburger:text-[24px] max-hamburger:leading-[120%] text-[36px] leading-[40.32px] tracking-[-0.98px] text-[#E5E5E5] font-['Graphikthin']">
+                  Prashant Hegde
+                </h1>
+                <p className="text-[#A1A1A1] mt-[4px] max-hamburger:text-sm">
+                  Senior Designer, Spotify
+                </p>
+              </div>
+            </div>
+            <div
+              className={`w-[630px] max-hamburger:w-full max-md:w-full max-sm:pl-[20px] max-hamburger:gap-[20px] mt-[20px] pl-[28.7px] flex gap-[40px] items-center h-[159px] max-sm:h-[80px] rounded-[8px] ${style.learncard}`}
+            >
+              {" "}
+              <Image
+                src="/Frame 1000002775.png"
+                width={107.16}
+                height={107.16}
+                className="max-sm:w-[50px]"
+              />
+              <div>
+                <h1 className="text-[#E5E5E5] max-hamburger:text-[24px] max-hamburger:leading-[120%] text-[36px] leading-[40.32px] tracking-[-0.98px] text-[#E5E5E5] font-['Graphikthin']">
+                  Prashant Hegde
+                </h1>
+                <p className="text-[#A1A1A1] mt-[4px] max-hamburger:text-sm">
+                  Senior Designer, Spotify
+                </p>
+              </div>
+            </div>
+            <div
+              className={`w-[630px] max-hamburger:w-full max-md:w-full max-sm:pl-[20px] max-hamburger:gap-[20px] mt-[20px] pl-[28.7px] flex gap-[40px] items-center h-[159px] max-sm:h-[80px] rounded-[8px] ${style.learncard}`}
             >
               {" "}
               <Image

@@ -6,13 +6,29 @@ export default function Success() {
   const successanimation = useRef(null);
 
   useEffect(() => {
-    gsap
-      .timeline({ repeat: -1 })
-      .fromTo(
-        successanimation.current,
-        { x: -150 },
-        { ease: Linear.easeNone, x: -1263, duration: 10 }
-      );
+    let tl = gsap.timeline({ repeat: -1 });
+    const width = window.innerWidth;
+
+    if (width > 639) {
+      gsap
+        .timeline({ repeat: -1 })
+        .fromTo(
+          successanimation.current,
+          { x: -150 },
+          { ease: Linear.easeNone, x: -1263, duration: 10 }
+        );
+    } else if (width < 640) {
+      gsap
+        .timeline({ repeat: -1 })
+        .fromTo(
+          successanimation.current,
+          { x: -150 },
+          { ease: Linear.easeNone, x: -833, duration: 10 }
+        );
+    }
+    return () => {
+      tl.kill();
+    };
   });
   return (
     <section className="relative z-20 py-[80px]">
@@ -23,19 +39,23 @@ export default function Success() {
         People benefitting from our learn now pay later model.
       </h1>
       <div className="overflow-x-scroll w-full">
-        <div ref={successanimation} className="flex gap-[20px] ml-20 max-sm:ml-[25px] max-md:ml-[50px] w-[3880px]">
-          <div className="w-[630px] border-[1px] border-[#FFFFFFBF] rounded-[6px] pl-[27.94px] pt-[33.07px] pr-[24.8px] pb-[39.11px] h-[395px]">
+        <div
+          ref={successanimation}
+          className="flex gap-[20px] ml-20 max-sm:ml-[25px] max-md:ml-[50px] w-[3880px]"
+        >
+          <div className="w-[630px] max-sm:w-[320px] max-sm:p-[20px] border-[1px] border-[#FFFFFFBF] rounded-[6px] pl-[27.94px] pt-[33.07px] pr-[24.8px] pb-[39.11px] h-[395px] max-sm:h-auto">
             <div className="flex gap-[42.5px]">
               <Image
                 src="/Frame 1000002775.png"
+                className="max-sm:w-[100px] max-sm:h-[100px]"
                 width={142.56}
                 height={142.56}
               />
               <div>
-                <h1 className="text-[36px] leading-[40.32px] tracking-[-0.98px] text-[#E5E5E5] font-['Graphikthin']">
+                <h1 className="text-[36px] max-sm:text-[24px] max-sm:leading-[120%] leading-[40.32px] tracking-[-0.98px] text-[#E5E5E5] font-['Graphikthin']">
                   In Arcu Nunc
                 </h1>
-                <h2 className="text-[#A1A1A1] text-[20px] leading-[24px] font-['Graphikthin'] font-normal opacity-60 mb-[27px] mt-[6px]">
+                <h2 className="text-[#A1A1A1] text-[20px] max-sm:text-base leading-[24px] font-['Graphikthin'] font-normal opacity-60 mb-[27px] mt-[6px] max-sm:mt-[3px] max-sm:mb-[12px]">
                   Vitae nisi eu turpis
                 </h2>
                 <Image
@@ -46,7 +66,7 @@ export default function Success() {
                 />
               </div>
             </div>
-            <p className="opacity-80 text-base text-[#E0E0E0] mt-[33.84px]">
+            <p className="opacity-80 max-sm:text-sm max-sm:mt-[20px] text-base text-[#E0E0E0] mt-[33.84px]">
               Eu nulla tincidunt aliquam volutpat lorem. Lectus phasellus
               tristique in proin sit dolor cursus pharetra elit. Morbi
               adipiscing tellus amet faucibus ut. Duis eu viverra urna diam diam
@@ -57,18 +77,19 @@ export default function Success() {
               purus.
             </p>
           </div>
-          <div className="w-[630px] border-[1px] border-[#FFFFFFBF] rounded-[6px] pl-[27.94px] pt-[33.07px] pr-[24.8px] pb-[39.11px] h-[395px]">
+          <div className="w-[630px] max-sm:w-[320px] max-sm:p-[20px] border-[1px] border-[#FFFFFFBF] rounded-[6px] pl-[27.94px] pt-[33.07px] pr-[24.8px] pb-[39.11px] h-[395px] max-sm:h-auto">
             <div className="flex gap-[42.5px]">
               <Image
                 src="/Frame 1000002775.png"
+                className="max-sm:w-[100px] max-sm:h-[100px]"
                 width={142.56}
                 height={142.56}
               />
               <div>
-                <h1 className="text-[36px] leading-[40.32px] tracking-[-0.98px] text-[#E5E5E5] font-['Graphikthin']">
+                <h1 className="text-[36px] max-sm:text-[24px] max-sm:leading-[120%] leading-[40.32px] tracking-[-0.98px] text-[#E5E5E5] font-['Graphikthin']">
                   In Arcu Nunc
                 </h1>
-                <h2 className="text-[#A1A1A1] text-[20px] leading-[24px] font-['Graphikthin'] font-normal opacity-60 mb-[27px] mt-[6px]">
+                <h2 className="text-[#A1A1A1] text-[20px] max-sm:text-base leading-[24px] font-['Graphikthin'] font-normal opacity-60 mb-[27px] mt-[6px] max-sm:mt-[3px] max-sm:mb-[12px]">
                   Vitae nisi eu turpis
                 </h2>
                 <Image
@@ -79,7 +100,7 @@ export default function Success() {
                 />
               </div>
             </div>
-            <p className="opacity-80 text-base text-[#E0E0E0] mt-[33.84px]">
+            <p className="opacity-80 max-sm:text-sm max-sm:mt-[20px] text-base text-[#E0E0E0] mt-[33.84px]">
               Eu nulla tincidunt aliquam volutpat lorem. Lectus phasellus
               tristique in proin sit dolor cursus pharetra elit. Morbi
               adipiscing tellus amet faucibus ut. Duis eu viverra urna diam diam
@@ -90,18 +111,19 @@ export default function Success() {
               purus.
             </p>
           </div>
-          <div className="w-[630px] border-[1px] border-[#FFFFFFBF] rounded-[6px] pl-[27.94px] pt-[33.07px] pr-[24.8px] pb-[39.11px] h-[395px]">
+          <div className="w-[630px] max-sm:w-[320px] max-sm:p-[20px] border-[1px] border-[#FFFFFFBF] rounded-[6px] pl-[27.94px] pt-[33.07px] pr-[24.8px] pb-[39.11px] h-[395px] max-sm:h-auto">
             <div className="flex gap-[42.5px]">
               <Image
                 src="/Frame 1000002775.png"
+                className="max-sm:w-[100px] max-sm:h-[100px]"
                 width={142.56}
                 height={142.56}
               />
               <div>
-                <h1 className="text-[36px] leading-[40.32px] tracking-[-0.98px] text-[#E5E5E5] font-['Graphikthin']">
+                <h1 className="text-[36px] max-sm:text-[24px] max-sm:leading-[120%] leading-[40.32px] tracking-[-0.98px] text-[#E5E5E5] font-['Graphikthin']">
                   In Arcu Nunc
                 </h1>
-                <h2 className="text-[#A1A1A1] text-[20px] leading-[24px] font-['Graphikthin'] font-normal opacity-60 mb-[27px] mt-[6px]">
+                <h2 className="text-[#A1A1A1] text-[20px] max-sm:text-base leading-[24px] font-['Graphikthin'] font-normal opacity-60 mb-[27px] mt-[6px] max-sm:mt-[3px] max-sm:mb-[12px]">
                   Vitae nisi eu turpis
                 </h2>
                 <Image
@@ -112,7 +134,7 @@ export default function Success() {
                 />
               </div>
             </div>
-            <p className="opacity-80 text-base text-[#E0E0E0] mt-[33.84px]">
+            <p className="opacity-80 max-sm:text-sm max-sm:mt-[20px] text-base text-[#E0E0E0] mt-[33.84px]">
               Eu nulla tincidunt aliquam volutpat lorem. Lectus phasellus
               tristique in proin sit dolor cursus pharetra elit. Morbi
               adipiscing tellus amet faucibus ut. Duis eu viverra urna diam diam
@@ -123,18 +145,19 @@ export default function Success() {
               purus.
             </p>
           </div>
-          <div className="w-[630px] border-[1px] border-[#FFFFFFBF] rounded-[6px] pl-[27.94px] pt-[33.07px] pr-[24.8px] pb-[39.11px] h-[395px]">
+          <div className="w-[630px] max-sm:w-[320px] max-sm:p-[20px] border-[1px] border-[#FFFFFFBF] rounded-[6px] pl-[27.94px] pt-[33.07px] pr-[24.8px] pb-[39.11px] h-[395px] max-sm:h-auto">
             <div className="flex gap-[42.5px]">
               <Image
                 src="/Frame 1000002775.png"
+                className="max-sm:w-[100px] max-sm:h-[100px]"
                 width={142.56}
                 height={142.56}
               />
               <div>
-                <h1 className="text-[36px] leading-[40.32px] tracking-[-0.98px] text-[#E5E5E5] font-['Graphikthin']">
+                <h1 className="text-[36px] max-sm:text-[24px] max-sm:leading-[120%] leading-[40.32px] tracking-[-0.98px] text-[#E5E5E5] font-['Graphikthin']">
                   In Arcu Nunc
                 </h1>
-                <h2 className="text-[#A1A1A1] text-[20px] leading-[24px] font-['Graphikthin'] font-normal opacity-60 mb-[27px] mt-[6px]">
+                <h2 className="text-[#A1A1A1] text-[20px] max-sm:text-base leading-[24px] font-['Graphikthin'] font-normal opacity-60 mb-[27px] mt-[6px] max-sm:mt-[3px] max-sm:mb-[12px]">
                   Vitae nisi eu turpis
                 </h2>
                 <Image
@@ -145,7 +168,7 @@ export default function Success() {
                 />
               </div>
             </div>
-            <p className="opacity-80 text-base text-[#E0E0E0] mt-[33.84px]">
+            <p className="opacity-80 max-sm:text-sm max-sm:mt-[20px] text-base text-[#E0E0E0] mt-[33.84px]">
               Eu nulla tincidunt aliquam volutpat lorem. Lectus phasellus
               tristique in proin sit dolor cursus pharetra elit. Morbi
               adipiscing tellus amet faucibus ut. Duis eu viverra urna diam diam
@@ -156,18 +179,19 @@ export default function Success() {
               purus.
             </p>
           </div>
-          <div className="w-[630px] border-[1px] border-[#FFFFFFBF] rounded-[6px] pl-[27.94px] pt-[33.07px] pr-[24.8px] pb-[39.11px] h-[395px]">
+          <div className="w-[630px] max-sm:w-[320px] max-sm:p-[20px] border-[1px] border-[#FFFFFFBF] rounded-[6px] pl-[27.94px] pt-[33.07px] pr-[24.8px] pb-[39.11px] h-[395px] max-sm:h-auto">
             <div className="flex gap-[42.5px]">
               <Image
                 src="/Frame 1000002775.png"
+                className="max-sm:w-[100px] max-sm:h-[100px]"
                 width={142.56}
                 height={142.56}
               />
               <div>
-                <h1 className="text-[36px] leading-[40.32px] tracking-[-0.98px] text-[#E5E5E5] font-['Graphikthin']">
+                <h1 className="text-[36px] max-sm:text-[24px] max-sm:leading-[120%] leading-[40.32px] tracking-[-0.98px] text-[#E5E5E5] font-['Graphikthin']">
                   In Arcu Nunc
                 </h1>
-                <h2 className="text-[#A1A1A1] text-[20px] leading-[24px] font-['Graphikthin'] font-normal opacity-60 mb-[27px] mt-[6px]">
+                <h2 className="text-[#A1A1A1] text-[20px] max-sm:text-base leading-[24px] font-['Graphikthin'] font-normal opacity-60 mb-[27px] mt-[6px] max-sm:mt-[3px] max-sm:mb-[12px]">
                   Vitae nisi eu turpis
                 </h2>
                 <Image
@@ -178,7 +202,7 @@ export default function Success() {
                 />
               </div>
             </div>
-            <p className="opacity-80 text-base text-[#E0E0E0] mt-[33.84px]">
+            <p className="opacity-80 max-sm:text-sm max-sm:mt-[20px] text-base text-[#E0E0E0] mt-[33.84px]">
               Eu nulla tincidunt aliquam volutpat lorem. Lectus phasellus
               tristique in proin sit dolor cursus pharetra elit. Morbi
               adipiscing tellus amet faucibus ut. Duis eu viverra urna diam diam
@@ -189,18 +213,19 @@ export default function Success() {
               purus.
             </p>
           </div>
-          <div className="w-[630px] border-[1px] border-[#FFFFFFBF] rounded-[6px] pl-[27.94px] pt-[33.07px] pr-[24.8px] pb-[39.11px] h-[395px]">
+          <div className="w-[630px] max-sm:w-[320px] max-sm:p-[20px] border-[1px] border-[#FFFFFFBF] rounded-[6px] pl-[27.94px] pt-[33.07px] pr-[24.8px] pb-[39.11px] h-[395px] max-sm:h-auto">
             <div className="flex gap-[42.5px]">
               <Image
                 src="/Frame 1000002775.png"
+                className="max-sm:w-[100px] max-sm:h-[100px]"
                 width={142.56}
                 height={142.56}
               />
               <div>
-                <h1 className="text-[36px] leading-[40.32px] tracking-[-0.98px] text-[#E5E5E5] font-['Graphikthin']">
+                <h1 className="text-[36px] max-sm:text-[24px] max-sm:leading-[120%] leading-[40.32px] tracking-[-0.98px] text-[#E5E5E5] font-['Graphikthin']">
                   In Arcu Nunc
                 </h1>
-                <h2 className="text-[#A1A1A1] text-[20px] leading-[24px] font-['Graphikthin'] font-normal opacity-60 mb-[27px] mt-[6px]">
+                <h2 className="text-[#A1A1A1] text-[20px] max-sm:text-base leading-[24px] font-['Graphikthin'] font-normal opacity-60 mb-[27px] mt-[6px] max-sm:mt-[3px] max-sm:mb-[12px]">
                   Vitae nisi eu turpis
                 </h2>
                 <Image
@@ -211,7 +236,7 @@ export default function Success() {
                 />
               </div>
             </div>
-            <p className="opacity-80 text-base text-[#E0E0E0] mt-[33.84px]">
+            <p className="opacity-80 max-sm:text-sm max-sm:mt-[20px] text-base text-[#E0E0E0] mt-[33.84px]">
               Eu nulla tincidunt aliquam volutpat lorem. Lectus phasellus
               tristique in proin sit dolor cursus pharetra elit. Morbi
               adipiscing tellus amet faucibus ut. Duis eu viverra urna diam diam
@@ -222,18 +247,19 @@ export default function Success() {
               purus.
             </p>
           </div>
-          <div className="w-[630px] border-[1px] border-[#FFFFFFBF] rounded-[6px] pl-[27.94px] pt-[33.07px] pr-[24.8px] pb-[39.11px] h-[395px]">
+          <div className="w-[630px] max-sm:w-[320px] max-sm:p-[20px] border-[1px] border-[#FFFFFFBF] rounded-[6px] pl-[27.94px] pt-[33.07px] pr-[24.8px] pb-[39.11px] h-[395px] max-sm:h-auto">
             <div className="flex gap-[42.5px]">
               <Image
                 src="/Frame 1000002775.png"
+                className="max-sm:w-[100px] max-sm:h-[100px]"
                 width={142.56}
                 height={142.56}
               />
               <div>
-                <h1 className="text-[36px] leading-[40.32px] tracking-[-0.98px] text-[#E5E5E5] font-['Graphikthin']">
+                <h1 className="text-[36px] max-sm:text-[24px] max-sm:leading-[120%] leading-[40.32px] tracking-[-0.98px] text-[#E5E5E5] font-['Graphikthin']">
                   In Arcu Nunc
                 </h1>
-                <h2 className="text-[#A1A1A1] text-[20px] leading-[24px] font-['Graphikthin'] font-normal opacity-60 mb-[27px] mt-[6px]">
+                <h2 className="text-[#A1A1A1] text-[20px] max-sm:text-base leading-[24px] font-['Graphikthin'] font-normal opacity-60 mb-[27px] mt-[6px] max-sm:mt-[3px] max-sm:mb-[12px]">
                   Vitae nisi eu turpis
                 </h2>
                 <Image
@@ -244,7 +270,7 @@ export default function Success() {
                 />
               </div>
             </div>
-            <p className="opacity-80 text-base text-[#E0E0E0] mt-[33.84px]">
+            <p className="opacity-80 max-sm:text-sm max-sm:mt-[20px] text-base text-[#E0E0E0] mt-[33.84px]">
               Eu nulla tincidunt aliquam volutpat lorem. Lectus phasellus
               tristique in proin sit dolor cursus pharetra elit. Morbi
               adipiscing tellus amet faucibus ut. Duis eu viverra urna diam diam
