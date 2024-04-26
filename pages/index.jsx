@@ -96,13 +96,13 @@ export default function Home() {
               className="w-[1323.57px] h-[96px] flex gap-[52px]"
             >
               <Image
-                src="/Image 56.svg"
+                src="/razorimage.svg"
                 className="pt-[36.77px] pb-[39.23px]"
                 width={98.24}
                 height={20.89}
               />
               <Image
-                src="/Image 57.svg"
+                src="/Zepto.svg"
                 className="pt-[36.77px] pb-[39.23px]"
                 width={63.15}
                 height={20.89}
