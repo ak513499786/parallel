@@ -102,7 +102,7 @@ export default function Home() {
                 height={20.89}
               />
               <Image
-                src="/Zepto.svg"
+                src="/zepto.svg"
                 className="pt-[36.77px] pb-[39.23px]"
                 width={63.15}
                 height={20.89}
@@ -144,13 +144,13 @@ export default function Home() {
                 height={20.89}
               />
               <Image
-                src="/Image 56.svg"
+                src="/razorimage.svg"
                 className="pt-[36.77px] pb-[39.23px]"
                 width={98.24}
                 height={20.89}
               />
               <Image
-                src="/Image 57.svg"
+                src="/zepto.svg"
                 className="pt-[36.77px] pb-[39.23px]"
                 width={63.15}
                 height={20.89}
