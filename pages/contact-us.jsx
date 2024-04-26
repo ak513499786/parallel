@@ -1,15 +1,36 @@
-import { useState, useEffect } from "react";
-import Navbar from "@/pages/navbar";
+import { useState } from "react";
+import Navbar from "@/pages/components/navbar";
 import Image from "next/image";
 import style from "@/styles/style.module.css";
-import Footer from "./footer";
+import Footer from "./components/footer";
+import axios from "axios";
 
 export default function Contact() {
   const [iam, setiam] = useState("Select an option");
   const [help, sethelp] = useState("Select an option");
   const [iamOpen, setIamOpen] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
-
+  const [Name, setName] = useState("");
+  const [Email, setEmail] = useState("");
+  const [Phone_Number, setPhone_Number] = useState("");
+  const [Message, setMessage] = useState("");
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const data = {
+      Name,
+      Email,
+      Phone_Number,
+      iam,
+      help,
+      Message
+    };
+    try {
+      const response = await axios.post("/api/contact-us", data);
+      console.log("Data sent successfully:", response.data);
+    } catch (error) {
+      console.error("Error sending data:", error);
+    }
+  };
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
@@ -53,6 +74,7 @@ export default function Contact() {
               <input
                 type="text"
                 placeholder="Enter your name"
+                onChange={(e) => setName(e.target.value)}
                 className="py-[16px] pl-[17.51px] rounded-[4px] border-[1px] border-white w-[368px] max-hamburger:w-[100%] bg-transparent text-[white] placeholder-[#ffffff99]"
               />
             </div>
@@ -63,6 +85,7 @@ export default function Contact() {
               <input
                 type="text"
                 placeholder="Enter your email"
+                onChange={(e) => setEmail(e.target.value)}
                 className="py-[16px] pl-[17.51px] rounded-[4px] border-[1px] max-hamburger:w-[100%] border-white w-[368px] bg-transparent text-[white] placeholder-[#ffffff99]"
               />
             </div>
@@ -73,8 +96,9 @@ export default function Contact() {
                 Phone Number
               </p>
               <input
-                type="text"
+                type="number"
                 placeholder="Enter your phone number"
+                onChange={(e) => setPhone_Number(e.target.value)}
                 className="py-[16px] pl-[17.51px] rounded-[4px] max-hamburger:w-full border-[1px] border-white w-[368px] bg-transparent text-[white] placeholder-[#ffffff99]"
               />
             </div>
@@ -84,17 +108,17 @@ export default function Contact() {
               <p className="text-[16px] leading-[19.2px]">I am a</p>
               <div
                 onClick={() => toggleIamMenu()}
-                className="pl-[17.51px] pr-[18px] max-hamburger:w-full flex justify-between h-[54px] bg-[transparent] text-[#ffffff99] cursor-pointer w-[368px] border-[1px] border-white rounded-[6px] py-[16px] text-[17.95px] leading-[21.54px]"
+                className="pl-[17.51px] pr-[18px] max-hamburger:w-full flex justify-between h-[54px] bg-[transparent] text-[#ffffff99] cursor-pointer w-[368px] border-[1px] border-white rounded-[6px] py-[16px] text-[17.95px] leading-[21.54px] max-smallphone:py-0 max-smallphone:flex max-smallphone:items-center"
               >
                 <p>{iam}</p>
                 <Image src="/arrowdown.svg" width={19.98} height={10.75} />
               </div>
               {iamOpen && (
-                <div className="bg-[#FFFFFFF2] max-hamburger:w-full absolute border-[1px] rounded-tl-[4px] rounded-[tr]-[4px] top-[89px] z-[22222] cursor-pointer">
+                <div className="bg-[#FFFFFF] max-hamburger:w-full absolute border-[1px] rounded-tl-[4px] rounded-[tr]-[4px] top-[89px] z-[22222] cursor-pointer">
                   <ul className=" max-hamburger:w-full">
                     <li
                       onClick={() =>
-                        handleIamOptionSelect("Passed out student")
+                        handleIamOptionSelect("Student enrolled in college")
                       }
                       className="pl-[17.91px] w-[368px] max-hamburger:w-full cursor-pointer text-black border-[1px] border-b-[#00000033] py-[16px] text-[17.95px] leading-[21.54px]"
                     >
@@ -138,7 +162,7 @@ export default function Contact() {
               <p className="text-[16px] leading-[19.2px]">I need help with</p>
               <div
                 onClick={() => toggleMenu()}
-                className="pl-[17.51px] pr-[18px] max-hamburger:w-full flex justify-between h-[54px] bg-[transparent] text-[#ffffff99] cursor-pointer w-[368px] border-[1px] border-white rounded-[6px] py-[16px] text-[17.95px] leading-[21.54px]"
+                className="pl-[17.51px] pr-[18px] max-hamburger:w-full flex justify-between h-[54px] bg-[transparent] text-[#ffffff99] cursor-pointer w-[368px] border-[1px] border-white rounded-[6px] py-[16px] text-[17.95px] leading-[21.54px] max-smallphone:py-0 max-smallphone:flex max-smallphone:items-center"
               >
                 <p>{help}</p>
                 <Image src="/arrowdown.svg" width={19.98} height={10.75} />
@@ -147,7 +171,7 @@ export default function Contact() {
                 <div className="bg-[#FFFFFFF2] max-hamburger:w-full absolute border-[1px] rounded-tl-[4px] rounded-[tr]-[4px] top-[89px] z-[22222] cursor-pointer">
                   <ul className=" max-hamburger:w-full">
                     <li
-                      onClick={() => handleOptionSelect("Passed out student")}
+                      onClick={() => handleOptionSelect("Choosing the right course")}
                       className="pl-[17.91px] w-[368px] max-hamburger:w-full cursor-pointer text-black border-[1px] border-b-[#00000033] py-[16px] text-[17.95px] leading-[21.54px]"
                     >
                       Choosing the right course{" "}
@@ -199,11 +223,12 @@ export default function Contact() {
               <textarea
                 type="text"
                 placeholder="Message"
+                onChange={(e) => setMessage(e.target.value)}
                 className="py-[16px] max-hamburger:w-full resize-none px-[17.51px] rounded-[4px] h-[156px] border-[1px] border-white w-[755px] bg-transparent text-[white] placeholder-[#ffffff99]"
               ></textarea>
             </div>
           </div>
-          <button className="text-[16px] w-[755px] max-hamburger:w-full h-[53px] flex justify-center items-center font-semibold relative bg-[#30E29D] text-black rounded-[8px] leading-[53px]">
+          <button onClick={handleSubmit} className="text-[16px] w-[755px] max-hamburger:w-full h-[53px] flex justify-center items-center font-semibold relative bg-[#30E29D] text-black rounded-[8px] leading-[53px]">
             Contact us{" "}
           </button>
         </div>

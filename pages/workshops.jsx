@@ -1,10 +1,32 @@
 import Image from "next/image";
 import style from "@/styles/style.module.css";
-import Navbar from "./navbar";
-import Footer from "./footer";
+import Navbar from "./components/navbar";
+import Footer from "./components/footer";
+import Link from "next/link";
+import axios from "axios";
+import { useState } from "react";
 
 export default function Workshop() {
-  return ( 
+  const [Name, setName] = useState("");
+  const [College_Name, setCollege_Name] = useState("");
+  const [College_Email, setCollege_Email] = useState("");
+  const [Designation, setDesignation] = useState("");
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const data = {
+      Name,
+      College_Name,
+      College_Email,
+      Designation,
+    };
+    try {
+      const response = await axios.post("/api/workshop", data);
+      console.log("Data sent successfully:", response.data);
+    } catch (error) {
+      console.error("Error sending data:", error);
+    }
+  };
+  return (
     <>
       <Navbar />
       <div className="absolute w-[100%] h-[100vh] top-0 left-0 overflow-x-hidden">
@@ -15,9 +37,11 @@ export default function Workshop() {
           Host a skill focused workshop at your college.{" "}
         </h1>
         <div className="flex mt-[49px] gap-[32px]">
-          <button className="w-[165px] max-md:w-full h-[53px] bg-[#30E29D] rounded-[8px] font-bold text-[#292929] text-[16px] font-[19.2px]">
-            Contact Us{" "}
-          </button>
+          <Link href={"/contact-us"} className="max-md:w-full">
+            <button className="w-[165px] max-md:w-full h-[53px] bg-[#30E29D] rounded-[8px] font-bold text-[#292929] text-[16px] font-[19.2px]">
+              Contact Us{" "}
+            </button>
+          </Link>
         </div>
         <Image
           src="/image-from-rawpixel-id-12991629-png 1.svg"
@@ -167,8 +191,8 @@ export default function Workshop() {
           All at a low cost of
         </p>
         <div className="flex max-smallphone:flex-col items-end">
-          <h1 className="text-[257.99px] max-hamburger:text-[187px] max-md:text-[157px] max-hamburger:leading-[90%] max-hamburger:w-auto max-sm:text-[107px] max-sm:pr-[10px] max-smallphone:w-full w-[547px] font-['Graphikthin'] font-semibold text-[#E5E5E5] tracking-[-10.35px] leading-[220px]">
-            ₹100
+          <h1 className="text-[257.99px] max-hamburger:text-[187px] max-md:text-[157px] max-hamburger:leading-[90%] max-hamburger:w-auto max-sm:text-[107px] max-sm:pr-[10px] max-smallphone:w-full w-[547px] font-['Graphikthin'] text-[#E5E5E5] tracking-[-10.35px] leading-[220px]">
+            ₹<span className="font-bold font-['Graphik']">100</span>
           </h1>
           <p className="text-[48px] leading-[46.26px] max-sm:text-[28px] max-sm:leading-[32px] tracking-[-1.92px] text-[#E5E5E5] font-['Graphikthin'] text-[#E5E5E5]">
             per student.{" "}
@@ -350,7 +374,7 @@ export default function Workshop() {
         </div>
       </section>
       <div className="py-[70.5px] flex justify-between max-md:flex-col gap-[20px] max-md:gap-[50px] relative z-20 px-[80px] max-sm:px-[20px] max-md:px-[40px]">
-      <div className="w-[675.77px] max-md:w-full">
+        <div className="w-[675.77px] max-md:w-full">
           <p className="text-[64px] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] mb-[41px] leading-[61.88px] text-[#E5E5E5] tracking-[-2.56px] font-['Graphikthin']">
             Have tailored workshops at your institute at a low price of ₹100 per
             student{" "}
@@ -370,31 +394,38 @@ export default function Workshop() {
             <p className="text-[16px] leading-[19.2px]">Name</p>
             <input
               type="text"
-              className="h-[54px] rounded-[4px] border-[1px] border-white pl-[17.51px] bg-[transparent] placeholder-[#ffffff99]"
+              onChange={(e) => setName(e.target.value)}
+              className="h-[54px] rounded-[4px] border-[1px] border-white pl-[17.51px] bg-[transparent] placeholder-[#ffffff99] text-white"
             />
           </div>
           <div className="flex flex-col gap-[16px]">
             <p className="text-[16px] leading-[19.2px]">College Name</p>
             <input
               type="text"
-              className="h-[54px] rounded-[4px] border-[1px] border-white pl-[17.51px] bg-[transparent] placeholder-[#ffffff99]"
+              onChange={(e) => setCollege_Name(e.target.value)}
+              className="h-[54px] rounded-[4px] border-[1px] border-white pl-[17.51px] bg-[transparent] placeholder-[#ffffff99] text-white"
             />
           </div>
           <div className="flex flex-col gap-[16px]">
             <p className="text-[16px] leading-[19.2px]">College Email</p>
             <input
               type="email"
-              className="h-[54px] rounded-[4px] border-[1px] border-white pl-[17.51px] bg-[transparent] placeholder-[#ffffff99]"
+              onChange={(e) => setCollege_Email(e.target.value)}
+              className="h-[54px] rounded-[4px] border-[1px] border-white pl-[17.51px] bg-[transparent] placeholder-[#ffffff99] text-white"
             />
           </div>
           <div className="flex flex-col gap-[16px]">
-            <p className="text-[16px] leading-[19.2px]">Destination</p>
+            <p className="text-[16px] leading-[19.2px]">Designation</p>
             <input
               type="text"
-              className="h-[54px] rounded-[4px] border-[1px] border-white pl-[17.51px] bg-[transparent] placeholder-[#ffffff99]"
+              onChange={(e) => setDesignation(e.target.value)}
+              className="h-[54px] rounded-[4px] border-[1px] border-white pl-[17.51px] bg-[transparent] placeholder-[#ffffff99] text-white"
             />
           </div>
-          <button className="w-full h-[53px] bg-[#30E29D] rounded-[8px] font-bold text-[#292929] text-[16px] font-[19.2px]">
+          <button
+            onClick={handleSubmit}
+            className="w-full h-[53px] bg-[#30E29D] rounded-[8px] font-bold text-[#292929] text-[16px] font-[19.2px]"
+          >
             Talk to our experts{" "}
           </button>
         </div>

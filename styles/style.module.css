@@ -104,16 +104,29 @@
   );
 }
 .footer {
-  border-radius: 100%;
-  filter: blur(160px);
+  filter: blur(120px);
   background: radial-gradient(
     50% 50% at 50% 50%,
     #1bd44f 0%,
     rgba(14, 11, 180, 0.43) 100%
   );
+  width: 1401px;
+  height: 849.12px;
   opacity: 0.7;
 }
-
+.client {
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    #1bd44f 0%,
+    rgba(14, 11, 180, 0.43) 100%
+  );
+  width: 959px;
+  height: 959px;
+  position: absolute;
+  top: 226px;
+  left: 806.74px;
+  filter: blur(120px);
+}
 .learncard {
   background: linear-gradient(0deg, rgba(10, 10, 10, 0), rgba(10, 10, 10, 0.1)),
     linear-gradient(

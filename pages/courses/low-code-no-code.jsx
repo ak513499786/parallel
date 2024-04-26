@@ -1,10 +1,10 @@
 import Image from "next/image";
 import style from "@/styles/style.module.css";
 import Link from "next/link";
-import Navbar from "../navbar";
-import Footer from "../footer";
-import Upskill from "../upskill";
-import Success from "../success";
+import Navbar from "../components/navbar";
+import Footer from "../components/footer";
+import Upskill from "../components/upskill";
+import Success from "../components/success";
 
 export default function Nocode() {
   return (
@@ -163,7 +163,7 @@ export default function Nocode() {
             What you will learn in this course.{" "}
           </h1>
           <div className="flex gap-[20px] pl-[2px] max-hamburger:flex-col">
-            <div className="flex flex-wrap">
+            <div className="max-hamburger:flex flex-wrap">
               <h1 className="text-[20px] max-md:text-base max-sm:text-sm mb-[16px] leading-[25.2px] tracking-[-0.6px] text-[#E0E0E0] font-['Graphikthin'] justify-center flex rounded-[8px] border-[1px] border-[#FFFFFF66] items-center py-[21.5px] text-center w-[303px] max-smalllaptop:w-[200px] max-md:w-[100px] max-md:py-[10px]">
                 Week 1 to 5
               </h1>

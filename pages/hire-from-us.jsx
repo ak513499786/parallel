@@ -1,9 +1,31 @@
 import Image from "next/image";
 import style from "@/styles/style.module.css";
-import Navbar from "./navbar";
-import Footer from "./footer";
+import Navbar from "./components/navbar";
+import Footer from "./components/footer";
+import Link from "next/link";
+import axios from "axios";
+import { useState } from "react";
 
 export default function Courses() {
+  const [Name, setName] = useState("");
+  const [Company_Name, setCompany_Name] = useState("");
+  const [Work_Email, setWork_Email] = useState("");
+  const [Designation, setDesignation] = useState("");
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const data = {
+      Name,
+      Company_Name,
+      Work_Email,
+      Designation,
+    };
+    try {
+      const response = await axios.post("/api/hire-from-us", data);
+      console.log("Data sent successfully:", response.data);
+    } catch (error) {
+      console.error("Error sending data:", error);
+    }
+  };
   return (
     <>
       <Navbar />
@@ -16,9 +38,11 @@ export default function Courses() {
             </span>
             nals at zero cost.{" "}
           </h1>
-          <button className="w-[165px] max-hamburger:hidden mt-[49.05px] h-[53px] bg-[#30E29D] rounded-[8px] font-bold text-[#292929] text-[16px] font-[19.2px]">
-            Contact Us{" "}
-          </button>
+          <Link href={"/contact-us"}>
+            <button className="w-[165px] max-hamburger:hidden mt-[49.05px] h-[53px] bg-[#30E29D] rounded-[8px] font-bold text-[#292929] text-[16px] font-[19.2px]">
+              Contact Us{" "}
+            </button>
+          </Link>
         </div>
         <Image
           src="/hire.png"
@@ -26,9 +50,11 @@ export default function Courses() {
           width={522}
           height={493}
         />
-        <button className="max-hamburger:block max-md:w-full w-[165px] hidden mt-[20px] h-[53px] bg-[#30E29D] rounded-[8px] font-bold text-[#292929] text-[16px] font-[19.2px]">
-          Contact Us{" "}
-        </button>
+        <Link href={"/contact-us"}>
+          <button className="max-hamburger:block max-md:w-full w-[165px] hidden mt-[20px] h-[53px] bg-[#30E29D] rounded-[8px] font-bold text-[#292929] text-[16px] font-[19.2px]">
+            Contact Us{" "}
+          </button>
+        </Link>
       </main>
       <section className="px-[80px] max-md:px-[40px] max-sm:px-[20px] max-sm:py-0 relative pb-[96px] pt-[96.09px] flex flex-col justify-center items-center gap-[59.91px]">
         <div className="w-[890.53px] max-hamburger:w-full">
@@ -190,31 +216,35 @@ export default function Courses() {
             <p className="text-[16px] leading-[19.2px]">Name</p>
             <input
               type="text"
-              className="h-[54px] rounded-[4px] border-[1px] border-white pl-[17.51px] bg-[transparent] placeholder-[#ffffff99]"
+              onChange={(e) => setName(e.target.value)}
+              className="h-[54px] rounded-[4px] border-[1px] border-white pl-[17.51px] bg-[transparent] placeholder-[#ffffff99] text-white"
             />
           </div>
           <div className="flex flex-col gap-[16px]">
             <p className="text-[16px] leading-[19.2px]">Company Name</p>
             <input
               type="text"
-              className="h-[54px] rounded-[4px] border-[1px] border-white pl-[17.51px] bg-[transparent] placeholder-[#ffffff99]"
+              onChange={(e) => setCompany_Name(e.target.value)}
+              className="h-[54px] rounded-[4px] border-[1px] border-white pl-[17.51px] bg-[transparent] placeholder-[#ffffff99] text-white"
             />
           </div>
           <div className="flex flex-col gap-[16px]">
             <p className="text-[16px] leading-[19.2px]">Work Email</p>
             <input
               type="email"
-              className="h-[54px] rounded-[4px] border-[1px] border-white pl-[17.51px] bg-[transparent] placeholder-[#ffffff99]"
+              onChange={(e) => setWork_Email(e.target.value)}
+              className="h-[54px] rounded-[4px] border-[1px] border-white pl-[17.51px] bg-[transparent] placeholder-[#ffffff99] text-white"
             />
           </div>
           <div className="flex flex-col gap-[16px]">
             <p className="text-[16px] leading-[19.2px]">Designation</p>
             <input
               type="text"
-              className="h-[54px] rounded-[4px] border-[1px] border-white pl-[17.51px] bg-[transparent] placeholder-[#ffffff99]"
+              onChange={(e) => setDesignation(e.target.value)}
+              className="h-[54px] rounded-[4px] border-[1px] border-white pl-[17.51px] bg-[transparent] placeholder-[#ffffff99] text-white"
             />
           </div>
-          <button className="w-full h-[53px] bg-[#30E29D] rounded-[8px] font-bold text-[#292929] text-[16px] font-[19.2px]">
+          <button onClick={handleSubmit} className="w-full h-[53px] bg-[#30E29D] rounded-[8px] font-bold text-[#292929] text-[16px] font-[19.2px]">
             Hire from us{" "}
           </button>
         </div>

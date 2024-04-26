@@ -1,11 +1,29 @@
 import Image from "next/image";
 import style from "@/styles/style.module.css";
-import Navbar from "./navbar";
-import Footer from "./footer";
-import Upskill from "./upskill";
+import Navbar from "./components/navbar";
+import Footer from "./components/footer";
+import Upskill from "./components/upskill";
 import Link from "next/link";
+import { useState } from "react";
+import axios from "axios";
 
 export default function Courses() {
+  const [refer, setrefer] = useState(false);
+  const [refer2, setrefer2] = useState(false);
+  const [phoneNumber, setPhoneNumber] = useState("");
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const data = {
+      phoneNumber,
+    };
+    try {
+      const response = await axios.post("/api/refer-us", data);
+      console.log("Data sent successfully:", response.data);
+      setrefer(true);
+    } catch (error) {
+      console.error("Error sending data:", error);
+    }
+  };
   return (
     <>
       <Navbar />
@@ -19,29 +37,76 @@ export default function Courses() {
           </p>
           <div className="flex gap-[19px]">
             <input
-              type="text"
+              type="number"
               name=""
               placeholder="Enter your phone number"
-              className="w-[368px] max-hamburger:hidden max-smalllaptop:w-[300px] h-[54px] bg-[#171717] rounded-[8px] pl-[17.51px] outline-0 text-[#ffffff99] text-[17.95px] leading-[21.54px] placeholder-[17.95px] placeholder-[#ffffff99]"
+              onChange={(e) => setPhoneNumber(e.target.value)}
+              className="w-[368px] text-white max-hamburger:hidden max-smalllaptop:w-[300px] h-[54px] bg-[#171717] rounded-[8px] pl-[17.51px] outline-0 text-[#ffffff99] text-[17.95px] leading-[21.54px] placeholder-[17.95px] placeholder-[#ffffff99]"
               id=""
             />
-            <button className="w-[118px] max-hamburger:hidden h-[53px] bg-[#30E29D] rounded-[8px] font-bold text-[#292929] text-[16px] font-[19.2px]">
-              Next{" "}
-            </button>
+            {refer === false && (
+              <button
+                onClick={handleSubmit}
+                className="w-[118px] max-hamburger:hidden h-[53px] bg-[#30E29D] rounded-[8px] font-bold text-[#292929] text-[16px] font-[19.2px]"
+              >
+                Next{" "}
+              </button>
+            )}
+            {refer === true && (
+              <button
+                onClick={() => setrefer(true)}
+                className="w-[152px] flex justify-center items-center gap-[8px] max-hamburger:hidden h-[53px] bg-[#30E29D] rounded-[8px] font-bold text-[#292929] text-[16px] font-[19.2px]"
+              >
+                <Image
+                  src="/material-symbols_check.svg"
+                  width={24}
+                  height={24}
+                />{" "}
+                <p>Sent! </p>
+              </button>
+            )}
           </div>
-          <p className="mt-[32px] max-md:w-full max-hamburger:hidden text-base font-['Graphikthin'] text-[#E0E0E0]">
-            Don’t have an account?{" "}
-            <Link
-              href={"/signup"}
-              className="border-b-[1px] border-[#30E29D] text-[#30E29D]"
-            >
-              Sign up
-            </Link>
-          </p>
+          {refer === false && (
+            <p className="mt-[32px] max-md:w-full max-hamburger:hidden text-base font-['Graphikthin'] text-[#E0E0E0]">
+              Don’t have an account?{" "}
+              <Link
+                href={"/signup"}
+                className="border-b-[1px] border-[#30E29D] text-[#30E29D]"
+              >
+                Sign up
+              </Link>
+            </p>
+          )}
+          {refer === true && (
+            <>
+              <div className="flex gap-[13px] items-start max-hamburger:hidden   max-md:h-auto max-smallphone:gap-[8px] w-[532px] h-[83px] rounded-[8px] bg-white px-[15px] pt-[17px] mt-[14px] max-md:w-full max-md: p-[15px]">
+                <Image
+                  src="/material-symbols_info-outline.svg"
+                  width={24}
+                  height={24}
+                />
+                <p className="w-[441px] text-[16px] max-md:p-0 max-sm:text-sm leading-[19.2px] text-[#030303] pt-[2.5px] max-md:w-full">
+                  A WhatsApp message containing the referral link has been sent
+                  to this number.{" "}
+                </p>
+              </div>
+              <p
+                onClick={() => setrefer(false)}
+                className="border-b-[1px] w-[175px] mt-[14px] max-hamburger:hidden cursor-pointer h-[20px] border-[#30E29D] text-[#30E29D]"
+              >
+                Use a different number{" "}
+              </p>
+            </>
+          )}
         </div>
-        <Image src="/refer.png" className="object-contain max-md:w-full" width={522} height={493} />
+        <Image
+          src="/refer.png"
+          className="object-contain max-md:w-full"
+          width={522}
+          height={493}
+        />
         <div className="hidden max-hamburger:block">
-        <p className="w-[408px] max-md:w-full mb-[12px] font-['Graphikthin'] mt-[57.34px] text-base text-[#E0E0E0]">
+          <p className="w-[408px] max-md:w-full mb-[12px] font-['Graphikthin'] mt-[57.34px] text-base text-[#E0E0E0]">
             Enter the phone number associated with your account
           </p>
           <div className="flex max-sm:flex-col gap-[19px]">
@@ -52,19 +117,60 @@ export default function Courses() {
               className="w-[368px] max-sm:w-full max-smalllaptop:w-[300px] h-[54px] bg-[#171717] rounded-[8px] pl-[17.51px] outline-0 text-[#ffffff99] text-[17.95px] leading-[21.54px] placeholder-[17.95px] placeholder-[#ffffff99]"
               id=""
             />
-            <button className="w-[118px] max-sm:w-full h-[53px] bg-[#30E29D] rounded-[8px] font-bold text-[#292929] text-[16px] font-[19.2px]">
-              Next{" "}
-            </button>
+            {refer === false && (
+              <button
+                onClick={() => setrefer(true)}
+                className="w-[118px] max-hamburger:block hidden h-[53px] max-md:w-full bg-[#30E29D] rounded-[8px] font-bold text-[#292929] text-[16px] font-[19.2px]"
+              >
+                Next{" "}
+              </button>
+            )}
+            {refer === true && (
+              <button
+                onClick={() => setrefer(true)}
+                className="w-[152px] flex justify-center hidden max-hamburger:flex max-md:w-full items-center gap-[8px] h-[53px] bg-[#30E29D] rounded-[8px] font-bold text-[#292929] text-[16px] font-[19.2px]"
+              >
+                <Image
+                  src="/material-symbols_check.svg"
+                  width={24}
+                  height={24}
+                />{" "}
+                <p>Sent! </p>
+              </button>
+            )}
           </div>
-          <p className="mt-[32px] max-md:w-full text-base font-['Graphikthin'] text-[#E0E0E0]">
-            Don’t have an account?{" "}
-            <Link
-              href={"/signup"}
-              className="border-b-[1px] border-[#30E29D] text-[#30E29D]"
-            >
-              Sign up
-            </Link>
-          </p>
+          {refer === false && (
+            <p className="mt-[32px] max-md:w-full max-hamburger:block hidden text-base font-['Graphikthin'] text-[#E0E0E0]">
+              Don’t have an account?{" "}
+              <Link
+                href={"/signup"}
+                className="border-b-[1px] border-[#30E29D] text-[#30E29D]"
+              >
+                Sign up
+              </Link>
+            </p>
+          )}
+          {refer === true && (
+            <>
+              <div className="flex gap-[13px] items-start hidden max-md:flex max-md:h-auto max-smallphone:gap-[8px] w-[532px] h-[83px] rounded-[8px] bg-white px-[15px] pt-[17px] mt-[14px] max-md:w-full max-md: p-[15px]">
+                <Image
+                  src="/material-symbols_info-outline.svg"
+                  width={24}
+                  height={24}
+                />
+                <p className="w-[441px] text-[16px] max-md:p-0 max-sm:text-sm leading-[19.2px] text-[#030303] pt-[2.5px] max-md:w-full">
+                  A WhatsApp message containing the referral link has been sent
+                  to this number.{" "}
+                </p>
+              </div>
+              <p
+                onClick={() => setrefer(false)}
+                className="border-b-[1px] w-[175px] hidden max-md:block mt-[14px] cursor-pointer h-[20px] border-[#30E29D] text-[#30E29D]"
+              >
+                Use a different number{" "}
+              </p>
+            </>
+          )}
         </div>
       </main>
       <section className="pt-[72.08px] max-sm:py-0 relative max-sm:px-[20px] max-md:px-[40px] z-20 pb-[72px] pl-[79.24px] pr-[79px]">
@@ -183,22 +289,63 @@ export default function Courses() {
               type="text"
               name=""
               placeholder="Enter your phone number"
-              className="w-[368px] max-sm:w-full h-[54px] bg-[#171717] rounded-[8px] pl-[17.51px] outline-0 text-[#ffffff99] text-[17.95px] leading-[21.54px] placeholder-[17.95px] placeholder-[#ffffff99]"
+              className="w-[368px] text-white max-sm:w-full h-[54px] bg-[#171717] rounded-[8px] pl-[17.51px] outline-0 text-[#ffffff99] text-[17.95px] leading-[21.54px] placeholder-[17.95px] placeholder-[#ffffff99]"
               id=""
             />
-            <button className="w-[118px] max-sm:w-full h-[53px] bg-[#30E29D] rounded-[8px] font-bold text-[#292929] text-[16px] font-[19.2px]">
-              Next{" "}
-            </button>
+            {refer2 === false && (
+              <button
+                onClick={() => setrefer2(true)}
+                className="w-[118px] h-[53px] max-md:w-full bg-[#30E29D] rounded-[8px] font-bold text-[#292929] text-[16px] font-[19.2px]"
+              >
+                Next{" "}
+              </button>
+            )}
+            {refer2 === true && (
+              <button
+                onClick={() => setrefer2(true)}
+                className="w-[152px] max-md:w-full flex justify-center items-center gap-[8px] h-[53px] bg-[#30E29D] rounded-[8px] font-bold text-[#292929] text-[16px] font-[19.2px]"
+              >
+                <Image
+                  src="/material-symbols_check.svg"
+                  width={24}
+                  height={24}
+                />{" "}
+                <p>Sent! </p>
+              </button>
+            )}
           </div>
-          <p className="mt-[32px] text-base max-sm:w-full text-center font-['Graphikthin'] text-[#E0E0E0]">
-            Don’t have an account?{" "}
-            <Link
-              href={"/signup"}
-              className="border-b-[1px] border-[#30E29D] text-[#30E29D]"
-            >
-              Sign up
-            </Link>
-          </p>
+          {refer2 === false && (
+            <p className="mt-[32px] text-center max-md:w-full text-base font-['Graphikthin'] text-[#E0E0E0]">
+              Don’t have an account?{" "}
+              <Link
+                href={"/signup"}
+                className="border-b-[1px] border-[#30E29D] text-[#30E29D]"
+              >
+                Sign up
+              </Link>
+            </p>
+          )}
+          {refer2 === true && (
+            <div className="flex flex-col items-center">
+              <div className="flex gap-[13px] items-start   max-md:h-auto max-smallphone:gap-[8px] w-[532px] h-[83px] rounded-[8px] bg-white px-[15px] pt-[17px] mt-[14px] max-md:w-full max-md: p-[15px]">
+                <Image
+                  src="/material-symbols_info-outline.svg"
+                  width={24}
+                  height={24}
+                />
+                <p className="w-[441px] text-[16px] max-md:p-0 max-sm:text-sm leading-[19.2px] text-[#030303] pt-[2.5px] max-md:w-full">
+                  A WhatsApp message containing the referral link has been sent
+                  to this number.{" "}
+                </p>
+              </div>
+              <p
+                onClick={() => setrefer2(false)}
+                className="border-b-[1px] w-[175px] mt-[14px] cursor-pointer h-[20px] border-[#30E29D] text-[#30E29D]"
+              >
+                Use a different number{" "}
+              </p>
+            </div>
+          )}
         </div>
       </section>
       <Upskill />

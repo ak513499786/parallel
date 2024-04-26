@@ -1,17 +1,17 @@
 import Image from "next/image";
 import style from "@/styles/style.module.css";
-import Navbar from "./navbar";
-import Footer from "./footer";
-import Upskill from "./upskill";
-import Success from "./success";
+import Navbar from "./components/navbar";
+import Footer from "./components/footer";
+import Upskill from "./components/upskill";
+import Success from "./components/success";
 import Link from "next/link";
 
 export default function Courses() {
   return (
     <>
       <Navbar />
-      <div className="absolute w-[100%] h-[100vh] top-0 left-0 overflow-x-hidden">
-        <div className={style.backgroundboxworkshop}></div>
+      <div className="absolute w-[100%] h-[811px] top-0 left-0 overflow-hidden">
+        <div className={style.backgroundbox}></div>
       </div>
       <main className="pl-[80.27px] max-hamburger:px-20 relative z-20 pt-[163px] pb-[186.03px] max-md:px-[40px] max-sm:px-[20px] max-md:py-[50px]">
         <h1 className="w-[894.59px] max-smalllaptop:w-[850px] max-hamburger:w-full max-smalllaptop:tracking-[-2.56px] max-smalllaptop:text-[84px] max-sm:text-[64px] max-smalllaptop:leading-[102%] font-['Graphikthin'] text-[127.98px] text-[#E5E5E5] leading-[130.54px] tracking-[-6.35px]">
@@ -106,8 +106,8 @@ export default function Courses() {
           What you will be paying us
         </p>
         <h1 className="w-[1172px] max-xl:w-full text-[147.6px] max-smalllaptop:tracking-[-2.56px] max-smalllaptop:text-[84px] max-sm:text-[64px] max-smalllaptop:leading-[102%] font-['Graphikthin'] leading-[142.26px] text-[#E5E5E5] tracking-[-5.9px]">
-          <span className="font-semibold">15%</span> of your CTC for{" "}
-          <span className="font-semibold">12 months.</span>
+          <span className="font-bold">15</span>% of your CTC for{" "}
+          <span className="font-bold">12 months.</span>
         </h1>
       </section>
       <section className="pt-[37.08px] px-[80px] max-md:w-full max-md:px-[40px] max-sm:px-[20px] pb-[74.31px] flex flex-col items-center gap-[131.61px]">
@@ -120,26 +120,26 @@ export default function Courses() {
           </h1>
           <table className="w-[826px] max-sm:text-[24px] max-smallphone:text-[20px] max-hamburger:w-full mt-[51px] font-['Graphikthin'] text-[32px] leading-[30.84px] font-light text-[#E5E5E5] tracking-[-0.64px] text-left h-[336px]">
             <tr>
-              <th className="w-[413px] max-hamburger:w-[50%] h-[112px] pl-[32.76px] max-sm:pl-[16px] border-[1px] border-white">
+              <th className="w-[413px] max-hamburger:w-[50%] h-[112px] pl-[32.76px] max-sm:pl-[16px] border-[1px] border-white font-['Graphikthin'] font-light">
                 Week 1 - 5
               </th>
-              <th className="w-[413px] max-hamburger:w-[50%] h-[112px] pl-[32.76px] max-sm:pl-[16px] border-[1px] border-white">
+              <th className="w-[413px] max-hamburger:w-[50%] h-[112px] pl-[32.76px] max-sm:pl-[16px] border-[1px] border-white font-['Graphikthin'] font-light">
                 No Payment
               </th>
             </tr>
             <tr>
-              <th className="w-[413px] max-hamburger:w-[50%] h-[112px] pl-[32.76px] max-sm:pl-[16px] border-[1px] border-white">
+              <th className="w-[413px] max-hamburger:w-[50%] h-[112px] pl-[32.76px] max-sm:pl-[16px] border-[1px] border-white font-['Graphikthin'] font-light">
                 Week 6 - 15
               </th>
-              <th className="w-[413px] max-hamburger:w-[50%] h-[112px] pl-[32.76px] max-sm:pl-[16px] border-[1px] border-white">
+              <th className="w-[413px] max-hamburger:w-[50%] h-[112px] pl-[32.76px] max-sm:pl-[16px] border-[1px] border-white font-['Graphikthin'] font-light">
                 ₹20,000
               </th>
             </tr>
             <tr>
-              <th className="w-[413px] max-hamburger:w-[50%] h-[112px] pl-[32.76px] max-sm:pl-[16px] border-[1px] border-white">
+              <th className="w-[413px] max-hamburger:w-[50%] h-[112px] pl-[32.76px] max-sm:pl-[16px] border-[1px] border-white font-['Graphikthin'] font-light">
                 Week 15 - 20
               </th>
-              <th className="w-[413px] max-hamburger:w-[50%] h-[112px] pl-[32.76px] max-sm:pl-[16px] border-[1px] border-white">
+              <th className="w-[413px] max-hamburger:w-[50%] h-[112px] pl-[32.76px] max-sm:pl-[16px] border-[1px] border-white font-['Graphikthin'] font-light">
                 ₹45,000
               </th>
             </tr>

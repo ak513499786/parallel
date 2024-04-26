@@ -1,14 +1,18 @@
 import Image from "next/image";
 import style from "@/styles/style.module.css";
-import Navbar from "./navbar";
-import Footer from "./footer";
-import Upskill from "./upskill";
-import Success from "./success";
+import Navbar from "./components/navbar";
+import Footer from "./components/footer";
+import Upskill from "./components/upskill";
+import Success from "./components/success";
+import Link from "next/link";
 
 export default function Courses() {
   return (
     <>
       <Navbar />
+      <div className="absolute w-[100%] h-[811px] top-0 left-0 overflow-hidden">
+        <div className={style.backgroundbox}></div>
+      </div>
       <main className="pt-[190.35px] pb-[111.65px] max-md:pt-[100px] max-sm:pt-[80px] flex justify-center">
         <p className="w-[1016.16px] max-lg:w-full max-lg:px-[80px] max-md:px-[40px] max-sm:px-[20px] max-smalllaptop:tracking-[-2.56px] max-smalllaptop:text-[84px] max-sm:text-[64px] max-smalllaptop:leading-[102%] font-thin leading-[106.66px] tracking-[-5.2px] text-[104.57px] font-['Graphikthin'] text-[#E5E5E5] text-center">
           A plethora of topics to upskill on
@@ -43,9 +47,11 @@ export default function Courses() {
               &lt; 18 Hours
             </p>
           </div>
-          <button className="w-[100%] mt-[15px] h-[53px] bg-[transparent] rounded-[8px] text-[#30E29D] border-[1px] border-[#30E29D] text-[16px] font-[19.2px]">
+          <Link href={'/courses/low-code-no-code'}>
+          <button className="w-[100%] mt-[15px] h-[53px] bg-[transparent] rounded-[8px] text-[#30E29D] border-[1px] border-[#30E29D] text-[16px] font-[19.2px] hover:text-[#1F1F1F] transition-all font-semibold hover:bg-[#30E29D]">
             Learn more{" "}
           </button>
+          </Link>
         </div>
         <div
           className={`px-[18px] max-sm:px-[20px] max-sm:py-[16px] w-[33%] max-lg:w-[48%] max-md:w-full border-[1px] w-[413px] border-white rounded-[10px] py-[20px] ${style.cardbg}`}
@@ -75,9 +81,11 @@ export default function Courses() {
               &lt; 18 Hours
             </p>
           </div>
-          <button className="w-[100%] mt-[15px] h-[53px] bg-[transparent] rounded-[8px] text-[#30E29D] border-[1px] border-[#30E29D] text-[16px] font-[19.2px]">
+          <Link href={'/courses/artificial-intelligence'}>
+          <button className="w-[100%] mt-[15px] h-[53px] bg-[transparent] rounded-[8px] text-[#30E29D] border-[1px] border-[#30E29D] text-[16px] font-[19.2px] hover:text-[#1F1F1F] transition-all font-semibold hover:bg-[#30E29D]">
             Learn more{" "}
           </button>
+          </Link>
         </div>
         <div
           className={`px-[18px] max-sm:px-[20px] max-sm:py-[16px] w-[33%] max-lg:w-[48%] max-md:w-full border-[1px] w-[413px] border-white rounded-[10px] py-[20px] ${style.cardbg}`}
@@ -107,9 +115,11 @@ export default function Courses() {
               &lt; 18 Hours
             </p>
           </div>
-          <button className="w-[100%] mt-[15px] h-[53px] bg-[transparent] rounded-[8px] text-[#30E29D] border-[1px] border-[#30E29D] text-[16px] font-[19.2px]">
+          <Link href={'/courses/data-analytics'}>
+          <button className="w-[100%] mt-[15px] h-[53px] bg-[transparent] rounded-[8px] text-[#30E29D] border-[1px] border-[#30E29D] text-[16px] font-[19.2px] hover:text-[#1F1F1F] transition-all font-semibold hover:bg-[#30E29D]">
             Learn more{" "}
           </button>
+          </Link>
         </div>
         <div
           className={`px-[18px] max-sm:px-[20px] max-sm:py-[16px] w-[33%] max-lg:w-[48%] max-md:w-full border-[1px] w-[413px] border-white rounded-[10px] py-[20px] ${style.cardbg}`}
@@ -139,9 +149,11 @@ export default function Courses() {
               &lt; 18 Hours
             </p>
           </div>
-          <button className="w-[100%] mt-[15px] h-[53px] bg-[transparent] rounded-[8px] text-[#30E29D] border-[1px] border-[#30E29D] text-[16px] font-[19.2px]">
+          <Link href={'/courses/full-stack-development'}>
+          <button className="w-[100%] mt-[15px] h-[53px] bg-[transparent] rounded-[8px] text-[#30E29D] border-[1px] border-[#30E29D] text-[16px] font-[19.2px] hover:text-[#1F1F1F] transition-all font-semibold hover:bg-[#30E29D]">
             Learn more{" "}
           </button>
+          </Link>
         </div>
       </section>
       <Success />

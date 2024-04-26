@@ -1,20 +1,59 @@
-import { useState, useEffect } from "react";
-import Navbar from "@/pages/navbar";
+import { useState, useRef, useEffect } from "react";
+import Navbar from "@/pages/components/navbar";
 import Image from "next/image";
 import style from "@/styles/style.module.css";
-import Footer from "./footer";
-import Upskill from "./upskill";
-import Success from "./success";
-export default function Home() {
-  const [help, sethelp] = useState("Select an option");
-  const [isOpen, setIsOpen] = useState(false);
+import Footer from "./components/footer";
+import Upskill from "./components/upskill";
+import Success from "./components/success";
+import Link from "next/link";
+import { Linear, gsap } from "gsap";
+import axios from "axios";
 
+export default function Home() {
+  const [Role, setRole] = useState("Select an option");
+  const [Name, setName] = useState("");
+  const [Email, setEmail] = useState("");
+  const [Phonenumber, setPhonenumber] = useState("");
+  const [isOpen, setIsOpen] = useState(false);
+  const clientanimation = useRef(null);
+  const leadinganimation = useRef(null);
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
   const handleOptionSelect = (option) => {
-    sethelp(option);
+    setRole(option);
     setIsOpen(false);
+  };
+  useEffect(() => {
+    gsap
+      .timeline({ repeat: -1 })
+      .fromTo(
+        clientanimation.current,
+        { x: 50 },
+        { ease: Linear.easeNone, x: -1043, duration: 10 }
+      );
+    gsap
+      .timeline({ repeat: -1 })
+      .fromTo(
+        leadinganimation.current,
+        { y: 0 },
+        { ease: Linear.easeNone, y: -180, duration: 3 }
+      );
+  }, []);
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const data = {
+      Name,
+      Email,
+      Phonenumber,
+      Role,
+    };
+    try {
+      const response = await axios.post("/api/home", data);
+      console.log("Data sent successfully:", response.data);
+    } catch (error) {
+      console.error("Error sending data:", error);
+    }
   };
   return (
     <>
@@ -26,9 +65,9 @@ export default function Home() {
       <main className="px-[80px] max-md:px-[40px] max-sm:px-[20px] max-md:pt-[50px] max-sm:pt-[30px] flex justify-between max-hamburger:items-center max-smalllaptop:gap-[20px] max-hamburger:flex-col pb-[29.5px] pt-[76px]">
         <div className="mt-[23px] max-hamburger:w-full max-md:mt-0">
           <div className="w-[799.41px] max-hamburger:w-[100%] relative z-30 max-smalllaptop:w-[510px] max-bigscreen:w-[676px]">
-            <h1 className="text-[104.57px] max-smalllaptop:tracking-[-2.56px] max-smalllaptop:text-[84px] max-sm:text-[64px] max-smalllaptop:leading-[102%] font-light tracking-[-5.22px] leading-[106.66px] text-[#E5E5E5] mb-[42px]">
+            <h1 className="text-[104.57px] max-smalllaptop:tracking-[-2.56px] max-smalllaptop:text-[84px] max-sm:text-[64px] max-smalllaptop:leading-[102%] font-light tracking-[-5.22px] leading-[106.66px] text-[#E5E5E5] font-['Graphikthin'] mb-[42px]">
               Upskill and get placed at
-              <span className="font-medium"> ₹0.</span>
+              <span className="font-semibold"> ₹0.</span>
             </h1>
             <p className="w-[393.32px] max-sm:w-full text-[16px] leading-[24px] text-[#E0E0E0]">
               Pay us a fraction of your salary only after you get placed through
@@ -39,7 +78,10 @@ export default function Home() {
             <p className="text-[16px] leading-[24px] text-[#E0E0E0]">
               Our placement partners
             </p>
-            <div className="w-[676px] h-[96px] flex gap-[52px]">
+            <div
+              ref={clientanimation}
+              className="w-[1323.57px] h-[96px] flex gap-[52px]"
+            >
               <Image
                 src="/Image 56.svg"
                 className="pt-[36.77px] pb-[39.23px]"
@@ -68,35 +110,84 @@ export default function Home() {
                 src="/image 59.svg"
                 className="pt-[30.14px] pb-[32.16px]"
                 width={72.14}
-                height={33.26}
+                height={20.89}
+              />
+              <Image
+                src="/Clip path group.svg"
+                className="pt-[30.14px] pb-[32.16px]"
+                width={63.94}
+                height={20.89}
+              />
+              <Image
+                src="/image 60.svg"
+                className="pt-[30.14px] pb-[32.16px]"
+                width={100.57}
+                height={20.89}
+              />
+              <Image
+                src="/brand-guidelines-logo2 1.svg"
+                className="pt-[36.14px] pb-[39.16px]"
+                width={118.32}
+                height={20.89}
+              />
+              <Image
+                src="/Image 56.svg"
+                className="pt-[36.77px] pb-[39.23px]"
+                width={98.24}
+                height={20.89}
+              />
+              <Image
+                src="/Image 57.svg"
+                className="pt-[36.77px] pb-[39.23px]"
+                width={63.15}
+                height={20.89}
+              />
+              <Image
+                src="/TATA_1mg_Logo 1.svg"
+                className="pt-[36.77px] pb-[39.23px]"
+                width={89.92}
+                height={20.89}
+              />
+              <Image
+                src="/shiprocket_logo 1.svg"
+                className="pt-[36.77px] pb-[39.23px]"
+                width={89.98}
+                height={20.89}
               />
               <Image
                 src="/image 59.svg"
                 className="pt-[30.14px] pb-[32.16px]"
                 width={72.14}
-                height={33.26}
+                height={20.89}
               />
               <Image
-                src="/image 59.svg"
+                src="/Clip path group.svg"
                 className="pt-[30.14px] pb-[32.16px]"
-                width={72.14}
-                height={33.26}
+                width={63.94}
+                height={20.89}
               />
               <Image
-                src="/image 59.svg"
+                src="/image 60.svg"
                 className="pt-[30.14px] pb-[32.16px]"
-                width={72.14}
-                height={33.26}
+                width={100.57}
+                height={20.89}
+              />
+              <Image
+                src="/brand-guidelines-logo2 1.svg"
+                className="pt-[36.14px] pb-[39.16px]"
+                width={118.32}
+                height={20.89}
               />
             </div>
           </div>
         </div>
-        <div className="w-[442px] max-sm:w-full max-hamburger:w-[70%] flex flex-col z-20 gap-[32px] max-sm:gap-[20px] max-sm:h-auto h-[605px] px-[37px] max-sm:px-[20px] max-sm:py-[16px] py-[34px] rounded-[14px] bg-[#FFFFFF1A]">
+        <div className="w-[442px] max-sm:w-full backdrop-blur-sm max-hamburger:w-[70%] flex flex-col z-20 gap-[32px] max-sm:gap-[20px] max-sm:h-auto h-[605px] px-[37px] max-sm:px-[20px] max-sm:py-[16px] py-[34px] rounded-[14px] bg-[#FFFFFF1A]">
           <div className="flex flex-col gap-[16px]">
             <p className="text-[16px] leading-[19.2px]">Name</p>
             <input
               type="text"
-              className="h-[54px] rounded-[4px] border-[1px] border-white pl-[17.51px] bg-[transparent] placeholder-[#ffffff99]"
+              onChange={(e) => setName(e.target.value)}
+              className="h-[54px] rounded-[4px] border-[1px] border-white pl-[17.51px] bg-[transparent] placeholder-[#ffffff99] text-white"
               placeholder="Enter your name"
             />
           </div>
@@ -104,15 +195,17 @@ export default function Home() {
             <p className="text-[16px] leading-[19.2px]">Email</p>
             <input
               type="email"
-              className="h-[54px] rounded-[4px] border-[1px] border-white pl-[17.51px] bg-[transparent] placeholder-[#ffffff99]"
+              onChange={(e) => setEmail(e.target.value)}
+              className="h-[54px] rounded-[4px] border-[1px] border-white pl-[17.51px] bg-[transparent] placeholder-[#ffffff99] text-white"
               placeholder="Enter your email"
             />
           </div>
           <div className="flex flex-col gap-[16px]">
             <p className="text-[16px] leading-[19.2px]">Phone number</p>
             <input
-              type="text"
-              className="h-[54px] rounded-[4px] border-[1px] border-white pl-[17.51px] bg-[transparent] placeholder-[#ffffff99]"
+              type="number"
+              onChange={(e) => setPhonenumber(e.target.value)}
+              className="h-[54px] rounded-[4px] border-[1px] border-white pl-[17.51px] bg-[transparent] placeholder-[#ffffff99] text-white"
               placeholder="Enter your phone number"
             />
           </div>
@@ -122,11 +215,11 @@ export default function Home() {
               onClick={() => toggleMenu()}
               className="pl-[17.51px] pr-[18px] flex justify-between h-[54px] bg-[transparent] text-[#ffffff99] cursor-pointer w-full border-[1px] border-white rounded-[6px] py-[16px] text-[17.95px] leading-[21.54px]"
             >
-              <p>{help}</p>
+              <p>{Role}</p>
               <Image src="/arrowdown.svg" width={19.98} height={10.75} />
             </div>
             {isOpen && (
-              <div className="bg-[#FFFFFFF2] absolute border-[1px] rounded-tl-[4px] rounded-[tr]-[4px] top-[89px] z-[22222] cursor-pointer">
+              <div className="bg-[#FFFFFFF2] absolute border-[1px] rounded-tl-[4px] rounded-[tr]-[4px] bottom-[54px] z-[22222] cursor-pointer">
                 <ul>
                   <li
                     onClick={() => handleOptionSelect("Passed out student")}
@@ -162,7 +255,10 @@ export default function Home() {
               </div>
             )}
           </div>
-          <button className="w-full h-[53px] bg-[#30E29D] rounded-[8px] font-bold text-[#292929] text-[16px] font-[19.2px]">
+          <button
+            onClick={handleSubmit}
+            className="w-full h-[53px] bg-[#30E29D] rounded-[8px] font-bold text-[#292929] text-[16px] font-[19.2px]"
+          >
             Talk To Our Experts
           </button>
         </div>
@@ -176,9 +272,11 @@ export default function Home() {
           <p className="w-[817.15px] max-hamburger:w-full font-['Graphikthin'] text-[64px] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] font-light leading-[61.68px] tracking-[-2.56px] text-[#E5E5E5]">
             Be ready with industry relevant skills before you graduate.
           </p>
-          <button className="w-[205px] max-md:hidden h-[53px] bg-[#30E29D] rounded-[8px] font-bold text-[#292929] text-[16px] font-[19.2px]">
-            Explore courses{" "}
-          </button>
+          <Link href={"/courses"}>
+            <button className="w-[205px] max-md:hidden h-[53px] bg-[#30E29D] rounded-[8px] font-bold text-[#292929] text-[16px] font-[19.2px]">
+              Explore courses{" "}
+            </button>
+          </Link>
         </div>
         <div className="flex gap-[21px] max-md:flex-col mt-[67px] max-hamburger:flex-wrap max-hamburger:justify-center">
           <div
@@ -243,22 +341,26 @@ export default function Home() {
             </p>
           </div>
         </div>
-        <button className="w-full max-md:block hidden mt-[40px] h-[53px] bg-[#30E29D] rounded-[8px] font-bold text-[#292929] text-[16px] font-[19.2px]">
-          Explore courses{" "}
-        </button>
+        <Link href={"/courses"}>
+          <button className="w-full max-md:block hidden mt-[40px] h-[53px] bg-[#30E29D] rounded-[8px] font-bold text-[#292929] text-[16px] font-[19.2px]">
+            Explore courses{" "}
+          </button>
+        </Link>
       </div>
       <div className="px-[80px] max-sm:py-0 max-md:px-[40px] max-md:flex-col max-md:gap-[40px] max-sm:px-[20px] py-[103px] flex justify-between">
         <div>
           <h1 className="w-[665.36px] max-smalllaptop:w-full font-['Graphikthin'] max-bigscreen:w-[410px] text-[48px] max-sm:text-[32px] max-hamburger:leading-[120%] leading-[56.64px] tracking-[-1.92px] text-[#E5E5E5]">
             Become a college ambassador and get special perks.
           </h1>
-          <p className="w-[393.32px] mt-[28.56px] max-md:w-[450px] max-sm:w-full text-base text-[#E0E0E0]">
+          <p className="w-[393.32px] mt-[28.56px] max-md:w-[450px] max-sm:w-full text-base text-[#ffffffcc]">
             Our college ambassadors have minimum responsibilities, perks, and a
             better looking resume.
           </p>
-          <button className="w-[165px] max-md:hidden mt-[46.5px] h-[53px] bg-[#30E29D] rounded-[8px] font-bold text-[#292929] text-[16px] font-[19.2px]">
-            Contact Us{" "}
-          </button>
+          <Link href={"/contact-us"}>
+            <button className="w-[165px] max-md:hidden mt-[46.5px] h-[53px] bg-[#30E29D] rounded-[8px] font-bold text-[#292929] text-[16px] font-[19.2px]">
+              Contact Us{" "}
+            </button>
+          </Link>
         </div>
         <Image
           src="/Frame 1000002723.png"
@@ -266,18 +368,22 @@ export default function Home() {
           width={522}
           height={345}
         />
-        <button className="w-full max-md:block hidden h-[53px] bg-[#30E29D] rounded-[8px] font-bold text-[#292929] text-[16px] font-[19.2px]">
-          Contact Us{" "}
-        </button>
+        <Link href={"/contact-us"}>
+          <button className="w-full max-md:block hidden h-[53px] bg-[#30E29D] rounded-[8px] font-bold text-[#292929] text-[16px] font-[19.2px]">
+            Contact Us{" "}
+          </button>
+        </Link>
       </div>
       <div className="pt-[102.57px] max-sm:py-20 max-sm:px-[20px] max-md:px-[40px] relative z-20 pb-[102.43px] pl-[80px] pr-[79px]">
         <div className="flex justify-between max-smalllaptop:gap-[50px]">
           <p className="w-[665px] font-['Graphikthin'] text-[64px] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] font-light leading-[61.68px] tracking-[-2.56px] text-[#E5E5E5]">
             In a career gap and need to brush up your skills?{" "}
           </p>
-          <button className="w-[205px] max-md:hidden h-[53px] bg-[#30E29D] rounded-[8px] font-bold text-[#292929] text-[16px] font-[19.2px]">
-            Explore courses{" "}
-          </button>
+          <Link href={"/courses"}>
+            <button className="w-[205px] max-md:hidden h-[53px] bg-[#30E29D] rounded-[8px] font-bold text-[#292929] text-[16px] font-[19.2px]">
+              Explore courses{" "}
+            </button>
+          </Link>
         </div>
         <div className="flex gap-[21px] mt-[67px] max-md:flex-col max-hamburger:flex-wrap max-hamburger:justify-center">
           <div
@@ -342,9 +448,11 @@ export default function Home() {
             </p>
           </div>
         </div>
-        <button className="w-full max-md:block hidden mt-[40px] h-[53px] bg-[#30E29D] rounded-[8px] font-bold text-[#292929] text-[16px] font-[19.2px]">
-          Explore courses{" "}
-        </button>
+        <Link href={"/courses"}>
+          <button className="w-full max-md:block hidden mt-[40px] h-[53px] bg-[#30E29D] rounded-[8px] font-bold text-[#292929] text-[16px] font-[19.2px]">
+            Explore courses{" "}
+          </button>
+        </Link>
       </div>
       <div className="px-[80px] pt-[77.94px] pb-[100px] flex justify-between max-sm:py-0 max-md:px-[40px] max-md:flex-col max-md:gap-[40px] max-sm:px-[20px]">
         <div>
@@ -355,9 +463,11 @@ export default function Home() {
             Upskill together with your friends to our platform, while enjoying
             the special perks as a referrer.
           </p>
-          <button className="w-[228px] mt-[46px] h-[53px] bg-[#30E29D] rounded-[8px] font-bold text-[#292929] text-[16px] font-[19.2px] max-md:hidden">
-            Learn how to refer{" "}
-          </button>
+          <Link href={"/refer-us"}>
+            <button className="w-[228px] mt-[46px] h-[53px] bg-[#30E29D] rounded-[8px] font-bold text-[#292929] text-[16px] font-[19.2px] max-md:hidden">
+              Learn how to refer{" "}
+            </button>
+          </Link>
         </div>
         <Image
           src="/Frame 1000002723.svg"
@@ -365,9 +475,11 @@ export default function Home() {
           width={522}
           height={345}
         />
-        <button className="w-full max-md:block hidden h-[53px] bg-[#30E29D] rounded-[8px] font-bold text-[#292929] text-[16px] font-[19.2px]">
-          Learn how to refer{" "}
-        </button>
+        <Link href={"/refer-us"}>
+          <button className="w-full max-md:block hidden h-[53px] bg-[#30E29D] rounded-[8px] font-bold text-[#292929] text-[16px] font-[19.2px]">
+            Learn how to refer{" "}
+          </button>
+        </Link>
       </div>
       <div className="pl-[80px] max-md:px-[40px] max-sm:py-20 max-sm:px-[20px] pr-[79px] pt-[77.57px] pb-[139.43px]">
         <h1 className="w-[665.36px] max-hamburger:w-full text-[#E5E5E5] font-['Graphikthin'] text-[64px] leading-[61.68px] tracking-[-2.56px] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%]">
@@ -402,9 +514,11 @@ export default function Home() {
                 &lt; 18 Hours
               </p>
             </div>
-            <button className="w-[100%] mt-[15px] h-[53px] bg-[transparent] rounded-[8px] text-[#30E29D] border-[1px] border-[#30E29D] text-[16px] font-[19.2px]">
-              Learn how to refer{" "}
-            </button>
+            <Link href={"/courses/low-code-no-code"}>
+              <button className="w-[100%] mt-[15px] h-[53px] bg-[transparent] rounded-[8px] text-[#30E29D] hover:text-[#1F1F1F] transition-all font-semibold hover:bg-[#30E29D] border-[1px] border-[#30E29D] text-[16px] font-[19.2px]">
+                Learn more{" "}
+              </button>
+            </Link>
           </div>
           <div
             className={`px-[18px] border-[1px] w-[33%] max-md:w-full max-smalllaptop:w-[48.3%] border-white rounded-[10px] py-[20px] ${style.cardbg}`}
@@ -434,9 +548,11 @@ export default function Home() {
                 &lt; 18 Hours
               </p>
             </div>
-            <button className="w-[100%] mt-[15px] h-[53px] bg-[transparent] rounded-[8px] text-[#30E29D] border-[1px] border-[#30E29D] text-[16px] font-[19.2px]">
-              Learn how to refer{" "}
-            </button>
+            <Link href={"/courses/artificial-intelligence"}>
+              <button className="w-[100%] mt-[15px] h-[53px] bg-[transparent] rounded-[8px] text-[#30E29D] hover:text-[#1F1F1F] transition-all font-semibold hover:bg-[#30E29D] border-[1px] border-[#30E29D] text-[16px] font-[19.2px]">
+                Learn more{" "}
+              </button>
+            </Link>
           </div>
           <div
             className={`px-[18px] border-[1px] w-[33%] max-md:w-full max-smalllaptop:w-[48.3%] border-white rounded-[10px] py-[20px] ${style.cardbg}`}
@@ -466,9 +582,11 @@ export default function Home() {
                 &lt; 18 Hours
               </p>
             </div>
-            <button className="w-[100%] mt-[15px] h-[53px] bg-[transparent] rounded-[8px] text-[#30E29D] border-[1px] border-[#30E29D] text-[16px] font-[19.2px]">
-              Learn how to refer{" "}
-            </button>
+            <Link href={"/courses/data-analytics"}>
+              <button className="w-[100%] mt-[15px] h-[53px] bg-[transparent] rounded-[8px] text-[#30E29D] hover:text-[#1F1F1F] transition-all font-semibold hover:bg-[#30E29D] border-[1px] border-[#30E29D] text-[16px] font-[19.2px]">
+                Learn more{" "}
+              </button>
+            </Link>
           </div>
           <div
             className={`px-[18px] border-[1px] w-[33%] max-md:w-full max-smalllaptop:w-[48.3%] border-white rounded-[10px] py-[20px] ${style.cardbg}`}
@@ -498,9 +616,11 @@ export default function Home() {
                 &lt; 18 Hours
               </p>
             </div>
-            <button className="w-[100%] mt-[15px] h-[53px] bg-[transparent] rounded-[8px] text-[#30E29D] border-[1px] border-[#30E29D] text-[16px] font-[19.2px]">
-              Learn how to refer{" "}
-            </button>
+            <Link href={"/courses/full-stack-development"}>
+              <button className="w-[100%] mt-[15px] h-[53px] bg-[transparent] rounded-[8px] text-[#30E29D] hover:text-[#1F1F1F] transition-all font-semibold hover:bg-[#30E29D] border-[1px] border-[#30E29D] text-[16px] font-[19.2px]">
+                Learn more{" "}
+              </button>
+            </Link>
           </div>
         </div>
       </div>
@@ -581,13 +701,13 @@ export default function Home() {
       </section>
       <Success />
       <section className="px-20 max-md:px-[40px] max-sm:px-[20px] max-sm:py-0 pt-[45px] pb-[94.24px] flex justify-between max-hamburger:gap-[40px] max-md:flex-col">
-        <h1 className="w-[600px] max-hamburger:w-full  max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] text-[64px] leading-[61.68px] font-['Graphikthin'] text-[#E5E5E5]">
+        <h1 className="w-[600px] max-hamburger:w-full  max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] text-[64px] leading-[61.68px] font-['Graphikthin'] tracking-[-2.56px] text-[#E5E5E5]">
           Learn from leading industry experts
         </h1>
-        <div className="w-[640px] overflow-scroll max-md:w-full h-[530.76px] max-sm:h-auto">
-          <div className="h-[705px] max-sm:h-auto">
+        <div className="w-[640px] overflow-hidden max-md:w-full h-[530.76px] max-sm:h-auto">
+          <div ref={leadinganimation} className="h-[705px] max-sm:h-auto">
             <div
-              className={`w-[630px] max-hamburger:w-full max-md:w-full max-sm:pl-[20px] max-sm:gap-[20px] pl-[28.7px] flex gap-[40px] items-center h-[159px] max-sm:h-[80px] rounded-[8px] ${style.learncard}`}
+              className={`w-[630px] max-hamburger:w-full max-md:w-full max-sm:pl-[20px] max-hamburger:gap-[20px] pl-[28.7px] flex gap-[40px] items-center h-[159px] max-sm:h-[80px] rounded-[8px] ${style.learncard}`}
             >
               {" "}
               <Image
@@ -597,16 +717,16 @@ export default function Home() {
                 className="max-sm:w-[50px]"
               />
               <div>
-                <h1 className="text-[#E5E5E5] max-sm:text-[24px] max-sm:leading-[120%] text-[36px] leading-[40.32px] tracking-[-0.98px] text-[#E5E5E5] font-['Graphikthin']">
+                <h1 className="text-[#E5E5E5] max-hamburger:text-[24px] max-hamburger:leading-[120%] text-[36px] leading-[40.32px] tracking-[-0.98px] text-[#E5E5E5] font-['Graphikthin']">
                   Prashant Hegde
                 </h1>
-                <p className="text-[#A1A1A1] mt-[4px]">
+                <p className="text-[#A1A1A1] mt-[4px] max-hamburger:text-sm">
                   Senior Designer, Spotify
                 </p>
               </div>
             </div>
             <div
-              className={`w-[630px] max-hamburger:w-full max-md:w-full max-sm:pl-[20px] max-sm:gap-[20px] mt-[20px] pl-[28.7px] flex gap-[40px] items-center h-[159px] max-sm:h-[80px] rounded-[8px] ${style.learncard}`}
+              className={`w-[630px] max-hamburger:w-full max-md:w-full max-sm:pl-[20px] max-hamburger:gap-[20px] mt-[20px] pl-[28.7px] flex gap-[40px] items-center h-[159px] max-sm:h-[80px] rounded-[8px] ${style.learncard}`}
             >
               {" "}
               <Image
@@ -616,16 +736,16 @@ export default function Home() {
                 className="max-sm:w-[50px]"
               />
               <div>
-                <h1 className="text-[#E5E5E5] max-sm:text-[24px] max-sm:leading-[120%] text-[36px] leading-[40.32px] tracking-[-0.98px] text-[#E5E5E5] font-['Graphikthin']">
+                <h1 className="text-[#E5E5E5] max-hamburger:text-[24px] max-hamburger:leading-[120%] text-[36px] leading-[40.32px] tracking-[-0.98px] text-[#E5E5E5] font-['Graphikthin']">
                   Prashant Hegde
                 </h1>
-                <p className="text-[#A1A1A1] mt-[4px]">
+                <p className="text-[#A1A1A1] mt-[4px] max-hamburger:text-sm">
                   Senior Designer, Spotify
                 </p>
               </div>
             </div>
             <div
-              className={` mt-[20px] max-hamburger:w-full max-md:w-full w-[630px] max-sm:pl-[20px] max-sm:gap-[20px] pl-[28.7px] flex gap-[40px] items-center h-[159px] max-sm:h-[80px] rounded-[8px] ${style.learncard}`}
+              className={` mt-[20px] max-hamburger:w-full max-md:w-full w-[630px] max-sm:pl-[20px] max-hamburger:gap-[20px] pl-[28.7px] flex gap-[40px] items-center h-[159px] max-sm:h-[80px] rounded-[8px] ${style.learncard}`}
             >
               {" "}
               <Image
@@ -635,16 +755,16 @@ export default function Home() {
                 className="max-sm:w-[50px]"
               />
               <div>
-                <h1 className="text-[#E5E5E5] max-sm:text-[24px] max-sm:leading-[120%] text-[36px] leading-[40.32px] tracking-[-0.98px] text-[#E5E5E5] font-['Graphikthin']">
+                <h1 className="text-[#E5E5E5] max-hamburger:text-[24px] max-hamburger:leading-[120%] text-[36px] leading-[40.32px] tracking-[-0.98px] text-[#E5E5E5] font-['Graphikthin']">
                   Prashant Hegde
                 </h1>
-                <p className="text-[#A1A1A1] mt-[4px]">
+                <p className="text-[#A1A1A1] mt-[4px] max-hamburger:text-sm">
                   Senior Designer, Spotify
                 </p>
               </div>
             </div>
             <div
-              className={` mt-[20px] max-hamburger:w-full max-md:w-full w-[630px] max-sm:pl-[20px] max-sm:gap-[20px] pl-[28.7px] flex gap-[40px] items-center h-[159px] max-sm:h-[80px] rounded-[8px] ${style.learncard}`}
+              className={` mt-[20px] max-hamburger:w-full max-md:w-full w-[630px] max-sm:pl-[20px] max-hamburger:gap-[20px] pl-[28.7px] flex gap-[40px] items-center h-[159px] max-sm:h-[80px] rounded-[8px] ${style.learncard}`}
             >
               {" "}
               <Image
@@ -654,10 +774,10 @@ export default function Home() {
                 height={107.16}
               />
               <div>
-                <h1 className="text-[#E5E5E5] max-sm:text-[24px] max-sm:leading-[120%] text-[36px] leading-[40.32px] tracking-[-0.98px] text-[#E5E5E5] font-['Graphikthin']">
+                <h1 className="text-[#E5E5E5] max-hamburger:text-[24px] max-hamburger:leading-[120%] text-[36px] leading-[40.32px] tracking-[-0.98px] text-[#E5E5E5] font-['Graphikthin']">
                   Prashant Hegde
                 </h1>
-                <p className="text-[#A1A1A1] mt-[4px]">
+                <p className="text-[#A1A1A1] mt-[4px] max-hamburger:text-sm">
                   Senior Designer, Spotify
                 </p>
               </div>
@@ -665,7 +785,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="w-[100%] h-[614px] max-sm:h-auto max-sm:h-[300px] max-sm:mt-20 overflow-hidden flex justify-center items-center relative">
+      <section className="w-[100%] h-[614px] max-sm:h-auto max-sm:h-[300px] max-sm:mt-10 max-sm:py-10 overflow-hidden flex justify-center items-center relative">
         <Image
           src="/Frame 83.svg"
           className="absolute top-[23.1px] opacity-10 bg-transparent pl-[78.14px] h-[747.06px] w-[100%] pr-[76.27px] z-[1]"
@@ -681,7 +801,7 @@ export default function Home() {
         </div>
       </section>
       <section className="w-[100%] max-xl:h-[1150px] max-hamburger:h-auto max-xl:overflow-hidden px-[80px] max-sm:px-[20px] max-md:px-[40px] max-sm:py-20 pt-[143px] pb-[166.13px] relative">
-        <p className="text-[#E5E5E5] text-[20px] leading-[19.28px] font-['Graphikthin'] mb-[18px] opacity-70">
+        <p className="text-[#E5E5E5] text-[20px] leading-[19.28px] font-['Graphikthin'] mb-[18px] opacity-90">
           Looking for different ways to engage your students?
         </p>
         <h1 className="w-[665.36px] z-[2] text-[64px] max-smalllaptop:w-full font-['Graphikthin'] text-[64px] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] leading-[61.68px] mb-[32px] font-['Graphikthin'] text-[#E5E5E5] tracking-[-2.56px]">
@@ -691,12 +811,16 @@ export default function Home() {
           Get in touch with our representative for further details.
         </p>
         <div className="flex mt-[32px] max-md:flex-col gap-[32px]">
-          <button className="w-[295px] max-md:w-full h-[53px] bg-[#30E29D] rounded-[8px] font-bold text-[#292929] text-[16px] font-[19.2px]">
-            Learn About Our Workshops{" "}
-          </button>
-          <button className="w-[165px] max-md:w-full h-[53px] bg-[transparent] rounded-[8px] border-[1px] border-[#30E29D] font-bold text-[#30E29D] text-[16px] font-[19.2px]">
-            Contact Us{" "}
-          </button>
+          <Link href={"/workshops"}>
+            <button className="w-[295px] max-md:w-full h-[53px] bg-[#30E29D] rounded-[8px] font-bold text-[#292929] text-[16px] font-[19.2px]">
+              Learn About Our Workshops{" "}
+            </button>
+          </Link>
+          <Link href={"/contact-us"}>
+            <button className="w-[165px] max-md:w-full h-[53px] bg-[transparent] rounded-[8px] border-[1px] border-[#30E29D] font-bold text-[#30E29D] text-[16px] font-[19.2px]">
+              Contact Us{" "}
+            </button>
+          </Link>
         </div>
         <Image
           src="/image-from-rawpixel-id-12991629-png 1.svg"

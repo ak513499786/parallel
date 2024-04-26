@@ -1,7 +1,7 @@
 import Image from "next/image";
 import style from "@/styles/style.module.css";
-import Navbar from "./navbar";
-import Footer from "./footer";
+import Navbar from "./components/navbar";
+import Footer from "./components/footer";
 import Link from "next/link";
 
 export default function Signup() {
@@ -23,15 +23,15 @@ export default function Signup() {
         <div className="flex justify-center max-md:justify-between max-md:w-full gap-[18px]">
           <Link
             href={"#"}
-            className="text-[16px] w-[140px] h-[53px] flex justify-center items-center font-semibold relative bg-[#30E29D] text-black rounded-[8px] leading-[53px]"
+            className="text-[16px] w-[140px] h-[53px] flex justify-center items-center font-semibold relative bg-[#30E29D] text-black rounded-[8px] leading-[20px]"
           >
             Sign up
           </Link>
           <Link
             href={"#"}
-            className="text-[16px] w-[140px] h-[53px] flex justify-center items-center font-semibold relative border-[1px] text-[#30E29D] border-[#30E29D] rounded-[8px] leading-[16px]"
+            className="text-[16px] w-[140px] h-[53px] flex justify-center items-center font-semibold relative border-[1px] text-[#30E29D] border-[#30E29D] rounded-[8px] leading-[20px]"
           >
-            Log in{" "}
+            <p>Log in </p>
           </Link>
         </div>
       </div>
