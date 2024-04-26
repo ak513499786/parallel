@@ -5,8 +5,17 @@ import Navbar from "../../components/navbar";
 import Footer from "../../components/footer";
 import Upskill from "../../components/upskill";
 import Success from "../../components/success";
+import { useState, useRef } from "react";
 
 export default function Nocode() {
+  const [activeSection, setActiveSection] = useState(0);
+  const Main = useRef(null);
+  const scrollToMain = (index) => {
+    if (Main.current) {
+      Main.current.scrollIntoView({ behavior: "smooth" });
+    }
+    setActiveSection(index);
+  };
   return (
     <>
       <Navbar />
@@ -158,30 +167,76 @@ export default function Nocode() {
             </div>
           </div>
         </section>
-        <section className="pt-[95px] max-md:py-0 relative px-[80px] max-md:px-[40px] max-sm:px-[20px] pb-[37px]">
-          <h1 className="w-[630px] text-[#E5E5E5] max-md:w-full text-[64px] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] font-['Graphikthin'] leading-[61.68px] tracking-[-2.56px] mb-[60px]">
+        <section
+          ref={Main}
+          className="pt-[95px] max-md:py-0 relative px-[80px] max-md:px-[40px] max-sm:px-[20px] pb-[37px]"
+        >
+          <h1 className="w-[630px] text-[#E5E5E5] max-md:w-full text-[64px] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] font-['Graphikthin'] leading-[61.68px] tracking-[-2.56px]">
             What you will learn in this course.{" "}
           </h1>
-          <div className="flex gap-[20px] pl-[2px] max-hamburger:flex-col">
+          <div className="flex gap-[20px] mt-[60px] pl-[2px] max-hamburger:flex-col">
             <div className="max-hamburger:flex flex-wrap">
-              <h1 className="text-[20px] max-md:text-base max-sm:text-sm mb-[16px] leading-[25.2px] tracking-[-0.6px] text-[#E0E0E0] font-['Graphikthin'] justify-center flex rounded-[8px] border-[1px] border-[#FFFFFF66] items-center py-[21.5px] text-center w-[303px] max-smalllaptop:w-[200px] max-md:w-[100px] max-md:py-[10px]">
+              <a
+                href="#week1"
+                onClick={() => scrollToMain(0)}
+                className={
+                  activeSection === 0
+                    ? "text-[20px] cursor-pointer max-md:text-base max-sm:text-sm mb-[16px] leading-[25.2px] tracking-[-0.6px] text-[#E0E0E0] font-['Graphikthin'] justify-center flex rounded-[8px] border-[1px] border-[#FFFFFF66] items-center py-[21.5px] text-center w-[303px] max-smalllaptop:w-[200px] max-md:w-[100px] max-md:py-[10px]"
+                    : "text-[20px] cursor-pointer max-md:text-base max-sm:text-sm mb-[16px] opacity-80 leading-[25.2px] tracking-[-0.6px] text-[#E0E0E0] font-['Graphikthin'] justify-center flex rounded-[8px] border-[1px] border-[#FFFFFF0D] items-center py-[21.5px] text-center w-[303px] max-smalllaptop:w-[200px] max-md:w-[100px] max-md:py-[10px]"
+                }
+              >
                 Week 1 to 5
-              </h1>
-              <h1 className="text-[20px] max-md:text-base max-sm:text-sm mb-[16px] opacity-80 leading-[25.2px] tracking-[-0.6px] text-[#E0E0E0] font-['Graphikthin'] justify-center flex rounded-[8px] border-[1px] border-[#FFFFFF0D] items-center py-[21.5px] text-center w-[303px] max-smalllaptop:w-[200px] max-md:w-[100px] max-md:py-[10px]">
+              </a>
+              <a
+                href="#week6"
+                onClick={() => scrollToMain(1)}
+                className={
+                  activeSection === 1
+                    ? "text-[20px] cursor-pointer max-md:text-base max-sm:text-sm mb-[16px] leading-[25.2px] tracking-[-0.6px] text-[#E0E0E0] font-['Graphikthin'] justify-center flex rounded-[8px] border-[1px] border-[#FFFFFF66] items-center py-[21.5px] text-center w-[303px] max-smalllaptop:w-[200px] max-md:w-[100px] max-md:py-[10px]"
+                    : "text-[20px] cursor-pointer max-md:text-base max-sm:text-sm mb-[16px] opacity-80 leading-[25.2px] tracking-[-0.6px] text-[#E0E0E0] font-['Graphikthin'] justify-center flex rounded-[8px] border-[1px] border-[#FFFFFF0D] items-center py-[21.5px] text-center w-[303px] max-smalllaptop:w-[200px] max-md:w-[100px] max-md:py-[10px]"
+                }
+              >
                 Week 6 to 10
-              </h1>
-              <h1 className="text-[20px] max-md:text-base max-sm:text-sm mb-[16px] opacity-80 leading-[25.2px] tracking-[-0.6px] text-[#E0E0E0] font-['Graphikthin'] justify-center flex rounded-[8px] border-[1px] border-[#FFFFFF0D] items-center py-[21.5px] text-center w-[303px] max-smalllaptop:w-[200px] max-md:w-[100px] max-md:py-[10px]">
+              </a>
+              <a
+                href="#week11"
+                onClick={() => scrollToMain(2)}
+                className={
+                  activeSection === 2
+                    ? "text-[20px] cursor-pointer max-md:text-base max-sm:text-sm mb-[16px] leading-[25.2px] tracking-[-0.6px] text-[#E0E0E0] font-['Graphikthin'] justify-center flex rounded-[8px] border-[1px] border-[#FFFFFF66] items-center py-[21.5px] text-center w-[303px] max-smalllaptop:w-[200px] max-md:w-[100px] max-md:py-[10px]"
+                    : "text-[20px] cursor-pointer max-md:text-base max-sm:text-sm mb-[16px] opacity-80 leading-[25.2px] tracking-[-0.6px] text-[#E0E0E0] font-['Graphikthin'] justify-center flex rounded-[8px] border-[1px] border-[#FFFFFF0D] items-center py-[21.5px] text-center w-[303px] max-smalllaptop:w-[200px] max-md:w-[100px] max-md:py-[10px]"
+                }
+              >
                 Week 11 to 20{" "}
-              </h1>
-              <h1 className="text-[20px] max-md:text-base max-sm:text-sm mb-[16px] opacity-80 leading-[25.2px] tracking-[-0.6px] text-[#E0E0E0] font-['Graphikthin'] justify-center flex rounded-[8px] border-[1px] border-[#FFFFFF0D] items-center py-[21.5px] text-center w-[303px] max-smalllaptop:w-[200px] max-md:w-[100px] max-md:py-[10px]">
+              </a>
+              <a
+                href="#week21"
+                onClick={() => scrollToMain(3)}
+                className={
+                  activeSection === 3
+                    ? "text-[20px] cursor-pointer max-md:text-base max-sm:text-sm mb-[16px] leading-[25.2px] tracking-[-0.6px] text-[#E0E0E0] font-['Graphikthin'] justify-center flex rounded-[8px] border-[1px] border-[#FFFFFF66] items-center py-[21.5px] text-center w-[303px] max-smalllaptop:w-[200px] max-md:w-[100px] max-md:py-[10px]"
+                    : "text-[20px] cursor-pointer max-md:text-base max-sm:text-sm mb-[16px] opacity-80 leading-[25.2px] tracking-[-0.6px] text-[#E0E0E0] font-['Graphikthin'] justify-center flex rounded-[8px] border-[1px] border-[#FFFFFF0D] items-center py-[21.5px] text-center w-[303px] max-smalllaptop:w-[200px] max-md:w-[100px] max-md:py-[10px]"
+                }
+              >
                 Week 21 to 25{" "}
-              </h1>
-              <h1 className="text-[20px] max-md:text-base max-sm:text-sm mb-[16px] opacity-80 leading-[25.2px] tracking-[-0.6px] text-[#E0E0E0] font-['Graphikthin'] justify-center flex rounded-[8px] border-[1px] border-[#FFFFFF0D] items-center py-[21.5px] text-center w-[303px] max-smalllaptop:w-[200px] max-md:w-[100px] max-md:py-[10px]">
-                Week 25 to 30{" "}
-              </h1>
+              </a>
+              <a
+                href="#week26"
+                onClick={() => scrollToMain(4)}
+                className={
+                  activeSection === 4
+                    ? "text-[20px] cursor-pointer max-md:text-base max-sm:text-sm mb-[16px] leading-[25.2px] tracking-[-0.6px] text-[#E0E0E0] font-['Graphikthin'] justify-center flex rounded-[8px] border-[1px] border-[#FFFFFF66] items-center py-[21.5px] text-center w-[303px] max-smalllaptop:w-[200px] max-md:w-[100px] max-md:py-[10px]"
+                    : "text-[20px] cursor-pointer max-md:text-base max-sm:text-sm mb-[16px] opacity-80 leading-[25.2px] tracking-[-0.6px] text-[#E0E0E0] font-['Graphikthin'] justify-center flex rounded-[8px] border-[1px] border-[#FFFFFF0D] items-center py-[21.5px] text-center w-[303px] max-smalllaptop:w-[200px] max-md:w-[100px] max-md:py-[10px]"
+                }
+              >
+                Week 26 to 30{" "}
+              </a>
             </div>
-            <div className="bg-[#FFFFFF0D] overflow-scroll w-[955px] max-hamburger:w-full max-biggerscreen:w-[900px] h-[663px] rounded-[8px] pl-[27px] pr-[57px] max-smalllaptop:px-[20px]">
-              <div className="mt-[38.5px] py-[21px] pl-[20.38px] bg-[#FFFFFF0D] rounded-[8px] max-biggerscreen:w-full w-[870px] h-[166px] max-smalllaptop:h-auto">
+            <div className="bg-[#FFFFFF0D] container scroll-smooth overflow-scroll w-[955px] max-hamburger:w-full max-biggerscreen:w-[900px] h-[663px] rounded-[8px] pl-[27px] pr-[57px] max-smalllaptop:px-[20px]">
+              <div
+                id="week1"
+                className="mt-[38.5px] py-[21px] pl-[20.38px] bg-[#FFFFFF0D] rounded-[8px] max-biggerscreen:w-full w-[870px] h-[166px] max-smalllaptop:h-auto"
+              >
                 <p className="text-[16px] leading-[20.16px] opacity-70 mb-[13px]">
                   Week 01
                 </p>
@@ -229,7 +284,10 @@ export default function Nocode() {
                   cases across industries.
                 </p>
               </div>
-              <div className="mt-[16px] py-[21px] pl-[20.38px] bg-[#FFFFFF0D] rounded-[8px] w-[870px] h-[166px] max-biggerscreen:w-full max-smalllaptop:h-auto">
+              <div
+                id="week6"
+                className="mt-[16px] py-[21px] pl-[20.38px] bg-[#FFFFFF0D] rounded-[8px] w-[870px] h-[166px] max-biggerscreen:w-full max-smalllaptop:h-auto"
+              >
                 <p className="text-[16px] leading-[20.16px] opacity-70 mb-[13px]">
                   Week 05
                 </p>
@@ -241,7 +299,7 @@ export default function Nocode() {
                   cases across industries.
                 </p>
               </div>
-              <div className="mt-[16px] py-[21px] pl-[20.38px] bg-[#FFFFFF0D] rounded-[8px] w-[870px] h-[166px] max-biggerscreen:w-full max-smalllaptop:h-auto">
+              <div className="mt-[16px]  container py-[21px] pl-[20.38px] bg-[#FFFFFF0D] rounded-[8px] w-[870px] h-[166px] max-biggerscreen:w-full max-smalllaptop:h-auto">
                 <p className="text-[16px] leading-[20.16px] opacity-70 mb-[13px]">
                   Week 06
                 </p>
@@ -289,7 +347,10 @@ export default function Nocode() {
                   cases across industries.
                 </p>
               </div>
-              <div className="mt-[16px] py-[21px] pl-[20.38px] bg-[#FFFFFF0D] rounded-[8px] w-[870px] h-[166px] max-biggerscreen:w-full max-smalllaptop:h-auto">
+              <div
+                id="week11"
+                className="mt-[16px] py-[21px] pl-[20.38px] bg-[#FFFFFF0D] rounded-[8px] w-[870px] h-[166px] max-biggerscreen:w-full max-smalllaptop:h-auto"
+              >
                 <p className="text-[16px] leading-[20.16px] opacity-70 mb-[13px]">
                   Week 10
                 </p>
@@ -301,7 +362,7 @@ export default function Nocode() {
                   cases across industries.
                 </p>
               </div>
-              <div className="mt-[16px] py-[21px] pl-[20.38px] bg-[#FFFFFF0D] rounded-[8px] w-[870px] h-[166px] max-biggerscreen:w-full max-smalllaptop:h-auto">
+              <div className="mt-[16px] container py-[21px] pl-[20.38px] bg-[#FFFFFF0D] rounded-[8px] w-[870px] h-[166px] max-biggerscreen:w-full max-smalllaptop:h-auto">
                 <p className="text-[16px] leading-[20.16px] opacity-70 mb-[13px]">
                   Week 11
                 </p>
@@ -409,7 +470,10 @@ export default function Nocode() {
                   cases across industries.
                 </p>
               </div>
-              <div className="mt-[16px] py-[21px] pl-[20.38px] bg-[#FFFFFF0D] rounded-[8px] w-[870px] h-[166px] max-biggerscreen:w-full max-smalllaptop:h-auto">
+              <div
+                id="week21"
+                className="mt-[16px] py-[21px] pl-[20.38px] bg-[#FFFFFF0D] rounded-[8px] w-[870px] h-[166px] max-biggerscreen:w-full max-smalllaptop:h-auto"
+              >
                 <p className="text-[16px] leading-[20.16px] opacity-70 mb-[13px]">
                   Week 20
                 </p>
@@ -421,7 +485,7 @@ export default function Nocode() {
                   cases across industries.
                 </p>
               </div>
-              <div className="mt-[16px] py-[21px] pl-[20.38px] bg-[#FFFFFF0D] rounded-[8px] w-[870px] h-[166px] max-biggerscreen:w-full max-smalllaptop:h-auto">
+              <div className="mt-[16px] container py-[21px] pl-[20.38px] bg-[#FFFFFF0D] rounded-[8px] w-[870px] h-[166px] max-biggerscreen:w-full max-smalllaptop:h-auto">
                 <p className="text-[16px] leading-[20.16px] opacity-70 mb-[13px]">
                   Week 21
                 </p>
@@ -469,7 +533,10 @@ export default function Nocode() {
                   cases across industries.
                 </p>
               </div>
-              <div className="mt-[16px] py-[21px] pl-[20.38px] bg-[#FFFFFF0D] rounded-[8px] w-[870px] h-[166px] max-biggerscreen:w-full max-smalllaptop:h-auto">
+              <div
+                id="week26"
+                className="mt-[16px] py-[21px] pl-[20.38px] bg-[#FFFFFF0D] rounded-[8px] w-[870px] h-[166px] max-biggerscreen:w-full max-smalllaptop:h-auto"
+              >
                 <p className="text-[16px] leading-[20.16px] opacity-70 mb-[13px]">
                   Week 25
                 </p>
@@ -481,7 +548,7 @@ export default function Nocode() {
                   cases across industries.
                 </p>
               </div>
-              <div className="mt-[16px] py-[21px] pl-[20.38px] bg-[#FFFFFF0D] rounded-[8px] w-[870px] h-[166px] max-biggerscreen:w-full max-smalllaptop:h-auto">
+              <div className="mt-[16px] container py-[21px] pl-[20.38px] bg-[#FFFFFF0D] rounded-[8px] w-[870px] h-[166px] max-biggerscreen:w-full max-smalllaptop:h-auto">
                 <p className="text-[16px] leading-[20.16px] opacity-70 mb-[13px]">
                   Week 26
                 </p>
