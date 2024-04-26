@@ -1,7 +1,7 @@
 import Image from "next/image";
 import style from "@/styles/style.module.css";
-import Navbar from "./components/navbar";
-import Footer from "./components/footer";
+import Navbar from "../components/navbar";
+import Footer from "../components/footer";
 import Link from "next/link";
 
 export default function Signup() {

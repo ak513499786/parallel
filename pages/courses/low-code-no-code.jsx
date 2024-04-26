@@ -1,10 +1,10 @@
 import Image from "next/image";
 import style from "@/styles/style.module.css";
 import Link from "next/link";
-import Navbar from "../components/navbar";
-import Footer from "../components/footer";
-import Upskill from "../components/upskill";
-import Success from "../components/success";
+import Navbar from "../../components/navbar";
+import Footer from "../../components/footer";
+import Upskill from "../../components/upskill";
+import Success from "../../components/success";
 
 export default function Nocode() {
   return (
@@ -75,7 +75,7 @@ export default function Nocode() {
         </div>
         <section className="pt-[124.98px] relative px-[80px] max-sm:px-[20px] max-md:px-[40px] pb-[119px]">
           <div className="flex justify-center">
-            <h1 className="w-[936.01px] text-[102.17px] max-smalllaptop:tracking-[-2.56px] max-smalllaptop:text-[84px] max-sm:text-[64px] max-smalllaptop:leading-[102%] text-center font-['Graphikthin'] leading-[104.21px] tracking-[]">
+            <h1 className="w-[936.01px] text-[102.17px] max-smalllaptop:tracking-[-2.56px] max-smalllaptop:text-[84px] max-sm:text-[64px] max-smalllaptop:leading-[102%] text-center font-['Graphikthin'] leading-[104.21px] text-[#E5E5E5] tracking-[-5.1px]">
               No-code, Low-code is here to stay
             </h1>
           </div>
@@ -159,7 +159,7 @@ export default function Nocode() {
           </div>
         </section>
         <section className="pt-[95px] max-md:py-0 relative px-[80px] max-md:px-[40px] max-sm:px-[20px] pb-[37px]">
-          <h1 className="w-[630px] max-md:w-full text-[64px] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] font-['Graphikthin'] leading-[61.68px] tracking-[-2.56px] mb-[60px]">
+          <h1 className="w-[630px] max-md:w-full text-[64px] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] font-['Graphikthin'] leading-[61.68px] tracking-[-2.56px] mb-[60px] text-[#E5E5E5]">
             What you will learn in this course.{" "}
           </h1>
           <div className="flex gap-[20px] pl-[2px] max-hamburger:flex-col">
@@ -545,7 +545,7 @@ export default function Nocode() {
           </div>
         </section>
         <section className="pt-[124.98px] relative px-[80px] max-sm:px-[20px] max-md:px-[40px] max-md:py-20 pb-[119px]">
-          <h1 className="w-[630px] max-md:w-full text-[64px] font-['Graphikthin'] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] leading-[61.68px] tracking-[-2.56px]">
+          <h1 className="w-[630px] text-[#E5E5E5] max-md:w-full text-[64px] font-['Graphikthin'] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] leading-[61.68px] tracking-[-2.56px]">
             What you will need to finish this course.{" "}
           </h1>
           <div className="flex max-hamburger:flex-wrap max-hamburger:justify-center gap-[20px] mt-[71.02px]">
@@ -640,11 +640,11 @@ export default function Nocode() {
             height={236}
           />
           <h1 className="mt-[20.87px] leading-[31.36px] mb-[17.13px] tracking-[-0.84px] font-['Graphikthin'] text-[#E5E5E5] text-[28px]">
-            Product Design Mastery
+            No-code, Low-code Development{" "}
           </h1>
           <div className="flex gap-[8px]">
             <p className="max-sm:text-sm px-[8px] py-[4px] rounded-[5px] text-[#797979] text-base border-[1px] border-[#797979]">
-              UI/UX design{" "}
+              No-code, Low-code{" "}
             </p>
             <p className="max-sm:text-sm px-[8px] py-[4px] rounded-[5px] text-[#797979] text-base border-[1px] border-[#797979]">
               Beginner friendly{" "}
@@ -660,10 +660,10 @@ export default function Nocode() {
           </div>
         </div>
         <div className="relative z-20">
-          <p className="text-[20px] leading-[19.28px] mb-[24px]">
+          <p className="text-[20px] font-['Graphikthin'] text-[#E5E5E5] leading-[19.28px] mb-[24px]">
             No-code, Low-code Development
           </p>
-          <h1 className="text-[64px] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] max-md:w-full w-[630px] max-smalllaptop:w-[450px] max-xl:w-[590px] leading-[61.68px] tracking-[-2.56px] font-['Graphikthin'] text-[#E5E5E5]">
+          <h1 className="text-[64px] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] max-md:w-full w-[630px] max-smalllaptop:w-[450px] max-xl:w-[590px] text-[#E5E5E5] leading-[61.68px] tracking-[-2.56px] font-['Graphikthin'] text-[#E5E5E5]">
             Start learning now, worry about fees after you get placed.
           </h1>
           <button className="text-[16px] max-md:w-full font-semibold mt-[56px] relative bg-[#30E29D] text-black py-[8px] px-[24px] rounded-[8px] leading-[24px] py-[8px]">

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import style from "@/styles/style.module.css";
-import Navbar from "./components/navbar";
-import Footer from "./components/footer";
+import Navbar from "../components/navbar";
+import Footer from "../components/footer";
 import Link from "next/link";
 import axios from "axios";
 import { useState } from "react";
@@ -136,10 +136,10 @@ export default function Courses() {
           <div
             className={`pl-[28px] w-[33%] h-[466px] max-lg:h-[480px] pb-[41.87px] pr-[29.85px] border-[1px] pt-[31.57px] rounded-[8px] max-sm:px-[20px] max-sm:py-[16px] max-hamburger:w-[45%] max-md:w-full max-md:h-auto ${style.bordergradient}`}
           >
-            <div className="bg-[#1F1F1F] w-[105px] pt-[26.26px] pb-[26.01px] pl-[26.39px] pr-[26.88px] border-[1px] rounded-[6px] border-[#FFFFFF66] ">
+            <div className="bg-[#1F1F1F] w-[105px] py-[35px] pl-[26.39px] pr-[26.88px] border-[1px] rounded-[6px] border-[#FFFFFF66] ">
               {" "}
               <Image
-                src="/book-reading--book-reading-learning.svg"
+                src="/1.svg"
                 width={51.73}
                 height={51.73}
               />
@@ -160,7 +160,7 @@ export default function Courses() {
             <div className="bg-[#1F1F1F] w-[105px] px-[26.63px] py-[26.13px] border-[1px] rounded-[6px] border-[#FFFFFF66] ">
               {" "}
               <Image
-                src="/bag-suitcase-2--product-business-briefcase.svg"
+                src="/brain.svg"
                 width={51.73}
                 height={51.73}
               />
@@ -180,7 +180,7 @@ export default function Courses() {
             <div className="bg-[#1F1F1F] w-[105px] pt-[22.3px] pb-[21.7px] pl-[22.95px] pr-[22.05px] border-[1px] rounded-[6px] border-[#FFFFFF66] ">
               {" "}
               <Image
-                src="/Calendar-3--Streamline-Ultimate.svg.svg"
+                src="/multiuser.svg"
                 width={60}
                 height={60}
               />

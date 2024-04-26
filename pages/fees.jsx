@@ -1,9 +1,9 @@
 import Image from "next/image";
 import style from "@/styles/style.module.css";
-import Navbar from "./components/navbar";
-import Footer from "./components/footer";
-import Upskill from "./components/upskill";
-import Success from "./components/success";
+import Navbar from "../components/navbar";
+import Footer from "../components/footer";
+import Upskill from "../components/upskill";
+import Success from "../components/success";
 import Link from "next/link";
 import axios from "axios";
 import { useState } from "react";

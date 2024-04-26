@@ -1,10 +1,10 @@
 import Image from "next/image";
 import style from "@/styles/style.module.css";
 import Link from "next/link";
-import Navbar from "../components/navbar";
-import Footer from "../components/footer";
-import Upskill from "../components/upskill";
-import Success from "../components/success";
+import Navbar from "../../components/navbar";
+import Footer from "../../components/footer";
+import Upskill from "../../components/upskill";
+import Success from "../../components/success";
 
 export default function Nocode() {
   return (
@@ -14,7 +14,7 @@ export default function Nocode() {
         <div className="w-[597.58px] max-hamburger:w-full max-hamburger:h-auto h-[374.04px] relative">
           <div className="bg-[#101AF6] blur-[128px] max-sm:right-0 w-[600px] h-[400px] right-[-30px] top-[-30px] absolute rounded-[100%] z-10"></div>
           <Image
-            src="/Frame 46.png"
+            src="/fullstack.png"
             className="w-[100%] object-fit relative z-20 h-auto"
             width={377}
             height={236}
@@ -22,11 +22,11 @@ export default function Nocode() {
         </div>
         <div className="w-[640px] max-hamburger:w-full relative z-20 max-bigscreen:w-[550px] pl-[10px] max-hamburger:pl-0:">
           <h1 className="text-[64px] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] leading-[61.68px] tracking-[-2.56px] font-['Graphikthin'] text-[#E5E5E5]">
-            No-code, Low-code Development
+            Full Stack Development{" "}
           </h1>
           <div className="flex mt-[24px] gap-[8px]">
             <p className="py-[4px] px-[8px] max-smallphone:px-[4px] text-[#797979] text-base font-['Graphikthin'] border-[#797979] border-[1px] rounded-[5px] max-smallphone:text-sm">
-              No-code, Low-code{" "}
+              Software Development{" "}
             </p>
             <p className="py-[4px] px-[8px] max-smallphone:px-[4px] text-[#797979] text-base font-['Graphikthin'] border-[#797979] border-[1px] rounded-[5px] max-smallphone:text-sm">
               Beginner friendly{" "}
@@ -75,8 +75,8 @@ export default function Nocode() {
         </div>
         <section className="pt-[124.98px] relative px-[80px] max-sm:px-[20px] max-md:px-[40px] pb-[119px]">
           <div className="flex justify-center">
-            <h1 className="w-[936.01px] text-[102.17px] max-smalllaptop:tracking-[-2.56px] max-smalllaptop:text-[84px] max-sm:text-[64px] max-smalllaptop:leading-[102%] text-center font-['Graphikthin'] leading-[104.21px] tracking-[]">
-              No-code, Low-code is here to stay
+            <h1 className="w-[990.05px] text-[#E5E5E5] text-[102.17px] max-smalllaptop:tracking-[-2.56px] max-smalllaptop:text-[84px] max-sm:text-[64px] max-smalllaptop:leading-[102%] text-center font-['Graphikthin'] leading-[104.21px] tracking-[-5.1px]">
+              Learn everything in Full Stack Development{" "}
             </h1>
           </div>
           <div className="absolute w-[100%] h-[1550px] top-0 left-0 overflow-x-hidden">
@@ -159,7 +159,7 @@ export default function Nocode() {
           </div>
         </section>
         <section className="pt-[95px] max-md:py-0 relative px-[80px] max-md:px-[40px] max-sm:px-[20px] pb-[37px]">
-          <h1 className="w-[630px] max-md:w-full text-[64px] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] font-['Graphikthin'] leading-[61.68px] tracking-[-2.56px] mb-[60px]">
+          <h1 className="w-[630px] text-[#E5E5E5] max-md:w-full text-[64px] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] font-['Graphikthin'] leading-[61.68px] tracking-[-2.56px] mb-[60px]">
             What you will learn in this course.{" "}
           </h1>
           <div className="flex gap-[20px] pl-[2px] max-hamburger:flex-col">
@@ -545,7 +545,7 @@ export default function Nocode() {
           </div>
         </section>
         <section className="pt-[124.98px] relative px-[80px] max-sm:px-[20px] max-md:px-[40px] max-md:py-20 pb-[119px]">
-          <h1 className="w-[630px] max-md:w-full text-[64px] font-['Graphikthin'] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] leading-[61.68px] tracking-[-2.56px]">
+          <h1 className="w-[630px] max-md:w-full text-[#E5E5E5] text-[64px] font-['Graphikthin'] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] leading-[61.68px] tracking-[-2.56px]">
             What you will need to finish this course.{" "}
           </h1>
           <div className="flex max-hamburger:flex-wrap max-hamburger:justify-center gap-[20px] mt-[71.02px]">
@@ -631,20 +631,20 @@ export default function Nocode() {
       <section className="pt-[161px] max-md:py-20 max-bigscreen:px-[80px] max-md:px-[40px] max-sm:px-[20px]  relative pb-[229px] pl-[172px] pr-[80px] flex justify-between max-hamburger:flex-col max-xl:gap-[50px] items-center">
         <div className="bg-[#101AF6] max-md:w-full max-md:left-0 blur-[128px] w-[453px] z-10 h-[400px] left-[140px] top-[171px] absolute rounded-[100%] z-10"></div>
         <div
-          className={`px-[18px] relative max-md:w-full border-[1px] w-[413px] z-20 border-white rounded-[10px] py-[20px] ${style.cardbg}`}
+          className={`px-[18px] relative max-md:w-full border-[1px] w-[413px] z-20 border-white rounded-[10px] py-[20px] ${style.cardfsbg}`}
         >
           <Image
-            src="/Frame 46.png"
+            src="/fullstack.png"
             className="w-[100%] h-auto"
             width={377}
             height={236}
           />
           <h1 className="mt-[20.87px] leading-[31.36px] mb-[17.13px] tracking-[-0.84px] font-['Graphikthin'] text-[#E5E5E5] text-[28px]">
-            Product Design Mastery
+            Full Stack Development{" "}
           </h1>
           <div className="flex gap-[8px]">
             <p className="max-sm:text-sm px-[8px] py-[4px] rounded-[5px] text-[#797979] text-base border-[1px] border-[#797979]">
-              UI/UX design{" "}
+              Software Development{" "}
             </p>
             <p className="max-sm:text-sm px-[8px] py-[4px] rounded-[5px] text-[#797979] text-base border-[1px] border-[#797979]">
               Beginner friendly{" "}
@@ -660,11 +660,11 @@ export default function Nocode() {
           </div>
         </div>
         <div className="relative z-20">
-          <p className="text-[20px] leading-[19.28px] mb-[24px]">
-            No-code, Low-code Development
+          <p className="text-[20px] text-[#E5E5E5] leading-[19.28px] mb-[24px]">
+            Full Stack Development{" "}
           </p>
-          <h1 className="text-[64px] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] max-md:w-full w-[630px] max-smalllaptop:w-[450px] max-xl:w-[590px] leading-[61.68px] tracking-[-2.56px] font-['Graphikthin'] text-[#E5E5E5]">
-            Start learning now, worry about fees after you get placed.
+          <h1 className="text-[64px] text-[#E5E5E5] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] max-md:w-full w-[630px] max-smalllaptop:w-[450px] max-xl:w-[590px] leading-[61.68px] tracking-[-2.56px] font-['Graphikthin'] text-[#E5E5E5]">
+            Start learning now, worry about fees after you get placed.{" "}
           </h1>
           <button className="text-[16px] max-md:w-full font-semibold mt-[56px] relative bg-[#30E29D] text-black py-[8px] px-[24px] rounded-[8px] leading-[24px] py-[8px]">
             Start Learning{" "}

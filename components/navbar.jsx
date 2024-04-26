@@ -1,5 +1,4 @@
 import Image from "next/image";
-import style from "@/styles/style.module.css";
 import Link from "next/link";
 import gsap from "gsap";
 import { useRef, useState, useEffect } from "react";

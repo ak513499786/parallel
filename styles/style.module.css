@@ -89,6 +89,24 @@
         rgba(48, 226, 157, 0) 20.34%
       );
 }
+.cardfsbg {
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.05),
+      rgba(255, 255, 255, 0.05)
+    ),
+    radial-gradient(
+        79.59% 40.79% at 51.06% 24.98%,
+        rgba(27, 196, 94, 0.24) 0%,
+        rgba(12, 244, 35, 0) 100%
+      )
+      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+    linear-gradient(
+      0.91deg,
+      rgba(48, 226, 157, 0.1) -13.79%,
+      rgba(48, 226, 157, 0) 20.34%
+    );
+}
 .circle {
   width: 766.17px;
   height: 766.17px;

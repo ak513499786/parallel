@@ -1,9 +1,9 @@
 import Image from "next/image";
 import style from "@/styles/style.module.css";
-import Navbar from "./components/navbar";
-import Footer from "./components/footer";
-import Upskill from "./components/upskill";
-import Success from "./components/success";
+import Navbar from "../components/navbar";
+import Footer from "../components/footer";
+import Upskill from "../components/upskill";
+import Success from "../components/success";
 import Link from "next/link";
 
 export default function Courses() {
@@ -29,17 +29,17 @@ export default function Courses() {
             height={236}
           />
           <h1 className="mt-[20.87px] leading-[31.36px] mb-[17.13px] tracking-[-0.84px] font-['Graphikthin'] text-[#E5E5E5] text-[28px]">
-            Product Design Mastery
+            No-code, Low-code Development{" "}
           </h1>
           <div className="flex gap-[8px]">
-              <p className="px-[8px] max-sm:px-[6px] py-[4px] rounded-[5px] text-[#797979] text-base max-sm:text-sm border-[1px] border-[#797979]">
-              UI/UX design{" "}
+            <p className="px-[8px] max-sm:px-[6px] py-[4px] rounded-[5px] text-[#797979] text-base max-sm:text-sm border-[1px] border-[#797979]">
+              No-code, Low-code
             </p>
-              <p className="px-[8px] max-sm:px-[6px] py-[4px] rounded-[5px] text-[#797979] text-base max-sm:text-sm border-[1px] border-[#797979]">
+            <p className="px-[8px] max-sm:px-[6px] py-[4px] rounded-[5px] text-[#797979] text-base max-sm:text-sm border-[1px] border-[#797979]">
               Beginner friendly{" "}
             </p>
           </div>
-          <div className="flex justify-between mt-[49px]">
+          <div className="flex justify-between mt-[18.13px]">
             <h1 className="text-[#ECECEC] leading-[28.8px] text-[24px] font-medium">
               Free
             </h1>
@@ -47,33 +47,33 @@ export default function Courses() {
               &lt; 18 Hours
             </p>
           </div>
-          <Link href={'/courses/low-code-no-code'}>
-          <button className="w-[100%] mt-[15px] h-[53px] bg-[transparent] rounded-[8px] text-[#30E29D] border-[1px] border-[#30E29D] text-[16px] font-[19.2px] hover:text-[#1F1F1F] transition-all font-semibold hover:bg-[#30E29D]">
-            Learn more{" "}
-          </button>
+          <Link href={"/courses/low-code-no-code"}>
+            <button className="w-[100%] mt-[15px] h-[53px] bg-[transparent] rounded-[8px] text-[#30E29D] border-[1px] border-[#30E29D] text-[16px] font-[19.2px] hover:text-[#1F1F1F] transition-all font-semibold hover:bg-[#30E29D]">
+              Learn more{" "}
+            </button>
           </Link>
         </div>
         <div
           className={`px-[18px] max-sm:px-[20px] max-sm:py-[16px] w-[33%] max-lg:w-[48%] max-md:w-full border-[1px] w-[413px] border-white rounded-[10px] py-[20px] ${style.cardbg}`}
         >
           <Image
-            src="/Frame 46.png"
+            src="/AI.png"
             className="w-[100%] h-auto"
             width={377}
             height={236}
           />
           <h1 className="mt-[20.87px] leading-[31.36px] mb-[17.13px] tracking-[-0.84px] font-['Graphikthin'] text-[#E5E5E5] text-[28px]">
-            Product Design Mastery
+            Artificial Intelligence (AI/ML){" "}
           </h1>
           <div className="flex gap-[8px]">
-              <p className="px-[8px] max-sm:px-[6px] py-[4px] rounded-[5px] text-[#797979] text-base max-sm:text-sm border-[1px] border-[#797979]">
-              UI/UX design{" "}
+            <p className="px-[8px] max-sm:px-[6px] py-[4px] rounded-[5px] text-[#797979] text-base max-sm:text-sm border-[1px] border-[#797979]">
+              AI
             </p>
-              <p className="px-[8px] max-sm:px-[6px] py-[4px] rounded-[5px] text-[#797979] text-base max-sm:text-sm border-[1px] border-[#797979]">
+            <p className="px-[8px] max-sm:px-[6px] py-[4px] rounded-[5px] text-[#797979] text-base max-sm:text-sm border-[1px] border-[#797979]">
               Beginner friendly{" "}
             </p>
           </div>
-          <div className="flex justify-between mt-[49px]">
+          <div className="flex justify-between mt-[49.13px]">
             <h1 className="text-[#ECECEC] leading-[28.8px] text-[24px] font-medium">
               Free
             </h1>
@@ -81,33 +81,33 @@ export default function Courses() {
               &lt; 18 Hours
             </p>
           </div>
-          <Link href={'/courses/artificial-intelligence'}>
-          <button className="w-[100%] mt-[15px] h-[53px] bg-[transparent] rounded-[8px] text-[#30E29D] border-[1px] border-[#30E29D] text-[16px] font-[19.2px] hover:text-[#1F1F1F] transition-all font-semibold hover:bg-[#30E29D]">
-            Learn more{" "}
-          </button>
+          <Link href={"/courses/artificial-intelligence"}>
+            <button className="w-[100%] mt-[15px] h-[53px] bg-[transparent] rounded-[8px] text-[#30E29D] border-[1px] border-[#30E29D] text-[16px] font-[19.2px] hover:text-[#1F1F1F] transition-all font-semibold hover:bg-[#30E29D]">
+              Learn more{" "}
+            </button>
           </Link>
         </div>
         <div
           className={`px-[18px] max-sm:px-[20px] max-sm:py-[16px] w-[33%] max-lg:w-[48%] max-md:w-full border-[1px] w-[413px] border-white rounded-[10px] py-[20px] ${style.cardbg}`}
         >
           <Image
-            src="/Frame 46.png"
+            src="/data.png"
             className="w-[100%] h-auto"
             width={377}
             height={236}
           />
           <h1 className="mt-[20.87px] leading-[31.36px] mb-[17.13px] tracking-[-0.84px] font-['Graphikthin'] text-[#E5E5E5] text-[28px]">
-            Product Design Mastery
+            Data Analytics{" "}
           </h1>
           <div className="flex gap-[8px]">
-              <p className="px-[8px] max-sm:px-[6px] py-[4px] rounded-[5px] text-[#797979] text-base max-sm:text-sm border-[1px] border-[#797979]">
-              UI/UX design{" "}
+            <p className="px-[8px] max-sm:px-[6px] py-[4px] rounded-[5px] text-[#797979] text-base max-sm:text-sm border-[1px] border-[#797979]">
+              Data Analytics{" "}
             </p>
-              <p className="px-[8px] max-sm:px-[6px] py-[4px] rounded-[5px] text-[#797979] text-base max-sm:text-sm border-[1px] border-[#797979]">
+            <p className="px-[8px] max-sm:px-[6px] py-[4px] rounded-[5px] text-[#797979] text-base max-sm:text-sm border-[1px] border-[#797979]">
               Beginner friendly{" "}
             </p>
           </div>
-          <div className="flex justify-between mt-[49px]">
+          <div className="flex justify-between mt-[49.13px]">
             <h1 className="text-[#ECECEC] leading-[28.8px] text-[24px] font-medium">
               Free
             </h1>
@@ -115,33 +115,33 @@ export default function Courses() {
               &lt; 18 Hours
             </p>
           </div>
-          <Link href={'/courses/data-analytics'}>
-          <button className="w-[100%] mt-[15px] h-[53px] bg-[transparent] rounded-[8px] text-[#30E29D] border-[1px] border-[#30E29D] text-[16px] font-[19.2px] hover:text-[#1F1F1F] transition-all font-semibold hover:bg-[#30E29D]">
-            Learn more{" "}
-          </button>
+          <Link href={"/courses/data-analytics"}>
+            <button className="w-[100%] mt-[15px] h-[53px] bg-[transparent] rounded-[8px] text-[#30E29D] border-[1px] border-[#30E29D] text-[16px] font-[19.2px] hover:text-[#1F1F1F] transition-all font-semibold hover:bg-[#30E29D]">
+              Learn more{" "}
+            </button>
           </Link>
         </div>
         <div
-          className={`px-[18px] max-sm:px-[20px] max-sm:py-[16px] w-[33%] max-lg:w-[48%] max-md:w-full border-[1px] w-[413px] border-white rounded-[10px] py-[20px] ${style.cardbg}`}
+          className={`px-[18px] backdrop-blur-lg max-sm:px-[20px] max-sm:py-[16px] w-[33%] max-lg:w-[48%] max-md:w-full border-[1px] w-[413px] border-white rounded-[10px] py-[20px] ${style.cardbg}`}
         >
           <Image
-            src="/Frame 46.png"
+            src="/fullstack.png"
             className="w-[100%] h-auto"
             width={377}
             height={236}
           />
           <h1 className="mt-[20.87px] leading-[31.36px] mb-[17.13px] tracking-[-0.84px] font-['Graphikthin'] text-[#E5E5E5] text-[28px]">
-            Product Design Mastery
+            Full Stack Development{" "}
           </h1>
           <div className="flex gap-[8px]">
-              <p className="px-[8px] max-sm:px-[6px] py-[4px] rounded-[5px] text-[#797979] text-base max-sm:text-sm border-[1px] border-[#797979]">
-              UI/UX design{" "}
+            <p className="px-[8px] max-sm:px-[6px] py-[4px] rounded-[5px] text-[#797979] text-base max-sm:text-sm border-[1px] border-[#797979]">
+              Software Development{" "}
             </p>
-              <p className="px-[8px] max-sm:px-[6px] py-[4px] rounded-[5px] text-[#797979] text-base max-sm:text-sm border-[1px] border-[#797979]">
+            <p className="px-[8px] max-sm:px-[6px] py-[4px] rounded-[5px] text-[#797979] text-base max-sm:text-sm border-[1px] border-[#797979]">
               Beginner friendly{" "}
             </p>
           </div>
-          <div className="flex justify-between mt-[49px]">
+          <div className="flex justify-between mt-[49.13px]">
             <h1 className="text-[#ECECEC] leading-[28.8px] text-[24px] font-medium">
               Free
             </h1>
@@ -149,10 +149,10 @@ export default function Courses() {
               &lt; 18 Hours
             </p>
           </div>
-          <Link href={'/courses/full-stack-development'}>
-          <button className="w-[100%] mt-[15px] h-[53px] bg-[transparent] rounded-[8px] text-[#30E29D] border-[1px] border-[#30E29D] text-[16px] font-[19.2px] hover:text-[#1F1F1F] transition-all font-semibold hover:bg-[#30E29D]">
-            Learn more{" "}
-          </button>
+          <Link href={"/courses/full-stack-development"}>
+            <button className="w-[100%] mt-[15px] h-[53px] bg-[transparent] rounded-[8px] text-[#30E29D] border-[1px] border-[#30E29D] text-[16px] font-[19.2px] hover:text-[#1F1F1F] transition-all font-semibold hover:bg-[#30E29D]">
+              Learn more{" "}
+            </button>
           </Link>
         </div>
       </section>

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import style from "@/styles/style.module.css";
-import Navbar from "./components/navbar";
-import Footer from "./components/footer";
+import Navbar from "../components/navbar";
+import Footer from "../components/footer";
 import Link from "next/link";
 import axios from "axios";
 import { useState } from "react";
@@ -75,7 +75,7 @@ export default function Workshop() {
               height={107.16}
             />
             <p className="mt-[37.81px] text-[28px] font-['Graphikthin'] leading-[31.36px] tracking-[-0.84px] mb-[17.91px] text-[#E5E5E5]">
-              Product Design Mastery
+              Product Design Mastery{" "}
             </p>
             <div className="flex gap-[8px]">
               <p className="py-[4px] px-[8px] text-[#797979] text-base font-['Graphikthin'] border-[#797979] border-[1px] rounded-[5px]">
@@ -86,95 +86,95 @@ export default function Workshop() {
               </p>
             </div>
           </div>
-          <div className="pt-[20px] px-[18px] pb-[36px] w-[32%] max-xl:w-[30%] max-hamburger:w-[45%] max-md:w-full bg-[#02455333] rounded-[10px] border-[1px] border-[#00C2FFA8]">
+          <div className="pt-[20px] px-[18px] pb-[36px] w-[32%] max-xl:w-[30%] max-hamburger:w-[45%] max-md:w-full bg-[#02455333] rounded-[10px] border-[1px] border-[#FFD707C4]">
             <Image
-              src="/cube.svg"
+              src="/Frame 46 (1).svg"
               width={107.16}
               className="w-[100%]"
               height={107.16}
             />
             <p className="mt-[37.81px] text-[28px] font-['Graphikthin'] leading-[31.36px] tracking-[-0.84px] mb-[17.91px] text-[#E5E5E5]">
-              Product Design Mastery
+              Use AI to write better code{" "}
             </p>
             <div className="flex gap-[8px]">
               <p className="py-[4px] px-[8px] text-[#797979] text-base font-['Graphikthin'] border-[#797979] border-[1px] rounded-[5px]">
-                Product Design
+                AI{" "}
               </p>
               <p className="py-[4px] px-[8px] text-[#797979] text-base font-['Graphikthin'] border-[#797979] border-[1px] rounded-[5px]">
                 4 hours
               </p>
             </div>
           </div>
-          <div className="pt-[20px] px-[18px] pb-[36px] w-[32%] max-xl:w-[30%] max-hamburger:w-[45%] max-md:w-full bg-[#02455333] rounded-[10px] border-[1px] border-[#00C2FFA8]">
+          <div className="pt-[20px] px-[18px] pb-[36px] w-[32%] max-xl:w-[30%] max-hamburger:w-[45%] max-md:w-full bg-[#4C380333] rounded-[10px] border-[1px] border-[#FF01E6B2]">
             <Image
-              src="/cube.svg"
+              src="/Frame 46 (2).svg"
               width={107.16}
               className="w-[100%]"
               height={107.16}
             />
             <p className="mt-[37.81px] text-[28px] font-['Graphikthin'] leading-[31.36px] tracking-[-0.84px] mb-[17.91px] text-[#E5E5E5]">
-              Product Design Mastery
+              Make your resume stand out{" "}
             </p>
             <div className="flex gap-[8px]">
               <p className="py-[4px] px-[8px] text-[#797979] text-base font-['Graphikthin'] border-[#797979] border-[1px] rounded-[5px]">
-                Product Design
+                Career Development{" "}
               </p>
               <p className="py-[4px] px-[8px] text-[#797979] text-base font-['Graphikthin'] border-[#797979] border-[1px] rounded-[5px]">
                 4 hours
               </p>
             </div>
           </div>
-          <div className="pt-[20px] px-[18px] pb-[36px] w-[32%] max-xl:w-[30%] max-hamburger:w-[45%] max-md:w-full bg-[#02455333] rounded-[10px] border-[1px] border-[#00C2FFA8]">
+          <div className="pt-[20px] px-[18px] pb-[36px] w-[32%] max-xl:w-[30%] max-hamburger:w-[45%] max-md:w-full bg-[#4A045633] rounded-[10px] border-[1px] border-[#FF111199]">
             <Image
-              src="/cube.svg"
+              src="/Frame 46 (3).svg"
               width={107.16}
               className="w-[100%]"
               height={107.16}
             />
             <p className="mt-[37.81px] text-[28px] font-['Graphikthin'] leading-[31.36px] tracking-[-0.84px] mb-[17.91px] text-[#E5E5E5]">
-              Product Design Mastery
+              Future in No-code{" "}
             </p>
             <div className="flex gap-[8px]">
               <p className="py-[4px] px-[8px] text-[#797979] text-base font-['Graphikthin'] border-[#797979] border-[1px] rounded-[5px]">
-                Product Design
+                No-code{" "}
               </p>
               <p className="py-[4px] px-[8px] text-[#797979] text-base font-['Graphikthin'] border-[#797979] border-[1px] rounded-[5px]">
                 4 hours
               </p>
             </div>
           </div>
-          <div className="pt-[20px] px-[18px] pb-[36px] w-[32%] max-xl:w-[30%] max-hamburger:w-[45%] max-md:w-full bg-[#02455333] rounded-[10px] border-[1px] border-[#00C2FFA8]">
+          <div className="pt-[20px] px-[18px] pb-[36px] w-[32%] max-xl:w-[30%] max-hamburger:w-[45%] max-md:w-full bg-[#55050533] rounded-[10px] border-[1px] border-[#2A3FFF]">
             <Image
-              src="/cube.svg"
+              src="/Frame 46 (5).svg"
               width={107.16}
               className="w-[100%]"
               height={107.16}
             />
             <p className="mt-[37.81px] text-[28px] font-['Graphikthin'] leading-[31.36px] tracking-[-0.84px] mb-[17.91px] text-[#E5E5E5]">
-              Product Design Mastery
+              Build successful businesses{" "}
             </p>
             <div className="flex gap-[8px]">
               <p className="py-[4px] px-[8px] text-[#797979] text-base font-['Graphikthin'] border-[#797979] border-[1px] rounded-[5px]">
-                Product Design
+                Entrepreneurship{" "}
               </p>
               <p className="py-[4px] px-[8px] text-[#797979] text-base font-['Graphikthin'] border-[#797979] border-[1px] rounded-[5px]">
                 4 hours
               </p>
             </div>
           </div>
-          <div className="pt-[20px] px-[18px] pb-[36px] w-[32%] max-xl:w-[30%] max-hamburger:w-[45%] max-md:w-full bg-[#02455333] rounded-[10px] border-[1px] border-[#00C2FFA8]">
+          <div className="pt-[20px] px-[18px] pb-[36px] w-[32%] max-xl:w-[30%] max-hamburger:w-[45%] max-md:w-full bg-[#03470933] rounded-[10px] border-[1px] border-[#90FF95CF]">
             <Image
-              src="/cube.svg"
+              src="/Frame 46 (6).svg"
               width={107.16}
               className="w-[100%]"
               height={107.16}
             />
             <p className="mt-[37.81px] text-[28px] font-['Graphikthin'] leading-[31.36px] tracking-[-0.84px] mb-[17.91px] text-[#E5E5E5]">
-              Product Design Mastery
+              Prompt Engineering 101{" "}
             </p>
             <div className="flex gap-[8px]">
               <p className="py-[4px] px-[8px] text-[#797979] text-base font-['Graphikthin'] border-[#797979] border-[1px] rounded-[5px]">
-                Product Design
+                AI{" "}
               </p>
               <p className="py-[4px] px-[8px] text-[#797979] text-base font-['Graphikthin'] border-[#797979] border-[1px] rounded-[5px]">
                 4 hours

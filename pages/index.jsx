@@ -1,10 +1,10 @@
 import { useState, useRef, useEffect } from "react";
-import Navbar from "@/pages/components/navbar";
+import Navbar from "@/components/navbar";
 import Image from "next/image";
 import style from "@/styles/style.module.css";
-import Footer from "./components/footer";
-import Upskill from "./components/upskill";
-import Success from "./components/success";
+import Footer from "../components/footer";
+import Upskill from "../components/upskill";
+import Success from "../components/success";
 import Link from "next/link";
 import { Linear, gsap } from "gsap";
 import axios from "axios";
@@ -487,20 +487,23 @@ export default function Home() {
         </h1>
         <div className="pl-[2px] justify-center mt-[49px] flex flex-wrap gap-[20px]">
           <div
-            className={`px-[18px] border-[1px] w-[33%] max-md:w-full max-smalllaptop:w-[48.3%] border-white rounded-[10px] py-[20px] ${style.cardbg}`}
+            className={`px-[18px] border-[1px] relative w-[33%] backdrop-blur-lg max-md:w-full max-smalllaptop:w-[48.3%] border-white rounded-[10px] py-[20px] ${style.cardbg}`}
           >
+            <div className="bg-[#0E16F580] absolute blur-3xl z-10 top-0 w-[100%] left-0 h-[350px]"></div>
+            <div className="bg-[#1BC45E3D] absolute blur-2xl z-10 bottom-0 w-[100%] left-0 h-[100px]"></div>
+
             <Image
               src="/Frame 46.png"
-              className="w-[100%] h-auto"
+              className="w-[100%] relative z-20 h-auto"
               width={377}
               height={236}
             />
             <h1 className="mt-[20.87px] leading-[31.36px] mb-[17.13px] tracking-[-0.84px] font-['Graphikthin'] text-[#E5E5E5] text-[28px]">
-              Product Design Mastery
+              No-code, Low-code Development{" "}
             </h1>
             <div className="flex gap-[8px]">
               <p className="px-[8px] max-sm:px-[6px] py-[4px] rounded-[5px] text-[#797979] text-base max-sm:text-sm border-[1px] border-[#797979]">
-                UI/UX design{" "}
+                No-code, Low-code{" "}
               </p>
               <p className="px-[8px] max-sm:px-[6px] py-[4px] rounded-[5px] text-[#797979] text-base max-sm:text-sm border-[1px] border-[#797979]">
                 Beginner friendly{" "}
@@ -521,20 +524,22 @@ export default function Home() {
             </Link>
           </div>
           <div
-            className={`px-[18px] border-[1px] w-[33%] max-md:w-full max-smalllaptop:w-[48.3%] border-white rounded-[10px] py-[20px] ${style.cardbg}`}
+            className={`px-[18px] border-[1px] relative w-[33%] backdrop-blur-sm backdrop-md max-md:w-full max-smalllaptop:w-[48.3%] border-white rounded-[10px] py-[20px] ${style.cardbg}`}
           >
+            <div className="bg-[#7627E880] absolute blur-3xl z-10 top-0 w-[100%] left-0 h-[350px]"></div>
+            <div className="bg-[#1BC45E3D] absolute blur-2xl z-10 bottom-0 w-[100%] left-0 h-[100px]"></div>
             <Image
-              src="/Frame 46.png"
-              className="w-[100%] h-auto"
+              src="/AI.png"
+              className="w-[100%] relative z-20 h-auto"
               width={377}
               height={236}
             />
             <h1 className="mt-[20.87px] leading-[31.36px] mb-[17.13px] tracking-[-0.84px] font-['Graphikthin'] text-[#E5E5E5] text-[28px]">
-              Product Design Mastery
+              Artificial Intelligence (AI/ML){" "}
             </h1>
             <div className="flex gap-[8px]">
               <p className="px-[8px] max-sm:px-[6px] py-[4px] rounded-[5px] text-[#797979] text-base max-sm:text-sm border-[1px] border-[#797979]">
-                UI/UX design{" "}
+                AI{" "}
               </p>
               <p className="px-[8px] max-sm:px-[6px] py-[4px] rounded-[5px] text-[#797979] text-base max-sm:text-sm border-[1px] border-[#797979]">
                 Beginner friendly{" "}
@@ -555,20 +560,22 @@ export default function Home() {
             </Link>
           </div>
           <div
-            className={`px-[18px] border-[1px] w-[33%] max-md:w-full max-smalllaptop:w-[48.3%] border-white rounded-[10px] py-[20px] ${style.cardbg}`}
+            className={`px-[18px] border-[1px] relative w-[33%] backdrop-blur-sm max-md:w-full max-smalllaptop:w-[48.3%] border-white rounded-[10px] py-[20px] ${style.cardbg}`}
           >
+            <div className="bg-[#D82F2F45] absolute blur-3xl z-10 top-0 w-[100%] left-0 h-[350px]"></div>
+            <div className="bg-[#1BC45E3D] absolute blur-2xl z-10 bottom-0 w-[100%] left-0 h-[100px]"></div>
             <Image
-              src="/Frame 46.png"
-              className="w-[100%] h-auto"
+              src="/data.png"
+              className="w-[100%] relative z-20 h-auto"
               width={377}
               height={236}
             />
             <h1 className="mt-[20.87px] leading-[31.36px] mb-[17.13px] tracking-[-0.84px] font-['Graphikthin'] text-[#E5E5E5] text-[28px]">
-              Product Design Mastery
+              Data Analytics{" "}
             </h1>
             <div className="flex gap-[8px]">
               <p className="px-[8px] max-sm:px-[6px] py-[4px] rounded-[5px] text-[#797979] text-base max-sm:text-sm border-[1px] border-[#797979]">
-                UI/UX design{" "}
+                Data Analytics{" "}
               </p>
               <p className="px-[8px] max-sm:px-[6px] py-[4px] rounded-[5px] text-[#797979] text-base max-sm:text-sm border-[1px] border-[#797979]">
                 Beginner friendly{" "}
@@ -589,20 +596,22 @@ export default function Home() {
             </Link>
           </div>
           <div
-            className={`px-[18px] border-[1px] w-[33%] max-md:w-full max-smalllaptop:w-[48.3%] border-white rounded-[10px] py-[20px] ${style.cardbg}`}
+            className={`px-[18px] relative border-[1px] w-[33%] max-md:w-full max-smalllaptop:w-[48.3%] border-white rounded-[10px] py-[20px] backdrop-blur ${style.cardfsbg}`}
           >
+            <div className="bg-[#1BC45E3D] absolute blur-xl z-10 top-0 w-[100%] left-0 h-[100px]"></div>
+            <div className="bg-[#1BC45E3D] absolute blur-3xl z-10 bottom-0 w-[100%] left-0 h-[100px]"></div>
             <Image
-              src="/Frame 46.png"
-              className="w-[100%] h-auto"
+              src="/fullstack.png"
+              className="w-[100%] relative z-20 h-auto"
               width={377}
               height={236}
             />
             <h1 className="mt-[20.87px] leading-[31.36px] mb-[17.13px] tracking-[-0.84px] font-['Graphikthin'] text-[#E5E5E5] text-[28px]">
-              Product Design Mastery
+              Full Stack Development{" "}
             </h1>
             <div className="flex gap-[8px]">
               <p className="px-[8px] max-sm:px-[6px] py-[4px] rounded-[5px] text-[#797979] text-base max-sm:text-sm border-[1px] border-[#797979]">
-                UI/UX design{" "}
+                Software Development{" "}
               </p>
               <p className="px-[8px] max-sm:px-[6px] py-[4px] rounded-[5px] text-[#797979] text-base max-sm:text-sm border-[1px] border-[#797979]">
                 Beginner friendly{" "}
@@ -704,7 +713,7 @@ export default function Home() {
         <h1 className="w-[600px] max-hamburger:w-full  max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] text-[64px] leading-[61.68px] font-['Graphikthin'] tracking-[-2.56px] text-[#E5E5E5]">
           Learn from leading industry experts
         </h1>
-        <div className="w-[640px] overflow-hidden max-md:w-full h-[530.76px] max-sm:h-auto">
+        <div className="w-[640px] shadow-inner overflow-hidden max-md:w-full h-[530.76px] max-sm:h-auto">
           <div ref={leadinganimation} className="h-[705px] max-sm:h-auto">
             <div
               className={`w-[630px] max-hamburger:w-full max-md:w-full max-sm:pl-[20px] max-hamburger:gap-[20px] pl-[28.7px] flex gap-[40px] items-center h-[159px] max-sm:h-[80px] rounded-[8px] ${style.learncard}`}

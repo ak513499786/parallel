@@ -1,8 +1,8 @@
 import { useState } from "react";
-import Navbar from "@/pages/components/navbar";
+import Navbar from "@/components/navbar";
 import Image from "next/image";
 import style from "@/styles/style.module.css";
-import Footer from "./components/footer";
+import Footer from "../components/footer";
 import axios from "axios";
 
 export default function Contact() {

@@ -1,8 +1,8 @@
 import Image from "next/image";
 import style from "@/styles/style.module.css";
-import Navbar from "./components/navbar";
-import Footer from "./components/footer";
-import Upskill from "./components/upskill";
+import Navbar from "../components/navbar";
+import Footer from "../components/footer";
+import Upskill from "../components/upskill";
 import Link from "next/link";
 import { useState } from "react";
 import axios from "axios";
@@ -186,7 +186,7 @@ export default function Courses() {
             <div className="bg-[#1F1F1F] w-[105px] pt-[26.26px] pb-[26.01px] pl-[26.39px] pr-[26.88px] border-[1px] rounded-[6px] border-[#FFFFFF66] ">
               {" "}
               <Image
-                src="/book-reading--book-reading-learning.svg"
+                src="/multiuser.svg"
                 width={51.73}
                 height={51.73}
               />
@@ -206,7 +206,7 @@ export default function Courses() {
             <div className="bg-[#1F1F1F] w-[105px] px-[26.63px] py-[26.13px] border-[1px] rounded-[6px] border-[#FFFFFF66] ">
               {" "}
               <Image
-                src="/bag-suitcase-2--product-business-briefcase.svg"
+                src="/checkllist.svg"
                 width={51.73}
                 height={51.73}
               />
@@ -226,7 +226,7 @@ export default function Courses() {
             <div className="bg-[#1F1F1F] w-[105px] pt-[22.3px] pb-[21.7px] pl-[22.95px] pr-[22.05px] border-[1px] rounded-[6px] border-[#FFFFFF66] ">
               {" "}
               <Image
-                src="/Calendar-3--Streamline-Ultimate.svg.svg"
+                src="/dottedsquare.svg"
                 width={60}
                 height={60}
               />

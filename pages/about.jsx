@@ -1,9 +1,9 @@
 import Image from "next/image";
 import style from "@/styles/style.module.css";
-import Navbar from "./components/navbar";
-import Footer from "./components/footer";
-import Upskill from "./components/upskill";
-import Success from "./components/success";
+import Navbar from "../components/navbar";
+import Footer from "../components/footer";
+import Upskill from "../components/upskill";
+import Success from "../components/success";
 
 export default function About() {
   return (
