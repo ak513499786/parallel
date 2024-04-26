@@ -530,7 +530,7 @@ export default function Home() {
                 &lt; 18 Hours
               </p>
             </div>
-            <Link href={"/courses/low-code-no-code"}>
+            <Link className="relative z-30" href={"/courses/low-code-no-code"}>
               <button className="w-[100%] mt-[15px] h-[53px] bg-[transparent] rounded-[8px] text-[#30E29D] hover:text-[#1F1F1F] transition-all font-semibold hover:bg-[#30E29D] border-[1px] border-[#30E29D] text-[16px] font-[19.2px]">
                 Learn more{" "}
               </button>
@@ -566,7 +566,7 @@ export default function Home() {
                 &lt; 18 Hours
               </p>
             </div>
-            <Link href={"/courses/artificial-intelligence"}>
+            <Link className="relative z-30" href={"/courses/artificial-intelligence"}>
               <button className="w-[100%] mt-[15px] h-[53px] bg-[transparent] rounded-[8px] text-[#30E29D] hover:text-[#1F1F1F] transition-all font-semibold hover:bg-[#30E29D] border-[1px] border-[#30E29D] text-[16px] font-[19.2px]">
                 Learn more{" "}
               </button>
@@ -602,7 +602,7 @@ export default function Home() {
                 &lt; 18 Hours
               </p>
             </div>
-            <Link href={"/courses/data-analytics"}>
+            <Link className="relative z-30"  href={"/courses/data-analytics"}>
               <button className="w-[100%] mt-[15px] h-[53px] bg-[transparent] rounded-[8px] text-[#30E29D] hover:text-[#1F1F1F] transition-all font-semibold hover:bg-[#30E29D] border-[1px] border-[#30E29D] text-[16px] font-[19.2px]">
                 Learn more{" "}
               </button>
@@ -638,7 +638,7 @@ export default function Home() {
                 &lt; 18 Hours
               </p>
             </div>
-            <Link href={"/courses/full-stack-development"}>
+            <Link className="relative z-30"  href={"/courses/full-stack-development"}>
               <button className="w-[100%] mt-[15px] h-[53px] bg-[transparent] rounded-[8px] text-[#30E29D] hover:text-[#1F1F1F] transition-all font-semibold hover:bg-[#30E29D] border-[1px] border-[#30E29D] text-[16px] font-[19.2px]">
                 Learn more{" "}
               </button>
