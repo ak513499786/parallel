@@ -71,3 +71,7 @@ input::placeholder {
   line-height: 21.54px;
   color: #ffffff99;
 }
+.card:hover .button{
+  background-color: #30E29D;
+  color: #1F1F1F;
+}

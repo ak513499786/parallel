@@ -500,7 +500,7 @@ export default function Home() {
         </h1>
         <div className="pl-[2px] justify-center mt-[49px] flex flex-wrap gap-[20px]">
           <div
-            className={`px-[18px] border-[1px] relative w-[33%] backdrop-blur-lg max-md:w-full max-smalllaptop:w-[48.3%] border-white rounded-[10px] py-[20px] ${style.cardbg}`}
+            className={`px-[18px] card border-[1px] relative w-[33%] backdrop-blur-lg max-md:w-full max-smalllaptop:w-[48.3%] border-white rounded-[10px] py-[20px] ${style.cardbg}`}
           >
             <div className="bg-[#0E16F580] absolute blur-3xl z-10 top-0 w-[100%] left-0 h-[350px]"></div>
             <div className="bg-[#1BC45E3D] absolute blur-2xl z-10 bottom-0 w-[100%] left-0 h-[100px]"></div>
@@ -531,13 +531,13 @@ export default function Home() {
               </p>
             </div>
             <Link className="relative z-30" href={"/courses/low-code-no-code"}>
-              <button className="w-[100%] mt-[15px] h-[53px] bg-[transparent] rounded-[8px] text-[#30E29D] hover:text-[#1F1F1F] transition-all font-semibold hover:bg-[#30E29D] border-[1px] border-[#30E29D] text-[16px] font-[19.2px]">
-                Learn more{" "}
+              <button className="w-[100%] mt-[15px] h-[53px] bg-[transparent] rounded-[8px] text-[#30E29D] transition-all button font-semibold border-[1px] border-[#30E29D] text-[16px] font-[19.2px]">
+                Comming Soon{" "}
               </button>
             </Link>
           </div>
           <div
-            className={`px-[18px] border-[1px] relative w-[33%] backdrop-blur-sm backdrop-md max-md:w-full max-smalllaptop:w-[48.3%] border-white rounded-[10px] py-[20px] ${style.cardbg}`}
+            className={`px-[18px] border-[1px] card relative w-[33%] backdrop-blur-sm backdrop-md max-md:w-full max-smalllaptop:w-[48.3%] border-white rounded-[10px] py-[20px] ${style.cardbg}`}
           >
             <div className="bg-[#7627E880] absolute blur-3xl z-10 top-0 w-[100%] left-0 h-[350px]"></div>
             <div className="bg-[#1BC45E3D] absolute blur-2xl z-10 bottom-0 w-[100%] left-0 h-[100px]"></div>
@@ -567,13 +567,13 @@ export default function Home() {
               </p>
             </div>
             <Link className="relative z-30" href={"/courses/artificial-intelligence"}>
-              <button className="w-[100%] mt-[15px] h-[53px] bg-[transparent] rounded-[8px] text-[#30E29D] hover:text-[#1F1F1F] transition-all font-semibold hover:bg-[#30E29D] border-[1px] border-[#30E29D] text-[16px] font-[19.2px]">
-                Learn more{" "}
+              <button className="w-[100%] mt-[15px] h-[53px] bg-[transparent] rounded-[8px] text-[#30E29D] transition-all font-semibold button border-[1px] border-[#30E29D] text-[16px] font-[19.2px]">
+                Comming Soon{" "}
               </button>
             </Link>
           </div>
           <div
-            className={`px-[18px] border-[1px] relative w-[33%] backdrop-blur-sm max-md:w-full max-smalllaptop:w-[48.3%] border-white rounded-[10px] py-[20px] ${style.cardbg}`}
+            className={`px-[18px] border-[1px] card relative w-[33%] backdrop-blur-sm max-md:w-full max-smalllaptop:w-[48.3%] border-white rounded-[10px] py-[20px] ${style.cardbg}`}
           >
             <div className="bg-[#D82F2F45] absolute blur-3xl z-10 top-0 w-[100%] left-0 h-[350px]"></div>
             <div className="bg-[#1BC45E3D] absolute blur-2xl z-10 bottom-0 w-[100%] left-0 h-[100px]"></div>
@@ -603,13 +603,13 @@ export default function Home() {
               </p>
             </div>
             <Link className="relative z-30"  href={"/courses/data-analytics"}>
-              <button className="w-[100%] mt-[15px] h-[53px] bg-[transparent] rounded-[8px] text-[#30E29D] hover:text-[#1F1F1F] transition-all font-semibold hover:bg-[#30E29D] border-[1px] border-[#30E29D] text-[16px] font-[19.2px]">
-                Learn more{" "}
+              <button className="w-[100%] mt-[15px] h-[53px] bg-[transparent] rounded-[8px] text-[#30E29D] transition-all font-semibold button border-[1px] border-[#30E29D] text-[16px] font-[19.2px]">
+                Comming Soon{" "}
               </button>
             </Link>
           </div>
           <div
-            className={`px-[18px] relative border-[1px] w-[33%] max-md:w-full max-smalllaptop:w-[48.3%] border-white rounded-[10px] py-[20px] backdrop-blur ${style.cardfsbg}`}
+            className={`px-[18px] relative border-[1px] card w-[33%] max-md:w-full max-smalllaptop:w-[48.3%] border-white rounded-[10px] py-[20px] backdrop-blur ${style.cardfsbg}`}
           >
             <div className="bg-[#1BC45E3D] absolute blur-xl z-10 top-0 w-[100%] left-0 h-[100px]"></div>
             <div className="bg-[#1BC45E3D] absolute blur-3xl z-10 bottom-0 w-[100%] left-0 h-[100px]"></div>
@@ -639,8 +639,8 @@ export default function Home() {
               </p>
             </div>
             <Link className="relative z-30"  href={"/courses/full-stack-development"}>
-              <button className="w-[100%] mt-[15px] h-[53px] bg-[transparent] rounded-[8px] text-[#30E29D] hover:text-[#1F1F1F] transition-all font-semibold hover:bg-[#30E29D] border-[1px] border-[#30E29D] text-[16px] font-[19.2px]">
-                Learn more{" "}
+              <button className="w-[100%] mt-[15px] h-[53px] bg-[transparent] rounded-[8px] text-[#30E29D] button transition-all font-semibold border-[1px] border-[#30E29D] text-[16px] font-[19.2px]">
+                Comming Soon{" "}
               </button>
             </Link>
           </div>

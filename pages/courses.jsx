@@ -20,7 +20,7 @@ export default function Courses() {
       </main>
       <section className="py-[71px] max-md:px-[40px] max-sm:px-[20px] max-smalllaptop:px-[80px] max-smalllaptop:gap-[22px] flex justify-center flex-wrap gap-[84px] px-[100px]">
         <div
-          className={`px-[18px] max-sm:px-[20px] max-sm:py-[16px] w-[33%] max-lg:w-[48%] max-md:w-full border-[1px] w-[413px] border-white rounded-[10px] py-[20px] ${style.cardbg}`}
+          className={`px-[18px] card max-sm:px-[20px] max-sm:py-[16px] w-[33%] max-lg:w-[48%] max-md:w-full border-[1px] w-[413px] border-white rounded-[10px] py-[20px] ${style.cardbg}`}
         >
           <Image
             src="/Frame 46.png"
@@ -48,13 +48,13 @@ export default function Courses() {
             </p>
           </div>
           <Link href={"/courses/low-code-no-code"}>
-            <button className="w-[100%] mt-[15px] h-[53px] bg-[transparent] rounded-[8px] text-[#30E29D] border-[1px] border-[#30E29D] text-[16px] font-[19.2px] hover:text-[#1F1F1F] transition-all font-semibold hover:bg-[#30E29D]">
-              Learn more{" "}
+            <button className="w-[100%] mt-[15px] h-[53px] bg-[transparent] rounded-[8px] text-[#30E29D] border-[1px] border-[#30E29D] text-[16px] font-[19.2px] button transition-all font-semibold">
+              Comming Soon{" "}
             </button>
           </Link>
         </div>
         <div
-          className={`px-[18px] max-sm:px-[20px] max-sm:py-[16px] w-[33%] max-lg:w-[48%] max-md:w-full border-[1px] w-[413px] border-white rounded-[10px] py-[20px] ${style.cardbg}`}
+          className={`px-[18px] max-sm:px-[20px] card max-sm:py-[16px] w-[33%] max-lg:w-[48%] max-md:w-full border-[1px] w-[413px] border-white rounded-[10px] py-[20px] ${style.cardbg}`}
         >
           <Image
             src="/AI.png"
@@ -82,13 +82,13 @@ export default function Courses() {
             </p>
           </div>
           <Link href={"/courses/artificial-intelligence"}>
-            <button className="w-[100%] mt-[15px] h-[53px] bg-[transparent] rounded-[8px] text-[#30E29D] border-[1px] border-[#30E29D] text-[16px] font-[19.2px] hover:text-[#1F1F1F] transition-all font-semibold hover:bg-[#30E29D]">
-              Learn more{" "}
+            <button className="w-[100%] mt-[15px] h-[53px] bg-[transparent] rounded-[8px] text-[#30E29D] border-[1px] border-[#30E29D] text-[16px] font-[19.2px] button transition-all font-semibold">
+              Comming Soon{" "}
             </button>
           </Link>
         </div>
         <div
-          className={`px-[18px] max-sm:px-[20px] max-sm:py-[16px] w-[33%] max-lg:w-[48%] max-md:w-full border-[1px] w-[413px] border-white rounded-[10px] py-[20px] ${style.cardbg}`}
+          className={`px-[18px] max-sm:px-[20px] card max-sm:py-[16px] w-[33%] max-lg:w-[48%] max-md:w-full border-[1px] w-[413px] border-white rounded-[10px] py-[20px] ${style.cardbg}`}
         >
           <Image
             src="/data.png"
@@ -116,13 +116,13 @@ export default function Courses() {
             </p>
           </div>
           <Link href={"/courses/data-analytics"}>
-            <button className="w-[100%] mt-[15px] h-[53px] bg-[transparent] rounded-[8px] text-[#30E29D] border-[1px] border-[#30E29D] text-[16px] font-[19.2px] hover:text-[#1F1F1F] transition-all font-semibold hover:bg-[#30E29D]">
-              Learn more{" "}
+            <button className="w-[100%] mt-[15px] h-[53px] bg-[transparent] rounded-[8px] text-[#30E29D] border-[1px] border-[#30E29D] text-[16px] font-[19.2px] button transition-all font-semibold">
+              Comming Soon{" "}
             </button>
           </Link>
         </div>
         <div
-          className={`px-[18px] backdrop-blur-lg max-sm:px-[20px] max-sm:py-[16px] w-[33%] max-lg:w-[48%] max-md:w-full border-[1px] w-[413px] border-white rounded-[10px] py-[20px] ${style.cardbg}`}
+          className={`px-[18px] backdrop-blur-lg max-sm:px-[20px] max-sm:py-[16px] w-[33%] card max-lg:w-[48%] max-md:w-full border-[1px] w-[413px] border-white rounded-[10px] py-[20px] ${style.cardbg}`}
         >
           <Image
             src="/fullstack.png"
@@ -150,8 +150,8 @@ export default function Courses() {
             </p>
           </div>
           <Link href={"/courses/full-stack-development"}>
-            <button className="w-[100%] mt-[15px] h-[53px] bg-[transparent] rounded-[8px] text-[#30E29D] border-[1px] border-[#30E29D] text-[16px] font-[19.2px] hover:text-[#1F1F1F] transition-all font-semibold hover:bg-[#30E29D]">
-              Learn more{" "}
+            <button className="w-[100%] mt-[15px] h-[53px] bg-[transparent] rounded-[8px] text-[#30E29D] border-[1px] border-[#30E29D] text-[16px] font-[19.2px] button transition-all font-semibold">
+              Comming Soon{" "}
             </button>
           </Link>
         </div>

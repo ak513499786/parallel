@@ -63,132 +63,133 @@ export default function Workshop() {
         />
       </main>
       <section className="pb-[52px] pl-[80px] max-sm:px-[20px] max-md:px-[40px] maxmd:py-[80px] pr-[79px] pt-[118.84px]">
-        <h1 className="mb-[75.16px] text-[64px] leading-[61.68px] text-[#E5E5E5] font-['Graphikthin'] tracking-[-2.56px] w-[738px] max-smalllaptop:w-full max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%]">
-          One-day workshops on a wide variety of topics
+        <h1 className="mb-[80.56px] text-[64px] leading-[61.68px] text-[#E5E5E5] font-['Graphikthin'] tracking-[-2.56px] w-[896px] max-smalllaptop:w-full max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%]">
+          Hands-on workshop on using
+          <span className="font-bold"> free AI tools </span>
+          to cut the competition{" "}
         </h1>
-        <div className="flex flex-wrap gap-x-[21px] max-xl:justify-center gap-y-[24px]">
-          <div className="pt-[20px] px-[18px] pb-[36px] w-[32%] max-xl:w-[30%] max-hamburger:w-[45%] max-md:w-full bg-[#02455333] rounded-[10px] border-[1px] border-[#00C2FFA8]">
+        <p className="text-[20px] leading-[25.2px] tracking-[-0.2px] font-semibold mb-[21.6px]">
+          This workshop contains
+        </p>
+        <div className="flex gap-[84px] max-hamburger:flex-nowrap max-md:flex-wrap-reverse max-smalllaptop:flex-wrap-reverse max-smalllaptop:items-start mb-[80.56px] max-xl:ml-0 max-xl:gap-[32px] items-center">
+          <div className="flex py-[31.82px] max-hamburger:h-auto max-hamburger:w-full max-hamburger:flex-col gap-[31.04px] h-[289px] w-[934px] max-xl:w-full bg-[#FFD7071A] px-[18px] max-md:w-full border-l-[#FFD707C4] border-t-[#FFD707C4] rounded-[10px] border-[1px] border-[#99999999]">
+            <Image
+              src="/frame 46 (1).svg"
+              width={107.16}
+              className="w-[290.96px] max-hamburger:h-auto max-hamburger:w-full h-[225.36px]"
+              height={107.16}
+            />
+            <div>
+              <p className="mt-[9.68px] max-sm:text-[28px] max-sm:leading-[34px] max-hamburger:h-auto max-hamburger:w-full w-[387.05px] text-[36.63px] font-['Graphikthin'] leading-[41.03px] tracking-[-1.1px] mb-[12px] text-[#E5E5E5]">
+                Why use AI tools and how they can help.{" "}
+              </p>
+              <p className="text-white opacity-80 w-[542.5px] max-bigscreen:w-[100%] mb-[32px] text-base font-['Graphikthin']">
+                Understand the brief about AI. Familiarize with how people are
+                using it to stand out, increase their productivity.{" "}
+              </p>
+              <div className="flex gap-[8px]">
+                <p className="py-[4px] px-[8px] text-[#FFDB06] text-base font-['Graphikthin'] border-[#FFDB06] opacity-60 border-[1px] rounded-[5px]">
+                  20 minutes{" "}
+                </p>
+              </div>
+            </div>
+          </div>
+          <h1 className="text-[276.38px] max-sm:text-[130px] max-sm:leading-[80px] leading-[230px] text-[#262002] font-bold">
+            1
+          </h1>
+        </div>
+        <div className="flex ml-[58.09px] max-hamburger:items-start max-hamburger:flex-row gap-[84px] max-md:flex-col max-md:items-end max-smalllaptop:flex-col max-smalllaptop:items-end max-xl:ml-0 max-xl:gap-[32px] max-bigscreen:ml-[30px] my-[80.56px] items-center justify-between">
+          <h1 className="text-[276.38px] max-sm:text-[130px] max-sm:leading-[80px] leading-[230px] text-[#022301] font-bold">
+            2
+          </h1>{" "}
+          <div className="flex py-[31.82px] max-hamburger:flex-col max-hamburger:h-auto max-hamburger:w-full gap-[31.04px] h-[289px] w-[934px] max-xl:w-full bg-[#95FF931A] px-[18px] max-md:w-full border-l-[#95FF93C4] border-t-[#95FF93C4] rounded-[10px] border-[1px] border-[#99999999]">
+            <Image
+              src="/frame 46 (6).svg"
+              width={107.16}
+              className="w-[290.96px] h-[225.36px] max-hamburger:h-auto max-hamburger:w-full"
+              height={107.16}
+            />
+            <div>
+              <p className="mt-[9.68px] w-[489.3px] max-sm:text-[28px] max-sm:leading-[34px] text-[36.63px] max-hamburger:h-auto max-hamburger:w-full font-['Graphikthin'] leading-[41.03px] tracking-[-1.1px] mb-[12px] text-[#E5E5E5]">
+                Prompt Engineering 101. Free GenAI tools.{" "}
+              </p>
+              <p className="text-white opacity-80 w-[542.5px] max-bigscreen:w-[100%] mb-[32px] text-base font-['Graphikthin']">
+                Get a hands-on experience on optimizing prompts. Generate images
+                exactly how you imagined it in your head.
+              </p>
+              <div className="flex gap-[8px]">
+                <p className="py-[4px] px-[8px] text-[#30FF51] text-base font-['Graphikthin'] border-[#30FF51] opacity-60 border-[1px] rounded-[5px]">
+                  1 hour{" "}
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="flex gap-[84px] max-hamburger:items-start max-hamburger:flex-nowrap max-md:flex-wrap-reverse max-md:items-start max-smalllaptop:flex-wrap-reverse max-smalllaptop:items-start my-[80.56px] max-xl:ml-0 max-xl:gap-[32px] items-center justify-between">
+          <div className="flex py-[31.82px] max-hamburger:flex-col gap-[31.04px] max-hamburger:h-auto max-hamburger:w-full h-[289px] w-[934px] max-xl:w-full bg-[#07E1FF1A] px-[18px] max-md:w-full border-l-[#07E1FFC4] border-t-[#07E1FFC4] rounded-[10px] border-[1px] border-[#99999999]">
             <Image
               src="/cube.svg"
               width={107.16}
-              className="w-[100%]"
+              className="w-[290.96px] max-hamburger:w-full max-hamburger:h-auto h-[225.36px]"
               height={107.16}
             />
-            <p className="mt-[37.81px] text-[28px] font-['Graphikthin'] leading-[31.36px] tracking-[-0.84px] mb-[17.91px] text-[#E5E5E5]">
-              Product Design Mastery{" "}
-            </p>
-            <div className="flex gap-[8px]">
-              <p className="py-[4px] px-[8px] text-[#797979] text-base font-['Graphikthin'] border-[#797979] border-[1px] rounded-[5px]">
-                Product Design
+            <div>
+              <p className="mt-[9.68px] w-[482.94px] max-sm:text-[28px] max-sm:leading-[34px] text-[36.63px] max-hamburger:w-full font-['Graphikthin'] leading-[41.03px] tracking-[-1.1px] mb-[12px] text-[#E5E5E5]">
+                Use AI tools to optimize your LinkedIn profile and resume.{" "}
               </p>
-              <p className="py-[4px] px-[8px] text-[#797979] text-base font-['Graphikthin'] border-[#797979] border-[1px] rounded-[5px]">
-                4 hours
+              <p className="text-white opacity-80 w-[542.5px] max-bigscreen:w-[100%] mb-[32px] text-base font-['Graphikthin']">
+                Learn how people are using AI to increase their visibility on
+                LinkedIn. Master the craft of refining your resume through AI.
               </p>
+              <div className="flex gap-[8px]">
+                <p className="py-[4px] px-[8px] text-[#0CC2FF] text-base font-['Graphikthin'] border-[#0CC2FF] opacity-60 border-[1px] rounded-[5px]">
+                  30 minutes{" "}
+                </p>
+              </div>
             </div>
           </div>
-          <div className="pt-[20px] px-[18px] pb-[36px] w-[32%] max-xl:w-[30%] max-hamburger:w-[45%] max-md:w-full bg-[#02455333] rounded-[10px] border-[1px] border-[#FFD707C4]">
+          <h1 className="text-[276.38px] max-sm:text-[130px] max-sm:leading-[80px] leading-[230px] text-[#021E22] font-bold">
+            3
+          </h1>
+        </div>
+        <div className="flex ml-[58.09px] max-hamburger:items-start max-hamburger:flex-row max-md:flex-col max-md:items-end max-smalllaptop:flex-col max-smalllaptop:items-end gap-[84px] max-xl:ml-0 max-xl:gap-[32px] max-bigscreen:ml-[30px] my-[80.56px] items-center justify-between">
+          <h1 className="text-[276.38px] max-sm:text-[130px] max-sm:leading-[80px] leading-[230px] text-[#210016] font-bold">
+            4
+          </h1>{" "}
+          <div className="flex py-[26.5px] max-hamburger:flex-col max-hamburger:h-auto gap-[31.04px] h-[289px] w-[934px] max-xl:w-full bg-[#FF41D51A] px-[18px] max-md:w-full border-l-[#FF41D5C4] border-t-[#FF41D5C4] rounded-[10px] border-[1px] border-[#99999999]">
             <Image
-              src="/Frame 46 (1).svg"
+              src="/frame 46 (2).svg"
               width={107.16}
-              className="w-[100%]"
+              className="w-[290.96px] mt-[5.52px] max-hamburger:w-full max-hamburger:h-auto h-[225.36px]"
               height={107.16}
             />
-            <p className="mt-[37.81px] text-[28px] font-['Graphikthin'] leading-[31.36px] tracking-[-0.84px] mb-[17.91px] text-[#E5E5E5]">
-              Use AI to write better code{" "}
-            </p>
-            <div className="flex gap-[8px]">
-              <p className="py-[4px] px-[8px] text-[#797979] text-base font-['Graphikthin'] border-[#797979] border-[1px] rounded-[5px]">
-                AI{" "}
+            <div>
+              <p className="text-white opacity-80 mb-[8px] text-base font-['Graphikthin']">
+                (Tailored to each branch)
               </p>
-              <p className="py-[4px] px-[8px] text-[#797979] text-base font-['Graphikthin'] border-[#797979] border-[1px] rounded-[5px]">
-                4 hours
+              <p className="w-[485.22px] text-[36.63px] max-sm:text-[28px] max-sm:leading-[34px] max-hamburger:w-full font-['Graphikthin'] leading-[41.03px] tracking-[-1.1px] mb-[12px] text-[#E5E5E5]">
+                Learning a free AI tool to increase productivity.{" "}
               </p>
-            </div>
-          </div>
-          <div className="pt-[20px] px-[18px] pb-[36px] w-[32%] max-xl:w-[30%] max-hamburger:w-[45%] max-md:w-full bg-[#4C380333] rounded-[10px] border-[1px] border-[#FF01E6B2]">
-            <Image
-              src="/Frame 46 (2).svg"
-              width={107.16}
-              className="w-[100%]"
-              height={107.16}
-            />
-            <p className="mt-[37.81px] text-[28px] font-['Graphikthin'] leading-[31.36px] tracking-[-0.84px] mb-[17.91px] text-[#E5E5E5]">
-              Make your resume stand out{" "}
-            </p>
-            <div className="flex gap-[8px]">
-              <p className="py-[4px] px-[8px] text-[#797979] text-base font-['Graphikthin'] border-[#797979] border-[1px] rounded-[5px]">
-                Career Development{" "}
+              <p className="text-white opacity-80 w-[542.5px] max-bigscreen:w-[100%] mb-[32px] text-base font-['Graphikthin']">
+                Get to know and use a free AI tool to increase productivity.
+                This session will be tailored to each branch.
               </p>
-              <p className="py-[4px] px-[8px] text-[#797979] text-base font-['Graphikthin'] border-[#797979] border-[1px] rounded-[5px]">
-                4 hours
-              </p>
-            </div>
-          </div>
-          <div className="pt-[20px] px-[18px] pb-[36px] w-[32%] max-xl:w-[30%] max-hamburger:w-[45%] max-md:w-full bg-[#4A045633] rounded-[10px] border-[1px] border-[#FF111199]">
-            <Image
-              src="/Frame 46 (3).svg"
-              width={107.16}
-              className="w-[100%]"
-              height={107.16}
-            />
-            <p className="mt-[37.81px] text-[28px] font-['Graphikthin'] leading-[31.36px] tracking-[-0.84px] mb-[17.91px] text-[#E5E5E5]">
-              Future in No-code{" "}
-            </p>
-            <div className="flex gap-[8px]">
-              <p className="py-[4px] px-[8px] text-[#797979] text-base font-['Graphikthin'] border-[#797979] border-[1px] rounded-[5px]">
-                No-code{" "}
-              </p>
-              <p className="py-[4px] px-[8px] text-[#797979] text-base font-['Graphikthin'] border-[#797979] border-[1px] rounded-[5px]">
-                4 hours
-              </p>
-            </div>
-          </div>
-          <div className="pt-[20px] px-[18px] pb-[36px] w-[32%] max-xl:w-[30%] max-hamburger:w-[45%] max-md:w-full bg-[#55050533] rounded-[10px] border-[1px] border-[#2A3FFF]">
-            <Image
-              src="/Frame 46 (5).svg"
-              width={107.16}
-              className="w-[100%]"
-              height={107.16}
-            />
-            <p className="mt-[37.81px] text-[28px] font-['Graphikthin'] leading-[31.36px] tracking-[-0.84px] mb-[17.91px] text-[#E5E5E5]">
-              Build successful businesses{" "}
-            </p>
-            <div className="flex gap-[8px]">
-              <p className="py-[4px] px-[8px] text-[#797979] text-base font-['Graphikthin'] border-[#797979] border-[1px] rounded-[5px]">
-                Entrepreneurship{" "}
-              </p>
-              <p className="py-[4px] px-[8px] text-[#797979] text-base font-['Graphikthin'] border-[#797979] border-[1px] rounded-[5px]">
-                4 hours
-              </p>
-            </div>
-          </div>
-          <div className="pt-[20px] px-[18px] pb-[36px] w-[32%] max-xl:w-[30%] max-hamburger:w-[45%] max-md:w-full bg-[#03470933] rounded-[10px] border-[1px] border-[#90FF95CF]">
-            <Image
-              src="/Frame 46 (6).svg"
-              width={107.16}
-              className="w-[100%]"
-              height={107.16}
-            />
-            <p className="mt-[37.81px] text-[28px] font-['Graphikthin'] leading-[31.36px] tracking-[-0.84px] mb-[17.91px] text-[#E5E5E5]">
-              Prompt Engineering 101{" "}
-            </p>
-            <div className="flex gap-[8px]">
-              <p className="py-[4px] px-[8px] text-[#797979] text-base font-['Graphikthin'] border-[#797979] border-[1px] rounded-[5px]">
-                AI{" "}
-              </p>
-              <p className="py-[4px] px-[8px] text-[#797979] text-base font-['Graphikthin'] border-[#797979] border-[1px] rounded-[5px]">
-                4 hours
-              </p>
+              <div className="flex gap-[8px]">
+                <p className="py-[4px] px-[8px] text-[#FF01E6] text-base font-['Graphikthin'] border-[#FF01E6] opacity-60 border-[1px] rounded-[5px]">
+                  1 hour{" "}
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </section>
-      <section className="pt-[47.84px] max-md:px-[40px] max-sm:px-[20px] max-md:py-[40px] relative px-[80px] pb-[184.07px]">
+      <section className="py-[168.5px] max-md:px-[40px] max-sm:px-[20px] max-md:py-[40px] relative px-[62.74px]">
         <div className="absolute w-[100%] h-[100vh] top-0 left-0 overflow-hidden">
           <div className={style.backgroundboxworkshop}></div>
         </div>
-        <p className="text-[48px] leading-[46.26px] tracking-[-1.92px] max-md:text-[32px] max-md:leading-[120%] text-[#E5E5E5] font-['Graphikthin'] text-[#E5E5E5] mb-[65.09px]">
-          All at a low cost of
+        <p className="text-[48px] leading-[46.26px] w-[554px] max-md:w-full tracking-[-1.92px] max-md:text-[32px] max-md:leading-[120%] text-[#E5E5E5] font-['Graphikthin'] text-[#E5E5E5] mb-[65.09px]">
+          <span className="font-bold">4 hours </span>
+          of fun and learning. All at a low cost of{" "}
         </p>
         <div className="flex max-smallphone:flex-col items-end">
           <h1 className="text-[257.99px] max-hamburger:text-[187px] max-md:text-[157px] max-hamburger:leading-[90%] max-hamburger:w-auto max-sm:text-[107px] max-sm:pr-[10px] max-smallphone:w-full w-[547px] font-['Graphikthin'] text-[#E5E5E5] tracking-[-10.35px] leading-[220px]">
@@ -197,6 +198,78 @@ export default function Workshop() {
           <p className="text-[48px] leading-[46.26px] max-sm:text-[28px] max-sm:leading-[32px] tracking-[-1.92px] text-[#E5E5E5] font-['Graphikthin'] text-[#E5E5E5]">
             per student.{" "}
           </p>{" "}
+        </div>
+        <Link href={"/contact-us"}>
+          <button className="w-[165px] max-md:hidden mt-[79px] max-md:mt-[49px] max-sm:mt-[29px] h-[53px] bg-[#30E29D] rounded-[8px] font-bold text-[#292929] text-[16px] font-[19.2px]">
+            Contact Us{" "}
+          </button>
+        </Link>
+      </section>
+      <section className="px-[80px] max-md:px-[40px] max-sm:px-[20px] bg-white max-sm:py-0 relative py-[173.5px] flex flex-col justify-center items-center gap-[65px]">
+        <h1 className="text-center w-[728.14px] max-hamburger:w-full text-black relative z-20 text-[64px] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] font-['Graphikthin'] leading-[61.68px] font-light tracking-[-2.56px] ">
+          Colleges benefitting from our workshops.{" "}
+        </h1>
+        <div className="flex flex-wrap items-center justify-center z-20 gap-x-[22px] gap-y-[27px]">
+          <Image
+            src="/college.png"
+            className="relative z-20 max-sm:w-[46%]"
+            width={193}
+            height={82}
+          />
+          <Image
+            src="/college1.png"
+            className="relative z-20 max-sm:w-[46%]"
+            width={193}
+            height={82}
+          />
+          <Image
+            src="/college2.png"
+            className="relative z-20 max-sm:w-[46%]"
+            width={193}
+            height={82}
+          />
+          <Image
+            src="/college3.png"
+            className="relative z-20 max-sm:w-[46%]"
+            width={193}
+            height={82}
+          />
+          <Image
+            src="/college4.png"
+            className="relative z-20 max-sm:w-[46%]"
+            width={193}
+            height={82}
+          />
+          <Image
+            src="/college5.png"
+            className="relative z-20 max-sm:w-[46%]"
+            width={193}
+            height={82}
+          />
+          <Image
+            src="/college6.png"
+            className="relative z-20 max-sm:w-[46%]"
+            width={193}
+            height={82}
+          />
+          <Image
+            src="/college7.png"
+            className="relative z-20 max-sm:w-[46%]"
+            width={193}
+            height={82}
+          />
+          <Image
+            src="/college8.png"
+            className="relative z-20 max-sm:w-[46%]"
+            width={193}
+            height={82}
+          />
+          <Image
+            src="/college9.png"
+            className="relative z-20 max-sm:w-[46%]"
+            width={193}
+            height={82}
+          />
         </div>
       </section>
       <div className="pt-[92.84px] max-sm:py-10 max-sm:px-[20px] max-md:px-[40px]  relative z-20 pb-[95px] pl-[80px] pr-[79px]">

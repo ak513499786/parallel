@@ -21,7 +21,7 @@ export default function Nocode() {
       <Navbar />
       <main className="flex justify-between max-hamburger:flex-col gap-[20px] max-md:px-[40px] max-sm:px-[20px] px-[80px] pb-[229px] max-hamburger:pb-[129px] max-md:pb-[80px] max-sm:pb-[50px] max-hamburger:pt-[100px] max-md:pt-20 max-sm:pt-[50px] pt-[124.86px]">
         <div className="w-[597.58px] max-hamburger:w-full max-hamburger:h-auto h-[374.04px] relative">
-          <div className="bg-[#101AF6] blur-[128px] max-sm:right-0 w-[600px] h-[400px] right-[-30px] top-[-30px] absolute rounded-[100%] z-10"></div>
+          <div className="bg-[#D82F2F] blur-[128px] max-sm:right-0 w-[600px] h-[400px] right-[-30px] top-[-30px] absolute rounded-[100%] z-10"></div>
           <Image
             src="/data.png"
             className="w-[100%] object-fit relative z-20 h-auto"
@@ -696,7 +696,7 @@ export default function Nocode() {
       </div>
       <Success />
       <section className="pt-[161px] max-md:py-20 max-bigscreen:px-[80px] max-md:px-[40px] max-sm:px-[20px]  relative pb-[229px] pl-[172px] pr-[80px] flex justify-between max-hamburger:flex-col max-xl:gap-[50px] items-center">
-        <div className="bg-[#101AF6] max-md:w-full max-md:left-0 blur-[128px] w-[453px] z-10 h-[400px] left-[140px] top-[171px] absolute rounded-[100%] z-10"></div>
+        <div className="bg-[#D82F2F] max-md:w-full max-md:left-0 blur-[128px] w-[453px] z-10 h-[400px] left-[140px] top-[171px] absolute rounded-[100%] z-10"></div>
         <div
           className={`px-[18px] relative max-md:w-full border-[1px] w-[413px] z-20 border-white rounded-[10px] py-[20px] ${style.cardbg}`}
         >

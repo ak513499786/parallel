@@ -21,7 +21,7 @@ export default function Nocode() {
       <Navbar />
       <main className="flex justify-between max-hamburger:flex-col gap-[20px] max-md:px-[40px] max-sm:px-[20px] px-[80px] pb-[229px] max-hamburger:pb-[129px] max-md:pb-[80px] max-sm:pb-[50px] max-hamburger:pt-[100px] max-md:pt-20 max-sm:pt-[50px] pt-[124.86px]">
         <div className="w-[597.58px] max-hamburger:w-full max-hamburger:h-auto h-[374.04px] relative">
-          <div className="bg-[#101AF6] blur-[128px] max-sm:right-0 w-[600px] h-[400px] right-[-30px] top-[-30px] absolute rounded-[100%] z-10"></div>
+          <div className="bg-[#0E16F580] blur-[128px] max-sm:right-0 w-[600px] h-[400px] right-[-30px] top-[-30px] absolute rounded-[100%] z-10"></div>
           <Image
             src="/Frame 46.png"
             className="w-[100%] object-fit relative z-20 h-auto"

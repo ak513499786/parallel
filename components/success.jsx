@@ -38,7 +38,7 @@ export default function Success() {
       <h1 className="w-[813.91px] max-hamburger:w-full pl-20 max-md:px-[40px] max-sm:px-[20px] text-[64px] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] leading-[61.68px] font-['Graphikthin'] font-light text-[#E5E5E5] mb-[58px] max-sm:mb-[50px] tracking-[-2.56px]">
         People benefitting from our learn now pay later model.
       </h1>
-      <div className="overflow-x-scroll w-full">
+      <div className="overflow-x-hidden w-full">
         <div
           ref={successanimation}
           className="flex gap-[20px] ml-20 max-sm:ml-[25px] max-md:ml-[50px] w-[3880px]"

@@ -48,18 +48,16 @@
   background-repeat: no-repeat;
 }
 .bordergradient {
-  border: 1px solid
-    linear-gradient(180deg, rgba(255, 255, 255, 0.52) 0%, #3a3a3a 67.79%);
+  border-top: 1px solid white;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  border-bottom: 1px solid #545454;
 }
 .gradientcard {
-  background: linear-gradient(
-      0deg,
-      rgba(255, 255, 255, 0.05),
-      rgba(255, 255, 255, 0.05)
-    ),
-    radial-gradient(rgba(14, 22, 245, 0.25), rgba(12, 21, 244, 0.025)),
-    radial-gradient(rgba(48, 226, 157, 0.25), rgba(12, 21, 244, 0.025)),
-    radial-gradient(rgba(226, 48, 48, 0.1), rgba(48, 226, 157, 0.041));
+  border-top: 1px solid white;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  border-bottom: 1px solid #545454;
 }
 .hovercard {
   transition: 0.3s;
@@ -73,39 +71,16 @@
   width: 332.41px;
 }
 .cardbg {
-  background: linear-gradient(
-      0deg,
-      rgba(255, 255, 255, 0.05),
-      rgba(255, 255, 255, 0.05)
-    ),
-    radial-gradient(
-        89.81% 45.98% at 51.76% 26.74%,
-        rgba(14, 22, 245, 0.5) 0%,
-        rgba(12, 21, 244, 0.05) 100%
-      )
-      linear-gradient(
-        0.91deg,
-        rgba(48, 226, 157, 0.1) -13.79%,
-        rgba(48, 226, 157, 0) 20.34%
-      );
+  border-top: 1px solid white;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  border-bottom: 1px solid #545454;
 }
 .cardfsbg {
-  background: linear-gradient(
-      0deg,
-      rgba(255, 255, 255, 0.05),
-      rgba(255, 255, 255, 0.05)
-    ),
-    radial-gradient(
-        79.59% 40.79% at 51.06% 24.98%,
-        rgba(27, 196, 94, 0.24) 0%,
-        rgba(12, 244, 35, 0) 100%
-      )
-      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
-    linear-gradient(
-      0.91deg,
-      rgba(48, 226, 157, 0.1) -13.79%,
-      rgba(48, 226, 157, 0) 20.34%
-    );
+  border-top: 1px solid white;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  border-bottom: 1px solid #545454;
 }
 .circle {
   width: 766.17px;
