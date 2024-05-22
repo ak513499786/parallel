@@ -47,7 +47,7 @@ export default function Fees() {
           Because we believe that education should never be behind a paywall.
         </p>
         <p className="text-[64px] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] w-[818.23px] leading-[61.68px] tracking-[-2.56px] text-[#E5E5E5] font-['Graphikthin'] w-[890.53px] max-hamburger:w-full">
-          We’ll help you upskill, get placed, and charge you only 15% of your
+          We’ll help you upskill, get placed, and charge you only 15<span className="font-['Graphik'] font-light">%</span>{' '} of your
           CTC for 12 months.
         </p>
         <p className="text-[64px] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] leading-[61.68px] w-[818.23px] tracking-[-2.56px] text-[#E5E5E5] font-['Graphikthin'] w-[890.53px] max-hamburger:w-full">
@@ -60,7 +60,7 @@ export default function Fees() {
           What you will be paying us
         </p>
         <h1 className="w-[1172px] max-xl:w-full text-[147.6px] max-smalllaptop:tracking-[-2.56px] max-smalllaptop:text-[84px] max-sm:text-[64px] max-smallphone:text-[36px] max-sm:tracking-tight max-smalllaptop:leading-[102%] font-['Graphikthin'] leading-[142.26px] text-[#E5E5E5] tracking-[-5.9px]">
-          <span className="font-bold">15</span>% of your CTC for{" "}
+          <span className="font-bold">15</span><span className="font-['Graphik'] font-light">%</span>{' '}of your CTC for{" "}
           <span className="font-bold">12 months.</span>
         </h1>
       </section>

@@ -352,10 +352,10 @@ export default function Home() {
               />
             </div>
             <h1 className="w-[340px] max-bigscreen:w-[310px] max-xl:w-[250px] max-md:w-full max-xl:mt-[30px] font-['Graphikthin'] font-normal mt-[53.05px] mb-[18.16px] text-[32px] max-xl:text-[24px] max-xl:leading-[120%] leading-[40.32px] tracking-[-0.32px]">
-              100% placement guarantee.{" "}
+              100<span className="font-['Graphik'] font-light opacity-90">%</span>{' '}placement guarantee.{" "}
             </h1>
             <p className="w-[355.15px] max-bigscreen:w-[310px] max-xl:w-full h-[136.91px] max-xl:h-[165px] max-lg:h-[200px] max-md:h-auto opacity-80 text-[#E0E0E0] text-base">
-              With our 100% Job Placement Guarantee, we're committed to your
+              With our 100<span className="font-['Graphik'] font-light opacity-90">%</span>{' '} Job Placement Guarantee, we're committed to your
               success. If you don't land a job within a specified timeframe
               after completing the program, we'll continue to work with you
               until you do.
@@ -418,7 +418,7 @@ export default function Home() {
       <div className="pt-[102.57px] max-sm:py-20 max-sm:px-[20px] max-md:px-[40px] relative z-20 pb-[62.43px] pl-[80px] pr-[79px]">
         <div className="flex justify-between max-lg:gap-[50px]">
           <p className="w-[903.7px] max-hamburger:w-full font-['Graphikthin'] text-[64px] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] font-light leading-[61.68px] tracking-[-2.56px] text-[#E5E5E5]">
-            Courses with 100% job guarantee at an unbeatable price.{" "}
+            Courses with 100<span className="font-['Graphik'] font-light">%</span>{' '}job guarantee at an unbeatable price.{" "}
           </p>
           <Link href={"/courses"}>
             <button className="w-[205px] max-md:hidden h-[53px] bg-[#30E29D] rounded-[8px] font-bold text-[#292929] text-[16px] font-[19.2px]">

@@ -145,7 +145,7 @@ export default function Courses() {
               />
             </div>
             <h1 className="w-[340px] max-bigscreen:w-[310px] max-xl:w-[250px] max-md:w-full max-xl:mt-[30px] font-['Graphikthin'] font-normal mt-[53.05px] mb-[18.16px] text-[32px] max-xl:text-[24px] max-xl:leading-[120%] leading-[40.32px] tracking-[-0.32px]">
-              Hire only the top 1% of the candidates{" "}
+              Hire only the top 1<span className="font-['Graphik'] font-light opacity-90">%</span> of the candidates{" "}
             </h1>
             <p className="w-[355.15px] opacity-80 text-[#E0E0E0] text-base max-bigscreen:w-[310px] max-xl:w-full">
               Our students are filtered multiple times. We utilize a

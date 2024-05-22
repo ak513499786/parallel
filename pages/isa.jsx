@@ -72,7 +72,7 @@ export default function Courses() {
               Pay only a small percentage of your CTC{" "}
             </h1>
             <p className="w-[355.15px] max-bigscreen:w-[310px] max-xl:w-full h-[136.91px] max-xl:h-[165px] max-lg:h-[200px] max-md:h-auto opacity-80 text-[#E0E0E0] text-base">
-              We only ask 15% of your CTC for 12 months, nothing more. Once the
+              We only ask 15<span className="font-['Graphik'] font-light opacity-90">%</span>{' '}of your CTC for 12 months, nothing more. Once the
               you pay the complete fee, the ISA will be terminated
             </p>
           </div>
@@ -98,7 +98,7 @@ export default function Courses() {
           What you will be paying us
         </p>
         <h1 className="w-[1172px] max-xl:w-full text-[147.6px] max-smalllaptop:tracking-[-2.56px] max-smalllaptop:text-[84px] max-sm:text-[64px] max-smallphone:text-[36px] max-sm:tracking-tight max-smalllaptop:leading-[102%] font-['Graphikthin'] leading-[142.26px] text-[#E5E5E5] tracking-[-5.9px]">
-          <span className="font-bold">15</span>% of your CTC for{" "}
+          <span className="font-bold">15</span><span className="font-['Graphik'] font-light">%</span>{' '}of your CTC for{" "}
           <span className="font-bold">12 months.</span>
         </h1>
       </section>
