@@ -53,7 +53,7 @@ export default function Contact() {
         <div className={style.backgroundbox}></div>
       </div>
       <main className="px-[80px] max-md:px-[40px] max-sm:px-[20px] flex justify-center pb-[79.28px] z-20 relative pt-[130.71px]">
-        <h1 className="text-[104.57px] leading-[106.66px] tracking-[-5.2px] font-['Graphikthin'] max-smalllaptop:text-[84px] max-sm:text-[64px] max-smalllaptop:leading-[102%] max-sm:text-left max-lg:w-full text-center text-[#E5E5E5] w-[799.41px]">
+        <h1 className="text-[104.57px] leading-[106.66px] tracking-[-5.2px] font-['Graphikthin'] max-smalllaptop:text-[84px] max-sm:text-[64px] max-smallphone:text-[36px] max-sm:tracking-tight max-smalllaptop:leading-[102%] max-sm:text-left max-lg:w-full text-center text-[#E5E5E5] w-[799.41px]">
           Never let high fees be the excuse.
         </h1>
       </main>

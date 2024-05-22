@@ -14,7 +14,7 @@ export default function Courses() {
         <div className={style.backgroundbox}></div>
       </div>
       <main className="pl-[80.27px] max-hamburger:px-20 relative z-20 pt-[163px] pb-[186.03px] max-md:px-[40px] max-sm:px-[20px] max-md:py-[50px]">
-        <h1 className="w-[894.59px] max-smalllaptop:w-[850px] max-hamburger:w-full max-smalllaptop:tracking-[-2.56px] max-smalllaptop:text-[84px] max-sm:text-[64px] max-smalllaptop:leading-[102%] font-['Graphikthin'] text-[127.98px] text-[#E5E5E5] leading-[130.54px] tracking-[-6.35px]">
+        <h1 className="w-[894.59px] max-smalllaptop:w-[850px] max-hamburger:w-full max-smalllaptop:tracking-[-2.56px] max-smalllaptop:text-[84px] max-sm:text-[64px] max-smallphone:text-[36px] max-sm:tracking-tight max-smalllaptop:leading-[102%] font-['Graphikthin'] text-[127.98px] text-[#E5E5E5] leading-[130.54px] tracking-[-6.35px]">
           ISA that doesn’t feel like a burden.{" "}
         </h1>
         <p className="w-[393.32px] max-sm:text-base max-md:w-full text-[20px] leading-[30px] text-[#E0E0E0] font-['Graphikthin'] mt-[41.97px] opacity-90">
@@ -23,7 +23,7 @@ export default function Courses() {
         </p>
       </main>
       <section className="pl-[80px] max-lg:px-[80px] max-md:py-10 max-md:px-[40px] max-sm:px-[20px] relative z-20 pt-[96.09px] pb-[159.91px] flex flex-col gap-[57px]">
-      <p className="text-[64px] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] leading-[61.68px] tracking-[-2.56px] text-[#E5E5E5] font-['Graphikthin'] w-[890.53px] max-hamburger:w-full">
+        <p className="text-[64px] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] leading-[61.68px] tracking-[-2.56px] text-[#E5E5E5] font-['Graphikthin'] w-[890.53px] max-hamburger:w-full">
           The fee is charged only after you get job.{" "}
         </p>
         <p className="text-[64px] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] w-[818.23px] leading-[61.68px] tracking-[-2.56px] text-[#E5E5E5] font-['Graphikthin'] w-[890.53px] max-hamburger:w-full">
@@ -66,11 +66,7 @@ export default function Courses() {
           >
             <div className="bg-[#1F1F1F] w-[105px] px-[26.63px] py-[26.13px] border-[1px] rounded-[6px] border-[#FFFFFF66] ">
               {" "}
-              <Image
-                src="/discount.svg"
-                width={51.73}
-                height={51.73}
-              />
+              <Image src="/discount.svg" width={51.73} height={51.73} />
             </div>
             <h1 className="w-[340px] max-bigscreen:w-[310px] max-xl:w-[250px] max-md:w-full max-xl:mt-[30px] font-['Graphikthin'] font-normal mt-[53.05px] mb-[18.16px] text-[32px] max-xl:text-[24px] max-xl:leading-[120%] leading-[40.32px] tracking-[-0.32px]">
               Pay only a small percentage of your CTC{" "}
@@ -85,11 +81,7 @@ export default function Courses() {
           >
             <div className="bg-[#1F1F1F] w-[105px] pt-[22.3px] pb-[21.7px] pl-[22.95px] pr-[22.05px] border-[1px] rounded-[6px] border-[#FFFFFF66] ">
               {" "}
-              <Image
-                src="/pause.svg"
-                width={60}
-                height={60}
-              />
+              <Image src="/pause.svg" width={60} height={60} />
             </div>
             <h1 className="w-[340px] max-bigscreen:w-[310px] max-xl:w-[250px] max-md:w-full max-xl:mt-[30px] font-['Graphikthin'] font-normal mt-[53.05px] mb-[18.16px] text-[32px] max-xl:text-[24px] max-xl:leading-[120%] leading-[40.32px] tracking-[-0.32px]">
               Stop paying us if you are not working{" "}
@@ -105,7 +97,7 @@ export default function Courses() {
         <p className="text-[#E5E5E5] text-[64px] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] font-['Graphikthin'] leading-[61.68px] tracking-[-2.56px]">
           What you will be paying us
         </p>
-        <h1 className="w-[1172px] max-xl:w-full text-[147.6px] max-smalllaptop:tracking-[-2.56px] max-smalllaptop:text-[84px] max-sm:text-[64px] max-smalllaptop:leading-[102%] font-['Graphikthin'] leading-[142.26px] text-[#E5E5E5] tracking-[-5.9px]">
+        <h1 className="w-[1172px] max-xl:w-full text-[147.6px] max-smalllaptop:tracking-[-2.56px] max-smalllaptop:text-[84px] max-sm:text-[64px] max-smallphone:text-[36px] max-sm:tracking-tight max-smalllaptop:leading-[102%] font-['Graphikthin'] leading-[142.26px] text-[#E5E5E5] tracking-[-5.9px]">
           <span className="font-bold">15</span>% of your CTC for{" "}
           <span className="font-bold">12 months.</span>
         </h1>
@@ -121,7 +113,7 @@ export default function Courses() {
           <table className="w-[826px] max-sm:text-[24px] max-smallphone:text-[20px] max-hamburger:w-full mt-[51px] font-['Graphikthin'] text-[32px] leading-[30.84px] font-light text-[#E5E5E5] tracking-[-0.64px] text-left h-[336px]">
             <tr>
               <th className="w-[413px] max-hamburger:w-[50%] h-[112px] pl-[32.76px] max-sm:pl-[16px] border-[1px] border-white font-['Graphikthin'] font-light">
-                Week 1 - 5
+                Week 1 - 4
               </th>
               <th className="w-[413px] max-hamburger:w-[50%] h-[112px] pl-[32.76px] max-sm:pl-[16px] border-[1px] border-white font-['Graphikthin'] font-light">
                 No Payment
@@ -129,18 +121,26 @@ export default function Courses() {
             </tr>
             <tr>
               <th className="w-[413px] max-hamburger:w-[50%] h-[112px] pl-[32.76px] max-sm:pl-[16px] border-[1px] border-white font-['Graphikthin'] font-light">
-                Week 6 - 15
+                Week 5 - 12
               </th>
               <th className="w-[413px] max-hamburger:w-[50%] h-[112px] pl-[32.76px] max-sm:pl-[16px] border-[1px] border-white font-['Graphikthin'] font-light">
-                ₹20,000
+                ₹15,000
               </th>
             </tr>
             <tr>
               <th className="w-[413px] max-hamburger:w-[50%] h-[112px] pl-[32.76px] max-sm:pl-[16px] border-[1px] border-white font-['Graphikthin'] font-light">
-                Week 15 - 20
+                Week 13 - 18
               </th>
               <th className="w-[413px] max-hamburger:w-[50%] h-[112px] pl-[32.76px] max-sm:pl-[16px] border-[1px] border-white font-['Graphikthin'] font-light">
-                ₹45,000
+                ₹30,000
+              </th>
+            </tr>
+            <tr>
+              <th className="w-[413px] max-hamburger:w-[50%] h-[112px] pl-[32.76px] max-sm:pl-[16px] border-[1px] border-white font-['Graphikthin'] font-light">
+                Week 18 - 24{" "}
+              </th>
+              <th className="w-[413px] max-hamburger:w-[50%] h-[112px] pl-[32.76px] max-sm:pl-[16px] border-[1px] border-white font-['Graphikthin'] font-light">
+                ₹45,000{" "}
               </th>
             </tr>
           </table>

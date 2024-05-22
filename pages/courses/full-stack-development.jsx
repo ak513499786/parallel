@@ -84,7 +84,7 @@ export default function Nocode() {
         </div>
         <section className="pt-[124.98px] relative px-[80px] max-sm:px-[20px] max-md:px-[40px] pb-[119px]">
           <div className="flex justify-center">
-            <h1 className="w-[990.05px] text-[#E5E5E5] text-[102.17px] max-smalllaptop:tracking-[-2.56px] max-smalllaptop:text-[84px] max-sm:text-[64px] max-smalllaptop:leading-[102%] text-center font-['Graphikthin'] leading-[104.21px] tracking-[-5.1px]">
+            <h1 className="w-[990.05px] text-[#E5E5E5] text-[102.17px] max-smalllaptop:tracking-[-2.56px] max-smalllaptop:text-[84px] max-sm:text-[64px] max-smallphone:text-[36px] max-sm:tracking-tight max-smalllaptop:leading-[102%] text-center font-['Graphikthin'] leading-[104.21px] tracking-[-5.1px]">
               Learn everything in Full Stack Development{" "}
             </h1>
           </div>

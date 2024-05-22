@@ -13,7 +13,7 @@ export default function About() {
         <div className={style.backgroundbox}></div>
       </div>
       <main className="flex justify-center pt-[190.35px] max-hamburger:pt-[100px] max-md:pt-[80px] max-sm:pt-[50px] px-[80px] max-md:px-[40px] max-sm:px-[20px] max-md:pb-0 pb-[220.65px]">
-        <h1 className="w-[1016.16px] font-['Graphikthin'] text-[104.57px] leading-[106.66px] tracking-[-5.2px] text-center max-smalllaptop:tracking-[-2.56px] max-smalllaptop:text-[84px] max-sm:text-[64px] max-smalllaptop:leading-[102%]">
+        <h1 className="w-[1016.16px] font-['Graphikthin'] text-[104.57px] leading-[106.66px] tracking-[-5.2px] text-center max-smalllaptop:tracking-[-2.56px] max-smalllaptop:text-[84px] max-sm:text-[64px] max-smallphone:text-[36px] max-sm:tracking-tight max-smalllaptop:leading-[102%]">
           We want to make upskilling accessible to{" "}
           <span className="font-bold font-['Graphik']">everyone.</span>
         </h1>
@@ -120,13 +120,17 @@ export default function About() {
             <h1 className="mt-[20px] text-[64px] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] leading-[61.68px] tracking-[-2.56px] text-[#E5E5E5] font-['Graphikthin']">
               The man behind the dream.
             </h1>
-            <p className="text-base text-[#E5E5E5] max-smalllaptop:w-[400px] max-hamburger:w-full w-[612.68px] mt-[55px] max-md:mt-[40px] font-['Graphikthin']">
-              Morbi mi amet at consequat pretium urna in elit sed. Volutpat urna
-              tortor libero sed tellus massa id. Fermentum pulvinar nibh non vel
-              ac adipiscing tortor adipiscing risus. Urna dignissim consectetur
-              eu non sit dignissim sagittis. Ipsum amet pellentesque cras turpis
-              dictum lorem. In lacus diam donec elit massa. Accumsan adipiscing
-              rhoncus tincidunt pellentesque neque. Pellentesque sodales magna{" "}
+            <p className="text-base text-[#E5E5E5] opacity-80 max-smalllaptop:w-[400px] max-hamburger:w-full w-[612.68px] mt-[55px] max-md:mt-[40px] font-['Graphikthin']">
+              A tech entrepreneur who has scaled up software businesses from
+              $100K to $10M in revenue and specializes in building world-class
+              tech teams from the ground up. Syed has seen all the sides of
+              education.
+              <br />
+              <br />
+              Coming from a humble background, he has experienced a fair share
+              of struggles when it comes to education. Hence, is on a mission to
+              do his best to make sure the upcoming generations have it better
+              than him when it comes to learning.
             </p>
           </div>
         </div>

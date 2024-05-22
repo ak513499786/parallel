@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="pl-[80px] max-md:px-[40px] max-sm:px-[20px] pt-[125.58px] pb-[14px] flex flex-col gap-[175.42px] max-sm:gap-[120px] relative pr-[76px]">
+    <footer className="pl-[80px] max-md:px-[40px] max-sm:px-[20px] pt-[125.58px] pb-[14px] flex flex-col gap-[100px] max-sm:gap-[80px] relative pr-[76px]">
       <div className="overflow-hidden absolute w-[100%] bottom-[0] left-0 h-[1449.12px]">
         <div
           className={`w-[100%] h-[849.12px] absolute bottom-[275.86px] ${style.footer}`}
@@ -21,9 +21,15 @@ export default function Footer() {
           </div>
           <div className="w-[76px]">
             <h1 className="text-[#E5E5E5] opacity-80 text-base">Follow us</h1>
-            <p className="mt-[12px] text-[#E5E5E5] text-base hover:underline cursor-pointer hover:decoration-solid">Instagram</p>
-            <p className="mt-[4px] text-[#E5E5E5] text-base hover:underline cursor-pointer hover:decoration-solid">Linkedin</p>
-            <p className="mt-[4px] text-[#E5E5E5] text-base hover:underline cursor-pointer hover:decoration-solid">YouTube</p>
+            <p className="mt-[12px] text-[#E5E5E5] text-base hover:underline cursor-pointer hover:decoration-solid">
+              Instagram
+            </p>
+            <p className="mt-[4px] text-[#E5E5E5] text-base hover:underline cursor-pointer hover:decoration-solid">
+              Linkedin
+            </p>
+            <p className="mt-[4px] text-[#E5E5E5] text-base hover:underline cursor-pointer hover:decoration-solid">
+              YouTube
+            </p>
           </div>
           <div className="w-[144px]">
             <h1 className="text-[#E5E5E5] opacity-80 text-base">Contact us</h1>
@@ -33,6 +39,19 @@ export default function Footer() {
             <p className="mt-[4px] text-[#E5E5E5] text-base">
               +91 99838 57373{" "}
             </p>
+          </div>
+          <div className="opacity-70">
+            <p className="mt-[4px] text-[#E5E5E5] text-base">
+              Copyright @ Parallel Education. All Rights Reserved{" "}
+            </p>
+            <div className="flex mt-[5.37px] gap-[13.9px]">
+              <p className="text-[#E5E5E5] text-base hover:underline cursor-pointer hover:decoration-solid">
+                Privacy Policy
+              </p>
+              <p className="text-[#E5E5E5] text-base hover:underline cursor-pointer hover:decoration-solid">
+                Terms of Service
+              </p>
+            </div>
           </div>
         </div>
         <div className="flex max-hamburger:gap-[50px] max-md:flex-wrap-reverse gap-[127.27px]">
@@ -83,7 +102,10 @@ export default function Footer() {
             >
               Courses
             </Link>
-            <Link href={"/fees"} className="mt-[4px] hover:underline cursor-pointer hover:decoration-solid w-[92px] text-[#E5E5E5] text-base">
+            <Link
+              href={"/fees"}
+              className="mt-[4px] hover:underline cursor-pointer hover:decoration-solid w-[92px] text-[#E5E5E5] text-base"
+            >
               Fees
             </Link>
             <Link
@@ -92,7 +114,10 @@ export default function Footer() {
             >
               Contact Us
             </Link>
-            <Link href={"/isa"} className="mt-[4px] hover:underline cursor-pointer hover:decoration-solid w-[92px] text-[#E5E5E5] text-base">
+            <Link
+              href={"/isa"}
+              className="mt-[4px] hover:underline cursor-pointer hover:decoration-solid w-[92px] text-[#E5E5E5] text-base"
+            >
               ISA
             </Link>
             <Link

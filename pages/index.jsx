@@ -78,8 +78,9 @@ export default function Home() {
       <main className="px-[80px] max-md:px-[40px] max-sm:px-[20px] max-md:pt-[50px] max-sm:pt-[30px] flex justify-between max-hamburger:items-center max-smalllaptop:gap-[20px] max-hamburger:flex-col pb-[29.5px] pt-[76px]">
         <div className="mt-[23px] max-hamburger:w-full max-md:mt-0">
           <div className="w-[799.41px] max-hamburger:w-[100%] relative z-30 max-smalllaptop:w-[510px] max-bigscreen:w-[676px]">
-            <h1 className="text-[104.57px] max-smalllaptop:tracking-[-2.56px] max-smalllaptop:text-[84px] max-sm:text-[64px] max-smalllaptop:leading-[102%] font-light tracking-[-5.22px] leading-[106.66px] text-[#E5E5E5] font-['Graphikthin'] mb-[42px]">
-              Upskill and get placed at
+            <h1 className="text-[90px] max-smalllaptop:tracking-[-4.5px] max-smalllaptop:text-[84px] max-sm:text-[64px] max-smallphone:text-[36px] max-sm:tracking-tight max-smalllaptop:leading-[102%] font-light tracking-[-5.22px] leading-[98.1px] text-[#E5E5E5] font-['Graphikthin'] mb-[42px]">
+              Learn new age tech like{" "}
+              <span className="font-semibold">AI, DSA</span> and get placed at{" "}
               <span className="font-semibold"> ₹0.</span>
             </h1>
             <p className="w-[393.32px] max-sm:w-full text-[16px] leading-[24px] text-[#E0E0E0]">
@@ -280,87 +281,7 @@ export default function Home() {
         <div className={style.backgroundcolor2}></div>
         <div className={style.backgroundbox2}></div>
       </div>
-      <div className="pt-[102.57px] max-sm:py-20 max-sm:px-[20px] max-md:px-[40px] relative z-20 pb-[62.43px] pl-[80px] pr-[79px]">
-        <div className="flex justify-between max-lg:gap-[50px]">
-          <p className="w-[817.15px] max-hamburger:w-full font-['Graphikthin'] text-[64px] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] font-light leading-[61.68px] tracking-[-2.56px] text-[#E5E5E5]">
-            Be ready with industry relevant skills before you graduate.
-          </p>
-          <Link href={"/courses"}>
-            <button className="w-[205px] max-md:hidden h-[53px] bg-[#30E29D] rounded-[8px] font-bold text-[#292929] text-[16px] font-[19.2px]">
-              Explore courses{" "}
-            </button>
-          </Link>
-        </div>
-        <div className="flex gap-[21px] max-md:flex-col mt-[67px] max-hamburger:flex-wrap max-hamburger:justify-center">
-          <div
-            className={`pl-[28px] max-sm:px-[20px] max-sm:py-[16px] w-[33%] max-hamburger:w-[45%] max-md:w-full pb-[41.87px] pr-[29.85px] border-[1px] pt-[32px] rounded-[8px] ${style.bordergradient}`}
-          >
-            <div className="bg-[#1F1F1F] w-[105px] px-[28.53px] py-[26.03px] border-[1px] rounded-[6px] border-[#FFFFFF66] ">
-              {" "}
-              <Image
-                src="/bag-rupee--bag-payment-cash-money-finance.svg"
-                width={47.94}
-                height={51.93}
-              />
-            </div>
-            <h1 className="w-[340px] max-bigscreen:w-[310px] max-xl:w-[250px] max-md:w-full max-xl:mt-[30px] font-['Graphikthin'] font-normal mt-[53.05px] mb-[18.16px] text-[32px] max-xl:text-[24px] max-xl:leading-[120%] leading-[40.32px] tracking-[-0.32px]">
-              Pay after getting placed.
-            </h1>
-            <p className="w-[355.15px] max-bigscreen:w-[310px] max-xl:w-full h-[136.91px] max-xl:h-[165px] max-lg:h-[200px] max-md:h-auto opacity-80 text-[#E0E0E0] text-base">
-              Start learning right away without having to worry about finances.
-              We believe in making quality education affordable. We ask a small
-              percentage of your CTC once you get placed.
-            </p>
-          </div>
-          <div
-            className={`pl-[28px] max-sm:px-[20px] max-sm:py-[16px] w-[33%] max-hamburger:w-[45%] max-md:w-full pb-[41.87px] pr-[29.85px] border-[1px] pt-[32px] rounded-[8px] ${style.bordergradient}`}
-          >
-            <div className="bg-[#1F1F1F] w-[105px] px-[26.53px] py-[26.14px] border-[1px] rounded-[6px] border-[#FFFFFF66] ">
-              {" "}
-              <Image
-                src="/star-badge--ribbon-reward-like-social-rating-media.svg"
-                width={51.93}
-                height={51.73}
-              />
-            </div>
-            <h1 className="w-[340px] max-bigscreen:w-[310px] max-xl:w-[250px] max-md:w-full max-xl:mt-[30px] font-['Graphikthin'] font-normal mt-[53.05px] mb-[18.16px] text-[32px] max-xl:text-[24px] max-xl:leading-[120%] leading-[40.32px] tracking-[-0.32px]">
-              Courses curated by industry experts.{" "}
-            </h1>
-            <p className="w-[355.15px] max-bigscreen:w-[310px] max-xl:w-full h-[136.91px] max-xl:h-[165px] max-lg:h-[200px] max-md:h-auto opacity-80 text-[#E0E0E0] text-base">
-              We brought together a band of industry experts who believe in the
-              same cause as we do. Learn from thought leaders with 10+ years of
-              experience.
-            </p>
-          </div>
-          <div
-            className={`pl-[28px] max-sm:px-[20px] max-sm:py-[16px] w-[33%] max-hamburger:w-[45%] max-md:w-full pb-[41.87px] pr-[29.85px] border-[1px] pt-[32px] rounded-[8px] ${style.bordergradient}`}
-          >
-            <div className="bg-[#1F1F1F] w-[105px] px-[26.63px] py-[26.13px] border-[1px] rounded-[6px] border-[#FFFFFF66] ">
-              {" "}
-              <Image
-                src="/bag-suitcase-2--product-business-briefcase.svg"
-                width={51.73}
-                height={51.73}
-              />
-            </div>
-            <h1 className="w-[340px] max-bigscreen:w-[310px] max-xl:w-[250px] max-md:w-full max-xl:mt-[30px] font-['Graphikthin'] font-normal mt-[53.05px] mb-[18.16px] text-[32px] max-xl:text-[24px] max-xl:leading-[120%] leading-[40.32px] tracking-[-0.32px]">
-              Placement support through our partners.{" "}
-            </h1>
-            <p className="w-[355.15px] max-bigscreen:w-[310px] max-xl:w-full h-[136.91px] max-xl:h-[165px] max-lg:h-[200px] max-md:h-auto opacity-80 text-[#E0E0E0] text-base">
-              We help you all the way through from upskilling to getting placed.
-              Parallel is partnered with 20+ companies to ease the placement
-              process. Get placed in companies that set the trend for the
-              future.
-            </p>
-          </div>
-        </div>
-        <Link href={"/courses"}>
-          <button className="w-full max-md:block hidden mt-[40px] h-[53px] bg-[#30E29D] rounded-[8px] font-bold text-[#292929] text-[16px] font-[19.2px]">
-            Explore courses{" "}
-          </button>
-        </Link>
-      </div>
-      <div className="px-[80px] max-sm:py-0 max-md:px-[40px] max-md:flex-col max-md:gap-[40px] max-sm:px-[20px] py-[103px] flex justify-between">
+      {/* <div className="px-[80px] max-sm:py-0 max-md:px-[40px] max-md:flex-col max-md:gap-[40px] max-sm:px-[20px] py-[103px] flex justify-between">
         <div>
           <h1 className="w-[665.36px] max-smalllaptop:w-full font-['Graphikthin'] max-bigscreen:w-[410px] text-[48px] max-sm:text-[32px] max-hamburger:leading-[120%] leading-[56.64px] tracking-[-1.92px] text-[#E5E5E5]">
             Become a college ambassador and get special perks.
@@ -386,7 +307,7 @@ export default function Home() {
             Contact Us{" "}
           </button>
         </Link>
-      </div>
+      </div> */}
       <div className="pt-[102.57px] max-sm:py-20 max-sm:px-[20px] max-md:px-[40px] relative z-20 pb-[102.43px] pl-[80px] pr-[79px]">
         <div className="flex justify-between max-smalllaptop:gap-[50px]">
           <p className="w-[665px] font-['Graphikthin'] text-[64px] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] font-light leading-[61.68px] tracking-[-2.56px] text-[#E5E5E5]">
@@ -494,6 +415,86 @@ export default function Home() {
           </button>
         </Link>
       </div>
+      <div className="pt-[102.57px] max-sm:py-20 max-sm:px-[20px] max-md:px-[40px] relative z-20 pb-[62.43px] pl-[80px] pr-[79px]">
+        <div className="flex justify-between max-lg:gap-[50px]">
+          <p className="w-[903.7px] max-hamburger:w-full font-['Graphikthin'] text-[64px] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] font-light leading-[61.68px] tracking-[-2.56px] text-[#E5E5E5]">
+            Courses with 100% job guarantee at an unbeatable price.{" "}
+          </p>
+          <Link href={"/courses"}>
+            <button className="w-[205px] max-md:hidden h-[53px] bg-[#30E29D] rounded-[8px] font-bold text-[#292929] text-[16px] font-[19.2px]">
+              Explore courses{" "}
+            </button>
+          </Link>
+        </div>
+        <div className="flex gap-[21px] max-md:flex-col mt-[67px] max-hamburger:flex-wrap max-hamburger:justify-center">
+          <div
+            className={`pl-[28px] max-sm:px-[20px] max-sm:py-[16px] w-[33%] max-hamburger:w-[45%] max-md:w-full pb-[41.87px] pr-[29.85px] border-[1px] pt-[32px] rounded-[8px] ${style.bordergradient}`}
+          >
+            <div className="bg-[#1F1F1F] w-[105px] px-[28.53px] py-[26.03px] border-[1px] rounded-[6px] border-[#FFFFFF66] ">
+              {" "}
+              <Image
+                src="/bag-rupee--bag-payment-cash-money-finance.svg"
+                width={47.94}
+                height={51.93}
+              />
+            </div>
+            <h1 className="w-[340px] max-bigscreen:w-[310px] max-xl:w-[250px] max-md:w-full max-xl:mt-[30px] font-['Graphikthin'] font-normal mt-[53.05px] mb-[18.16px] text-[32px] max-xl:text-[24px] max-xl:leading-[120%] leading-[40.32px] tracking-[-0.32px]">
+              Pay after getting placed.
+            </h1>
+            <p className="w-[355.15px] max-bigscreen:w-[310px] max-xl:w-full h-[136.91px] max-xl:h-[165px] max-lg:h-[200px] max-md:h-auto opacity-80 text-[#E0E0E0] text-base">
+              Start learning right away without having to worry about finances.
+              We believe in making quality education affordable. We ask a small
+              percentage of your CTC once you get placed.
+            </p>
+          </div>
+          <div
+            className={`pl-[28px] max-sm:px-[20px] max-sm:py-[16px] w-[33%] max-hamburger:w-[45%] max-md:w-full pb-[41.87px] pr-[29.85px] border-[1px] pt-[32px] rounded-[8px] ${style.bordergradient}`}
+          >
+            <div className="bg-[#1F1F1F] w-[105px] px-[26.53px] py-[26.14px] border-[1px] rounded-[6px] border-[#FFFFFF66] ">
+              {" "}
+              <Image
+                src="/star-badge--ribbon-reward-like-social-rating-media.svg"
+                width={51.93}
+                height={51.73}
+              />
+            </div>
+            <h1 className="w-[340px] max-bigscreen:w-[310px] max-xl:w-[250px] max-md:w-full max-xl:mt-[30px] font-['Graphikthin'] font-normal mt-[53.05px] mb-[18.16px] text-[32px] max-xl:text-[24px] max-xl:leading-[120%] leading-[40.32px] tracking-[-0.32px]">
+              Courses curated by industry experts.{" "}
+            </h1>
+            <p className="w-[355.15px] max-bigscreen:w-[310px] max-xl:w-full h-[136.91px] max-xl:h-[165px] max-lg:h-[200px] max-md:h-auto opacity-80 text-[#E0E0E0] text-base">
+              We brought together a band of industry experts who believe in the
+              same cause as we do. Learn from thought leaders with 10+ years of
+              experience.
+            </p>
+          </div>
+          <div
+            className={`pl-[28px] max-sm:px-[20px] max-sm:py-[16px] w-[33%] max-hamburger:w-[45%] max-md:w-full pb-[41.87px] pr-[29.85px] border-[1px] pt-[32px] rounded-[8px] ${style.bordergradient}`}
+          >
+            <div className="bg-[#1F1F1F] w-[105px] px-[26.63px] py-[26.13px] border-[1px] rounded-[6px] border-[#FFFFFF66] ">
+              {" "}
+              <Image
+                src="/bag-suitcase-2--product-business-briefcase.svg"
+                width={51.73}
+                height={51.73}
+              />
+            </div>
+            <h1 className="w-[340px] max-bigscreen:w-[310px] max-xl:w-[250px] max-md:w-full max-xl:mt-[30px] font-['Graphikthin'] font-normal mt-[53.05px] mb-[18.16px] text-[32px] max-xl:text-[24px] max-xl:leading-[120%] leading-[40.32px] tracking-[-0.32px]">
+              Placement support through our partners.{" "}
+            </h1>
+            <p className="w-[355.15px] max-bigscreen:w-[310px] max-xl:w-full h-[136.91px] max-xl:h-[165px] max-lg:h-[200px] max-md:h-auto opacity-80 text-[#E0E0E0] text-base">
+              We help you all the way through from upskilling to getting placed.
+              Parallel is partnered with 50+ companies to ease the placement
+              process. Get placed in companies that set the trend for the
+              future.
+            </p>
+          </div>
+        </div>
+        <Link href={"/courses"}>
+          <button className="w-full max-md:block hidden mt-[40px] h-[53px] bg-[#30E29D] rounded-[8px] font-bold text-[#292929] text-[16px] font-[19.2px]">
+            Explore courses{" "}
+          </button>
+        </Link>
+      </div>
       <div className="pl-[80px] max-md:px-[40px] max-sm:py-20 max-sm:px-[20px] pr-[79px] pt-[77.57px] pb-[139.43px]">
         <h1 className="w-[665.36px] max-hamburger:w-full text-[#E5E5E5] font-['Graphikthin'] text-[64px] leading-[61.68px] tracking-[-2.56px] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%]">
           Finish a course now. Pay after getting placed.
@@ -526,9 +527,9 @@ export default function Home() {
               <h1 className="text-[#ECECEC] leading-[28.8px] text-[24px] font-medium">
                 Free
               </h1>
-              <p className="text-[#A1A1A1] text-[16px] leading-[19.2px] mt-[10px]">
+              {/* <p className="text-[#A1A1A1] text-[16px] leading-[19.2px] mt-[10px]">
                 &lt; 18 Hours
-              </p>
+              </p> */}
             </div>
             <Link className="relative z-30" href={"/courses/low-code-no-code"}>
               <button className="w-[100%] mt-[15px] h-[53px] bg-[transparent] rounded-[8px] text-[#30E29D] transition-all button font-semibold border-[1px] border-[#30E29D] text-[16px] font-[19.2px]">
@@ -562,11 +563,14 @@ export default function Home() {
               <h1 className="text-[#ECECEC] leading-[28.8px] text-[24px] font-medium">
                 Free
               </h1>
-              <p className="text-[#A1A1A1] text-[16px] leading-[19.2px] mt-[10px]">
+              {/* <p className="text-[#A1A1A1] text-[16px] leading-[19.2px] mt-[10px]">
                 &lt; 18 Hours
-              </p>
+              </p> */}
             </div>
-            <Link className="relative z-30" href={"/courses/artificial-intelligence"}>
+            <Link
+              className="relative z-30"
+              href={"/courses/artificial-intelligence"}
+            >
               <button className="w-[100%] mt-[15px] h-[53px] bg-[transparent] rounded-[8px] text-[#30E29D] transition-all font-semibold button border-[1px] border-[#30E29D] text-[16px] font-[19.2px]">
                 Comming Soon{" "}
               </button>
@@ -598,11 +602,11 @@ export default function Home() {
               <h1 className="text-[#ECECEC] leading-[28.8px] text-[24px] font-medium">
                 Free
               </h1>
-              <p className="text-[#A1A1A1] text-[16px] leading-[19.2px] mt-[10px]">
+              {/* <p className="text-[#A1A1A1] text-[16px] leading-[19.2px] mt-[10px]">
                 &lt; 18 Hours
-              </p>
+              </p> */}
             </div>
-            <Link className="relative z-30"  href={"/courses/data-analytics"}>
+            <Link className="relative z-30" href={"/courses/data-analytics"}>
               <button className="w-[100%] mt-[15px] h-[53px] bg-[transparent] rounded-[8px] text-[#30E29D] transition-all font-semibold button border-[1px] border-[#30E29D] text-[16px] font-[19.2px]">
                 Comming Soon{" "}
               </button>
@@ -634,11 +638,14 @@ export default function Home() {
               <h1 className="text-[#ECECEC] leading-[28.8px] text-[24px] font-medium">
                 Free
               </h1>
-              <p className="text-[#A1A1A1] text-[16px] leading-[19.2px] mt-[10px]">
+              {/* <p className="text-[#A1A1A1] text-[16px] leading-[19.2px] mt-[10px]">
                 &lt; 18 Hours
-              </p>
+              </p> */}
             </div>
-            <Link className="relative z-30"  href={"/courses/full-stack-development"}>
+            <Link
+              className="relative z-30"
+              href={"/courses/full-stack-development"}
+            >
               <button className="w-[100%] mt-[15px] h-[53px] bg-[transparent] rounded-[8px] text-[#30E29D] button transition-all font-semibold border-[1px] border-[#30E29D] text-[16px] font-[19.2px]">
                 Comming Soon{" "}
               </button>
@@ -722,10 +729,68 @@ export default function Home() {
         </div>
       </section>
       <Success />
-      <section className="px-20 max-md:px-[40px] max-sm:px-[20px] max-sm:py-0 pt-[45px] pb-[94.24px] flex justify-between max-hamburger:gap-[40px] max-md:flex-col">
+      <div className="pt-[102.57px] max-sm:py-20 max-sm:px-[20px] max-md:px-[40px] relative z-20 pb-[62.43px] pl-[80px] pr-[79px]">
         <h1 className="w-[600px] max-hamburger:w-full  max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] text-[64px] leading-[61.68px] font-['Graphikthin'] tracking-[-2.56px] text-[#E5E5E5]">
           Learn from leading industry experts
         </h1>
+        <div className="flex gap-[21px] max-md:flex-col mt-[67px] max-hamburger:flex-wrap max-hamburger:justify-center">
+          <div
+            className={`pl-[28px] max-sm:px-[20px] max-sm:py-[16px] w-[33%] max-hamburger:w-[45%] max-md:w-full pb-[41.87px] pr-[29.85px] border-[1px] pt-[32px] rounded-[8px] ${style.bordergradient}`}
+          >
+            <div className="bg-[#1F1F1F] w-[125.17px] h-[123.97px] px-[28.53px] py-[26.03px] border-[1px] rounded-[6px] border-[#FFFFFF66] ">
+              {/* {" "}
+              <Image
+                src=""
+                width={47.94}
+                height={51.93}
+              /> */}
+            </div>
+            <h1 className="w-[340px] max-bigscreen:w-[310px] max-xl:w-[250px] max-md:w-full max-xl:mt-[30px] font-['Graphikthin'] font-normal mt-[53.05px] mb-[18.16px] text-[32px] max-xl:text-[24px] max-xl:leading-[120%] leading-[40.32px] tracking-[-0.32px]">
+              Buchi Babu Muvva
+            </h1>
+            <p className="w-[275.15px] max-bigscreen:w-[310px] max-xl:w-full opacity-80 text-[#E0E0E0] text-base">
+              Information Technology Expert, PhD. 15+ years of experience
+            </p>
+          </div>
+          <div
+            className={`pl-[28px] max-sm:px-[20px] max-sm:py-[16px] w-[33%] max-hamburger:w-[45%] max-md:w-full pb-[41.87px] pr-[29.85px] border-[1px] pt-[32px] rounded-[8px] ${style.bordergradient}`}
+          >
+            <div className="bg-[#1F1F1F] w-[125.17px] h-[123.97px] px-[28.53px] py-[26.03px] border-[1px] rounded-[6px] border-[#FFFFFF66] ">
+              {/* {" "}
+              <Image
+                src=""
+                width={47.94}
+                height={51.93}
+              /> */}
+            </div>
+            <h1 className="w-[340px] max-bigscreen:w-[310px] max-xl:w-[250px] max-md:w-full max-xl:mt-[30px] font-['Graphikthin'] font-normal mt-[53.05px] mb-[18.16px] text-[32px] max-xl:text-[24px] max-xl:leading-[120%] leading-[40.32px] tracking-[-0.32px]">
+              Sandeep Ravichandran
+            </h1>
+            <p className="w-[225.15px] max-bigscreen:w-[310px] max-xl:w-full opacity-80 text-[#E0E0E0] text-base">
+              AI and Data Analytics Expert. 15+ years of experience
+            </p>
+          </div>
+          <div
+            className={`pl-[28px] max-sm:px-[20px] max-sm:py-[16px] w-[33%] max-hamburger:w-[45%] max-md:w-full pb-[41.87px] pr-[29.85px] border-[1px] pt-[32px] rounded-[8px] ${style.bordergradient}`}
+          >
+            <div className="bg-[#1F1F1F] w-[125.17px] h-[123.97px] px-[28.53px] py-[26.03px] border-[1px] rounded-[6px] border-[#FFFFFF66] ">
+              {/* {" "}
+              <Image
+                src=""
+                width={47.94}
+                height={51.93}
+              /> */}
+            </div>
+            <h1 className="w-[340px] max-bigscreen:w-[310px] max-xl:w-[250px] max-md:w-full max-xl:mt-[30px] font-['Graphikthin'] font-normal mt-[53.05px] mb-[18.16px] text-[32px] max-xl:text-[24px] max-xl:leading-[120%] leading-[40.32px] tracking-[-0.32px]">
+              Ajith Jagadish
+            </h1>
+            <p className="w-[195.15px] max-bigscreen:w-[310px] max-xl:w-full opacity-80 text-[#E0E0E0] text-base">
+              Career & Lifestyle Coach. 12+ years of experience
+            </p>
+          </div>
+        </div>
+      </div>
+      {/* <section className="px-20 max-md:px-[40px] max-sm:px-[20px] max-sm:py-0 pt-[45px] pb-[94.24px] flex justify-between max-hamburger:gap-[40px] flex-col">
         <div className="w-[640px] shadow-inner overflow-hidden max-md:w-full h-[530.76px] max-sm:h-[300.76px]">
           <div ref={leadinganimation} className="h-[705px] max-sm:h-auto">
             <div
@@ -844,7 +909,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       <section className="w-[100%] h-[614px] max-sm:h-auto max-sm:h-[300px] max-sm:mt-10 max-sm:py-10 overflow-hidden flex justify-center items-center relative">
         <Image
           src="/Frame 83.svg"
@@ -852,8 +917,8 @@ export default function Home() {
           width={107.16}
           height={107.16}
         />
-        <h1 className="w-[405.36px] max-sm:w-full z-20 relative max-sm:px-[20px] font-['Graphikthin'] text-[64px] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] leading-[61.68px] tracking-[-2.56px] text-[#E5E5E5] text-center">
-          Choose from 5+ subjects.{" "}
+        <h1 className="w-[665.36px] max-sm:w-full z-20 relative max-sm:px-[20px] font-['Graphikthin'] text-[64px] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] leading-[61.68px] tracking-[-2.56px] text-[#E5E5E5] text-center">
+          In-demand skills that guarantee jobs{" "}
         </h1>
         <div className="w-[100%] z-[2] overflow-hidden absolute bottom-[-200px] h-[966.17px]">
           <div className={`${style.circle2}`}></div>

@@ -17,7 +17,7 @@ export default function Signup() {
         />
       </div>
       <div className="w-[100%] flex flex-col gap-[66px] max-md:px-[40px] max-sm:px-[20px] max-lg:px-[80px] items-center z-20 relative font-['Graphikthin'] h-[643px]">
-        <h1 className="capitalize w-[966.01px] max-smalllaptop:text-[84px] max-sm:text-[64px] max-smalllaptop:leading-[102%] max-sm:text-left max-lg:w-full mt-[157.5px] max-sm:mt-[80px] text-[#E5E5E5] text-center text-[102.17px] leading-[104.21px] tracking-[-5.1px]">
+        <h1 className="capitalize w-[966.01px] max-smalllaptop:text-[84px] max-sm:text-[64px] max-smallphone:text-[36px] max-sm:tracking-tight max-smalllaptop:leading-[102%] max-sm:text-left max-lg:w-full mt-[157.5px] max-sm:mt-[80px] text-[#E5E5E5] text-center text-[102.17px] leading-[104.21px] tracking-[-5.1px]">
           Upskill on your favorite topics for free.{" "}
         </h1>
         <div className="flex justify-center max-md:justify-between max-md:w-full gap-[18px]">

@@ -13,8 +13,8 @@ export default function Courses() {
       <div className="absolute w-[100%] h-[811px] top-0 left-0 overflow-hidden">
         <div className={style.backgroundbox}></div>
       </div>
-      <main className="pt-[190.35px] pb-[111.65px] max-md:pt-[100px] max-sm:pt-[80px] flex justify-center">
-        <p className="w-[1016.16px] max-lg:w-full max-lg:px-[80px] max-md:px-[40px] max-sm:px-[20px] max-smalllaptop:tracking-[-2.56px] max-smalllaptop:text-[84px] max-sm:text-[64px] max-smalllaptop:leading-[102%] font-thin leading-[106.66px] tracking-[-5.2px] text-[104.57px] font-['Graphikthin'] text-[#E5E5E5] text-center">
+      <main className="pt-[190.35px] pb-[111.65px] max-sm:pb-[40px] max-md:pt-[100px] max-sm:pt-[80px] flex justify-center">
+        <p className="w-[1016.16px] max-lg:w-full max-lg:px-[80px] max-md:px-[40px] max-sm:px-[20px] max-smalllaptop:tracking-[-2.56px] max-smalllaptop:text-[84px] max-sm:text-[64px] max-smallphone:text-[36px] max-sm:tracking-tight max-smalllaptop:leading-[102%] font-thin leading-[106.66px] tracking-[-5.2px] text-[104.57px] font-['Graphikthin'] text-[#E5E5E5] text-center">
           A plethora of topics to upskill on
         </p>
       </main>

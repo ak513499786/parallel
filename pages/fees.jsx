@@ -38,7 +38,7 @@ export default function Fees() {
         <div className={style.backgroundbox2}></div>
       </div>
       <main className="pl-[80px] max-md:px-[40px] max-sm:px-[20px] max-md:pt-[50px] relative z-20 pt-[117.42px] pb-[211.58px] max-md:pb-0">
-        <h1 className="w-[894.59px] max-hamburger:w-full max-smalllaptop:tracking-[-2.56px] max-smalllaptop:text-[84px] max-sm:text-[64px] max-smalllaptop:leading-[102%] font-['Graphikthin'] text-[127.98px] text-[#E5E5E5] leading-[130.54px] tracking-[-6.35px]">
+        <h1 className="w-[894.59px] max-hamburger:w-full max-smalllaptop:tracking-[-2.56px] max-smalllaptop:text-[84px] max-sm:text-[64px] max-smallphone:text-[36px] max-sm:tracking-tight max-smalllaptop:leading-[102%] font-['Graphikthin'] text-[127.98px] text-[#E5E5E5] leading-[130.54px] tracking-[-6.35px]">
           We charge you ₹<span className="font-semibold">0 </span>upfront.
         </h1>
       </main>
@@ -59,7 +59,7 @@ export default function Fees() {
         <p className="text-[#E5E5E5] text-[64px] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] font-['Graphikthin'] leading-[61.68px] tracking-[-2.56px]">
           What you will be paying us
         </p>
-        <h1 className="w-[1172px] max-xl:w-full text-[147.6px] max-smalllaptop:tracking-[-2.56px] max-smalllaptop:text-[84px] max-sm:text-[64px] max-smalllaptop:leading-[102%] font-['Graphikthin'] leading-[142.26px] text-[#E5E5E5] tracking-[-5.9px]">
+        <h1 className="w-[1172px] max-xl:w-full text-[147.6px] max-smalllaptop:tracking-[-2.56px] max-smalllaptop:text-[84px] max-sm:text-[64px] max-smallphone:text-[36px] max-sm:tracking-tight max-smalllaptop:leading-[102%] font-['Graphikthin'] leading-[142.26px] text-[#E5E5E5] tracking-[-5.9px]">
           <span className="font-bold">15</span>% of your CTC for{" "}
           <span className="font-bold">12 months.</span>
         </h1>
@@ -75,7 +75,7 @@ export default function Fees() {
           <table className="w-[826px] max-sm:text-[24px] max-smallphone:text-[20px] max-hamburger:w-full mt-[51px] font-['Graphikthin'] text-[32px] leading-[30.84px] font-light text-[#E5E5E5] tracking-[-0.64px] text-left h-[336px]">
             <tr>
               <th className="w-[413px] max-hamburger:w-[50%] h-[112px] pl-[32.76px] max-sm:pl-[16px] border-[1px] border-white font-['Graphikthin'] font-light">
-                Week 1 - 5
+                Week 1 - 4
               </th>
               <th className="w-[413px] max-hamburger:w-[50%] h-[112px] pl-[32.76px] max-sm:pl-[16px] border-[1px] border-white font-['Graphikthin'] font-light">
                 No Payment
@@ -83,18 +83,26 @@ export default function Fees() {
             </tr>
             <tr>
               <th className="w-[413px] max-hamburger:w-[50%] h-[112px] pl-[32.76px] max-sm:pl-[16px] border-[1px] border-white font-['Graphikthin'] font-light">
-                Week 6 - 15
+                Week 5 - 12
               </th>
               <th className="w-[413px] max-hamburger:w-[50%] h-[112px] pl-[32.76px] max-sm:pl-[16px] border-[1px] border-white font-['Graphikthin'] font-light">
-                ₹20,000
+                ₹15,000
               </th>
             </tr>
             <tr>
               <th className="w-[413px] max-hamburger:w-[50%] h-[112px] pl-[32.76px] max-sm:pl-[16px] border-[1px] border-white font-['Graphikthin'] font-light">
-                Week 15 - 20
+                Week 13 - 18
               </th>
               <th className="w-[413px] max-hamburger:w-[50%] h-[112px] pl-[32.76px] max-sm:pl-[16px] border-[1px] border-white font-['Graphikthin'] font-light">
-                ₹45,000
+                ₹30,000
+              </th>
+            </tr>
+            <tr>
+              <th className="w-[413px] max-hamburger:w-[50%] h-[112px] pl-[32.76px] max-sm:pl-[16px] border-[1px] border-white font-['Graphikthin'] font-light">
+                Week 18 - 24{" "}
+              </th>
+              <th className="w-[413px] max-hamburger:w-[50%] h-[112px] pl-[32.76px] max-sm:pl-[16px] border-[1px] border-white font-['Graphikthin'] font-light">
+                ₹45,000{" "}
               </th>
             </tr>
           </table>
@@ -149,7 +157,10 @@ export default function Fees() {
               className="h-[54px] rounded-[4px] border-[1px] border-white pl-[17.51px] bg-[transparent] placeholder-[#ffffff99] text-white"
             />
           </div>
-          <button onClick={handleSubmit} className="w-full h-[53px] bg-[#30E29D] rounded-[8px] font-bold text-[#292929] text-[16px] font-[19.2px]">
+          <button
+            onClick={handleSubmit}
+            className="w-full h-[53px] bg-[#30E29D] rounded-[8px] font-bold text-[#292929] text-[16px] font-[19.2px]"
+          >
             Talk to our experts{" "}
           </button>
         </div>

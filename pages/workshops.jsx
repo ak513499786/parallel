@@ -33,7 +33,7 @@ export default function Workshop() {
         <div className={style.backgroundboxworkshop}></div>
       </div>
       <main className="w-[100%]  pl-[80px] pt-[171.5px] max-hamburger:py-[100px] max-md:py-[80px] max-sm:py-[50px] pb-[272.5px] relative max-sm:px-[20px] max-md:px-[40px] max-smalllaptop:h-[1150px] max-hamburger:h-auto max-smalllaptop:overflow-hidden">
-        <h1 className="w-[665.36px] z-[2] text-[64px] max-smalllaptop:w-full max-hamburger:text-[48px] max-hamburger:leading-[120%] leading-[61.68px] font-['Graphikthin'] text-[#E5E5E5] tracking-[-2.56px]">
+        <h1 className="w-[665.36px] z-[2] text-[64px] max-smalllaptop:w-full max-hamburger:text-[48px] max-sm:text-[36px] max-sm:tracking-tight max-hamburger:leading-[120%] leading-[61.68px] font-['Graphikthin'] text-[#E5E5E5] tracking-[-2.56px]">
           Host a skill focused workshop at your college.{" "}
         </h1>
         <div className="flex mt-[49px] gap-[32px]">
@@ -44,7 +44,7 @@ export default function Workshop() {
           </Link>
         </div>
         <Image
-          src="/image-from-rawpixel-id-12991629-png 1.svg"
+          src="/workshop1.svg"
           className="absolute top-[100.31px] right-[111.75px] max-smalllaptop:top-[50px]  max-smalllaptop:scale-100 max-smalllaptop:right-[-300px] max-xl:scale-75 max-smalllaptop:relative max-hamburger:hidden h-[329.29px] w-[449.44px] z-[10]"
           width={107.16}
           height={107.16}
@@ -74,7 +74,7 @@ export default function Workshop() {
         <div className="flex gap-[84px] max-hamburger:flex-nowrap max-md:flex-wrap-reverse max-smalllaptop:flex-wrap-reverse max-smalllaptop:items-start mb-[80.56px] max-xl:ml-0 max-xl:gap-[32px] items-center">
           <div className="flex py-[31.82px] max-hamburger:h-auto max-hamburger:w-full max-hamburger:flex-col gap-[31.04px] h-[289px] w-[934px] max-xl:w-full bg-[#FFD7071A] px-[18px] max-md:w-full border-l-[#FFD707C4] border-t-[#FFD707C4] rounded-[10px] border-[1px] border-[#99999999]">
             <Image
-              src="/frame 46 (1).svg"
+              src="/workshop01.svg"
               width={107.16}
               className="w-[290.96px] max-hamburger:h-auto max-hamburger:w-full h-[225.36px]"
               height={107.16}
@@ -104,7 +104,7 @@ export default function Workshop() {
           </h1>{" "}
           <div className="flex py-[31.82px] max-hamburger:flex-col max-hamburger:h-auto max-hamburger:w-full gap-[31.04px] h-[289px] w-[934px] max-xl:w-full bg-[#95FF931A] px-[18px] max-md:w-full border-l-[#95FF93C4] border-t-[#95FF93C4] rounded-[10px] border-[1px] border-[#99999999]">
             <Image
-              src="/frame 46 (6).svg"
+              src="/workshop2.svg"
               width={107.16}
               className="w-[290.96px] h-[225.36px] max-hamburger:h-auto max-hamburger:w-full"
               height={107.16}
@@ -158,7 +158,7 @@ export default function Workshop() {
           </h1>{" "}
           <div className="flex py-[26.5px] max-hamburger:flex-col max-hamburger:h-auto gap-[31.04px] h-[289px] w-[934px] max-xl:w-full bg-[#FF41D51A] px-[18px] max-md:w-full border-l-[#FF41D5C4] border-t-[#FF41D5C4] rounded-[10px] border-[1px] border-[#99999999]">
             <Image
-              src="/frame 46 (2).svg"
+              src="/workshop4.svg"
               width={107.16}
               className="w-[290.96px] mt-[5.52px] max-hamburger:w-full max-hamburger:h-auto h-[225.36px]"
               height={107.16}
@@ -183,17 +183,116 @@ export default function Workshop() {
           </div>
         </div>
       </section>
+      <section className="pt-[107.84px] pb-[56px] max-md:py-[30px] px-[80px] max-md:px-[40px] max-sm:px-[20px]">
+        <h1 className="text-[64px] text-center mb-[57.16px] max-hamburger:text-[48px] max-sm:text-[36px] max-sm:tracking-tighter max-hamburger:leading-[120%] leading-[61.68px] font-['Graphikthin'] text-[#E5E5E5] tracking-[-2.56px]">
+          What your students will get{" "}
+        </h1>
+        <div
+          className={` ${style.bordergradient} w-full max-hamburger:px-[30px] max-md:px-[20px] max-sm:px-[10px] max-md:py-[30px] pt-[54.45px] pb-[52.55px] rounded-[7px] px-[47px]`}
+        >
+          <div className="flex mb-[21.5px] gap-[10px] items-start">
+            <Image src="/tick.svg" width={24} height={24} className="max-hamburger:mt-[5px]" />
+            <p className="text-[20px] leading-[19.28px] text-[#E5E5E5] mt-[2.5px] max-hamburger:text-base max-hamburger:mt-0 max-sm:text-sm">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci
+              autem nulla exercitationem. Modi, laudantium velit.F
+            </p>
+          </div>
+          <div className="flex mb-[21.5px] gap-[10px] items-start">
+            <Image src="/tick.svg" width={24} height={24} className="max-hamburger:mt-[5px]" />
+            <p className="text-[20px] leading-[19.28px] text-[#E5E5E5] mt-[2.5px] max-hamburger:text-base max-hamburger:mt-0 max-sm:text-sm">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci
+              autem nulla exercitationem. Modi, laudantium velit.F
+            </p>
+          </div>
+          <div className="flex mb-[21.5px] gap-[10px] items-start">
+            <Image src="/tick.svg" width={24} height={24} className="max-hamburger:mt-[5px]" />
+            <p className="text-[20px] leading-[19.28px] text-[#E5E5E5] mt-[2.5px] max-hamburger:text-base max-hamburger:mt-0 max-sm:text-sm">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci
+              autem nulla exercitationem. Modi, laudantium velit.F
+            </p>
+          </div>
+          <div className="flex mb-[21.5px] gap-[10px] items-start">
+            <Image src="/tick.svg" width={24} height={24} className="max-hamburger:mt-[5px]" />
+            <p className="text-[20px] leading-[19.28px] text-[#E5E5E5] mt-[2.5px] max-hamburger:text-base max-hamburger:mt-0 max-sm:text-sm">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci
+              autem nulla exercitationem. Modi, laudantium velit.F
+            </p>
+          </div>
+          <div className="flex mb-[21.5px] gap-[10px] items-start">
+            <Image src="/tick.svg" width={24} height={24} className="max-hamburger:mt-[5px]" />
+            <p className="text-[20px] leading-[19.28px] text-[#E5E5E5] mt-[2.5px] max-hamburger:text-base max-hamburger:mt-0 max-sm:text-sm">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci
+              autem nulla exercitationem. Modi, laudantium velit.F
+            </p>
+          </div>
+          <div className="flex mb-[21.5px] gap-[10px] items-start">
+            <Image src="/tick.svg" width={24} height={24} className="max-hamburger:mt-[5px]" />
+            <p className="text-[20px] leading-[19.28px] text-[#E5E5E5] mt-[2.5px] max-hamburger:text-base max-hamburger:mt-0 max-sm:text-sm">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci
+              autem nulla exercitationem. Modi, laudantium velit.F
+            </p>
+          </div>
+          <div className="flex mb-[21.5px] gap-[10px] items-start">
+            <Image src="/tick.svg" width={24} height={24} className="max-hamburger:mt-[5px]" />
+            <p className="text-[20px] leading-[19.28px] text-[#E5E5E5] mt-[2.5px] max-hamburger:text-base max-hamburger:mt-0 max-sm:text-sm">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci
+              autem nulla exercitationem. Modi, laudantium velit.F
+            </p>
+          </div>
+          <div className="flex mb-[21.5px] gap-[10px] items-start">
+            <Image src="/tick.svg" width={24} height={24} className="max-hamburger:mt-[5px]" />
+            <p className="text-[20px] leading-[19.28px] text-[#E5E5E5] mt-[2.5px] max-hamburger:text-base max-hamburger:mt-0 max-sm:text-sm">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci
+              autem nulla exercitationem. Modi, laudantium velit.F
+            </p>
+          </div>
+          <div className="flex mb-[21.5px] gap-[10px] items-start">
+            <Image src="/tick.svg" width={24} height={24} className="max-hamburger:mt-[5px]" />
+            <p className="text-[20px] leading-[19.28px] text-[#E5E5E5] mt-[2.5px] max-hamburger:text-base max-hamburger:mt-0 max-sm:text-sm">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci
+              autem nulla exercitationem. Modi, laudantium velit.F
+            </p>
+          </div>
+          <div className="flex mb-[21.5px] gap-[10px] items-start">
+            <Image src="/tick.svg" width={24} height={24} className="max-hamburger:mt-[5px]" />
+            <p className="text-[20px] leading-[19.28px] text-[#E5E5E5] mt-[2.5px] max-hamburger:text-base max-hamburger:mt-0 max-sm:text-sm">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci
+              autem nulla exercitationem. Modi, laudantium velit.F
+            </p>
+          </div>
+          <div className="flex mb-[21.5px] gap-[10px] items-start">
+            <Image src="/tick.svg" width={24} height={24} className="max-hamburger:mt-[5px]" />
+            <p className="text-[20px] leading-[19.28px] text-[#E5E5E5] mt-[2.5px] max-hamburger:text-base max-hamburger:mt-0 max-sm:text-sm">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci
+              autem nulla exercitationem. Modi, laudantium velit.F
+            </p>
+          </div>
+          <div className="flex gap-[10px] items-center">
+            <Image src="/tick.svg" width={24} height={24} className="max-hamburger:mt-[5px]" />
+            <p className="text-[20px] leading-[19.28px] text-[#E5E5E5] mt-[2.5px] max-hamburger:text-base max-hamburger:mt-0 max-sm:text-sm">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci
+              autem nulla exercitationem. Modi, laudantium velit.F
+            </p>
+          </div>
+        </div>
+      </section>
+      <section className="flex flex-col items-center pt-[49.9px] pb-[134px] max-md:py-[30px] px-[80px] max-md:px-[40px] max-sm:px-[20px]">
+        <h1 className="text-[36px] text-center mb-[50.16px] max-hamburger:text-[28px] max-hamburger:leading-[120%] leading-[41.68px] font-['Graphikthin'] text-[#E5E5E5] tracking-[-1.08px]">
+          What your students will get{" "}
+        </h1>
+        <Image src="/certificate.png" width={1063} height={632} className="max-xl:w-full max-xl:h-auto" />
+        </section>
       <section className="py-[168.5px] max-md:px-[40px] max-sm:px-[20px] max-md:py-[40px] relative px-[62.74px]">
         <div className="absolute w-[100%] h-[100vh] top-0 left-0 overflow-hidden">
           <div className={style.backgroundboxworkshop}></div>
         </div>
         <p className="text-[48px] leading-[46.26px] w-[554px] max-md:w-full tracking-[-1.92px] max-md:text-[32px] max-md:leading-[120%] text-[#E5E5E5] font-['Graphikthin'] text-[#E5E5E5] mb-[65.09px]">
-          <span className="font-bold">4 hours </span>
+          <span className="font-bold">3 hours </span>
           of fun and learning. All at a low cost of{" "}
         </p>
         <div className="flex max-smallphone:flex-col items-end">
-          <h1 className="text-[257.99px] max-hamburger:text-[187px] max-md:text-[157px] max-hamburger:leading-[90%] max-hamburger:w-auto max-sm:text-[107px] max-sm:pr-[10px] max-smallphone:w-full w-[547px] font-['Graphikthin'] text-[#E5E5E5] tracking-[-10.35px] leading-[220px]">
-            ₹<span className="font-bold font-['Graphik']">100</span>
+          <h1 className="text-[257.99px] max-hamburger:text-[187px] max-md:text-[157px] max-hamburger:leading-[90%] max-hamburger:w-auto max-sm:text-[107px] max-sm:pr-[10px] max-smallphone:w-full w-[547px] font-['Graphikthin'] text-[#E5E5E5] max-hamburger:tracking-tighter max-sm:tracking-tight tracking-[-10.35px] leading-[220px]">
+            ₹<span className="font-bold font-['Graphik']">199</span>
           </h1>
           <p className="text-[48px] leading-[46.26px] max-sm:text-[28px] max-sm:leading-[32px] tracking-[-1.92px] text-[#E5E5E5] font-['Graphikthin'] text-[#E5E5E5]">
             per student.{" "}
@@ -206,10 +305,10 @@ export default function Workshop() {
         </Link>
       </section>
       <section className="px-[80px] max-md:px-[40px] max-sm:px-[20px] bg-white max-sm:py-0 relative py-[173.5px] flex flex-col justify-center items-center gap-[65px]">
-        <h1 className="text-center w-[728.14px] max-hamburger:w-full text-black relative z-20 text-[64px] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] font-['Graphikthin'] leading-[61.68px] font-light tracking-[-2.56px] ">
+        <h1 className="text-center max-sm:pt-[20px] w-[728.14px] max-hamburger:w-full text-black relative z-20 text-[64px] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] font-['Graphikthin'] leading-[61.68px] font-light max-sm:tracking-[-1.28px] tracking-[-2.56px] ">
           Colleges benefitting from our workshops.{" "}
         </h1>
-        <div className="flex flex-wrap items-center justify-center z-20 gap-x-[22px] gap-y-[27px]">
+        <div className="flex flex-wrap max-sm:pb-[20px] items-center justify-center z-20 gap-x-[22px] gap-y-[27px]">
           <Image
             src="/college.png"
             className="relative z-20 max-sm:w-[46%]"
@@ -342,114 +441,69 @@ export default function Workshop() {
       </div>
       <section className="pl-[80px] max-sm:py-10 max-sm:px-[20px] max-md:px-[40px] pr-[79px] pt-[92.84px] pb-[93px]">
         <h1 className="text-[64px] max-hamburger:w-full mb-[49.16px] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] leading-[61.88px] text-[##E5E5E5] opacity-90 tracking-[-2.56px] font-['Graphikthin'] w-[868px]">
-          Workshops conducted by many passionate industry experts
+          Workshops conducted by passionate industry experts
         </h1>
-        <div className="flex flex-wrap gap-x-[21px] gap-y-[24px]">
-          <div className="flex border-[1px] border-[#FFFFFFB0] gap-[33.93px] items-center w-[413px] pr-[51px] pb-[41.93px] rounded-[5px] pl-[20.08px] pt-[36.08px] h-[161px] max-biggerscreen:w-[32%] max-xl:px-[20px] max-xl:w-[31%] max-smalllaptop:w-[48%] max-md:w-full max-smalllaptop:p-[20px] max-smalllaptop:h-auto max-smallphone:p-[10px] max-hamburger:gap-[20px]">
-            <Image src="/Frame 1000002775.png" width={80.99} height={80.99} />
-            <div>
-              <h1 className="text-[#E5E5E5] text-[20px] leading-[22.4px] font-['Graphikthin']">
-                Prashant Hegde
-              </h1>
-              <p className="text-[#A1A1A1] text-[20px] font-['Graphikthin'] leading-[24px] mt-[8px]">
-                Senior Designer, Spotify
-              </p>
+        <div className="flex gap-[21px] max-md:flex-col mt-[67px] max-hamburger:flex-wrap max-hamburger:justify-center">
+          <div
+            className={`pl-[28px] max-sm:px-[20px] max-sm:py-[16px] w-[33%] max-hamburger:w-[45%] max-md:w-full pb-[41.87px] pr-[29.85px] border-[1px] pt-[32px] rounded-[8px] ${style.bordergradient}`}
+          >
+            <div className="bg-[#1F1F1F] w-[125.17px] h-[123.97px] px-[28.53px] py-[26.03px] border-[1px] rounded-[6px] border-[#FFFFFF66] ">
+              {/* {" "}
+              <Image
+                src=""
+                width={47.94}
+                height={51.93}
+              /> */}
             </div>
+            <h1 className="w-[340px] max-bigscreen:w-[310px] max-xl:w-[250px] max-md:w-full max-xl:mt-[30px] font-['Graphikthin'] font-normal mt-[53.05px] mb-[18.16px] text-[32px] max-xl:text-[24px] max-xl:leading-[120%] leading-[40.32px] tracking-[-0.32px]">
+              Buchi Babu Muvva
+            </h1>
+            <p className="w-[275.15px] max-bigscreen:w-[310px] max-xl:w-full opacity-80 text-[#E0E0E0] text-base">
+              Information Technology Expert, PhD. 15+ years of experience
+            </p>
           </div>
-          <div className="flex border-[1px] border-[#FFFFFFB0] gap-[33.93px] items-center w-[413px] pr-[51px] pb-[41.93px] rounded-[5px] pl-[20.08px] pt-[36.08px] h-[161px] max-biggerscreen:w-[32%] max-xl:px-[20px] max-xl:w-[31%] max-smalllaptop:w-[48%] max-md:w-full max-smalllaptop:p-[20px] max-smalllaptop:h-auto max-smallphone:p-[10px] max-hamburger:gap-[20px]">
-            <Image src="/Frame 1000002775.png" width={80.99} height={80.99} />
-            <div>
-              <h1 className="text-[#E5E5E5] text-[20px] leading-[22.4px] font-['Graphikthin']">
-                Prashant Hegde
-              </h1>
-              <p className="text-[#A1A1A1] text-[20px] font-['Graphikthin'] leading-[24px] mt-[8px]">
-                Senior Designer, Spotify
-              </p>
+          <div
+            className={`pl-[28px] max-sm:px-[20px] max-sm:py-[16px] w-[33%] max-hamburger:w-[45%] max-md:w-full pb-[41.87px] pr-[29.85px] border-[1px] pt-[32px] rounded-[8px] ${style.bordergradient}`}
+          >
+            <div className="bg-[#1F1F1F] w-[125.17px] h-[123.97px] px-[28.53px] py-[26.03px] border-[1px] rounded-[6px] border-[#FFFFFF66] ">
+              {/* {" "}
+              <Image
+                src=""
+                width={47.94}
+                height={51.93}
+              /> */}
             </div>
+            <h1 className="w-[340px] max-bigscreen:w-[310px] max-xl:w-[250px] max-md:w-full max-xl:mt-[30px] font-['Graphikthin'] font-normal mt-[53.05px] mb-[18.16px] text-[32px] max-xl:text-[24px] max-xl:leading-[120%] leading-[40.32px] tracking-[-0.32px]">
+              Sandeep Ravichandran
+            </h1>
+            <p className="w-[225.15px] max-bigscreen:w-[310px] max-xl:w-full opacity-80 text-[#E0E0E0] text-base">
+              AI and Data Analytics Expert. 15+ years of experience
+            </p>
           </div>
-          <div className="flex border-[1px] border-[#FFFFFFB0] gap-[33.93px] items-center w-[413px] pr-[51px] pb-[41.93px] rounded-[5px] pl-[20.08px] pt-[36.08px] h-[161px] max-biggerscreen:w-[32%] max-xl:px-[20px] max-xl:w-[31%] max-smalllaptop:w-[48%] max-md:w-full max-smalllaptop:p-[20px] max-smalllaptop:h-auto max-smallphone:p-[10px] max-hamburger:gap-[20px]">
-            <Image src="/Frame 1000002775.png" width={80.99} height={80.99} />
-            <div>
-              <h1 className="text-[#E5E5E5] text-[20px] leading-[22.4px] font-['Graphikthin']">
-                Prashant Hegde
-              </h1>
-              <p className="text-[#A1A1A1] text-[20px] font-['Graphikthin'] leading-[24px] mt-[8px]">
-                Senior Designer, Spotify
-              </p>
+          <div
+            className={`pl-[28px] max-sm:px-[20px] max-sm:py-[16px] w-[33%] max-hamburger:w-[45%] max-md:w-full pb-[41.87px] pr-[29.85px] border-[1px] pt-[32px] rounded-[8px] ${style.bordergradient}`}
+          >
+            <div className="bg-[#1F1F1F] w-[125.17px] h-[123.97px] px-[28.53px] py-[26.03px] border-[1px] rounded-[6px] border-[#FFFFFF66] ">
+              {/* {" "}
+              <Image
+                src=""
+                width={47.94}
+                height={51.93}
+              /> */}
             </div>
-          </div>
-          <div className="flex border-[1px] border-[#FFFFFFB0] gap-[33.93px] items-center w-[413px] pr-[51px] pb-[41.93px] rounded-[5px] pl-[20.08px] pt-[36.08px] h-[161px] max-biggerscreen:w-[32%] max-xl:px-[20px] max-xl:w-[31%] max-smalllaptop:w-[48%] max-md:w-full max-smalllaptop:p-[20px] max-smalllaptop:h-auto max-smallphone:p-[10px] max-hamburger:gap-[20px]">
-            <Image src="/Frame 1000002775.png" width={80.99} height={80.99} />
-            <div>
-              <h1 className="text-[#E5E5E5] text-[20px] leading-[22.4px] font-['Graphikthin']">
-                Prashant Hegde
-              </h1>
-              <p className="text-[#A1A1A1] text-[20px] font-['Graphikthin'] leading-[24px] mt-[8px]">
-                Senior Designer, Spotify
-              </p>
-            </div>
-          </div>
-          <div className="flex border-[1px] border-[#FFFFFFB0] gap-[33.93px] items-center w-[413px] pr-[51px] pb-[41.93px] rounded-[5px] pl-[20.08px] pt-[36.08px] h-[161px] max-biggerscreen:w-[32%] max-xl:px-[20px] max-xl:w-[31%] max-smalllaptop:w-[48%] max-md:w-full max-smalllaptop:p-[20px] max-smalllaptop:h-auto max-smallphone:p-[10px] max-hamburger:gap-[20px]">
-            <Image src="/Frame 1000002775.png" width={80.99} height={80.99} />
-            <div>
-              <h1 className="text-[#E5E5E5] text-[20px] leading-[22.4px] font-['Graphikthin']">
-                Prashant Hegde
-              </h1>
-              <p className="text-[#A1A1A1] text-[20px] font-['Graphikthin'] leading-[24px] mt-[8px]">
-                Senior Designer, Spotify
-              </p>
-            </div>
-          </div>
-          <div className="flex border-[1px] border-[#FFFFFFB0] gap-[33.93px] items-center w-[413px] pr-[51px] pb-[41.93px] rounded-[5px] pl-[20.08px] pt-[36.08px] h-[161px] max-biggerscreen:w-[32%] max-xl:px-[20px] max-xl:w-[31%] max-smalllaptop:w-[48%] max-md:w-full max-smalllaptop:p-[20px] max-smalllaptop:h-auto max-smallphone:p-[10px] max-hamburger:gap-[20px]">
-            <Image src="/Frame 1000002775.png" width={80.99} height={80.99} />
-            <div>
-              <h1 className="text-[#E5E5E5] text-[20px] leading-[22.4px] font-['Graphikthin']">
-                Prashant Hegde
-              </h1>
-              <p className="text-[#A1A1A1] text-[20px] font-['Graphikthin'] leading-[24px] mt-[8px]">
-                Senior Designer, Spotify
-              </p>
-            </div>
-          </div>
-          <div className="flex border-[1px] border-[#FFFFFFB0] gap-[33.93px] items-center w-[413px] pr-[51px] pb-[41.93px] rounded-[5px] pl-[20.08px] pt-[36.08px] h-[161px] max-biggerscreen:w-[32%] max-xl:px-[20px] max-xl:w-[31%] max-smalllaptop:w-[48%] max-md:w-full max-smalllaptop:p-[20px] max-smalllaptop:h-auto max-smallphone:p-[10px] max-hamburger:gap-[20px]">
-            <Image src="/Frame 1000002775.png" width={80.99} height={80.99} />
-            <div>
-              <h1 className="text-[#E5E5E5] text-[20px] leading-[22.4px] font-['Graphikthin']">
-                Prashant Hegde
-              </h1>
-              <p className="text-[#A1A1A1] text-[20px] font-['Graphikthin'] leading-[24px] mt-[8px]">
-                Senior Designer, Spotify
-              </p>
-            </div>
-          </div>
-          <div className="flex border-[1px] border-[#FFFFFFB0] gap-[33.93px] items-center w-[413px] pr-[51px] pb-[41.93px] rounded-[5px] pl-[20.08px] pt-[36.08px] h-[161px] max-biggerscreen:w-[32%] max-xl:px-[20px] max-xl:w-[31%] max-smalllaptop:w-[48%] max-md:w-full max-smalllaptop:p-[20px] max-smalllaptop:h-auto max-smallphone:p-[10px] max-hamburger:gap-[20px]">
-            <Image src="/Frame 1000002775.png" width={80.99} height={80.99} />
-            <div>
-              <h1 className="text-[#E5E5E5] text-[20px] leading-[22.4px] font-['Graphikthin']">
-                Prashant Hegde
-              </h1>
-              <p className="text-[#A1A1A1] text-[20px] font-['Graphikthin'] leading-[24px] mt-[8px]">
-                Senior Designer, Spotify
-              </p>
-            </div>
-          </div>
-          <div className="flex max-smalllaptop:hidden border-[1px] border-[#FFFFFFB0] gap-[33.93px] items-center w-[413px] pr-[51px] pb-[41.93px] rounded-[5px] pl-[20.08px] pt-[36.08px] h-[161px] max-biggerscreen:w-[32%] max-xl:px-[20px] max-xl:w-[31%] max-smalllaptop:w-[48%] max-md:w-full max-smalllaptop:p-[20px] max-smalllaptop:h-auto max-smallphone:p-[10px]">
-            <Image src="/Frame 1000002775.png" width={80.99} height={80.99} />
-            <div>
-              <h1 className="text-[#E5E5E5] text-[20px] leading-[22.4px] font-['Graphikthin']">
-                Prashant Hegde
-              </h1>
-              <p className="text-[#A1A1A1] text-[20px] font-['Graphikthin'] leading-[24px] mt-[8px]">
-                Senior Designer, Spotify
-              </p>
-            </div>
+            <h1 className="w-[340px] max-bigscreen:w-[310px] max-xl:w-[250px] max-md:w-full max-xl:mt-[30px] font-['Graphikthin'] font-normal mt-[53.05px] mb-[18.16px] text-[32px] max-xl:text-[24px] max-xl:leading-[120%] leading-[40.32px] tracking-[-0.32px]">
+              Ajith Jagadish
+            </h1>
+            <p className="w-[195.15px] max-bigscreen:w-[310px] max-xl:w-full opacity-80 text-[#E0E0E0] text-base">
+              Career & Lifestyle Coach. 12+ years of experience
+            </p>
           </div>
         </div>
       </section>
       <div className="py-[70.5px] flex justify-between max-md:flex-col gap-[20px] max-md:gap-[50px] relative z-20 px-[80px] max-sm:px-[20px] max-md:px-[40px]">
         <div className="w-[675.77px] max-md:w-full">
           <p className="text-[64px] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] mb-[41px] leading-[61.88px] text-[#E5E5E5] tracking-[-2.56px] font-['Graphikthin']">
-            Have tailored workshops at your institute at a low price of ₹100 per
+            Have tailored workshops at your institute at a low price of ₹199 per
             student{" "}
           </p>
           <p className="text-[20px] leading-[19.28px] tracking-[-0.2px] text-[#E5E5E5] font-['Graphikthin']">
