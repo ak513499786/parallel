@@ -56,7 +56,7 @@ export default function Success() {
                   Ravi Teja
                 </h1>
                 <h2 className="text-[#A1A1A1] text-[20px] max-sm:text-base leading-[24px] font-['Graphikthin'] font-normal opacity-60 mt-[6px] max-sm:mt-[3px] max-sm:mb-[12px]">
-                  Vitae nisi eu turpis
+                  GM University{" "}
                 </h2>
                 {/* <Image
                   src="/razor.svg"
@@ -72,7 +72,6 @@ export default function Success() {
               anyone who is interested in the current AI scene.
             </p>
           </div>
-
           <div className="w-[468px] max-sm:w-[320px] max-sm:p-[20px] border-[1px] border-[#FFFFFFBF] rounded-[6px] pl-[27.94px] pt-[33.07px] pr-[24.8px] pb-[39.11px] h-[282px] max-sm:h-auto">
             <div className="flex gap-[28.36px]">
               <Image
@@ -86,7 +85,7 @@ export default function Success() {
                   Kruthi R
                 </h1>
                 <h2 className="text-[#A1A1A1] text-[20px] max-sm:text-base leading-[24px] font-['Graphikthin'] font-normal opacity-60 mt-[6px] max-sm:mt-[3px] max-sm:mb-[12px]">
-                  Vitae nisi eu turpis
+                  Rajeev Institute of Technology
                 </h2>
                 {/* <Image
                   src="/razor.svg"
@@ -113,7 +112,7 @@ export default function Success() {
                   Surya Narayan
                 </h1>
                 <h2 className="text-[#A1A1A1] text-[20px] max-sm:text-base leading-[24px] font-['Graphikthin'] font-normal opacity-60 mt-[6px] max-sm:mt-[3px] max-sm:mb-[12px]">
-                  Vitae nisi eu turpis
+                  Basaveshwar Engineering College
                 </h2>
                 {/* <Image
                   src="/razor.svg"
@@ -141,7 +140,7 @@ export default function Success() {
                   Lakshmi JT{" "}
                 </h1>
                 <h2 className="text-[#A1A1A1] text-[20px] max-sm:text-base leading-[24px] font-['Graphikthin'] font-normal opacity-60 mt-[6px] max-sm:mt-[3px] max-sm:mb-[12px]">
-                  Vitae nisi eu turpis
+                  Shridevi Institute Of Engineering and Technology
                 </h2>
                 {/* <Image
                   src="/razor.svg"
@@ -169,7 +168,7 @@ export default function Success() {
                   Ravi Teja
                 </h1>
                 <h2 className="text-[#A1A1A1] text-[20px] max-sm:text-base leading-[24px] font-['Graphikthin'] font-normal opacity-60 mt-[6px] max-sm:mt-[3px] max-sm:mb-[12px]">
-                  Vitae nisi eu turpis
+                  GM University{" "}
                 </h2>
                 {/* <Image
                   src="/razor.svg"
@@ -185,7 +184,6 @@ export default function Success() {
               anyone who is interested in the current AI scene.
             </p>
           </div>
-
           <div className="w-[468px] max-sm:w-[320px] max-sm:p-[20px] border-[1px] border-[#FFFFFFBF] rounded-[6px] pl-[27.94px] pt-[33.07px] pr-[24.8px] pb-[39.11px] h-[282px] max-sm:h-auto">
             <div className="flex gap-[28.36px]">
               <Image
@@ -199,7 +197,7 @@ export default function Success() {
                   Kruthi R
                 </h1>
                 <h2 className="text-[#A1A1A1] text-[20px] max-sm:text-base leading-[24px] font-['Graphikthin'] font-normal opacity-60 mt-[6px] max-sm:mt-[3px] max-sm:mb-[12px]">
-                  Vitae nisi eu turpis
+                  Rajeev Institute of Technology
                 </h2>
                 {/* <Image
                   src="/razor.svg"
@@ -226,7 +224,7 @@ export default function Success() {
                   Surya Narayan
                 </h1>
                 <h2 className="text-[#A1A1A1] text-[20px] max-sm:text-base leading-[24px] font-['Graphikthin'] font-normal opacity-60 mt-[6px] max-sm:mt-[3px] max-sm:mb-[12px]">
-                  Vitae nisi eu turpis
+                  Basaveshwar Engineering College
                 </h2>
                 {/* <Image
                   src="/razor.svg"
@@ -254,7 +252,7 @@ export default function Success() {
                   Lakshmi JT{" "}
                 </h1>
                 <h2 className="text-[#A1A1A1] text-[20px] max-sm:text-base leading-[24px] font-['Graphikthin'] font-normal opacity-60 mt-[6px] max-sm:mt-[3px] max-sm:mb-[12px]">
-                  Vitae nisi eu turpis
+                  Shridevi Institute Of Engineering and Technology
                 </h2>
                 {/* <Image
                   src="/razor.svg"
@@ -282,7 +280,7 @@ export default function Success() {
                   Ravi Teja
                 </h1>
                 <h2 className="text-[#A1A1A1] text-[20px] max-sm:text-base leading-[24px] font-['Graphikthin'] font-normal opacity-60 mt-[6px] max-sm:mt-[3px] max-sm:mb-[12px]">
-                  Vitae nisi eu turpis
+                  GM University{" "}
                 </h2>
                 {/* <Image
                   src="/razor.svg"
@@ -298,7 +296,6 @@ export default function Success() {
               anyone who is interested in the current AI scene.
             </p>
           </div>
-
           <div className="w-[468px] max-sm:w-[320px] max-sm:p-[20px] border-[1px] border-[#FFFFFFBF] rounded-[6px] pl-[27.94px] pt-[33.07px] pr-[24.8px] pb-[39.11px] h-[282px] max-sm:h-auto">
             <div className="flex gap-[28.36px]">
               <Image
@@ -312,7 +309,7 @@ export default function Success() {
                   Kruthi R
                 </h1>
                 <h2 className="text-[#A1A1A1] text-[20px] max-sm:text-base leading-[24px] font-['Graphikthin'] font-normal opacity-60 mt-[6px] max-sm:mt-[3px] max-sm:mb-[12px]">
-                  Vitae nisi eu turpis
+                  Rajeev Institute of Technology
                 </h2>
                 {/* <Image
                   src="/razor.svg"
@@ -339,7 +336,7 @@ export default function Success() {
                   Surya Narayan
                 </h1>
                 <h2 className="text-[#A1A1A1] text-[20px] max-sm:text-base leading-[24px] font-['Graphikthin'] font-normal opacity-60 mt-[6px] max-sm:mt-[3px] max-sm:mb-[12px]">
-                  Vitae nisi eu turpis
+                  Basaveshwar Engineering College
                 </h2>
                 {/* <Image
                   src="/razor.svg"
@@ -367,7 +364,7 @@ export default function Success() {
                   Lakshmi JT{" "}
                 </h1>
                 <h2 className="text-[#A1A1A1] text-[20px] max-sm:text-base leading-[24px] font-['Graphikthin'] font-normal opacity-60 mt-[6px] max-sm:mt-[3px] max-sm:mb-[12px]">
-                  Vitae nisi eu turpis
+                  Shridevi Institute Of Engineering and Technology
                 </h2>
                 {/* <Image
                   src="/razor.svg"
