@@ -280,7 +280,7 @@ export default function Workshop() {
         <h1 className="text-[36px] text-center mb-[50.16px] max-hamburger:text-[28px] max-hamburger:leading-[120%] leading-[41.68px] font-['Graphikthin'] text-[#E5E5E5] tracking-[-1.08px]">
           What your students will get{" "}
         </h1>
-        <Image src="/certificate.png" width={1063} height={632} className="max-xl:w-full max-xl:h-auto" />
+        <Image src="/workshop5.png" width={1063} height={632} className="max-xl:w-full max-xl:h-auto" />
         </section>
       <section className="py-[168.5px] max-md:px-[40px] max-sm:px-[20px] max-md:py-[40px] relative px-[62.74px]">
         <div className="absolute w-[100%] h-[100vh] top-0 left-0 overflow-hidden">
