@@ -42,54 +42,64 @@ export default function Courses() {
           </p>
         </div>
         <div className="flex gap-[21px] mt-[49.16px] max-md:flex-col max-hamburger:flex-wrap max-hamburger:justify-center">
-          <div
-            className={`pl-[28px] max-sm:px-[20px] max-sm:py-[16px] w-[33%] max-hamburger:w-[45%] max-md:w-full h-[434px] max-md:h-auto pb-[41.87px] pr-[29.85px] border-[1px] pt-[31.57px] rounded-[8px] ${style.bordergradient}`}
-          >
-            <div className="bg-[#1F1F1F] w-[105px] pt-[26.26px] pb-[26.01px] pl-[26.39px] pr-[26.88px] border-[1px] rounded-[6px] border-[#FFFFFF66] ">
-              {" "}
-              <Image
-                src="/Calendar-3--Streamline-Ultimate.svg.svg"
-                width={51.73}
-                height={51.73}
-              />
+          <div className={`${style.container}`}>
+            <div
+              className={`pl-[28px] max-sm:px-[20px] max-sm:py-[16px] w-[33%] max-hamburger:w-[45%] max-md:w-full h-[434px] max-md:h-auto pb-[41.87px] pr-[29.85px] pt-[31.57px] rounded-[8px] ${style.bordergradient}`}
+            >
+              <div className="bg-[#1F1F1F] w-[105px] pt-[26.26px] pb-[26.01px] pl-[26.39px] pr-[26.88px] border-[1px] rounded-[6px] border-[#FFFFFF66] ">
+                {" "}
+                <Image
+                  src="/Calendar-3--Streamline-Ultimate.svg.svg"
+                  width={51.73}
+                  height={51.73}
+                />
+              </div>
+              <h1 className="w-[340px] max-md:mb-[18.16px] max-bigscreen:w-[310px] max-xl:w-[250px] max-md:w-full max-xl:mt-[30px] font-['Graphikthin'] font-normal mt-[53.05px] mb-[58.16px] text-[32px] max-xl:text-[24px] max-xl:leading-[120%] leading-[40.32px] tracking-[-0.32px]">
+                1 year policy{" "}
+              </h1>
+              <p className="w-[355.15px] max-bigscreen:w-[310px] max-xl:w-full h-[136.91px] max-xl:h-[165px] max-lg:h-[200px] max-md:h-auto opacity-80 text-[#E0E0E0] text-base">
+                If you end up not getting a job within a year after completing
+                the course, you will be charged nothing.
+              </p>
             </div>
-            <h1 className="w-[340px] max-md:mb-[18.16px] max-bigscreen:w-[310px] max-xl:w-[250px] max-md:w-full max-xl:mt-[30px] font-['Graphikthin'] font-normal mt-[53.05px] mb-[58.16px] text-[32px] max-xl:text-[24px] max-xl:leading-[120%] leading-[40.32px] tracking-[-0.32px]">
-              1 year policy{" "}
-            </h1>
-            <p className="w-[355.15px] max-bigscreen:w-[310px] max-xl:w-full h-[136.91px] max-xl:h-[165px] max-lg:h-[200px] max-md:h-auto opacity-80 text-[#E0E0E0] text-base">
-              If you end up not getting a job within a year after completing the
-              course, you will be charged nothing.
-            </p>
           </div>
-          <div
-            className={`pl-[28px] max-sm:px-[20px] max-sm:py-[16px] w-[33%] max-hamburger:w-[45%] max-md:w-full h-[434px] max-md:h-auto pb-[41.87px] pr-[29.85px] border-[1px] pt-[31.57px] rounded-[8px] ${style.bordergradient}`}
-          >
-            <div className="bg-[#1F1F1F] w-[105px] px-[26.63px] py-[26.13px] border-[1px] rounded-[6px] border-[#FFFFFF66] ">
-              {" "}
-              <Image src="/discount.svg" width={51.73} height={51.73} />
+          <div className={`${style.container}`}>
+            <div
+              className={`pl-[28px] max-sm:px-[20px] max-sm:py-[16px] w-[33%] max-hamburger:w-[45%] max-md:w-full h-[434px] max-md:h-auto pb-[41.87px] pr-[29.85px] pt-[31.57px] rounded-[8px] ${style.bordergradient}`}
+            >
+              <div className="bg-[#1F1F1F] w-[105px] px-[26.63px] py-[26.13px] border-[1px] rounded-[6px] border-[#FFFFFF66] ">
+                {" "}
+                <Image src="/discount.svg" width={51.73} height={51.73} />
+              </div>
+              <h1 className="w-[340px] max-bigscreen:w-[310px] max-xl:w-[250px] max-md:w-full max-xl:mt-[30px] font-['Graphikthin'] font-normal mt-[53.05px] mb-[18.16px] text-[32px] max-xl:text-[24px] max-xl:leading-[120%] leading-[40.32px] tracking-[-0.32px]">
+                Pay only a small percentage of your CTC{" "}
+              </h1>
+              <p className="w-[355.15px] max-bigscreen:w-[310px] max-xl:w-full h-[136.91px] max-xl:h-[165px] max-lg:h-[200px] max-md:h-auto opacity-80 text-[#E0E0E0] text-base">
+                We only ask 15
+                <span className="font-['Graphik'] font-light opacity-90">
+                  %
+                </span>{" "}
+                of your CTC for 12 months, nothing more. Once the you pay the
+                complete fee, the ISA will be terminated
+              </p>
             </div>
-            <h1 className="w-[340px] max-bigscreen:w-[310px] max-xl:w-[250px] max-md:w-full max-xl:mt-[30px] font-['Graphikthin'] font-normal mt-[53.05px] mb-[18.16px] text-[32px] max-xl:text-[24px] max-xl:leading-[120%] leading-[40.32px] tracking-[-0.32px]">
-              Pay only a small percentage of your CTC{" "}
-            </h1>
-            <p className="w-[355.15px] max-bigscreen:w-[310px] max-xl:w-full h-[136.91px] max-xl:h-[165px] max-lg:h-[200px] max-md:h-auto opacity-80 text-[#E0E0E0] text-base">
-              We only ask 15<span className="font-['Graphik'] font-light opacity-90">%</span>{' '}of your CTC for 12 months, nothing more. Once the
-              you pay the complete fee, the ISA will be terminated
-            </p>
           </div>
-          <div
-            className={`pl-[28px] max-sm:px-[20px] max-sm:py-[16px] w-[33%] max-hamburger:w-[45%] max-md:w-full h-[434px] max-md:h-auto pb-[41.87px] pr-[29.85px] border-[1px] pt-[31.57px] rounded-[8px] ${style.bordergradient}`}
-          >
-            <div className="bg-[#1F1F1F] w-[105px] pt-[22.3px] pb-[21.7px] pl-[22.95px] pr-[22.05px] border-[1px] rounded-[6px] border-[#FFFFFF66] ">
-              {" "}
-              <Image src="/pause.svg" width={60} height={60} />
+          <div className={`${style.container}`}>
+            <div
+              className={`pl-[28px] max-sm:px-[20px] max-sm:py-[16px] w-[33%] max-hamburger:w-[45%] max-md:w-full h-[434px] max-md:h-auto pb-[41.87px] pr-[29.85px] pt-[31.57px] rounded-[8px] ${style.bordergradient}`}
+            >
+              <div className="bg-[#1F1F1F] w-[105px] pt-[22.3px] pb-[21.7px] pl-[22.95px] pr-[22.05px] border-[1px] rounded-[6px] border-[#FFFFFF66] ">
+                {" "}
+                <Image src="/pause.svg" width={60} height={60} />
+              </div>
+              <h1 className="w-[340px] max-bigscreen:w-[310px] max-xl:w-[250px] max-md:w-full max-xl:mt-[30px] font-['Graphikthin'] font-normal mt-[53.05px] mb-[18.16px] text-[32px] max-xl:text-[24px] max-xl:leading-[120%] leading-[40.32px] tracking-[-0.32px]">
+                Stop paying us if you are not working{" "}
+              </h1>
+              <p className="w-[355.15px] max-bigscreen:w-[310px] max-xl:w-full h-[136.91px] max-xl:h-[165px] max-lg:h-[200px] max-md:h-auto opacity-80 text-[#E0E0E0] text-base">
+                If you lose your job due to unfortunate circumstances, your ISA
+                will be paused until you get another job.
+              </p>
             </div>
-            <h1 className="w-[340px] max-bigscreen:w-[310px] max-xl:w-[250px] max-md:w-full max-xl:mt-[30px] font-['Graphikthin'] font-normal mt-[53.05px] mb-[18.16px] text-[32px] max-xl:text-[24px] max-xl:leading-[120%] leading-[40.32px] tracking-[-0.32px]">
-              Stop paying us if you are not working{" "}
-            </h1>
-            <p className="w-[355.15px] max-bigscreen:w-[310px] max-xl:w-full h-[136.91px] max-xl:h-[165px] max-lg:h-[200px] max-md:h-auto opacity-80 text-[#E0E0E0] text-base">
-              If you lose your job due to unfortunate circumstances, your ISA
-              will be paused until you get another job.
-            </p>
           </div>
         </div>
       </div>
@@ -98,7 +108,8 @@ export default function Courses() {
           What you will be paying us
         </p>
         <h1 className="w-[1172px] max-xl:w-full text-[147.6px] max-smalllaptop:tracking-[-2.56px] max-smalllaptop:text-[84px] max-sm:text-[64px] max-smallphone:text-[36px] max-sm:tracking-tight max-smalllaptop:leading-[102%] font-['Graphikthin'] leading-[142.26px] text-[#E5E5E5] tracking-[-5.9px]">
-          <span className="font-bold">15</span><span className="font-['Graphik'] font-light">%</span>{' '}of your CTC for{" "}
+          <span className="font-bold">15</span>
+          <span className="font-['Graphik'] font-light">%</span> of your CTC for{" "}
           <span className="font-bold">12 months.</span>
         </h1>
       </section>

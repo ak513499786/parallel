@@ -93,7 +93,7 @@ export default function Navbar() {
   }, [openHamburger, width, height]);
 
   return (
-    <nav className="px-[80px] flex bg-[#0000000D] backdrop-blur max-md:px-[40px] max-sm:px-[20px] max-hamburger:items-center top-0 sticky z-50 justify-between pt-[39px] pb-[22px]">
+    <nav className="px-[80px] flex bg-[#0000000D] backdrop-blur max-md:px-[40px] max-sm:px-[20px] max-hamburger:items-center top-0 sticky z-[99] justify-between pt-[39px] pb-[22px]">
       <Link href={"/"} className="flex gap-[2.74px]">
         <Image
           src="/Frame 96.svg"
@@ -126,49 +126,49 @@ export default function Navbar() {
         <Link
           href={"/about"}
           ref={Menuitems1}
-          className="text-[16px] relative leading-[24px] max-hamburger:py-0 py-[8px] max-hamburger:text-3xl"
+          className="text-[16px] relative leading-[24px] max-hamburger:py-0 py-[8px]"
         >
           About
         </Link>
         <Link
           href={"/workshops"}
           ref={Menuitems2}
-          className="text-[16px] relative leading-[24px] py-[8px] max-hamburger:py-0 max-hamburger:text-3xl"
+          className="text-[16px] relative leading-[24px] py-[8px] max-hamburger:py-0"
         >
           Workshops
         </Link>
         <Link
           href={"/courses"}
           ref={Menuitems3}
-          className="text-[16px] relative leading-[24px] py-[8px] max-hamburger:py-0 max-hamburger:text-3xl"
+          className="text-[16px] relative leading-[24px] py-[8px] max-hamburger:py-0"
         >
           Courses
         </Link>
         <Link
           href={"/fees"}
           ref={Menuitems4}
-          className="text-[16px] relative leading-[24px] py-[8px] max-hamburger:py-0 max-hamburger:text-3xl"
+          className="text-[16px] relative leading-[24px] py-[8px] max-hamburger:py-0"
         >
           Fees
         </Link>
         <Link
           href={"/hire-from-us"}
           ref={Menuitems5}
-          className="text-[16px] relative leading-[24px] py-[8px] max-hamburger:py-0 max-hamburger:text-3xl"
+          className="text-[16px] relative leading-[24px] py-[8px] max-hamburger:py-0"
         >
           Hire from us
         </Link>
         <Link
           href={"/refer-us"}
           ref={Menuitems6}
-          className="text-[16px] relative leading-[24px] py-[8px] max-hamburger:py-0 max-hamburger:text-3xl"
+          className="text-[16px] relative leading-[24px] py-[8px] max-hamburger:py-0"
         >
           Refer us
         </Link>
         <Link
           href={"/signup"}
           ref={Menuitems7}
-          className="text-[16px] relative bg-[#30E29D] max-hamburger:bottom-0 max-sm:w-full max-hamburger:text-center max-hamburger:w-[300px] max-hamburger:absolute text-black py-[8px] px-[24px] rounded-[8px] leading-[24px] py-[8px] font-semibold max-hamburger:text-3xl"
+          className="text-[16px] relative bg-[#30E29D] max-hamburger:bottom-0 max-sm:w-full max-hamburger:text-center max-hamburger:w-[300px] max-hamburger:absolute text-black py-[8px] px-[24px] rounded-[8px] leading-[24px] py-[8px] font-semibold"
         >
           Sign up
         </Link>

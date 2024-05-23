@@ -133,66 +133,64 @@ export default function Courses() {
           </p>
         </div>
         <div className="flex gap-[21px] mt-[50.91px] max-md:flex-col max-hamburger:flex-wrap max-hamburger:justify-center">
-          <div
-            className={`pl-[28px] w-[33%] h-[466px] max-lg:h-[480px] pb-[41.87px] pr-[29.85px] border-[1px] pt-[31.57px] rounded-[8px] max-sm:px-[20px] max-sm:py-[16px] max-hamburger:w-[45%] max-md:w-full max-md:h-auto ${style.bordergradient}`}
-          >
-            <div className="bg-[#1F1F1F] w-[105px] py-[35px] pl-[26.39px] pr-[26.88px] border-[1px] rounded-[6px] border-[#FFFFFF66] ">
-              {" "}
-              <Image
-                src="/1.svg"
-                width={51.73}
-                height={51.73}
-              />
+          <div className={`${style.container}`}>
+            <div
+              className={`pl-[28px] w-[33%] h-[466px] max-lg:h-[480px] pb-[41.87px] pr-[29.85px] pt-[31.57px] rounded-[8px] max-sm:px-[20px] max-sm:py-[16px] max-hamburger:w-[45%] max-md:w-full max-md:h-auto ${style.bordergradient}`}
+            >
+              <div className="bg-[#1F1F1F] w-[105px] py-[35px] pl-[26.39px] pr-[26.88px] border-[1px] rounded-[6px] border-[#FFFFFF66] ">
+                {" "}
+                <Image src="/1.svg" width={51.73} height={51.73} />
+              </div>
+              <h1 className="w-[340px] max-bigscreen:w-[310px] max-xl:w-[250px] max-md:w-full max-xl:mt-[30px] font-['Graphikthin'] font-normal mt-[53.05px] mb-[18.16px] text-[32px] max-xl:text-[24px] max-xl:leading-[120%] leading-[40.32px] tracking-[-0.32px]">
+                Hire only the top 1
+                <span className="font-['Graphik'] font-light opacity-90">
+                  %
+                </span>{" "}
+                of the candidates{" "}
+              </h1>
+              <p className="w-[355.15px] opacity-80 text-[#E0E0E0] text-base max-bigscreen:w-[310px] max-xl:w-full">
+                Our students are filtered multiple times. We utilize a
+                multi-layered screening process that combines in-depth
+                interviews, advanced skills testing, and reference checks to
+                identify truly exceptional candidates.
+              </p>
             </div>
-            <h1 className="w-[340px] max-bigscreen:w-[310px] max-xl:w-[250px] max-md:w-full max-xl:mt-[30px] font-['Graphikthin'] font-normal mt-[53.05px] mb-[18.16px] text-[32px] max-xl:text-[24px] max-xl:leading-[120%] leading-[40.32px] tracking-[-0.32px]">
-              Hire only the top 1<span className="font-['Graphik'] font-light opacity-90">%</span> of the candidates{" "}
-            </h1>
-            <p className="w-[355.15px] opacity-80 text-[#E0E0E0] text-base max-bigscreen:w-[310px] max-xl:w-full">
-              Our students are filtered multiple times. We utilize a
-              multi-layered screening process that combines in-depth interviews,
-              advanced skills testing, and reference checks to identify truly
-              exceptional candidates.
-            </p>
           </div>
-          <div
-            className={`pl-[28px] w-[33%] h-[466px] max-lg:h-[480px] pb-[41.87px] pr-[29.85px] border-[1px] pt-[31.57px] rounded-[8px] max-sm:px-[20px] max-sm:py-[16px] max-hamburger:w-[45%] max-md:w-full max-md:h-auto ${style.bordergradient}`}
-          >
-            <div className="bg-[#1F1F1F] w-[105px] px-[26.63px] py-[26.13px] border-[1px] rounded-[6px] border-[#FFFFFF66] ">
-              {" "}
-              <Image
-                src="/brain.svg"
-                width={51.73}
-                height={51.73}
-              />
+          <div className={`${style.container}`}>
+            <div
+              className={`pl-[28px] w-[33%] h-[466px] max-lg:h-[480px] pb-[41.87px] pr-[29.85px] pt-[31.57px] rounded-[8px] max-sm:px-[20px] max-sm:py-[16px] max-hamburger:w-[45%] max-md:w-full max-md:h-auto ${style.bordergradient}`}
+            >
+              <div className="bg-[#1F1F1F] w-[105px] px-[26.63px] py-[26.13px] border-[1px] rounded-[6px] border-[#FFFFFF66] ">
+                {" "}
+                <Image src="/brain.svg" width={51.73} height={51.73} />
+              </div>
+              <h1 className="w-[340px] max-bigscreen:w-[310px] max-xl:w-[250px] max-md:w-full max-xl:mt-[30px] font-['Graphikthin'] font-normal mt-[53.05px] mb-[18.16px] text-[32px] max-xl:text-[24px] max-xl:leading-[120%] leading-[40.32px] tracking-[-0.32px]">
+                Get candidates with relevant skills{" "}
+              </h1>
+              <p className="w-[355.15px] opacity-80 text-[#E0E0E0] text-base max-bigscreen:w-[310px] max-xl:w-full">
+                We train our students only on relevant skills. We utilize
+                skill-specific tests, portfolio reviews, and reference checks to
+                ensure candidates possess the necessary proficiency.
+              </p>
             </div>
-            <h1 className="w-[340px] max-bigscreen:w-[310px] max-xl:w-[250px] max-md:w-full max-xl:mt-[30px] font-['Graphikthin'] font-normal mt-[53.05px] mb-[18.16px] text-[32px] max-xl:text-[24px] max-xl:leading-[120%] leading-[40.32px] tracking-[-0.32px]">
-              Get candidates with relevant skills{" "}
-            </h1>
-            <p className="w-[355.15px] opacity-80 text-[#E0E0E0] text-base max-bigscreen:w-[310px] max-xl:w-full">
-              We train our students only on relevant skills. We utilize
-              skill-specific tests, portfolio reviews, and reference checks to
-              ensure candidates possess the necessary proficiency.
-            </p>
           </div>
-          <div
-            className={`pl-[28px] w-[33%] h-[466px] max-lg:h-[480px] pb-[41.87px] pr-[29.85px] border-[1px] pt-[31.57px] rounded-[8px] max-sm:px-[20px] max-sm:py-[16px] max-hamburger:w-[45%] max-md:w-full max-md:h-auto ${style.bordergradient}`}
-          >
-            <div className="bg-[#1F1F1F] w-[105px] pt-[22.3px] pb-[21.7px] pl-[22.95px] pr-[22.05px] border-[1px] rounded-[6px] border-[#FFFFFF66] ">
-              {" "}
-              <Image
-                src="/multiuser.svg"
-                width={60}
-                height={60}
-              />
+          <div className={`${style.container}`}>
+            <div
+              className={`pl-[28px] w-[33%] h-[466px] max-lg:h-[480px] pb-[41.87px] pr-[29.85px] pt-[31.57px] rounded-[8px] max-sm:px-[20px] max-sm:py-[16px] max-hamburger:w-[45%] max-md:w-full max-md:h-auto ${style.bordergradient}`}
+            >
+              <div className="bg-[#1F1F1F] w-[105px] pt-[22.3px] pb-[21.7px] pl-[22.95px] pr-[22.05px] border-[1px] rounded-[6px] border-[#FFFFFF66] ">
+                {" "}
+                <Image src="/multiuser.svg" width={60} height={60} />
+              </div>
+              <h1 className="w-[340px] max-bigscreen:w-[310px] max-xl:w-[250px] max-md:w-full max-xl:mt-[30px] font-['Graphikthin'] font-normal mt-[53.05px] mb-[18.16px] text-[32px] max-xl:text-[24px] max-xl:leading-[120%] leading-[40.32px] tracking-[-0.32px]">
+                Don’t worry about hiring the wrong people{" "}
+              </h1>
+              <p className="w-[355.15px] opacity-80 text-[#E0E0E0] text-base max-bigscreen:w-[310px] max-xl:w-full">
+                We make sure to put our candidates through multiple behavioral
+                assessments. With whom you can build a strong, collaborative
+                environment where employees feel valued and engaged.
+              </p>
             </div>
-            <h1 className="w-[340px] max-bigscreen:w-[310px] max-xl:w-[250px] max-md:w-full max-xl:mt-[30px] font-['Graphikthin'] font-normal mt-[53.05px] mb-[18.16px] text-[32px] max-xl:text-[24px] max-xl:leading-[120%] leading-[40.32px] tracking-[-0.32px]">
-              Don’t worry about hiring the wrong people{" "}
-            </h1>
-            <p className="w-[355.15px] opacity-80 text-[#E0E0E0] text-base max-bigscreen:w-[310px] max-xl:w-full">
-              We make sure to put our candidates through multiple behavioral
-              assessments. With whom you can build a strong, collaborative
-              environment where employees feel valued and engaged.
-            </p>
           </div>
         </div>
       </section>
@@ -244,7 +242,10 @@ export default function Courses() {
               className="h-[54px] rounded-[4px] border-[1px] border-white pl-[17.51px] bg-[transparent] placeholder-[#ffffff99] text-white"
             />
           </div>
-          <button onClick={handleSubmit} className="w-full h-[53px] bg-[#30E29D] rounded-[8px] font-bold text-[#292929] text-[16px] font-[19.2px]">
+          <button
+            onClick={handleSubmit}
+            className="w-full h-[53px] bg-[#30E29D] rounded-[8px] font-bold text-[#292929] text-[16px] font-[19.2px]"
+          >
             Hire from us{" "}
           </button>
         </div>

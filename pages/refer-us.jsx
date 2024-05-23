@@ -180,64 +180,58 @@ export default function Courses() {
           </p>
         </div>
         <div className="flex max-hamburger:flex-wrap max-hamburger:justify-center gap-[21px] mt-[50.91px]">
-          <div
-            className={`pl-[28px] w-[33%] max-md:w-full max-hamburger:w-[45%] h-[404px] max-bigscreen:h-[440px] max-xl:h-[400px] max-md:h-auto pb-[41.87px] pr-[29.85px] border-[1px] pt-[31.57px] rounded-[8px] ${style.bordergradient}`}
-          >
-            <div className="bg-[#1F1F1F] w-[105px] pt-[26.26px] pb-[26.01px] pl-[26.39px] pr-[26.88px] border-[1px] rounded-[6px] border-[#FFFFFF66] ">
-              {" "}
-              <Image
-                src="/multiuser.svg"
-                width={51.73}
-                height={51.73}
-              />
+          <div className={`${style.container}`}>
+            <div
+              className={`pl-[28px] w-[33%] max-md:w-full max-hamburger:w-[45%] h-[404px] max-bigscreen:h-[440px] max-xl:h-[400px] max-md:h-auto pb-[41.87px] pr-[29.85px] pt-[31.57px] rounded-[8px] ${style.bordergradient}`}
+            >
+              <div className="bg-[#1F1F1F] w-[105px] pt-[26.26px] pb-[26.01px] pl-[26.39px] pr-[26.88px] border-[1px] rounded-[6px] border-[#FFFFFF66] ">
+                {" "}
+                <Image src="/multiuser.svg" width={51.73} height={51.73} />
+              </div>
+              <h1 className="w-[340px] max-bigscreen:w-[310px] max-xl:w-[250px] max-md:w-full max-xl:mt-[30px] font-['Graphikthin'] font-normal mt-[53.05px] mb-[18.16px] text-[32px] max-xl:text-[24px] max-xl:leading-[120%] leading-[40.32px] tracking-[-0.32px]">
+                Make learning more fun with your friends{" "}
+              </h1>
+              <p className="w-[355.15px] opacity-80 text-[#E0E0E0] text-base max-bigscreen:w-[310px] max-xl:w-full">
+                Invite your friends over to the platform. Upskill together at no
+                additional costs. Compete in leaderboards with your friends and
+                the others.
+              </p>
             </div>
-            <h1 className="w-[340px] max-bigscreen:w-[310px] max-xl:w-[250px] max-md:w-full max-xl:mt-[30px] font-['Graphikthin'] font-normal mt-[53.05px] mb-[18.16px] text-[32px] max-xl:text-[24px] max-xl:leading-[120%] leading-[40.32px] tracking-[-0.32px]">
-              Make learning more fun with your friends{" "}
-            </h1>
-            <p className="w-[355.15px] opacity-80 text-[#E0E0E0] text-base max-bigscreen:w-[310px] max-xl:w-full">
-              Invite your friends over to the platform. Upskill together at no
-              additional costs. Compete in leaderboards with your friends and
-              the others.
-            </p>
           </div>
-          <div
-            className={`pl-[28px] w-[33%] max-md:w-full max-hamburger:w-[45%] h-[404px] max-bigscreen:h-[440px] max-xl:h-[400px] max-md:h-auto pb-[41.87px] pr-[29.85px] border-[1px] pt-[31.57px] rounded-[8px] ${style.bordergradient}`}
-          >
-            <div className="bg-[#1F1F1F] w-[105px] px-[26.63px] py-[26.13px] border-[1px] rounded-[6px] border-[#FFFFFF66] ">
-              {" "}
-              <Image
-                src="/checkllist.svg"
-                width={51.73}
-                height={51.73}
-              />
+          <div className={`${style.container}`}>
+            <div
+              className={`pl-[28px] w-[33%] max-md:w-full max-hamburger:w-[45%] h-[404px] max-bigscreen:h-[440px] max-xl:h-[400px] max-md:h-auto pb-[41.87px] pr-[29.85px] pt-[31.57px] rounded-[8px] ${style.bordergradient}`}
+            >
+              <div className="bg-[#1F1F1F] w-[105px] px-[26.63px] py-[26.13px] border-[1px] rounded-[6px] border-[#FFFFFF66] ">
+                {" "}
+                <Image src="/checkllist.svg" width={51.73} height={51.73} />
+              </div>
+              <h1 className="w-[340px] max-bigscreen:w-[310px] max-xl:w-[250px] max-md:w-full max-xl:mt-[30px] font-['Graphikthin'] font-normal mt-[53.05px] mb-[18.16px] text-[32px] max-xl:text-[24px] max-xl:leading-[120%] leading-[40.32px] tracking-[-0.32px]">
+                Unlock additional tests that give you an edge{" "}
+              </h1>
+              <p className="w-[355.15px] opacity-80 text-[#E0E0E0] text-base max-bigscreen:w-[310px] max-xl:w-full">
+                A successful referral gives you access to additional tests. This
+                is not available to a non-referrer, giving you an edge over the
+                others.
+              </p>
             </div>
-            <h1 className="w-[340px] max-bigscreen:w-[310px] max-xl:w-[250px] max-md:w-full max-xl:mt-[30px] font-['Graphikthin'] font-normal mt-[53.05px] mb-[18.16px] text-[32px] max-xl:text-[24px] max-xl:leading-[120%] leading-[40.32px] tracking-[-0.32px]">
-              Unlock additional tests that give you an edge{" "}
-            </h1>
-            <p className="w-[355.15px] opacity-80 text-[#E0E0E0] text-base max-bigscreen:w-[310px] max-xl:w-full">
-              A successful referral gives you access to additional tests. This
-              is not available to a non-referrer, giving you an edge over the
-              others.
-            </p>
           </div>
-          <div
-            className={`pl-[28px] w-[33%] max-md:w-full max-hamburger:w-[45%] h-[404px] max-bigscreen:h-[440px] max-xl:h-[400px] max-md:h-auto pb-[41.87px] pr-[29.85px] border-[1px] pt-[31.57px] rounded-[8px] ${style.bordergradient}`}
-          >
-            <div className="bg-[#1F1F1F] w-[105px] pt-[22.3px] pb-[21.7px] pl-[22.95px] pr-[22.05px] border-[1px] rounded-[6px] border-[#FFFFFF66] ">
-              {" "}
-              <Image
-                src="/dottedsquare.svg"
-                width={60}
-                height={60}
-              />
+          <div className={`${style.container}`}>
+            <div
+              className={`pl-[28px] w-[33%] max-md:w-full max-hamburger:w-[45%] h-[404px] max-bigscreen:h-[440px] max-xl:h-[400px] max-md:h-auto pb-[41.87px] pr-[29.85px] pt-[31.57px] rounded-[8px] ${style.bordergradient}`}
+            >
+              <div className="bg-[#1F1F1F] w-[105px] pt-[22.3px] pb-[21.7px] pl-[22.95px] pr-[22.05px] border-[1px] rounded-[6px] border-[#FFFFFF66] ">
+                {" "}
+                <Image src="/dottedsquare.svg" width={60} height={60} />
+              </div>
+              <h1 className="w-[340px] max-bigscreen:w-[310px] max-xl:w-[250px] max-md:w-full max-xl:mt-[30px] font-['Graphikthin'] font-normal mt-[53.05px] mb-[18.16px] text-[32px] max-xl:text-[24px] max-xl:leading-[120%] leading-[40.32px] tracking-[-0.32px]">
+                Get a slight boost in placement preference{" "}
+              </h1>
+              <p className="w-[355.15px] opacity-80 text-[#E0E0E0] text-base max-bigscreen:w-[310px] max-xl:w-full">
+                With a referral you get added to the exclusive club of referrers
+                that enjoy a slight boost in placement preference.
+              </p>
             </div>
-            <h1 className="w-[340px] max-bigscreen:w-[310px] max-xl:w-[250px] max-md:w-full max-xl:mt-[30px] font-['Graphikthin'] font-normal mt-[53.05px] mb-[18.16px] text-[32px] max-xl:text-[24px] max-xl:leading-[120%] leading-[40.32px] tracking-[-0.32px]">
-              Get a slight boost in placement preference{" "}
-            </h1>
-            <p className="w-[355.15px] opacity-80 text-[#E0E0E0] text-base max-bigscreen:w-[310px] max-xl:w-full">
-              With a referral you get added to the exclusive club of referrers
-              that enjoy a slight boost in placement preference.
-            </p>
           </div>
         </div>
       </section>
@@ -248,36 +242,42 @@ export default function Courses() {
           </p>
         </div>
         <div className="flex max-hamburger:flex-wrap max-hamburger:justify-center gap-[21px] mt-[50px]">
-          <div
-            className={`pl-[28.54px] w-[33%] max-md:w-full max-hamburger:w-[45%] max-md:h-auto h-[242px] max-xl:h-[262px] max-lg:h-[280px] pb-[29.41px] pr-[29.31px] border-[1px] pt-[31.28px] rounded-[8px] ${style.bordergradient}`}
-          >
-            <h1 className="w-[340px] font-['Graphikthin'] font-normal mt-[] mb-[26.3px] text-[32px] leading-[40.32px] tracking-[-0.32px] text-[#E0E0E0] max-xl:text-[28px] max-xl:leading-[120%] max-bigscreen:w-full">
-              Step 1{" "}
-            </h1>
-            <p className="text-[24px] leading-[36px] w-[355.15px] opacity-80 text-[#E0E0E0] max-bigscreen:w-full">
-              Sign up, copy your referral link, and forward it to all of your
-              friends.
-            </p>
+          <div className={`${style.container}`}>
+            <div
+              className={`pl-[28.54px] w-[33%] max-md:w-full max-hamburger:w-[45%] max-md:h-auto h-[242px] max-xl:h-[262px] max-lg:h-[280px] pb-[29.41px] pr-[29.31px] pt-[31.28px] rounded-[8px] ${style.bordergradient}`}
+            >
+              <h1 className="w-[340px] font-['Graphikthin'] font-normal mt-[] mb-[26.3px] text-[32px] leading-[40.32px] tracking-[-0.32px] text-[#E0E0E0] max-xl:text-[28px] max-xl:leading-[120%] max-bigscreen:w-full">
+                Step 1{" "}
+              </h1>
+              <p className="text-[24px] leading-[36px] w-[355.15px] opacity-80 text-[#E0E0E0] max-bigscreen:w-full">
+                Sign up, copy your referral link, and forward it to all of your
+                friends.
+              </p>
+            </div>
           </div>
-          <div
-            className={`pl-[28.54px] w-[33%] max-md:w-full max-hamburger:w-[45%] max-md:h-auto h-[242px] max-xl:h-[262px] max-lg:h-[280px] pb-[29.41px] pr-[29.31px] border-[1px] pt-[31.28px] rounded-[8px] ${style.bordergradient}`}
-          >
-            <h1 className="w-[340px] font-['Graphikthin'] font-normal mt-[] mb-[26.3px] text-[32px] leading-[40.32px] tracking-[-0.32px] text-[#E0E0E0] max-xl:text-[28px] max-xl:leading-[120%] max-bigscreen:w-full">
-              Step 2{" "}
-            </h1>
-            <p className="text-[24px] leading-[36px] w-[355.15px] opacity-80 text-[#E0E0E0] max-bigscreen:w-full">
-              Your friends will click on the link, and sign up.
-            </p>
+          <div className={`${style.container}`}>
+            <div
+              className={`pl-[28.54px] w-[33%] max-md:w-full max-hamburger:w-[45%] max-md:h-auto h-[242px] max-xl:h-[262px] max-lg:h-[280px] pb-[29.41px] pr-[29.31px] pt-[31.28px] rounded-[8px] ${style.bordergradient}`}
+            >
+              <h1 className="w-[340px] font-['Graphikthin'] font-normal mt-[] mb-[26.3px] text-[32px] leading-[40.32px] tracking-[-0.32px] text-[#E0E0E0] max-xl:text-[28px] max-xl:leading-[120%] max-bigscreen:w-full">
+                Step 2{" "}
+              </h1>
+              <p className="text-[24px] leading-[36px] w-[355.15px] opacity-80 text-[#E0E0E0] max-bigscreen:w-full">
+                Your friends will click on the link, and sign up.
+              </p>
+            </div>
           </div>
-          <div
-            className={`pl-[28.54px] w-[33%] max-md:w-full max-hamburger:w-[45%] max-md:h-auto h-[242px] max-xl:h-[262px] max-lg:h-[280px] max-lg:h-[280px] pb-[29.41px] pr-[29.31px] border-[1px] pt-[31.28px] rounded-[8px] ${style.bordergradient}`}
-          >
-            <h1 className="w-[340px] font-['Graphikthin'] font-normal mt-[] mb-[26.3px] text-[32px] leading-[40.32px] tracking-[-0.32px] text-[#E0E0E0] max-xl:text-[28px] max-xl:leading-[120%] max-bigscreen:w-full">
-              Step 3{" "}
-            </h1>
-            <p className="text-[24px] leading-[36px] w-[355.15px] opacity-80 text-[#E0E0E0] max-bigscreen:w-full">
-              Enjoy the free benefits you earned.
-            </p>
+          <div className={`${style.container}`}>
+            <div
+              className={`pl-[28.54px] w-[33%] max-md:w-full max-hamburger:w-[45%] max-md:h-auto h-[242px] max-xl:h-[262px] max-lg:h-[280px] max-lg:h-[280px] pb-[29.41px] pr-[29.31px] pt-[31.28px] rounded-[8px] ${style.bordergradient}`}
+            >
+              <h1 className="w-[340px] font-['Graphikthin'] font-normal mt-[] mb-[26.3px] text-[32px] leading-[40.32px] tracking-[-0.32px] text-[#E0E0E0] max-xl:text-[28px] max-xl:leading-[120%] max-bigscreen:w-full">
+                Step 3{" "}
+              </h1>
+              <p className="text-[24px] leading-[36px] w-[355.15px] opacity-80 text-[#E0E0E0] max-bigscreen:w-full">
+                Enjoy the free benefits you earned.
+              </p>
+            </div>
           </div>
         </div>
         <div className="mt-[105.91px] max-sm:mt-[50px] flex flex-col items-center">

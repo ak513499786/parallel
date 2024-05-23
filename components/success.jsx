@@ -15,7 +15,7 @@ export default function Success() {
         .fromTo(
           successanimation.current,
           { x: -150 },
-          { ease: Linear.easeNone, x: -2103, duration: 10 }
+          { ease: Linear.easeNone, x: -2103, duration: 20 }
         );
     } else if (width < 640) {
       gsap
@@ -23,7 +23,7 @@ export default function Success() {
         .fromTo(
           successanimation.current,
           { x: -150 },
-          { ease: Linear.easeNone, x: -1508, duration: 10 }
+          { ease: Linear.easeNone, x: -1508, duration: 20 }
         );
     }
     return () => {

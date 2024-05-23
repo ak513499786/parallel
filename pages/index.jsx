@@ -71,24 +71,39 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <div className="absolute w-[100%] h-[811px] top-0 left-0 overflow-hidden">
+      <div className="absolute z-30 w-[100%] h-[1422px] top-0 left-0 overflow-hidden">
         <div className={style.backgroundcolor}></div>
+      </div>
+      <div className="absolute w-[100%] h-[822px] top-0 left-0 overflow-hidden">
         <div className={style.backgroundbox}></div>
       </div>
-      <main className="px-[80px] max-md:px-[40px] max-sm:px-[20px] max-md:pt-[50px] max-sm:pt-[30px] flex justify-between max-hamburger:items-center max-smalllaptop:gap-[20px] max-hamburger:flex-col pb-[29.5px] pt-[76px]">
+      <main className="px-[80px] z-50 relative max-md:px-[40px] max-sm:px-[20px] max-md:pt-[50px] max-sm:pt-[30px] flex justify-between max-hamburger:items-center max-smalllaptop:gap-[20px] max-hamburger:flex-col pb-[29.5px] pt-[76px]">
         <div className="mt-[23px] max-hamburger:w-full max-md:mt-0">
-          <div className="w-[799.41px] max-hamburger:w-[100%] relative z-30 max-smalllaptop:w-[510px] max-bigscreen:w-[676px]">
-            <h1 className="text-[90px] max-smalllaptop:tracking-[-4.5px] max-smalllaptop:text-[84px] max-sm:text-[64px] max-smallphone:text-[36px] max-sm:tracking-tight max-smalllaptop:leading-[102%] font-light tracking-[-5.22px] leading-[98.1px] text-[#E5E5E5] font-['Graphikthin'] mb-[42px]">
-              Learn new age tech like{" "}
-              <span className="font-semibold">AI, DSA</span> and get placed at{" "}
+          <div className="relative z-30 w-full">
+            <h1 className="w-[674.41px] text-[90px] max-hamburger:w-[100%]  max-smalllaptop:w-[510px] max-bigscreen:w-[676px] max-smalllaptop:tracking-[-4.5px] max-smalllaptop:text-[84px] max-sm:text-[64px] max-smallphone:text-[36px] max-sm:tracking-tight max-smalllaptop:leading-[102%] font-light tracking-[-5.22px] leading-[98.1px] text-[#E5E5E5] font-['Graphikthin'] mb-[20px]">
+              Upskill and get placed at
               <span className="font-semibold"> ₹0.</span>
             </h1>
-            <p className="w-[393.32px] max-sm:w-full text-[16px] leading-[24px] text-[#E0E0E0]">
+            <div className="flex gap-[12px] flex-wrap pt-[20px]">
+              <p className="px-[8px] max-sm:px-[6px] py-[4px] rounded-[5px] text-[#797979] text-base max-sm:text-sm border-[1px] border-[#797979]">
+                No-code, Low-code{" "}
+              </p>
+              <p className="px-[8px] max-sm:px-[6px] py-[4px] rounded-[5px] text-[#797979] text-base max-sm:text-sm border-[1px] border-[#797979]">
+                Artificial Intelligence{" "}
+              </p>
+              <p className="px-[8px] max-sm:px-[6px] py-[4px] rounded-[5px] text-[#797979] text-base max-sm:text-sm border-[1px] border-[#797979]">
+                Data Analytics{" "}
+              </p>
+              <p className="px-[8px] max-sm:px-[6px] py-[4px] rounded-[5px] text-[#797979] text-base max-sm:text-sm border-[1px] border-[#797979]">
+                Product Development{" "}
+              </p>
+            </div>
+            <p className="w-[393.32px] mt-[42px] max-sm:w-full text-[16px] leading-[24px] text-[#E0E0E0]">
               Pay us a fraction of your salary only after you get placed through
               our guaranteed placements.
             </p>
           </div>
-          <div className="w-[676px] max-hamburger:w-full overflow-hidden mt-[137.5px] max-hamburger:mt-[80px] max-md:mt-[50px] max-smalllaptop:w-[460px] relative z-30">
+          <div className="w-[676px] max-hamburger:w-full overflow-hidden mt-[104px] max-hamburger:mt-[80px] max-md:mt-[50px] max-smalllaptop:w-[460px] relative z-30">
             <p className="text-[16px] leading-[24px] text-[#E0E0E0]">
               Our placement partners
             </p>
@@ -277,39 +292,11 @@ export default function Home() {
           </button>
         </div>
       </main>
-      <div className="absolute w-[100%] h-[100vh] top-[811px] left-0 overflow-x-hidden">
-        <div className={style.backgroundcolor2}></div>
+      <div className="absolute z-40 overflow-hidden w-[100%] h-[100vh] top-[811px] left-0 overflow-x-hidden">
         <div className={style.backgroundbox2}></div>
       </div>
-      {/* <div className="px-[80px] max-sm:py-0 max-md:px-[40px] max-md:flex-col max-md:gap-[40px] max-sm:px-[20px] py-[103px] flex justify-between">
-        <div>
-          <h1 className="w-[665.36px] max-smalllaptop:w-full font-['Graphikthin'] max-bigscreen:w-[410px] text-[48px] max-sm:text-[32px] max-hamburger:leading-[120%] leading-[56.64px] tracking-[-1.92px] text-[#E5E5E5]">
-            Become a college ambassador and get special perks.
-          </h1>
-          <p className="w-[393.32px] mt-[28.56px] max-md:w-[450px] max-sm:w-full text-base text-[#ffffffcc]">
-            Our college ambassadors have minimum responsibilities, perks, and a
-            better looking resume.
-          </p>
-          <Link href={"/contact-us"}>
-            <button className="w-[165px] max-md:hidden mt-[46.5px] h-[53px] bg-[#30E29D] rounded-[8px] font-bold text-[#292929] text-[16px] font-[19.2px]">
-              Contact Us{" "}
-            </button>
-          </Link>
-        </div>
-        <Image
-          src="/Frame 1000002723.png"
-          className=" max-lg:w-full max-lg:h-auto max-smalllaptop:hidden max-md:block"
-          width={522}
-          height={345}
-        />
-        <Link href={"/contact-us"}>
-          <button className="w-full max-md:block hidden h-[53px] bg-[#30E29D] rounded-[8px] font-bold text-[#292929] text-[16px] font-[19.2px]">
-            Contact Us{" "}
-          </button>
-        </Link>
-      </div> */}
-      <div className="pt-[102.57px] max-sm:py-20 max-sm:px-[20px] max-md:px-[40px] relative z-20 pb-[102.43px] pl-[80px] pr-[79px]">
-        <div className="flex justify-between max-smalllaptop:gap-[50px]">
+      <div className="pt-[102.57px] max-sm:py-20 max-sm:px-[20px] max-md:px-[40px] relative pb-[102.43px] pl-[80px] pr-[79px]">
+        <div className="flex justify-between relative z-50 max-smalllaptop:gap-[50px]">
           <p className="w-[665px] font-['Graphikthin'] text-[64px] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] font-light leading-[61.68px] tracking-[-2.56px] text-[#E5E5E5]">
             In a career gap and need to brush up your skills?{" "}
           </p>
@@ -319,67 +306,81 @@ export default function Home() {
             </button>
           </Link>
         </div>
-        <div className="flex gap-[21px] mt-[67px] max-md:flex-col max-hamburger:flex-wrap max-hamburger:justify-center">
-          <div
-            className={`pl-[28px] w-[33%] max-sm:px-[20px] max-sm:py-[16px] w-[33%] max-hamburger:w-[45%] max-md:w-full pb-[41.87px] pr-[29.85px] border-[1px] pt-[32px] rounded-[8px] ${style.bordergradient}`}
-          >
-            <div className="bg-[#1F1F1F] w-[105px] pt-[26.26px] pb-[26.01px] pl-[26.39px] pr-[26.88px] border-[1px] rounded-[6px] border-[#FFFFFF66] ">
-              {" "}
-              <Image
-                src="/book-reading--book-reading-learning.svg"
-                width={51.73}
-                height={51.73}
-              />
+        <div className="flex gap-[21px] mt-[67px] z-20 relative max-md:flex-col max-hamburger:flex-wrap max-hamburger:justify-center">
+          <div className={`${style.container}`}>
+            <div
+              className={`pl-[28px] bg-[#1F1F1F] z-10 relative w-[33%] max-sm:px-[20px] max-sm:py-[16px] w-[33%] max-hamburger:w-[45%] max-md:w-full pb-[41.87px] pr-[29.85px] pt-[32px] rounded-[8px] ${style.bordergradient}`}
+            >
+              <div className="bg-[#1F1F1F] w-[105px] pt-[26.26px] pb-[26.01px] pl-[26.39px] pr-[26.88px] border-[1px] rounded-[6px] border-[#FFFFFF66] ">
+                {" "}
+                <Image
+                  src="/book-reading--book-reading-learning.svg"
+                  width={51.73}
+                  height={51.73}
+                />
+              </div>
+              <h1 className="w-[340px] max-bigscreen:w-[310px] max-xl:w-[250px] max-md:w-full max-xl:mt-[30px] font-['Graphikthin'] font-normal mt-[53.05px] mb-[18.16px] text-[32px] max-xl:text-[24px] max-xl:leading-[120%] leading-[40.32px] tracking-[-0.32px]">
+                Courses on in-demand skills.{" "}
+              </h1>
+              <p className="w-[355.15px] max-bigscreen:w-[310px] max-xl:w-full h-[136.91px] max-xl:h-[165px] max-lg:h-[200px] max-md:h-auto opacity-80 text-[#E0E0E0] text-base">
+                Choose from a catalogue of future-proof, in-demand skills to
+                upskill on. All of the courses are curated keeping
+                future-proofing in mind. Learn only what will stay relevant for
+                the next 20 years.
+              </p>
             </div>
-            <h1 className="w-[340px] max-bigscreen:w-[310px] max-xl:w-[250px] max-md:w-full max-xl:mt-[30px] font-['Graphikthin'] font-normal mt-[53.05px] mb-[18.16px] text-[32px] max-xl:text-[24px] max-xl:leading-[120%] leading-[40.32px] tracking-[-0.32px]">
-              Courses on in-demand skills.{" "}
-            </h1>
-            <p className="w-[355.15px] max-bigscreen:w-[310px] max-xl:w-full h-[136.91px] max-xl:h-[165px] max-lg:h-[200px] max-md:h-auto opacity-80 text-[#E0E0E0] text-base">
-              Choose from a catalogue of future-proof, in-demand skills to
-              upskill on. All of the courses are curated keeping future-proofing
-              in mind. Learn only what will stay relevant for the next 20 years.
-            </p>
           </div>
-          <div
-            className={`pl-[28px] w-[33%] max-sm:px-[20px] max-sm:py-[16px] w-[33%] max-hamburger:w-[45%] max-md:w-full pb-[41.87px] pr-[29.85px] border-[1px] pt-[32px] rounded-[8px] ${style.bordergradient}`}
-          >
-            <div className="bg-[#1F1F1F] w-[105px] px-[26.63px] py-[26.13px] border-[1px] rounded-[6px] border-[#FFFFFF66] ">
-              {" "}
-              <Image
-                src="/bag-suitcase-2--product-business-briefcase.svg"
-                width={51.73}
-                height={51.73}
-              />
+          <div className={`${style.container}`}>
+            <div
+              className={`pl-[28px] w-[33%]  max-sm:px-[20px] max-sm:py-[16px] w-[33%] max-hamburger:w-[45%] max-md:w-full pb-[41.87px] pr-[29.85px] pt-[32px] rounded-[8px] ${style.bordergradient}`}
+            >
+              <div className="bg-[#1F1F1F] w-[105px] px-[26.63px] py-[26.13px] border-[1px] rounded-[6px] border-[#FFFFFF66] ">
+                {" "}
+                <Image
+                  src="/bag-suitcase-2--product-business-briefcase.svg"
+                  width={51.73}
+                  height={51.73}
+                />
+              </div>
+              <h1 className="w-[340px] max-bigscreen:w-[310px] max-xl:w-[250px] max-md:w-full max-xl:mt-[30px] font-['Graphikthin'] font-normal mt-[53.05px] mb-[18.16px] text-[32px] max-xl:text-[24px] max-xl:leading-[120%] leading-[40.32px] tracking-[-0.32px]">
+                100
+                <span className="font-['Graphik'] font-light opacity-90">
+                  %
+                </span>{" "}
+                placement guarantee.{" "}
+              </h1>
+              <p className="w-[355.15px] max-bigscreen:w-[310px] max-xl:w-full h-[136.91px] max-xl:h-[165px] max-lg:h-[200px] max-md:h-auto opacity-80 text-[#E0E0E0] text-base">
+                With our 100
+                <span className="font-['Graphik'] font-light opacity-90">
+                  %
+                </span>{" "}
+                Job Placement Guarantee, we're committed to your success. If you
+                don't land a job within a specified timeframe after completing
+                the program, we'll continue to work with you until you do.
+              </p>
             </div>
-            <h1 className="w-[340px] max-bigscreen:w-[310px] max-xl:w-[250px] max-md:w-full max-xl:mt-[30px] font-['Graphikthin'] font-normal mt-[53.05px] mb-[18.16px] text-[32px] max-xl:text-[24px] max-xl:leading-[120%] leading-[40.32px] tracking-[-0.32px]">
-              100<span className="font-['Graphik'] font-light opacity-90">%</span>{' '}placement guarantee.{" "}
-            </h1>
-            <p className="w-[355.15px] max-bigscreen:w-[310px] max-xl:w-full h-[136.91px] max-xl:h-[165px] max-lg:h-[200px] max-md:h-auto opacity-80 text-[#E0E0E0] text-base">
-              With our 100<span className="font-['Graphik'] font-light opacity-90">%</span>{' '} Job Placement Guarantee, we're committed to your
-              success. If you don't land a job within a specified timeframe
-              after completing the program, we'll continue to work with you
-              until you do.
-            </p>
           </div>
-          <div
-            className={`pl-[28px] w-[33%] max-sm:px-[20px] max-sm:py-[16px] w-[33%] max-hamburger:w-[45%] max-md:w-full pb-[41.87px] pr-[29.85px] border-[1px] pt-[32px] rounded-[8px] ${style.bordergradient}`}
-          >
-            <div className="bg-[#1F1F1F] w-[105px] pt-[22.3px] pb-[21.7px] pl-[22.95px] pr-[22.05px] border-[1px] rounded-[6px] border-[#FFFFFF66] ">
-              {" "}
-              <Image
-                src="/Calendar-3--Streamline-Ultimate.svg.svg"
-                width={60}
-                height={60}
-              />
+          <div className={`${style.container}`}>
+            <div
+              className={`pl-[28px] w-[33%] backdrop-blur-2xl max-sm:px-[20px] max-sm:py-[16px] w-[33%] max-hamburger:w-[45%] max-md:w-full pb-[41.87px] pr-[29.85px] pt-[32px] rounded-[8px] ${style.bordergradient}`}
+            >
+              <div className="bg-[#1F1F1F] w-[105px] pt-[22.3px] pb-[21.7px] pl-[22.95px] pr-[22.05px] border-[1px] rounded-[6px] border-[#FFFFFF66] ">
+                {" "}
+                <Image
+                  src="/Calendar-3--Streamline-Ultimate.svg.svg"
+                  width={60}
+                  height={60}
+                />
+              </div>
+              <h1 className="w-[340px] max-bigscreen:w-[310px] max-xl:w-[230px] max-md:w-full max-xl:mt-[30px] font-['Graphikthin'] font-normal mt-[53.05px] mb-[18.16px] text-[32px] max-xl:text-[24px] max-xl:leading-[120%] leading-[40.32px] tracking-[-0.32px]">
+                Become job ready in 6 months.{" "}
+              </h1>
+              <p className="w-[355.15px] max-bigscreen:w-[310px] max-xl:w-full h-[136.91px] max-xl:h-[165px] max-lg:h-[200px] max-md:h-auto opacity-80 text-[#E0E0E0] text-base">
+                Our courses are designed for individuals who are serious about
+                making a quick and impactful career change. We understand the
+                urgency, and we're here to deliver.
+              </p>
             </div>
-            <h1 className="w-[340px] max-bigscreen:w-[310px] max-xl:w-[230px] max-md:w-full max-xl:mt-[30px] font-['Graphikthin'] font-normal mt-[53.05px] mb-[18.16px] text-[32px] max-xl:text-[24px] max-xl:leading-[120%] leading-[40.32px] tracking-[-0.32px]">
-              Become job ready in 6 months.{" "}
-            </h1>
-            <p className="w-[355.15px] max-bigscreen:w-[310px] max-xl:w-full h-[136.91px] max-xl:h-[165px] max-lg:h-[200px] max-md:h-auto opacity-80 text-[#E0E0E0] text-base">
-              Our courses are designed for individuals who are serious about
-              making a quick and impactful career change. We understand the
-              urgency, and we're here to deliver.
-            </p>
           </div>
         </div>
         <Link href={"/courses"}>
@@ -418,7 +419,9 @@ export default function Home() {
       <div className="pt-[102.57px] max-sm:py-20 max-sm:px-[20px] max-md:px-[40px] relative z-20 pb-[62.43px] pl-[80px] pr-[79px]">
         <div className="flex justify-between max-lg:gap-[50px]">
           <p className="w-[903.7px] max-hamburger:w-full font-['Graphikthin'] text-[64px] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] font-light leading-[61.68px] tracking-[-2.56px] text-[#E5E5E5]">
-            Courses with 100<span className="font-['Graphik'] font-light">%</span>{' '}job guarantee at an unbeatable price.{" "}
+            Courses with 100
+            <span className="font-['Graphik'] font-light">%</span> job guarantee
+            at an unbeatable price.{" "}
           </p>
           <Link href={"/courses"}>
             <button className="w-[205px] max-md:hidden h-[53px] bg-[#30E29D] rounded-[8px] font-bold text-[#292929] text-[16px] font-[19.2px]">
@@ -427,66 +430,72 @@ export default function Home() {
           </Link>
         </div>
         <div className="flex gap-[21px] max-md:flex-col mt-[67px] max-hamburger:flex-wrap max-hamburger:justify-center">
-          <div
-            className={`pl-[28px] max-sm:px-[20px] max-sm:py-[16px] w-[33%] max-hamburger:w-[45%] max-md:w-full pb-[41.87px] pr-[29.85px] border-[1px] pt-[32px] rounded-[8px] ${style.bordergradient}`}
-          >
-            <div className="bg-[#1F1F1F] w-[105px] px-[28.53px] py-[26.03px] border-[1px] rounded-[6px] border-[#FFFFFF66] ">
-              {" "}
-              <Image
-                src="/bag-rupee--bag-payment-cash-money-finance.svg"
-                width={47.94}
-                height={51.93}
-              />
+          <div className={`${style.container}`}>
+            <div
+              className={`pl-[28px] max-sm:px-[20px] max-sm:py-[16px] w-[33%] max-hamburger:w-[45%] max-md:w-full pb-[41.87px] pr-[29.85px] pt-[32px] rounded-[8px] ${style.bordergradient}`}
+            >
+              <div className="bg-[#1F1F1F] w-[105px] px-[28.53px] py-[26.03px] border-[1px] rounded-[6px] border-[#FFFFFF66] ">
+                {" "}
+                <Image
+                  src="/bag-rupee--bag-payment-cash-money-finance.svg"
+                  width={47.94}
+                  height={51.93}
+                />
+              </div>
+              <h1 className="w-[340px] max-bigscreen:w-[310px] max-xl:w-[250px] max-md:w-full max-xl:mt-[30px] font-['Graphikthin'] font-normal mt-[53.05px] mb-[18.16px] text-[32px] max-xl:text-[24px] max-xl:leading-[120%] leading-[40.32px] tracking-[-0.32px]">
+                Pay after getting placed.
+              </h1>
+              <p className="w-[355.15px] max-bigscreen:w-[310px] max-xl:w-full h-[136.91px] max-xl:h-[165px] max-lg:h-[200px] max-md:h-auto opacity-80 text-[#E0E0E0] text-base">
+                Start learning right away without having to worry about
+                finances. We believe in making quality education affordable. We
+                ask a small percentage of your CTC once you get placed.
+              </p>
             </div>
-            <h1 className="w-[340px] max-bigscreen:w-[310px] max-xl:w-[250px] max-md:w-full max-xl:mt-[30px] font-['Graphikthin'] font-normal mt-[53.05px] mb-[18.16px] text-[32px] max-xl:text-[24px] max-xl:leading-[120%] leading-[40.32px] tracking-[-0.32px]">
-              Pay after getting placed.
-            </h1>
-            <p className="w-[355.15px] max-bigscreen:w-[310px] max-xl:w-full h-[136.91px] max-xl:h-[165px] max-lg:h-[200px] max-md:h-auto opacity-80 text-[#E0E0E0] text-base">
-              Start learning right away without having to worry about finances.
-              We believe in making quality education affordable. We ask a small
-              percentage of your CTC once you get placed.
-            </p>
           </div>
-          <div
-            className={`pl-[28px] max-sm:px-[20px] max-sm:py-[16px] w-[33%] max-hamburger:w-[45%] max-md:w-full pb-[41.87px] pr-[29.85px] border-[1px] pt-[32px] rounded-[8px] ${style.bordergradient}`}
-          >
-            <div className="bg-[#1F1F1F] w-[105px] px-[26.53px] py-[26.14px] border-[1px] rounded-[6px] border-[#FFFFFF66] ">
-              {" "}
-              <Image
-                src="/star-badge--ribbon-reward-like-social-rating-media.svg"
-                width={51.93}
-                height={51.73}
-              />
+          <div className={`${style.container}`}>
+            <div
+              className={`pl-[28px] max-sm:px-[20px] max-sm:py-[16px] w-[33%] max-hamburger:w-[45%] max-md:w-full pb-[41.87px] pr-[29.85px] pt-[32px] rounded-[8px] ${style.bordergradient}`}
+            >
+              <div className="bg-[#1F1F1F] w-[105px] px-[26.53px] py-[26.14px] border-[1px] rounded-[6px] border-[#FFFFFF66] ">
+                {" "}
+                <Image
+                  src="/star-badge--ribbon-reward-like-social-rating-media.svg"
+                  width={51.93}
+                  height={51.73}
+                />
+              </div>
+              <h1 className="w-[340px] max-bigscreen:w-[310px] max-xl:w-[250px] max-md:w-full max-xl:mt-[30px] font-['Graphikthin'] font-normal mt-[53.05px] mb-[18.16px] text-[32px] max-xl:text-[24px] max-xl:leading-[120%] leading-[40.32px] tracking-[-0.32px]">
+                Courses curated by industry experts.{" "}
+              </h1>
+              <p className="w-[355.15px] max-bigscreen:w-[310px] max-xl:w-full h-[136.91px] max-xl:h-[165px] max-lg:h-[200px] max-md:h-auto opacity-80 text-[#E0E0E0] text-base">
+                We brought together a band of industry experts who believe in
+                the same cause as we do. Learn from thought leaders with 10+
+                years of experience.
+              </p>
             </div>
-            <h1 className="w-[340px] max-bigscreen:w-[310px] max-xl:w-[250px] max-md:w-full max-xl:mt-[30px] font-['Graphikthin'] font-normal mt-[53.05px] mb-[18.16px] text-[32px] max-xl:text-[24px] max-xl:leading-[120%] leading-[40.32px] tracking-[-0.32px]">
-              Courses curated by industry experts.{" "}
-            </h1>
-            <p className="w-[355.15px] max-bigscreen:w-[310px] max-xl:w-full h-[136.91px] max-xl:h-[165px] max-lg:h-[200px] max-md:h-auto opacity-80 text-[#E0E0E0] text-base">
-              We brought together a band of industry experts who believe in the
-              same cause as we do. Learn from thought leaders with 10+ years of
-              experience.
-            </p>
           </div>
-          <div
-            className={`pl-[28px] max-sm:px-[20px] max-sm:py-[16px] w-[33%] max-hamburger:w-[45%] max-md:w-full pb-[41.87px] pr-[29.85px] border-[1px] pt-[32px] rounded-[8px] ${style.bordergradient}`}
-          >
-            <div className="bg-[#1F1F1F] w-[105px] px-[26.63px] py-[26.13px] border-[1px] rounded-[6px] border-[#FFFFFF66] ">
-              {" "}
-              <Image
-                src="/bag-suitcase-2--product-business-briefcase.svg"
-                width={51.73}
-                height={51.73}
-              />
+          <div className={`${style.container}`}>
+            <div
+              className={`pl-[28px] max-sm:px-[20px] max-sm:py-[16px] w-[33%] max-hamburger:w-[45%] max-md:w-full pb-[41.87px] pr-[29.85px] pt-[32px] rounded-[8px] ${style.bordergradient}`}
+            >
+              <div className="bg-[#1F1F1F] w-[105px] px-[26.63px] py-[26.13px] border-[1px] rounded-[6px] border-[#FFFFFF66] ">
+                {" "}
+                <Image
+                  src="/bag-suitcase-2--product-business-briefcase.svg"
+                  width={51.73}
+                  height={51.73}
+                />
+              </div>
+              <h1 className="w-[340px] max-bigscreen:w-[310px] max-xl:w-[250px] max-md:w-full max-xl:mt-[30px] font-['Graphikthin'] font-normal mt-[53.05px] mb-[18.16px] text-[32px] max-xl:text-[24px] max-xl:leading-[120%] leading-[40.32px] tracking-[-0.32px]">
+                Placement support through our partners.{" "}
+              </h1>
+              <p className="w-[355.15px] max-bigscreen:w-[310px] max-xl:w-full h-[136.91px] max-xl:h-[165px] max-lg:h-[200px] max-md:h-auto opacity-80 text-[#E0E0E0] text-base">
+                We help you all the way through from upskilling to getting
+                placed. Parallel is partnered with 50+ companies to ease the
+                placement process. Get placed in companies that set the trend
+                for the future.
+              </p>
             </div>
-            <h1 className="w-[340px] max-bigscreen:w-[310px] max-xl:w-[250px] max-md:w-full max-xl:mt-[30px] font-['Graphikthin'] font-normal mt-[53.05px] mb-[18.16px] text-[32px] max-xl:text-[24px] max-xl:leading-[120%] leading-[40.32px] tracking-[-0.32px]">
-              Placement support through our partners.{" "}
-            </h1>
-            <p className="w-[355.15px] max-bigscreen:w-[310px] max-xl:w-full h-[136.91px] max-xl:h-[165px] max-lg:h-[200px] max-md:h-auto opacity-80 text-[#E0E0E0] text-base">
-              We help you all the way through from upskilling to getting placed.
-              Parallel is partnered with 50+ companies to ease the placement
-              process. Get placed in companies that set the trend for the
-              future.
-            </p>
           </div>
         </div>
         <Link href={"/courses"}>
@@ -495,11 +504,11 @@ export default function Home() {
           </button>
         </Link>
       </div>
-      <div className="pl-[80px] max-md:px-[40px] max-sm:py-20 max-sm:px-[20px] pr-[79px] pt-[77.57px] pb-[139.43px]">
-        <h1 className="w-[665.36px] max-hamburger:w-full text-[#E5E5E5] font-['Graphikthin'] text-[64px] leading-[61.68px] tracking-[-2.56px] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%]">
+      <div className="pl-[80px] flex flex-col items-center max-md:px-[40px] max-sm:py-20 max-sm:px-[20px] pr-[79px] pt-[77.57px] pb-[139.43px]">
+        <h1 className="w-[665.36px] max-hamburger:w-full text-center text-[#E5E5E5] font-['Graphikthin'] text-[64px] leading-[61.68px] tracking-[-2.56px] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%]">
           Finish a course now. Pay after getting placed.
         </h1>
-        <div className="pl-[2px] justify-center mt-[49px] flex flex-wrap gap-[20px]">
+        <div className="pl-[2px] justify-center mt-[93px] flex flex-wrap gap-x-[94px] gap-y-[84px] max-sm:gap-[20px]">
           <div
             className={`px-[18px] card border-[1px] relative w-[33%] backdrop-blur-lg max-md:w-full max-smalllaptop:w-[48.3%] border-white rounded-[10px] py-[20px] ${style.cardbg}`}
           >
@@ -533,12 +542,12 @@ export default function Home() {
             </div>
             <Link className="relative z-30" href={"/courses/low-code-no-code"}>
               <button className="w-[100%] mt-[15px] h-[53px] bg-[transparent] rounded-[8px] text-[#30E29D] transition-all button font-semibold border-[1px] border-[#30E29D] text-[16px] font-[19.2px]">
-                Comming Soon{" "}
+                Coming Soon{" "}
               </button>
             </Link>
           </div>
           <div
-            className={`px-[18px] border-[1px] card relative w-[33%] backdrop-blur-sm backdrop-md max-md:w-full max-smalllaptop:w-[48.3%] border-white rounded-[10px] py-[20px] ${style.cardbg}`}
+            className={`px-[18px] border-[1px] card relative w-[33%] backdrop-md max-md:w-full max-smalllaptop:w-[48.3%] border-white rounded-[10px] py-[20px] ${style.cardbg}`}
           >
             <div className="bg-[#7627E880] absolute blur-3xl z-10 top-0 w-[100%] left-0 h-[350px]"></div>
             <div className="bg-[#1BC45E3D] absolute blur-2xl z-10 bottom-0 w-[100%] left-0 h-[100px]"></div>
@@ -572,7 +581,7 @@ export default function Home() {
               href={"/courses/artificial-intelligence"}
             >
               <button className="w-[100%] mt-[15px] h-[53px] bg-[transparent] rounded-[8px] text-[#30E29D] transition-all font-semibold button border-[1px] border-[#30E29D] text-[16px] font-[19.2px]">
-                Comming Soon{" "}
+                Coming Soon{" "}
               </button>
             </Link>
           </div>
@@ -608,7 +617,7 @@ export default function Home() {
             </div>
             <Link className="relative z-30" href={"/courses/data-analytics"}>
               <button className="w-[100%] mt-[15px] h-[53px] bg-[transparent] rounded-[8px] text-[#30E29D] transition-all font-semibold button border-[1px] border-[#30E29D] text-[16px] font-[19.2px]">
-                Comming Soon{" "}
+                Coming Soon{" "}
               </button>
             </Link>
           </div>
@@ -647,7 +656,7 @@ export default function Home() {
               href={"/courses/full-stack-development"}
             >
               <button className="w-[100%] mt-[15px] h-[53px] bg-[transparent] rounded-[8px] text-[#30E29D] button transition-all font-semibold border-[1px] border-[#30E29D] text-[16px] font-[19.2px]">
-                Comming Soon{" "}
+                Coming Soon{" "}
               </button>
             </Link>
           </div>
@@ -734,59 +743,65 @@ export default function Home() {
           Learn from leading industry experts
         </h1>
         <div className="flex gap-[21px] max-md:flex-col mt-[67px] max-hamburger:flex-wrap max-hamburger:justify-center">
-          <div
-            className={`pl-[28px] max-sm:px-[20px] max-sm:py-[16px] w-[33%] max-hamburger:w-[45%] max-md:w-full pb-[41.87px] pr-[29.85px] border-[1px] pt-[32px] rounded-[8px] ${style.bordergradient}`}
-          >
-            <div className="bg-[#1F1F1F] w-[125.17px] h-[123.97px] px-[28.53px] py-[26.03px] border-[1px] rounded-[6px] border-[#FFFFFF66] ">
-              {/* {" "}
+          <div className={`${style.container}`}>
+            <div
+              className={`pl-[28px] max-sm:px-[20px] max-sm:py-[16px] w-[33%] max-hamburger:w-[45%] max-md:w-full pb-[41.87px] pr-[29.85px] pt-[32px] rounded-[8px] ${style.bordergradient}`}
+            >
+              <div className="bg-[#1F1F1F] w-[125.17px] h-[123.97px] px-[28.53px] py-[26.03px] border-[1px] rounded-[6px] border-[#FFFFFF66] ">
+                {/* {" "}
               <Image
                 src=""
                 width={47.94}
                 height={51.93}
               /> */}
+              </div>
+              <h1 className="w-[340px] max-bigscreen:w-[310px] max-xl:w-[250px] max-md:w-full max-xl:mt-[30px] font-['Graphikthin'] font-normal mt-[53.05px] mb-[18.16px] text-[32px] max-xl:text-[24px] max-xl:leading-[120%] leading-[40.32px] tracking-[-0.32px]">
+                Buchi Babu Muvva
+              </h1>
+              <p className="w-[275.15px] max-bigscreen:w-[310px] max-xl:w-full opacity-80 text-[#E0E0E0] text-base">
+                Information Technology Expert, PhD. 15+ years of experience
+              </p>
             </div>
-            <h1 className="w-[340px] max-bigscreen:w-[310px] max-xl:w-[250px] max-md:w-full max-xl:mt-[30px] font-['Graphikthin'] font-normal mt-[53.05px] mb-[18.16px] text-[32px] max-xl:text-[24px] max-xl:leading-[120%] leading-[40.32px] tracking-[-0.32px]">
-              Buchi Babu Muvva
-            </h1>
-            <p className="w-[275.15px] max-bigscreen:w-[310px] max-xl:w-full opacity-80 text-[#E0E0E0] text-base">
-              Information Technology Expert, PhD. 15+ years of experience
-            </p>
           </div>
-          <div
-            className={`pl-[28px] max-sm:px-[20px] max-sm:py-[16px] w-[33%] max-hamburger:w-[45%] max-md:w-full pb-[41.87px] pr-[29.85px] border-[1px] pt-[32px] rounded-[8px] ${style.bordergradient}`}
-          >
-            <div className="bg-[#1F1F1F] w-[125.17px] h-[123.97px] px-[28.53px] py-[26.03px] border-[1px] rounded-[6px] border-[#FFFFFF66] ">
-              {/* {" "}
+          <div className={`${style.container}`}>
+            <div
+              className={`pl-[28px] max-sm:px-[20px] max-sm:py-[16px] w-[33%] max-hamburger:w-[45%] max-md:w-full pb-[41.87px] pr-[29.85px] pt-[32px] rounded-[8px] ${style.bordergradient}`}
+            >
+              <div className="bg-[#1F1F1F] w-[125.17px] h-[123.97px] px-[28.53px] py-[26.03px] border-[1px] rounded-[6px] border-[#FFFFFF66] ">
+                {/* {" "}
               <Image
                 src=""
                 width={47.94}
                 height={51.93}
               /> */}
+              </div>
+              <h1 className="w-[340px] max-bigscreen:w-[310px] max-xl:w-[250px] max-md:w-full max-xl:mt-[30px] font-['Graphikthin'] font-normal mt-[53.05px] mb-[18.16px] text-[32px] max-xl:text-[24px] max-xl:leading-[120%] leading-[40.32px] tracking-[-0.32px]">
+                Sandeep Ravichandran
+              </h1>
+              <p className="w-[225.15px] max-bigscreen:w-[310px] max-xl:w-full opacity-80 text-[#E0E0E0] text-base">
+                AI and Data Analytics Expert. 15+ years of experience
+              </p>
             </div>
-            <h1 className="w-[340px] max-bigscreen:w-[310px] max-xl:w-[250px] max-md:w-full max-xl:mt-[30px] font-['Graphikthin'] font-normal mt-[53.05px] mb-[18.16px] text-[32px] max-xl:text-[24px] max-xl:leading-[120%] leading-[40.32px] tracking-[-0.32px]">
-              Sandeep Ravichandran
-            </h1>
-            <p className="w-[225.15px] max-bigscreen:w-[310px] max-xl:w-full opacity-80 text-[#E0E0E0] text-base">
-              AI and Data Analytics Expert. 15+ years of experience
-            </p>
           </div>
-          <div
-            className={`pl-[28px] max-sm:px-[20px] max-sm:py-[16px] w-[33%] max-hamburger:w-[45%] max-md:w-full pb-[41.87px] pr-[29.85px] border-[1px] pt-[32px] rounded-[8px] ${style.bordergradient}`}
-          >
-            <div className="bg-[#1F1F1F] w-[125.17px] h-[123.97px] px-[28.53px] py-[26.03px] border-[1px] rounded-[6px] border-[#FFFFFF66] ">
-              {/* {" "}
+          <div className={`${style.container}`}>
+            <div
+              className={`pl-[28px] max-sm:px-[20px] max-sm:py-[16px] w-[33%] max-hamburger:w-[45%] max-md:w-full pb-[41.87px] pr-[29.85px] pt-[32px] rounded-[8px] ${style.bordergradient}`}
+            >
+              <div className="bg-[#1F1F1F] w-[125.17px] h-[123.97px] px-[28.53px] py-[26.03px] border-[1px] rounded-[6px] border-[#FFFFFF66] ">
+                {/* {" "}
               <Image
                 src=""
                 width={47.94}
                 height={51.93}
               /> */}
+              </div>
+              <h1 className="w-[340px] max-bigscreen:w-[310px] max-xl:w-[250px] max-md:w-full max-xl:mt-[30px] font-['Graphikthin'] font-normal mt-[53.05px] mb-[18.16px] text-[32px] max-xl:text-[24px] max-xl:leading-[120%] leading-[40.32px] tracking-[-0.32px]">
+                Ajith Jagadish
+              </h1>
+              <p className="w-[195.15px] max-bigscreen:w-[310px] max-xl:w-full opacity-80 text-[#E0E0E0] text-base">
+                Career & Lifestyle Coach. 12+ years of experience
+              </p>
             </div>
-            <h1 className="w-[340px] max-bigscreen:w-[310px] max-xl:w-[250px] max-md:w-full max-xl:mt-[30px] font-['Graphikthin'] font-normal mt-[53.05px] mb-[18.16px] text-[32px] max-xl:text-[24px] max-xl:leading-[120%] leading-[40.32px] tracking-[-0.32px]">
-              Ajith Jagadish
-            </h1>
-            <p className="w-[195.15px] max-bigscreen:w-[310px] max-xl:w-full opacity-80 text-[#E0E0E0] text-base">
-              Career & Lifestyle Coach. 12+ years of experience
-            </p>
           </div>
         </div>
       </div>
@@ -913,7 +928,7 @@ export default function Home() {
       <section className="w-[100%] h-[614px] max-sm:h-auto max-sm:h-[300px] max-sm:mt-10 max-sm:py-10 overflow-hidden flex justify-center items-center relative">
         <Image
           src="/Frame 83.svg"
-          className="absolute top-[23.1px] opacity-10 bg-transparent pl-[78.14px] h-[747.06px] w-[100%] pr-[76.27px] z-[1]"
+          className={`absolute z-20 top-[23.1px] bg-transparent pl-[78.14px] h-[747.06px] w-[100%] pr-[76.27px] ${style.imagecontainer}`}
           width={107.16}
           height={107.16}
         />

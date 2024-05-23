@@ -184,104 +184,53 @@ export default function Workshop() {
         </div>
       </section>
       <section className="pt-[107.84px] pb-[56px] max-md:py-[30px] px-[80px] max-md:px-[40px] max-sm:px-[20px]">
-        <h1 className="text-[64px] text-center mb-[57.16px] max-hamburger:text-[48px] max-sm:text-[36px] max-sm:tracking-tighter max-hamburger:leading-[120%] leading-[61.68px] font-['Graphikthin'] text-[#E5E5E5] tracking-[-2.56px]">
+        <h1 className="text-[64px] text-center mb-[74.16px] max-hamburger:text-[48px] max-sm:text-[36px] max-sm:tracking-tighter max-hamburger:leading-[120%] leading-[61.68px] font-['Graphikthin'] text-[#E5E5E5] tracking-[-2.56px]">
           What your students will get{" "}
         </h1>
-        <div
-          className={` ${style.bordergradient} w-full max-hamburger:px-[30px] max-md:px-[20px] max-sm:px-[10px] max-md:py-[30px] pt-[54.45px] pb-[52.55px] rounded-[7px] px-[47px]`}
-        >
-          <div className="flex mb-[21.5px] gap-[10px] items-start">
-            <Image src="/tick.svg" width={24} height={24} className="max-hamburger:mt-[5px]" />
-            <p className="text-[20px] leading-[19.28px] text-[#E5E5E5] mt-[2.5px] max-hamburger:text-base max-hamburger:mt-0 max-sm:text-sm">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci
-              autem nulla exercitationem. Modi, laudantium velit.F
-            </p>
-          </div>
-          <div className="flex mb-[21.5px] gap-[10px] items-start">
-            <Image src="/tick.svg" width={24} height={24} className="max-hamburger:mt-[5px]" />
-            <p className="text-[20px] leading-[19.28px] text-[#E5E5E5] mt-[2.5px] max-hamburger:text-base max-hamburger:mt-0 max-sm:text-sm">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci
-              autem nulla exercitationem. Modi, laudantium velit.F
-            </p>
-          </div>
-          <div className="flex mb-[21.5px] gap-[10px] items-start">
-            <Image src="/tick.svg" width={24} height={24} className="max-hamburger:mt-[5px]" />
-            <p className="text-[20px] leading-[19.28px] text-[#E5E5E5] mt-[2.5px] max-hamburger:text-base max-hamburger:mt-0 max-sm:text-sm">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci
-              autem nulla exercitationem. Modi, laudantium velit.F
-            </p>
-          </div>
-          <div className="flex mb-[21.5px] gap-[10px] items-start">
-            <Image src="/tick.svg" width={24} height={24} className="max-hamburger:mt-[5px]" />
-            <p className="text-[20px] leading-[19.28px] text-[#E5E5E5] mt-[2.5px] max-hamburger:text-base max-hamburger:mt-0 max-sm:text-sm">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci
-              autem nulla exercitationem. Modi, laudantium velit.F
-            </p>
-          </div>
-          <div className="flex mb-[21.5px] gap-[10px] items-start">
-            <Image src="/tick.svg" width={24} height={24} className="max-hamburger:mt-[5px]" />
-            <p className="text-[20px] leading-[19.28px] text-[#E5E5E5] mt-[2.5px] max-hamburger:text-base max-hamburger:mt-0 max-sm:text-sm">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci
-              autem nulla exercitationem. Modi, laudantium velit.F
-            </p>
-          </div>
-          <div className="flex mb-[21.5px] gap-[10px] items-start">
-            <Image src="/tick.svg" width={24} height={24} className="max-hamburger:mt-[5px]" />
-            <p className="text-[20px] leading-[19.28px] text-[#E5E5E5] mt-[2.5px] max-hamburger:text-base max-hamburger:mt-0 max-sm:text-sm">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci
-              autem nulla exercitationem. Modi, laudantium velit.F
-            </p>
-          </div>
-          <div className="flex mb-[21.5px] gap-[10px] items-start">
-            <Image src="/tick.svg" width={24} height={24} className="max-hamburger:mt-[5px]" />
-            <p className="text-[20px] leading-[19.28px] text-[#E5E5E5] mt-[2.5px] max-hamburger:text-base max-hamburger:mt-0 max-sm:text-sm">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci
-              autem nulla exercitationem. Modi, laudantium velit.F
-            </p>
-          </div>
-          <div className="flex mb-[21.5px] gap-[10px] items-start">
-            <Image src="/tick.svg" width={24} height={24} className="max-hamburger:mt-[5px]" />
-            <p className="text-[20px] leading-[19.28px] text-[#E5E5E5] mt-[2.5px] max-hamburger:text-base max-hamburger:mt-0 max-sm:text-sm">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci
-              autem nulla exercitationem. Modi, laudantium velit.F
-            </p>
-          </div>
-          <div className="flex mb-[21.5px] gap-[10px] items-start">
-            <Image src="/tick.svg" width={24} height={24} className="max-hamburger:mt-[5px]" />
-            <p className="text-[20px] leading-[19.28px] text-[#E5E5E5] mt-[2.5px] max-hamburger:text-base max-hamburger:mt-0 max-sm:text-sm">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci
-              autem nulla exercitationem. Modi, laudantium velit.F
-            </p>
-          </div>
-          <div className="flex mb-[21.5px] gap-[10px] items-start">
-            <Image src="/tick.svg" width={24} height={24} className="max-hamburger:mt-[5px]" />
-            <p className="text-[20px] leading-[19.28px] text-[#E5E5E5] mt-[2.5px] max-hamburger:text-base max-hamburger:mt-0 max-sm:text-sm">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci
-              autem nulla exercitationem. Modi, laudantium velit.F
-            </p>
-          </div>
-          <div className="flex mb-[21.5px] gap-[10px] items-start">
-            <Image src="/tick.svg" width={24} height={24} className="max-hamburger:mt-[5px]" />
-            <p className="text-[20px] leading-[19.28px] text-[#E5E5E5] mt-[2.5px] max-hamburger:text-base max-hamburger:mt-0 max-sm:text-sm">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci
-              autem nulla exercitationem. Modi, laudantium velit.F
-            </p>
-          </div>
-          <div className="flex gap-[10px] items-center">
-            <Image src="/tick.svg" width={24} height={24} className="max-hamburger:mt-[5px]" />
-            <p className="text-[20px] leading-[19.28px] text-[#E5E5E5] mt-[2.5px] max-hamburger:text-base max-hamburger:mt-0 max-sm:text-sm">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci
-              autem nulla exercitationem. Modi, laudantium velit.F
-            </p>
-          </div>
+        <div className="flex gap-[21px] flex-wrap">
+          <div
+            className={`${style.gradientbackgroundcard} relative z-20 overflow-hidden w-[413px] h-[406px] rounded-[8px]`}
+          ></div>
+          <div
+            className={`${style.gradientbackgroundcard} relative z-20 overflow-hidden w-[413px] h-[406px] rounded-[8px]`}
+          ></div>
+          <div
+            className={`${style.gradientbackgroundcard} relative z-20 overflow-hidden w-[413px] h-[406px] rounded-[8px]`}
+          ></div>
+          <div
+            className={`${style.gradientbackgroundcard} relative z-20 overflow-hidden w-[413px] h-[406px] rounded-[8px]`}
+          ></div>
+          <div
+            className={`${style.gradientbackgroundcard} relative z-20 overflow-hidden w-[413px] h-[406px] rounded-[8px]`}
+          ></div>
+          <div
+            className={`${style.gradientbackgroundcard} relative z-20 overflow-hidden w-[413px] h-[406px] rounded-[8px]`}
+          ></div>
+          <div
+            className={`${style.gradientbackgroundcard} relative z-20 overflow-hidden w-[413px] h-[406px] rounded-[8px]`}
+          ></div>
+          <div
+            className={`${style.gradientbackgroundcard} relative z-20 overflow-hidden w-[413px] h-[406px] rounded-[8px]`}
+          ></div>
+          <div
+            className={`${style.gradientbackgroundcard} relative z-20 overflow-hidden w-[413px] h-[406px] rounded-[8px]`}
+          ></div>
+          <div
+            className={`${style.gradientbackgroundcard} relative z-20 overflow-hidden w-[413px] h-[406px] rounded-[8px]`}
+          ></div>
         </div>
       </section>
       <section className="flex flex-col items-center pt-[49.9px] pb-[134px] max-md:py-[30px] px-[80px] max-md:px-[40px] max-sm:px-[20px]">
         <h1 className="text-[36px] text-center mb-[50.16px] max-hamburger:text-[28px] max-hamburger:leading-[120%] leading-[41.68px] font-['Graphikthin'] text-[#E5E5E5] tracking-[-1.08px]">
           What your students will get{" "}
         </h1>
-        <Image src="/workshop5.png" width={1063} height={632} className="max-xl:w-full max-xl:h-auto" />
-        </section>
+        <Image
+          src="/workshop5.png"
+          width={1063}
+          height={632}
+          className="max-xl:w-full max-xl:h-auto"
+        />
+      </section>
       <section className="py-[168.5px] max-md:px-[40px] max-sm:px-[20px] max-md:py-[40px] relative px-[62.74px]">
         <div className="absolute w-[100%] h-[100vh] top-0 left-0 overflow-hidden">
           <div className={style.backgroundboxworkshop}></div>

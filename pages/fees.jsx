@@ -29,12 +29,13 @@ export default function Fees() {
   return (
     <>
       <Navbar />
-      <div className="absolute w-[100%] h-[811px] top-0 left-0 overflow-x-hidden">
+      <div className="absolute z-30 w-[100%] h-[1422px] top-0 left-0 overflow-hidden">
         <div className={style.backgroundcolor}></div>
+      </div>
+      <div className="absolute w-[100%] h-[822px] top-0 left-0 overflow-hidden">
         <div className={style.backgroundbox}></div>
       </div>
-      <div className="absolute w-[100%] h-[811px] top-[811px] left-0 overflow-x-hidden">
-        <div className={style.backgroundcolor2}></div>
+      <div className="absolute z-40 overflow-hidden w-[100%] h-[100vh] top-[811px] left-0 overflow-x-hidden">
         <div className={style.backgroundbox2}></div>
       </div>
       <main className="pl-[80px] max-md:px-[40px] max-sm:px-[20px] max-md:pt-[50px] relative z-20 pt-[117.42px] pb-[211.58px] max-md:pb-0">
