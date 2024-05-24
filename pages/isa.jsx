@@ -42,9 +42,9 @@ export default function Courses() {
           </p>
         </div>
         <div className="flex gap-[21px] mt-[49.16px] max-md:flex-col max-hamburger:flex-wrap max-hamburger:justify-center">
-          <div className={`${style.container}`}>
+          <div className={`${style.container} w-[33%] max-hamburger:w-[45%] max-md:w-full`}>
             <div
-              className={`pl-[28px] max-sm:px-[20px] max-sm:py-[16px] w-[33%] max-hamburger:w-[45%] max-md:w-full h-[434px] max-md:h-auto pb-[41.87px] pr-[29.85px] pt-[31.57px] rounded-[8px] ${style.bordergradient}`}
+              className={`pl-[28px] max-sm:px-[20px] max-sm:py-[16px] h-[434px] max-md:h-auto pb-[41.87px] pr-[29.85px] pt-[31.57px] rounded-[8px] ${style.bordergradient}`}
             >
               <div className="bg-[#1F1F1F] w-[105px] pt-[26.26px] pb-[26.01px] pl-[26.39px] pr-[26.88px] border-[1px] rounded-[6px] border-[#FFFFFF66] ">
                 {" "}
@@ -63,9 +63,9 @@ export default function Courses() {
               </p>
             </div>
           </div>
-          <div className={`${style.container}`}>
+          <div className={`${style.container} w-[33%] max-hamburger:w-[45%] max-md:w-full`}>
             <div
-              className={`pl-[28px] max-sm:px-[20px] max-sm:py-[16px] w-[33%] max-hamburger:w-[45%] max-md:w-full h-[434px] max-md:h-auto pb-[41.87px] pr-[29.85px] pt-[31.57px] rounded-[8px] ${style.bordergradient}`}
+              className={`pl-[28px] max-sm:px-[20px] max-sm:py-[16px] h-[434px] max-md:h-auto pb-[41.87px] pr-[29.85px] pt-[31.57px] rounded-[8px] ${style.bordergradient}`}
             >
               <div className="bg-[#1F1F1F] w-[105px] px-[26.63px] py-[26.13px] border-[1px] rounded-[6px] border-[#FFFFFF66] ">
                 {" "}
@@ -84,9 +84,9 @@ export default function Courses() {
               </p>
             </div>
           </div>
-          <div className={`${style.container}`}>
+          <div className={`${style.container} w-[33%] max-hamburger:w-[45%] max-md:w-full`}>
             <div
-              className={`pl-[28px] max-sm:px-[20px] max-sm:py-[16px] w-[33%] max-hamburger:w-[45%] max-md:w-full h-[434px] max-md:h-auto pb-[41.87px] pr-[29.85px] pt-[31.57px] rounded-[8px] ${style.bordergradient}`}
+              className={`pl-[28px] max-sm:px-[20px] max-sm:py-[16px] h-[434px] max-md:h-auto pb-[41.87px] pr-[29.85px] pt-[31.57px] rounded-[8px] ${style.bordergradient}`}
             >
               <div className="bg-[#1F1F1F] w-[105px] pt-[22.3px] pb-[21.7px] pl-[22.95px] pr-[22.05px] border-[1px] rounded-[6px] border-[#FFFFFF66] ">
                 {" "}

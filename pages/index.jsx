@@ -30,7 +30,7 @@ export default function Home() {
       .fromTo(
         clientanimation.current,
         { x: 50 },
-        { ease: Linear.easeNone, x: -1043, duration: 10 }
+        { ease: Linear.easeNone, x: -1043, duration: 20 }
       );
     let tl = gsap.timeline({ repeat: -1 });
     const width = window.innerWidth;
@@ -39,13 +39,13 @@ export default function Home() {
       tl.fromTo(
         leadinganimation.current,
         { y: 0 },
-        { ease: Linear.easeNone, y: -180, duration: 3 }
+        { ease: Linear.easeNone, y: -180, duration: 10 }
       );
     } else if (width < 640) {
       tl.fromTo(
         leadinganimation.current,
         { y: 0 },
-        { ease: Linear.easeNone, y: -100, duration: 3 }
+        { ease: Linear.easeNone, y: -100, duration: 10 }
       );
     }
 
@@ -251,7 +251,7 @@ export default function Home() {
               <div className="bg-[#FFFFFFF2] absolute border-[1px] rounded-tl-[4px] rounded-[tr]-[4px] bottom-[54px] z-[22222] cursor-pointer">
                 <ul>
                   <li
-                    onClick={() => handleOptionSelect("Passed out student")}
+                    onClick={() => handleOptionSelect("Student enrolled in college")}
                     className="pl-[17.91px] max-sm:px-[10px] max-sm:text-base max-sm:w-full w-[368px] cursor-pointer text-black border-[1px] border-b-[#00000033] py-[16px] text-[17.95px] leading-[21.54px]"
                   >
                     Student enrolled in college{" "}
@@ -307,9 +307,9 @@ export default function Home() {
           </Link>
         </div>
         <div className="flex gap-[21px] mt-[67px] z-20 relative max-md:flex-col max-hamburger:flex-wrap max-hamburger:justify-center">
-          <div className={`${style.container}`}>
+          <div className={`${style.container}  w-[33%] max-hamburger:w-[45%] max-md:w-full`}>
             <div
-              className={`pl-[28px] bg-[#1F1F1F] z-10 relative w-[33%] max-sm:px-[20px] max-sm:py-[16px] w-[33%] max-hamburger:w-[45%] max-md:w-full pb-[41.87px] pr-[29.85px] pt-[32px] rounded-[8px] ${style.bordergradient}`}
+              className={`pl-[28px] bg-[#1F1F1F] z-10 relative max-sm:px-[20px] max-sm:py-[16px] pb-[41.87px] pr-[29.85px] pt-[32px] rounded-[8px] ${style.bordergradient}`}
             >
               <div className="bg-[#1F1F1F] w-[105px] pt-[26.26px] pb-[26.01px] pl-[26.39px] pr-[26.88px] border-[1px] rounded-[6px] border-[#FFFFFF66] ">
                 {" "}
@@ -330,9 +330,9 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div className={`${style.container}`}>
+          <div className={`${style.container} w-[33%] max-hamburger:w-[45%] max-md:w-full`}>
             <div
-              className={`pl-[28px] w-[33%]  max-sm:px-[20px] max-sm:py-[16px] w-[33%] max-hamburger:w-[45%] max-md:w-full pb-[41.87px] pr-[29.85px] pt-[32px] rounded-[8px] ${style.bordergradient}`}
+              className={`pl-[28px] w-[33%]  max-sm:px-[20px] max-sm:py-[16px] pb-[41.87px] pr-[29.85px] pt-[32px] rounded-[8px] ${style.bordergradient}`}
             >
               <div className="bg-[#1F1F1F] w-[105px] px-[26.63px] py-[26.13px] border-[1px] rounded-[6px] border-[#FFFFFF66] ">
                 {" "}
@@ -360,9 +360,9 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div className={`${style.container}`}>
+          <div className={`${style.container}  w-[33%] max-hamburger:w-[45%] max-md:w-full`}>
             <div
-              className={`pl-[28px] w-[33%] backdrop-blur-2xl max-sm:px-[20px] max-sm:py-[16px] w-[33%] max-hamburger:w-[45%] max-md:w-full pb-[41.87px] pr-[29.85px] pt-[32px] rounded-[8px] ${style.bordergradient}`}
+              className={`pl-[28px] w-[33%] backdrop-blur-2xl max-sm:px-[20px] max-sm:py-[16px] pb-[41.87px] pr-[29.85px] pt-[32px] rounded-[8px] ${style.bordergradient}`}
             >
               <div className="bg-[#1F1F1F] w-[105px] pt-[22.3px] pb-[21.7px] pl-[22.95px] pr-[22.05px] border-[1px] rounded-[6px] border-[#FFFFFF66] ">
                 {" "}
@@ -410,8 +410,8 @@ export default function Home() {
           width={522}
           height={345}
         />
-        <Link href={"/refer-us"}>
-          <button className="w-full max-md:block hidden h-[53px] bg-[#30E29D] rounded-[8px] font-bold text-[#292929] text-[16px] font-[19.2px]">
+        <Link href={"/refer-us"} className=" max-md:block hidden">
+          <button className="w-full h-[53px] bg-[#30E29D] rounded-[8px] font-bold text-[#292929] text-[16px] font-[19.2px]">
             Learn how to refer{" "}
           </button>
         </Link>
@@ -430,9 +430,9 @@ export default function Home() {
           </Link>
         </div>
         <div className="flex gap-[21px] max-md:flex-col mt-[67px] max-hamburger:flex-wrap max-hamburger:justify-center">
-          <div className={`${style.container}`}>
+          <div className={`${style.container}  w-[33%] max-hamburger:w-[45%] max-md:w-full`}>
             <div
-              className={`pl-[28px] max-sm:px-[20px] max-sm:py-[16px] w-[33%] max-hamburger:w-[45%] max-md:w-full pb-[41.87px] pr-[29.85px] pt-[32px] rounded-[8px] ${style.bordergradient}`}
+              className={`pl-[28px] max-sm:px-[20px] max-sm:py-[16px] pb-[41.87px] pr-[29.85px] pt-[32px] rounded-[8px] ${style.bordergradient}`}
             >
               <div className="bg-[#1F1F1F] w-[105px] px-[28.53px] py-[26.03px] border-[1px] rounded-[6px] border-[#FFFFFF66] ">
                 {" "}
@@ -452,9 +452,9 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div className={`${style.container}`}>
+          <div className={`${style.container}  w-[33%] max-hamburger:w-[45%] max-md:w-full`}>
             <div
-              className={`pl-[28px] max-sm:px-[20px] max-sm:py-[16px] w-[33%] max-hamburger:w-[45%] max-md:w-full pb-[41.87px] pr-[29.85px] pt-[32px] rounded-[8px] ${style.bordergradient}`}
+              className={`pl-[28px] max-sm:px-[20px] max-sm:py-[16px] pb-[41.87px] pr-[29.85px] pt-[32px] rounded-[8px] ${style.bordergradient}`}
             >
               <div className="bg-[#1F1F1F] w-[105px] px-[26.53px] py-[26.14px] border-[1px] rounded-[6px] border-[#FFFFFF66] ">
                 {" "}
@@ -474,9 +474,9 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div className={`${style.container}`}>
+          <div className={`${style.container}  w-[33%] max-hamburger:w-[45%] max-md:w-full`}>
             <div
-              className={`pl-[28px] max-sm:px-[20px] max-sm:py-[16px] w-[33%] max-hamburger:w-[45%] max-md:w-full pb-[41.87px] pr-[29.85px] pt-[32px] rounded-[8px] ${style.bordergradient}`}
+              className={`pl-[28px] max-sm:px-[20px] max-sm:py-[16px] pb-[41.87px] pr-[29.85px] pt-[32px] rounded-[8px] ${style.bordergradient}`}
             >
               <div className="bg-[#1F1F1F] w-[105px] px-[26.63px] py-[26.13px] border-[1px] rounded-[6px] border-[#FFFFFF66] ">
                 {" "}
@@ -743,9 +743,9 @@ export default function Home() {
           Learn from leading industry experts
         </h1>
         <div className="flex gap-[21px] max-md:flex-col mt-[67px] max-hamburger:flex-wrap max-hamburger:justify-center">
-          <div className={`${style.container}`}>
+          <div className={`${style.container}  w-[33%] max-hamburger:w-[45%] max-md:w-full`}>
             <div
-              className={`pl-[28px] max-sm:px-[20px] max-sm:py-[16px] w-[33%] max-hamburger:w-[45%] max-md:w-full pb-[41.87px] pr-[29.85px] pt-[32px] rounded-[8px] ${style.bordergradient}`}
+              className={`pl-[28px] max-sm:px-[20px] max-sm:py-[16px] pb-[41.87px] pr-[29.85px] pt-[32px] rounded-[8px] ${style.bordergradient}`}
             >
               <div className="bg-[#1F1F1F] w-[125.17px] h-[123.97px] px-[28.53px] py-[26.03px] border-[1px] rounded-[6px] border-[#FFFFFF66] ">
                 {/* {" "}
@@ -763,9 +763,9 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div className={`${style.container}`}>
+          <div className={`${style.container}  w-[33%] max-hamburger:w-[45%] max-md:w-full`}>
             <div
-              className={`pl-[28px] max-sm:px-[20px] max-sm:py-[16px] w-[33%] max-hamburger:w-[45%] max-md:w-full pb-[41.87px] pr-[29.85px] pt-[32px] rounded-[8px] ${style.bordergradient}`}
+              className={`pl-[28px] max-sm:px-[20px] max-sm:py-[16px] pb-[41.87px] pr-[29.85px] pt-[32px] rounded-[8px] ${style.bordergradient}`}
             >
               <div className="bg-[#1F1F1F] w-[125.17px] h-[123.97px] px-[28.53px] py-[26.03px] border-[1px] rounded-[6px] border-[#FFFFFF66] ">
                 {/* {" "}
@@ -783,9 +783,9 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div className={`${style.container}`}>
+          <div className={`${style.container}  w-[33%] max-hamburger:w-[45%] max-md:w-full`}>
             <div
-              className={`pl-[28px] max-sm:px-[20px] max-sm:py-[16px] w-[33%] max-hamburger:w-[45%] max-md:w-full pb-[41.87px] pr-[29.85px] pt-[32px] rounded-[8px] ${style.bordergradient}`}
+              className={`pl-[28px] max-sm:px-[20px] max-sm:py-[16px] pb-[41.87px] pr-[29.85px] pt-[32px] rounded-[8px] ${style.bordergradient}`}
             >
               <div className="bg-[#1F1F1F] w-[125.17px] h-[123.97px] px-[28.53px] py-[26.03px] border-[1px] rounded-[6px] border-[#FFFFFF66] ">
                 {/* {" "}
@@ -963,7 +963,7 @@ export default function Home() {
           </Link>
         </div>
         <Image
-          src="/image-from-rawpixel-id-12991629-png 1.svg"
+          src="/workshop1.svg"
           className="absolute max-smalllaptop:top-[50px]  max-smalllaptop:scale-100 max-smalllaptop:right-[-300px] top-[138.31px] max-xl:scale-75 max-smalllaptop:relative max-hamburger:hidden right-[101.75px] h-[329.29px] w-[449.44px] z-[10]"
           width={107.16}
           height={107.16}

@@ -91,79 +91,95 @@ export default function Nocode() {
           <div className="absolute w-[100%] h-[1550px] top-0 left-0 overflow-x-hidden">
             <div className={style.backgroundboxworkshop}></div>
           </div>
-          <div className="flex max-hamburger:flex-wrap max-hamburger:justify-center gap-[20px] mt-[71.02px]">
+          <div className="flex relative z-20 max-hamburger:flex-wrap max-hamburger:justify-center gap-[20px] mt-[71.02px]">
             <div
-              className={`pl-[28px] max-hamburger:w-[45%] max-md:w-full w-[23.8%] h-[434px] bg-[#FFFFFF0D] border-[1px] pt-[17px] pl-[19.41px] rounded-[8px] ${style.bordergradient}`}
+              className={`${style.container} w-[23.8%] max-hamburger:w-[45%] max-md:w-full`}
             >
-              <div className="bg-[#1F1F1F] w-[124.35px] h-[124.15px] flex justify-center items-center border-[1px] rounded-[6px] border-[#FFFFFF66] ">
-                {" "}
-                <Image
-                  src="/book-reading--book-reading-learning.svg"
-                  width={51.73}
-                  height={51.73}
-                />
+              <div
+                className={`pl-[28px] h-[434px] bg-[#FFFFFF0D] pt-[17px] pl-[19.41px] rounded-[8px] ${style.bordergradient}`}
+              >
+                <div className="bg-[#1F1F1F] w-[124.35px] h-[124.15px] flex justify-center items-center border-[1px] rounded-[6px] border-[#FFFFFF66] ">
+                  {" "}
+                  <Image
+                    src="/book-reading--book-reading-learning.svg"
+                    width={51.73}
+                    height={51.73}
+                  />
+                </div>
+                <p className="w-full opacity-80 text-[#E0E0E0] text-base mt-[40.35px]">
+                  Next Cohort
+                </p>
+                <h1 className="w-[276.87px] max-smalllaptop:leading-[120%] font-['Graphikthin'] font-normal mt-[13px] mb-[58.16px] text-[32px] leading-[40.32px] tracking-[-0.32px] text-[#E0E0E0] max-smalllaptop:text-[28px]">
+                  16th June{" "}
+                </h1>
               </div>
-              <p className="w-full opacity-80 text-[#E0E0E0] text-base mt-[40.35px]">
-                Next Cohort
-              </p>
-              <h1 className="w-[276.87px] max-smalllaptop:leading-[120%] font-['Graphikthin'] font-normal mt-[13px] mb-[58.16px] text-[32px] leading-[40.32px] tracking-[-0.32px] text-[#E0E0E0] max-smalllaptop:text-[28px]">
-                16th June{" "}
-              </h1>
             </div>
             <div
-              className={`pl-[28px] max-hamburger:w-[45%] max-md:w-full w-[23.8%] h-[434px] bg-[#FFFFFF0D] border-[1px]  pt-[17px] pl-[19.41px] rounded-[8px] ${style.bordergradient}`}
+              className={`${style.container} w-[23.8%] max-hamburger:w-[45%] max-md:w-full`}
             >
-              <div className="bg-[#1F1F1F] w-[124.35px] h-[124.15px] flex justify-center items-center border-[1px] rounded-[6px] border-[#FFFFFF66] ">
-                {" "}
-                <Image
-                  src="/book-reading--book-reading-learning.svg"
-                  width={51.73}
-                  height={51.73}
-                />
+              <div
+                className={`pl-[28px] h-[434px] bg-[#FFFFFF0D] pt-[17px] pl-[19.41px] rounded-[8px] ${style.bordergradient}`}
+              >
+                <div className="bg-[#1F1F1F] w-[124.35px] h-[124.15px] flex justify-center items-center border-[1px] rounded-[6px] border-[#FFFFFF66] ">
+                  {" "}
+                  <Image
+                    src="/book-reading--book-reading-learning.svg"
+                    width={51.73}
+                    height={51.73}
+                  />
+                </div>
+                <p className="w-full opacity-80 text-[#E0E0E0] text-base mt-[40.35px]">
+                  Duration
+                </p>
+                <h1 className="w-[276.87px] font-['Graphikthin'] max-smalllaptop:leading-[120%] font-normal mt-[13px] mb-[58.16px] text-[32px] leading-[40.32px] tracking-[-0.32px] text-[#E0E0E0] max-smalllaptop:text-[28px]">
+                  30 weeks{" "}
+                </h1>
               </div>
-              <p className="w-full opacity-80 text-[#E0E0E0] text-base mt-[40.35px]">
-                Duration
-              </p>
-              <h1 className="w-[276.87px] font-['Graphikthin'] max-smalllaptop:leading-[120%] font-normal mt-[13px] mb-[58.16px] text-[32px] leading-[40.32px] tracking-[-0.32px] text-[#E0E0E0] max-smalllaptop:text-[28px]">
-                30 weeks{" "}
-              </h1>
             </div>
             <div
-              className={`pl-[28px] max-hamburger:w-[45%] max-md:w-full w-[23.8%] h-[434px] bg-[#FFFFFF0D] border-[1px]  pt-[17px] pl-[19.41px] rounded-[8px] ${style.bordergradient}`}
+              className={`${style.container} w-[23.8%] max-hamburger:w-[45%] max-md:w-full`}
             >
-              <div className="bg-[#1F1F1F] w-[124.35px] h-[124.15px] flex justify-center items-center] border-[1px] rounded-[6px] border-[#FFFFFF66] ">
-                {" "}
-                <Image
-                  src="/bag-suitcase-2--product-business-briefcase.svg"
-                  width={51.73}
-                  height={51.73}
-                />
+              <div
+                className={`pl-[28px] h-[434px] bg-[#FFFFFF0D] pt-[17px] pl-[19.41px] rounded-[8px] ${style.bordergradient}`}
+              >
+                <div className="bg-[#1F1F1F] w-[124.35px] h-[124.15px] flex justify-center items-center] border-[1px] rounded-[6px] border-[#FFFFFF66] ">
+                  {" "}
+                  <Image
+                    src="/bag-suitcase-2--product-business-briefcase.svg"
+                    width={51.73}
+                    height={51.73}
+                  />
+                </div>
+                <p className="w-full opacity-80 text-[#E0E0E0] text-base mt-[40.35px]">
+                  Timings
+                </p>
+                <h1 className="w-[276.87px] font-['Graphikthin'] font-normal mt-[13px] mb-[4px] text-[32px] max-smalllaptop:leading-[120%] max-smalllaptop:text-[28px] leading-[40.32px] tracking-[-0.32px] text-[#E0E0E0]">
+                  10am to 7pm{" "}
+                </h1>
+                <p className="text-[#E0E0E0]">Monday to Saturday</p>
               </div>
-              <p className="w-full opacity-80 text-[#E0E0E0] text-base mt-[40.35px]">
-                Timings
-              </p>
-              <h1 className="w-[276.87px] font-['Graphikthin'] font-normal mt-[13px] mb-[4px] text-[32px] max-smalllaptop:leading-[120%] max-smalllaptop:text-[28px] leading-[40.32px] tracking-[-0.32px] text-[#E0E0E0]">
-                10am to 7pm{" "}
-              </h1>
-              <p className="text-[#E0E0E0]">Monday to Saturday</p>
             </div>
             <div
-              className={`pl-[28px] max-hamburger:w-[45%] max-md:w-full w-[23.8%] h-[434px] border-[1px] pt-[17px] pl-[19.41px] bg-[#FFFFFF0D] rounded-[8px] ${style.bordergradient}`}
+              className={`${style.container} w-[23.8%] max-hamburger:w-[45%] max-md:w-full`}
             >
-              <div className="bg-[#1F1F1F] w-[124.35px] h-[124.15px] flex justify-center items-center border-[1px] rounded-[6px] border-[#FFFFFF66] ">
-                {" "}
-                <Image
-                  src="/Calendar-3--Streamline-Ultimate.svg.svg"
-                  width={60}
-                  height={60}
-                />
+              <div
+                className={`pl-[28px] h-[434px] pt-[17px] pl-[19.41px] bg-[#FFFFFF0D] rounded-[8px] ${style.bordergradient}`}
+              >
+                <div className="bg-[#1F1F1F] w-[124.35px] h-[124.15px] flex justify-center items-center border-[1px] rounded-[6px] border-[#FFFFFF66] ">
+                  {" "}
+                  <Image
+                    src="/Calendar-3--Streamline-Ultimate.svg.svg"
+                    width={60}
+                    height={60}
+                  />
+                </div>
+                <p className="w-full opacity-80 text-[#E0E0E0] text-base mt-[40.35px]">
+                  Eligibility
+                </p>
+                <h1 className="w-[276.87px] max-smalllaptop:text-[28px] max-smalllaptop:leading-[120%] max-biggerscreen:w-[95%] font-['Graphikthin'] font-normal mt-[13px] mb-[18.16px] text-[32px] leading-[40.32px] tracking-[-0.32px] text-[#E0E0E0]">
+                  12th pass, Diploma, and College Graduates{" "}
+                </h1>
               </div>
-              <p className="w-full opacity-80 text-[#E0E0E0] text-base mt-[40.35px]">
-                Eligibility
-              </p>
-              <h1 className="w-[276.87px] max-smalllaptop:text-[28px] max-smalllaptop:leading-[120%] max-biggerscreen:w-[95%] font-['Graphikthin'] font-normal mt-[13px] mb-[18.16px] text-[32px] leading-[40.32px] tracking-[-0.32px] text-[#E0E0E0]">
-                12th pass, Diploma, and College Graduates{" "}
-              </h1>
             </div>
           </div>
         </section>
@@ -232,7 +248,7 @@ export default function Nocode() {
                 Week 26 to 30{" "}
               </a>
             </div>
-            <div className="bg-[#FFFFFF0D] container scroll-smooth overflow-scroll w-[955px] max-hamburger:w-full max-biggerscreen:w-[900px] h-[663px] rounded-[8px] pl-[27px] pr-[57px] max-smalllaptop:px-[20px]">
+            <div className="bg-[#FFFFFF0D] pb-[30px] container scroll-smooth overflow-scroll w-[955px] max-hamburger:w-full max-biggerscreen:w-[900px] h-[663px] rounded-[8px] pl-[27px] pr-[57px] max-smalllaptop:px-[20px]">
               <div
                 id="week1"
                 className="mt-[38.5px] py-[21px] pl-[20.38px] bg-[#FFFFFF0D] rounded-[8px] max-biggerscreen:w-full w-[870px] h-[166px] max-smalllaptop:h-auto"
@@ -596,7 +612,7 @@ export default function Nocode() {
                   cases across industries.
                 </p>
               </div>
-              <div className="mt-[16px] pb-[13px] py-[21px] pl-[20.38px] bg-[#FFFFFF0D] rounded-[8px] w-[870px] max-biggerscreen:w-full h-[166px]">
+              <div className="mt-[16px] pb-[13px] py-[21px] pl-[20.38px] bg-[#FFFFFF0D] rounded-[8px] w-[870px] max-biggerscreen:w-full max-smalllaptop:h-auto h-[166px]">
                 <p className="text-[16px] leading-[20.16px] opacity-70 mb-[13px]">
                   Week 30
                 </p>
@@ -615,81 +631,97 @@ export default function Nocode() {
           <h1 className="w-[630px] text-[#E5E5E5] max-md:w-full text-[64px] font-['Graphikthin'] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] leading-[61.68px] tracking-[-2.56px]">
             What you will need to finish this course.{" "}
           </h1>
-          <div className="flex max-hamburger:flex-wrap max-hamburger:justify-center gap-[20px] mt-[71.02px]">
+          <div className="flex max-hamburger:flex-wrap z-20 relative max-hamburger:justify-center gap-[20px] mt-[71.02px]">
             <div
-              className={`pl-[28px] w-[23.8%] h-[363px] max-xl:h-[400px] max-hamburger:w-[45%] max-md:w-full bg-[#FFFFFF0D] border-[1px] pt-[17px] pl-[19.41px] rounded-[8px] ${style.bordergradient}`}
+              className={`${style.container} w-[23.8%] max-hamburger:w-[45%] max-md:w-full`}
             >
-              <div className="bg-[#1F1F1F] w-[124.35px] h-[124.15px] flex justify-center items-center border-[1px] rounded-[6px] border-[#FFFFFF66] ">
-                {" "}
-                <Image
-                  src="/book-reading--book-reading-learning.svg"
-                  width={51.73}
-                  height={51.73}
-                />
+              <div
+                className={`pl-[28px] h-[363px] max-xl:h-[400px] bg-[#FFFFFF0D] pt-[17px] pl-[19.41px] rounded-[8px] ${style.bordergradient}`}
+              >
+                <div className="bg-[#1F1F1F] w-[124.35px] h-[124.15px] flex justify-center items-center border-[1px] rounded-[6px] border-[#FFFFFF66] ">
+                  {" "}
+                  <Image
+                    src="/book-reading--book-reading-learning.svg"
+                    width={51.73}
+                    height={51.73}
+                  />
+                </div>
+                <p className="w-full opacity-80 text-[#E0E0E0] text-base mt-[40.35px]">
+                  Certificate{" "}
+                </p>
+                <h1 className="max-biggerscreen:w-full w-[276.87px] font-['Graphikthin'] font-normal mt-[13px] mb-[58.16px] text-[28px] leading-[35.28px] tracking-[-0.96px] text-[#E0E0E0]">
+                  12th pass, Diploma, and College Graduates{" "}
+                </h1>
               </div>
-              <p className="w-full opacity-80 text-[#E0E0E0] text-base mt-[40.35px]">
-                Certificate{" "}
-              </p>
-              <h1 className="max-biggerscreen:w-full w-[276.87px] font-['Graphikthin'] font-normal mt-[13px] mb-[58.16px] text-[28px] leading-[35.28px] tracking-[-0.96px] text-[#E0E0E0]">
-                12th pass, Diploma, and College Graduates{" "}
-              </h1>
             </div>
             <div
-              className={`pl-[28px] w-[23.8%] h-[363px] max-xl:h-[400px] max-hamburger:w-[45%] max-md:w-full bg-[#FFFFFF0D] border-[1px]  pt-[17px] pl-[19.41px] rounded-[8px] ${style.bordergradient}`}
+              className={`${style.container} w-[23.8%] max-hamburger:w-[45%] max-md:w-full`}
             >
-              <div className="bg-[#1F1F1F] w-[124.35px] h-[124.15px] flex justify-center items-center border-[1px] rounded-[6px] border-[#FFFFFF66] ">
-                {" "}
-                <Image
-                  src="/book-reading--book-reading-learning.svg"
-                  width={51.73}
-                  height={51.73}
-                />
+              <div
+                className={`pl-[28px] h-[363px] max-xl:h-[400px] bg-[#FFFFFF0D] pt-[17px] pl-[19.41px] rounded-[8px] ${style.bordergradient}`}
+              >
+                <div className="bg-[#1F1F1F] w-[124.35px] h-[124.15px] flex justify-center items-center border-[1px] rounded-[6px] border-[#FFFFFF66]">
+                  {" "}
+                  <Image
+                    src="/book-reading--book-reading-learning.svg"
+                    width={51.73}
+                    height={51.73}
+                  />
+                </div>
+                <p className="w-full opacity-80 text-[#E0E0E0] text-base mt-[40.35px]">
+                  Workstation
+                </p>
+                <h1 className="max-biggerscreen:w-full w-[254.38px] font-['Graphikthin'] font-normal mt-[13px] mb-[58.16px] text-[28px] leading-[35.28px] tracking-[-0.96px] text-[#E0E0E0]">
+                  A laptop/desktop with internet connectivity.{" "}
+                </h1>
               </div>
-              <p className="w-full opacity-80 text-[#E0E0E0] text-base mt-[40.35px]">
-                Workstation
-              </p>
-              <h1 className="max-biggerscreen:w-full w-[254.38px] font-['Graphikthin'] font-normal mt-[13px] mb-[58.16px] text-[28px] leading-[35.28px] tracking-[-0.96px] text-[#E0E0E0]">
-                A laptop/desktop with internet connectivity.{" "}
-              </h1>
             </div>
             <div
-              className={`pl-[28px] w-[23.8%] h-[363px] max-xl:h-[400px] max-hamburger:w-[45%] max-md:w-full bg-[#FFFFFF0D] border-[1px]  pt-[17px] pl-[19.41px] rounded-[8px] ${style.bordergradient}`}
+              className={`${style.container} w-[23.8%] max-hamburger:w-[45%] max-md:w-full`}
             >
-              <div className="bg-[#1F1F1F] w-[124.35px] h-[124.15px] flex justify-center items-center] border-[1px] rounded-[6px] border-[#FFFFFF66] ">
-                {" "}
-                <Image
-                  src="/bag-suitcase-2--product-business-briefcase.svg"
-                  width={51.73}
-                  height={51.73}
-                />
+              <div
+                className={`pl-[28px] h-[363px] max-xl:h-[400px] bg-[#FFFFFF0D] pt-[17px] pl-[19.41px] rounded-[8px] ${style.bordergradient}`}
+              >
+                <div className="bg-[#1F1F1F] w-[124.35px] h-[124.15px] flex justify-center items-center] border-[1px] rounded-[6px] border-[#FFFFFF66] ">
+                  {" "}
+                  <Image
+                    src="/bag-suitcase-2--product-business-briefcase.svg"
+                    width={51.73}
+                    height={51.73}
+                  />
+                </div>
+                <p className="w-full opacity-80 text-[#E0E0E0] text-base mt-[40.35px]">
+                  Verification
+                </p>
+                <h1 className="max-biggerscreen:w-full w-[263.6px] font-['Graphikthin'] font-normal mt-[13px] mb-[4px] text-[28px] leading-[35.28px] tracking-[-0.96px] text-[#E0E0E0]">
+                  Any ID that identifies nationality{" "}
+                </h1>
+                <p className="text-[#E0E0E0]">
+                  Any ONE of these - Aadhaar, Voter ID, Passport, PAN Card.
+                </p>
               </div>
-              <p className="w-full opacity-80 text-[#E0E0E0] text-base mt-[40.35px]">
-                Verification
-              </p>
-              <h1 className="max-biggerscreen:w-full w-[263.6px] font-['Graphikthin'] font-normal mt-[13px] mb-[4px] text-[28px] leading-[35.28px] tracking-[-0.96px] text-[#E0E0E0]">
-                Any ID that identifies nationality{" "}
-              </h1>
-              <p className="text-[#E0E0E0]">
-                Any ONE of these - Aadhaar, Voter ID, Passport, PAN Card.
-              </p>
             </div>
             <div
-              className={`pl-[28px] w-[23.8%] h-[363px] max-xl:h-[400px] max-hamburger:w-[45%] max-md:w-full border-[1px] pt-[17px] pl-[19.41px] bg-[#FFFFFF0D] rounded-[8px] ${style.bordergradient}`}
+              className={`${style.container} w-[23.8%] max-hamburger:w-[45%] max-md:w-full`}
             >
-              <div className="bg-[#1F1F1F] w-[124.35px] h-[124.15px] flex justify-center items-center border-[1px] rounded-[6px] border-[#FFFFFF66] ">
-                {" "}
-                <Image
-                  src="/Calendar-3--Streamline-Ultimate.svg.svg"
-                  width={60}
-                  height={60}
-                />
+              <div
+                className={`pl-[28px] h-[363px] max-xl:h-[400px] pt-[17px] pl-[19.41px] bg-[#FFFFFF0D] rounded-[8px] ${style.bordergradient}`}
+              >
+                <div className="bg-[#1F1F1F] w-[124.35px] h-[124.15px] flex justify-center items-center border-[1px] rounded-[6px] border-[#FFFFFF66] ">
+                  {" "}
+                  <Image
+                    src="/Calendar-3--Streamline-Ultimate.svg.svg"
+                    width={60}
+                    height={60}
+                  />
+                </div>
+                <p className="w-full opacity-80 text-[#E0E0E0] text-base mt-[40.35px]">
+                  Communication
+                </p>
+                <h1 className="max-biggerscreen:w-full w-[276.87px] font-['Graphikthin'] font-normal mt-[13px] mb-[18.16px] text-[28px] leading-[35.28px] tracking-[-0.96px] text-[#E0E0E0]">
+                  Ability to Read, Write, Speak Basic English{" "}
+                </h1>
               </div>
-              <p className="w-full opacity-80 text-[#E0E0E0] text-base mt-[40.35px]">
-                Communication
-              </p>
-              <h1 className="max-biggerscreen:w-full w-[276.87px] font-['Graphikthin'] font-normal mt-[13px] mb-[18.16px] text-[28px] leading-[35.28px] tracking-[-0.96px] text-[#E0E0E0]">
-                Ability to Read, Write, Speak Basic English{" "}
-              </h1>
             </div>
           </div>
         </section>

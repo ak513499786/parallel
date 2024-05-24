@@ -328,124 +328,148 @@ export default function Workshop() {
         </div>
         <div className="flex gap-[21px] mt-[49.16px] max-md:flex-col max-hamburger:flex-wrap max-hamburger:justify-center">
           <div
-            className={`pl-[28px] max-sm:px-[20px] max-sm:py-[16px] w-[33%] max-hamburger:w-[45%] max-md:w-full h-[434px] max-md:h-auto pb-[41.87px] pr-[29.85px] border-[1px] pt-[31.57px] rounded-[8px] ${style.bordergradient}`}
+            className={`${style.container}  w-[33%] max-hamburger:w-[45%] max-md:w-full`}
           >
-            <div className="bg-[#1F1F1F] w-[105px] pt-[26.26px] pb-[26.01px] pl-[26.39px] pr-[26.88px] border-[1px] rounded-[6px] border-[#FFFFFF66] ">
-              {" "}
-              <Image
-                src="/book-reading--book-reading-learning.svg"
-                width={51.73}
-                height={51.73}
-              />
+            <div
+              className={`pl-[28px] max-sm:px-[20px] max-sm:py-[16px] h-[434px] max-md:h-auto pb-[41.87px] pr-[29.85px] pt-[31.57px] rounded-[8px] ${style.bordergradient}`}
+            >
+              <div className="bg-[#1F1F1F] w-[105px] pt-[26.26px] pb-[26.01px] pl-[26.39px] pr-[26.88px] border-[1px] rounded-[6px] border-[#FFFFFF66] ">
+                {" "}
+                <Image
+                  src="/book-reading--book-reading-learning.svg"
+                  width={51.73}
+                  height={51.73}
+                />
+              </div>
+              <h1 className="w-[340px] max-bigscreen:w-[310px] max-xl:w-[230px] max-md:w-full max-xl:mt-[30px] font-['Graphikthin'] font-normal mt-[53.05px] mb-[18.16px] text-[32px] max-xl:text-[24px] max-xl:leading-[120%] leading-[40.32px] tracking-[-0.32px]">
+                Future-Focused Learning{" "}
+              </h1>
+              <p className="w-[355.15px] max-bigscreen:w-[310px] max-xl:w-full h-[136.91px] max-xl:h-[165px] max-lg:h-[200px] max-md:h-auto opacity-80 text-[#E0E0E0] text-base">
+                Go beyond the trend. We explore the underlying forces shaping
+                the job market and identify the skills that will remain relevant
+                for years to come.
+              </p>
             </div>
-            <h1 className="w-[340px] max-bigscreen:w-[310px] max-xl:w-[230px] max-md:w-full max-xl:mt-[30px] font-['Graphikthin'] font-normal mt-[53.05px] mb-[18.16px] text-[32px] max-xl:text-[24px] max-xl:leading-[120%] leading-[40.32px] tracking-[-0.32px]">
-              Future-Focused Learning{" "}
-            </h1>
-            <p className="w-[355.15px] max-bigscreen:w-[310px] max-xl:w-full h-[136.91px] max-xl:h-[165px] max-lg:h-[200px] max-md:h-auto opacity-80 text-[#E0E0E0] text-base">
-              Go beyond the trend. We explore the underlying forces shaping the
-              job market and identify the skills that will remain relevant for
-              years to come.
-            </p>
           </div>
           <div
-            className={`pl-[28px] max-md:h-auto max-sm:px-[20px] max-sm:py-[16px] w-[33%] max-hamburger:w-[45%] max-md:w-full h-[434px] pb-[41.87px] pr-[29.85px] border-[1px] pt-[31.57px] rounded-[8px] ${style.bordergradient}`}
+            className={`${style.container}  w-[33%] max-hamburger:w-[45%] max-md:w-full`}
           >
-            <div className="bg-[#1F1F1F] w-[105px] px-[26.63px] py-[26.13px] border-[1px] rounded-[6px] border-[#FFFFFF66] ">
-              {" "}
-              <Image
-                src="/bag-suitcase-2--product-business-briefcase.svg"
-                width={51.73}
-                height={51.73}
-              />
+            <div
+              className={`pl-[28px] max-md:h-auto max-sm:px-[20px] max-sm:py-[16px] h-[434px] pb-[41.87px] pr-[29.85px] pt-[31.57px] rounded-[8px] ${style.bordergradient}`}
+            >
+              <div className="bg-[#1F1F1F] w-[105px] px-[26.63px] py-[26.13px] border-[1px] rounded-[6px] border-[#FFFFFF66] ">
+                {" "}
+                <Image
+                  src="/bag-suitcase-2--product-business-briefcase.svg"
+                  width={51.73}
+                  height={51.73}
+                />
+              </div>
+              <h1 className="w-[340px] max-bigscreen:w-[310px] max-xl:w-[230px] max-md:w-full max-xl:mt-[30px] font-['Graphikthin'] font-normal mt-[53.05px] mb-[18.16px] text-[32px] max-xl:text-[24px] max-xl:leading-[120%] leading-[40.32px] tracking-[-0.32px]">
+                Actionable Skills Development{" "}
+              </h1>
+              <p className="w-[355.15px] max-bigscreen:w-[310px] max-xl:w-full h-[136.91px] max-xl:h-[165px] max-lg:h-[200px] max-md:h-auto opacity-80 text-[#E0E0E0] text-base">
+                Master in-demand skills through hands-on projects, real-world
+                simulations, and expert-led sessions.
+              </p>
             </div>
-            <h1 className="w-[340px] max-bigscreen:w-[310px] max-xl:w-[230px] max-md:w-full max-xl:mt-[30px] font-['Graphikthin'] font-normal mt-[53.05px] mb-[18.16px] text-[32px] max-xl:text-[24px] max-xl:leading-[120%] leading-[40.32px] tracking-[-0.32px]">
-              Actionable Skills Development{" "}
-            </h1>
-            <p className="w-[355.15px] max-bigscreen:w-[310px] max-xl:w-full h-[136.91px] max-xl:h-[165px] max-lg:h-[200px] max-md:h-auto opacity-80 text-[#E0E0E0] text-base">
-              Master in-demand skills through hands-on projects, real-world
-              simulations, and expert-led sessions.
-            </p>
           </div>
           <div
-            className={`pl-[28px] max-md:h-auto max-sm:px-[20px] max-sm:py-[16px] w-[33%] max-hamburger:w-[45%] max-md:w-full h-[434px] pb-[41.87px] pr-[29.85px] border-[1px] pt-[31.57px] rounded-[8px] ${style.bordergradient}`}
+            className={`${style.container}  w-[33%] max-hamburger:w-[45%] max-md:w-full`}
           >
-            <div className="bg-[#1F1F1F] w-[105px] pt-[22.3px] pb-[21.7px] pl-[22.95px] pr-[22.05px] border-[1px] rounded-[6px] border-[#FFFFFF66] ">
-              {" "}
-              <Image
-                src="/Calendar-3--Streamline-Ultimate.svg.svg"
-                width={60}
-                height={60}
-              />
+            <div
+              className={`pl-[28px] max-md:h-auto max-sm:px-[20px] max-sm:py-[16px] h-[434px] pb-[41.87px] pr-[29.85px] pt-[31.57px] rounded-[8px] ${style.bordergradient}`}
+            >
+              <div className="bg-[#1F1F1F] w-[105px] pt-[22.3px] pb-[21.7px] pl-[22.95px] pr-[22.05px] border-[1px] rounded-[6px] border-[#FFFFFF66] ">
+                {" "}
+                <Image
+                  src="/Calendar-3--Streamline-Ultimate.svg.svg"
+                  width={60}
+                  height={60}
+                />
+              </div>
+              <h1 className="w-[340px] max-bigscreen:w-[310px] max-xl:w-[230px] max-md:w-full max-xl:mt-[30px] font-['Graphikthin'] font-normal mt-[53.05px] mb-[18.16px] text-[32px] max-xl:text-[24px] max-xl:leading-[120%] leading-[40.32px] tracking-[-0.32px]">
+                Personalized Career Guidance{" "}
+              </h1>
+              <p className="w-[355.15px] max-bigscreen:w-[310px] max-xl:w-full h-[136.91px] max-xl:h-[165px] max-lg:h-[200px] max-md:h-auto opacity-80 text-[#E0E0E0] text-base">
+                Don't just learn skills, use them. Get personalized guidance on
+                crafting a strong resume, acing interviews, and building your
+                professional network.
+              </p>
             </div>
-            <h1 className="w-[340px] max-bigscreen:w-[310px] max-xl:w-[230px] max-md:w-full max-xl:mt-[30px] font-['Graphikthin'] font-normal mt-[53.05px] mb-[18.16px] text-[32px] max-xl:text-[24px] max-xl:leading-[120%] leading-[40.32px] tracking-[-0.32px]">
-              Personalized Career Guidance{" "}
-            </h1>
-            <p className="w-[355.15px] max-bigscreen:w-[310px] max-xl:w-full h-[136.91px] max-xl:h-[165px] max-lg:h-[200px] max-md:h-auto opacity-80 text-[#E0E0E0] text-base">
-              Don't just learn skills, use them. Get personalized guidance on
-              crafting a strong resume, acing interviews, and building your
-              professional network.
-            </p>
           </div>
         </div>
       </div>
-      <section className="pl-[80px] max-sm:py-10 max-sm:px-[20px] max-md:px-[40px] pr-[79px] pt-[92.84px] pb-[93px]">
+      <section className="pl-[80px] max-sm:py-10 max-sm:px-[20px] max-md:px-[40px] relative z-20 pr-[79px] pt-[92.84px] pb-[93px]">
         <h1 className="text-[64px] max-hamburger:w-full mb-[49.16px] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] leading-[61.88px] text-[##E5E5E5] opacity-90 tracking-[-2.56px] font-['Graphikthin'] w-[868px]">
           Workshops conducted by passionate industry experts
         </h1>
         <div className="flex gap-[21px] max-md:flex-col mt-[67px] max-hamburger:flex-wrap max-hamburger:justify-center">
           <div
-            className={`pl-[28px] max-sm:px-[20px] max-sm:py-[16px] w-[33%] max-hamburger:w-[45%] max-md:w-full pb-[41.87px] pr-[29.85px] border-[1px] pt-[32px] rounded-[8px] ${style.bordergradient}`}
+            className={`${style.container}  w-[33%] max-hamburger:w-[45%] max-md:w-full`}
           >
-            <div className="bg-[#1F1F1F] w-[125.17px] h-[123.97px] px-[28.53px] py-[26.03px] border-[1px] rounded-[6px] border-[#FFFFFF66] ">
-              {/* {" "}
+            <div
+              className={`pl-[28px] max-sm:px-[20px] max-sm:py-[16px] pb-[41.87px] pr-[29.85px] pt-[32px] rounded-[8px] ${style.bordergradient}`}
+            >
+              <div className="bg-[#1F1F1F] w-[125.17px] h-[123.97px] px-[28.53px] py-[26.03px] border-[1px] rounded-[6px] border-[#FFFFFF66] ">
+                {/* {" "}
               <Image
                 src=""
                 width={47.94}
                 height={51.93}
               /> */}
+              </div>
+              <h1 className="w-[340px] max-bigscreen:w-[310px] max-xl:w-[250px] max-md:w-full max-xl:mt-[30px] font-['Graphikthin'] font-normal mt-[53.05px] mb-[18.16px] text-[32px] max-xl:text-[24px] max-xl:leading-[120%] leading-[40.32px] tracking-[-0.32px]">
+                Buchi Babu Muvva
+              </h1>
+              <p className="w-[275.15px] max-bigscreen:w-[310px] max-xl:w-full opacity-80 text-[#E0E0E0] text-base">
+                Information Technology Expert, PhD. 15+ years of experience
+              </p>
             </div>
-            <h1 className="w-[340px] max-bigscreen:w-[310px] max-xl:w-[250px] max-md:w-full max-xl:mt-[30px] font-['Graphikthin'] font-normal mt-[53.05px] mb-[18.16px] text-[32px] max-xl:text-[24px] max-xl:leading-[120%] leading-[40.32px] tracking-[-0.32px]">
-              Buchi Babu Muvva
-            </h1>
-            <p className="w-[275.15px] max-bigscreen:w-[310px] max-xl:w-full opacity-80 text-[#E0E0E0] text-base">
-              Information Technology Expert, PhD. 15+ years of experience
-            </p>
           </div>
           <div
-            className={`pl-[28px] max-sm:px-[20px] max-sm:py-[16px] w-[33%] max-hamburger:w-[45%] max-md:w-full pb-[41.87px] pr-[29.85px] border-[1px] pt-[32px] rounded-[8px] ${style.bordergradient}`}
+            className={`${style.container}  w-[33%] max-hamburger:w-[45%] max-md:w-full`}
           >
-            <div className="bg-[#1F1F1F] w-[125.17px] h-[123.97px] px-[28.53px] py-[26.03px] border-[1px] rounded-[6px] border-[#FFFFFF66] ">
-              {/* {" "}
+            <div
+              className={`pl-[28px] max-sm:px-[20px] max-sm:py-[16px] pb-[41.87px] pr-[29.85px] pt-[32px] rounded-[8px] ${style.bordergradient}`}
+            >
+              <div className="bg-[#1F1F1F] w-[125.17px] h-[123.97px] px-[28.53px] py-[26.03px] border-[1px] rounded-[6px] border-[#FFFFFF66] ">
+                {/* {" "}
               <Image
                 src=""
                 width={47.94}
                 height={51.93}
               /> */}
+              </div>
+              <h1 className="w-[340px] max-bigscreen:w-[310px] max-xl:w-[250px] max-md:w-full max-xl:mt-[30px] font-['Graphikthin'] font-normal mt-[53.05px] mb-[18.16px] text-[32px] max-xl:text-[24px] max-xl:leading-[120%] leading-[40.32px] tracking-[-0.32px]">
+                Sandeep Ravichandran
+              </h1>
+              <p className="w-[225.15px] max-bigscreen:w-[310px] max-xl:w-full opacity-80 text-[#E0E0E0] text-base">
+                AI and Data Analytics Expert. 15+ years of experience
+              </p>
             </div>
-            <h1 className="w-[340px] max-bigscreen:w-[310px] max-xl:w-[250px] max-md:w-full max-xl:mt-[30px] font-['Graphikthin'] font-normal mt-[53.05px] mb-[18.16px] text-[32px] max-xl:text-[24px] max-xl:leading-[120%] leading-[40.32px] tracking-[-0.32px]">
-              Sandeep Ravichandran
-            </h1>
-            <p className="w-[225.15px] max-bigscreen:w-[310px] max-xl:w-full opacity-80 text-[#E0E0E0] text-base">
-              AI and Data Analytics Expert. 15+ years of experience
-            </p>
           </div>
           <div
-            className={`pl-[28px] max-sm:px-[20px] max-sm:py-[16px] w-[33%] max-hamburger:w-[45%] max-md:w-full pb-[41.87px] pr-[29.85px] border-[1px] pt-[32px] rounded-[8px] ${style.bordergradient}`}
+            className={`${style.container}  w-[33%] max-hamburger:w-[45%] max-md:w-full`}
           >
-            <div className="bg-[#1F1F1F] w-[125.17px] h-[123.97px] px-[28.53px] py-[26.03px] border-[1px] rounded-[6px] border-[#FFFFFF66] ">
-              {/* {" "}
+            <div
+              className={`pl-[28px] max-sm:px-[20px] max-sm:py-[16px] pb-[41.87px] pr-[29.85px] pt-[32px] rounded-[8px] ${style.bordergradient}`}
+            >
+              <div className="bg-[#1F1F1F] w-[125.17px] h-[123.97px] px-[28.53px] py-[26.03px] border-[1px] rounded-[6px] border-[#FFFFFF66] ">
+                {/* {" "}
               <Image
                 src=""
                 width={47.94}
                 height={51.93}
               /> */}
+              </div>
+              <h1 className="w-[340px] max-bigscreen:w-[310px] max-xl:w-[250px] max-md:w-full max-xl:mt-[30px] font-['Graphikthin'] font-normal mt-[53.05px] mb-[18.16px] text-[32px] max-xl:text-[24px] max-xl:leading-[120%] leading-[40.32px] tracking-[-0.32px]">
+                Ajith Jagadish
+              </h1>
+              <p className="w-[195.15px] max-bigscreen:w-[310px] max-xl:w-full opacity-80 text-[#E0E0E0] text-base">
+                Career & Lifestyle Coach. 12+ years of experience
+              </p>
             </div>
-            <h1 className="w-[340px] max-bigscreen:w-[310px] max-xl:w-[250px] max-md:w-full max-xl:mt-[30px] font-['Graphikthin'] font-normal mt-[53.05px] mb-[18.16px] text-[32px] max-xl:text-[24px] max-xl:leading-[120%] leading-[40.32px] tracking-[-0.32px]">
-              Ajith Jagadish
-            </h1>
-            <p className="w-[195.15px] max-bigscreen:w-[310px] max-xl:w-full opacity-80 text-[#E0E0E0] text-base">
-              Career & Lifestyle Coach. 12+ years of experience
-            </p>
           </div>
         </div>
       </section>

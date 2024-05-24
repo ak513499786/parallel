@@ -180,9 +180,9 @@ export default function Courses() {
           </p>
         </div>
         <div className="flex max-hamburger:flex-wrap max-hamburger:justify-center gap-[21px] mt-[50.91px]">
-          <div className={`${style.container}`}>
+          <div className={`${style.container} w-[33%] max-hamburger:w-[45%] max-md:w-full`}>
             <div
-              className={`pl-[28px] w-[33%] max-md:w-full max-hamburger:w-[45%] h-[404px] max-bigscreen:h-[440px] max-xl:h-[400px] max-md:h-auto pb-[41.87px] pr-[29.85px] pt-[31.57px] rounded-[8px] ${style.bordergradient}`}
+              className={`pl-[28px] h-[404px] max-bigscreen:h-[440px] max-xl:h-[400px] max-md:h-auto pb-[41.87px] pr-[29.85px] pt-[31.57px] rounded-[8px] ${style.bordergradient}`}
             >
               <div className="bg-[#1F1F1F] w-[105px] pt-[26.26px] pb-[26.01px] pl-[26.39px] pr-[26.88px] border-[1px] rounded-[6px] border-[#FFFFFF66] ">
                 {" "}
@@ -198,9 +198,9 @@ export default function Courses() {
               </p>
             </div>
           </div>
-          <div className={`${style.container}`}>
+          <div className={`${style.container} w-[33%] max-hamburger:w-[45%] max-md:w-full`}>
             <div
-              className={`pl-[28px] w-[33%] max-md:w-full max-hamburger:w-[45%] h-[404px] max-bigscreen:h-[440px] max-xl:h-[400px] max-md:h-auto pb-[41.87px] pr-[29.85px] pt-[31.57px] rounded-[8px] ${style.bordergradient}`}
+              className={`pl-[28px] h-[404px] max-bigscreen:h-[440px] max-xl:h-[400px] max-md:h-auto pb-[41.87px] pr-[29.85px] pt-[31.57px] rounded-[8px] ${style.bordergradient}`}
             >
               <div className="bg-[#1F1F1F] w-[105px] px-[26.63px] py-[26.13px] border-[1px] rounded-[6px] border-[#FFFFFF66] ">
                 {" "}
@@ -216,9 +216,9 @@ export default function Courses() {
               </p>
             </div>
           </div>
-          <div className={`${style.container}`}>
+          <div className={`${style.container} w-[33%] max-hamburger:w-[45%] max-md:w-full`}>
             <div
-              className={`pl-[28px] w-[33%] max-md:w-full max-hamburger:w-[45%] h-[404px] max-bigscreen:h-[440px] max-xl:h-[400px] max-md:h-auto pb-[41.87px] pr-[29.85px] pt-[31.57px] rounded-[8px] ${style.bordergradient}`}
+              className={`pl-[28px] h-[404px] max-bigscreen:h-[440px] max-xl:h-[400px] max-md:h-auto pb-[41.87px] pr-[29.85px] pt-[31.57px] rounded-[8px] ${style.bordergradient}`}
             >
               <div className="bg-[#1F1F1F] w-[105px] pt-[22.3px] pb-[21.7px] pl-[22.95px] pr-[22.05px] border-[1px] rounded-[6px] border-[#FFFFFF66] ">
                 {" "}
@@ -242,9 +242,9 @@ export default function Courses() {
           </p>
         </div>
         <div className="flex max-hamburger:flex-wrap max-hamburger:justify-center gap-[21px] mt-[50px]">
-          <div className={`${style.container}`}>
+          <div className={`${style.container} w-[33%] max-hamburger:w-[45%] max-md:w-full`}>
             <div
-              className={`pl-[28.54px] w-[33%] max-md:w-full max-hamburger:w-[45%] max-md:h-auto h-[242px] max-xl:h-[262px] max-lg:h-[280px] pb-[29.41px] pr-[29.31px] pt-[31.28px] rounded-[8px] ${style.bordergradient}`}
+              className={`pl-[28.54px] max-md:h-auto h-[242px] max-xl:h-[262px] max-lg:h-[280px] pb-[29.41px] pr-[29.31px] pt-[31.28px] rounded-[8px] ${style.bordergradient}`}
             >
               <h1 className="w-[340px] font-['Graphikthin'] font-normal mt-[] mb-[26.3px] text-[32px] leading-[40.32px] tracking-[-0.32px] text-[#E0E0E0] max-xl:text-[28px] max-xl:leading-[120%] max-bigscreen:w-full">
                 Step 1{" "}
@@ -255,9 +255,9 @@ export default function Courses() {
               </p>
             </div>
           </div>
-          <div className={`${style.container}`}>
+          <div className={`${style.container} w-[33%] max-hamburger:w-[45%] max-md:w-full`}>
             <div
-              className={`pl-[28.54px] w-[33%] max-md:w-full max-hamburger:w-[45%] max-md:h-auto h-[242px] max-xl:h-[262px] max-lg:h-[280px] pb-[29.41px] pr-[29.31px] pt-[31.28px] rounded-[8px] ${style.bordergradient}`}
+              className={`pl-[28.54px] max-md:h-auto h-[242px] max-xl:h-[262px] max-lg:h-[280px] pb-[29.41px] pr-[29.31px] pt-[31.28px] rounded-[8px] ${style.bordergradient}`}
             >
               <h1 className="w-[340px] font-['Graphikthin'] font-normal mt-[] mb-[26.3px] text-[32px] leading-[40.32px] tracking-[-0.32px] text-[#E0E0E0] max-xl:text-[28px] max-xl:leading-[120%] max-bigscreen:w-full">
                 Step 2{" "}
@@ -267,7 +267,7 @@ export default function Courses() {
               </p>
             </div>
           </div>
-          <div className={`${style.container}`}>
+          <div className={`${style.container} w-[33%] max-hamburger:w-[45%] max-md:w-full`}>
             <div
               className={`pl-[28.54px] w-[33%] max-md:w-full max-hamburger:w-[45%] max-md:h-auto h-[242px] max-xl:h-[262px] max-lg:h-[280px] max-lg:h-[280px] pb-[29.41px] pr-[29.31px] pt-[31.28px] rounded-[8px] ${style.bordergradient}`}
             >

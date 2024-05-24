@@ -37,7 +37,7 @@ export default function Footer() {
               hello@parallel.com
             </p>
             <p className="mt-[4px] text-[#E5E5E5] text-base">
-              +91 99838 57373{" "}
+              +91 96868 43606{" "}
             </p>
           </div>
           <div className="opacity-70">
