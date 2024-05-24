@@ -29,7 +29,10 @@ export default function Courses() {
   return (
     <>
       <Navbar />
-      <main className="pl-[79.85px] max-md:px-[40px] max-sm:px-[20px] pr-[79.03px] pt-[88px] pb-[132px] flex justify-between max-hamburger:flex-col max-hamburger:gap-[30px]">
+      <div className="absolute w-[100vw] h-[822px] top-0 left-0 overflow-hidden">
+        <div className={style.fullgrid}></div>
+      </div>
+      <main className="pl-[79.85px] z-[2] relative max-md:px-[40px] max-sm:px-[20px] pr-[79.03px] pt-[88px] pb-[132px] flex justify-between max-hamburger:flex-col max-hamburger:gap-[30px]">
         <div className="mt-[27.66px]">
           <h1 className="w-[680.41px] max-smalllaptop:w-[580px] max-md:w-full font-['Graphikthin'] text-[104.57px] leading-[102.48px] tracking-[-5.2px] text-[#E5E5E5] font-light  max-smalllaptop:tracking-[-2.56px] max-smalllaptop:text-[84px] max-sm:text-[64px] max-smallphone:text-[36px] max-sm:tracking-tight max-smalllaptop:leading-[102%]">
             Hire the best professio
@@ -38,7 +41,7 @@ export default function Courses() {
             </span>
             nals at zero cost.{" "}
           </h1>
-          <Link href={"/contact-us"}>
+          <Link href={"/contact-us-to-hire"}>
             <button className="w-[165px] max-hamburger:hidden mt-[49.05px] h-[53px] bg-[#30E29D] rounded-[8px] font-bold text-[#292929] text-[16px] font-[19.2px]">
               Contact Us{" "}
             </button>
@@ -50,8 +53,8 @@ export default function Courses() {
           width={522}
           height={493}
         />
-        <Link href={"/contact-us"}>
-          <button className="max-hamburger:block max-md:w-full w-[165px] hidden mt-[20px] h-[53px] bg-[#30E29D] rounded-[8px] font-bold text-[#292929] text-[16px] font-[19.2px]">
+        <Link href={"/contact-us"} className="max-hamburger:block hidden">
+          <button className="max-md:w-full w-[165px] mt-[20px] h-[53px] bg-[#30E29D] rounded-[8px] font-bold text-[#292929] text-[16px] font-[19.2px]">
             Contact Us{" "}
           </button>
         </Link>
@@ -133,7 +136,9 @@ export default function Courses() {
           </p>
         </div>
         <div className="flex gap-[21px] mt-[50.91px] max-md:flex-col max-hamburger:flex-wrap max-hamburger:justify-center">
-          <div className={`${style.container} w-[33%] max-hamburger:w-[45%] max-md:w-full`}>
+          <div
+            className={`${style.container} w-[33%] max-hamburger:w-[45%] max-md:w-full`}
+          >
             <div
               className={`pl-[28px] h-[466px] max-lg:h-[480px] pb-[41.87px] pr-[29.85px] pt-[31.57px] rounded-[8px] max-sm:px-[20px] max-sm:py-[16px] max-md:h-auto ${style.bordergradient}`}
             >
@@ -156,7 +161,9 @@ export default function Courses() {
               </p>
             </div>
           </div>
-          <div className={`${style.container} w-[33%] max-hamburger:w-[45%] max-md:w-full`}>
+          <div
+            className={`${style.container} w-[33%] max-hamburger:w-[45%] max-md:w-full`}
+          >
             <div
               className={`pl-[28px] h-[466px] max-lg:h-[480px] pb-[41.87px] pr-[29.85px] pt-[31.57px] rounded-[8px] max-sm:px-[20px] max-sm:py-[16px] max-md:h-auto ${style.bordergradient}`}
             >
@@ -174,7 +181,9 @@ export default function Courses() {
               </p>
             </div>
           </div>
-          <div className={`${style.container} w-[33%] max-hamburger:w-[45%] max-md:w-full`}>
+          <div
+            className={`${style.container} w-[33%] max-hamburger:w-[45%] max-md:w-full`}
+          >
             <div
               className={`pl-[28px] h-[466px] max-lg:h-[480px] pb-[41.87px] pr-[29.85px] pt-[31.57px] rounded-[8px] max-sm:px-[20px] max-sm:py-[16px] max-md:h-auto ${style.bordergradient}`}
             >
@@ -205,7 +214,9 @@ export default function Courses() {
               href="mailto:hire@parallel.com"
               className="border-b-[1px] border-[white]"
             >
-              hire@parallel.com
+              hire
+              <span className="font-['Graphik'] opacity-90">@</span>
+              parallel.com
             </a>
           </p>
         </div>

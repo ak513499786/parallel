@@ -10,8 +10,8 @@ export default function Courses() {
   return (
     <>
       <Navbar />
-      <div className="absolute w-[100%] h-[811px] top-0 left-0 overflow-hidden">
-        <div className={style.backgroundbox}></div>
+      <div className="absolute w-full h-[822px] top-0 left-0 overflow-hidden">
+        <div className={style.fullgrid}></div>
       </div>
       <main className="pl-[80.27px] max-hamburger:px-20 relative z-20 pt-[163px] pb-[186.03px] max-md:px-[40px] max-sm:px-[20px] max-md:py-[50px]">
         <h1 className="w-[894.59px] max-smalllaptop:w-[850px] max-hamburger:w-full max-smalllaptop:tracking-[-2.56px] max-smalllaptop:text-[84px] max-sm:text-[64px] max-smallphone:text-[36px] max-sm:tracking-tight max-smalllaptop:leading-[102%] font-['Graphikthin'] text-[127.98px] text-[#E5E5E5] leading-[130.54px] tracking-[-6.35px]">
@@ -104,13 +104,13 @@ export default function Courses() {
         </div>
       </div>
       <section className="py-[120.5px] max-md:px-[40px] max-sm:px-[20px] max-md:pt-[50px] max-sm:pt-[30px] pl-[80px] flex flex-col gap-[51px]">
-        <p className="text-[#E5E5E5] text-[64px] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] font-['Graphikthin'] leading-[61.68px] tracking-[-2.56px]">
+        <p className="text-[#E5E5E5] text-[32px] max-hamburger:leading-[120%] font-['Graphikthin'] leading-[30.84px] tracking-[-0.6px]">
           What you will be paying us
         </p>
         <h1 className="w-[1172px] max-xl:w-full text-[147.6px] max-smalllaptop:tracking-[-2.56px] max-smalllaptop:text-[84px] max-sm:text-[64px] max-smallphone:text-[36px] max-sm:tracking-tight max-smalllaptop:leading-[102%] font-['Graphikthin'] leading-[142.26px] text-[#E5E5E5] tracking-[-5.9px]">
-          <span className="font-bold">15</span>
+          <span className="font-semibold font-['Graphik']">15</span>
           <span className="font-['Graphik'] font-light">%</span> of your CTC for{" "}
-          <span className="font-bold">12 months.</span>
+          <span className="font-semibold font-['Graphik']">12 months.</span>
         </h1>
       </section>
       <section className="pt-[37.08px] px-[80px] max-md:w-full max-md:px-[40px] max-sm:px-[20px] pb-[74.31px] flex flex-col items-center gap-[131.61px]">

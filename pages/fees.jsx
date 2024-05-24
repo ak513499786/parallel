@@ -38,7 +38,7 @@ export default function Fees() {
       <div className="absolute z-40 overflow-hidden w-[100%] h-[100vh] top-[811px] left-0 overflow-x-hidden">
         <div className={style.backgroundbox2}></div>
       </div>
-      <main className="pl-[80px] max-md:px-[40px] max-sm:px-[20px] max-md:pt-[50px] relative z-20 pt-[117.42px] pb-[211.58px] max-md:pb-0">
+      <main className="pl-[80px] max-md:px-[40px] z-50 max-sm:px-[20px] max-md:pt-[50px] relative z-20 pt-[117.42px] pb-[211.58px] max-md:pb-0">
         <h1 className="w-[894.59px] max-hamburger:w-full max-smalllaptop:tracking-[-2.56px] max-smalllaptop:text-[84px] max-sm:text-[64px] max-smallphone:text-[36px] max-sm:tracking-tight max-smalllaptop:leading-[102%] font-['Graphikthin'] text-[127.98px] text-[#E5E5E5] leading-[130.54px] tracking-[-6.35px]">
           We charge you ₹<span className="font-semibold">0 </span>upfront.
         </h1>
@@ -48,8 +48,9 @@ export default function Fees() {
           Because we believe that education should never be behind a paywall.
         </p>
         <p className="text-[64px] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] w-[818.23px] leading-[61.68px] tracking-[-2.56px] text-[#E5E5E5] font-['Graphikthin'] w-[890.53px] max-hamburger:w-full">
-          We’ll help you upskill, get placed, and charge you only 15<span className="font-['Graphik'] font-light">%</span>{' '} of your
-          CTC for 12 months.
+          We’ll help you upskill, get placed, and charge you only 15
+          <span className="font-['Graphik'] opacity-90 font-light">%</span> of
+          your CTC for 12 months.
         </p>
         <p className="text-[64px] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] leading-[61.68px] w-[818.23px] tracking-[-2.56px] text-[#E5E5E5] font-['Graphikthin'] w-[890.53px] max-hamburger:w-full">
           We will not charge you until you get placed.
@@ -57,12 +58,13 @@ export default function Fees() {
       </section>
       <Success />
       <section className="py-[120.5px] max-md:px-[40px] max-sm:px-[20px] max-md:pt-[50px] max-sm:pt-[30px] pl-[80px] flex flex-col gap-[51px]">
-        <p className="text-[#E5E5E5] text-[64px] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] font-['Graphikthin'] leading-[61.68px] tracking-[-2.56px]">
+        <p className="text-[#E5E5E5] text-[32px] max-hamburger:leading-[120%] font-['Graphikthin'] leading-[30.84px] tracking-[-0.6px]">
           What you will be paying us
         </p>
         <h1 className="w-[1172px] max-xl:w-full text-[147.6px] max-smalllaptop:tracking-[-2.56px] max-smalllaptop:text-[84px] max-sm:text-[64px] max-smallphone:text-[36px] max-sm:tracking-tight max-smalllaptop:leading-[102%] font-['Graphikthin'] leading-[142.26px] text-[#E5E5E5] tracking-[-5.9px]">
-          <span className="font-bold">15</span><span className="font-['Graphik'] font-light">%</span>{' '}of your CTC for{" "}
-          <span className="font-bold">12 months.</span>
+          <span className="font-semibold font-['Graphik']">15</span>
+          <span className="font-['Graphik'] font-light">%</span> of your CTC for{" "}
+          <span className="font-semibold font-['Graphik']">12 months.</span>
         </h1>
       </section>
       <section className="pt-[37.08px] px-[80px] max-md:w-full max-md:px-[40px] max-sm:px-[20px] pb-[74.31px] flex flex-col items-center gap-[131.61px]">

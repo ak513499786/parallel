@@ -1,5 +1,5 @@
 .backgroundcolor {
-  background: linear-gradient(270deg, #2E2AF3 0%, rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(270deg, #2e2af3 0%, rgba(0, 0, 0, 0) 100%);
   width: 914.18px;
   position: absolute;
   top: 0;
@@ -17,6 +17,15 @@
   height: 710px;
   background-repeat: no-repeat;
 }
+.fullgrid {
+  background-image: url("../public/full-grid.svg");
+  width: 100%;
+  position: absolute;
+  top: 101px;
+  left: 0px;
+  z-index: 1;
+  height: 710px;
+}
 .backgroundboxworkshop {
   background-image: url("../public/Group\ 1.svg");
   width: 1440px;
@@ -25,6 +34,90 @@
   z-index: 1;
   height: 811px;
   background-repeat: no-repeat;
+}
+.coloredborder {
+  padding: 1px;
+  z-index: 1;
+  border-radius: 9px;
+  background: linear-gradient(
+    180deg,
+    rgba(149, 255, 147, 0.77) 0%,
+    rgba(153, 153, 153, 0.01) 60.9%
+  );
+}
+.yellowcoloredborder {
+  padding: 1px;
+  z-index: 1;
+  border-radius: 9px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 215, 7, 0.77) 0%,
+    rgba(153, 153, 153, 0.01) 60.9%
+  );
+}
+.bluecoloredborder {
+  padding: 1px;
+  z-index: 1;
+  border-radius: 9px;
+  background: linear-gradient(
+    180deg,
+    rgba(7, 225, 255, 0.77) 0%,
+    rgba(153, 153, 153, 0.01) 60.9%
+  );
+}
+.purplecoloredborder {
+  padding: 1px;
+  z-index: 1;
+  border-radius: 9px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 65, 213, 0.77) 0%,
+    rgba(153, 153, 153, 0.01) 60.9%
+  );
+}
+.workshopcardgradientcolor1 {
+  padding: 1px;
+  z-index: 1;
+  border-radius: 9px;
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.05),
+      rgba(255, 255, 255, 0.05)
+    ),
+    linear-gradient(180deg, rgba(48, 226, 157, 0.2) 0%, rgba(0, 0, 0, 0) 100%);
+}
+.workshopcardgradientcolor2 {
+  padding: 1px;
+  z-index: 1;
+  border-radius: 9px;
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.05),
+      rgba(255, 255, 255, 0.05)
+    ),
+    linear-gradient(180deg, rgba(255, 232, 21, 0.2) 0%, rgba(0, 0, 0, 0) 100%);
+}
+.workshopcardgradientcolor3 {
+  padding: 1px;
+  z-index: 1;
+  border-radius: 9px;
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.05),
+      rgba(255, 255, 255, 0.05)
+    ),
+    linear-gradient(180deg, rgba(255, 1, 230, 0.2) 0%, rgba(0, 0, 0, 0) 100%);
+}
+.workshopcardgradientcolor4 {
+  padding: 1px;
+  z-index: 1;
+  border-radius: 9px;
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.05),
+      rgba(255, 255, 255, 0.05)
+    ),
+    linear-gradient(180deg, rgba(0, 194, 255, 0.2) 0%, rgba(0, 0, 0, 0) 100%);
 }
 .backgroundcolor2 {
   background-image: url("../public/section\ 2\ color.png");
@@ -56,8 +149,12 @@
 .container {
   padding: 1px;
   z-index: -1;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.52) 0%, #3A3A3A 67.79%);
   border-radius: 9px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.52) 0%,
+    #3a3a3a 67.79%
+  );
 }
 .gradientcard {
   border-top: 1px solid white;
@@ -65,7 +162,7 @@
   border-right: 1px solid white;
   border-bottom: 1px solid #545454;
 }
-.imagecontainer{
+.imagecontainer {
   mix-blend-mode: color-dodge;
 }
 .gradientbackgroundcard {
@@ -185,4 +282,94 @@
     rgba(14, 11, 180, 0.43) 100%
   );
   opacity: 0.3;
+}
+.aicardborder {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.46) 0%,
+    rgba(153, 153, 153, 0.01) 60.9%
+  );
+  padding: 1px;
+  z-index: 1;
+  border-radius: 9px;
+}
+.aicardbg {
+  z-index: 1;
+  overflow: hidden;
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.05),
+      rgba(255, 255, 255, 0.05)
+    ),
+    radial-gradient(
+        89.81% 45.98% at 51.76% 26.74%,
+        rgba(118, 39, 232, 0.5) 0%,
+        rgba(99, 33, 229, 0) 100%
+      )
+      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+    linear-gradient(
+      0.91deg,
+      rgba(48, 226, 157, 0.1) -13.79%,
+      rgba(48, 226, 157, 0) 20.34%
+    );
+}
+.fscardbg {
+  z-index: 1;
+  overflow: hidden;
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.05),
+      rgba(255, 255, 255, 0.05)
+    ),
+    radial-gradient(
+        79.59% 40.79% at 51.06% 24.98%,
+        rgba(27, 196, 94, 0.24) 0%,
+        rgba(12, 244, 35, 0) 100%
+      )
+      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+    linear-gradient(
+      0.91deg,
+      rgba(48, 226, 157, 0.1) -13.79%,
+      rgba(48, 226, 157, 0) 20.34%
+    );
+}
+.dacardbg {
+  z-index: 1;
+  overflow: hidden;
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.05),
+      rgba(255, 255, 255, 0.05)
+    ),
+    radial-gradient(
+        89.81% 45.98% at 51.76% 26.74%,
+        rgba(216, 47, 47, 0.27) 0%,
+        rgba(220, 56, 56, 0.02) 100%
+      )
+      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+    linear-gradient(
+      0.91deg,
+      rgba(48, 226, 157, 0.1) -13.79%,
+      rgba(48, 226, 157, 0) 20.34%
+    );
+}
+.lccardbg {
+  z-index: 1;
+  overflow: hidden;
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.05),
+      rgba(255, 255, 255, 0.05)
+    ),
+    radial-gradient(
+        89.81% 45.98% at 51.76% 26.74%,
+        rgba(14, 22, 245, 0.5) 0%,
+        rgba(12, 21, 244, 0.05) 100%
+      )
+      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+    linear-gradient(
+      0.91deg,
+      rgba(48, 226, 157, 0.1) -13.79%,
+      rgba(48, 226, 157, 0) 20.34%
+    );
 }

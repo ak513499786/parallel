@@ -29,10 +29,10 @@ export default function Workshop() {
   return (
     <>
       <Navbar />
-      <div className="absolute w-[100%] h-[100vh] top-0 left-0 overflow-x-hidden">
-        <div className={style.backgroundboxworkshop}></div>
+      <div className="absolute w-[100vw] h-[822px] top-0 left-0 overflow-hidden">
+        <div className={style.fullgrid}></div>
       </div>
-      <main className="w-[100%]  pl-[80px] pt-[171.5px] max-hamburger:py-[100px] max-md:py-[80px] max-sm:py-[50px] pb-[272.5px] relative max-sm:px-[20px] max-md:px-[40px] max-smalllaptop:h-[1150px] max-hamburger:h-auto max-smalllaptop:overflow-hidden">
+      <main className="w-[100%] relative z-[2] pl-[80px] pt-[171.5px] max-hamburger:py-[100px] max-md:py-[80px] max-sm:py-[50px] pb-[272.5px] relative max-sm:px-[20px] max-md:px-[40px] max-smalllaptop:h-[1150px] max-hamburger:h-auto max-smalllaptop:overflow-hidden">
         <h1 className="w-[665.36px] z-[2] text-[64px] max-smalllaptop:w-full max-hamburger:text-[48px] max-sm:text-[36px] max-sm:tracking-tight max-hamburger:leading-[120%] leading-[61.68px] font-['Graphikthin'] text-[#E5E5E5] tracking-[-2.56px]">
           Host a skill focused workshop at your college.{" "}
         </h1>
@@ -63,121 +63,141 @@ export default function Workshop() {
         />
       </main>
       <section className="pb-[52px] pl-[80px] max-sm:px-[20px] max-md:px-[40px] maxmd:py-[80px] pr-[79px] pt-[118.84px]">
-        <h1 className="mb-[80.56px] text-[64px] leading-[61.68px] text-[#E5E5E5] font-['Graphikthin'] tracking-[-2.56px] w-[896px] max-smalllaptop:w-full max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%]">
-          Hands-on workshop on using
-          <span className="font-bold"> free AI tools </span>
-          to cut the competition{" "}
+        <h1 className="mb-[80.56px] text-[64px] leading-[61.68px] text-[#E5E5E5] font-['Graphikthin'] tracking-[-2.56px] w-[1130px] max-xl:w-full max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%]">
+          Hands-on workshop on using{" "}
+          <span className="font-['Graphik']">AI</span> to get a job, optimize
+          resume and more.
         </h1>
         <p className="text-[20px] leading-[25.2px] tracking-[-0.2px] font-semibold mb-[21.6px]">
           This workshop contains
         </p>
-        <div className="flex gap-[84px] max-hamburger:flex-nowrap max-md:flex-wrap-reverse max-smalllaptop:flex-wrap-reverse max-smalllaptop:items-start mb-[80.56px] max-xl:ml-0 max-xl:gap-[32px] items-center">
-          <div className="flex py-[31.82px] max-hamburger:h-auto max-hamburger:w-full max-hamburger:flex-col gap-[31.04px] h-[289px] w-[934px] max-xl:w-full bg-[#FFD7071A] px-[18px] max-md:w-full border-l-[#FFD707C4] border-t-[#FFD707C4] rounded-[10px] border-[1px] border-[#99999999]">
-            <Image
-              src="/workshop01.svg"
-              width={107.16}
-              className="w-[290.96px] max-hamburger:h-auto max-hamburger:w-full h-[225.36px]"
-              height={107.16}
-            />
-            <div>
-              <p className="mt-[9.68px] max-sm:text-[28px] max-sm:leading-[34px] max-hamburger:h-auto max-hamburger:w-full w-[387.05px] text-[36.63px] font-['Graphikthin'] leading-[41.03px] tracking-[-1.1px] mb-[12px] text-[#E5E5E5]">
-                Why use AI tools and how they can help.{" "}
-              </p>
-              <p className="text-white opacity-80 w-[542.5px] max-bigscreen:w-[100%] mb-[32px] text-base font-['Graphikthin']">
-                Understand the brief about AI. Familiarize with how people are
-                using it to stand out, increase their productivity.{" "}
-              </p>
-              <div className="flex gap-[8px]">
-                <p className="py-[4px] px-[8px] text-[#FFDB06] text-base font-['Graphikthin'] border-[#FFDB06] opacity-60 border-[1px] rounded-[5px]">
-                  20 minutes{" "}
-                </p>
+        <div className="flex gap-[84px] max-hamburger:flex-nowrap max-md:flex-wrap-reverse max-smalllaptop:flex-wrap-reverse max-smalllaptop:items-start mb-[80.56px] max-xl:ml-0 max-xl:gap-[32px] items-center justify-between">
+          <div className={`${style.coloredborder} w-[934px] max-xl:w-full`}>
+            <div className="bg-black rounded-[9px]">
+              <div className="flex w-full py-[31.82px] z-20 relative max-hamburger:flex-col max-hamburger:h-auto max-hamburger:w-full gap-[31.04px] h-[289px] bg-[#95FF931A] px-[18px] rounded-[10px]">
+                <Image
+                  src="/workshop2.svg"
+                  width={107.16}
+                  className="w-[290.96px] h-[225.36px] max-hamburger:h-auto max-hamburger:w-full"
+                  height={107.16}
+                />
+                <div>
+                  <p className="mt-[9.68px] w-[489.3px] max-sm:text-[28px] max-sm:leading-[34px] text-[36.63px] max-hamburger:h-auto max-hamburger:w-full font-['Graphikthin'] leading-[41.03px] tracking-[-1.1px] mb-[12px] text-[#E5E5E5]">
+                    Current market and introduction to AI.{" "}
+                  </p>
+                  <p className="text-white opacity-80 w-[542.5px] max-bigscreen:w-[100%] mb-[32px] text-base font-['Graphikthin']">
+                    Industry insights into the current job market. Learn how to
+                    use AI to increase your productivity.
+                  </p>
+                  <div className="flex gap-[8px]">
+                    <p className="py-[4px] px-[8px] text-[#30FF51] text-base font-['Graphikthin'] border-[#30FF51] opacity-60 border-[1px] rounded-[5px]">
+                      15 minutes{" "}
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <h1 className="text-[276.38px] max-sm:text-[130px] max-sm:leading-[80px] leading-[230px] text-[#262002] font-bold">
+          <h1 className="text-[276.38px] max-sm:text-[130px] max-sm:leading-[80px] leading-[230px] text-[#022301] font-bold">
             1
           </h1>
         </div>
         <div className="flex ml-[58.09px] max-hamburger:items-start max-hamburger:flex-row gap-[84px] max-md:flex-col max-md:items-end max-smalllaptop:flex-col max-smalllaptop:items-end max-xl:ml-0 max-xl:gap-[32px] max-bigscreen:ml-[30px] my-[80.56px] items-center justify-between">
-          <h1 className="text-[276.38px] max-sm:text-[130px] max-sm:leading-[80px] leading-[230px] text-[#022301] font-bold">
+          <h1 className="text-[276.38px] max-sm:text-[130px] max-sm:leading-[80px] leading-[230px] text-[#262002] font-bold">
             2
           </h1>{" "}
-          <div className="flex py-[31.82px] max-hamburger:flex-col max-hamburger:h-auto max-hamburger:w-full gap-[31.04px] h-[289px] w-[934px] max-xl:w-full bg-[#95FF931A] px-[18px] max-md:w-full border-l-[#95FF93C4] border-t-[#95FF93C4] rounded-[10px] border-[1px] border-[#99999999]">
-            <Image
-              src="/workshop2.svg"
-              width={107.16}
-              className="w-[290.96px] h-[225.36px] max-hamburger:h-auto max-hamburger:w-full"
-              height={107.16}
-            />
-            <div>
-              <p className="mt-[9.68px] w-[489.3px] max-sm:text-[28px] max-sm:leading-[34px] text-[36.63px] max-hamburger:h-auto max-hamburger:w-full font-['Graphikthin'] leading-[41.03px] tracking-[-1.1px] mb-[12px] text-[#E5E5E5]">
-                Prompt Engineering 101. Free GenAI tools.{" "}
-              </p>
-              <p className="text-white opacity-80 w-[542.5px] max-bigscreen:w-[100%] mb-[32px] text-base font-['Graphikthin']">
-                Get a hands-on experience on optimizing prompts. Generate images
-                exactly how you imagined it in your head.
-              </p>
-              <div className="flex gap-[8px]">
-                <p className="py-[4px] px-[8px] text-[#30FF51] text-base font-['Graphikthin'] border-[#30FF51] opacity-60 border-[1px] rounded-[5px]">
-                  1 hour{" "}
-                </p>
+          <div
+            className={`${style.yellowcoloredborder} w-[934px] max-xl:w-full`}
+          >
+            <div className="bg-black rounded-[9px]">
+              <div className="flex py-[31.82px] max-hamburger:h-auto max-hamburger:w-full max-hamburger:flex-col gap-[31.04px] h-[289px] bg-[#FFD7071A] px-[18px] max-md:w-full rounded-[10px]">
+                <Image
+                  src="/yellowpic.svg"
+                  width={107.16}
+                  className="w-[290.96px] max-hamburger:h-auto max-hamburger:w-full h-[225.36px]"
+                  height={107.16}
+                />
+                <div>
+                  <p className="mt-[9.68px] max-sm:text-[28px] max-sm:leading-[34px] max-hamburger:h-auto max-hamburger:w-full w-[487.05px] text-[36.63px] font-['Graphikthin'] leading-[41.03px] tracking-[-1.1px] mb-[12px] text-[#E5E5E5]">
+                    Prompt Engineering 101. 4-step structured formula.{" "}
+                  </p>
+                  <p className="text-white opacity-80 w-[542.5px] max-bigscreen:w-[100%] mb-[32px] text-base font-['Graphikthin']">
+                    Get a hands-on experience on optimizing prompts. Get AI to
+                    do exactly what you want it to do.{" "}
+                  </p>
+                  <div className="flex gap-[8px]">
+                    <p className="py-[4px] px-[8px] text-[#FFDB06] text-base font-['Graphikthin'] border-[#FFDB06] opacity-60 border-[1px] rounded-[5px]">
+                      15 minutes{" "}
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
         <div className="flex gap-[84px] max-hamburger:items-start max-hamburger:flex-nowrap max-md:flex-wrap-reverse max-md:items-start max-smalllaptop:flex-wrap-reverse max-smalllaptop:items-start my-[80.56px] max-xl:ml-0 max-xl:gap-[32px] items-center justify-between">
-          <div className="flex py-[31.82px] max-hamburger:flex-col gap-[31.04px] max-hamburger:h-auto max-hamburger:w-full h-[289px] w-[934px] max-xl:w-full bg-[#07E1FF1A] px-[18px] max-md:w-full border-l-[#07E1FFC4] border-t-[#07E1FFC4] rounded-[10px] border-[1px] border-[#99999999]">
-            <Image
-              src="/cube.svg"
-              width={107.16}
-              className="w-[290.96px] max-hamburger:w-full max-hamburger:h-auto h-[225.36px]"
-              height={107.16}
-            />
-            <div>
-              <p className="mt-[9.68px] w-[482.94px] max-sm:text-[28px] max-sm:leading-[34px] text-[36.63px] max-hamburger:w-full font-['Graphikthin'] leading-[41.03px] tracking-[-1.1px] mb-[12px] text-[#E5E5E5]">
-                Use AI tools to optimize your LinkedIn profile and resume.{" "}
-              </p>
-              <p className="text-white opacity-80 w-[542.5px] max-bigscreen:w-[100%] mb-[32px] text-base font-['Graphikthin']">
-                Learn how people are using AI to increase their visibility on
-                LinkedIn. Master the craft of refining your resume through AI.
-              </p>
-              <div className="flex gap-[8px]">
-                <p className="py-[4px] px-[8px] text-[#0CC2FF] text-base font-['Graphikthin'] border-[#0CC2FF] opacity-60 border-[1px] rounded-[5px]">
-                  30 minutes{" "}
-                </p>
+          <div
+            className={`${style.purplecoloredborder} w-[934px] max-xl:w-full`}
+          >
+            <div className="bg-black rounded-[9px]">
+              <div className="flex py-[26.5px] max-hamburger:flex-col max-hamburger:h-auto gap-[31.04px] h-[289px] w-[934px] max-xl:w-full bg-[#FF41D51A] px-[18px] max-md:w-full rounded-[10px]">
+                <Image
+                  src="/workshop4.svg"
+                  width={107.16}
+                  className="w-[290.96px] mt-[5.52px] max-hamburger:w-full max-hamburger:h-auto h-[225.36px]"
+                  height={107.16}
+                />
+                <div>
+                  <p className="w-[485.22px] text-[36.63px] max-sm:text-[28px] max-sm:leading-[34px] max-hamburger:w-full font-['Graphikthin'] leading-[41.03px] tracking-[-1.1px] mb-[12px] text-[#E5E5E5]">
+                    Learning 10 free AI tools to increase productivity.
+                  </p>
+                  <p className="text-white opacity-80 w-[542.5px] max-bigscreen:w-[100%] mb-[32px] text-base font-['Graphikthin']">
+                    Get to know and use a free AI tool to increase productivity.
+                    This session will be tailored to each branch.
+                  </p>
+                  <div className="flex gap-[8px]">
+                    <p className="py-[4px] px-[8px] text-[#FF01E6] text-base font-['Graphikthin'] border-[#FF01E6] opacity-60 border-[1px] rounded-[5px]">
+                      30 minutes{" "}
+                    </p>
+                    <p className="py-[4px] px-[8px] text-[#FF01E6] text-base font-['Graphikthin'] border-[#FF01E6] opacity-60 border-[1px] rounded-[5px]">
+                      Tailored to each branch{" "}
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <h1 className="text-[276.38px] max-sm:text-[130px] max-sm:leading-[80px] leading-[230px] text-[#021E22] font-bold">
+          <h1 className="text-[276.38px] max-sm:text-[130px] max-sm:leading-[80px] leading-[230px] text-[#210016] font-bold">
             3
           </h1>
         </div>
         <div className="flex ml-[58.09px] max-hamburger:items-start max-hamburger:flex-row max-md:flex-col max-md:items-end max-smalllaptop:flex-col max-smalllaptop:items-end gap-[84px] max-xl:ml-0 max-xl:gap-[32px] max-bigscreen:ml-[30px] my-[80.56px] items-center justify-between">
-          <h1 className="text-[276.38px] max-sm:text-[130px] max-sm:leading-[80px] leading-[230px] text-[#210016] font-bold">
+          <h1 className="text-[276.38px] max-sm:text-[130px] max-sm:leading-[80px] leading-[230px] text-[#021E22] font-bold">
             4
           </h1>{" "}
-          <div className="flex py-[26.5px] max-hamburger:flex-col max-hamburger:h-auto gap-[31.04px] h-[289px] w-[934px] max-xl:w-full bg-[#FF41D51A] px-[18px] max-md:w-full border-l-[#FF41D5C4] border-t-[#FF41D5C4] rounded-[10px] border-[1px] border-[#99999999]">
-            <Image
-              src="/workshop4.svg"
-              width={107.16}
-              className="w-[290.96px] mt-[5.52px] max-hamburger:w-full max-hamburger:h-auto h-[225.36px]"
-              height={107.16}
-            />
-            <div>
-              <p className="text-white opacity-80 mb-[8px] text-base font-['Graphikthin']">
-                (Tailored to each branch)
-              </p>
-              <p className="w-[485.22px] text-[36.63px] max-sm:text-[28px] max-sm:leading-[34px] max-hamburger:w-full font-['Graphikthin'] leading-[41.03px] tracking-[-1.1px] mb-[12px] text-[#E5E5E5]">
-                Learning a free AI tool to increase productivity.{" "}
-              </p>
-              <p className="text-white opacity-80 w-[542.5px] max-bigscreen:w-[100%] mb-[32px] text-base font-['Graphikthin']">
-                Get to know and use a free AI tool to increase productivity.
-                This session will be tailored to each branch.
-              </p>
-              <div className="flex gap-[8px]">
-                <p className="py-[4px] px-[8px] text-[#FF01E6] text-base font-['Graphikthin'] border-[#FF01E6] opacity-60 border-[1px] rounded-[5px]">
-                  1 hour{" "}
-                </p>
+          <div className={`${style.bluecoloredborder} w-[934px] max-xl:w-full`}>
+            <div className="bg-black rounded-[9px]">
+              <div className="flex py-[31.82px] max-hamburger:flex-col gap-[31.04px] max-hamburger:h-auto max-hamburger:w-full h-[289px] w-[934px] max-xl:w-full bg-[#07E1FF1A] px-[18px] max-md:w-full rounded-[10px]">
+                <Image
+                  src="/cube.svg"
+                  width={107.16}
+                  className="w-[290.96px] max-hamburger:w-full max-hamburger:h-auto h-[225.36px]"
+                  height={107.16}
+                />
+                <div>
+                  <p className="mt-[9.68px] w-[482.94px] max-sm:text-[28px] max-sm:leading-[34px] text-[36.63px] max-hamburger:w-full font-['Graphikthin'] leading-[41.03px] tracking-[-1.1px] mb-[12px] text-[#E5E5E5]">
+                    5-step approach to land a job.{" "}
+                  </p>
+                  <p className="text-white opacity-80 w-[542.5px] max-bigscreen:w-[100%] mb-[32px] text-base font-['Graphikthin']">
+                    Discover how learning new, relevant skills will help you
+                    stay ahead of the competition
+                  </p>
+                  <div className="flex gap-[8px]">
+                    <p className="py-[4px] px-[8px] text-[#0CC2FF] text-base font-['Graphikthin'] border-[#0CC2FF] opacity-60 border-[1px] rounded-[5px]">
+                      30 minutes{" "}
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -189,35 +209,306 @@ export default function Workshop() {
         </h1>
         <div className="flex gap-[21px] flex-wrap">
           <div
-            className={`${style.gradientbackgroundcard} relative z-20 overflow-hidden w-[413px] h-[406px] rounded-[8px]`}
-          ></div>
+            className={`${style.coloredborder} relative z-20 overflow-hidden w-[32%] max-hamburger:w-[45%] max-md:w-full h-[406px] rounded-[8px]`}
+          >
+            <div className="bg-black rounded-[9px] h-full w-full">
+              <div className={`${style.workshopcardgradientcolor1}`}>
+                <Image
+                  src="/abstract1.svg"
+                  width={107.64}
+                  className="w-[107.64px] ml-[26.86px] mt-[28.34px] max-hamburger:w-full max-hamburger:h-auto h-[126.64px] mb-[34.06px]"
+                  height={126.64}
+                />
+                <h1 className="text-[24px] ml-[27.5px] w-[340px] mb-[19.66px] leading-[30.64px] text-[#E0E0E0] tracking-[-0.24px] h-[60px]">
+                  Insider knowledge on current market trends
+                </h1>
+                <p className="h-[112px] w-[355px] ml-[27.5px] text-base text-[#E0E0E0]">
+                  Get never heard before information on the current job market
+                  trends, where it is heading in the future.
+                </p>
+              </div>
+            </div>
+          </div>
           <div
-            className={`${style.gradientbackgroundcard} relative z-20 overflow-hidden w-[413px] h-[406px] rounded-[8px]`}
-          ></div>
+            className={`${style.coloredborder} relative z-20 overflow-hidden w-[32%] max-hamburger:w-[45%] max-md:w-full h-[406px] rounded-[8px]`}
+          >
+            <div className="bg-black rounded-[9px] h-full w-full">
+              <div className={`${style.workshopcardgradientcolor1}`}>
+                <Image
+                  src="/abstract1.svg"
+                  width={107.64}
+                  className="w-[107.64px] ml-[26.86px] mt-[28.34px] max-hamburger:w-full max-hamburger:h-auto h-[126.64px] mb-[34.06px]"
+                  height={126.64}
+                />
+                <h1 className="text-[24px] ml-[27.5px] w-[340px] mb-[19.66px] leading-[30.64px] text-[#E0E0E0] tracking-[-0.24px] h-[60px]">
+                  Information on how AI will affect the upcoming workforce{" "}
+                </h1>
+                <p className="h-[112px] w-[355px] ml-[27.5px] text-base text-[#E0E0E0]">
+                  Learn the impact of AI, how you should leverage its potential
+                  instead of being afraid of getting replaced by it.
+                </p>
+              </div>
+            </div>
+          </div>
           <div
-            className={`${style.gradientbackgroundcard} relative z-20 overflow-hidden w-[413px] h-[406px] rounded-[8px]`}
-          ></div>
+            className={`${style.yellowcoloredborder} relative z-20 overflow-hidden w-[32%] max-hamburger:w-[45%] max-md:w-full h-[406px] rounded-[8px]`}
+          >
+            <div className="bg-black rounded-[9px] h-full w-full">
+              <div className={`${style.workshopcardgradientcolor2}`}>
+                <Image
+                  src="/abstract3.svg"
+                  width={180.64}
+                  className="w-[180.64px] mt-[28.34px] max-hamburger:w-full max-hamburger:h-auto h-[126.64px] mb-[34.06px]"
+                  height={126.64}
+                />
+                <h1 className="text-[24px] ml-[27.5px] w-[340px] mb-[19.66px] leading-[30.64px] text-[#E0E0E0] tracking-[-0.24px] h-[60px]">
+                  Introduction to Prompt Engineering{" "}
+                </h1>
+                <p className="h-[112px] w-[355px] ml-[27.5px] text-base text-[#E0E0E0]">
+                  Prompts is the way you communicate with an AI. Learn how to do
+                  it the best.
+                </p>
+              </div>
+            </div>
+          </div>
           <div
-            className={`${style.gradientbackgroundcard} relative z-20 overflow-hidden w-[413px] h-[406px] rounded-[8px]`}
-          ></div>
+            className={`${style.yellowcoloredborder} relative z-20 overflow-hidden w-[32%] max-hamburger:w-[45%] max-md:w-full h-[406px] rounded-[8px]`}
+          >
+            <div className="bg-black rounded-[9px] h-full w-full">
+              <div className={`${style.workshopcardgradientcolor2}`}>
+                <Image
+                  src="/abstract3.svg"
+                  width={180.64}
+                  className="w-[180.64px] mt-[28.34px] max-hamburger:w-full max-hamburger:h-auto h-[126.64px] mb-[34.06px]"
+                  height={126.64}
+                />
+                <h1 className="text-[24px] ml-[27.5px] w-[340px] mb-[19.66px] leading-[30.64px] text-[#E0E0E0] tracking-[-0.24px] h-[60px]">
+                  4-step structured formula to writing prompts{" "}
+                </h1>
+                <p className="h-[112px] w-[355px] ml-[27.5px] text-base text-[#E0E0E0]">
+                  Writing good prompts is not a matter of luck. Learn how to use
+                  the full potential of AI through prompts.
+                </p>
+              </div>
+            </div>
+          </div>
           <div
-            className={`${style.gradientbackgroundcard} relative z-20 overflow-hidden w-[413px] h-[406px] rounded-[8px]`}
-          ></div>
+            className={`${style.purplecoloredborder} relative z-20 overflow-hidden w-[32%] max-hamburger:w-[45%] max-md:w-full h-[406px] rounded-[8px]`}
+          >
+            <div className="bg-black rounded-[9px] h-full w-full">
+              <div className={`${style.workshopcardgradientcolor3}`}>
+                <Image
+                  src="/abstart3.svg"
+                  width={118.64}
+                  className="w-[118.64] ml-[27.5px] mt-[36px] max-hamburger:w-full max-hamburger:h-auto h-[118.64] mb-[34.06px]"
+                  height={118.64}
+                />
+                <h1 className="text-[24px] ml-[27.5px] h-[60px] w-[340px] mb-[19.66px] leading-[30.64px] text-[#E0E0E0] tracking-[-0.24px]">
+                  Use AI to write better code{" "}
+                </h1>
+                <p className="h-[112px] w-[355px] ml-[27.5px] text-base text-[#E0E0E0]">
+                  Writing a code is much easier with an assistant. Learn how to
+                  leverage leading AI assistants like GitHub Co-pilot to up your
+                  coding game.
+                </p>
+              </div>
+            </div>
+          </div>
           <div
-            className={`${style.gradientbackgroundcard} relative z-20 overflow-hidden w-[413px] h-[406px] rounded-[8px]`}
-          ></div>
+            className={`${style.purplecoloredborder} relative z-20 overflow-hidden w-[32%] max-hamburger:w-[45%] max-md:w-full h-[406px] rounded-[8px]`}
+          >
+            <div className="bg-black rounded-[9px] h-full w-full">
+              <div className={`${style.workshopcardgradientcolor3}`}>
+                <Image
+                  src="/abstart3.svg"
+                  width={118.64}
+                  className="w-[118.64] ml-[27.5px] mt-[36px] max-hamburger:w-full max-hamburger:h-auto h-[118.64] mb-[34.06px]"
+                  height={118.64}
+                />
+                <h1 className="text-[24px] ml-[27.5px] h-[60px] w-[340px] mb-[19.66px] leading-[30.64px] text-[#E0E0E0] tracking-[-0.24px]">
+                  Faster content curation through ChatGPT, Gemini{" "}
+                </h1>
+                <p className="h-[112px] w-[355px] ml-[27.5px] text-base text-[#E0E0E0]">
+                  Generate content like it’s written by a copywriter working at
+                  Google, Apple! Use it to write blogs, articles, emails,
+                  messages and much more.
+                </p>
+              </div>
+            </div>
+          </div>
           <div
-            className={`${style.gradientbackgroundcard} relative z-20 overflow-hidden w-[413px] h-[406px] rounded-[8px]`}
-          ></div>
+            className={`${style.purplecoloredborder} relative z-20 overflow-hidden w-[32%] max-hamburger:w-[45%] max-md:w-full h-[406px] rounded-[8px]`}
+          >
+            <div className="bg-black rounded-[9px] h-full w-full">
+              <div className={`${style.workshopcardgradientcolor3}`}>
+                <Image
+                  src="/abstart3.svg"
+                  width={118.64}
+                  className="w-[118.64] ml-[27.5px] mt-[36px] max-hamburger:w-full max-hamburger:h-auto h-[118.64] mb-[34.06px]"
+                  height={118.64}
+                />
+                <h1 className="text-[24px] ml-[27.5px] h-[60px] w-[340px] mb-[19.66px] leading-[30.64px] text-[#E0E0E0] tracking-[-0.24px]">
+                  Generate breath-taking imagery using AI{" "}
+                </h1>
+                <p className="h-[112px] w-[355px] ml-[27.5px] text-base text-[#E0E0E0]">
+                  Images are always a good way to stand out from the crowd.
+                  Learn how to generate images that do not look like they’ve
+                  been generated by AI.
+                </p>
+              </div>
+            </div>
+          </div>
           <div
-            className={`${style.gradientbackgroundcard} relative z-20 overflow-hidden w-[413px] h-[406px] rounded-[8px]`}
-          ></div>
+            className={`${style.purplecoloredborder} relative z-20 overflow-hidden w-[32%] max-hamburger:w-[45%] max-md:w-full h-[406px] rounded-[8px]`}
+          >
+            <div className="bg-black rounded-[9px] h-full w-full">
+              <div className={`${style.workshopcardgradientcolor3}`}>
+                <Image
+                  src="/abstart3.svg"
+                  width={118.64}
+                  className="w-[118.64] ml-[27.5px] mt-[36px] max-hamburger:w-full max-hamburger:h-auto h-[118.64] mb-[34.06px]"
+                  height={118.64}
+                />
+                <h1 className="text-[24px] ml-[27.5px] h-[60px] w-[340px] mb-[19.66px] leading-[30.64px] text-[#E0E0E0] tracking-[-0.24px]">
+                  Research on a topic accurately{" "}
+                </h1>
+                <p className="h-[112px] w-[355px] ml-[27.5px] text-base text-[#E0E0E0]">
+                  LLMs like ChatGPT, Gemini often generate inaccurate data when
+                  it comes to research. Use AI tools like Perplexity to research
+                  along with the citations.
+                </p>
+              </div>
+            </div>
+          </div>
           <div
-            className={`${style.gradientbackgroundcard} relative z-20 overflow-hidden w-[413px] h-[406px] rounded-[8px]`}
-          ></div>
+            className={`${style.purplecoloredborder} relative z-20 overflow-hidden w-[32%] max-hamburger:w-[45%] max-md:w-full h-[406px] rounded-[8px]`}
+          >
+            <div className="bg-black rounded-[9px] h-full w-full">
+              <div className={`${style.workshopcardgradientcolor3}`}>
+                <Image
+                  src="/abstart3.svg"
+                  width={118.64}
+                  className="w-[118.64] ml-[27.5px] mt-[36px] max-hamburger:w-full max-hamburger:h-auto h-[118.64] mb-[34.06px]"
+                  height={118.64}
+                />
+                <h1 className="text-[24px] ml-[27.5px] h-[60px] w-[340px] mb-[19.66px] leading-[30.64px] text-[#E0E0E0] tracking-[-0.24px]">
+                  Build hire-worthy resume using AI{" "}
+                </h1>
+                <p className="h-[112px] w-[355px] ml-[27.5px] text-base text-[#E0E0E0]">
+                  Let AI do all the heavy-lifting while building your resume.
+                  Get it to build a resume that’ll grab recruiters'’ attention.
+                </p>
+              </div>
+            </div>
+          </div>
           <div
-            className={`${style.gradientbackgroundcard} relative z-20 overflow-hidden w-[413px] h-[406px] rounded-[8px]`}
-          ></div>
+            className={`${style.purplecoloredborder} relative z-20 overflow-hidden w-[32%] max-hamburger:w-[45%] max-md:w-full h-[406px] rounded-[8px]`}
+          >
+            <div className="bg-black rounded-[9px] h-full w-full">
+              <div className={`${style.workshopcardgradientcolor3}`}>
+                <Image
+                  src="/abstart3.svg"
+                  width={118.64}
+                  className="w-[118.64] ml-[27.5px] mt-[36px] max-hamburger:w-full max-hamburger:h-auto h-[118.64] mb-[34.06px]"
+                  height={118.64}
+                />
+                <h1 className="text-[24px] ml-[27.5px] h-[60px] w-[340px] mb-[19.66px] leading-[30.64px] text-[#E0E0E0] tracking-[-0.24px]">
+                  Build a personal website only using prompts{" "}
+                </h1>
+                <p className="h-[112px] w-[355px] ml-[27.5px] text-base text-[#E0E0E0]">
+                  Use all the knowledge taught in this workshop to build your
+                  personal website only using prompts. Not a single line of code
+                  is required.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            className={`${style.bluecoloredborder} relative z-20 overflow-hidden w-[32%] max-hamburger:w-[45%] max-md:w-full h-[406px] rounded-[8px]`}
+          >
+            <div className="bg-black rounded-[9px] h-full w-full">
+              <div className={`${style.workshopcardgradientcolor4}`}>
+                <Image
+                  src="/abstart4.svg"
+                  width={118.64}
+                  className="w-[118.64] ml-[27.5px] mt-[36px] max-hamburger:w-full max-hamburger:h-auto h-[118.64] mb-[34.06px]"
+                  height={118.64}
+                />
+                <h1 className="text-[24px] ml-[27.5px] h-[60px] w-[340px] mb-[19.66px] leading-[30.64px] text-[#E0E0E0] tracking-[-0.24px]">
+                  Curate your resume using AI{" "}
+                </h1>
+                <p className="h-[112px] w-[355px] ml-[27.5px] text-base text-[#E0E0E0]">
+                  Learn to tweak your AI generated resume to match individual
+                  job openings to better your chances of getting hired.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            className={`${style.bluecoloredborder} relative z-20 overflow-hidden w-[32%] max-hamburger:w-[45%] max-md:w-full h-[406px] rounded-[8px]`}
+          >
+            <div className="bg-black rounded-[9px] h-full w-full">
+              <div className={`${style.workshopcardgradientcolor4}`}>
+                <Image
+                  src="/abstart4.svg"
+                  width={118.64}
+                  className="w-[118.64] ml-[27.5px] mt-[36px] max-hamburger:w-full max-hamburger:h-auto h-[118.64] mb-[34.06px]"
+                  height={118.64}
+                />
+                <h1 className="text-[24px] ml-[27.5px] h-[60px] w-[355px] mb-[19.66px] leading-[30.64px] text-[#E0E0E0] tracking-[-0.24px]">
+                  Easy and lesser known hacks to finding jobs through LinkedIn{" "}
+                </h1>
+                <p className="h-[112px] w-[355px] ml-[27.5px] text-base text-[#E0E0E0]">
+                  Finding a job through LinkedIn is easy if you know what you
+                  are doing. Let us teach you what you should be looking out
+                  for.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            className={`${style.bluecoloredborder} relative z-20 overflow-hidden w-[32%] max-hamburger:w-[45%] max-md:w-full h-[406px] rounded-[8px]`}
+          >
+            <div className="bg-black rounded-[9px] h-full w-full">
+              <div className={`${style.workshopcardgradientcolor4}`}>
+                <Image
+                  src="/abstart4.svg"
+                  width={118.64}
+                  className="w-[118.64] ml-[27.5px] mt-[36px] max-hamburger:w-full max-hamburger:h-auto h-[118.64] mb-[34.06px]"
+                  height={118.64}
+                />
+                <h1 className="text-[24px] ml-[27.5px] h-[60px] w-[340px] mb-[19.66px] leading-[30.64px] text-[#E0E0E0] tracking-[-0.24px]">
+                  Networking with AI assistance{" "}
+                </h1>
+                <p className="h-[112px] w-[355px] ml-[27.5px] text-base text-[#E0E0E0]">
+                  Use AI tools to connect with relevant professionals in your
+                  field based on your skills and career goals.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            className={`${style.bluecoloredborder} relative z-20 overflow-hidden w-[32%] max-hamburger:w-[45%] max-md:w-full h-[406px] rounded-[8px]`}
+          >
+            <div className="bg-black rounded-[9px] h-full w-full">
+              <div className={`${style.workshopcardgradientcolor4}`}>
+                <Image
+                  src="/abstart4.svg"
+                  width={118.64}
+                  className="w-[118.64] ml-[27.5px] mt-[36px] max-hamburger:w-full max-hamburger:h-auto h-[118.64] mb-[34.06px]"
+                  height={118.64}
+                />
+                <h1 className="text-[24px] ml-[27.5px] h-[60px] w-[340px] mb-[19.66px] leading-[30.64px] text-[#E0E0E0] tracking-[-0.24px]">
+                  Write engaging emails in 4 steps{" "}
+                </h1>
+                <p className="h-[112px] w-[355px] ml-[27.5px] text-base text-[#E0E0E0]">
+                  Learn to write engaging emails in 4 simple steps. Let AI do
+                  most of the work while you curate the email and send it to the
+                  right people.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <section className="flex flex-col items-center pt-[49.9px] pb-[134px] max-md:py-[30px] px-[80px] max-md:px-[40px] max-sm:px-[20px]">
@@ -233,7 +524,7 @@ export default function Workshop() {
       </section>
       <section className="py-[168.5px] max-md:px-[40px] max-sm:px-[20px] max-md:py-[40px] relative px-[62.74px]">
         <div className="absolute w-[100%] h-[100vh] top-0 left-0 overflow-hidden">
-          <div className={style.backgroundboxworkshop}></div>
+          <div className={style.fullgrid}></div>
         </div>
         <p className="text-[48px] leading-[46.26px] w-[554px] max-md:w-full tracking-[-1.92px] max-md:text-[32px] max-md:leading-[120%] text-[#E5E5E5] font-['Graphikthin'] text-[#E5E5E5] mb-[65.09px]">
           <span className="font-bold">3 hours </span>
@@ -248,7 +539,7 @@ export default function Workshop() {
           </p>{" "}
         </div>
         <Link href={"/contact-us"}>
-          <button className="w-[165px] max-md:hidden mt-[79px] max-md:mt-[49px] max-sm:mt-[29px] h-[53px] bg-[#30E29D] rounded-[8px] font-bold text-[#292929] text-[16px] font-[19.2px]">
+          <button className="w-[165px] relative z-20 max-md:hidden mt-[79px] max-md:mt-[49px] max-sm:mt-[29px] h-[53px] bg-[#30E29D] rounded-[8px] font-bold text-[#292929] text-[16px] font-[19.2px]">
             Contact Us{" "}
           </button>
         </Link>

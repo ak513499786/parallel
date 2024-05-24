@@ -22,13 +22,20 @@ export default function Contact() {
       Phone_Number,
       iam,
       help,
-      Message
+      Message,
     };
     try {
       const response = await axios.post("/api/contact-us", data);
       console.log("Data sent successfully:", response.data);
     } catch (error) {
       console.error("Error sending data:", error);
+    }
+  };
+  const handleChange = (e) => {
+    const value = e.target.value;
+
+    if (value.length <= 11 && /^\d*$/.test(value)) {
+      setPhone_Number(value);
     }
   };
   const toggleMenu = () => {
@@ -48,24 +55,22 @@ export default function Contact() {
   return (
     <>
       <Navbar />
-      <div className="absolute w-[100%] h-[100vh] top-0 left-0 overflow-x-hidden">
+      <div className="absolute z-30 w-[100%] top-[-400px] h-[1422px] top-0 left-0 overflow-hidden">
         <div className={style.backgroundcolor}></div>
+      </div>
+      <div className="absolute w-[100%] h-[822px] top-0 left-0 overflow-hidden">
         <div className={style.backgroundbox}></div>
       </div>
-      <main className="px-[80px] max-md:px-[40px] max-sm:px-[20px] flex justify-center pb-[79.28px] z-20 relative pt-[130.71px]">
+      <main className="px-[80px] z-40 max-md:px-[40px] max-sm:px-[20px] flex justify-center pb-[79.28px] z-20 relative pt-[130.71px]">
         <h1 className="text-[104.57px] leading-[106.66px] tracking-[-5.2px] font-['Graphikthin'] max-smalllaptop:text-[84px] max-sm:text-[64px] max-smallphone:text-[36px] max-sm:tracking-tight max-smalllaptop:leading-[102%] max-sm:text-left max-lg:w-full text-center text-[#E5E5E5] w-[799.41px]">
           Never let high fees be the excuse.
         </h1>
       </main>
-      <div className="absolute w-[100%] h-[70vh] top-[100vh] left-0 overflow-x-hidden">
-        <div className={style.backgroundcolor2}></div>
-        <div className={style.backgroundbox2}></div>
-      </div>
-      <div className="py-[68.1px] max-sm:py-20 max-hamburger:px-[80px] max-md:px-[40px] max-sm:px-[20px] max-hamburger:w-full relative z-20 pl-[80px] gap-[34px] flex-col items-center flex pr-[79px]">
+      <div className="py-[68.1px] max-sm:py-20 max-hamburger:px-[80px] max-md:px-[40px] max-sm:px-[20px] max-hamburger:w-full relative z-40 pl-[80px] gap-[34px] flex-col items-center flex pr-[79px]">
         <h1 className="text-center text-[32px] leading-[37.76px] font-['Graphikthin'] tracking-[-0.64px] text-[#E5E5E5]">
           Get in touch with us
         </h1>
-        <div className="w-[842px] max-hamburger:w-full bg-[#FFFFFF1A] rounded-[14px] h-[707px] max-sm:h-auto max-sm:px-[20px] max-sm:py-[16px] px-[37px] py-[34px] flex flex-col gap-[32px]">
+        <div className="w-[842px] max-hamburger:w-full relative backdrop-blur-md bg-[#FFFFFF1A] rounded-[14px] h-[707px] max-sm:h-auto max-sm:px-[20px] max-sm:py-[16px] px-[37px] py-[34px] flex flex-col gap-[32px]">
           <div className="flex gap-[32px] max-sm:gap-5 max-hamburger:w-full max-sm:flex-col">
             <div className="max-hamburger:w-[50%] max-sm:w-full">
               <p className="text-[16px] leading-[19.2px] text-[#FFFFFF] mb-[16px]">
@@ -96,10 +101,12 @@ export default function Contact() {
                 Phone Number
               </p>
               <input
-                type="number"
+                type="text"
+                value={Phone_Number}
+                pattern="\d{0,11}"
                 placeholder="Enter your phone number"
-                onChange={(e) => setPhone_Number(e.target.value)}
-                className="py-[16px] pl-[17.51px] rounded-[4px] max-hamburger:w-full border-[1px] border-white w-[368px] bg-transparent text-[white] placeholder-[#ffffff99]"
+                onChange={handleChange}
+                className="py-[16px] pl-[17.51px] rounded-[4px] max-hamburger:w-full border-[1px] border-white w-[368px] bg-transparent text-white placeholder-[#ffffff99]"
               />
             </div>
           </div>
@@ -171,7 +178,9 @@ export default function Contact() {
                 <div className="bg-[#FFFFFFF2] max-hamburger:w-full absolute border-[1px] rounded-tl-[4px] rounded-[tr]-[4px] top-[89px] z-[22222] cursor-pointer">
                   <ul className=" max-hamburger:w-full">
                     <li
-                      onClick={() => handleOptionSelect("Choosing the right course")}
+                      onClick={() =>
+                        handleOptionSelect("Choosing the right course")
+                      }
                       className="pl-[17.91px] w-[368px] max-hamburger:w-full cursor-pointer text-black border-[1px] border-b-[#00000033] py-[16px] text-[17.95px] leading-[21.54px]"
                     >
                       Choosing the right course{" "}
@@ -228,7 +237,10 @@ export default function Contact() {
               ></textarea>
             </div>
           </div>
-          <button onClick={handleSubmit} className="text-[16px] w-[755px] max-hamburger:w-full h-[53px] flex justify-center items-center font-semibold relative bg-[#30E29D] text-black rounded-[8px] leading-[53px]">
+          <button
+            onClick={handleSubmit}
+            className="text-[16px] w-[755px] max-hamburger:w-full h-[53px] flex justify-center items-center font-semibold relative bg-[#30E29D] text-black rounded-[8px] leading-[53px]"
+          >
             Contact us{" "}
           </button>
         </div>

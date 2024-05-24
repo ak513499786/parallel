@@ -21,9 +21,9 @@ export default function Footer() {
           </div>
           <div className="w-[76px]">
             <h1 className="text-[#E5E5E5] opacity-80 text-base">Follow us</h1>
-            <p className="mt-[12px] text-[#E5E5E5] text-base hover:underline cursor-pointer hover:decoration-solid">
+            <a href={'https://www.instagram.com/parallel.learn/'} target="_blank" className="mt-[12px] text-[#E5E5E5] text-base hover:underline cursor-pointer hover:decoration-solid">
               Instagram
-            </p>
+            </a>
             <p className="mt-[4px] text-[#E5E5E5] text-base hover:underline cursor-pointer hover:decoration-solid">
               Linkedin
             </p>

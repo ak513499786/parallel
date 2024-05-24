@@ -27,7 +27,10 @@ export default function Courses() {
   return (
     <>
       <Navbar />
-      <main className="pl-[79.39px] max-md:px-[40px] max-sm:px-[20px] pr-[80.1px] pt-[88px] pb-[100px] max-hamburger:flex-col max-hamburger:gap-[30px] flex justify-between">
+      <div className="absolute w-full h-[822px] top-0 left-0 overflow-hidden">
+        <div className={style.fullgrid}></div>
+      </div>
+      <main className="pl-[79.39px] max-md:px-[40px] relative z-[2] max-sm:px-[20px] pr-[80.1px] pt-[88px] pb-[100px] max-hamburger:flex-col max-hamburger:gap-[30px] flex justify-between">
         <div className="mt-[27.66px] max-sm:mt-0">
           <h1 className="w-[650px] max-hamburger:w-full max-smalllaptop:w-[500px] font-['Graphikthin'] text-[64px] leading-[61.68px] tracking-[-2.56px] text-[#E5E5E5] font-light max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%]">
             Refer us among your friends to get a boost in placement preference{" "}
@@ -348,7 +351,7 @@ export default function Courses() {
           )}
         </div>
       </section>
-      {/* <Upskill /> */}
+      <Upskill />
       <Footer />
     </>
   );

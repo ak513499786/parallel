@@ -52,8 +52,16 @@ input[type="number"] {
   src: url("../public/GraphikRegular.woff2");
 }
 @font-face {
+  font-family: Graphikthinner;
+  src: url("../public/GraphikThin.woff");
+}
+@font-face {
   font-family: Graphikthin;
   src: url("../public/Graphik-Light-Trial.otf");
+}
+@font-face {
+  font-family: Graphikmedium;
+  src: url("../public/Graphik-Extralight-Trial.otf");
 }
 @layer utilities {
   .text-balance {
@@ -74,4 +82,7 @@ input::placeholder {
 .card:hover .button{
   background-color: #30E29D;
   color: #1F1F1F;
+}
+.button:hover{
+  box-shadow: 1px 1px 120px #30E29D;
 }

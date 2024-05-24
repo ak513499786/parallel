@@ -23,7 +23,7 @@ export default function Nocode() {
         <div className="w-[597.58px] max-hamburger:w-full max-hamburger:h-auto h-[374.04px] relative">
           <div className="bg-[#7627E8] blur-[128px] max-sm:right-0 w-[600px] h-[400px] right-[-30px] top-[-30px] absolute rounded-[100%] z-10"></div>
           <Image
-            src="/AI.png"
+            src="/low.svg"
             className="w-[100%] object-fit relative z-20 h-auto"
             width={377}
             height={236}
@@ -727,46 +727,52 @@ export default function Nocode() {
         </section>
       </div>
       <Success />
-      <section className="pt-[161px] max-md:py-20 max-bigscreen:px-[80px] max-md:px-[40px] max-sm:px-[20px]  relative pb-[229px] pl-[172px] pr-[80px] flex justify-between max-hamburger:flex-col max-xl:gap-[50px] items-center">
-        <div className="bg-[#7627E8] max-md:w-full max-md:left-0 blur-[128px] w-[453px] z-10 h-[400px] left-[140px] top-[171px] absolute rounded-[100%] z-10"></div>
+      <section className="pt-[161px] max-md:py-20 max-bigscreen:px-[80px] max-md:px-[40px] max-sm:px-[20px] relative pb-[229px] pl-[172px] pr-[80px] flex justify-between max-hamburger:flex-col max-xl:gap-[50px] items-center">
+        <div className="bg-[#7627E8] max-md:w-full max-md:left-0 blur-[256px] w-[403px] z-10 h-[300px] left-[140px] top-[171px] absolute rounded-[100%]"></div>
         <div
-          className={`px-[18px] relative max-md:w-full border-[1px] w-[413px] z-20 border-white rounded-[10px] py-[20px] ${style.cardbg}`}
+          className={`px-[18px] card relative w-[413px] max-biggerscreen:w-[33%] max-md:w-full max-smalllaptop:w-[48.3%] rounded-[10px] py-[20px] ${style.aicardborder}`}
         >
-          <Image
-            src="/AI.png"
-            className="w-[100%] h-auto"
-            width={377}
-            height={236}
-          />
-          <h1 className="mt-[20.87px] leading-[31.36px] mb-[17.13px] tracking-[-0.84px] font-['Graphikthin'] text-[#E5E5E5] text-[28px]">
-            Artificial Intelligence (AI/ML){" "}
-          </h1>
-          <div className="flex gap-[8px]">
-            <p className="max-sm:text-sm px-[8px] py-[4px] rounded-[5px] text-[#797979] text-base border-[1px] border-[#797979]">
-              AI{" "}
-            </p>
-            <p className="max-sm:text-sm px-[8px] py-[4px] rounded-[5px] text-[#797979] text-base border-[1px] border-[#797979]">
-              Beginner friendly{" "}
-            </p>
-          </div>
-          <div className="flex justify-between mt-[49px]">
-            <h1 className="text-[#ECECEC] leading-[28.8px] text-[24px] font-medium">
-              Free
-            </h1>
-            <p className="text-[#A1A1A1] text-[16px] leading-[19.2px] mt-[10px]">
-              &lt; 18 Hours
-            </p>
+          <div className="bg-black rounded-[9px]">
+            <div
+              className={`${style.aicardbg} px-[18px] relative rounded-[10px] py-[20px]`}
+            >
+              <Image
+                src="/AI.png"
+                className="w-[100%] relative z-20 h-auto"
+                width={377}
+                height={236}
+              />
+              <h1 className="mt-[20.87px] relative z-20 leading-[31.36px] mb-[17.13px] tracking-[-0.84px] font-['Graphikthin'] text-[#E5E5E5] text-[28px]">
+                Artificial Intelligence (AI/ML){" "}
+              </h1>
+              <div className="flex gap-[8px] relative z-20">
+                <p className="px-[8px] max-sm:px-[6px] py-[4px] rounded-[5px] text-[#797979] text-base max-sm:text-sm border-[1px] border-[#797979]">
+                  AI{" "}
+                </p>
+                <p className="px-[8px] max-sm:px-[6px] py-[4px] rounded-[5px] text-[#797979] text-base max-sm:text-sm border-[1px] border-[#797979]">
+                  Beginner friendly{" "}
+                </p>
+              </div>
+              <div className="flex justify-between relative z-20 mt-[49px]">
+                <h1 className="text-[#ECECEC] leading-[28.8px] text-[24px] font-medium">
+                  Free
+                </h1>
+                {/* <p className="text-[#A1A1A1] text-[16px] leading-[19.2px] mt-[10px]">
+                &lt; 18 Hours
+              </p> */}
+              </div>
+            </div>
           </div>
         </div>
         <div className="relative z-20">
           <p className="text-[20px] text-[#E5E5E5] leading-[19.28px] mb-[24px]">
-            Artificial Intelligence (AI/ML){" "}
+            Artificial Intelligence (AI/ML)
           </p>
-          <h1 className="text-[64px] max-hamburger:text-[45px] max-sm:text-[32px] text-[#E5E5E5] max-hamburger:leading-[120%] max-md:w-full w-[630px] max-smalllaptop:w-[450px] max-xl:w-[590px] leading-[61.68px] tracking-[-2.56px] font-['Graphikthin'] text-[#E5E5E5]">
+          <h1 className="text-[64px] max-hamburger:text-[45px] max-sm:text-[32px] text-[#E5E5E5] max-hamburger:leading-[120%] max-md:w-full w-[630px] max-smalllaptop:w-[450px] max-xl:w-[590px] leading-[61.68px] tracking-[-2.56px] font-['Graphikthin']">
             Start learning now, worry about fees after you get placed.
           </h1>
-          <button className="text-[16px] max-md:w-full font-semibold mt-[56px] relative bg-[#30E29D] text-black py-[8px] px-[24px] rounded-[8px] leading-[24px] py-[8px]">
-            Start Learning{" "}
+          <button className="text-[16px] max-md:w-full font-semibold mt-[56px] relative bg-[#30E29D] text-black py-[8px] px-[24px] rounded-[8px] leading-[24px]">
+            Start Learning
           </button>
         </div>
       </section>

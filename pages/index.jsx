@@ -80,9 +80,9 @@ export default function Home() {
       <main className="px-[80px] z-50 relative max-md:px-[40px] max-sm:px-[20px] max-md:pt-[50px] max-sm:pt-[30px] flex justify-between max-hamburger:items-center max-smalllaptop:gap-[20px] max-hamburger:flex-col pb-[29.5px] pt-[76px]">
         <div className="mt-[23px] max-hamburger:w-full max-md:mt-0">
           <div className="relative z-30 w-full">
-            <h1 className="w-[674.41px] text-[90px] max-hamburger:w-[100%]  max-smalllaptop:w-[510px] max-bigscreen:w-[676px] max-smalllaptop:tracking-[-4.5px] max-smalllaptop:text-[84px] max-sm:text-[64px] max-smallphone:text-[36px] max-sm:tracking-tight max-smalllaptop:leading-[102%] font-light tracking-[-5.22px] leading-[98.1px] text-[#E5E5E5] font-['Graphikthin'] mb-[20px]">
-              Upskill and get placed at
-              <span className="font-semibold"> ₹0.</span>
+            <h1 className="w-[674.41px] text-[90px] font-medium max-hamburger:w-[100%]  max-smalllaptop:w-[510px] max-bigscreen:w-[676px] max-smalllaptop:tracking-[-4.5px] max-smalllaptop:text-[84px] max-sm:text-[64px] max-smallphone:text-[36px] max-sm:tracking-tight max-smalllaptop:leading-[102%] font-light tracking-[-5.22px] leading-[98.1px] text-[#E5E5E5] font-['Graphikmedium'] font-light mb-[20px]">
+              Upskill and get placed at{" "}
+              <span className="font-['Graphik']">₹0.</span>
             </h1>
             <div className="flex gap-[12px] flex-wrap pt-[20px]">
               <p className="px-[8px] max-sm:px-[6px] py-[4px] rounded-[5px] text-[#797979] text-base max-sm:text-sm border-[1px] border-[#797979]">
@@ -98,7 +98,7 @@ export default function Home() {
                 Product Development{" "}
               </p>
             </div>
-            <p className="w-[393.32px] mt-[42px] max-sm:w-full text-[16px] leading-[24px] text-[#E0E0E0]">
+            <p className="w-[393.32px] font-['Graphikthin'] mt-[42px] max-sm:w-full text-[16px] leading-[24px] text-[#E0E0E0]">
               Pay us a fraction of your salary only after you get placed through
               our guaranteed placements.
             </p>
@@ -251,7 +251,9 @@ export default function Home() {
               <div className="bg-[#FFFFFFF2] absolute border-[1px] rounded-tl-[4px] rounded-[tr]-[4px] bottom-[54px] z-[22222] cursor-pointer">
                 <ul>
                   <li
-                    onClick={() => handleOptionSelect("Student enrolled in college")}
+                    onClick={() =>
+                      handleOptionSelect("Student enrolled in college")
+                    }
                     className="pl-[17.91px] max-sm:px-[10px] max-sm:text-base max-sm:w-full w-[368px] cursor-pointer text-black border-[1px] border-b-[#00000033] py-[16px] text-[17.95px] leading-[21.54px]"
                   >
                     Student enrolled in college{" "}
@@ -286,9 +288,9 @@ export default function Home() {
           </div>
           <button
             onClick={handleSubmit}
-            className="w-full h-[53px] bg-[#30E29D] rounded-[8px] font-bold text-[#292929] text-[16px] font-[19.2px]"
+            className="w-full h-[53px] bg-[#30E29D] rounded-[8px] font-medium text-[#292929] text-[16px] font-[19.2px]"
           >
-            Talk To Our Experts
+            <strong>Talk To Our Experts</strong>
           </button>
         </div>
       </main>
@@ -307,7 +309,9 @@ export default function Home() {
           </Link>
         </div>
         <div className="flex gap-[21px] mt-[67px] z-20 relative max-md:flex-col max-hamburger:flex-wrap max-hamburger:justify-center">
-          <div className={`${style.container}  w-[33%] max-hamburger:w-[45%] max-md:w-full`}>
+          <div
+            className={`${style.container} w-[33%] max-hamburger:w-[45%] max-md:w-full`}
+          >
             <div
               className={`pl-[28px] bg-[#1F1F1F] z-10 relative max-sm:px-[20px] max-sm:py-[16px] pb-[41.87px] pr-[29.85px] pt-[32px] rounded-[8px] ${style.bordergradient}`}
             >
@@ -322,7 +326,7 @@ export default function Home() {
               <h1 className="w-[340px] max-bigscreen:w-[310px] max-xl:w-[250px] max-md:w-full max-xl:mt-[30px] font-['Graphikthin'] font-normal mt-[53.05px] mb-[18.16px] text-[32px] max-xl:text-[24px] max-xl:leading-[120%] leading-[40.32px] tracking-[-0.32px]">
                 Courses on in-demand skills.{" "}
               </h1>
-              <p className="w-[355.15px] max-bigscreen:w-[310px] max-xl:w-full h-[136.91px] max-xl:h-[165px] max-lg:h-[200px] max-md:h-auto opacity-80 text-[#E0E0E0] text-base">
+              <p className="w-[355.15px] max-bigscreen:w-[310px] max-xl:w-full h-[136.91px] max-xl:h-[165px] max-lg:h-[200px] max-md:h-auto opacity-80 text-[#E0E0E0] text-base font-['Graphikthin']">
                 Choose from a catalogue of future-proof, in-demand skills to
                 upskill on. All of the courses are curated keeping
                 future-proofing in mind. Learn only what will stay relevant for
@@ -330,7 +334,9 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div className={`${style.container} w-[33%] max-hamburger:w-[45%] max-md:w-full`}>
+          <div
+            className={`${style.container} w-[33%] max-hamburger:w-[45%] max-md:w-full`}
+          >
             <div
               className={`pl-[28px] w-[33%]  max-sm:px-[20px] max-sm:py-[16px] pb-[41.87px] pr-[29.85px] pt-[32px] rounded-[8px] ${style.bordergradient}`}
             >
@@ -344,12 +350,12 @@ export default function Home() {
               </div>
               <h1 className="w-[340px] max-bigscreen:w-[310px] max-xl:w-[250px] max-md:w-full max-xl:mt-[30px] font-['Graphikthin'] font-normal mt-[53.05px] mb-[18.16px] text-[32px] max-xl:text-[24px] max-xl:leading-[120%] leading-[40.32px] tracking-[-0.32px]">
                 100
-                <span className="font-['Graphik'] font-light opacity-90">
+                <span className="font-['Graphik'] opacity-90 font-light">
                   %
                 </span>{" "}
                 placement guarantee.{" "}
               </h1>
-              <p className="w-[355.15px] max-bigscreen:w-[310px] max-xl:w-full h-[136.91px] max-xl:h-[165px] max-lg:h-[200px] max-md:h-auto opacity-80 text-[#E0E0E0] text-base">
+              <p className="w-[355.15px] max-bigscreen:w-[310px] max-xl:w-full h-[136.91px] max-xl:h-[165px] max-lg:h-[200px] max-md:h-auto opacity-80 text-[#E0E0E0] text-base font-['Graphikthin']">
                 With our 100
                 <span className="font-['Graphik'] font-light opacity-90">
                   %
@@ -360,7 +366,9 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div className={`${style.container}  w-[33%] max-hamburger:w-[45%] max-md:w-full`}>
+          <div
+            className={`${style.container} w-[33%] max-hamburger:w-[45%] max-md:w-full`}
+          >
             <div
               className={`pl-[28px] w-[33%] backdrop-blur-2xl max-sm:px-[20px] max-sm:py-[16px] pb-[41.87px] pr-[29.85px] pt-[32px] rounded-[8px] ${style.bordergradient}`}
             >
@@ -375,7 +383,7 @@ export default function Home() {
               <h1 className="w-[340px] max-bigscreen:w-[310px] max-xl:w-[230px] max-md:w-full max-xl:mt-[30px] font-['Graphikthin'] font-normal mt-[53.05px] mb-[18.16px] text-[32px] max-xl:text-[24px] max-xl:leading-[120%] leading-[40.32px] tracking-[-0.32px]">
                 Become job ready in 6 months.{" "}
               </h1>
-              <p className="w-[355.15px] max-bigscreen:w-[310px] max-xl:w-full h-[136.91px] max-xl:h-[165px] max-lg:h-[200px] max-md:h-auto opacity-80 text-[#E0E0E0] text-base">
+              <p className="w-[355.15px] max-bigscreen:w-[310px] max-xl:w-full h-[136.91px] max-xl:h-[165px] max-lg:h-[200px] max-md:h-auto opacity-80 text-[#E0E0E0] text-base font-['Graphikthin']">
                 Our courses are designed for individuals who are serious about
                 making a quick and impactful career change. We understand the
                 urgency, and we're here to deliver.
@@ -417,20 +425,22 @@ export default function Home() {
         </Link>
       </div>
       <div className="pt-[102.57px] max-sm:py-20 max-sm:px-[20px] max-md:px-[40px] relative z-20 pb-[62.43px] pl-[80px] pr-[79px]">
-        <div className="flex justify-between max-lg:gap-[50px]">
+        <div className="flex justify-between items-start max-lg:gap-[50px]">
           <p className="w-[903.7px] max-hamburger:w-full font-['Graphikthin'] text-[64px] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] font-light leading-[61.68px] tracking-[-2.56px] text-[#E5E5E5]">
             Courses with 100
             <span className="font-['Graphik'] font-light">%</span> job guarantee
             at an unbeatable price.{" "}
           </p>
           <Link href={"/courses"}>
-            <button className="w-[205px] max-md:hidden h-[53px] bg-[#30E29D] rounded-[8px] font-bold text-[#292929] text-[16px] font-[19.2px]">
+            <button className="w-[205px] mt-[5px] max-md:hidden h-[53px] bg-[#30E29D] rounded-[8px] font-bold text-[#292929] text-[16px] font-[19.2px]">
               Explore courses{" "}
             </button>
           </Link>
         </div>
         <div className="flex gap-[21px] max-md:flex-col mt-[67px] max-hamburger:flex-wrap max-hamburger:justify-center">
-          <div className={`${style.container}  w-[33%] max-hamburger:w-[45%] max-md:w-full`}>
+          <div
+            className={`${style.container}  w-[33%] max-hamburger:w-[45%] max-md:w-full`}
+          >
             <div
               className={`pl-[28px] max-sm:px-[20px] max-sm:py-[16px] pb-[41.87px] pr-[29.85px] pt-[32px] rounded-[8px] ${style.bordergradient}`}
             >
@@ -445,14 +455,16 @@ export default function Home() {
               <h1 className="w-[340px] max-bigscreen:w-[310px] max-xl:w-[250px] max-md:w-full max-xl:mt-[30px] font-['Graphikthin'] font-normal mt-[53.05px] mb-[18.16px] text-[32px] max-xl:text-[24px] max-xl:leading-[120%] leading-[40.32px] tracking-[-0.32px]">
                 Pay after getting placed.
               </h1>
-              <p className="w-[355.15px] max-bigscreen:w-[310px] max-xl:w-full h-[136.91px] max-xl:h-[165px] max-lg:h-[200px] max-md:h-auto opacity-80 text-[#E0E0E0] text-base">
+              <p className="w-[355.15px] max-bigscreen:w-[310px] max-xl:w-full h-[136.91px] max-xl:h-[165px] max-lg:h-[200px] max-md:h-auto opacity-80 text-[#E0E0E0] text-base font-['Graphikthin']">
                 Start learning right away without having to worry about
                 finances. We believe in making quality education affordable. We
                 ask a small percentage of your CTC once you get placed.
               </p>
             </div>
           </div>
-          <div className={`${style.container}  w-[33%] max-hamburger:w-[45%] max-md:w-full`}>
+          <div
+            className={`${style.container}  w-[33%] max-hamburger:w-[45%] max-md:w-full`}
+          >
             <div
               className={`pl-[28px] max-sm:px-[20px] max-sm:py-[16px] pb-[41.87px] pr-[29.85px] pt-[32px] rounded-[8px] ${style.bordergradient}`}
             >
@@ -467,14 +479,16 @@ export default function Home() {
               <h1 className="w-[340px] max-bigscreen:w-[310px] max-xl:w-[250px] max-md:w-full max-xl:mt-[30px] font-['Graphikthin'] font-normal mt-[53.05px] mb-[18.16px] text-[32px] max-xl:text-[24px] max-xl:leading-[120%] leading-[40.32px] tracking-[-0.32px]">
                 Courses curated by industry experts.{" "}
               </h1>
-              <p className="w-[355.15px] max-bigscreen:w-[310px] max-xl:w-full h-[136.91px] max-xl:h-[165px] max-lg:h-[200px] max-md:h-auto opacity-80 text-[#E0E0E0] text-base">
+              <p className="w-[355.15px] max-bigscreen:w-[310px] max-xl:w-full h-[136.91px] max-xl:h-[165px] max-lg:h-[200px] max-md:h-auto opacity-80 text-[#E0E0E0] text-base font-['Graphikthin']">
                 We brought together a band of industry experts who believe in
                 the same cause as we do. Learn from thought leaders with 10+
                 years of experience.
               </p>
             </div>
           </div>
-          <div className={`${style.container}  w-[33%] max-hamburger:w-[45%] max-md:w-full`}>
+          <div
+            className={`${style.container}  w-[33%] max-hamburger:w-[45%] max-md:w-full`}
+          >
             <div
               className={`pl-[28px] max-sm:px-[20px] max-sm:py-[16px] pb-[41.87px] pr-[29.85px] pt-[32px] rounded-[8px] ${style.bordergradient}`}
             >
@@ -489,7 +503,7 @@ export default function Home() {
               <h1 className="w-[340px] max-bigscreen:w-[310px] max-xl:w-[250px] max-md:w-full max-xl:mt-[30px] font-['Graphikthin'] font-normal mt-[53.05px] mb-[18.16px] text-[32px] max-xl:text-[24px] max-xl:leading-[120%] leading-[40.32px] tracking-[-0.32px]">
                 Placement support through our partners.{" "}
               </h1>
-              <p className="w-[355.15px] max-bigscreen:w-[310px] max-xl:w-full h-[136.91px] max-xl:h-[165px] max-lg:h-[200px] max-md:h-auto opacity-80 text-[#E0E0E0] text-base">
+              <p className="w-[355.15px] max-bigscreen:w-[310px] max-xl:w-full h-[136.91px] max-xl:h-[165px] max-lg:h-[200px] max-md:h-auto opacity-80 text-[#E0E0E0] text-base font-['Graphikthin']">
                 We help you all the way through from upskilling to getting
                 placed. Parallel is partnered with 50+ companies to ease the
                 placement process. Get placed in companies that set the trend
@@ -510,155 +524,176 @@ export default function Home() {
         </h1>
         <div className="pl-[2px] justify-center mt-[93px] flex flex-wrap gap-x-[94px] gap-y-[84px] max-sm:gap-[20px]">
           <div
-            className={`px-[18px] card border-[1px] relative w-[33%] backdrop-blur-lg max-md:w-full max-smalllaptop:w-[48.3%] border-white rounded-[10px] py-[20px] ${style.cardbg}`}
+            className={`px-[18px] card relative w-[413px] max-biggerscreen:w-[33%] max-md:w-full max-smalllaptop:w-[48.3%] rounded-[10px] py-[20px] ${style.aicardborder}`}
           >
-            <div className="bg-[#0E16F580] absolute blur-3xl z-10 top-0 w-[100%] left-0 h-[350px]"></div>
-            <div className="bg-[#1BC45E3D] absolute blur-2xl z-10 bottom-0 w-[100%] left-0 h-[100px]"></div>
-
-            <Image
-              src="/Frame 46.png"
-              className="w-[100%] relative z-20 h-auto"
-              width={377}
-              height={236}
-            />
-            <h1 className="mt-[20.87px] leading-[31.36px] mb-[17.13px] tracking-[-0.84px] font-['Graphikthin'] text-[#E5E5E5] text-[28px]">
-              No-code, Low-code Development{" "}
-            </h1>
-            <div className="flex gap-[8px]">
-              <p className="px-[8px] max-sm:px-[6px] py-[4px] rounded-[5px] text-[#797979] text-base max-sm:text-sm border-[1px] border-[#797979]">
-                No-code, Low-code{" "}
-              </p>
-              <p className="px-[8px] max-sm:px-[6px] py-[4px] rounded-[5px] text-[#797979] text-base max-sm:text-sm border-[1px] border-[#797979]">
-                Beginner friendly{" "}
-              </p>
-            </div>
-            <div className="flex justify-between mt-[49px]">
-              <h1 className="text-[#ECECEC] leading-[28.8px] text-[24px] font-medium">
-                Free
-              </h1>
-              {/* <p className="text-[#A1A1A1] text-[16px] leading-[19.2px] mt-[10px]">
+            <div className="bg-black rounded-[9px]">
+              <div
+                className={`${style.lccardbg} px-[18px] relative rounded-[10px] py-[20px]`}
+              >
+                <Image
+                  src="/Frame 46.png"
+                  className="w-[100%] relative z-20 h-auto"
+                  width={377}
+                  height={236}
+                />
+                <h1 className="mt-[20.87px] leading-[31.36px] mb-[17.13px] tracking-[-0.84px] font-['Graphikthin'] text-[#E5E5E5] text-[28px]">
+                  No-code, Low-code Development{" "}
+                </h1>
+                <div className="flex gap-[8px]">
+                  <p className="px-[8px] max-sm:px-[6px] py-[4px] rounded-[5px] text-[#797979] text-base max-sm:text-sm border-[1px] border-[#797979]">
+                    No-code, Low-code{" "}
+                  </p>
+                  <p className="px-[8px] max-sm:px-[6px] py-[4px] rounded-[5px] text-[#797979] text-base max-sm:text-sm border-[1px] border-[#797979]">
+                    Beginner friendly{" "}
+                  </p>
+                </div>
+                <div className="flex justify-between mt-[19px]">
+                  <h1 className="text-[#ECECEC] leading-[28.8px] text-[24px] font-medium">
+                    Free
+                  </h1>
+                  {/* <p className="text-[#A1A1A1] text-[16px] leading-[19.2px] mt-[10px]">
                 &lt; 18 Hours
               </p> */}
+                </div>
+                <Link
+                  className="relative z-30"
+                  href={"/courses/low-code-no-code"}
+                >
+                  <button className="w-[100%] mt-[15px] h-[53px] bg-[transparent] rounded-[8px] text-[#30E29D] transition-all button font-semibold border-[1px] border-[#30E29D] text-[16px] font-[19.2px]">
+                    Coming Soon{" "}
+                  </button>
+                </Link>
+              </div>
             </div>
-            <Link className="relative z-30" href={"/courses/low-code-no-code"}>
-              <button className="w-[100%] mt-[15px] h-[53px] bg-[transparent] rounded-[8px] text-[#30E29D] transition-all button font-semibold border-[1px] border-[#30E29D] text-[16px] font-[19.2px]">
-                Coming Soon{" "}
-              </button>
-            </Link>
           </div>
           <div
-            className={`px-[18px] border-[1px] card relative w-[33%] backdrop-md max-md:w-full max-smalllaptop:w-[48.3%] border-white rounded-[10px] py-[20px] ${style.cardbg}`}
+            className={`px-[18px] card relative w-[413px] max-biggerscreen:w-[33%] max-md:w-full max-smalllaptop:w-[48.3%] rounded-[10px] py-[20px] ${style.aicardborder}`}
           >
-            <div className="bg-[#7627E880] absolute blur-3xl z-10 top-0 w-[100%] left-0 h-[350px]"></div>
-            <div className="bg-[#1BC45E3D] absolute blur-2xl z-10 bottom-0 w-[100%] left-0 h-[100px]"></div>
-            <Image
-              src="/AI.png"
-              className="w-[100%] relative z-20 h-auto"
-              width={377}
-              height={236}
-            />
-            <h1 className="mt-[20.87px] leading-[31.36px] mb-[17.13px] tracking-[-0.84px] font-['Graphikthin'] text-[#E5E5E5] text-[28px]">
-              Artificial Intelligence (AI/ML){" "}
-            </h1>
-            <div className="flex gap-[8px]">
-              <p className="px-[8px] max-sm:px-[6px] py-[4px] rounded-[5px] text-[#797979] text-base max-sm:text-sm border-[1px] border-[#797979]">
-                AI{" "}
-              </p>
-              <p className="px-[8px] max-sm:px-[6px] py-[4px] rounded-[5px] text-[#797979] text-base max-sm:text-sm border-[1px] border-[#797979]">
-                Beginner friendly{" "}
-              </p>
-            </div>
-            <div className="flex justify-between mt-[49px]">
-              <h1 className="text-[#ECECEC] leading-[28.8px] text-[24px] font-medium">
-                Free
-              </h1>
-              {/* <p className="text-[#A1A1A1] text-[16px] leading-[19.2px] mt-[10px]">
+            <div className="bg-black rounded-[9px]">
+              <div
+                className={`${style.aicardbg} px-[18px] relative rounded-[10px] py-[20px]`}
+              >
+                <Image
+                  src="/AI.png"
+                  className="w-[100%] relative z-20 h-auto"
+                  width={377}
+                  height={236}
+                />
+                <h1 className="mt-[20.87px] relative z-20 leading-[31.36px] mb-[17.13px] tracking-[-0.84px] font-['Graphikthin'] text-[#E5E5E5] text-[28px]">
+                  Artificial Intelligence (AI/ML){" "}
+                </h1>
+                <div className="flex gap-[8px] relative z-20">
+                  <p className="px-[8px] max-sm:px-[6px] py-[4px] rounded-[5px] text-[#797979] text-base max-sm:text-sm border-[1px] border-[#797979]">
+                    AI{" "}
+                  </p>
+                  <p className="px-[8px] max-sm:px-[6px] py-[4px] rounded-[5px] text-[#797979] text-base max-sm:text-sm border-[1px] border-[#797979]">
+                    Beginner friendly{" "}
+                  </p>
+                </div>
+                <div className="flex justify-between relative z-20 mt-[49px]">
+                  <h1 className="text-[#ECECEC] leading-[28.8px] text-[24px] font-medium">
+                    Free
+                  </h1>
+                  {/* <p className="text-[#A1A1A1] text-[16px] leading-[19.2px] mt-[10px]">
                 &lt; 18 Hours
               </p> */}
+                </div>
+                <Link
+                  className="relative z-30"
+                  href={"/courses/artificial-intelligence"}
+                >
+                  <button className="w-[100%] mt-[15px] h-[53px] bg-[transparent] rounded-[8px] text-[#30E29D] transition-all font-semibold button border-[1px] border-[#30E29D] text-[16px] font-[19.2px]">
+                    Coming Soon{" "}
+                  </button>
+                </Link>
+              </div>
             </div>
-            <Link
-              className="relative z-30"
-              href={"/courses/artificial-intelligence"}
-            >
-              <button className="w-[100%] mt-[15px] h-[53px] bg-[transparent] rounded-[8px] text-[#30E29D] transition-all font-semibold button border-[1px] border-[#30E29D] text-[16px] font-[19.2px]">
-                Coming Soon{" "}
-              </button>
-            </Link>
           </div>
           <div
-            className={`px-[18px] border-[1px] card relative w-[33%] backdrop-blur-sm max-md:w-full max-smalllaptop:w-[48.3%] border-white rounded-[10px] py-[20px] ${style.cardbg}`}
+            className={`px-[18px] card relative w-[413px] max-biggerscreen:w-[33%] max-md:w-full max-smalllaptop:w-[48.3%] border-white rounded-[10px] py-[20px] ${style.aicardborder}`}
           >
-            <div className="bg-[#D82F2F45] absolute blur-3xl z-10 top-0 w-[100%] left-0 h-[350px]"></div>
-            <div className="bg-[#1BC45E3D] absolute blur-2xl z-10 bottom-0 w-[100%] left-0 h-[100px]"></div>
-            <Image
-              src="/data.png"
-              className="w-[100%] relative z-20 h-auto"
-              width={377}
-              height={236}
-            />
-            <h1 className="mt-[20.87px] leading-[31.36px] mb-[17.13px] tracking-[-0.84px] font-['Graphikthin'] text-[#E5E5E5] text-[28px]">
-              Data Analytics{" "}
-            </h1>
-            <div className="flex gap-[8px]">
-              <p className="px-[8px] max-sm:px-[6px] py-[4px] rounded-[5px] text-[#797979] text-base max-sm:text-sm border-[1px] border-[#797979]">
-                Data Analytics{" "}
-              </p>
-              <p className="px-[8px] max-sm:px-[6px] py-[4px] rounded-[5px] text-[#797979] text-base max-sm:text-sm border-[1px] border-[#797979]">
-                Beginner friendly{" "}
-              </p>
-            </div>
-            <div className="flex justify-between mt-[49px]">
-              <h1 className="text-[#ECECEC] leading-[28.8px] text-[24px] font-medium">
-                Free
-              </h1>
-              {/* <p className="text-[#A1A1A1] text-[16px] leading-[19.2px] mt-[10px]">
+            <div className="bg-black rounded-[9px]">
+              <div
+                className={`${style.dacardbg} px-[18px] relative rounded-[10px] py-[20px]`}
+              >
+                <Image
+                  src="/data.png"
+                  className="w-[100%] relative z-20 h-auto"
+                  width={377}
+                  height={236}
+                />
+                <h1 className="mt-[20.87px] leading-[31.36px] mb-[17.13px] tracking-[-0.84px] font-['Graphikthin'] text-[#E5E5E5] text-[28px]">
+                  Data Analytics{" "}
+                </h1>
+                <div className="flex gap-[8px]">
+                  <p className="px-[8px] max-sm:px-[6px] py-[4px] rounded-[5px] text-[#797979] text-base max-sm:text-sm border-[1px] border-[#797979]">
+                    Data Analytics{" "}
+                  </p>
+                  <p className="px-[8px] max-sm:px-[6px] py-[4px] rounded-[5px] text-[#797979] text-base max-sm:text-sm border-[1px] border-[#797979]">
+                    Beginner friendly{" "}
+                  </p>
+                </div>
+                <div className="flex justify-between mt-[49px]">
+                  <h1 className="text-[#ECECEC] leading-[28.8px] text-[24px] font-medium">
+                    Free
+                  </h1>
+                  {/* <p className="text-[#A1A1A1] text-[16px] leading-[19.2px] mt-[10px]">
                 &lt; 18 Hours
               </p> */}
+                </div>
+                <Link
+                  className="relative z-30"
+                  href={"/courses/data-analytics"}
+                >
+                  <button className="w-[100%] mt-[15px] h-[53px] bg-[transparent] rounded-[8px] text-[#30E29D] transition-all font-semibold button border-[1px] border-[#30E29D] text-[16px] font-[19.2px]">
+                    Coming Soon{" "}
+                  </button>
+                </Link>
+              </div>
             </div>
-            <Link className="relative z-30" href={"/courses/data-analytics"}>
-              <button className="w-[100%] mt-[15px] h-[53px] bg-[transparent] rounded-[8px] text-[#30E29D] transition-all font-semibold button border-[1px] border-[#30E29D] text-[16px] font-[19.2px]">
-                Coming Soon{" "}
-              </button>
-            </Link>
           </div>
           <div
-            className={`px-[18px] relative border-[1px] card w-[33%] max-md:w-full max-smalllaptop:w-[48.3%] border-white rounded-[10px] py-[20px] backdrop-blur ${style.cardfsbg}`}
+            className={`px-[18px] relative card w-[413px] max-biggerscreen:w-[33%] max-md:w-full max-smalllaptop:w-[48.3%] border-white rounded-[10px] py-[20px] ${style.aicardborder}`}
           >
-            <div className="bg-[#1BC45E3D] absolute blur-xl z-10 top-0 w-[100%] left-0 h-[100px]"></div>
-            <div className="bg-[#1BC45E3D] absolute blur-3xl z-10 bottom-0 w-[100%] left-0 h-[100px]"></div>
-            <Image
-              src="/fullstack.png"
-              className="w-[100%] relative z-20 h-auto"
-              width={377}
-              height={236}
-            />
-            <h1 className="mt-[20.87px] leading-[31.36px] mb-[17.13px] tracking-[-0.84px] font-['Graphikthin'] text-[#E5E5E5] text-[28px]">
-              Full Stack Development{" "}
-            </h1>
-            <div className="flex gap-[8px]">
-              <p className="px-[8px] max-sm:px-[6px] py-[4px] rounded-[5px] text-[#797979] text-base max-sm:text-sm border-[1px] border-[#797979]">
-                Software Development{" "}
-              </p>
-              <p className="px-[8px] max-sm:px-[6px] py-[4px] rounded-[5px] text-[#797979] text-base max-sm:text-sm border-[1px] border-[#797979]">
-                Beginner friendly{" "}
-              </p>
-            </div>
-            <div className="flex justify-between mt-[49px]">
-              <h1 className="text-[#ECECEC] leading-[28.8px] text-[24px] font-medium">
-                Free
-              </h1>
-              {/* <p className="text-[#A1A1A1] text-[16px] leading-[19.2px] mt-[10px]">
+            <div className="bg-black rounded-[9px]">
+              <div
+                className={`${style.fscardbg} px-[18px] relative rounded-[10px] py-[20px]`}
+              >
+                <Image
+                  src="/fullstack.png"
+                  className="w-[100%] relative z-20 h-auto"
+                  width={377}
+                  height={236}
+                />
+                <h1 className="mt-[20.87px] leading-[31.36px] mb-[17.13px] tracking-[-0.84px] font-['Graphikthin'] text-[#E5E5E5] text-[28px]">
+                  Full Stack Development{" "}
+                </h1>
+                <div className="flex gap-[8px]">
+                  <p className="px-[8px] max-sm:px-[6px] py-[4px] rounded-[5px] text-[#797979] text-base max-sm:text-sm border-[1px] border-[#797979]">
+                    Software Development{" "}
+                  </p>
+                  <p className="px-[8px] max-sm:px-[6px] py-[4px] rounded-[5px] text-[#797979] text-base max-sm:text-sm border-[1px] border-[#797979]">
+                    Beginner friendly{" "}
+                  </p>
+                </div>
+                <div className="flex justify-between mt-[49px]">
+                  <h1 className="text-[#ECECEC] leading-[28.8px] text-[24px] font-medium">
+                    Free
+                  </h1>
+                  {/* <p className="text-[#A1A1A1] text-[16px] leading-[19.2px] mt-[10px]">
                 &lt; 18 Hours
               </p> */}
+                </div>
+                <Link
+                  className="relative z-30"
+                  href={"/courses/full-stack-development"}
+                >
+                  <button className="w-[100%] mt-[15px] h-[53px] bg-[transparent] rounded-[8px] text-[#30E29D] button transition-all font-semibold border-[1px] border-[#30E29D] text-[16px] font-[19.2px]">
+                    Coming Soon{" "}
+                  </button>
+                </Link>
+              </div>
             </div>
-            <Link
-              className="relative z-30"
-              href={"/courses/full-stack-development"}
-            >
-              <button className="w-[100%] mt-[15px] h-[53px] bg-[transparent] rounded-[8px] text-[#30E29D] button transition-all font-semibold border-[1px] border-[#30E29D] text-[16px] font-[19.2px]">
-                Coming Soon{" "}
-              </button>
-            </Link>
           </div>
         </div>
       </div>
@@ -743,7 +778,9 @@ export default function Home() {
           Learn from leading industry experts
         </h1>
         <div className="flex gap-[21px] max-md:flex-col mt-[67px] max-hamburger:flex-wrap max-hamburger:justify-center">
-          <div className={`${style.container}  w-[33%] max-hamburger:w-[45%] max-md:w-full`}>
+          <div
+            className={`${style.container}  w-[33%] max-hamburger:w-[45%] max-md:w-full`}
+          >
             <div
               className={`pl-[28px] max-sm:px-[20px] max-sm:py-[16px] pb-[41.87px] pr-[29.85px] pt-[32px] rounded-[8px] ${style.bordergradient}`}
             >
@@ -763,7 +800,9 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div className={`${style.container}  w-[33%] max-hamburger:w-[45%] max-md:w-full`}>
+          <div
+            className={`${style.container}  w-[33%] max-hamburger:w-[45%] max-md:w-full`}
+          >
             <div
               className={`pl-[28px] max-sm:px-[20px] max-sm:py-[16px] pb-[41.87px] pr-[29.85px] pt-[32px] rounded-[8px] ${style.bordergradient}`}
             >
@@ -783,7 +822,9 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div className={`${style.container}  w-[33%] max-hamburger:w-[45%] max-md:w-full`}>
+          <div
+            className={`${style.container}  w-[33%] max-hamburger:w-[45%] max-md:w-full`}
+          >
             <div
               className={`pl-[28px] max-sm:px-[20px] max-sm:py-[16px] pb-[41.87px] pr-[29.85px] pt-[32px] rounded-[8px] ${style.bordergradient}`}
             >
