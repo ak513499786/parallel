@@ -144,7 +144,7 @@ export default function Workshop() {
                 <Image
                   src="/workshop4.svg"
                   width={107.16}
-                  className="w-[290.96px] mt-[5.52px] max-hamburger:w-full max-hamburger:h-auto h-[225.36px]"
+                  className="w-[290.96px] mt-[5.52px] h-[225.36px]"
                   height={107.16}
                 />
                 <div>
@@ -181,7 +181,7 @@ export default function Workshop() {
                 <Image
                   src="/cube.svg"
                   width={107.16}
-                  className="w-[290.96px] max-hamburger:w-full max-hamburger:h-auto h-[225.36px]"
+                  className="w-[290.96px] h-[225.36px]"
                   height={107.16}
                 />
                 <div>
@@ -216,13 +216,13 @@ export default function Workshop() {
                 <Image
                   src="/abstract1.svg"
                   width={107.64}
-                  className="w-[107.64px] ml-[26.86px] mt-[28.34px] max-hamburger:w-full max-hamburger:h-auto h-[126.64px] mb-[34.06px]"
+                  className="w-[107.64px] ml-[26.86px] mt-[28.34px] h-[126.64px] mb-[34.06px]"
                   height={126.64}
                 />
-                <h1 className="text-[24px] ml-[27.5px] w-[340px] mb-[19.66px] leading-[30.64px] text-[#E0E0E0] tracking-[-0.24px] h-[60px]">
+                <h1 className="text-[24px] ml-[27.5px] w-[340px] mb-[19.66px] leading-[30.64px] text-[#E0E0E0] tracking-[-0.24px] h-[60px] max-sm:w-[calc(100%-50px)] max-sm:h-auto">
                   Insider knowledge on current market trends
                 </h1>
-                <p className="h-[112px] w-[355px] ml-[27.5px] text-base text-[#E0E0E0]">
+                <p className="h-[112px] w-[355px] ml-[27.5px] text-base text-[#E0E0E0] max-sm:w-[calc(100%-50px)]">
                   Get never heard before information on the current job market
                   trends, where it is heading in the future.
                 </p>
@@ -237,13 +237,13 @@ export default function Workshop() {
                 <Image
                   src="/abstract1.svg"
                   width={107.64}
-                  className="w-[107.64px] ml-[26.86px] mt-[28.34px] max-hamburger:w-full max-hamburger:h-auto h-[126.64px] mb-[34.06px]"
+                  className="w-[107.64px] ml-[26.86px] mt-[28.34px] h-[126.64px] mb-[34.06px]"
                   height={126.64}
                 />
-                <h1 className="text-[24px] ml-[27.5px] w-[340px] mb-[19.66px] leading-[30.64px] text-[#E0E0E0] tracking-[-0.24px] h-[60px]">
+                <h1 className="text-[24px] ml-[27.5px] w-[355px] mb-[19.66px] leading-[30.64px] text-[#E0E0E0] tracking-[-0.24px] h-[60px]">
                   Information on how AI will affect the upcoming workforce{" "}
                 </h1>
-                <p className="h-[112px] w-[355px] ml-[27.5px] text-base text-[#E0E0E0]">
+                <p className="h-[112px] w-[355px] ml-[27.5px] text-base text-[#E0E0E0] max-sm:w-[calc(100%-50px)]">
                   Learn the impact of AI, how you should leverage its potential
                   instead of being afraid of getting replaced by it.
                 </p>
@@ -258,13 +258,13 @@ export default function Workshop() {
                 <Image
                   src="/abstract3.svg"
                   width={180.64}
-                  className="w-[180.64px] mt-[28.34px] max-hamburger:w-full max-hamburger:h-auto h-[126.64px] mb-[34.06px]"
+                  className="w-[180.64px] mt-[28.34px] h-[126.64px] mb-[34.06px]"
                   height={126.64}
                 />
-                <h1 className="text-[24px] ml-[27.5px] w-[340px] mb-[19.66px] leading-[30.64px] text-[#E0E0E0] tracking-[-0.24px] h-[60px]">
+                <h1 className="text-[24px] ml-[27.5px] w-[340px] mb-[19.66px] leading-[30.64px] text-[#E0E0E0] tracking-[-0.24px] h-[60px] max-sm:w-[calc(100%-50px)] max-sm:h-auto">
                   Introduction to Prompt Engineering{" "}
                 </h1>
-                <p className="h-[112px] w-[355px] ml-[27.5px] text-base text-[#E0E0E0]">
+                <p className="h-[112px] w-[355px] ml-[27.5px] text-base text-[#E0E0E0] max-sm:w-[calc(100%-50px)]">
                   Prompts is the way you communicate with an AI. Learn how to do
                   it the best.
                 </p>
@@ -279,13 +279,13 @@ export default function Workshop() {
                 <Image
                   src="/abstract3.svg"
                   width={180.64}
-                  className="w-[180.64px] mt-[28.34px] max-hamburger:w-full max-hamburger:h-auto h-[126.64px] mb-[34.06px]"
+                  className="w-[180.64px] mt-[28.34px] h-[126.64px] mb-[34.06px]"
                   height={126.64}
                 />
-                <h1 className="text-[24px] ml-[27.5px] w-[340px] mb-[19.66px] leading-[30.64px] text-[#E0E0E0] tracking-[-0.24px] h-[60px]">
+                <h1 className="text-[24px] ml-[27.5px] w-[340px] mb-[19.66px] leading-[30.64px] text-[#E0E0E0] tracking-[-0.24px] h-[60px] max-sm:w-[calc(100%-50px)] max-sm:h-auto">
                   4-step structured formula to writing prompts{" "}
                 </h1>
-                <p className="h-[112px] w-[355px] ml-[27.5px] text-base text-[#E0E0E0]">
+                <p className="h-[112px] w-[355px] ml-[27.5px] text-base text-[#E0E0E0] max-sm:w-[calc(100%-50px)]">
                   Writing good prompts is not a matter of luck. Learn how to use
                   the full potential of AI through prompts.
                 </p>
@@ -300,13 +300,13 @@ export default function Workshop() {
                 <Image
                   src="/abstart3.svg"
                   width={118.64}
-                  className="w-[118.64] ml-[27.5px] mt-[36px] max-hamburger:w-full max-hamburger:h-auto h-[118.64] mb-[34.06px]"
+                  className="w-[118.64] ml-[27.5px] mt-[36px] h-[118.64] mb-[34.06px]"
                   height={118.64}
                 />
-                <h1 className="text-[24px] ml-[27.5px] h-[60px] w-[340px] mb-[19.66px] leading-[30.64px] text-[#E0E0E0] tracking-[-0.24px]">
+                <h1 className="text-[24px] ml-[27.5px] h-[60px] w-[340px] mb-[19.66px] leading-[30.64px] text-[#E0E0E0] tracking-[-0.24px] max-sm:w-[calc(100%-50px)] max-sm:h-auto">
                   Use AI to write better code{" "}
                 </h1>
-                <p className="h-[112px] w-[355px] ml-[27.5px] text-base text-[#E0E0E0]">
+                <p className="h-[112px] w-[355px] ml-[27.5px] text-base text-[#E0E0E0] max-sm:w-[calc(100%-50px)]">
                   Writing a code is much easier with an assistant. Learn how to
                   leverage leading AI assistants like GitHub Co-pilot to up your
                   coding game.
@@ -322,13 +322,13 @@ export default function Workshop() {
                 <Image
                   src="/abstart3.svg"
                   width={118.64}
-                  className="w-[118.64] ml-[27.5px] mt-[36px] max-hamburger:w-full max-hamburger:h-auto h-[118.64] mb-[34.06px]"
+                  className="w-[118.64] ml-[27.5px] mt-[36px] h-[118.64] mb-[34.06px]"
                   height={118.64}
                 />
-                <h1 className="text-[24px] ml-[27.5px] h-[60px] w-[340px] mb-[19.66px] leading-[30.64px] text-[#E0E0E0] tracking-[-0.24px]">
+                <h1 className="text-[24px] ml-[27.5px] h-[60px] w-[340px] mb-[19.66px] leading-[30.64px] text-[#E0E0E0] tracking-[-0.24px] max-sm:w-[calc(100%-50px)] max-sm:h-auto">
                   Faster content curation through ChatGPT, Gemini{" "}
                 </h1>
-                <p className="h-[112px] w-[355px] ml-[27.5px] text-base text-[#E0E0E0]">
+                <p className="h-[112px] w-[355px] ml-[27.5px] text-base text-[#E0E0E0] max-sm:w-[calc(100%-50px)]">
                   Generate content like it’s written by a copywriter working at
                   Google, Apple! Use it to write blogs, articles, emails,
                   messages and much more.
@@ -344,13 +344,13 @@ export default function Workshop() {
                 <Image
                   src="/abstart3.svg"
                   width={118.64}
-                  className="w-[118.64] ml-[27.5px] mt-[36px] max-hamburger:w-full max-hamburger:h-auto h-[118.64] mb-[34.06px]"
+                  className="w-[118.64] ml-[27.5px] mt-[36px] h-[118.64] mb-[34.06px]"
                   height={118.64}
                 />
-                <h1 className="text-[24px] ml-[27.5px] h-[60px] w-[340px] mb-[19.66px] leading-[30.64px] text-[#E0E0E0] tracking-[-0.24px]">
+                <h1 className="text-[24px] ml-[27.5px] h-[60px] w-[340px] mb-[19.66px] leading-[30.64px] text-[#E0E0E0] tracking-[-0.24px] max-sm:w-[calc(100%-50px)] max-sm:h-auto">
                   Generate breath-taking imagery using AI{" "}
                 </h1>
-                <p className="h-[112px] w-[355px] ml-[27.5px] text-base text-[#E0E0E0]">
+                <p className="h-[112px] w-[355px] ml-[27.5px] text-base text-[#E0E0E0] max-sm:w-[calc(100%-50px)]">
                   Images are always a good way to stand out from the crowd.
                   Learn how to generate images that do not look like they’ve
                   been generated by AI.
@@ -366,13 +366,13 @@ export default function Workshop() {
                 <Image
                   src="/abstart3.svg"
                   width={118.64}
-                  className="w-[118.64] ml-[27.5px] mt-[36px] max-hamburger:w-full max-hamburger:h-auto h-[118.64] mb-[34.06px]"
+                  className="w-[118.64] ml-[27.5px] mt-[36px] h-[118.64] mb-[34.06px]"
                   height={118.64}
                 />
-                <h1 className="text-[24px] ml-[27.5px] h-[60px] w-[340px] mb-[19.66px] leading-[30.64px] text-[#E0E0E0] tracking-[-0.24px]">
+                <h1 className="text-[24px] ml-[27.5px] h-[60px] w-[340px] mb-[19.66px] leading-[30.64px] text-[#E0E0E0] tracking-[-0.24px] max-sm:w-[calc(100%-50px)] max-sm:h-auto">
                   Research on a topic accurately{" "}
                 </h1>
-                <p className="h-[112px] w-[355px] ml-[27.5px] text-base text-[#E0E0E0]">
+                <p className="h-[112px] w-[355px] ml-[27.5px] text-base text-[#E0E0E0] max-sm:w-[calc(100%-50px)]">
                   LLMs like ChatGPT, Gemini often generate inaccurate data when
                   it comes to research. Use AI tools like Perplexity to research
                   along with the citations.
@@ -388,13 +388,13 @@ export default function Workshop() {
                 <Image
                   src="/abstart3.svg"
                   width={118.64}
-                  className="w-[118.64] ml-[27.5px] mt-[36px] max-hamburger:w-full max-hamburger:h-auto h-[118.64] mb-[34.06px]"
+                  className="w-[118.64] ml-[27.5px] mt-[36px] h-[118.64] mb-[34.06px]"
                   height={118.64}
                 />
-                <h1 className="text-[24px] ml-[27.5px] h-[60px] w-[340px] mb-[19.66px] leading-[30.64px] text-[#E0E0E0] tracking-[-0.24px]">
+                <h1 className="text-[24px] ml-[27.5px] h-[60px] w-[340px] mb-[19.66px] leading-[30.64px] text-[#E0E0E0] tracking-[-0.24px] max-sm:w-[calc(100%-50px)] max-sm:h-auto">
                   Build hire-worthy resume using AI{" "}
                 </h1>
-                <p className="h-[112px] w-[355px] ml-[27.5px] text-base text-[#E0E0E0]">
+                <p className="h-[112px] w-[355px] ml-[27.5px] text-base text-[#E0E0E0] max-sm:w-[calc(100%-50px)]">
                   Let AI do all the heavy-lifting while building your resume.
                   Get it to build a resume that’ll grab recruiters'’ attention.
                 </p>
@@ -409,13 +409,13 @@ export default function Workshop() {
                 <Image
                   src="/abstart3.svg"
                   width={118.64}
-                  className="w-[118.64] ml-[27.5px] mt-[36px] max-hamburger:w-full max-hamburger:h-auto h-[118.64] mb-[34.06px]"
+                  className="w-[118.64] ml-[27.5px] mt-[36px] h-[118.64] mb-[34.06px]"
                   height={118.64}
                 />
-                <h1 className="text-[24px] ml-[27.5px] h-[60px] w-[340px] mb-[19.66px] leading-[30.64px] text-[#E0E0E0] tracking-[-0.24px]">
+                <h1 className="text-[24px] ml-[27.5px] h-[60px] w-[340px] mb-[19.66px] leading-[30.64px] text-[#E0E0E0] tracking-[-0.24px] max-sm:w-[calc(100%-50px)] max-sm:h-auto">
                   Build a personal website only using prompts{" "}
                 </h1>
-                <p className="h-[112px] w-[355px] ml-[27.5px] text-base text-[#E0E0E0]">
+                <p className="h-[112px] w-[355px] ml-[27.5px] text-base text-[#E0E0E0] max-sm:w-[calc(100%-50px)]">
                   Use all the knowledge taught in this workshop to build your
                   personal website only using prompts. Not a single line of code
                   is required.
@@ -431,13 +431,13 @@ export default function Workshop() {
                 <Image
                   src="/abstart4.svg"
                   width={118.64}
-                  className="w-[118.64] ml-[27.5px] mt-[36px] max-hamburger:w-full max-hamburger:h-auto h-[118.64] mb-[34.06px]"
+                  className="w-[118.64] ml-[27.5px] mt-[36px] h-[118.64] mb-[34.06px]"
                   height={118.64}
                 />
-                <h1 className="text-[24px] ml-[27.5px] h-[60px] w-[340px] mb-[19.66px] leading-[30.64px] text-[#E0E0E0] tracking-[-0.24px]">
+                <h1 className="text-[24px] ml-[27.5px] h-[60px] w-[340px] mb-[19.66px] leading-[30.64px] text-[#E0E0E0] tracking-[-0.24px] max-sm:w-[calc(100%-50px)] max-sm:h-auto">
                   Curate your resume using AI{" "}
                 </h1>
-                <p className="h-[112px] w-[355px] ml-[27.5px] text-base text-[#E0E0E0]">
+                <p className="h-[112px] w-[355px] ml-[27.5px] text-base text-[#E0E0E0] max-sm:w-[calc(100%-50px)]">
                   Learn to tweak your AI generated resume to match individual
                   job openings to better your chances of getting hired.
                 </p>
@@ -452,13 +452,13 @@ export default function Workshop() {
                 <Image
                   src="/abstart4.svg"
                   width={118.64}
-                  className="w-[118.64] ml-[27.5px] mt-[36px] max-hamburger:w-full max-hamburger:h-auto h-[118.64] mb-[34.06px]"
+                  className="w-[118.64] ml-[27.5px] mt-[36px] h-[118.64] mb-[34.06px]"
                   height={118.64}
                 />
-                <h1 className="text-[24px] ml-[27.5px] h-[60px] w-[355px] mb-[19.66px] leading-[30.64px] text-[#E0E0E0] tracking-[-0.24px]">
+                <h1 className="text-[24px] ml-[27.5px] h-[60px] w-[355px] mb-[19.66px] leading-[30.64px] text-[#E0E0E0] tracking-[-0.24px] max-sm:w-[calc(100%-50px)] max-sm:h-auto">
                   Easy and lesser known hacks to finding jobs through LinkedIn{" "}
                 </h1>
-                <p className="h-[112px] w-[355px] ml-[27.5px] text-base text-[#E0E0E0]">
+                <p className="h-[112px] w-[355px] ml-[27.5px] text-base text-[#E0E0E0] max-sm:w-[calc(100%-50px)]">
                   Finding a job through LinkedIn is easy if you know what you
                   are doing. Let us teach you what you should be looking out
                   for.
@@ -474,13 +474,13 @@ export default function Workshop() {
                 <Image
                   src="/abstart4.svg"
                   width={118.64}
-                  className="w-[118.64] ml-[27.5px] mt-[36px] max-hamburger:w-full max-hamburger:h-auto h-[118.64] mb-[34.06px]"
+                  className="w-[118.64] ml-[27.5px] mt-[36px] h-[118.64] mb-[34.06px]"
                   height={118.64}
                 />
-                <h1 className="text-[24px] ml-[27.5px] h-[60px] w-[340px] mb-[19.66px] leading-[30.64px] text-[#E0E0E0] tracking-[-0.24px]">
+                <h1 className="text-[24px] ml-[27.5px] h-[60px] w-[340px] mb-[19.66px] leading-[30.64px] text-[#E0E0E0] tracking-[-0.24px] max-sm:w-[calc(100%-50px)] max-sm:h-auto">
                   Networking with AI assistance{" "}
                 </h1>
-                <p className="h-[112px] w-[355px] ml-[27.5px] text-base text-[#E0E0E0]">
+                <p className="h-[112px] w-[355px] ml-[27.5px] text-base text-[#E0E0E0] max-sm:w-[calc(100%-50px)]">
                   Use AI tools to connect with relevant professionals in your
                   field based on your skills and career goals.
                 </p>
@@ -495,13 +495,13 @@ export default function Workshop() {
                 <Image
                   src="/abstart4.svg"
                   width={118.64}
-                  className="w-[118.64] ml-[27.5px] mt-[36px] max-hamburger:w-full max-hamburger:h-auto h-[118.64] mb-[34.06px]"
+                  className="w-[118.64] ml-[27.5px] mt-[36px] h-[118.64] mb-[34.06px]"
                   height={118.64}
                 />
-                <h1 className="text-[24px] ml-[27.5px] h-[60px] w-[340px] mb-[19.66px] leading-[30.64px] text-[#E0E0E0] tracking-[-0.24px]">
+                <h1 className="text-[24px] ml-[27.5px] h-[60px] w-[340px] mb-[19.66px] leading-[30.64px] text-[#E0E0E0] tracking-[-0.24px] max-sm:w-[calc(100%-50px)] max-sm:h-auto">
                   Write engaging emails in 4 steps{" "}
                 </h1>
-                <p className="h-[112px] w-[355px] ml-[27.5px] text-base text-[#E0E0E0]">
+                <p className="h-[112px] w-[355px] ml-[27.5px] text-base text-[#E0E0E0] max-sm:w-[calc(100%-50px)]">
                   Learn to write engaging emails in 4 simple steps. Let AI do
                   most of the work while you curate the email and send it to the
                   right people.

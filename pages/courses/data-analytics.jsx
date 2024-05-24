@@ -80,15 +80,15 @@ export default function Nocode() {
       </main>
       <div className="relative">
         <div className="w-[100%] h-[2550px] absolute overflow-hidden">
-          <div className="absolute right-[-241.85px]  top-[986px] h-[1100px] blur-[208px] w-[500px] bg-[#2E2AF3]"></div>
+          <div className="absolute right-[-241.85px] z-20 top-[986px] h-[1100px] blur-[208px] w-[500px] bg-[#2E2AF3]"></div>
         </div>
         <section className="pt-[124.98px] relative px-[80px] max-sm:px-[20px] max-md:px-[40px] pb-[119px]">
           <div className="flex justify-center">
-            <h1 className="w-[936.01px] text-[102.17px] max-smalllaptop:tracking-[-2.56px] max-smalllaptop:text-[84px] max-sm:text-[64px] max-smallphone:text-[36px] max-sm:tracking-tight max-smalllaptop:leading-[102%] text-center font-['Graphikthin'] leading-[104.21px] text-[#E5E5E5] tracking-[-5.1px]">
-              No-code, Low-code is here to stay
+            <h1 className="w-[990.01px] text-[102.17px] max-smalllaptop:tracking-[-2.56px] max-smalllaptop:text-[84px] max-sm:text-[64px] max-smallphone:text-[36px] max-sm:tracking-tight max-smalllaptop:leading-[102%] text-center font-['Graphikthin'] leading-[104.21px] text-[#E5E5E5] tracking-[-5.1px]">
+              Pursue an interesting career in Data Analytics
             </h1>
           </div>
-          <div className="absolute w-[100%] h-[1550px] top-0 left-0 overflow-x-hidden">
+          <div className="absolute z-10 w-[100%] h-[1550px] top-0 left-0 overflow-x-hidden">
             <div className={style.backgroundboxworkshop}></div>
           </div>
           <div className="flex relative z-20 max-hamburger:flex-wrap max-hamburger:justify-center gap-[20px] mt-[71.02px]">
@@ -627,9 +627,107 @@ export default function Nocode() {
             </div>
           </div>
         </section>
+        <section className="pt-[124.98px] z-10 relative px-[80px] max-sm:px-[20px] max-md:px-[40px] max-md:py-20 pb-[119px]">
+          <h1 className="w-[630px] text-[#E5E5E5] max-md:w-full text-[64px] font-['Graphikthin'] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] leading-[61.68px] tracking-[-2.56px]">
+            What you will need to finish this course.{" "}
+          </h1>
+          <div className="flex max-hamburger:flex-wrap z-20 relative max-hamburger:justify-center gap-[20px] mt-[71.02px]">
+            <div
+              className={`${style.container} w-[23.8%] max-hamburger:w-[45%] max-md:w-full`}
+            >
+              <div
+                className={`pl-[28px] h-[363px] max-xl:h-[400px] bg-[#FFFFFF0D] pt-[17px] pl-[19.41px] rounded-[8px] ${style.bordergradient}`}
+              >
+                <div className="bg-[#1F1F1F] w-[124.35px] h-[124.15px] flex justify-center items-center border-[1px] rounded-[6px] border-[#FFFFFF66] ">
+                  {" "}
+                  <Image
+                    src="/book-reading--book-reading-learning.svg"
+                    width={51.73}
+                    height={51.73}
+                  />
+                </div>
+                <p className="w-full opacity-80 text-[#E0E0E0] text-base mt-[40.35px]">
+                  Certificate{" "}
+                </p>
+                <h1 className="max-biggerscreen:w-full w-[276.87px] font-['Graphikthin'] font-normal mt-[13px] mb-[58.16px] text-[28px] leading-[35.28px] tracking-[-0.96px] text-[#E0E0E0]">
+                  12th pass, Diploma, and College Graduates{" "}
+                </h1>
+              </div>
+            </div>
+            <div
+              className={`${style.container} w-[23.8%] max-hamburger:w-[45%] max-md:w-full`}
+            >
+              <div
+                className={`pl-[28px] h-[363px] max-xl:h-[400px] bg-[#FFFFFF0D] pt-[17px] pl-[19.41px] rounded-[8px] ${style.bordergradient}`}
+              >
+                <div className="bg-[#1F1F1F] w-[124.35px] h-[124.15px] flex justify-center items-center border-[1px] rounded-[6px] border-[#FFFFFF66]">
+                  {" "}
+                  <Image
+                    src="/book-reading--book-reading-learning.svg"
+                    width={51.73}
+                    height={51.73}
+                  />
+                </div>
+                <p className="w-full opacity-80 text-[#E0E0E0] text-base mt-[40.35px]">
+                  Workstation
+                </p>
+                <h1 className="max-biggerscreen:w-full w-[254.38px] font-['Graphikthin'] font-normal mt-[13px] mb-[58.16px] text-[28px] leading-[35.28px] tracking-[-0.96px] text-[#E0E0E0]">
+                  A laptop/desktop with internet connectivity.{" "}
+                </h1>
+              </div>
+            </div>
+            <div
+              className={`${style.container} w-[23.8%] max-hamburger:w-[45%] max-md:w-full`}
+            >
+              <div
+                className={`pl-[28px] h-[363px] max-xl:h-[400px] bg-[#FFFFFF0D] pt-[17px] pl-[19.41px] rounded-[8px] ${style.bordergradient}`}
+              >
+                <div className="bg-[#1F1F1F] w-[124.35px] h-[124.15px] flex justify-center items-center] border-[1px] rounded-[6px] border-[#FFFFFF66] ">
+                  {" "}
+                  <Image
+                    src="/bag-suitcase-2--product-business-briefcase.svg"
+                    width={51.73}
+                    height={51.73}
+                  />
+                </div>
+                <p className="w-full opacity-80 text-[#E0E0E0] text-base mt-[40.35px]">
+                  Verification
+                </p>
+                <h1 className="max-biggerscreen:w-full w-[263.6px] font-['Graphikthin'] font-normal mt-[13px] mb-[4px] text-[28px] leading-[35.28px] tracking-[-0.96px] text-[#E0E0E0]">
+                  Any ID that identifies nationality{" "}
+                </h1>
+                <p className="text-[#E0E0E0]">
+                  Any ONE of these - Aadhaar, Voter ID, Passport, PAN Card.
+                </p>
+              </div>
+            </div>
+            <div
+              className={`${style.container} w-[23.8%] max-hamburger:w-[45%] max-md:w-full`}
+            >
+              <div
+                className={`pl-[28px] h-[363px] max-xl:h-[400px] pt-[17px] pl-[19.41px] bg-[#FFFFFF0D] rounded-[8px] ${style.bordergradient}`}
+              >
+                <div className="bg-[#1F1F1F] w-[124.35px] h-[124.15px] flex justify-center items-center border-[1px] rounded-[6px] border-[#FFFFFF66] ">
+                  {" "}
+                  <Image
+                    src="/Calendar-3--Streamline-Ultimate.svg.svg"
+                    width={60}
+                    height={60}
+                  />
+                </div>
+                <p className="w-full opacity-80 text-[#E0E0E0] text-base mt-[40.35px]">
+                  Communication
+                </p>
+                <h1 className="max-biggerscreen:w-full w-[276.87px] font-['Graphikthin'] font-normal mt-[13px] mb-[18.16px] text-[28px] leading-[35.28px] tracking-[-0.96px] text-[#E0E0E0]">
+                  Ability to Read, Write, Speak Basic English{" "}
+                </h1>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
       <Success />
-      <section className="pt-[161px] max-md:py-20 max-bigscreen:px-[80px] max-md:px-[40px] max-sm:px-[20px]  relative pb-[229px] pl-[172px] pr-[80px] flex justify-between max-hamburger:flex-col max-xl:gap-[50px] items-center">
+      <section className="pt-[161px] max-md:py-20 max-bigscreen:px-[80px] max-md:px-[40px] max-sm:px-[20px]  relative z-10 pb-[229px] pl-[172px] pr-[80px] flex justify-between max-hamburger:flex-col max-xl:gap-[50px] items-center">
         <div className="bg-[#D82F2F] max-md:w-full max-md:left-0 blur-[256px] w-[403px] z-10 h-[300px] left-[140px] top-[171px] absolute rounded-[100%] z-10"></div>
         <div
           className={`px-[18px] card relative w-[413px] max-biggerscreen:w-[33%] max-md:w-full max-smalllaptop:w-[48.3%] border-white rounded-[10px] py-[20px] ${style.aicardborder}`}

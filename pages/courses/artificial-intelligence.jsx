@@ -80,18 +80,18 @@ export default function Nocode() {
       </main>
       <div className="relative">
         <div className="w-[100%] h-[2550px] absolute overflow-hidden">
-          <div className="absolute right-[-241.85px]  top-[986px] h-[1100px] blur-[208px] w-[500px] bg-[#2E2AF3]"></div>
+          <div className="absolute z-20 right-[-241.85px]  top-[986px] h-[1100px] blur-[208px] w-[500px] bg-[#2E2AF3]"></div>
         </div>
         <section className="pt-[124.98px] relative px-[80px] max-sm:px-[20px] max-md:px-[40px] pb-[119px]">
           <div className="flex justify-center">
             <h1 className="w-[936.01px] text-[102.17px] max-smalllaptop:tracking-[-2.56px] max-smalllaptop:text-[84px] max-sm:text-[64px] max-smallphone:text-[36px] max-sm:tracking-tight max-smalllaptop:leading-[102%] text-center font-['Graphikthin'] leading-[104.21px] text-[#E5E5E5] tracking-[-5.1px]">
-              No-code, Low-code is here to stay
+              The only way to beat AI is to use it as a tool
             </h1>
           </div>
           <div className="absolute w-[100%] h-[1550px] top-0 left-0 overflow-x-hidden">
-            <div className={style.backgroundboxworkshop}></div>
+            <div className={style.fullgrid}></div>
           </div>
-          <div className="flex relative z-20 max-hamburger:flex-wrap max-hamburger:justify-center gap-[20px] mt-[71.02px]">
+          <div className="flex relative z-10 max-hamburger:flex-wrap max-hamburger:justify-center gap-[20px] mt-[71.02px]">
             <div
               className={`${style.container} w-[23.8%] max-hamburger:w-[45%] max-md:w-full`}
             >
@@ -627,7 +627,7 @@ export default function Nocode() {
             </div>
           </div>
         </section>
-        <section className="pt-[124.98px] relative px-[80px] max-sm:px-[20px] max-md:px-[40px] max-md:py-20 pb-[119px]">
+        <section className="pt-[124.98px] z-10 relative px-[80px] max-sm:px-[20px] max-md:px-[40px] max-md:py-20 pb-[119px]">
           <h1 className="w-[630px] text-[#E5E5E5] max-md:w-full text-[64px] font-['Graphikthin'] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] leading-[61.68px] tracking-[-2.56px]">
             What you will need to finish this course.{" "}
           </h1>

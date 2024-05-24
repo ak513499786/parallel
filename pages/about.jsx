@@ -12,7 +12,7 @@ export default function About() {
       <div className="absolute w-[100vw] h-[822px] top-0 left-0 overflow-hidden">
         <div className={style.fullgrid}></div>
       </div>
-      <main className="flex justify-center pt-[190.35px] max-hamburger:pt-[100px] max-md:pt-[80px] max-sm:pt-[50px] px-[80px] max-md:px-[40px] max-sm:px-[20px] max-md:pb-0 pb-[220.65px]">
+      <main className="flex justify-center pt-[190.35px] max-hamburger:pt-[100px] max-md:pt-[80px] max-sm:pt-[80px] px-[80px] max-md:px-[40px] max-sm:px-[20px] max-md:pb-[50px] pb-[220.65px]">
         <h1 className="w-[1016.16px] font-['Graphikthin'] text-[104.57px] leading-[106.66px] tracking-[-5.2px] text-center max-smalllaptop:tracking-[-2.56px] max-smalllaptop:text-[84px] max-sm:text-[64px] max-smallphone:text-[36px] max-sm:tracking-tight max-smalllaptop:leading-[102%]">
           We want to make upskilling accessible to{" "}
           <span className="font-bold font-['Graphik']">everyone.</span>
