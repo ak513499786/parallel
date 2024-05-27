@@ -306,7 +306,7 @@ export default function Home() {
       <div className="pt-[102.57px] max-sm:py-20 max-sm:px-[20px] max-md:px-[40px] relative pb-[102.43px] pl-[80px] pr-[79px]">
         <div className="flex justify-between relative z-50 max-smalllaptop:gap-[50px]">
           <p className="w-[665px] font-['Graphikthin'] text-[64px] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] font-light leading-[61.68px] tracking-[-2.56px] text-[#E5E5E5]">
-            In a career gap and need to brush up your skills?{" "}
+            In a career gap? Need to brush up your skills?{" "}
           </p>
           <Link href={"/courses"}>
             <button className="w-[205px] max-md:hidden h-[53px] bg-[#30E29D] rounded-[8px] font-bold text-[#292929] text-[16px] font-[19.2px]">
