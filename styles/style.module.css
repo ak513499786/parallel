@@ -23,13 +23,15 @@
   height: 711px;
 }
 .backgroundbox {
-  background-image: url("../public/Group\ 1.svg");
+  background-image: url("../public/full-grid.svg");
   width: 1080px;
   position: absolute;
   top: 101px;
-  right: -420px;
+  right: 0px;
   height: 710px;
   background-repeat: no-repeat;
+  mix-blend-mode: color-dodge;
+  z-index: 22;
 }
 .fullgrid {
   background-image: url("../public/full-grid.svg");
@@ -138,7 +140,7 @@
   width: 1080px;
   position: absolute;
   top: 0px;
-  right: -420px;
+  right: 0px;
   z-index: 1;
   height: 811px;
   background-repeat: no-repeat;
@@ -310,7 +312,6 @@
         rgba(118, 39, 232, 0.5) 0%,
         rgba(99, 33, 229, 0) 100%
       )
-      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
     linear-gradient(
       0.91deg,
       rgba(48, 226, 157, 0.1) -13.79%,
@@ -330,7 +331,6 @@
         rgba(27, 196, 94, 0.24) 0%,
         rgba(12, 244, 35, 0) 100%
       )
-      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
     linear-gradient(
       0.91deg,
       rgba(48, 226, 157, 0.1) -13.79%,
@@ -350,7 +350,6 @@
         rgba(216, 47, 47, 0.27) 0%,
         rgba(220, 56, 56, 0.02) 100%
       )
-      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
     linear-gradient(
       0.91deg,
       rgba(48, 226, 157, 0.1) -13.79%,

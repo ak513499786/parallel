@@ -314,7 +314,7 @@ export default function Home() {
             </button>
           </Link>
         </div>
-        <div className="flex gap-[21px] mt-[67px] z-20 relative max-md:flex-col max-hamburger:flex-wrap max-hamburger:justify-center">
+        <div className="flex gap-[21px] mt-[67px] z-20  relative max-md:flex-col max-hamburger:flex-wrap max-hamburger:justify-center">
           <div
             className={`${style.container} w-[33%] max-hamburger:w-[45%] max-md:w-full`}
           >

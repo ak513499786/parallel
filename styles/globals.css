@@ -72,6 +72,9 @@ input[type="number"] {
     text-wrap: balance;
   }
 }
+.mixblend{
+  mix-blend-mode: color-dodge;
+}
 input {
   outline: none;
   font-size: 17.51px;
