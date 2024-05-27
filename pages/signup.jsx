@@ -23,15 +23,15 @@ export default function Signup() {
         <div className="flex justify-center max-md:justify-between max-md:w-full gap-[18px]">
           <Link
             href={"#"}
-            className="text-[16px] w-[140px] h-[53px] flex justify-center items-center font-semibold relative bg-[#30E29D] text-black rounded-[8px] leading-[20px]"
+            className="w-[140px] h-[53px] flex justify-center py-[15.4px] relative bg-[#30E29D] rounded-[8px]"
           >
-            Sign up
+            <p className="text-[16px] font-semibold text-black leading-[19.2px]">Sign up</p>
           </Link>
           <Link
             href={"#"}
-            className="text-[16px] w-[140px] h-[53px] flex justify-center items-center font-semibold relative border-[1px] text-[#30E29D] border-[#30E29D] rounded-[8px] leading-[20px]"
+            className="text-[16px] w-[140px] h-[53px] flex justify-center py-[15.4px] font-semibold relative border-[1px] text-[#30E29D] border-[#30E29D] rounded-[8px] leading-[20px]"
           >
-            <p>Log in </p>
+            <p className="text-[16px] font-semibold text-[#30E29D] leading-[19.2px] ">Log in </p>
           </Link>
         </div>
       </div>

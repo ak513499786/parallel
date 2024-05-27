@@ -3,10 +3,24 @@
   width: 914.18px;
   position: absolute;
   top: 0;
-  right: -301.85px;
-  height: 1200px;
-  border-radius: 0 0 0 50%;
-  filter: blur(40px);
+  right: -142.12px;
+  height: 822px;
+}
+.backgroundcolor2 {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+  width: 914.18px;
+  position: absolute;
+  top: 0;
+  right: -141.85px;
+  height: 711px;
+}
+.backgroundcolor3 {
+  background: linear-gradient(270deg, #2e2af3 0%, rgba(0, 0, 0, 0) 100%);
+  width: 914.18px;
+  position: absolute;
+  top: 0;
+  right: -141.85px;
+  height: 711px;
 }
 .backgroundbox {
   background-image: url("../public/Group\ 1.svg");
@@ -118,16 +132,6 @@
       rgba(255, 255, 255, 0.05)
     ),
     linear-gradient(180deg, rgba(0, 194, 255, 0.2) 0%, rgba(0, 0, 0, 0) 100%);
-}
-.backgroundcolor2 {
-  background-image: url("../public/section\ 2\ color.png");
-  width: 914.18px;
-  position: absolute;
-  top: 0;
-  right: -147px;
-  z-index: 1;
-  height: 811px;
-  background-repeat: no-repeat;
 }
 .backgroundbox2 {
   background-image: url("../public/section\ 2\ box.png");

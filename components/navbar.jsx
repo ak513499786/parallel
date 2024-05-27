@@ -93,7 +93,7 @@ export default function Navbar() {
   }, [openHamburger, width, height]);
 
   return (
-    <nav className="px-[80px] flex bg-[#0000000D] backdrop-blur max-md:px-[40px] max-sm:px-[20px] max-hamburger:items-center top-0 sticky z-[99] justify-between pt-[39px] pb-[22px]">
+    <nav className="px-[80px] flex bg-[#00000033] backdrop-blur max-md:px-[40px] max-sm:px-[20px] max-hamburger:items-center top-0 sticky z-[99] justify-between pt-[39px] pb-[22px]">
       <Link href={"/"} className="flex gap-[2.74px]">
         <Image
           src="/Frame 96.svg"

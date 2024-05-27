@@ -63,6 +63,10 @@ input[type="number"] {
   font-family: Graphikmedium;
   src: url("../public/Graphik-Extralight-Trial.otf");
 }
+@font-face {
+  font-family: Clash;
+  src: url("../public/ClashDisplayBold.otf");
+}
 @layer utilities {
   .text-balance {
     text-wrap: balance;

@@ -55,8 +55,14 @@ export default function Contact() {
   return (
     <>
       <Navbar />
-      <div className="absolute z-30 w-[100%] top-[-400px] h-[1422px] top-0 left-0 overflow-hidden">
+      <div className="absolute z-30 w-[100%] h-[822px] top-[-500px] overflow-hidden">
         <div className={style.backgroundcolor}></div>
+      </div>
+      <div className="absolute z-20 w-[100%] h-[822px] top-[322px] right-0 overflow-hidden">
+        <div className={style.backgroundcolor2}></div>
+      </div>
+      <div className="absolute z-10 w-[100%] h-[822px] top-[322px] right-0 overflow-hidden">
+        <div className={style.backgroundcolor3}></div>
       </div>
       <div className="absolute w-[100%] h-[822px] top-0 left-0 overflow-hidden">
         <div className={style.backgroundbox}></div>

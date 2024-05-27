@@ -90,20 +90,22 @@ export default function Workshop() {
                     use AI to increase your productivity.
                   </p>
                   <div className="flex gap-[8px]">
-                    <p className="py-[4px] px-[8px] text-[#30FF51] text-base font-['Graphikthin'] border-[#30FF51] opacity-60 border-[1px] rounded-[5px]">
-                      15 minutes{" "}
-                    </p>
+                    <div className="pb-[6.4px] pt-[4.8px] px-[8px] font-['Graphikthin'] border-[#30FF51] opacity-60 border-[1px] rounded-[5px]">
+                      <p className="text-[#30FF51] leading-[19.2px] text-[16px]">
+                        15 minutes
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <h1 className="text-[276.38px] max-sm:text-[130px] max-sm:leading-[80px] leading-[230px] text-[#022301] font-bold">
+          <h1 className="text-[276.38px] font-['Clash'] max-sm:text-[130px] max-sm:leading-[80px] leading-[230px] text-[#022301] font-bold">
             1
           </h1>
         </div>
         <div className="flex ml-[58.09px] max-hamburger:items-start max-hamburger:flex-row gap-[84px] max-md:flex-col max-md:items-end max-smalllaptop:flex-col max-smalllaptop:items-end max-xl:ml-0 max-xl:gap-[32px] max-bigscreen:ml-[30px] my-[80.56px] items-center justify-between">
-          <h1 className="text-[276.38px] max-sm:text-[130px] max-sm:leading-[80px] leading-[230px] text-[#262002] font-bold">
+          <h1 className="text-[276.38px] font-['Clash'] max-sm:text-[130px] max-sm:leading-[80px] leading-[230px] text-[#262002] font-bold">
             2
           </h1>{" "}
           <div
@@ -126,9 +128,11 @@ export default function Workshop() {
                     do exactly what you want it to do.{" "}
                   </p>
                   <div className="flex gap-[8px]">
-                    <p className="py-[4px] px-[8px] text-[#FFDB06] text-base font-['Graphikthin'] border-[#FFDB06] opacity-60 border-[1px] rounded-[5px]">
-                      15 minutes{" "}
-                    </p>
+                    <div className="pb-[6.4px] pt-[4.8px] px-[8px] font-['Graphikthin'] border-[#FFDB06] opacity-60 border-[1px] rounded-[5px]">
+                      <p className="text-[#FFDB06] leading-[19.2px] text-[16px]">
+                        15 minutes
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -156,23 +160,28 @@ export default function Workshop() {
                     This session will be tailored to each branch.
                   </p>
                   <div className="flex gap-[8px]">
-                    <p className="py-[4px] px-[8px] text-[#FF01E6] text-base font-['Graphikthin'] border-[#FF01E6] opacity-60 border-[1px] rounded-[5px]">
-                      30 minutes{" "}
-                    </p>
-                    <p className="py-[4px] px-[8px] text-[#FF01E6] text-base font-['Graphikthin'] border-[#FF01E6] opacity-60 border-[1px] rounded-[5px]">
-                      Tailored to each branch{" "}
-                    </p>
+                    <div className="pb-[6.4px] pt-[4.8px] px-[8px] font-['Graphikthin'] border-[#FF01E6] opacity-60 border-[1px] rounded-[5px]">
+                      <p className="text-[#FF01E6] leading-[19.2px] text-[16px]">
+                        30 minutes{" "}
+                      </p>
+                    </div>
+                    <div className="pb-[6.4px] pt-[4.8px] px-[8px] font-['Graphikthin'] border-[#FF01E6] opacity-60 border-[1px] rounded-[5px]">
+                      <p className="text-[#FF01E6] leading-[19.2px] text-[16px]">
+                        {" "}
+                        Tailored to each branch{" "}
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <h1 className="text-[276.38px] max-sm:text-[130px] max-sm:leading-[80px] leading-[230px] text-[#210016] font-bold">
+          <h1 className="text-[276.38px] font-['Clash'] max-sm:text-[130px] max-sm:leading-[80px] leading-[230px] text-[#210016] font-bold">
             3
           </h1>
         </div>
         <div className="flex ml-[58.09px] max-hamburger:items-start max-hamburger:flex-row max-md:flex-col max-md:items-end max-smalllaptop:flex-col max-smalllaptop:items-end gap-[84px] max-xl:ml-0 max-xl:gap-[32px] max-bigscreen:ml-[30px] my-[80.56px] items-center justify-between">
-          <h1 className="text-[276.38px] max-sm:text-[130px] max-sm:leading-[80px] leading-[230px] text-[#021E22] font-bold">
+          <h1 className="text-[276.38px] font-['Clash'] max-sm:text-[130px] max-sm:leading-[80px] leading-[230px] text-[#021E22] font-bold">
             4
           </h1>{" "}
           <div className={`${style.bluecoloredborder} w-[934px] max-xl:w-full`}>
@@ -193,9 +202,11 @@ export default function Workshop() {
                     stay ahead of the competition
                   </p>
                   <div className="flex gap-[8px]">
-                    <p className="py-[4px] px-[8px] text-[#0CC2FF] text-base font-['Graphikthin'] border-[#0CC2FF] opacity-60 border-[1px] rounded-[5px]">
-                      30 minutes{" "}
-                    </p>
+                    <div className="pb-[6.4px] pt-[4.8px] px-[8px] font-['Graphikthin'] border-[#0CC2FF] opacity-60 border-[1px] rounded-[5px]">
+                      <p className="text-[#0CC2FF] leading-[19.2px] text-[16px]">
+                        30 minutes{" "}
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>

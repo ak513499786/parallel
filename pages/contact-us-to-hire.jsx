@@ -28,8 +28,16 @@ export default function Contact() {
   return (
     <>
       <Navbar />
-      <div className="absolute w-[100%] h-[100vh] top-0 left-0 overflow-x-hidden">
+      <div className="absolute z-30 w-[100%] h-[822px] top-[-500px] overflow-hidden">
         <div className={style.backgroundcolor}></div>
+      </div>
+      <div className="absolute z-20 w-[100%] h-[822px] top-[322px] right-0 overflow-hidden">
+        <div className={style.backgroundcolor2}></div>
+      </div>
+      <div className="absolute z-10 w-[100%] h-[822px] top-[322px] right-0 overflow-hidden">
+        <div className={style.backgroundcolor3}></div>
+      </div>
+      <div className="absolute w-[100%] h-[822px] top-0 left-0 overflow-hidden">
         <div className={style.backgroundbox}></div>
       </div>
       <main className="px-[80px] max-md:px-[40px] max-sm:px-[20px] flex justify-center pb-[79.28px] z-20 relative pt-[130.71px]">
@@ -78,7 +86,10 @@ export default function Contact() {
               className="h-[54px] rounded-[4px] border-[1px] border-white pl-[17.51px] bg-[transparent] placeholder-[#ffffff99] text-white"
             />
           </div>
-          <button onClick={handleSubmit} className="w-full h-[53px] bg-[#30E29D] rounded-[8px] font-bold text-[#292929] text-[16px] font-[19.2px]">
+          <button
+            onClick={handleSubmit}
+            className="w-full h-[53px] bg-[#30E29D] rounded-[8px] font-bold text-[#292929] text-[16px] font-[19.2px]"
+          >
             Hire from us{" "}
           </button>
         </div>
