@@ -16,6 +16,8 @@ export default function Navbar() {
   const Menuitems5 = useRef(null);
   const Menuitems6 = useRef(null);
   const Menuitems7 = useRef(null);
+  const Menuitems8 = useRef(null);
+  const Menuitems9 = useRef(null);
   const Cross = useRef(null);
   const Background = useRef(null);
   const handleHamburger = () => {
@@ -55,31 +57,35 @@ export default function Navbar() {
         }
         if (height <= 480) {
           gsap.to(Menuitems1.current, 0, {
-            fontSize: "20px",
+            fontSize: "16px",
             lineHeight: "24px",
           });
           gsap.to(Menuitems2.current, 0, {
-            fontSize: "20px",
+            fontSize: "16px",
             lineHeight: "24px",
           });
           gsap.to(Menuitems3.current, 0, {
-            fontSize: "20px",
+            fontSize: "16px",
             lineHeight: "24px",
           });
           gsap.to(Menuitems4.current, 0, {
-            fontSize: "20px",
+            fontSize: "16px",
             lineHeight: "24px",
           });
           gsap.to(Menuitems5.current, 0, {
-            fontSize: "20px",
+            fontSize: "16px",
             lineHeight: "24px",
           });
           gsap.to(Menuitems6.current, 0, {
-            fontSize: "20px",
+            fontSize: "16px",
             lineHeight: "24px",
           });
           gsap.to(Menuitems7.current, 0, {
-            fontSize: "20px",
+            fontSize: "16px",
+            lineHeight: "24px",
+          });
+          gsap.to(Menuitems8.current, 0, {
+            fontSize: "16px",
             lineHeight: "24px",
           });
         }
@@ -121,8 +127,15 @@ export default function Navbar() {
       ></div>
       <ul
         ref={Menu}
-        className="list-none flex gap-[52px] max-hamburger:opacity-0 max-xl:gap-[40px] max-hamburger:hidden max-smalllaptop:gap-[30px] max-sm:gap-[20px] max-sm:top-[101px] max-sm:h-[calc(100vh-121px)] max-hamburger:flex-col max-hamburger:absolute max-sm:h-[calc(100vh-181px)] max-hamburger:top-[150px] max-hamburger:text-right max-hamburger:w-[calc(100%-160px)] max-md:w-[calc(100%-80px)] max-sm:w-[calc(100%-40px)]"
+        className="list-none flex gap-[52px] max-hamburger:opacity-0 max-xl:gap-[40px] max-hamburger:hidden max-smalllaptop:gap-[15px] max-sm:gap-[20px] max-sm:top-[101px] max-sm:h-[calc(100vh-121px)] max-hamburger:flex-col max-hamburger:absolute max-sm:h-[calc(100vh-181px)] max-hamburger:top-[150px] max-hamburger:text-right max-hamburger:w-[calc(100%-160px)] max-md:w-[calc(100%-80px)] max-sm:w-[calc(100%-40px)]"
       >
+        <Link
+          href={"/courses/full-stack-development"}
+          ref={Menuitems9}
+          className="text-[16px] italic text-[#30E29D] font-semibold relative leading-[24px] max-hamburger:py-0 py-[8px]"
+        >
+          QUICK BATCH
+        </Link>
         <Link
           href={"/about"}
           ref={Menuitems1}
@@ -166,12 +179,21 @@ export default function Navbar() {
           Refer us
         </Link>
         <Link
-          href={"/signup"}
-          ref={Menuitems7}
-          className="text-[16px] relative bg-[#30E29D] max-hamburger:bottom-0 max-sm:w-full max-hamburger:text-center max-hamburger:w-[300px] max-hamburger:absolute text-black py-[8px] px-[24px] rounded-[8px] leading-[24px] py-[8px] font-semibold"
+          href={"/contact-us"}
+          ref={Menuitems8}
+          className="text-[16px] hidden max-smallphone:block relative leading-[24px] py-[8px] max-hamburger:py-0"
         >
-          Sign up
+          Contact us
         </Link>
+        <div className="flex max-hamburger:justify-end">
+          <Link
+            href={"/signup"}
+            ref={Menuitems7}
+            className="text-[16px] max-lg:px-[16px] relative bg-[#30E29D] max-hamburger:bottom-0 max-sm:w-full max-hamburger:text-center max-hamburger:w-[300px] text-black py-[8px] px-[24px] rounded-[8px] leading-[24px] py-[8px] font-semibold"
+          >
+            Sign up
+          </Link>
+        </div>
       </ul>
     </nav>
   );

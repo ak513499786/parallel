@@ -50,21 +50,21 @@ export default function Fees() {
         </h1>
       </main>
       <section className="px-[80px] relative z-20 pt-[96.09px] max-md:py-20 max-md:px-[40px] max-sm:px-[20px] pb-[95.91px] flex flex-col gap-[57px]">
-        <p className="text-[64px] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] leading-[61.68px] tracking-[-2.56px] text-[#E5E5E5] font-['Graphikthin'] w-[890.53px] max-hamburger:w-full">
+        <p className="text-[64px] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] leading-[61.68px] tracking-[-2.56px] max-sm:tracking-tight text-[#E5E5E5] font-['Graphikthin'] w-[890.53px] max-hamburger:w-full">
           Because we believe that education should never be behind a paywall.
         </p>
-        <p className="text-[64px] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] w-[818.23px] leading-[61.68px] tracking-[-2.56px] text-[#E5E5E5] font-['Graphikthin'] w-[890.53px] max-hamburger:w-full">
+        <p className="text-[64px] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] w-[818.23px] leading-[61.68px] tracking-[-2.56px] max-sm:tracking-tight text-[#E5E5E5] font-['Graphikthin'] w-[890.53px] max-hamburger:w-full">
           We’ll help you upskill, get placed, and charge you only 15
           <span className="font-['Graphik'] opacity-90 font-light">%</span> of
           your CTC for 12 months.
         </p>
-        <p className="text-[64px] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] leading-[61.68px] w-[818.23px] tracking-[-2.56px] text-[#E5E5E5] font-['Graphikthin'] w-[890.53px] max-hamburger:w-full">
+        <p className="text-[64px] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] leading-[61.68px] w-[818.23px] tracking-[-2.56px] max-sm:tracking-tight text-[#E5E5E5] font-['Graphikthin'] w-[890.53px] max-hamburger:w-full">
           We will not charge you until you get placed.
         </p>
       </section>
       <Success />
-      <section className="py-[120.5px] max-md:px-[40px] max-sm:px-[20px] max-md:pt-[50px] max-sm:pt-[30px] pl-[80px] flex flex-col gap-[51px]">
-        <p className="text-[#E5E5E5] text-[32px] max-hamburger:leading-[120%] font-['Graphikthin'] leading-[30.84px] tracking-[-0.6px]">
+      <section className="py-[120.5px] max-md:px-[40px] max-smallphone:gap-[10px] max-sm:px-[20px] max-md:pt-[50px] max-sm:pt-[30px] pl-[80px] flex flex-col gap-[51px]">
+        <p className="text-[#E5E5E5] text-[32px] max-md:text-[24px] max-md:leading-[120%] max-smallphone:text-base max-hamburger:leading-[120%] font-['Graphikthin'] leading-[30.84px] tracking-[-0.6px]">
           What you will be paying us
         </p>
         <h1 className="w-[1172px] max-xl:w-full text-[147.6px] max-smalllaptop:tracking-[-2.56px] max-smalllaptop:text-[84px] max-sm:text-[64px] max-smallphone:text-[36px] max-sm:tracking-tight max-smalllaptop:leading-[102%] font-['Graphikthin'] leading-[142.26px] text-[#E5E5E5] tracking-[-5.9px]">
@@ -78,7 +78,7 @@ export default function Fees() {
           <p className="text-[20px] text-center leading-[19.28px] text-[#E5E5E5] font-['Graphikthin']">
             Drop out policy
           </p>
-          <h1 className="w-[890.53px] max-hamburger:w-full mt-[39px] text-[64px] leading-[61.68px] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] text-center tracking-[-2.56px] text-[#E5E5E5] font-['Graphikthin']">
+          <h1 className="w-[890.53px] max-hamburger:w-full mt-[39px] text-[64px] leading-[61.68px] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] text-center tracking-[-2.56px] max-sm:tracking-tight text-[#E5E5E5] font-['Graphikthin']">
             Pay a fixed fee and drop out anytime
           </h1>
           <table className="w-[826px] max-sm:text-[24px] max-smallphone:text-[20px] max-hamburger:w-full mt-[51px] font-['Graphikthin'] text-[32px] leading-[30.84px] font-light text-[#E5E5E5] tracking-[-0.64px] text-left h-[336px]">
@@ -130,7 +130,7 @@ export default function Fees() {
       </section>
       <div className="pt-[87.5px] pb-[88px] flex justify-between relative z-20 px-[80px] max-md:flex-col max-md:gap-[50px] max-sm:px-[20px] max-md:px-[40px]">
         <div className="w-[675.77px] max-md:w-full">
-          <p className="text-[64px] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] mb-[41px] leading-[61.88px] text-[#E5E5E5] tracking-[-2.56px] font-['Graphikthin']">
+          <p className="text-[64px] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] mb-[41px] leading-[61.88px] text-[#E5E5E5] tracking-[-2.56px] max-sm:tracking-tight font-['Graphikthin']">
             Never let high fees be the excuse.{" "}
           </p>
           <p className="text-base w-[393.32px] max-sm:w-full max-hamburger:w-auto text-[#E5E5E5] font-['Graphikthin']">

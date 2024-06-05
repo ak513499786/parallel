@@ -19,7 +19,7 @@ export default function Nocode() {
   return (
     <>
       <Navbar />
-      <main className="flex justify-between max-hamburger:flex-col gap-[20px] max-md:px-[40px] max-sm:px-[20px] px-[80px] pb-[229px] max-hamburger:pb-[129px] max-md:pb-[80px] max-sm:pb-[50px] max-hamburger:pt-[100px] max-md:pt-20 max-sm:pt-[50px] pt-[124.86px]">
+      <main className="flex justify-between max-hamburger:flex-col gap-[20px] max-hamburger:px-[40px] max-sm:px-[20px] px-[80px] pb-[229px] max-hamburger:pb-[129px] max-md:pb-[80px] max-sm:pb-[50px] max-hamburger:pt-[100px] max-md:pt-20 max-sm:pt-[50px] pt-[124.86px]">
         <div className="w-[597.58px] max-hamburger:w-full max-hamburger:h-auto h-[374.04px] relative">
           <div className="bg-[#0E16F580] blur-[128px] max-sm:right-0 w-[600px] h-[400px] right-[-30px] top-[-30px] absolute rounded-[100%] z-10"></div>
           <Image
@@ -82,7 +82,7 @@ export default function Nocode() {
         <div className="w-[100%] h-[2550px] absolute overflow-hidden">
           <div className="absolute right-[-241.85px] z-20 top-[986px] h-[1100px] blur-[208px] w-[500px] bg-[#2E2AF3]"></div>
         </div>
-        <section className="pt-[124.98px] relative px-[80px] max-sm:px-[20px] max-md:px-[40px] pb-[119px]">
+        <section className="pt-[124.98px] relative px-[80px] max-sm:px-[20px] max-hamburger:px-[40px] pb-[119px]">
           <div className="flex justify-center">
             <h1 className="w-[936.01px] text-[102.17px] max-smalllaptop:tracking-[-2.56px] max-smalllaptop:text-[84px] max-sm:text-[64px] max-smallphone:text-[36px] max-sm:tracking-tight max-smalllaptop:leading-[102%] text-center font-['Graphikthin'] leading-[104.21px] text-[#E5E5E5] tracking-[-5.1px]">
               No-code, Low-code is here to stay
@@ -91,7 +91,7 @@ export default function Nocode() {
           <div className="absolute w-[100%] z-10 h-[1550px] top-0 left-0 overflow-x-hidden">
             <div className={style.backgroundboxworkshop}></div>
           </div>
-          <div className="flex relative z-10 max-hamburger:flex-wrap max-hamburger:justify-center gap-[20px] mt-[71.02px]">
+          <div className="flex relative max-hamburger:z-20 z-10 max-hamburger:flex-wrap max-hamburger:justify-center gap-[20px] mt-[71.02px]">
             <div
               className={`${style.container} w-[23.8%] max-hamburger:w-[45%] max-md:w-full`}
             >
@@ -101,7 +101,7 @@ export default function Nocode() {
                 <div className="bg-[#1F1F1F] w-[124.35px] h-[124.15px] flex justify-center items-center border-[1px] rounded-[6px] border-[#FFFFFF66] ">
                   {" "}
                   <Image
-                    src="/book-reading--book-reading-learning.svg"
+                    src="/backpack.svg"
                     width={51.73}
                     height={51.73}
                   />
@@ -123,7 +123,7 @@ export default function Nocode() {
                 <div className="bg-[#1F1F1F] w-[124.35px] h-[124.15px] flex justify-center items-center border-[1px] rounded-[6px] border-[#FFFFFF66] ">
                   {" "}
                   <Image
-                    src="/book-reading--book-reading-learning.svg"
+                    src="/Calendar-3--Streamline-Ultimate.svg.svg"
                     width={51.73}
                     height={51.73}
                   />
@@ -145,7 +145,7 @@ export default function Nocode() {
                 <div className="bg-[#1F1F1F] w-[124.35px] h-[124.15px] flex justify-center items-center] border-[1px] rounded-[6px] border-[#FFFFFF66] ">
                   {" "}
                   <Image
-                    src="/bag-suitcase-2--product-business-briefcase.svg"
+                    src="/Circle-Clock--Streamline-Core.svg.svg"
                     width={51.73}
                     height={51.73}
                   />
@@ -168,7 +168,7 @@ export default function Nocode() {
                 <div className="bg-[#1F1F1F] w-[124.35px] h-[124.15px] flex justify-center items-center border-[1px] rounded-[6px] border-[#FFFFFF66] ">
                   {" "}
                   <Image
-                    src="/Calendar-3--Streamline-Ultimate.svg.svg"
+                    src="/profile.svg"
                     width={60}
                     height={60}
                   />
@@ -185,7 +185,7 @@ export default function Nocode() {
         </section>
         <section
           ref={Main}
-          className="pt-[95px] max-md:py-0 relative px-[80px] max-md:px-[40px] max-sm:px-[20px] pb-[37px]"
+          className="pt-[95px] max-md:py-0 max-hamburger:z-20 relative px-[80px] max-hamburger:px-[40px] max-sm:px-[20px] pb-[37px]"
         >
           <h1 className="w-[630px] text-[#E5E5E5] max-md:w-full text-[64px] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] font-['Graphikthin'] leading-[61.68px] tracking-[-2.56px]">
             What you will learn in this course.{" "}
@@ -627,7 +627,7 @@ export default function Nocode() {
             </div>
           </div>
         </section>
-        <section className="pt-[124.98px] z-10 relative px-[80px] max-sm:px-[20px] max-md:px-[40px] max-md:py-20 pb-[119px]">
+        <section className="pt-[124.98px] z-10 relative px-[80px] max-sm:px-[20px] max-hamburger:px-[40px] max-md:py-20 pb-[119px]">
           <h1 className="w-[630px] text-[#E5E5E5] max-md:w-full text-[64px] font-['Graphikthin'] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] leading-[61.68px] tracking-[-2.56px]">
             What you will need to finish this course.{" "}
           </h1>
@@ -641,7 +641,7 @@ export default function Nocode() {
                 <div className="bg-[#1F1F1F] w-[124.35px] h-[124.15px] flex justify-center items-center border-[1px] rounded-[6px] border-[#FFFFFF66] ">
                   {" "}
                   <Image
-                    src="/book-reading--book-reading-learning.svg"
+                    src="/Shield-Check--Streamline-Core.svg.svg"
                     width={51.73}
                     height={51.73}
                   />
@@ -663,7 +663,7 @@ export default function Nocode() {
                 <div className="bg-[#1F1F1F] w-[124.35px] h-[124.15px] flex justify-center items-center border-[1px] rounded-[6px] border-[#FFFFFF66]">
                   {" "}
                   <Image
-                    src="/book-reading--book-reading-learning.svg"
+                    src="/Web--Streamline-Core.svg.svg"
                     width={51.73}
                     height={51.73}
                   />
@@ -685,7 +685,7 @@ export default function Nocode() {
                 <div className="bg-[#1F1F1F] w-[124.35px] h-[124.15px] flex justify-center items-center] border-[1px] rounded-[6px] border-[#FFFFFF66] ">
                   {" "}
                   <Image
-                    src="/bag-suitcase-2--product-business-briefcase.svg"
+                    src="/profile.svg"
                     width={51.73}
                     height={51.73}
                   />
@@ -709,11 +709,7 @@ export default function Nocode() {
               >
                 <div className="bg-[#1F1F1F] w-[124.35px] h-[124.15px] flex justify-center items-center border-[1px] rounded-[6px] border-[#FFFFFF66] ">
                   {" "}
-                  <Image
-                    src="/Calendar-3--Streamline-Ultimate.svg.svg"
-                    width={60}
-                    height={60}
-                  />
+                  <p className="text-[48px] leading-[60px] tracking-[-1.44px] font-['Graphikthinner'] font-semibold text-[#E0E0E0]">Aa</p>
                 </div>
                 <p className="w-full opacity-80 text-[#E0E0E0] text-base mt-[40.35px]">
                   Communication
@@ -727,7 +723,7 @@ export default function Nocode() {
         </section>
       </div>
       <Success />
-      <section className="pt-[161px] max-md:py-20 max-bigscreen:px-[80px] max-md:px-[40px] max-sm:px-[20px]  relative pb-[229px] pl-[172px] pr-[80px] flex justify-between max-hamburger:flex-col max-xl:gap-[50px] items-center">
+      <section className="pt-[161px] max-md:py-20 max-bigscreen:px-[80px] max-hamburger:px-[40px] max-sm:px-[20px]  relative pb-[229px] pl-[172px] pr-[80px] flex justify-between max-hamburger:flex-col max-xl:gap-[50px] items-center">
         <div className="bg-[#101AF6] max-md:w-full max-md:left-0 blur-[256px] w-[403px] z-10 h-[300px] left-[140px] top-[171px] absolute rounded-[100%] z-10"></div>
         <div
           className={`px-[18px] card relative w-[413px] max-biggerscreen:w-[33%] max-md:w-full max-smalllaptop:w-[48.3%] rounded-[10px] py-[20px] ${style.aicardborder}`}

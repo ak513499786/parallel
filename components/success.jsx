@@ -36,7 +36,7 @@ export default function Success() {
       <p className="text-[20px] pl-20 max-md:px-[40px] max-sm:px-[20px] leading-[19.28px] text-[#E5E5E5] opacity-80 font-['Graphikthin'] font-light mb-[20px]">
         Success stories
       </p>
-      <h1 className="w-[813.91px] max-hamburger:w-full ml-20 max-hamburger:px-20 max-hamburger:ml-0 max-md:px-[40px] max-sm:px-[20px] text-[64px] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] leading-[61.68px] font-['Graphikthin'] font-light text-[#E5E5E5] mb-[58px] max-sm:mb-[50px] tracking-[-2.56px]">
+      <h1 className="w-[813.91px] max-hamburger:w-full ml-20 max-hamburger:px-20 max-hamburger:ml-0 max-md:px-[40px] max-sm:px-[20px] text-[64px] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] max-hamburger:tracking-normal leading-[61.68px] font-['Graphikthin'] font-light text-[#E5E5E5] mb-[58px] max-sm:mb-[50px] tracking-[-2.56px]">
         People benefitting from our new age method of learning.{" "}
       </h1>
       <div className="overflow-x-hidden w-full">
@@ -71,9 +71,8 @@ export default function Success() {
                 </div>
               </div>
               <p className="opacity-80 max-sm:text-sm max-sm:mt-[20px] text-base text-[#E0E0E0] mt-[34.73px]">
-                I learned so many things in a short period of time. Sitting in
-                their workshop was a good decision. I will definitely recommend
-                anyone who is interested in the current AI scene.
+                I cannot believe I got placed in 4 months. I was finding a job
+                for almost 1 year.
               </p>
             </div>
           </div>
@@ -105,7 +104,10 @@ export default function Success() {
                 </div>
               </div>
               <p className="opacity-80 max-sm:text-sm max-sm:mt-[20px] text-base text-[#E0E0E0] mt-[34.73px]">
-                Your approach to teaching is very nice!
+                The fees you take is completely worth it. Your schedule is
+                packed with so many things to learn. Career development along
+                with full stack is great! I don’t have to go begging for jobs
+                now.
               </p>
             </div>
           </div>
@@ -137,8 +139,8 @@ export default function Success() {
                 </div>
               </div>
               <p className="opacity-80 max-sm:text-sm max-sm:mt-[20px] text-base text-[#E0E0E0] mt-[34.73px]">
-                Your workshop helped me use LinkedIn efficiently to get a job. I
-                don’t have to depend on my college for placements.
+                A completely hands-on approach. I even got to work on a REAL
+                project as a part of their QUICK BATCH program.
               </p>
             </div>
           </div>
@@ -170,9 +172,9 @@ export default function Success() {
                 </div>
               </div>
               <p className="opacity-80 max-sm:text-sm max-sm:mt-[20px] text-base text-[#E0E0E0] mt-[34.73px]">
-                Most of the workshops I’ve attended, I’ve ended up seeing reels
-                on Instagram. But not this workshop. It is fun engaging, and I
-                learnt a lot of things related to AI.
+                I was charged so little compared to other institutes that also
+                promise 100% placement. I even got placed at a top product based
+                company.
               </p>
             </div>
           </div>
@@ -204,9 +206,8 @@ export default function Success() {
                 </div>
               </div>
               <p className="opacity-80 max-sm:text-sm max-sm:mt-[20px] text-base text-[#E0E0E0] mt-[34.73px]">
-                I learned so many things in a short period of time. Sitting in
-                their workshop was a good decision. I will definitely recommend
-                anyone who is interested in the current AI scene.
+                I cannot believe I got placed in 4 months. I was finding a job
+                for almost 1 year.
               </p>
             </div>
           </div>
@@ -238,7 +239,10 @@ export default function Success() {
                 </div>
               </div>
               <p className="opacity-80 max-sm:text-sm max-sm:mt-[20px] text-base text-[#E0E0E0] mt-[34.73px]">
-                Your approach to teaching is very nice!
+                The fees you take is completely worth it. Your schedule is
+                packed with so many things to learn. Career development along
+                with full stack is great! I don’t have to go begging for jobs
+                now.{" "}
               </p>
             </div>
           </div>
@@ -270,8 +274,8 @@ export default function Success() {
                 </div>
               </div>
               <p className="opacity-80 max-sm:text-sm max-sm:mt-[20px] text-base text-[#E0E0E0] mt-[34.73px]">
-                Your workshop helped me use LinkedIn efficiently to get a job. I
-                don’t have to depend on my college for placements.
+                A completely hands-on approach. I even got to work on a REAL
+                project as a part of their QUICK BATCH program.
               </p>
             </div>
           </div>
@@ -303,9 +307,9 @@ export default function Success() {
                 </div>
               </div>
               <p className="opacity-80 max-sm:text-sm max-sm:mt-[20px] text-base text-[#E0E0E0] mt-[34.73px]">
-                Most of the workshops I’ve attended, I’ve ended up seeing reels
-                on Instagram. But not this workshop. It is fun engaging, and I
-                learnt a lot of things related to AI.
+                I was charged so little compared to other institutes that also
+                promise 100% placement. I even got placed at a top product based
+                company.
               </p>
             </div>
           </div>
@@ -337,9 +341,8 @@ export default function Success() {
                 </div>
               </div>
               <p className="opacity-80 max-sm:text-sm max-sm:mt-[20px] text-base text-[#E0E0E0] mt-[34.73px]">
-                I learned so many things in a short period of time. Sitting in
-                their workshop was a good decision. I will definitely recommend
-                anyone who is interested in the current AI scene.
+                I cannot believe I got placed in 4 months. I was finding a job
+                for almost 1 year.
               </p>
             </div>
           </div>
@@ -371,7 +374,10 @@ export default function Success() {
                 </div>
               </div>
               <p className="opacity-80 max-sm:text-sm max-sm:mt-[20px] text-base text-[#E0E0E0] mt-[34.73px]">
-                Your approach to teaching is very nice!
+                The fees you take is completely worth it. Your schedule is
+                packed with so many things to learn. Career development along
+                with full stack is great! I don’t have to go begging for jobs
+                now.{" "}
               </p>
             </div>
           </div>
@@ -403,8 +409,8 @@ export default function Success() {
                 </div>
               </div>
               <p className="opacity-80 max-sm:text-sm max-sm:mt-[20px] text-base text-[#E0E0E0] mt-[34.73px]">
-                Your workshop helped me use LinkedIn efficiently to get a job. I
-                don’t have to depend on my college for placements.
+                A completely hands-on approach. I even got to work on a REAL
+                project as a part of their QUICK BATCH program.
               </p>
             </div>
           </div>
@@ -436,9 +442,9 @@ export default function Success() {
                 </div>
               </div>
               <p className="opacity-80 max-sm:text-sm max-sm:mt-[20px] text-base text-[#E0E0E0] mt-[34.73px]">
-                Most of the workshops I’ve attended, I’ve ended up seeing reels
-                on Instagram. But not this workshop. It is fun engaging, and I
-                learnt a lot of things related to AI.
+                I was charged so little compared to other institutes that also
+                promise 100% placement. I even got placed at a top product based
+                company.
               </p>
             </div>
           </div>

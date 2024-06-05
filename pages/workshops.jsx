@@ -33,7 +33,7 @@ export default function Workshop() {
         <div className={style.fullgrid}></div>
       </div>
       <main className="w-[100%] relative z-[2] pl-[80px] pt-[171.5px] max-hamburger:py-[100px] max-md:py-[80px] max-sm:py-[50px] pb-[272.5px] relative max-sm:px-[20px] max-md:px-[40px] max-smalllaptop:h-[1150px] max-hamburger:h-auto max-smalllaptop:overflow-hidden">
-        <h1 className="w-[665.36px] z-[2] text-[64px] max-smalllaptop:w-full max-hamburger:text-[48px] max-sm:text-[36px] max-sm:tracking-tight max-hamburger:leading-[120%] leading-[61.68px] font-['Graphikthin'] text-[#E5E5E5] tracking-[-2.56px]">
+        <h1 className="w-[665.36px] z-[2] text-[64px] max-smalllaptop:w-full max-hamburger:text-[48px] max-sm:text-[36px] max-sm:tracking-tight max-hamburger:leading-[120%] leading-[61.68px] font-['Graphikthin'] text-[#E5E5E5] tracking-[-2.56px] max-sm:tracking-tight">
           Host a skill focused workshop at your college.{" "}
         </h1>
         <div className="flex mt-[49px] gap-[32px]">
@@ -46,6 +46,12 @@ export default function Workshop() {
         <Image
           src="/workshop1.svg"
           className="absolute top-[100.31px] right-[111.75px] max-smalllaptop:top-[50px]  max-smalllaptop:scale-100 max-smalllaptop:right-[-300px] max-xl:scale-75 max-smalllaptop:relative max-hamburger:hidden h-[329.29px] w-[449.44px] z-[10]"
+          width={107.16}
+          height={107.16}
+        />
+        <Image
+          src="/rocket.png"
+          className="max-hamburger:block hidden w-[calc(100%-80px)] max-sm:w-full z-[10]"
           width={107.16}
           height={107.16}
         />
@@ -63,7 +69,7 @@ export default function Workshop() {
         />
       </main>
       <section className="pb-[52px] pl-[80px] max-sm:px-[20px] max-md:px-[40px] maxmd:py-[80px] pr-[79px] pt-[118.84px]">
-        <h1 className="mb-[80.56px] text-[64px] leading-[61.68px] text-[#E5E5E5] font-['Graphikthin'] tracking-[-2.56px] w-[1130px] max-xl:w-full max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%]">
+        <h1 className="mb-[80.56px] text-[64px] leading-[61.68px] text-[#E5E5E5] font-['Graphikthin'] tracking-[-2.56px] max-sm:tracking-tight w-[1130px] max-xl:w-full max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%]">
           Hands-on workshop on using{" "}
           <span className="font-['Graphik']">AI</span> to get a job, optimize
           resume and more.
@@ -121,7 +127,7 @@ export default function Workshop() {
                 />
                 <div>
                   <p className="mt-[9.68px] max-sm:text-[28px] max-sm:leading-[34px] max-hamburger:h-auto max-hamburger:w-full w-[487.05px] text-[36.63px] font-['Graphikthin'] leading-[41.03px] tracking-[-1.1px] mb-[12px] text-[#E5E5E5]">
-                    Prompt Engineering 101. 4-step structured formula.{" "}
+                    Prompt Engineering <span className="max-smallphone:hidden">101</span>. 4-step structured formula.{" "}
                   </p>
                   <p className="text-white opacity-80 w-[542.5px] max-bigscreen:w-[100%] mb-[32px] text-base font-['Graphikthin']">
                     Get a hands-on experience on optimizing prompts. Get AI to
@@ -184,9 +190,9 @@ export default function Workshop() {
           <h1 className="text-[276.38px] font-['Clash'] max-sm:text-[130px] max-sm:leading-[80px] leading-[230px] text-[#021E22] font-bold">
             4
           </h1>{" "}
-          <div className={`${style.bluecoloredborder} w-[934px] max-xl:w-full`}>
+          <div className={`${style.bluecoloredborder} max-biggerscreen:w-[880px] w-[934px] max-xl:w-full`}>
             <div className="bg-black rounded-[9px]">
-              <div className="flex py-[31.82px] max-hamburger:flex-col gap-[31.04px] max-hamburger:h-auto max-hamburger:w-full h-[289px] w-[934px] max-xl:w-full bg-[#07E1FF1A] px-[18px] max-md:w-full rounded-[10px]">
+              <div className="flex py-[31.82px] max-hamburger:flex-col gap-[31.04px] max-hamburger:h-auto w-full h-[289px] w-[934px] max-xl:w-full bg-[#07E1FF1A] px-[18px] max-md:w-full rounded-[10px]">
                 <Image
                   src="/cube.svg"
                   width={107.16}
@@ -215,12 +221,12 @@ export default function Workshop() {
         </div>
       </section>
       <section className="pt-[107.84px] pb-[56px] max-md:py-[30px] px-[80px] max-md:px-[40px] max-sm:px-[20px]">
-        <h1 className="text-[64px] text-center mb-[74.16px] max-hamburger:text-[48px] max-sm:text-[36px] max-sm:tracking-tighter max-hamburger:leading-[120%] leading-[61.68px] font-['Graphikthin'] text-[#E5E5E5] tracking-[-2.56px]">
+        <h1 className="text-[64px] text-center mb-[74.16px] max-hamburger:text-[48px] max-sm:text-[36px] max-sm:tracking-tighter max-hamburger:leading-[120%] leading-[61.68px] font-['Graphikthin'] text-[#E5E5E5] tracking-[-2.56px] max-sm:tracking-tight">
           What your students will get{" "}
         </h1>
         <div className="flex gap-[21px] flex-wrap">
           <div
-            className={`${style.coloredborder} relative z-20 overflow-hidden w-[32%] max-hamburger:w-[45%] max-md:w-full h-[406px] rounded-[8px]`}
+            className={`${style.coloredborder} relative z-20 overflow-hidden w-[32%] max-bigscreen:w-[48%] max-md:w-full h-[406px] max-sm:h-auto max-sm:pb-[20px] rounded-[8px]`}
           >
             <div className="bg-black rounded-[9px] h-full w-full">
               <div className={`${style.workshopcardgradientcolor1}`}>
@@ -230,10 +236,10 @@ export default function Workshop() {
                   className="w-[107.64px] ml-[26.86px] mt-[28.34px] h-[126.64px] mb-[34.06px]"
                   height={126.64}
                 />
-                <h1 className="text-[24px] ml-[27.5px] w-[340px] mb-[19.66px] leading-[30.64px] text-[#E0E0E0] tracking-[-0.24px] h-[60px] max-sm:w-[calc(100%-50px)] max-sm:h-auto">
+                <h1 className="text-[24px] ml-[27.5px] max-sm:ml-[12px] max-sm:w-[calc(100%-20px)] max-sm:h-auto w-[340px] mb-[19.66px] leading-[30.64px] text-[#E0E0E0] tracking-[-0.24px] h-[60px] max-bigscreen:w-[calc(100%-50px)] max-sm:h-auto">
                   Insider knowledge on current market trends
                 </h1>
-                <p className="h-[112px] w-[355px] ml-[27.5px] text-base text-[#E0E0E0] max-sm:w-[calc(100%-50px)]">
+                <p className="h-[112px] max-sm:ml-[12px] max-sm:w-[calc(100%-20px)] max-sm:h-auto w-[355px] ml-[27.5px] text-base text-[#E0E0E0] max-bigscreen:w-[calc(100%-50px)] max-sm:pb-[20px]">
                   Get never heard before information on the current job market
                   trends, where it is heading in the future.
                 </p>
@@ -241,7 +247,7 @@ export default function Workshop() {
             </div>
           </div>
           <div
-            className={`${style.coloredborder} relative z-20 overflow-hidden w-[32%] max-hamburger:w-[45%] max-md:w-full h-[406px] rounded-[8px]`}
+            className={`${style.coloredborder} relative z-20 overflow-hidden w-[32%] max-bigscreen:w-[48%] max-md:w-full h-[406px] max-sm:h-auto max-sm:pb-[20px] rounded-[8px]`}
           >
             <div className="bg-black rounded-[9px] h-full w-full">
               <div className={`${style.workshopcardgradientcolor1}`}>
@@ -251,10 +257,10 @@ export default function Workshop() {
                   className="w-[107.64px] ml-[26.86px] mt-[28.34px] h-[126.64px] mb-[34.06px]"
                   height={126.64}
                 />
-                <h1 className="text-[24px] ml-[27.5px] w-[355px] mb-[19.66px] leading-[30.64px] text-[#E0E0E0] tracking-[-0.24px] h-[60px]">
+                <h1 className="text-[24px] ml-[27.5px] max-sm:ml-[12px] max-sm:w-[calc(100%-20px)] max-sm:h-auto max-sm:ml-[12px] max-sm:w-[calc(100%-20px)] max-sm:h-auto w-[355px] mb-[19.66px] leading-[30.64px] text-[#E0E0E0] max-bigscreen:w-[calc(100%-50px)] tracking-[-0.24px] h-[60px]">
                   Information on how AI will affect the upcoming workforce{" "}
                 </h1>
-                <p className="h-[112px] w-[355px] ml-[27.5px] text-base text-[#E0E0E0] max-sm:w-[calc(100%-50px)]">
+                <p className="h-[112px] max-sm:ml-[12px] max-sm:w-[calc(100%-20px)] max-sm:h-auto w-[355px] ml-[27.5px] text-base text-[#E0E0E0] max-bigscreen:w-[calc(100%-50px)] max-sm:pb-[20px]">
                   Learn the impact of AI, how you should leverage its potential
                   instead of being afraid of getting replaced by it.
                 </p>
@@ -262,7 +268,7 @@ export default function Workshop() {
             </div>
           </div>
           <div
-            className={`${style.yellowcoloredborder} relative z-20 overflow-hidden w-[32%] max-hamburger:w-[45%] max-md:w-full h-[406px] rounded-[8px]`}
+            className={`${style.yellowcoloredborder} relative z-20 overflow-hidden w-[32%] max-bigscreen:w-[48%] max-md:w-full h-[406px] max-sm:h-auto max-sm:pb-[20px] rounded-[8px]`}
           >
             <div className="bg-black rounded-[9px] h-full w-full">
               <div className={`${style.workshopcardgradientcolor2}`}>
@@ -272,10 +278,10 @@ export default function Workshop() {
                   className="w-[180.64px] mt-[28.34px] h-[126.64px] mb-[34.06px]"
                   height={126.64}
                 />
-                <h1 className="text-[24px] ml-[27.5px] w-[340px] mb-[19.66px] leading-[30.64px] text-[#E0E0E0] tracking-[-0.24px] h-[60px] max-sm:w-[calc(100%-50px)] max-sm:h-auto">
+                <h1 className="text-[24px] ml-[27.5px] max-sm:ml-[12px] max-sm:w-[calc(100%-20px)] max-sm:h-auto w-[340px] mb-[19.66px] leading-[30.64px] text-[#E0E0E0] tracking-[-0.24px] h-[60px] max-bigscreen:w-[calc(100%-50px)] max-sm:h-auto">
                   Introduction to Prompt Engineering{" "}
                 </h1>
-                <p className="h-[112px] w-[355px] ml-[27.5px] text-base text-[#E0E0E0] max-sm:w-[calc(100%-50px)]">
+                <p className="h-[112px] max-sm:ml-[12px] max-sm:w-[calc(100%-20px)] max-sm:h-auto w-[355px] ml-[27.5px] text-base text-[#E0E0E0] max-bigscreen:w-[calc(100%-50px)] max-sm:pb-[20px]">
                   Prompts is the way you communicate with an AI. Learn how to do
                   it the best.
                 </p>
@@ -283,7 +289,7 @@ export default function Workshop() {
             </div>
           </div>
           <div
-            className={`${style.yellowcoloredborder} relative z-20 overflow-hidden w-[32%] max-hamburger:w-[45%] max-md:w-full h-[406px] rounded-[8px]`}
+            className={`${style.yellowcoloredborder} relative z-20 overflow-hidden w-[32%] max-bigscreen:w-[48%] max-md:w-full h-[406px] max-sm:h-auto max-sm:pb-[20px] rounded-[8px]`}
           >
             <div className="bg-black rounded-[9px] h-full w-full">
               <div className={`${style.workshopcardgradientcolor2}`}>
@@ -293,10 +299,10 @@ export default function Workshop() {
                   className="w-[180.64px] mt-[28.34px] h-[126.64px] mb-[34.06px]"
                   height={126.64}
                 />
-                <h1 className="text-[24px] ml-[27.5px] w-[340px] mb-[19.66px] leading-[30.64px] text-[#E0E0E0] tracking-[-0.24px] h-[60px] max-sm:w-[calc(100%-50px)] max-sm:h-auto">
+                <h1 className="text-[24px] ml-[27.5px] max-sm:ml-[12px] max-sm:w-[calc(100%-20px)] max-sm:h-auto w-[340px] mb-[19.66px] leading-[30.64px] text-[#E0E0E0] tracking-[-0.24px] h-[60px] max-bigscreen:w-[calc(100%-50px)] max-sm:h-auto">
                   4-step structured formula to writing prompts{" "}
                 </h1>
-                <p className="h-[112px] w-[355px] ml-[27.5px] text-base text-[#E0E0E0] max-sm:w-[calc(100%-50px)]">
+                <p className="h-[112px] max-sm:ml-[12px] max-sm:w-[calc(100%-20px)] max-sm:h-auto w-[355px] ml-[27.5px] text-base text-[#E0E0E0] max-bigscreen:w-[calc(100%-50px)] max-sm:pb-[20px]">
                   Writing good prompts is not a matter of luck. Learn how to use
                   the full potential of AI through prompts.
                 </p>
@@ -304,7 +310,7 @@ export default function Workshop() {
             </div>
           </div>
           <div
-            className={`${style.purplecoloredborder} relative z-20 overflow-hidden w-[32%] max-hamburger:w-[45%] max-md:w-full h-[406px] rounded-[8px]`}
+            className={`${style.purplecoloredborder} relative z-20 overflow-hidden w-[32%] max-bigscreen:w-[48%] max-md:w-full h-[406px] max-sm:h-auto max-sm:pb-[20px] rounded-[8px]`}
           >
             <div className="bg-black rounded-[9px] h-full w-full">
               <div className={`${style.workshopcardgradientcolor3}`}>
@@ -314,10 +320,10 @@ export default function Workshop() {
                   className="w-[118.64] ml-[27.5px] mt-[36px] h-[118.64] mb-[34.06px]"
                   height={118.64}
                 />
-                <h1 className="text-[24px] ml-[27.5px] h-[60px] w-[340px] mb-[19.66px] leading-[30.64px] text-[#E0E0E0] tracking-[-0.24px] max-sm:w-[calc(100%-50px)] max-sm:h-auto">
+                <h1 className="text-[24px] ml-[27.5px] max-sm:ml-[12px] max-sm:w-[calc(100%-20px)] max-sm:h-auto h-[60px] w-[340px] mb-[19.66px] leading-[30.64px] text-[#E0E0E0] tracking-[-0.24px] max-sm:w-[calc(100%-50px)] max-sm:h-auto">
                   Use AI to write better code{" "}
                 </h1>
-                <p className="h-[112px] w-[355px] ml-[27.5px] text-base text-[#E0E0E0] max-sm:w-[calc(100%-50px)]">
+                <p className="h-[112px] max-sm:ml-[12px] max-sm:w-[calc(100%-20px)] max-sm:h-auto w-[355px] ml-[27.5px] text-base text-[#E0E0E0] max-bigscreen:w-[calc(100%-50px)] max-sm:pb-[20px]">
                   Writing a code is much easier with an assistant. Learn how to
                   leverage leading AI assistants like GitHub Co-pilot to up your
                   coding game.
@@ -326,7 +332,7 @@ export default function Workshop() {
             </div>
           </div>
           <div
-            className={`${style.purplecoloredborder} relative z-20 overflow-hidden w-[32%] max-hamburger:w-[45%] max-md:w-full h-[406px] rounded-[8px]`}
+            className={`${style.purplecoloredborder} relative z-20 overflow-hidden w-[32%] max-bigscreen:w-[48%] max-md:w-full h-[406px] max-sm:h-auto max-sm:pb-[20px] rounded-[8px]`}
           >
             <div className="bg-black rounded-[9px] h-full w-full">
               <div className={`${style.workshopcardgradientcolor3}`}>
@@ -336,10 +342,10 @@ export default function Workshop() {
                   className="w-[118.64] ml-[27.5px] mt-[36px] h-[118.64] mb-[34.06px]"
                   height={118.64}
                 />
-                <h1 className="text-[24px] ml-[27.5px] h-[60px] w-[340px] mb-[19.66px] leading-[30.64px] text-[#E0E0E0] tracking-[-0.24px] max-sm:w-[calc(100%-50px)] max-sm:h-auto">
+                <h1 className="text-[24px] ml-[27.5px] max-sm:ml-[12px] max-sm:w-[calc(100%-20px)] max-sm:h-auto h-[60px] w-[340px] mb-[19.66px] leading-[30.64px] text-[#E0E0E0] tracking-[-0.24px] max-sm:w-[calc(100%-50px)] max-sm:h-auto">
                   Faster content curation through ChatGPT, Gemini{" "}
                 </h1>
-                <p className="h-[112px] w-[355px] ml-[27.5px] text-base text-[#E0E0E0] max-sm:w-[calc(100%-50px)]">
+                <p className="h-[112px] max-sm:ml-[12px] max-sm:w-[calc(100%-20px)] max-sm:h-auto w-[355px] ml-[27.5px] text-base text-[#E0E0E0] max-bigscreen:w-[calc(100%-50px)] max-sm:pb-[20px]">
                   Generate content like it’s written by a copywriter working at
                   Google, Apple! Use it to write blogs, articles, emails,
                   messages and much more.
@@ -348,7 +354,7 @@ export default function Workshop() {
             </div>
           </div>
           <div
-            className={`${style.purplecoloredborder} relative z-20 overflow-hidden w-[32%] max-hamburger:w-[45%] max-md:w-full h-[406px] rounded-[8px]`}
+            className={`${style.purplecoloredborder} relative z-20 overflow-hidden w-[32%] max-bigscreen:w-[48%] max-md:w-full h-[406px] max-sm:h-auto max-sm:pb-[20px] rounded-[8px]`}
           >
             <div className="bg-black rounded-[9px] h-full w-full">
               <div className={`${style.workshopcardgradientcolor3}`}>
@@ -358,10 +364,10 @@ export default function Workshop() {
                   className="w-[118.64] ml-[27.5px] mt-[36px] h-[118.64] mb-[34.06px]"
                   height={118.64}
                 />
-                <h1 className="text-[24px] ml-[27.5px] h-[60px] w-[340px] mb-[19.66px] leading-[30.64px] text-[#E0E0E0] tracking-[-0.24px] max-sm:w-[calc(100%-50px)] max-sm:h-auto">
+                <h1 className="text-[24px] ml-[27.5px] max-sm:ml-[12px] max-sm:w-[calc(100%-20px)] max-sm:h-auto h-[60px] w-[340px] mb-[19.66px] leading-[30.64px] text-[#E0E0E0] tracking-[-0.24px] max-sm:w-[calc(100%-50px)] max-sm:h-auto">
                   Generate breath-taking imagery using AI{" "}
                 </h1>
-                <p className="h-[112px] w-[355px] ml-[27.5px] text-base text-[#E0E0E0] max-sm:w-[calc(100%-50px)]">
+                <p className="h-[112px] max-sm:ml-[12px] max-sm:w-[calc(100%-20px)] max-sm:h-auto w-[355px] ml-[27.5px] text-base text-[#E0E0E0] max-bigscreen:w-[calc(100%-50px)] max-sm:pb-[20px]">
                   Images are always a good way to stand out from the crowd.
                   Learn how to generate images that do not look like they’ve
                   been generated by AI.
@@ -370,7 +376,7 @@ export default function Workshop() {
             </div>
           </div>
           <div
-            className={`${style.purplecoloredborder} relative z-20 overflow-hidden w-[32%] max-hamburger:w-[45%] max-md:w-full h-[406px] rounded-[8px]`}
+            className={`${style.purplecoloredborder} relative z-20 overflow-hidden w-[32%] max-bigscreen:w-[48%] max-md:w-full h-[406px] max-sm:h-auto max-sm:pb-[20px] rounded-[8px]`}
           >
             <div className="bg-black rounded-[9px] h-full w-full">
               <div className={`${style.workshopcardgradientcolor3}`}>
@@ -380,10 +386,10 @@ export default function Workshop() {
                   className="w-[118.64] ml-[27.5px] mt-[36px] h-[118.64] mb-[34.06px]"
                   height={118.64}
                 />
-                <h1 className="text-[24px] ml-[27.5px] h-[60px] w-[340px] mb-[19.66px] leading-[30.64px] text-[#E0E0E0] tracking-[-0.24px] max-sm:w-[calc(100%-50px)] max-sm:h-auto">
+                <h1 className="text-[24px] ml-[27.5px] max-sm:ml-[12px] max-sm:w-[calc(100%-20px)] max-sm:h-auto h-[60px] w-[340px] mb-[19.66px] leading-[30.64px] text-[#E0E0E0] tracking-[-0.24px] max-sm:w-[calc(100%-50px)] max-sm:h-auto">
                   Research on a topic accurately{" "}
                 </h1>
-                <p className="h-[112px] w-[355px] ml-[27.5px] text-base text-[#E0E0E0] max-sm:w-[calc(100%-50px)]">
+                <p className="h-[112px] max-sm:ml-[12px] max-sm:w-[calc(100%-20px)] max-sm:h-auto w-[355px] ml-[27.5px] text-base text-[#E0E0E0] max-bigscreen:w-[calc(100%-50px)] max-sm:pb-[20px]">
                   LLMs like ChatGPT, Gemini often generate inaccurate data when
                   it comes to research. Use AI tools like Perplexity to research
                   along with the citations.
@@ -392,7 +398,7 @@ export default function Workshop() {
             </div>
           </div>
           <div
-            className={`${style.purplecoloredborder} relative z-20 overflow-hidden w-[32%] max-hamburger:w-[45%] max-md:w-full h-[406px] rounded-[8px]`}
+            className={`${style.purplecoloredborder} relative z-20 overflow-hidden w-[32%] max-bigscreen:w-[48%] max-md:w-full h-[406px] max-sm:h-auto max-sm:pb-[20px] rounded-[8px]`}
           >
             <div className="bg-black rounded-[9px] h-full w-full">
               <div className={`${style.workshopcardgradientcolor3}`}>
@@ -402,10 +408,10 @@ export default function Workshop() {
                   className="w-[118.64] ml-[27.5px] mt-[36px] h-[118.64] mb-[34.06px]"
                   height={118.64}
                 />
-                <h1 className="text-[24px] ml-[27.5px] h-[60px] w-[340px] mb-[19.66px] leading-[30.64px] text-[#E0E0E0] tracking-[-0.24px] max-sm:w-[calc(100%-50px)] max-sm:h-auto">
+                <h1 className="text-[24px] ml-[27.5px] max-sm:ml-[12px] max-sm:w-[calc(100%-20px)] max-sm:h-auto h-[60px] w-[340px] mb-[19.66px] leading-[30.64px] text-[#E0E0E0] tracking-[-0.24px] max-sm:w-[calc(100%-50px)] max-sm:h-auto">
                   Build hire-worthy resume using AI{" "}
                 </h1>
-                <p className="h-[112px] w-[355px] ml-[27.5px] text-base text-[#E0E0E0] max-sm:w-[calc(100%-50px)]">
+                <p className="h-[112px] max-sm:ml-[12px] max-sm:w-[calc(100%-20px)] max-sm:h-auto w-[355px] ml-[27.5px] text-base text-[#E0E0E0] max-bigscreen:w-[calc(100%-50px)] max-sm:pb-[20px]">
                   Let AI do all the heavy-lifting while building your resume.
                   Get it to build a resume that’ll grab recruiters'’ attention.
                 </p>
@@ -413,7 +419,7 @@ export default function Workshop() {
             </div>
           </div>
           <div
-            className={`${style.purplecoloredborder} relative z-20 overflow-hidden w-[32%] max-hamburger:w-[45%] max-md:w-full h-[406px] rounded-[8px]`}
+            className={`${style.purplecoloredborder} relative z-20 overflow-hidden w-[32%] max-bigscreen:w-[48%] max-md:w-full h-[406px] max-sm:h-auto max-sm:pb-[20px] rounded-[8px]`}
           >
             <div className="bg-black rounded-[9px] h-full w-full">
               <div className={`${style.workshopcardgradientcolor3}`}>
@@ -423,10 +429,10 @@ export default function Workshop() {
                   className="w-[118.64] ml-[27.5px] mt-[36px] h-[118.64] mb-[34.06px]"
                   height={118.64}
                 />
-                <h1 className="text-[24px] ml-[27.5px] h-[60px] w-[340px] mb-[19.66px] leading-[30.64px] text-[#E0E0E0] tracking-[-0.24px] max-sm:w-[calc(100%-50px)] max-sm:h-auto">
+                <h1 className="text-[24px] ml-[27.5px] max-sm:ml-[12px] max-sm:w-[calc(100%-20px)] max-sm:h-auto h-[60px] w-[340px] mb-[19.66px] leading-[30.64px] text-[#E0E0E0] tracking-[-0.24px] max-sm:w-[calc(100%-50px)] max-sm:h-auto">
                   Build a personal website only using prompts{" "}
                 </h1>
-                <p className="h-[112px] w-[355px] ml-[27.5px] text-base text-[#E0E0E0] max-sm:w-[calc(100%-50px)]">
+                <p className="h-[112px] max-sm:ml-[12px] max-sm:w-[calc(100%-20px)] max-sm:h-auto w-[355px] ml-[27.5px] text-base text-[#E0E0E0] max-bigscreen:w-[calc(100%-50px)] max-sm:pb-[20px]">
                   Use all the knowledge taught in this workshop to build your
                   personal website only using prompts. Not a single line of code
                   is required.
@@ -435,7 +441,7 @@ export default function Workshop() {
             </div>
           </div>
           <div
-            className={`${style.bluecoloredborder} relative z-20 overflow-hidden w-[32%] max-hamburger:w-[45%] max-md:w-full h-[406px] rounded-[8px]`}
+            className={`${style.bluecoloredborder} relative z-20 overflow-hidden w-[32%] max-bigscreen:w-[48%] max-md:w-full h-[406px] max-sm:h-auto max-sm:pb-[20px] rounded-[8px]`}
           >
             <div className="bg-black rounded-[9px] h-full w-full">
               <div className={`${style.workshopcardgradientcolor4}`}>
@@ -445,10 +451,10 @@ export default function Workshop() {
                   className="w-[118.64] ml-[27.5px] mt-[36px] h-[118.64] mb-[34.06px]"
                   height={118.64}
                 />
-                <h1 className="text-[24px] ml-[27.5px] h-[60px] w-[340px] mb-[19.66px] leading-[30.64px] text-[#E0E0E0] tracking-[-0.24px] max-sm:w-[calc(100%-50px)] max-sm:h-auto">
+                <h1 className="text-[24px] ml-[27.5px] max-sm:ml-[12px] max-sm:w-[calc(100%-20px)] max-sm:h-auto h-[60px] w-[340px] mb-[19.66px] leading-[30.64px] text-[#E0E0E0] tracking-[-0.24px] max-sm:w-[calc(100%-50px)] max-sm:h-auto">
                   Curate your resume using AI{" "}
                 </h1>
-                <p className="h-[112px] w-[355px] ml-[27.5px] text-base text-[#E0E0E0] max-sm:w-[calc(100%-50px)]">
+                <p className="h-[112px] max-sm:ml-[12px] max-sm:w-[calc(100%-20px)] max-sm:h-auto w-[355px] ml-[27.5px] text-base text-[#E0E0E0] max-bigscreen:w-[calc(100%-50px)] max-sm:pb-[20px]">
                   Learn to tweak your AI generated resume to match individual
                   job openings to better your chances of getting hired.
                 </p>
@@ -456,7 +462,7 @@ export default function Workshop() {
             </div>
           </div>
           <div
-            className={`${style.bluecoloredborder} relative z-20 overflow-hidden w-[32%] max-hamburger:w-[45%] max-md:w-full h-[406px] rounded-[8px]`}
+            className={`${style.bluecoloredborder} relative z-20 overflow-hidden w-[32%] max-bigscreen:w-[48%] max-md:w-full h-[406px] max-sm:h-auto max-sm:pb-[20px] rounded-[8px]`}
           >
             <div className="bg-black rounded-[9px] h-full w-full">
               <div className={`${style.workshopcardgradientcolor4}`}>
@@ -466,10 +472,10 @@ export default function Workshop() {
                   className="w-[118.64] ml-[27.5px] mt-[36px] h-[118.64] mb-[34.06px]"
                   height={118.64}
                 />
-                <h1 className="text-[24px] ml-[27.5px] h-[60px] w-[355px] mb-[19.66px] leading-[30.64px] text-[#E0E0E0] tracking-[-0.24px] max-sm:w-[calc(100%-50px)] max-sm:h-auto">
+                <h1 className="text-[24px] ml-[27.5px] max-sm:ml-[12px] max-sm:w-[calc(100%-20px)] max-sm:h-auto h-[60px] w-[355px] mb-[19.66px] leading-[30.64px] text-[#E0E0E0] tracking-[-0.24px] max-bigscreen:w-[calc(100%-50px)] max-sm:h-auto">
                   Easy and lesser known hacks to finding jobs through LinkedIn{" "}
                 </h1>
-                <p className="h-[112px] w-[355px] ml-[27.5px] text-base text-[#E0E0E0] max-sm:w-[calc(100%-50px)]">
+                <p className="h-[112px] max-sm:ml-[12px] max-sm:w-[calc(100%-20px)] max-sm:h-auto w-[355px] ml-[27.5px] text-base text-[#E0E0E0] max-bigscreen:w-[calc(100%-50px)] max-sm:pb-[20px]">
                   Finding a job through LinkedIn is easy if you know what you
                   are doing. Let us teach you what you should be looking out
                   for.
@@ -478,7 +484,7 @@ export default function Workshop() {
             </div>
           </div>
           <div
-            className={`${style.bluecoloredborder} relative z-20 overflow-hidden w-[32%] max-hamburger:w-[45%] max-md:w-full h-[406px] rounded-[8px]`}
+            className={`${style.bluecoloredborder} relative z-20 overflow-hidden w-[32%] max-bigscreen:w-[48%] max-md:w-full h-[406px] max-sm:h-auto max-sm:pb-[20px] rounded-[8px]`}
           >
             <div className="bg-black rounded-[9px] h-full w-full">
               <div className={`${style.workshopcardgradientcolor4}`}>
@@ -488,10 +494,10 @@ export default function Workshop() {
                   className="w-[118.64] ml-[27.5px] mt-[36px] h-[118.64] mb-[34.06px]"
                   height={118.64}
                 />
-                <h1 className="text-[24px] ml-[27.5px] h-[60px] w-[340px] mb-[19.66px] leading-[30.64px] text-[#E0E0E0] tracking-[-0.24px] max-sm:w-[calc(100%-50px)] max-sm:h-auto">
+                <h1 className="text-[24px] ml-[27.5px] max-sm:ml-[12px] max-sm:w-[calc(100%-20px)] max-sm:h-auto h-[60px] w-[340px] mb-[19.66px] leading-[30.64px] text-[#E0E0E0] tracking-[-0.24px] max-sm:w-[calc(100%-50px)] max-sm:h-auto">
                   Networking with AI assistance{" "}
                 </h1>
-                <p className="h-[112px] w-[355px] ml-[27.5px] text-base text-[#E0E0E0] max-sm:w-[calc(100%-50px)]">
+                <p className="h-[112px] max-sm:ml-[12px] max-sm:w-[calc(100%-20px)] max-sm:h-auto w-[355px] ml-[27.5px] text-base text-[#E0E0E0] max-bigscreen:w-[calc(100%-50px)] max-sm:pb-[20px]">
                   Use AI tools to connect with relevant professionals in your
                   field based on your skills and career goals.
                 </p>
@@ -499,7 +505,7 @@ export default function Workshop() {
             </div>
           </div>
           <div
-            className={`${style.bluecoloredborder} relative z-20 overflow-hidden w-[32%] max-hamburger:w-[45%] max-md:w-full h-[406px] rounded-[8px]`}
+            className={`${style.bluecoloredborder} relative z-20 overflow-hidden w-[32%] max-bigscreen:w-[48%] max-md:w-full h-[406px] max-sm:h-auto max-sm:pb-[20px] rounded-[8px]`}
           >
             <div className="bg-black rounded-[9px] h-full w-full">
               <div className={`${style.workshopcardgradientcolor4}`}>
@@ -509,10 +515,10 @@ export default function Workshop() {
                   className="w-[118.64] ml-[27.5px] mt-[36px] h-[118.64] mb-[34.06px]"
                   height={118.64}
                 />
-                <h1 className="text-[24px] ml-[27.5px] h-[60px] w-[340px] mb-[19.66px] leading-[30.64px] text-[#E0E0E0] tracking-[-0.24px] max-sm:w-[calc(100%-50px)] max-sm:h-auto">
+                <h1 className="text-[24px] ml-[27.5px] max-sm:ml-[12px] max-sm:w-[calc(100%-20px)] max-sm:h-auto h-[60px] w-[340px] mb-[19.66px] leading-[30.64px] text-[#E0E0E0] tracking-[-0.24px] max-sm:w-[calc(100%-50px)] max-sm:h-auto">
                   Write engaging emails in 4 steps{" "}
                 </h1>
-                <p className="h-[112px] w-[355px] ml-[27.5px] text-base text-[#E0E0E0] max-sm:w-[calc(100%-50px)]">
+                <p className="h-[112px] max-sm:ml-[12px] max-sm:w-[calc(100%-20px)] max-sm:h-auto w-[355px] ml-[27.5px] text-base text-[#E0E0E0] max-bigscreen:w-[calc(100%-50px)] max-sm:pb-[20px]">
                   Learn to write engaging emails in 4 simple steps. Let AI do
                   most of the work while you curate the email and send it to the
                   right people.
@@ -522,10 +528,11 @@ export default function Workshop() {
           </div>
         </div>
       </section>
-      <section className="flex flex-col items-center pt-[49.9px] pb-[134px] max-md:py-[30px] px-[80px] max-md:px-[40px] max-sm:px-[20px]">
+      <section className="flex flex-col relative items-center pt-[49.9px] pb-[134px] max-md:py-[30px] px-[80px] max-md:px-[40px] max-sm:px-[20px]">
         <h1 className="text-[36px] text-center mb-[50.16px] max-hamburger:text-[28px] max-hamburger:leading-[120%] leading-[41.68px] font-['Graphikthin'] text-[#E5E5E5] tracking-[-1.08px]">
           What your students will get{" "}
         </h1>
+        <div className="hidden max-hamburger:block absolute top-0 left-0 w-[100%] h-[100%] bg-transparent z-30  "></div>
         <Image
           src="/workshop5.png"
           width={1063}
@@ -556,7 +563,7 @@ export default function Workshop() {
         </Link>
       </section>
       <section className="px-[80px] max-md:px-[40px] max-sm:px-[20px] bg-white max-sm:py-0 relative py-[173.5px] flex flex-col justify-center items-center gap-[65px]">
-        <h1 className="text-center max-sm:pt-[20px] w-[728.14px] max-hamburger:w-full text-black relative z-20 text-[64px] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] font-['Graphikthin'] leading-[61.68px] font-light max-sm:tracking-[-1.28px] tracking-[-2.56px] ">
+        <h1 className="text-center max-sm:pt-[20px] w-[728.14px] max-hamburger:w-full text-black relative z-20 text-[64px] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] font-['Graphikthin'] leading-[61.68px] font-light max-sm:tracking-[-1.28px] tracking-[-2.56px] max-sm:tracking-tight ">
           Colleges benefitting from our workshops.{" "}
         </h1>
         <div className="flex flex-wrap max-sm:pb-[20px] items-center justify-center z-20 gap-x-[22px] gap-y-[27px]">
@@ -624,7 +631,7 @@ export default function Workshop() {
       </section>
       <div className="pt-[92.84px] max-sm:py-10 max-sm:px-[20px] max-md:px-[40px]  relative z-20 pb-[95px] pl-[80px] pr-[79px]">
         <div className="flex justify-between">
-          <p className="w-[792.98px] font-['Graphikthin'] text-[64px] font-light leading-[61.68px] tracking-[-2.56px] text-[#E5E5E5] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%]">
+          <p className="w-[792.98px] font-['Graphikthin'] text-[64px] font-light leading-[61.68px] tracking-[-2.56px] max-sm:tracking-tight text-[#E5E5E5] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%]">
             Get your students up to date on latest industry trends{" "}
           </p>
         </div>
@@ -703,7 +710,7 @@ export default function Workshop() {
         </div>
       </div>
       <section className="pl-[80px] max-sm:py-10 max-sm:px-[20px] max-md:px-[40px] relative z-20 pr-[79px] pt-[92.84px] pb-[93px]">
-        <h1 className="text-[64px] max-hamburger:w-full mb-[49.16px] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] leading-[61.88px] text-[##E5E5E5] opacity-90 tracking-[-2.56px] font-['Graphikthin'] w-[868px]">
+        <h1 className="text-[64px] max-hamburger:w-full mb-[49.16px] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] leading-[61.88px] text-[##E5E5E5] opacity-90 tracking-[-2.56px] max-sm:tracking-tight font-['Graphikthin'] w-[868px]">
           Workshops conducted by passionate industry experts
         </h1>
         <div className="flex gap-[21px] max-md:flex-col mt-[67px] max-hamburger:flex-wrap max-hamburger:justify-center">
@@ -777,7 +784,7 @@ export default function Workshop() {
       </section>
       <div className="py-[70.5px] flex justify-between max-md:flex-col gap-[20px] max-md:gap-[50px] relative z-20 px-[80px] max-sm:px-[20px] max-md:px-[40px]">
         <div className="w-[675.77px] max-md:w-full">
-          <p className="text-[64px] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] mb-[41px] leading-[61.88px] text-[#E5E5E5] tracking-[-2.56px] font-['Graphikthin']">
+          <p className="text-[64px] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] mb-[41px] leading-[61.88px] text-[#E5E5E5] tracking-[-2.56px] max-sm:tracking-tight font-['Graphikthin']">
             Have tailored workshops at your institute at a low price of ₹199 per
             student{" "}
           </p>

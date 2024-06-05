@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <footer className="pl-[80px] max-md:px-[40px] max-sm:px-[20px] pt-[125.58px] pb-[14px] flex flex-col gap-[100px] max-sm:gap-[80px] relative pr-[76px]">
-      <div className="overflow-hidden absolute w-[100%] bottom-[0] left-0 h-[1449.12px]">
+      <div className="overflow-hidden max-smallphone:hidden absolute w-[100%] bottom-[0] left-0 h-[1449.12px]">
         <div
           className={`w-[100%] h-[849.12px] absolute bottom-[275.86px] ${style.footer}`}
         ></div>
@@ -20,8 +20,12 @@ export default function Footer() {
             </p>
           </div>
           <div className="w-[76px]">
-            <h1 className="text-[#E5E5E5] opacity-80 text-base">Follow us</h1>
-            <a href={'https://www.instagram.com/parallel.learn/'} target="_blank" className="mt-[12px] text-[#E5E5E5] text-base hover:underline cursor-pointer hover:decoration-solid">
+            <h1 className="text-[#E5E5E5] opacity-80 max-smallphone:mb-[10px] text-base">Follow us</h1>
+            <a
+              href={"https://www.instagram.com/parallel.learn/"}
+              target="_blank"
+              className="mt-[12px] text-[#E5E5E5] text-base hover:underline cursor-pointer hover:decoration-solid"
+            >
               Instagram
             </a>
             <p className="mt-[4px] text-[#E5E5E5] text-base hover:underline cursor-pointer hover:decoration-solid">
@@ -40,7 +44,7 @@ export default function Footer() {
               +91 96868 43606{" "}
             </p>
           </div>
-          <div className="opacity-70">
+          <div className="opacity-70 max-smallphone:hidden">
             <p className="mt-[4px] text-[#E5E5E5] text-base">
               Copyright @ Parallel Education. All Rights Reserved{" "}
             </p>
@@ -55,8 +59,23 @@ export default function Footer() {
           </div>
         </div>
         <div className="flex max-hamburger:gap-[50px] max-md:flex-wrap-reverse gap-[127.27px]">
+          <div className="opacity-70 hidden max-smallphone:block">
+            <p className="mt-[4px] text-[#E5E5E5] text-base">
+              Copyright @ Parallel Education. All Rights Reserved{" "}
+            </p>
+            <div className="flex mt-[5.37px] gap-[13.9px]">
+              <p className="text-[#E5E5E5] text-base hover:underline cursor-pointer hover:decoration-solid">
+                Privacy Policy
+              </p>
+              <p className="text-[#E5E5E5] text-base hover:underline cursor-pointer hover:decoration-solid">
+                Terms of Service
+              </p>
+            </div>
+          </div>
           <div className="w-[197.73px]  flex flex-col">
-            <h1 className="text-[#E5E5E5] opacity-80 text-base">Courses</h1>
+            <h1 className="text-[#E5E5E5] opacity-80 max-smallphone:mb-[10px] text-base">
+              Courses
+            </h1>
             <Link
               href={"/courses/low-code-no-code"}
               className="mt-[4px] hover:underline cursor-pointer hover:decoration-solid text-[#E5E5E5] text-base"
@@ -80,6 +99,7 @@ export default function Footer() {
               className="mt-[4px] hover:underline cursor-pointer hover:decoration-solid text-[#E5E5E5] text-base"
             >
               Full Stack Development{" "}
+              <span className="italic text-base font-semibold text-[#30E29D]">QUICK BATCH</span>
             </Link>
           </div>
           <div className="w-[92px] flex flex-col">

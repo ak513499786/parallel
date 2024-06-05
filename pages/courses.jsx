@@ -20,7 +20,7 @@ export default function Courses() {
       </main>
       <div className="px-[80px] max-lg:px-[80px] max-md:px-[40px] max-sm:px-[20px] py-[71px] justify-center mt-[93px] flex flex-wrap gap-x-[94px] gap-y-[84px] max-sm:gap-[20px]">
         <div
-          className={`px-[18px] card relative w-[413px] max-biggerscreen:w-[33%] max-md:w-full max-smalllaptop:w-[48.3%] rounded-[10px] py-[20px] ${style.aicardborder}`}
+          className={`px-[18px] card relative max-hamburger:w-[70%] w-[413px] max-biggerscreen:w-[33%] max-md:w-full max-smalllaptop:w-[48.3%] rounded-[10px] py-[20px] ${style.aicardborder}`}
         >
           <div className="bg-black rounded-[9px]">
             <div
@@ -63,7 +63,7 @@ export default function Courses() {
           </div>
         </div>
         <div
-          className={`px-[18px] card relative w-[413px] max-biggerscreen:w-[33%] max-md:w-full max-smalllaptop:w-[48.3%] rounded-[10px] py-[20px] ${style.aicardborder}`}
+          className={`px-[18px] card relative w-[413px] max-biggerscreen:w-[33%] max-md:w-full max-hamburger:w-[70%] max-smalllaptop:w-[48.3%] rounded-[10px] py-[20px] ${style.aicardborder}`}
         >
           <div className="bg-black rounded-[9px]">
             <div
@@ -106,7 +106,7 @@ export default function Courses() {
           </div>
         </div>
         <div
-          className={`px-[18px] card relative w-[413px] max-biggerscreen:w-[33%] max-md:w-full max-smalllaptop:w-[48.3%] border-white rounded-[10px] py-[20px] ${style.aicardborder}`}
+          className={`px-[18px] card max-hamburger:w-[70%] relative w-[413px] max-biggerscreen:w-[33%] max-md:w-full max-smalllaptop:w-[48.3%] border-white rounded-[10px] py-[20px] ${style.aicardborder}`}
         >
           <div className="bg-black rounded-[9px]">
             <div
@@ -146,7 +146,7 @@ export default function Courses() {
           </div>
         </div>
         <div
-          className={`px-[18px] relative card w-[413px] max-biggerscreen:w-[33%] max-md:w-full max-smalllaptop:w-[48.3%] border-white rounded-[10px] py-[20px] ${style.aicardborder}`}
+          className={`px-[18px] max-hamburger:w-[70%] relative card w-[413px] max-biggerscreen:w-[33%] max-md:w-full max-smalllaptop:w-[48.3%] border-white rounded-[10px] py-[20px] ${style.aicardborder}`}
         >
           <div className="bg-black rounded-[9px]">
             <div

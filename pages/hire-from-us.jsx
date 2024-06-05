@@ -5,6 +5,7 @@ import Footer from "../components/footer";
 import Link from "next/link";
 import axios from "axios";
 import { useState } from "react";
+import Success from "@/components/success";
 
 export default function Courses() {
   const [Name, setName] = useState("");
@@ -61,7 +62,7 @@ export default function Courses() {
       </main>
       <section className="px-[80px] max-md:px-[40px] max-sm:px-[20px] max-sm:py-0 relative pb-[96px] pt-[96.09px] flex flex-col justify-center items-center gap-[59.91px]">
         <div className="w-[890.53px] max-hamburger:w-full">
-          <h1 className="text-center text-[#E5E5E5] relative z-20 text-[64px] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] font-['Graphikthin'] leading-[61.68px] font-light tracking-[-2.56px] ">
+          <h1 className="text-center text-[#E5E5E5] relative z-20 text-[64px] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] font-['Graphikthin'] leading-[61.68px] font-light tracking-[-2.56px] max-sm:tracking-tight ">
             Our hiring partners never waste time screening thousands of unready
             candidates.{" "}
           </h1>
@@ -131,7 +132,7 @@ export default function Courses() {
       </section>
       <section className="pt-[72.09px] max-sm:py-20 max-sm:px-[20px] max-md:px-[40px] relative z-20 pb-[95px] pl-[79.53px] pr-[78.85px]">
         <div className="flex justify-between max-smalllaptop:gap-[50px]">
-          <p className="w-[890.53px] font-['Graphikthin'] text-[64px] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] font-light leading-[61.68px] tracking-[-2.56px] text-[#E5E5E5]">
+          <p className="w-[890.53px] font-['Graphikthin'] text-[64px] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] font-light leading-[61.68px] tracking-[-2.56px] max-sm:tracking-tight text-[#E5E5E5]">
             Candidates from Parallel have skills tailored to industry needs.{" "}
           </p>
         </div>
@@ -203,9 +204,10 @@ export default function Courses() {
           </div>
         </div>
       </section>
+      <Success/>
       <div className="py-[70.5px] flex justify-between max-md:flex-col gap-[20px] max-md:gap-[50px] relative z-20 px-[80px] max-sm:px-[20px] max-md:px-[40px]">
         <div className="w-[675.77px] max-md:w-full">
-          <p className="text-[64px] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] mb-[41px] leading-[61.88px] tracking-[-2.56px] font-['Graphikthin']">
+          <p className="text-[64px] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] mb-[41px] leading-[61.88px] tracking-[-2.56px] max-sm:tracking-tight font-['Graphikthin']">
             Don’t settle for anyone other than the best.
           </p>
           <p className="text-[20px] leading-[19.28px] tracking-[-0.2px] text-[#E5E5E5] font-['Graphikthin']">

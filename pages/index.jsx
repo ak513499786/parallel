@@ -83,10 +83,10 @@ export default function Home() {
       <div className="absolute w-[100%] h-[822px] top-0 left-0 overflow-hidden">
         <div className={style.backgroundbox}></div>
       </div>
-      <main className="px-[80px] z-50 relative max-md:px-[40px] max-sm:px-[20px] max-md:pt-[50px] max-sm:pt-[30px] flex justify-between max-hamburger:items-center max-smalllaptop:gap-[20px] max-hamburger:flex-col pb-[29.5px] pt-[76px]">
+      <main className="px-[80px] z-50 relative max-md:px-[40px] max-sm:px-[20px] max-md:pt-[50px] max-sm:pb-0 max-sm:pt-[30px] flex justify-between max-hamburger:items-center max-smalllaptop:gap-[20px] max-hamburger:flex-col pb-[29.5px] pt-[76px]">
         <div className="mt-[23px] max-hamburger:w-full max-md:mt-0">
           <div className="relative z-30 w-full">
-            <h1 className="w-[674.41px] text-[90px] font-medium max-hamburger:w-[100%]  max-smalllaptop:w-[510px] max-bigscreen:w-[676px] max-smalllaptop:tracking-[-4.5px] max-smalllaptop:text-[84px] max-sm:text-[64px] max-smallphone:text-[36px] max-sm:tracking-tight max-smalllaptop:leading-[102%] font-light tracking-[-5.22px] leading-[98.1px] text-[#E5E5E5] font-['Graphikmedium'] font-light mb-[20px]">
+            <h1 className="w-[685.41px] text-[74.07px] font-medium max-hamburger:w-[100%]  max-smalllaptop:w-[510px] max-bigscreen:w-[676px] max-smalllaptop:tracking-[-4.5px] max-smalllaptop:text-[66px] max-sm:text-[60px] max-smallphone:text-[42px] max-sm:tracking-normal max-sm:mb-[12px] max-smalllaptop:leading-[102%] font-light tracking-[-3.5px] leading-[80.73px] text-[#E5E5E5] font-['Graphikmedium'] font-light mb-[20px]">
               Upskill and get placed at{" "}
               <span className="font-['Graphik']">₹0.</span>
             </h1>
@@ -104,12 +104,33 @@ export default function Home() {
                 Product Development{" "}
               </p>
             </div>
-            <p className="w-[393.32px] font-['Graphikthin'] mt-[42px] max-sm:w-full text-[16px] leading-[24px] text-[#E0E0E0]">
-              Pay us a fraction of your salary only after you get placed through
-              our guaranteed placements.
+            <p className="mt-[50px] mb-[16px] max-sm:w-full text-[16px] leading-[24px] text-[#E0E0E0]">
+              Quick batch starts on June 5th. Get placed within{" "}
+              <span className="text-[#30E29D]"> 5 months!</span>
             </p>
+            <div className="bg-black rounded-[9px] max-bigphone:w-[300px] max-smallphone:w-full max-hamburger:w-[501px] max-sm:w-full">
+              <div className="bg-[#30E29D1A] max-bigphone:flex-col max-bigphone:w-[300px] max-smallphone:w-full rounded-[9px] max-sm:px-[12px] pr-[22.97px] w-[501px] max-sm:w-full max-hamburger:w-[501px] pl-[11px] pt-[16.71px] pb-[15.46px] flex gap-[17px]">
+                <Image
+                  src="/fullstack.png"
+                  className="max-bigphone:w-full"
+                  width={185.24}
+                  height={115.89}
+                />
+                <div>
+                  <h1 className="text-[20px] leading-[25.5px] text-[#E0E0E0] mb-[44.12px]">
+                    Full stack development
+                  </h1>
+                  <button
+                    onClick={handleSubmit}
+                    className="w-[265px] max-bigphone:w-full max-sm:w-[245px] h-[39px] bg-[#30E29D] rounded-[8px] font-semibold text-[#292929] text-[16px] font-[19.2px]"
+                  >
+                    Enroll now for 100% placement
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
-          <div className="w-[676px] max-hamburger:w-full overflow-hidden mt-[104px] max-hamburger:mt-[80px] max-md:mt-[50px] max-smalllaptop:w-[460px] relative z-30">
+          <div className="w-[676px] max-hamburger:w-full overflow-hidden mt-[68px] max-hamburger:mt-[80px] max-md:mt-[50px] max-smalllaptop:w-[460px] relative z-30">
             <p className="text-[16px] leading-[24px] text-[#E0E0E0]">
               Our placement partners
             </p>
@@ -294,25 +315,84 @@ export default function Home() {
           </div>
           <button
             onClick={handleSubmit}
-            className="w-full h-[53px] bg-[#30E29D] rounded-[8px] font-medium text-[#292929] text-[16px] font-[19.2px]"
+            className="w-full h-[53px] border-[#30E29D] hover:bg-[#30E29D] hover:text-[#292929] transition-all border-[1px] rounded-[8px] font-semibold text-[#30E29D] text-[16px] font-[19.2px]"
           >
-            <strong>Talk To Our Experts</strong>
+            Talk To Our Experts
           </button>
         </div>
       </main>
       <div className="absolute z-40 overflow-hidden w-[100%] h-[100vh] top-[811px] left-0 overflow-x-hidden">
         <div className={style.backgroundbox2}></div>
       </div>
-      <div className="pt-[102.57px] max-sm:py-20 max-sm:px-[20px] max-md:px-[40px] relative pb-[102.43px] pl-[80px] pr-[79px]">
+      <section className="py-[122px] relative z-[41] max-md:py-20 max-bigscreen:px-[80px] max-md:px-[40px] max-sm:px-[20px]  relative pl-[188px] pr-[80px] flex gap-[129px] max-hamburger:flex-col max-xl:gap-[50px] items-center">
+        <div
+          className={`px-[18px] relative card w-[413px] max-md:w-full max-hamburger:w-[70%] max-smalllaptop:w-[48.3%] rounded-[10px] py-[20px] ${style.aicardborder}`}
+        >
+          <div className="bg-black rounded-[9px]">
+            <div
+              className={`${style.fshomecardbg} px-[18px] relative rounded-[10px] py-[20px]`}
+            >
+              <Image
+                src="/fullstack.png"
+                className="w-[100%] relative z-20 h-auto"
+                width={377}
+                height={236}
+              />
+              <h1 className="mt-[20.87px] relative z-20 leading-[31.36px] mb-[17.13px] tracking-[-0.84px] font-['Graphikthin'] text-[#E5E5E5] text-[28px]">
+                Full Stack Development{" "}
+              </h1>
+              <div className="flex relative z-20 gap-[8px]">
+                <p className="px-[8px] max-sm:px-[6px] py-[4px] rounded-[5px] text-[#797979] text-base max-sm:text-sm border-[1px] border-[#797979]">
+                  Software Development{" "}
+                </p>
+                <p className="px-[8px] max-sm:px-[6px] py-[4px] rounded-[5px] text-[#797979] text-base max-sm:text-sm border-[1px] border-[#797979]">
+                  Beginner friendly{" "}
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="relative z-20">
+          <p className="text-[20px] text-[#E5E5E5] leading-[19.28px] mb-[24px]">
+            Introducing
+          </p>
+          <h1 className="text-[64px] mb-[45px] text-[#E5E5E5] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] max-md:w-full italic leading-[61.68px] tracking-[-2.56px] font-['Graphikthin'] text-[#E5E5E5]">
+            Quick Batch
+          </h1>
+          <p className="text-[20px] w-[440.78px] max-hamburger:w-full tracking-[-0.2px] font-['Graphikthin'] text-[#F7F7F7] leading-[25.28px] mb-[16px]">
+            A no bullsh*t course for focused people who want to get placed
+            within 6 months.
+          </p>
+          <p className="text-[16px] w-[417.46px] max-hamburger:w-full opacity-80 tracking-[-0.2px] font-['Graphikthin'] text-[#E0E0E0] leading-[24px] mb-[45px]">
+            This fast-track course gets students ready on frontend, backend, and
+            career development. All of this and a job within 6 months.
+          </p>
+          <div className="flex gap-[27px] max-sm:flex-col max-sm:gap-[12px] items-center">
+            <button className="text-[16px] max-sm:w-full font-semibold relative bg-[#30E29D] text-black py-[8px] px-[24px] rounded-[8px] leading-[24px]">
+              Learn more{" "}
+            </button>
+            <div className="flex gap-[4px] items-center">
+              <Image src="/profil.svg" width={28} height={28} />
+              <p className="text-base opacity-80 text-[#E0E0E0]">
+                Enrolled students:
+              </p>
+              <span className="text-base text-[#30E29D] font-semibold">
+                112
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div className="pt-[102.57px] max-sm:py-[32px] max-sm:px-[20px] max-md:px-[40px] relative pb-[102.43px] pl-[80px] pr-[79px]">
         <div className="flex justify-between relative z-50 max-smalllaptop:gap-[50px]">
-          <p className="w-[665px] font-['Graphikthin'] text-[64px] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] font-light leading-[61.68px] tracking-[-2.56px] text-[#E5E5E5]">
+          <p className="w-[665px] font-['Graphikthin'] text-[64px] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] font-light leading-[61.68px] tracking-[-2.56px] max-sm:tracking-tight text-[#E5E5E5]">
             In a career gap? Need to brush up your skills?{" "}
           </p>
-          <Link href={"/courses"}>
+          {/* <Link href={"/courses"}>
             <button className="w-[205px] max-md:hidden h-[53px] bg-[#30E29D] rounded-[8px] font-bold text-[#292929] text-[16px] font-[19.2px]">
               Explore courses{" "}
             </button>
-          </Link>
+          </Link> */}
         </div>
         <div className="flex gap-[21px] mt-[67px] z-20  relative max-md:flex-col max-hamburger:flex-wrap max-hamburger:justify-center">
           <div
@@ -397,11 +477,11 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <Link href={"/courses"}>
+        {/* <Link href={"/courses"}>
           <button className="w-full max-md:block hidden mt-[40px] h-[53px] bg-[#30E29D] rounded-[8px] font-bold text-[#292929] text-[16px] font-[19.2px]">
             Explore courses{" "}
           </button>
-        </Link>
+        </Link> */}
       </div>
       <div className="px-[80px] pt-[77.94px] pb-[100px] flex justify-between max-sm:py-0 max-md:px-[40px] max-md:flex-col max-md:gap-[40px] max-sm:px-[20px]">
         <div>
@@ -432,16 +512,16 @@ export default function Home() {
       </div>
       <div className="pt-[102.57px] max-sm:py-20 max-sm:px-[20px] max-md:px-[40px] relative z-20 pb-[62.43px] pl-[80px] pr-[79px]">
         <div className="flex justify-between items-start max-lg:gap-[50px]">
-          <p className="w-[903.7px] max-hamburger:w-full font-['Graphikthin'] text-[64px] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] font-light leading-[61.68px] tracking-[-2.56px] text-[#E5E5E5]">
+          <p className="w-[903.7px] max-hamburger:w-full font-['Graphikthin'] text-[64px] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] font-light leading-[61.68px] tracking-[-2.56px] max-sm:tracking-tight text-[#E5E5E5]">
             Courses with 100
             <span className="font-['Graphik'] font-light">%</span> job guarantee
             at an unbeatable price.{" "}
           </p>
-          <Link href={"/courses"}>
+          {/* <Link href={"/courses"}>
             <button className="w-[205px] mt-[5px] max-md:hidden h-[53px] bg-[#30E29D] rounded-[8px] font-bold text-[#292929] text-[16px] font-[19.2px]">
               Explore courses{" "}
             </button>
-          </Link>
+          </Link> */}
         </div>
         <div className="flex gap-[21px] max-md:flex-col mt-[67px] max-hamburger:flex-wrap max-hamburger:justify-center">
           <div
@@ -518,14 +598,14 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <Link href={"/courses"}>
+        {/* <Link href={"/courses"}>
           <button className="w-full max-md:block hidden mt-[40px] h-[53px] bg-[#30E29D] rounded-[8px] font-bold text-[#292929] text-[16px] font-[19.2px]">
             Explore courses{" "}
           </button>
-        </Link>
+        </Link> */}
       </div>
       <div className="pl-[80px] flex flex-col items-center max-md:px-[40px] max-sm:py-20 max-sm:px-[20px] pr-[79px] pt-[77.57px] pb-[139.43px]">
-        <h1 className="w-[665.36px] max-hamburger:w-full text-center text-[#E5E5E5] font-['Graphikthin'] text-[64px] leading-[61.68px] tracking-[-2.56px] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%]">
+        <h1 className="w-[665.36px] max-hamburger:w-full text-center text-[#E5E5E5] font-['Graphikthin'] text-[64px] leading-[61.68px] tracking-[-2.56px] max-sm:tracking-tight max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%]">
           Finish a course now. Pay after getting placed.
         </h1>
         <div className="pl-[2px] justify-center mt-[93px] flex flex-wrap gap-x-[94px] gap-y-[84px] max-sm:gap-[20px]">
@@ -659,6 +739,9 @@ export default function Home() {
             </div>
           </div>
           <div
+            className={`px-[18px] relative card w-[413px] max-biggerscreen:w-[33%] max-md:w-full max-smalllaptop:w-[48.3%] border-white rounded-[10px] py-[20px]`}
+          ></div>
+          {/* <div
             className={`px-[18px] relative card w-[413px] max-biggerscreen:w-[33%] max-md:w-full max-smalllaptop:w-[48.3%] border-white rounded-[10px] py-[20px] ${style.aicardborder}`}
           >
             <div className="bg-black rounded-[9px]">
@@ -686,9 +769,6 @@ export default function Home() {
                   <h1 className="text-[#ECECEC] leading-[28.8px] text-[24px] font-medium">
                     Free
                   </h1>
-                  {/* <p className="text-[#A1A1A1] text-[16px] leading-[19.2px] mt-[10px]">
-                &lt; 18 Hours
-              </p> */}
                 </div>
                 <Link
                   className="relative z-30"
@@ -700,7 +780,7 @@ export default function Home() {
                 </Link>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
       <section className="px-[80px] max-md:px-[40px] max-sm:px-[20px] max-sm:py-0 relative py-[100px] flex flex-col justify-center items-center gap-[65px]">
@@ -711,7 +791,7 @@ export default function Home() {
           <p className="text-center text-[#E5E5E5] relative z-20 font-['Graphikthin'] font-light mb-[20px] text-[20px] leading-[19.28px]">
             Our partners
           </p>
-          <h1 className="text-center text-[#E5E5E5] relative z-20 text-[64px] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] font-['Graphikthin'] leading-[61.68px] font-light tracking-[-2.56px] ">
+          <h1 className="text-center text-[#E5E5E5] relative z-20 text-[64px] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] font-['Graphikthin'] leading-[61.68px] font-light tracking-[-2.56px] max-sm:tracking-tight ">
             Our partners that’ll help you with placements.
           </h1>
         </div>
@@ -780,7 +860,7 @@ export default function Home() {
       </section>
       <Success />
       <div className="pt-[102.57px] max-sm:py-20 max-sm:px-[20px] max-md:px-[40px] relative z-20 pb-[62.43px] pl-[80px] pr-[79px]">
-        <h1 className="w-[600px] max-hamburger:w-full  max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] text-[64px] leading-[61.68px] font-['Graphikthin'] tracking-[-2.56px] text-[#E5E5E5]">
+        <h1 className="w-[600px] max-hamburger:w-full  max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] text-[64px] leading-[61.68px] font-['Graphikthin'] tracking-[-2.56px] max-sm:tracking-tight text-[#E5E5E5]">
           Learn from leading industry experts
         </h1>
         <div className="flex gap-[21px] max-md:flex-col mt-[67px] max-hamburger:flex-wrap max-hamburger:justify-center">
@@ -972,14 +1052,14 @@ export default function Home() {
           </div>
         </div>
       </section> */}
-      <section className="w-[100%] h-[614px] max-sm:h-auto max-sm:h-[300px] max-sm:mt-10 max-sm:py-10 overflow-hidden flex justify-center items-center relative">
+      <section className="w-[100%] h-[614px] max-sm:h- max-sm:h-[300px] max-sm:mt-10 max-sm:py-10 overflow-hidden flex justify-center items-center relative">
         <Image
           src="/Frame 83.svg"
           className={`absolute z-20 top-[23.1px] bg-transparent pl-[78.14px] h-[747.06px] w-[100%] pr-[76.27px] ${style.imagecontainer}`}
           width={107.16}
           height={107.16}
         />
-        <h1 className="w-[665.36px] max-sm:w-full z-20 relative max-sm:px-[20px] font-['Graphikthin'] text-[64px] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] leading-[61.68px] tracking-[-2.56px] text-[#E5E5E5] text-center">
+        <h1 className="w-[665.36px] max-sm:w-full z-20 relative max-sm:px-[20px] font-['Graphikthin'] text-[64px] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] max-smallphone:tracking-tight leading-[61.68px] tracking-[-2.56px] max-sm:tracking-tight text-[#E5E5E5] text-center">
           In-demand skills that guarantee jobs{" "}
         </h1>
         <div className="w-[100%] z-[2] overflow-hidden absolute bottom-[-200px] h-[966.17px]">
@@ -991,7 +1071,7 @@ export default function Home() {
         <p className="text-[#E5E5E5] text-[20px] leading-[19.28px] font-['Graphikthin'] mb-[18px] opacity-90">
           Looking for different ways to engage your students?
         </p>
-        <h1 className="w-[665.36px] z-[2] text-[64px] max-smalllaptop:w-full font-['Graphikthin'] text-[64px] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] leading-[61.68px] mb-[32px] font-['Graphikthin'] text-[#E5E5E5] tracking-[-2.56px]">
+        <h1 className="w-[665.36px] z-[2] text-[64px] max-smalllaptop:w-full font-['Graphikthin'] text-[64px] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] leading-[61.68px] mb-[32px] font-['Graphikthin'] text-[#E5E5E5] tracking-[-2.56px] max-sm:tracking-tight">
           Host a skill focused workshop at your college.{" "}
         </h1>
         <p className="text-base max-sm:text-sm w-[258.29px] opacity-60 font-['Graphikthin']">
@@ -1018,6 +1098,12 @@ export default function Home() {
         <Image
           src="/Saly-1.svg"
           className="absolute top-[-42.91px] max-xl:scale-75  max-smalllaptop:top-[-460px] max-smalllaptop:scale-100 max-smalllaptop:right-[-80px] max-smalllaptop:relative max-hamburger:hidden right-[61.44px] h-[771.56px] w-[771.56px] z-[30]"
+          width={107.16}
+          height={107.16}
+        />
+        <Image
+          src="/rocket.png"
+          className="max-hamburger:block hidden w-[calc(100%-80px)] max-sm:w-full z-[10]"
           width={107.16}
           height={107.16}
         />
