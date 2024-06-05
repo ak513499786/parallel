@@ -106,9 +106,9 @@ export default function Home() {
             </div>
             <p className="mt-[50px] mb-[16px] max-sm:w-full text-[16px] leading-[24px] text-[#E0E0E0]">
               Quick batch starts on June 5th. Get placed within{" "}
-              <span className="text-[#30E29D]"> 5 months!</span>
+              <span className="text-[#30E29D]"> 6 months!</span>
             </p>
-            <div className="bg-black rounded-[9px] max-bigphone:w-[300px] max-smallphone:w-full max-hamburger:w-[501px] max-sm:w-full">
+            <div className="bg-black rounded-[9px] max-bigphone:w-[300px] max-smallphone:w-full max-hamburger:w-[501px] w-[501px] max-sm:w-full">
               <div className="bg-[#30E29D1A] max-bigphone:flex-col max-bigphone:w-[300px] max-smallphone:w-full rounded-[9px] max-sm:px-[12px] pr-[22.97px] w-[501px] max-sm:w-full max-hamburger:w-[501px] pl-[11px] pt-[16.71px] pb-[15.46px] flex gap-[17px]">
                 <Image
                   src="/fullstack.png"
@@ -356,7 +356,7 @@ export default function Home() {
           <p className="text-[20px] text-[#E5E5E5] leading-[19.28px] mb-[24px]">
             Introducing
           </p>
-          <h1 className="text-[64px] mb-[45px] text-[#E5E5E5] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] max-md:w-full italic leading-[61.68px] tracking-[-2.56px] font-['Graphikthin'] text-[#E5E5E5]">
+          <h1 className="text-[64px] font-semibold mb-[45px] text-[#E5E5E5] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] max-md:w-full italic leading-[61.68px] tracking-[-2.56px] font-['Graphikthin'] text-[#E5E5E5]">
             Quick Batch
           </h1>
           <p className="text-[20px] w-[440.78px] max-hamburger:w-full tracking-[-0.2px] font-['Graphikthin'] text-[#F7F7F7] leading-[25.28px] mb-[16px]">
