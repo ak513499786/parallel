@@ -606,7 +606,7 @@ export default function Home() {
       </div>
       <div className="pl-[80px] flex flex-col items-center max-md:px-[40px] max-sm:py-20 max-sm:px-[20px] pr-[79px] pt-[77.57px] pb-[139.43px]">
         <h1 className="w-[665.36px] max-hamburger:w-full text-center text-[#E5E5E5] font-['Graphikthin'] text-[64px] leading-[61.68px] tracking-[-2.56px] max-sm:tracking-tight max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%]">
-          Finish a course now. Pay after getting placed.
+          Upcoming courses
         </h1>
         <div className="pl-[2px] justify-center mt-[93px] flex flex-wrap gap-x-[94px] gap-y-[84px] max-sm:gap-[20px]">
           <div
