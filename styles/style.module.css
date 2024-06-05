@@ -264,30 +264,24 @@
   height: 849.12px;
   border-radius: 100%;
   position: absolute;
-  bottom: -386px;
+  top: 380px;
   right: -215.61px;
-  filter: blur(120px);
-  opacity: 0.9;
   background: radial-gradient(
-    50% 50% at 50% 50%,
+    50% 60% at 50% 75%,
     #1bd44f 0%,
     rgba(14, 11, 180, 0.43) 100%
   );
+  filter: blur(60px);
 }
 .circle2 {
-  width: 766.17px;
-  height: 766.17px;
+  width: 709.17px;
+  height: 709.17px;
   border-radius: 100%;
   position: absolute;
-  top: -116px;
-  left: -191.61px;
-  filter: blur(160px);
-  background: radial-gradient(
-    50% 50% at 50% 50%,
-    #1bd44f 0%,
-    rgba(14, 11, 180, 0.43) 100%
-  );
-  opacity: 0.3;
+  top: -132px;
+  left: -131.61px;
+  background: #04121a;
+  filter: blur(60px);
 }
 .aicardborder {
   background: linear-gradient(
@@ -338,18 +332,15 @@
     );
 }
 .fshomecardbg {
-  z-index: 21;
+  z-index: 42;
   position: relative;
-  background: linear-gradient(
-      0deg,
-      rgba(255, 255, 255, 0.05),
-      rgba(255, 255, 255, 0.05)
-    ),
-    radial-gradient(
-      79.59% 40.79% at 51.06% 24.98%,
-      rgba(27, 196, 94, 0.24) 0%,
-      rgba(12, 244, 35, 0) 100%
-    );
+  background: radial-gradient(
+    65.92% 106.79% at 51.19% 60.18%,
+    rgba(25, 193, 88, 0.64) 0%,
+    rgba(0, 0, 0, 0) 99.11%
+  );
+  width: 100%;
+  height: 100%;
 }
 .fsbg {
   width: 100%;

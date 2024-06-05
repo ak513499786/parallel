@@ -111,7 +111,7 @@ export default function Home() {
             <div className="bg-black rounded-[9px] max-bigphone:w-[300px] max-smallphone:w-full max-hamburger:w-[501px] w-[501px] max-sm:w-full">
               <div className="bg-[#30E29D1A] max-bigphone:flex-col max-bigphone:w-[300px] max-smallphone:w-full rounded-[9px] max-sm:px-[12px] pr-[22.97px] w-[501px] max-sm:w-full max-hamburger:w-[501px] pl-[11px] pt-[16.71px] pb-[15.46px] flex gap-[17px]">
                 <Image
-                  src="/fullstack.png"
+                  src="/fsqb.svg"
                   className="max-bigphone:w-full"
                   width={185.24}
                   height={115.89}
@@ -328,9 +328,10 @@ export default function Home() {
         <div
           className={`px-[18px] relative card w-[413px] max-md:w-full max-hamburger:w-[70%] max-smalllaptop:w-[48.3%] rounded-[10px] py-[20px] ${style.aicardborder}`}
         >
+          <div className="w-full h-[300px] top-0 left-0 bg-[#19C158A3] blur-[256px] absolute"></div>
           <div className="bg-black rounded-[9px]">
             <div
-              className={`${style.fshomecardbg} px-[18px] relative rounded-[10px] py-[20px]`}
+              className={`${style.fshomecardbg} px-[18px] w-full relative rounded-[10px] py-[20px]`}
             >
               <Image
                 src="/fullstack.png"
@@ -338,10 +339,10 @@ export default function Home() {
                 width={377}
                 height={236}
               />
-              <h1 className="mt-[20.87px] relative z-20 leading-[31.36px] mb-[17.13px] tracking-[-0.84px] font-['Graphikthin'] text-[#E5E5E5] text-[28px]">
+              <h1 className="mt-[20.87px] mixblend relative z-20 leading-[31.36px] mb-[17.13px] tracking-[-0.84px] font-['Graphikthin'] text-[#E5E5E5] text-[28px]">
                 Full Stack Development{" "}
               </h1>
-              <div className="flex relative z-20 gap-[8px]">
+              <div className="flex mixblend relative z-20 gap-[8px]">
                 <p className="px-[8px] max-sm:px-[6px] py-[4px] rounded-[5px] text-[#797979] text-base max-sm:text-sm border-[1px] border-[#797979]">
                   Software Development{" "}
                 </p>
@@ -356,7 +357,7 @@ export default function Home() {
           <p className="text-[20px] text-[#E5E5E5] leading-[19.28px] mb-[24px]">
             Introducing
           </p>
-          <h1 className="text-[64px] font-semibold mb-[45px] text-[#E5E5E5] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] max-md:w-full italic leading-[61.68px] tracking-[-2.56px] font-['Graphikthin'] text-[#E5E5E5]">
+          <h1 className="text-[64px] font-semibold mb-[45px] text-[#E5E5E5] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] max-md:w-full italic leading-[61.68px] tracking-[-2.56px] text-[#E5E5E5]">
             Quick Batch
           </h1>
           <p className="text-[20px] w-[440.78px] max-hamburger:w-full tracking-[-0.2px] font-['Graphikthin'] text-[#F7F7F7] leading-[25.28px] mb-[16px]">
@@ -368,7 +369,7 @@ export default function Home() {
             career development. All of this and a job within 6 months.
           </p>
           <div className="flex gap-[27px] max-sm:flex-col max-sm:gap-[12px] items-center">
-            <button className="text-[16px] max-sm:w-full font-semibold relative bg-[#30E29D] text-black py-[8px] px-[24px] rounded-[8px] leading-[24px]">
+            <button className="text-[16px] max-sm:w-full font-semibold relative bg-[#30E29D] text-black py-[17px] px-[40px] rounded-[8px] leading-[24px]">
               Learn more{" "}
             </button>
             <div className="flex gap-[4px] items-center">
@@ -1055,7 +1056,7 @@ export default function Home() {
       <section className="w-[100%] h-[614px] max-sm:h- max-sm:h-[300px] max-sm:mt-10 max-sm:py-10 overflow-hidden flex justify-center items-center relative">
         <Image
           src="/Frame 83.svg"
-          className={`absolute z-20 top-[23.1px] bg-transparent pl-[78.14px] h-[747.06px] w-[100%] pr-[76.27px] ${style.imagecontainer}`}
+          className={`absolute z-20 top-[-75px] bg-transparent pl-[78.14px] h-[747.06px] w-[100%] pr-[76.27px] ${style.imagecontainer}`}
           width={107.16}
           height={107.16}
         />

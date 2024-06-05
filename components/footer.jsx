@@ -20,7 +20,7 @@ export default function Footer() {
             </p>
           </div>
           <div className="w-[76px]">
-            <h1 className="text-[#E5E5E5] opacity-80 max-smallphone:mb-[10px] text-base">Follow us</h1>
+            <h1 className="text-[#E5E5E5] opacity-80 mb-[10px] text-base">Follow us</h1>
             <a
               href={"https://www.instagram.com/parallel.learn/"}
               target="_blank"
