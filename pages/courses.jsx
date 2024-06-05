@@ -171,7 +171,7 @@ export default function Courses() {
               </div>
               <div className="flex justify-between mt-[49px]">
                 <h1 className="text-[#ECECEC] leading-[28.8px] text-[24px] font-medium">
-                  29,999
+                  ₹29,999
                 </h1>
                 {/* <p className="text-[#A1A1A1] text-[16px] leading-[19.2px] mt-[10px]">
                 &lt; 18 Hours
