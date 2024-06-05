@@ -668,7 +668,7 @@ export default function Nocode() {
             </p>
           </div>
           <p className="line-through text-[24px] leading-[28.8px] opacity-60 text-[#ECECEC]">
-            ₹50,000
+            ₹60,000
           </p>
         </div>
         <div className="w-[442px] max-md:w-full max-sm:gap-20px max-sm:p-[20px] flex flex-col z-20 gap-[32px] h-[484px] px-[37px] py-[34px] rounded-[14px] bg-[#FFFFFF1A]">
