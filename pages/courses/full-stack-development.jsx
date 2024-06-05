@@ -1,6 +1,5 @@
 import Image from "next/image";
 import style from "@/styles/style.module.css";
-import Link from "next/link";
 import Navbar from "../../components/navbar";
 import Footer from "../../components/footer";
 import Upskill from "../../components/upskill";
@@ -185,7 +184,7 @@ export default function Nocode() {
         </section>
         <section
           ref={Main}
-          className="pt-[95px] max-md:py-0 relative px-[80px] max-md:px-[40px] max-sm:px-[20px] pb-[37px]"
+          className="pt-[95px] z-[21] max-md:py-0 relative px-[80px] max-md:px-[40px] max-sm:px-[20px] pb-[37px]"
         >
           <h1 className="w-[630px] text-[#E5E5E5] max-md:w-full text-[64px] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] font-['Graphikthin'] leading-[61.68px] tracking-[-2.56px]">
             What you will learn in this course.{" "}
