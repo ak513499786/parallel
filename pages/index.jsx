@@ -1052,7 +1052,7 @@ export default function Home() {
       <section className="w-[100%] h-[614px] max-sm:h- max-sm:h-[300px] max-sm:mt-10 max-sm:py-10 overflow-hidden flex justify-center items-center relative">
         <Image
           src="/Frame 83.svg"
-          className={`absolute z-20 top-[-75px] bg-transparent pl-[78.14px] h-[747.06px] w-[100%] pr-[76.27px] ${style.imagecontainer}`}
+          className={`absolute max-md:hidden z-20 top-[-75px] bg-transparent pl-[78.14px] h-[747.06px] w-[100%] pr-[76.27px] ${style.imagecontainer}`}
           width={107.16}
           height={107.16}
         />
