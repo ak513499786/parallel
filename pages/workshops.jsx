@@ -5,6 +5,7 @@ import Footer from "../components/footer";
 import Link from "next/link";
 import axios from "axios";
 import { useState } from "react";
+import Success from "@/components/success";
 
 export default function Workshop() {
   const [Name, setName] = useState("");
@@ -70,14 +71,14 @@ export default function Workshop() {
       </main>
       <section className="pb-[52px] pl-[80px] max-sm:px-[20px] max-md:px-[40px] maxmd:py-[80px] pr-[79px] pt-[118.84px]">
         <h1 className="mb-[80.56px] text-[64px] leading-[61.68px] text-[#E5E5E5] font-['Graphikthin'] tracking-[-2.56px] max-sm:tracking-tight w-[1130px] max-xl:w-full max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%]">
-          Hands-on workshop on using{" "}
+          Hands-on workshop on using <br />
           <span className="font-['Graphik']">AI</span> to get a job, optimize
           resume and more.
         </h1>
-        <p className="text-[20px] leading-[25.2px] tracking-[-0.2px] font-semibold mb-[21.6px]">
+        <p className="text-[20px] leading-[25.2px] tracking-[-0.2px] font-medium mb-[21.6px]">
           This workshop contains
         </p>
-        <div className="flex gap-[84px] max-hamburger:flex-nowrap max-md:flex-wrap-reverse max-smalllaptop:flex-wrap-reverse max-smalllaptop:items-start mb-[80.56px] max-xl:ml-0 max-xl:gap-[32px] items-center justify-between">
+        <div className="flex gap-[84px] max-hamburger:flex-nowrap max-md:flex-wrap-reverse max-smalllaptop:flex-wrap-reverse max-smalllaptop:items-start mb-[80.56px] max-xl:ml-0 max-xl:gap-[32px] items-center">
           <div className={`${style.coloredborder} w-[934px] max-xl:w-full`}>
             <div className="bg-black rounded-[9px]">
               <div className="flex w-full py-[31.82px] z-20 relative max-hamburger:flex-col max-hamburger:h-auto max-hamburger:w-full gap-[31.04px] h-[289px] bg-[#95FF931A] px-[18px] rounded-[10px]">
@@ -110,7 +111,7 @@ export default function Workshop() {
             1
           </h1>
         </div>
-        <div className="flex ml-[58.09px] max-hamburger:items-start max-hamburger:flex-row gap-[84px] max-md:flex-col max-md:items-end max-smalllaptop:flex-col max-smalllaptop:items-end max-xl:ml-0 max-xl:gap-[32px] max-bigscreen:ml-[30px] my-[80.56px] items-center justify-between">
+        <div className="flex ml-[58.09px] max-hamburger:items-start max-hamburger:flex-row gap-[84px] max-md:flex-col max-md:items-end max-smalllaptop:flex-col max-smalllaptop:items-end max-xl:ml-0 max-xl:gap-[32px] max-bigscreen:ml-[30px] my-[80.56px] items-center justify-end">
           <h1 className="text-[276.38px] font-['Clash'] max-sm:text-[130px] max-sm:leading-[80px] leading-[230px] text-[#262002] font-bold">
             2
           </h1>{" "}
@@ -127,7 +128,9 @@ export default function Workshop() {
                 />
                 <div>
                   <p className="mt-[9.68px] max-sm:text-[28px] max-sm:leading-[34px] max-hamburger:h-auto max-hamburger:w-full w-[487.05px] text-[36.63px] font-['Graphikthin'] leading-[41.03px] tracking-[-1.1px] mb-[12px] text-[#E5E5E5]">
-                    Prompt Engineering <span className="max-smallphone:hidden">101</span>. 4-step structured formula.{" "}
+                    Prompt Engineering{" "}
+                    <span className="max-smallphone:hidden">101</span>. 4-step
+                    structured formula.{" "}
                   </p>
                   <p className="text-white opacity-80 w-[542.5px] max-bigscreen:w-[100%] mb-[32px] text-base font-['Graphikthin']">
                     Get a hands-on experience on optimizing prompts. Get AI to
@@ -145,7 +148,7 @@ export default function Workshop() {
             </div>
           </div>
         </div>
-        <div className="flex gap-[84px] max-hamburger:items-start max-hamburger:flex-nowrap max-md:flex-wrap-reverse max-md:items-start max-smalllaptop:flex-wrap-reverse max-smalllaptop:items-start my-[80.56px] max-xl:ml-0 max-xl:gap-[32px] items-center justify-between">
+        <div className="flex gap-[84px] max-hamburger:items-start max-hamburger:flex-nowrap max-md:flex-wrap-reverse max-md:items-start max-smalllaptop:flex-wrap-reverse max-smalllaptop:items-start my-[80.56px] max-xl:ml-0 max-xl:gap-[32px] items-center">
           <div
             className={`${style.purplecoloredborder} w-[934px] max-xl:w-full`}
           >
@@ -186,11 +189,13 @@ export default function Workshop() {
             3
           </h1>
         </div>
-        <div className="flex ml-[58.09px] max-hamburger:items-start max-hamburger:flex-row max-md:flex-col max-md:items-end max-smalllaptop:flex-col max-smalllaptop:items-end gap-[84px] max-xl:ml-0 max-xl:gap-[32px] max-bigscreen:ml-[30px] my-[80.56px] items-center justify-between">
+        <div className="flex ml-[58.09px] max-hamburger:items-start max-hamburger:flex-row max-md:flex-col max-md:items-end max-smalllaptop:flex-col max-smalllaptop:items-end gap-[84px] max-xl:ml-0 max-xl:gap-[32px] max-bigscreen:ml-[30px] my-[80.56px] items-center justify-end">
           <h1 className="text-[276.38px] font-['Clash'] max-sm:text-[130px] max-sm:leading-[80px] leading-[230px] text-[#021E22] font-bold">
             4
           </h1>{" "}
-          <div className={`${style.bluecoloredborder} max-biggerscreen:w-[880px] w-[934px] max-xl:w-full`}>
+          <div
+            className={`${style.bluecoloredborder} max-biggerscreen:w-[880px] w-[934px] max-xl:w-full`}
+          >
             <div className="bg-black rounded-[9px]">
               <div className="flex py-[31.82px] max-hamburger:flex-col gap-[31.04px] max-hamburger:h-auto w-full h-[289px] w-[934px] max-xl:w-full bg-[#07E1FF1A] px-[18px] max-md:w-full rounded-[10px]">
                 <Image
@@ -239,7 +244,7 @@ export default function Workshop() {
                 <h1 className="text-[24px] ml-[27.5px] max-sm:ml-[12px] max-sm:w-[calc(100%-20px)] max-sm:h-auto w-[340px] mb-[19.66px] leading-[30.64px] text-[#E0E0E0] tracking-[-0.24px] h-[60px] max-bigscreen:w-[calc(100%-50px)] max-sm:h-auto">
                   Insider knowledge on current market trends
                 </h1>
-                <p className="h-[112px] max-sm:ml-[12px] max-sm:w-[calc(100%-20px)] max-sm:h-auto w-[355px] ml-[27.5px] text-base text-[#E0E0E0] max-bigscreen:w-[calc(100%-50px)] max-sm:pb-[20px]">
+                <p className="h-[112px] max-sm:ml-[12px] max-sm:w-[calc(100%-20px)] max-sm:h-auto w-[355px] ml-[27.5px] text-base text-[#E0E0E0] max-bigscreen:w-[calc(100%-50px)] max-sm:pb-[20px] opacity-80">
                   Get never heard before information on the current job market
                   trends, where it is heading in the future.
                 </p>
@@ -260,7 +265,7 @@ export default function Workshop() {
                 <h1 className="text-[24px] ml-[27.5px] max-sm:ml-[12px] max-sm:w-[calc(100%-20px)] max-sm:h-auto max-sm:ml-[12px] max-sm:w-[calc(100%-20px)] max-sm:h-auto w-[355px] mb-[19.66px] leading-[30.64px] text-[#E0E0E0] max-bigscreen:w-[calc(100%-50px)] tracking-[-0.24px] h-[60px]">
                   Information on how AI will affect the upcoming workforce{" "}
                 </h1>
-                <p className="h-[112px] max-sm:ml-[12px] max-sm:w-[calc(100%-20px)] max-sm:h-auto w-[355px] ml-[27.5px] text-base text-[#E0E0E0] max-bigscreen:w-[calc(100%-50px)] max-sm:pb-[20px]">
+                <p className="h-[112px] max-sm:ml-[12px] max-sm:w-[calc(100%-20px)] max-sm:h-auto w-[355px] ml-[27.5px] text-base text-[#E0E0E0] max-bigscreen:w-[calc(100%-50px)] max-sm:pb-[20px] opacity-80">
                   Learn the impact of AI, how you should leverage its potential
                   instead of being afraid of getting replaced by it.
                 </p>
@@ -281,7 +286,7 @@ export default function Workshop() {
                 <h1 className="text-[24px] ml-[27.5px] max-sm:ml-[12px] max-sm:w-[calc(100%-20px)] max-sm:h-auto w-[340px] mb-[19.66px] leading-[30.64px] text-[#E0E0E0] tracking-[-0.24px] h-[60px] max-bigscreen:w-[calc(100%-50px)] max-sm:h-auto">
                   Introduction to Prompt Engineering{" "}
                 </h1>
-                <p className="h-[112px] max-sm:ml-[12px] max-sm:w-[calc(100%-20px)] max-sm:h-auto w-[355px] ml-[27.5px] text-base text-[#E0E0E0] max-bigscreen:w-[calc(100%-50px)] max-sm:pb-[20px]">
+                <p className="h-[112px] max-sm:ml-[12px] max-sm:w-[calc(100%-20px)] max-sm:h-auto w-[355px] ml-[27.5px] text-base text-[#E0E0E0] max-bigscreen:w-[calc(100%-50px)] max-sm:pb-[20px] opacity-80">
                   Prompts is the way you communicate with an AI. Learn how to do
                   it the best.
                 </p>
@@ -302,7 +307,7 @@ export default function Workshop() {
                 <h1 className="text-[24px] ml-[27.5px] max-sm:ml-[12px] max-sm:w-[calc(100%-20px)] max-sm:h-auto w-[340px] mb-[19.66px] leading-[30.64px] text-[#E0E0E0] tracking-[-0.24px] h-[60px] max-bigscreen:w-[calc(100%-50px)] max-sm:h-auto">
                   4-step structured formula to writing prompts{" "}
                 </h1>
-                <p className="h-[112px] max-sm:ml-[12px] max-sm:w-[calc(100%-20px)] max-sm:h-auto w-[355px] ml-[27.5px] text-base text-[#E0E0E0] max-bigscreen:w-[calc(100%-50px)] max-sm:pb-[20px]">
+                <p className="h-[112px] max-sm:ml-[12px] max-sm:w-[calc(100%-20px)] max-sm:h-auto w-[355px] ml-[27.5px] text-base text-[#E0E0E0] max-bigscreen:w-[calc(100%-50px)] max-sm:pb-[20px] opacity-80">
                   Writing good prompts is not a matter of luck. Learn how to use
                   the full potential of AI through prompts.
                 </p>
@@ -323,7 +328,7 @@ export default function Workshop() {
                 <h1 className="text-[24px] ml-[27.5px] max-sm:ml-[12px] max-sm:w-[calc(100%-20px)] max-sm:h-auto h-[60px] w-[340px] mb-[19.66px] leading-[30.64px] text-[#E0E0E0] tracking-[-0.24px] max-sm:w-[calc(100%-50px)] max-sm:h-auto">
                   Use AI to write better code{" "}
                 </h1>
-                <p className="h-[112px] max-sm:ml-[12px] max-sm:w-[calc(100%-20px)] max-sm:h-auto w-[355px] ml-[27.5px] text-base text-[#E0E0E0] max-bigscreen:w-[calc(100%-50px)] max-sm:pb-[20px]">
+                <p className="h-[112px] max-sm:ml-[12px] max-sm:w-[calc(100%-20px)] max-sm:h-auto w-[355px] ml-[27.5px] text-base text-[#E0E0E0] max-bigscreen:w-[calc(100%-50px)] max-sm:pb-[20px] opacity-80">
                   Writing a code is much easier with an assistant. Learn how to
                   leverage leading AI assistants like GitHub Co-pilot to up your
                   coding game.
@@ -345,7 +350,7 @@ export default function Workshop() {
                 <h1 className="text-[24px] ml-[27.5px] max-sm:ml-[12px] max-sm:w-[calc(100%-20px)] max-sm:h-auto h-[60px] w-[340px] mb-[19.66px] leading-[30.64px] text-[#E0E0E0] tracking-[-0.24px] max-sm:w-[calc(100%-50px)] max-sm:h-auto">
                   Faster content curation through ChatGPT, Gemini{" "}
                 </h1>
-                <p className="h-[112px] max-sm:ml-[12px] max-sm:w-[calc(100%-20px)] max-sm:h-auto w-[355px] ml-[27.5px] text-base text-[#E0E0E0] max-bigscreen:w-[calc(100%-50px)] max-sm:pb-[20px]">
+                <p className="h-[112px] max-sm:ml-[12px] max-sm:w-[calc(100%-20px)] max-sm:h-auto w-[355px] ml-[27.5px] text-base text-[#E0E0E0] max-bigscreen:w-[calc(100%-50px)] max-sm:pb-[20px] opacity-80">
                   Generate content like it’s written by a copywriter working at
                   Google, Apple! Use it to write blogs, articles, emails,
                   messages and much more.
@@ -367,7 +372,7 @@ export default function Workshop() {
                 <h1 className="text-[24px] ml-[27.5px] max-sm:ml-[12px] max-sm:w-[calc(100%-20px)] max-sm:h-auto h-[60px] w-[340px] mb-[19.66px] leading-[30.64px] text-[#E0E0E0] tracking-[-0.24px] max-sm:w-[calc(100%-50px)] max-sm:h-auto">
                   Generate breath-taking imagery using AI{" "}
                 </h1>
-                <p className="h-[112px] max-sm:ml-[12px] max-sm:w-[calc(100%-20px)] max-sm:h-auto w-[355px] ml-[27.5px] text-base text-[#E0E0E0] max-bigscreen:w-[calc(100%-50px)] max-sm:pb-[20px]">
+                <p className="h-[112px] max-sm:ml-[12px] max-sm:w-[calc(100%-20px)] max-sm:h-auto w-[355px] ml-[27.5px] text-base text-[#E0E0E0] max-bigscreen:w-[calc(100%-50px)] max-sm:pb-[20px] opacity-80">
                   Images are always a good way to stand out from the crowd.
                   Learn how to generate images that do not look like they’ve
                   been generated by AI.
@@ -389,7 +394,7 @@ export default function Workshop() {
                 <h1 className="text-[24px] ml-[27.5px] max-sm:ml-[12px] max-sm:w-[calc(100%-20px)] max-sm:h-auto h-[60px] w-[340px] mb-[19.66px] leading-[30.64px] text-[#E0E0E0] tracking-[-0.24px] max-sm:w-[calc(100%-50px)] max-sm:h-auto">
                   Research on a topic accurately{" "}
                 </h1>
-                <p className="h-[112px] max-sm:ml-[12px] max-sm:w-[calc(100%-20px)] max-sm:h-auto w-[355px] ml-[27.5px] text-base text-[#E0E0E0] max-bigscreen:w-[calc(100%-50px)] max-sm:pb-[20px]">
+                <p className="h-[112px] max-sm:ml-[12px] max-sm:w-[calc(100%-20px)] max-sm:h-auto w-[355px] ml-[27.5px] text-base text-[#E0E0E0] max-bigscreen:w-[calc(100%-50px)] max-sm:pb-[20px] opacity-80">
                   LLMs like ChatGPT, Gemini often generate inaccurate data when
                   it comes to research. Use AI tools like Perplexity to research
                   along with the citations.
@@ -411,7 +416,7 @@ export default function Workshop() {
                 <h1 className="text-[24px] ml-[27.5px] max-sm:ml-[12px] max-sm:w-[calc(100%-20px)] max-sm:h-auto h-[60px] w-[340px] mb-[19.66px] leading-[30.64px] text-[#E0E0E0] tracking-[-0.24px] max-sm:w-[calc(100%-50px)] max-sm:h-auto">
                   Build hire-worthy resume using AI{" "}
                 </h1>
-                <p className="h-[112px] max-sm:ml-[12px] max-sm:w-[calc(100%-20px)] max-sm:h-auto w-[355px] ml-[27.5px] text-base text-[#E0E0E0] max-bigscreen:w-[calc(100%-50px)] max-sm:pb-[20px]">
+                <p className="h-[112px] max-sm:ml-[12px] max-sm:w-[calc(100%-20px)] max-sm:h-auto w-[355px] ml-[27.5px] text-base text-[#E0E0E0] max-bigscreen:w-[calc(100%-50px)] max-sm:pb-[20px] opacity-80">
                   Let AI do all the heavy-lifting while building your resume.
                   Get it to build a resume that’ll grab recruiters'’ attention.
                 </p>
@@ -432,7 +437,7 @@ export default function Workshop() {
                 <h1 className="text-[24px] ml-[27.5px] max-sm:ml-[12px] max-sm:w-[calc(100%-20px)] max-sm:h-auto h-[60px] w-[340px] mb-[19.66px] leading-[30.64px] text-[#E0E0E0] tracking-[-0.24px] max-sm:w-[calc(100%-50px)] max-sm:h-auto">
                   Build a personal website only using prompts{" "}
                 </h1>
-                <p className="h-[112px] max-sm:ml-[12px] max-sm:w-[calc(100%-20px)] max-sm:h-auto w-[355px] ml-[27.5px] text-base text-[#E0E0E0] max-bigscreen:w-[calc(100%-50px)] max-sm:pb-[20px]">
+                <p className="h-[112px] max-sm:ml-[12px] max-sm:w-[calc(100%-20px)] max-sm:h-auto w-[355px] ml-[27.5px] text-base text-[#E0E0E0] max-bigscreen:w-[calc(100%-50px)] max-sm:pb-[20px] opacity-80">
                   Use all the knowledge taught in this workshop to build your
                   personal website only using prompts. Not a single line of code
                   is required.
@@ -454,7 +459,7 @@ export default function Workshop() {
                 <h1 className="text-[24px] ml-[27.5px] max-sm:ml-[12px] max-sm:w-[calc(100%-20px)] max-sm:h-auto h-[60px] w-[340px] mb-[19.66px] leading-[30.64px] text-[#E0E0E0] tracking-[-0.24px] max-sm:w-[calc(100%-50px)] max-sm:h-auto">
                   Curate your resume using AI{" "}
                 </h1>
-                <p className="h-[112px] max-sm:ml-[12px] max-sm:w-[calc(100%-20px)] max-sm:h-auto w-[355px] ml-[27.5px] text-base text-[#E0E0E0] max-bigscreen:w-[calc(100%-50px)] max-sm:pb-[20px]">
+                <p className="h-[112px] max-sm:ml-[12px] max-sm:w-[calc(100%-20px)] max-sm:h-auto w-[355px] ml-[27.5px] text-base text-[#E0E0E0] max-bigscreen:w-[calc(100%-50px)] max-sm:pb-[20px] opacity-80">
                   Learn to tweak your AI generated resume to match individual
                   job openings to better your chances of getting hired.
                 </p>
@@ -475,7 +480,7 @@ export default function Workshop() {
                 <h1 className="text-[24px] ml-[27.5px] max-sm:ml-[12px] max-sm:w-[calc(100%-20px)] max-sm:h-auto h-[60px] w-[355px] mb-[19.66px] leading-[30.64px] text-[#E0E0E0] tracking-[-0.24px] max-bigscreen:w-[calc(100%-50px)] max-sm:h-auto">
                   Easy and lesser known hacks to finding jobs through LinkedIn{" "}
                 </h1>
-                <p className="h-[112px] max-sm:ml-[12px] max-sm:w-[calc(100%-20px)] max-sm:h-auto w-[355px] ml-[27.5px] text-base text-[#E0E0E0] max-bigscreen:w-[calc(100%-50px)] max-sm:pb-[20px]">
+                <p className="h-[112px] max-sm:ml-[12px] max-sm:w-[calc(100%-20px)] max-sm:h-auto w-[355px] ml-[27.5px] text-base text-[#E0E0E0] max-bigscreen:w-[calc(100%-50px)] max-sm:pb-[20px] opacity-80">
                   Finding a job through LinkedIn is easy if you know what you
                   are doing. Let us teach you what you should be looking out
                   for.
@@ -497,7 +502,7 @@ export default function Workshop() {
                 <h1 className="text-[24px] ml-[27.5px] max-sm:ml-[12px] max-sm:w-[calc(100%-20px)] max-sm:h-auto h-[60px] w-[340px] mb-[19.66px] leading-[30.64px] text-[#E0E0E0] tracking-[-0.24px] max-sm:w-[calc(100%-50px)] max-sm:h-auto">
                   Networking with AI assistance{" "}
                 </h1>
-                <p className="h-[112px] max-sm:ml-[12px] max-sm:w-[calc(100%-20px)] max-sm:h-auto w-[355px] ml-[27.5px] text-base text-[#E0E0E0] max-bigscreen:w-[calc(100%-50px)] max-sm:pb-[20px]">
+                <p className="h-[112px] max-sm:ml-[12px] max-sm:w-[calc(100%-20px)] max-sm:h-auto w-[355px] ml-[27.5px] text-base text-[#E0E0E0] max-bigscreen:w-[calc(100%-50px)] max-sm:pb-[20px] opacity-80">
                   Use AI tools to connect with relevant professionals in your
                   field based on your skills and career goals.
                 </p>
@@ -518,7 +523,7 @@ export default function Workshop() {
                 <h1 className="text-[24px] ml-[27.5px] max-sm:ml-[12px] max-sm:w-[calc(100%-20px)] max-sm:h-auto h-[60px] w-[340px] mb-[19.66px] leading-[30.64px] text-[#E0E0E0] tracking-[-0.24px] max-sm:w-[calc(100%-50px)] max-sm:h-auto">
                   Write engaging emails in 4 steps{" "}
                 </h1>
-                <p className="h-[112px] max-sm:ml-[12px] max-sm:w-[calc(100%-20px)] max-sm:h-auto w-[355px] ml-[27.5px] text-base text-[#E0E0E0] max-bigscreen:w-[calc(100%-50px)] max-sm:pb-[20px]">
+                <p className="h-[112px] max-sm:ml-[12px] max-sm:w-[calc(100%-20px)] max-sm:h-auto w-[355px] ml-[27.5px] text-base text-[#E0E0E0] max-bigscreen:w-[calc(100%-50px)] max-sm:pb-[20px] opacity-80">
                   Learn to write engaging emails in 4 simple steps. Let AI do
                   most of the work while you curate the email and send it to the
                   right people.
@@ -628,6 +633,15 @@ export default function Workshop() {
             height={82}
           />
         </div>
+      </section>
+      <section className="relative z-20 py-[80px]">
+        <p className="text-[20px] pl-20 max-md:px-[40px] max-sm:px-[20px] leading-[19.28px] text-[#E5E5E5] opacity-80 font-['Graphikthin'] font-light mb-[20px]">
+          Success stories
+        </p>
+        <h1 className="w-[813.91px] max-hamburger:w-full ml-20 max-hamburger:px-20 max-hamburger:ml-0 max-md:px-[40px] max-sm:px-[20px] text-[64px] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] max-hamburger:tracking-normal leading-[61.68px] font-['Graphikthin'] font-light text-[#E5E5E5] mb-[58px] max-sm:mb-[50px] tracking-[-2.56px]">
+          People benefitting from our new age method of learning.{" "}
+        </h1>
+        <Success />
       </section>
       <div className="pt-[92.84px] max-sm:py-10 max-sm:px-[20px] max-md:px-[40px]  relative z-20 pb-[95px] pl-[80px] pr-[79px]">
         <div className="flex justify-between">
@@ -794,7 +808,9 @@ export default function Workshop() {
               href="mailto:hire@parallel.com"
               className="border-b-[1px] border-[white]"
             >
-              hello@parallel.com
+              hello
+              <span className="font-['Graphik'] opacity-90">@</span>
+              parallel.com
             </a>
           </p>
         </div>

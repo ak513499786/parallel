@@ -50,19 +50,27 @@ export default function Fees() {
         </h1>
       </main>
       <section className="px-[80px] relative z-20 pt-[96.09px] max-md:py-20 max-md:px-[40px] max-sm:px-[20px] pb-[95.91px] flex flex-col gap-[57px]">
-        <p className="text-[64px] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] leading-[61.68px] tracking-[-2.56px] max-sm:tracking-tight text-[#E5E5E5] font-['Graphikthin'] w-[890.53px] max-hamburger:w-full">
+        <p className="text-[64px] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] leading-[61.68px] tracking-[-2.56px] max-sm:tracking-tight text-[#E5E5E5] font-['Graphikthin'] w-[818.23px] max-hamburger:w-full">
           Because we believe that education should never be behind a paywall.
         </p>
-        <p className="text-[64px] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] w-[818.23px] leading-[61.68px] tracking-[-2.56px] max-sm:tracking-tight text-[#E5E5E5] font-['Graphikthin'] w-[890.53px] max-hamburger:w-full">
+        <p className="text-[64px] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] w-[818.23px] leading-[61.68px] tracking-[-2.56px] max-sm:tracking-tight text-[#E5E5E5] font-['Graphikthin'] w-[818.23px] max-hamburger:w-full">
           We’ll help you upskill, get placed, and charge you only 15
           <span className="font-['Graphik'] opacity-90 font-light">%</span> of
           your CTC for 12 months.
         </p>
-        <p className="text-[64px] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] leading-[61.68px] w-[818.23px] tracking-[-2.56px] max-sm:tracking-tight text-[#E5E5E5] font-['Graphikthin'] w-[890.53px] max-hamburger:w-full">
+        <p className="text-[64px] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] leading-[61.68px] w-[818.23px] tracking-[-2.56px] max-sm:tracking-tight text-[#E5E5E5] font-['Graphikthin'] w-[818.23px] max-hamburger:w-full">
           We will not charge you until you get placed.
         </p>
       </section>
-      <Success />
+      <section className="relative z-20 py-[80px]">
+        <p className="text-[20px] pl-20 max-md:px-[40px] max-sm:px-[20px] leading-[19.28px] text-[#E5E5E5] opacity-80 font-['Graphikthin'] font-light mb-[20px]">
+          Success stories
+        </p>
+        <h1 className="w-[813.91px] max-hamburger:w-full ml-20 max-hamburger:px-20 max-hamburger:ml-0 max-md:px-[40px] max-sm:px-[20px] text-[64px] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] max-hamburger:tracking-normal leading-[61.68px] font-['Graphikthin'] font-light text-[#E5E5E5] mb-[58px] max-sm:mb-[50px] tracking-[-2.56px]">
+          People benefitting from our new age method of learning.{" "}
+        </h1>
+        <Success />
+      </section>{" "}
       <section className="py-[120.5px] max-md:px-[40px] max-smallphone:gap-[10px] max-sm:px-[20px] max-md:pt-[50px] max-sm:pt-[30px] pl-[80px] flex flex-col gap-[51px]">
         <p className="text-[#E5E5E5] text-[32px] max-md:text-[24px] max-md:leading-[120%] max-smallphone:text-base max-hamburger:leading-[120%] font-['Graphikthin'] leading-[30.84px] tracking-[-0.6px]">
           What you will be paying us
@@ -83,34 +91,34 @@ export default function Fees() {
           </h1>
           <table className="w-[826px] max-sm:text-[24px] max-smallphone:text-[20px] max-hamburger:w-full mt-[51px] font-['Graphikthin'] text-[32px] leading-[30.84px] font-light text-[#E5E5E5] tracking-[-0.64px] text-left h-[336px]">
             <tr>
-              <th className="w-[413px] max-hamburger:w-[50%] h-[112px] pl-[32.76px] max-sm:pl-[16px] border-[1px] border-white font-['Graphikthin'] font-light">
+              <th className="w-[413px] max-hamburger:w-[50%] h-[112px] pl-[32.76px] max-sm:pl-[16px] border-[1px] border-[E5E5E5] font-['Graphikthin'] font-light text-[#E5E5E5]">
                 Week 1 - 4
               </th>
-              <th className="w-[413px] max-hamburger:w-[50%] h-[112px] pl-[32.76px] max-sm:pl-[16px] border-[1px] border-white font-['Graphikthin'] font-light">
+              <th className="w-[413px] max-hamburger:w-[50%] h-[112px] pl-[32.76px] max-sm:pl-[16px] border-[1px] border-[E5E5E5] font-['Graphikthin'] font-light text-[#E5E5E5]">
                 No Payment
               </th>
             </tr>
             <tr>
-              <th className="w-[413px] max-hamburger:w-[50%] h-[112px] pl-[32.76px] max-sm:pl-[16px] border-[1px] border-white font-['Graphikthin'] font-light">
+              <th className="w-[413px] max-hamburger:w-[50%] h-[112px] pl-[32.76px] max-sm:pl-[16px] border-[1px] border-[E5E5E5] font-['Graphikthin'] font-light text-[#E5E5E5]">
                 Week 5 - 12
               </th>
-              <th className="w-[413px] max-hamburger:w-[50%] h-[112px] pl-[32.76px] max-sm:pl-[16px] border-[1px] border-white font-['Graphikthin'] font-light">
+              <th className="w-[413px] max-hamburger:w-[50%] h-[112px] pl-[32.76px] max-sm:pl-[16px] border-[1px] border-[E5E5E5] font-['Graphikthin'] font-light text-[#E5E5E5]">
                 ₹15,000
               </th>
             </tr>
             <tr>
-              <th className="w-[413px] max-hamburger:w-[50%] h-[112px] pl-[32.76px] max-sm:pl-[16px] border-[1px] border-white font-['Graphikthin'] font-light">
+              <th className="w-[413px] max-hamburger:w-[50%] h-[112px] pl-[32.76px] max-sm:pl-[16px] border-[1px] border-[E5E5E5] font-['Graphikthin'] font-light text-[#E5E5E5]">
                 Week 13 - 18
               </th>
-              <th className="w-[413px] max-hamburger:w-[50%] h-[112px] pl-[32.76px] max-sm:pl-[16px] border-[1px] border-white font-['Graphikthin'] font-light">
+              <th className="w-[413px] max-hamburger:w-[50%] h-[112px] pl-[32.76px] max-sm:pl-[16px] border-[1px] border-[E5E5E5] font-['Graphikthin'] font-light text-[#E5E5E5]">
                 ₹30,000
               </th>
             </tr>
             <tr>
-              <th className="w-[413px] max-hamburger:w-[50%] h-[112px] pl-[32.76px] max-sm:pl-[16px] border-[1px] border-white font-['Graphikthin'] font-light">
+              <th className="w-[413px] max-hamburger:w-[50%] h-[112px] pl-[32.76px] max-sm:pl-[16px] border-[1px] border-[E5E5E5] font-['Graphikthin'] font-light text-[#E5E5E5]">
                 Week 18 - 24{" "}
               </th>
-              <th className="w-[413px] max-hamburger:w-[50%] h-[112px] pl-[32.76px] max-sm:pl-[16px] border-[1px] border-white font-['Graphikthin'] font-light">
+              <th className="w-[413px] max-hamburger:w-[50%] h-[112px] pl-[32.76px] max-sm:pl-[16px] border-[1px] border-[E5E5E5] font-['Graphikthin'] font-light text-[#E5E5E5]">
                 ₹45,000{" "}
               </th>
             </tr>

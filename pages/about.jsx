@@ -135,7 +135,15 @@ export default function About() {
           </div>
         </div>
       </section>
-      <Success />
+      <section className="relative z-20 py-[80px]">
+        <p className="text-[20px] pl-20 max-md:px-[40px] max-sm:px-[20px] leading-[19.28px] text-[#E5E5E5] opacity-80 font-['Graphikthin'] font-light mb-[20px]">
+          Success stories
+        </p>
+        <h1 className="w-[813.91px] max-hamburger:w-full ml-20 max-hamburger:px-20 max-hamburger:ml-0 max-md:px-[40px] max-sm:px-[20px] text-[64px] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] max-hamburger:tracking-normal leading-[61.68px] font-['Graphikthin'] font-light text-[#E5E5E5] mb-[58px] max-sm:mb-[50px] tracking-[-2.56px]">
+          People benefitting from our new age method of learning.{" "}
+        </h1>
+        <Success />
+      </section>{" "}
       <Upskill />
       <Footer />
     </>

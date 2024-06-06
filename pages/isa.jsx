@@ -17,7 +17,7 @@ export default function Courses() {
         <h1 className="w-[894.59px] max-smalllaptop:w-[850px] max-hamburger:w-full max-smalllaptop:tracking-[-2.56px] max-smalllaptop:text-[84px] max-sm:text-[64px] max-smallphone:text-[36px] max-sm:tracking-tight max-smalllaptop:leading-[102%] font-['Graphikthin'] text-[127.98px] text-[#E5E5E5] leading-[130.54px] tracking-[-6.35px]">
           ISA that doesn’t feel like a burden.{" "}
         </h1>
-        <p className="w-[393.32px] max-sm:text-base max-md:w-full text-[20px] leading-[30px] text-[#E0E0E0] font-['Graphikthin'] mt-[41.97px] opacity-90">
+        <p className="w-[383.32px] max-sm:text-base max-md:w-full text-[20px] leading-[30px] text-[#E0E0E0] font-['Graphikthin'] mt-[41.97px] opacity-90">
           We understand how precious the salary from your first job feels.
           That’s why our ISA’s terms are kept flexible.
         </p>
@@ -26,11 +26,11 @@ export default function Courses() {
         <p className="text-[64px] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] leading-[61.68px] tracking-[-2.56px] text-[#E5E5E5] font-['Graphikthin'] w-[890.53px] max-hamburger:w-full">
           The fee is charged only after you get job.{" "}
         </p>
-        <p className="text-[64px] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] w-[818.23px] leading-[61.68px] tracking-[-2.56px] text-[#E5E5E5] font-['Graphikthin'] w-[890.53px] max-hamburger:w-full">
+        <p className="text-[64px] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] w-[818.23px] leading-[61.68px] tracking-[-2.56px] text-[#E5E5E5] font-['Graphikthin'] max-hamburger:w-full">
           We will pause the ISA if you stop working, and resume once you start
           again.{" "}
         </p>
-        <p className="text-[64px] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] leading-[61.68px] w-[818.23px] tracking-[-2.56px] text-[#E5E5E5] font-['Graphikthin'] w-[890.53px] max-hamburger:w-full">
+        <p className="text-[64px] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] leading-[61.68px] w-[818.23px] tracking-[-2.56px] text-[#E5E5E5] font-['Graphikthin'] max-hamburger:w-full">
           You can drop out anytime by paying a minimum fee for the time spent on
           our platform.{" "}
         </p>
@@ -42,7 +42,9 @@ export default function Courses() {
           </p>
         </div>
         <div className="flex gap-[21px] mt-[49.16px] max-md:flex-col max-hamburger:flex-wrap max-hamburger:justify-center">
-          <div className={`${style.container} w-[33%] max-hamburger:w-[45%] max-md:w-full`}>
+          <div
+            className={`${style.container} w-[33%] max-hamburger:w-[45%] max-md:w-full`}
+          >
             <div
               className={`pl-[28px] max-sm:px-[20px] max-sm:py-[16px] h-[434px] max-md:h-auto pb-[41.87px] pr-[29.85px] pt-[31.57px] rounded-[8px] ${style.bordergradient}`}
             >
@@ -63,7 +65,9 @@ export default function Courses() {
               </p>
             </div>
           </div>
-          <div className={`${style.container} w-[33%] max-hamburger:w-[45%] max-md:w-full`}>
+          <div
+            className={`${style.container} w-[33%] max-hamburger:w-[45%] max-md:w-full`}
+          >
             <div
               className={`pl-[28px] max-sm:px-[20px] max-sm:py-[16px] h-[434px] max-md:h-auto pb-[41.87px] pr-[29.85px] pt-[31.57px] rounded-[8px] ${style.bordergradient}`}
             >
@@ -84,7 +88,9 @@ export default function Courses() {
               </p>
             </div>
           </div>
-          <div className={`${style.container} w-[33%] max-hamburger:w-[45%] max-md:w-full`}>
+          <div
+            className={`${style.container} w-[33%] max-hamburger:w-[45%] max-md:w-full`}
+          >
             <div
               className={`pl-[28px] max-sm:px-[20px] max-sm:py-[16px] h-[434px] max-md:h-auto pb-[41.87px] pr-[29.85px] pt-[31.57px] rounded-[8px] ${style.bordergradient}`}
             >
@@ -123,34 +129,34 @@ export default function Courses() {
           </h1>
           <table className="w-[826px] max-sm:text-[24px] max-smallphone:text-[20px] max-hamburger:w-full mt-[51px] font-['Graphikthin'] text-[32px] leading-[30.84px] font-light text-[#E5E5E5] tracking-[-0.64px] text-left h-[336px]">
             <tr>
-              <th className="w-[413px] max-hamburger:w-[50%] h-[112px] pl-[32.76px] max-sm:pl-[16px] border-[1px] border-white font-['Graphikthin'] font-light">
+              <th className="w-[413px] max-hamburger:w-[50%] h-[112px] pl-[32.76px] max-sm:pl-[16px] border-[1px] border-[#E5E5E5] font-['Graphikthin'] font-light text-[#E5E5E5]">
                 Week 1 - 4
               </th>
-              <th className="w-[413px] max-hamburger:w-[50%] h-[112px] pl-[32.76px] max-sm:pl-[16px] border-[1px] border-white font-['Graphikthin'] font-light">
+              <th className="w-[413px] max-hamburger:w-[50%] h-[112px] pl-[32.76px] max-sm:pl-[16px] border-[1px] border-[#E5E5E5] font-['Graphikthin'] font-light text-[#E5E5E5]">
                 No Payment
               </th>
             </tr>
             <tr>
-              <th className="w-[413px] max-hamburger:w-[50%] h-[112px] pl-[32.76px] max-sm:pl-[16px] border-[1px] border-white font-['Graphikthin'] font-light">
+              <th className="w-[413px] max-hamburger:w-[50%] h-[112px] pl-[32.76px] max-sm:pl-[16px] border-[1px] border-[#E5E5E5] font-['Graphikthin'] font-light text-[#E5E5E5]">
                 Week 5 - 12
               </th>
-              <th className="w-[413px] max-hamburger:w-[50%] h-[112px] pl-[32.76px] max-sm:pl-[16px] border-[1px] border-white font-['Graphikthin'] font-light">
+              <th className="w-[413px] max-hamburger:w-[50%] h-[112px] pl-[32.76px] max-sm:pl-[16px] border-[1px] border-[#E5E5E5] font-['Graphikthin'] font-light text-[#E5E5E5]">
                 ₹15,000
               </th>
             </tr>
             <tr>
-              <th className="w-[413px] max-hamburger:w-[50%] h-[112px] pl-[32.76px] max-sm:pl-[16px] border-[1px] border-white font-['Graphikthin'] font-light">
+              <th className="w-[413px] max-hamburger:w-[50%] h-[112px] pl-[32.76px] max-sm:pl-[16px] border-[1px] border-[#E5E5E5] font-['Graphikthin'] font-light text-[#E5E5E5]">
                 Week 13 - 18
               </th>
-              <th className="w-[413px] max-hamburger:w-[50%] h-[112px] pl-[32.76px] max-sm:pl-[16px] border-[1px] border-white font-['Graphikthin'] font-light">
+              <th className="w-[413px] max-hamburger:w-[50%] h-[112px] pl-[32.76px] max-sm:pl-[16px] border-[1px] border-[#E5E5E5] font-['Graphikthin'] font-light text-[#E5E5E5]">
                 ₹30,000
               </th>
             </tr>
             <tr>
-              <th className="w-[413px] max-hamburger:w-[50%] h-[112px] pl-[32.76px] max-sm:pl-[16px] border-[1px] border-white font-['Graphikthin'] font-light">
+              <th className="w-[413px] max-hamburger:w-[50%] h-[112px] pl-[32.76px] max-sm:pl-[16px] border-[1px] border-[#E5E5E5] font-['Graphikthin'] font-light text-[#E5E5E5]">
                 Week 18 - 24{" "}
               </th>
-              <th className="w-[413px] max-hamburger:w-[50%] h-[112px] pl-[32.76px] max-sm:pl-[16px] border-[1px] border-white font-['Graphikthin'] font-light">
+              <th className="w-[413px] max-hamburger:w-[50%] h-[112px] pl-[32.76px] max-sm:pl-[16px] border-[1px] border-[#E5E5E5] font-['Graphikthin'] font-light text-[#E5E5E5]">
                 ₹45,000{" "}
               </th>
             </tr>
@@ -168,7 +174,15 @@ export default function Courses() {
           </Link>
         </div>
       </section>
-      <Success />
+      <section className="relative z-20 py-[80px]">
+        <p className="text-[20px] pl-20 max-md:px-[40px] max-sm:px-[20px] leading-[19.28px] text-[#E5E5E5] opacity-80 font-['Graphikthin'] font-light mb-[20px]">
+          Success stories
+        </p>
+        <h1 className="w-[813.91px] max-hamburger:w-full ml-20 max-hamburger:px-20 max-hamburger:ml-0 max-md:px-[40px] max-sm:px-[20px] text-[64px] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] max-hamburger:tracking-normal leading-[61.68px] font-['Graphikthin'] font-light text-[#E5E5E5] mb-[58px] max-sm:mb-[50px] tracking-[-2.56px]">
+          People benefitting from our new age method of learning.{" "}
+        </h1>
+        <Success />
+      </section>{" "}
       <Upskill />
       <Footer />
     </>

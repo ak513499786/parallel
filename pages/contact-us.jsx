@@ -265,7 +265,7 @@ export default function Contact() {
           >
             hello@parallel.com
           </a>
-          <p className="text-[#E5E5E5] text-[16px] leading-[24px] font-['Graphikthin']">
+          <p className="text-[#FFFFFF99] text-[16px] leading-[24px] font-['Graphikthin']">
             We will get back to you within 2 hours during working hours.
           </p>
         </div>
