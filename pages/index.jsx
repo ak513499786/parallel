@@ -121,10 +121,7 @@ export default function Home() {
                     Full stack development
                   </h1>
                   <Link href={"/courses/full-stack-development"}>
-                    <button
-                      onClick={handleSubmit}
-                      className="w-[265px] max-bigphone:w-full max-sm:w-[245px] h-[39px] bg-[#30E29D] rounded-[8px] font-semibold text-[#292929] text-[16px] font-[19.2px]"
-                    >
+                    <button className="w-[265px] max-bigphone:w-full max-sm:w-[245px] h-[39px] bg-[#30E29D] rounded-[8px] font-semibold text-[#292929] text-[16px] font-[19.2px]">
                       Enroll now for 100% placement
                     </button>
                   </Link>
@@ -360,9 +357,11 @@ export default function Home() {
             career development. All of this and a job within 6 months.
           </p>
           <div className="flex gap-[27px] max-sm:flex-col max-sm:gap-[12px] items-center">
-            <button className="text-[16px] max-sm:w-full font-semibold relative bg-[#30E29D] text-black h-[53px] w-[167px] rounded-[8px] leading-[24px]">
-              Learn more{" "}
-            </button>
+            <Link href={"/courses/full-stack-developer"}>
+              <button className="text-[16px] max-sm:w-full font-semibold relative bg-[#30E29D] text-black h-[53px] w-[167px] rounded-[8px] leading-[24px]">
+                Learn more{" "}
+              </button>
+            </Link>
             <div className="flex gap-[4px] items-center">
               <Image src="/profil.svg" width={28} height={28} />
               <p className="text-base opacity-80 text-[#E0E0E0]">
