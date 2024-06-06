@@ -120,12 +120,14 @@ export default function Home() {
                   <h1 className="text-[20px] leading-[25.5px] text-[#E0E0E0] mb-[44.12px]">
                     Full stack development
                   </h1>
-                  <button
-                    onClick={handleSubmit}
-                    className="w-[265px] max-bigphone:w-full max-sm:w-[245px] h-[39px] bg-[#30E29D] rounded-[8px] font-semibold text-[#292929] text-[16px] font-[19.2px]"
-                  >
-                    Enroll now for 100% placement
-                  </button>
+                  <Link href={"/courses/full-stack-development"}>
+                    <button
+                      onClick={handleSubmit}
+                      className="w-[265px] max-bigphone:w-full max-sm:w-[245px] h-[39px] bg-[#30E29D] rounded-[8px] font-semibold text-[#292929] text-[16px] font-[19.2px]"
+                    >
+                      Enroll now for 100% placement
+                    </button>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -301,12 +303,11 @@ export default function Home() {
               </div>
             )}
           </div>
-          <button
-            onClick={handleSubmit}
-            className="w-full h-[53px] border-[#30E29D] hover:bg-[#30E29D] hover:text-[#292929] transition-all border-[1px] rounded-[8px] font-semibold text-[#30E29D] text-[16px] font-[19.2px]"
-          >
-            Talk To Our Experts
-          </button>
+          <Link href={"/courses/full-stack-development"}>
+            <button className="w-full h-[53px] border-[#30E29D] hover:bg-[#30E29D] hover:text-[#292929] transition-all border-[1px] rounded-[8px] font-semibold text-[#30E29D] text-[16px] font-[19.2px]">
+              Talk To Our Experts
+            </button>
+          </Link>
         </div>
       </main>
       <div className="absolute z-40 overflow-hidden w-[100%] h-[100vh] top-[811px] left-0 overflow-x-hidden">
@@ -320,7 +321,9 @@ export default function Home() {
             <div
               className={`px-[18px] w-full relative rounded-[10px] pt-[20px] pb-[49.13px]`}
             >
-              <div className={`${style.fshomecardbg} w-[413px] h-[406px] max-smalllaptop:w-full max-smalllaptop:h-full`}></div>
+              <div
+                className={`${style.fshomecardbg} w-[413px] h-[406px] max-smalllaptop:w-full max-smalllaptop:h-full`}
+              ></div>
               <Image
                 src="/fullstack.png"
                 className="w-[100%] z-[2] relative h-auto"

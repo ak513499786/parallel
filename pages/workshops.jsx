@@ -45,27 +45,15 @@ export default function Workshop() {
           </Link>
         </div>
         <Image
-          src="/workshop1.svg"
-          className="absolute top-[100.31px] right-[111.75px] max-smalllaptop:top-[50px]  max-smalllaptop:scale-100 max-smalllaptop:right-[-300px] max-xl:scale-75 max-smalllaptop:relative max-hamburger:hidden h-[329.29px] w-[449.44px] z-[10]"
-          width={107.16}
+          src="/workshop.png"
+          className="w-[817.08px] max-xl:w-[600px] max-xl:top-[0px] max-smalllaptop:right-0 max-smalllaptop:left-[10%] max-hamburger:hidden max-smalllaptop:w-[60%] max-smalllaptop:relative absolute right-[20px] top-[-80px]"
+          width={817.08}
           height={107.16}
         />
         <Image
           src="/rocket.png"
           className="max-hamburger:block hidden w-[calc(100%-80px)] max-sm:w-full z-[10]"
-          width={107.16}
-          height={107.16}
-        />
-        <Image
-          src="/Saly-1.svg"
-          className="absolute max-xl:scale-75  max-smalllaptop:top-[-460px] max-smalllaptop:scale-100 max-smalllaptop:right-[-80px] max-smalllaptop:relative max-hamburger:hidden top-[-79.54px] right-[66.44px] h-[771.56px] w-[771.56px] z-[30]"
-          width={107.16}
-          height={107.16}
-        />
-        <Image
-          src="/Ellipse 10.svg"
-          className="absolute top-[235.91px] max-xl:scale-75 max-smalllaptop:relative max-smalllaptop:top-[-920px]  max-smalllaptop:scale-100 max-smalllaptop:right-[-500px] max-hamburger:hidden right-[31.44px] h-[320.36px] w-[320.36px] z-[20]"
-          width={107.16}
+          width={507.16}
           height={107.16}
         />
       </main>
