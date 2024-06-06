@@ -534,7 +534,7 @@ export default function Workshop() {
         </h1>
         <div className="hidden max-hamburger:block absolute top-0 left-0 w-[100%] h-[100%] bg-transparent z-30  "></div>
         <Image
-          src="/workshop5.png"
+          src="/Certificate.svg"
           width={1063}
           height={632}
           className="max-xl:w-full max-xl:h-auto"
