@@ -7,7 +7,7 @@ export default function Footer() {
     <footer className="pl-[80px] max-md:px-[40px] max-sm:px-[20px] pt-[125.58px] pb-[14px] flex flex-col gap-[100px] max-sm:gap-[80px] relative pr-[76px]">
       <div className="overflow-hidden max-smallphone:hidden absolute w-[100%] bottom-[0] left-0 h-[1449.12px]">
         <div
-          className={`w-[100%] h-[849.12px] absolute bottom-[275.86px] ${style.footer}`}
+          className={`w-[100%] h-[849.12px] left-[15.49px] absolute bottom-[275.86px] ${style.footer}`}
         ></div>
       </div>
       <div className="flex justify-between max-sm:flex-col max-hamburger:gap-[50px] z-20">

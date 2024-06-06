@@ -211,11 +211,10 @@
 .circle {
   width: 766.17px;
   height: 766.17px;
-  border-radius: 100%;
   position: absolute;
   top: 116px;
-  right: -191.61px;
-  filter: blur(160px);
+  left: 865.45px;
+  filter: blur(140px);
   background: radial-gradient(
     50% 50% at 50% 50%,
     #1bd44f 0%,
@@ -223,15 +222,16 @@
   );
 }
 .footer {
-  filter: blur(120px);
+  filter: blur(100px);
   background: radial-gradient(
     50% 50% at 50% 50%,
     #1bd44f 0%,
     rgba(14, 11, 180, 0.43) 100%
   );
+
   width: 1401px;
   height: 849.12px;
-  opacity: 0.8;
+  opacity: 0.7;
 }
 .client {
   background: radial-gradient(
@@ -271,7 +271,7 @@
     #1bd44f 0%,
     rgba(14, 11, 180, 0.43) 100%
   );
-  filter: blur(60px);
+  filter: blur(140px);
 }
 .circle2 {
   width: 709.17px;
@@ -332,15 +332,21 @@
     );
 }
 .fshomecardbg {
-  z-index: 42;
-  position: relative;
-  background: radial-gradient(
-    65.92% 106.79% at 51.19% 60.18%,
-    rgba(25, 193, 88, 0.64) 0%,
-    rgba(0, 0, 0, 0) 99.11%
-  );
-  width: 100%;
-  height: 100%;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.05),
+      rgba(255, 255, 255, 0.05)
+    ),
+    radial-gradient(
+      64.59% 68.79% at 51.06% 39.98%,
+      rgba(27, 196, 94, 1) 0%,
+      rgba(12, 244, 35, 0) 100%
+    );
 }
 .fsbg {
   width: 100%;

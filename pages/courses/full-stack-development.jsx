@@ -20,9 +20,9 @@ export default function Nocode() {
       <Navbar />
       <main className="flex justify-between max-hamburger:flex-col gap-[20px] max-md:px-[40px] max-sm:px-[20px] px-[80px] pb-[229px] max-hamburger:pb-[129px] max-md:pb-[80px] max-sm:pb-[50px] max-hamburger:pt-[100px] max-md:pt-20 max-sm:pt-[50px] pt-[124.86px]">
         <div className="w-[597.58px] max-hamburger:w-full max-hamburger:h-auto h-[374.04px] relative">
-          <div className="bg-[#1BC45E] blur-[128px] max-sm:right-0 w-[600px] h-[400px] right-[-30px] top-[-30px] absolute rounded-[100%] z-10"></div>
+          <div className="bg-[#20CC6F] blur-[128px] w-[70%] h-[70%] left-[15%] top-[15%] absolute z-10"></div>
           <Image
-            src="/fsd.svg"
+            src="/quikbatch.png"
             className="w-[100%] object-fit relative z-20 h-auto"
             width={377}
             height={236}
@@ -32,22 +32,14 @@ export default function Nocode() {
           <span className="italic text-base tracking-[-0.32px] font-semibold text-[#30E29D]">
             QUICK BATCH
           </span>
-          <h1 className="text-[64px] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] leading-[61.68px] tracking-[-2.56px] font-['Graphikthin'] text-[#E5E5E5]">
+          <h1 className="text-[64px] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] leading-[61.68px] tracking-[-2.56px] font-['Graphikthin'] mt-[16px] text-[#E5E5E5]">
             Full Stack Development{" "}
           </h1>
-          <div className="flex mt-[24px] gap-[8px]">
-            <p className="py-[4px] px-[8px] max-smallphone:px-[4px] text-[#797979] text-base font-['Graphikthin'] border-[#797979] border-[1px] rounded-[5px] max-smallphone:text-sm">
-              Software Development{" "}
-            </p>
-            <p className="py-[4px] px-[8px] max-smallphone:px-[4px] text-[#797979] text-base font-['Graphikthin'] border-[#797979] border-[1px] rounded-[5px] max-smallphone:text-sm">
-              Beginner friendly{" "}
-            </p>
-          </div>
-          <p className="mt-[36px] max-bigscreen:w-full opacity-80 w-[417.68px] text-base font-['Graphikthin'] text-[#E5E5E5]">
+          <p className="mt-[33.3px] max-bigscreen:w-full opacity-80 w-[417.68px] text-base font-['Graphikthin'] text-[#E5E5E5]">
             This fast-track course gets students ready on frontend, backend, and
             career development. All of this and a job within 6 months.
           </p>
-          <div className="w-[640px]  max-bigscreen:w-full mt-[37.14px] flex gap-[16px] flex-wrap">
+          <div className="w-[640px]  max-bigscreen:w-full mt-[78.7px] flex gap-[16px] flex-wrap">
             <div className="py-[6px] px-[16px] rounded-[40px] border-[1px] flex gap-[6px] items-center justify-center border-[#FFFFFF] bg-[#FFFFFF30] max-smallphone:px-[10px]">
               <div className="w-[12.51px] h-[12.51px] rounded-[100%] bg-white"></div>
               <h1 className="text-base max-smallphone:text-sm font-['Graphikthin']">
@@ -89,37 +81,38 @@ export default function Nocode() {
               Learn everything in Full Stack Development
             </h1>
           </div>
-          <div className="absolute z-20 w-[100%] h-[1550px] top-0 left-0 overflow-x-hidden">
+          <div className="absolute w-[100%] h-[1550px] top-0 left-0 overflow-x-hidden">
             <div className={style.fullgrid}></div>
           </div>
-          <div className="flex relative max-hamburger:z-20 z-10 max-hamburger:flex-wrap max-hamburger:justify-center gap-[20px] mt-[71.02px]">
+          <div className="flex relative z-[2] max-hamburger:flex-wrap max-hamburger:justify-center gap-[20px] mt-[71.02px]">
             <div
-              className={`${style.container} w-[23.8%] max-hamburger:w-[45%] max-md:w-full`}
+              className={`${style.container} w-[23.8%] max-hamburger:w-[45%] max-md:w-full h-[363px]`}
             >
               <div
-                className={`pl-[28px] relative h-[434px] bg-[#FFFFFF0D] pt-[17px] pl-[19.41px] rounded-[8px] ${style.bordergradient}`}
+                className={`relative h-[363px] bg-[#FFFFFF0D] pt-[17px] pl-[19.41px] rounded-[8px] ${style.bordergradient}`}
               >
-                <div className="bg-[#1F1F1F] w-[124.35px] h-[124.15px] flex justify-center items-center border-[1px] rounded-[6px] border-[#FFFFFF66] ">
+                <div className="w-full h-full absolute top-0 left-0 rounded-[8px] blur-[10px] z-[30] bg-[transparent]"></div>
+                <div className="bg-[#1F1F1F] z-[31] w-[124.35px] h-[124.15px] flex justify-center items-center border-[1px] rounded-[6px] border-[#FFFFFF66] ">
                   {" "}
                   <Image src="/backpack.svg" width={51.73} height={51.73} />
                 </div>
-                <p className="w-full opacity-80 text-[#E0E0E0] text-base mt-[40.35px]">
+                <p className="w-full opacity-80 relative z-[31] text-[#E0E0E0] text-base mt-[40.35px]">
                   Next Cohort
                 </p>
-                <h1 className="w-[276.87px] max-smalllaptop:leading-[120%] font-['Graphikthin'] font-normal mt-[13px] max-hamburger:mb-0 mb-[58.16px] text-[32px] leading-[40.32px] tracking-[-0.32px] text-[#E0E0E0] max-smalllaptop:text-[28px]">
-                  16th June{" "}
+                <h1 className="w-[276.87px] relative z-[31] max-smalllaptop:leading-[120%] font-['Graphikthin'] font-normal mt-[13px] max-hamburger:mb-0 mb-[58.16px] text-[28px] leading-[35.28px] tracking-[-0.84px] text-[#E0E0E0] max-smalllaptop:text-[28px]">
+                  10th June{" "}
                 </h1>
-                <p className="absolute max-hamburger:relative max-hamburger:mt-[10px] max-hamburger:mb-[28.16px] bottom-[]">
+                <p className="absolute z-[31] relative max-hamburger:relative max-hamburger:mt-[10px] max-hamburger:mb-[28.16px] bottom-[]">
                   Limited seats.{" "}
                   <span className="text-base text-[#FF6C01]">5 left</span>
                 </p>
               </div>
             </div>
             <div
-              className={`${style.container} w-[23.8%] max-hamburger:w-[45%] max-md:w-full`}
+              className={`${style.container} w-[23.8%] max-hamburger:w-[45%] max-md:w-full h-[363px]`}
             >
               <div
-                className={`pl-[28px] h-[434px] bg-[#FFFFFF0D] pt-[17px] pl-[19.41px] rounded-[8px] ${style.bordergradient}`}
+                className={`h-[363px] bg-[#FFFFFF0D] pt-[17px] pl-[19.41px] rounded-[8px] ${style.bordergradient}`}
               >
                 <div className="bg-[#1F1F1F] w-[124.35px] h-[124.15px] flex justify-center items-center border-[1px] rounded-[6px] border-[#FFFFFF66] ">
                   {" "}
@@ -132,16 +125,16 @@ export default function Nocode() {
                 <p className="w-full opacity-80 text-[#E0E0E0] text-base mt-[40.35px]">
                   Duration
                 </p>
-                <h1 className="w-[276.87px] font-['Graphikthin'] max-smalllaptop:leading-[120%] font-normal mt-[13px] mb-[58.16px] text-[32px] leading-[40.32px] tracking-[-0.32px] text-[#E0E0E0] max-smalllaptop:text-[28px]">
+                <h1 className="w-[276.87px] font-['Graphikthin'] max-smalllaptop:leading-[120%] font-normal mt-[13px] mb-[58.16px] text-[28px] leading-[35.28px] tracking-[-0.84px] text-[#E0E0E0] max-smalllaptop:text-[28px]">
                   24 weeks{" "}
                 </h1>
               </div>
             </div>
             <div
-              className={`${style.container} w-[23.8%] max-hamburger:w-[45%] max-md:w-full`}
+              className={`${style.container} w-[23.8%] max-hamburger:w-[45%] max-md:w-full h-[363px]`}
             >
               <div
-                className={`pl-[28px] h-[434px] bg-[#FFFFFF0D] pt-[17px] pl-[19.41px] rounded-[8px] ${style.bordergradient}`}
+                className={`h-[363px] bg-[#FFFFFF0D] pt-[17px] pl-[19.41px] rounded-[8px] ${style.bordergradient}`}
               >
                 <div className="bg-[#1F1F1F] w-[124.35px] h-[124.15px] flex justify-center items-center] border-[1px] rounded-[6px] border-[#FFFFFF66] ">
                   {" "}
@@ -163,10 +156,10 @@ export default function Nocode() {
               </div>
             </div>
             <div
-              className={`${style.container} w-[23.8%] max-hamburger:w-[45%] max-md:w-full`}
+              className={`${style.container} w-[23.8%] max-hamburger:w-[45%] max-md:w-full h-[363px]`}
             >
               <div
-                className={`pl-[28px] h-[434px] pt-[17px] pl-[19.41px] bg-[#FFFFFF0D] rounded-[8px] ${style.bordergradient}`}
+                className={`h-[363px] pt-[17px] pl-[19.41px] bg-[#FFFFFF0D] rounded-[8px] ${style.bordergradient}`}
               >
                 <div className="bg-[#1F1F1F] w-[124.35px] h-[124.15px] flex justify-center items-center border-[1px] rounded-[6px] border-[#FFFFFF66] ">
                   {" "}
@@ -175,7 +168,7 @@ export default function Nocode() {
                 <p className="w-full opacity-80 text-[#E0E0E0] text-base mt-[40.35px]">
                   Eligibility
                 </p>
-                <h1 className="w-[276.87px] max-smalllaptop:text-[28px] max-smalllaptop:leading-[120%] max-biggerscreen:w-[95%] font-['Graphikthin'] font-normal mt-[13px] mb-[18.16px] text-[32px] leading-[40.32px] tracking-[-0.32px] text-[#E0E0E0]">
+                <h1 className="w-[270.87px] max-smalllaptop:text-[28px] max-smalllaptop:leading-[120%] max-biggerscreen:w-[95%] font-['Graphikthin'] font-normal mt-[13px] mb-[18.16px] text-[28px] leading-[35.28px] tracking-[-0.84px] text-[#E0E0E0]">
                   12th pass, Diploma, and College Graduates{" "}
                 </h1>
               </div>
@@ -558,7 +551,7 @@ export default function Nocode() {
           </h1>
           <div className="flex max-hamburger:flex-wrap z-20 relative max-hamburger:justify-center gap-[20px] mt-[71.02px]">
             <div
-              className={`${style.container} w-[23.8%] max-hamburger:w-[45%] max-md:w-full`}
+              className={`${style.container} w-[23.8%] max-hamburger:w-[45%] max-md:w-full h-[363px]`}
             >
               <div
                 className={`pl-[28px] h-[363px] max-xl:h-[400px] bg-[#FFFFFF0D] pt-[17px] pl-[19.41px] rounded-[8px] ${style.bordergradient}`}
@@ -580,7 +573,7 @@ export default function Nocode() {
               </div>
             </div>
             <div
-              className={`${style.container} w-[23.8%] max-hamburger:w-[45%] max-md:w-full`}
+              className={`${style.container} w-[23.8%] max-hamburger:w-[45%] max-md:w-full h-[363px]`}
             >
               <div
                 className={`pl-[28px] h-[363px] max-xl:h-[400px] bg-[#FFFFFF0D] pt-[17px] pl-[19.41px] rounded-[8px] ${style.bordergradient}`}
@@ -602,7 +595,7 @@ export default function Nocode() {
               </div>
             </div>
             <div
-              className={`${style.container} w-[23.8%] max-hamburger:w-[45%] max-md:w-full`}
+              className={`${style.container} w-[23.8%] max-hamburger:w-[45%] max-md:w-full h-[363px]`}
             >
               <div
                 className={`pl-[28px] h-[363px] max-xl:h-[400px] bg-[#FFFFFF0D] pt-[17px] pl-[19.41px] rounded-[8px] ${style.bordergradient}`}
@@ -623,7 +616,7 @@ export default function Nocode() {
               </div>
             </div>
             <div
-              className={`${style.container} w-[23.8%] max-hamburger:w-[45%] max-md:w-full`}
+              className={`${style.container} w-[23.8%] max-hamburger:w-[45%] max-md:w-full h-[363px]`}
             >
               <div
                 className={`pl-[28px] h-[363px] max-xl:h-[400px] pt-[17px] pl-[19.41px] bg-[#FFFFFF0D] rounded-[8px] ${style.bordergradient}`}
@@ -645,7 +638,15 @@ export default function Nocode() {
           </div>
         </section>
       </div>
-      <Success />
+      <section className="relative z-20 py-[80px]">
+        <p className="text-[20px] pl-20 max-md:px-[40px] max-sm:px-[20px] leading-[19.28px] text-[#E5E5E5] opacity-80 font-['Graphikthin'] font-light mb-[20px]">
+          Success stories
+        </p>
+        <h1 className="w-[813.91px] max-hamburger:w-full ml-20 max-hamburger:px-20 max-hamburger:ml-0 max-md:px-[40px] max-sm:px-[20px] text-[64px] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] max-hamburger:tracking-normal leading-[61.68px] font-['Graphikthin'] font-light text-[#E5E5E5] mb-[58px] max-sm:mb-[50px] tracking-[-2.56px]">
+          People benefitting from our new age method of learning.{" "}
+        </h1>
+        <Success />
+      </section>{" "}
       <div
         className={`pt-[87.5px] pb-[88px] flex justify-center gap-[131px] relative z-20 px-[80px] max-md:flex-col max-md:gap-[50px] max-sm:px-[20px] max-md:px-[40px] ${style.fsbg}`}
       >
@@ -697,7 +698,7 @@ export default function Nocode() {
             />
           </div>
           <button className="w-full h-[53px] bg-[#30E29D] rounded-[8px] font-bold text-[#292929] text-[16px] font-[19.2px]">
-            Talk to our experts{" "}
+            Enroll now
           </button>
         </div>
       </div>

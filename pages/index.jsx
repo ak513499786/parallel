@@ -30,7 +30,7 @@ export default function Home() {
       .fromTo(
         clientanimation.current,
         { x: 50 },
-        { ease: Linear.easeNone, x: -1043, duration: 20 }
+        { ease: Linear.easeNone, x: -836, duration: 15 }
       );
     let tl = gsap.timeline({ repeat: -1 });
     const width = window.innerWidth;
@@ -101,7 +101,7 @@ export default function Home() {
                 Data Analytics{" "}
               </p>
               <p className="px-[8px] max-sm:px-[6px] py-[4px] rounded-[5px] text-[#797979] text-base max-sm:text-sm border-[1px] border-[#797979]">
-                Product Development{" "}
+                Full-stack Development
               </p>
             </div>
             <p className="mt-[50px] mb-[16px] max-sm:w-full text-[16px] leading-[24px] text-[#E0E0E0]">
@@ -130,7 +130,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="w-[676px] max-hamburger:w-full overflow-hidden mt-[68px] max-hamburger:mt-[80px] max-md:mt-[50px] max-smalllaptop:w-[460px] relative z-30">
+          <div className="w-[600px] max-hamburger:w-full overflow-hidden mt-[68px] max-hamburger:mt-[80px] max-md:mt-[50px] max-smalllaptop:w-[460px] relative z-30">
             <p className="text-[16px] leading-[24px] text-[#E0E0E0]">
               Our placement partners
             </p>
@@ -140,99 +140,87 @@ export default function Home() {
             >
               <Image
                 src="/razorimage.svg"
-                className="pt-[36.77px] pb-[39.23px]"
-                width={98.24}
-                height={20.89}
+                className="py-[12.73px]"
+                width={87.2}
+                height={18.54}
               />
               <Image
                 src="/zepto.svg"
-                className="pt-[36.77px] pb-[39.23px]"
-                width={63.15}
-                height={20.89}
+                className="py-[12.73px]"
+                width={56.05}
+                height={18.54}
               />
               <Image
                 src="/TATA_1mg_Logo 1.svg"
-                className="pt-[36.77px] pb-[39.23px]"
-                width={89.92}
-                height={20.89}
+                className="py-[13.12px]"
+                width={79.82}
+                height={17.75}
               />
               <Image
                 src="/shiprocket_logo 1.svg"
-                className="pt-[36.77px] pb-[39.23px]"
-                width={89.98}
-                height={20.89}
+                className="py-[13.12px]"
+                width={79.87}
+                height={17.75}
               />
               <Image
                 src="/image 59.svg"
                 className="pt-[30.14px] pb-[32.16px]"
-                width={72.14}
-                height={20.89}
+                width={64.03}
+                height={29.52}
               />
               <Image
                 src="/Clip path group.svg"
-                className="pt-[30.14px] pb-[32.16px]"
+                className="py-[7.24px]"
                 width={63.94}
                 height={20.89}
               />
               <Image
                 src="/image 60.svg"
-                className="pt-[30.14px] pb-[32.16px]"
-                width={100.57}
-                height={20.89}
-              />
-              <Image
-                src="/brand-guidelines-logo2 1.svg"
-                className="pt-[36.14px] pb-[39.16px]"
-                width={118.32}
-                height={20.89}
+                className="py-[12.62px]"
+                width={89.27}
+                height={17.75}
               />
               <Image
                 src="/razorimage.svg"
-                className="pt-[36.77px] pb-[39.23px]"
-                width={98.24}
-                height={20.89}
+                className="py-[12.73px]"
+                width={87.2}
+                height={18.54}
               />
               <Image
                 src="/zepto.svg"
-                className="pt-[36.77px] pb-[39.23px]"
-                width={63.15}
-                height={20.89}
+                className="py-[12.73px]"
+                width={56.05}
+                height={18.54}
               />
               <Image
                 src="/TATA_1mg_Logo 1.svg"
-                className="pt-[36.77px] pb-[39.23px]"
-                width={89.92}
-                height={20.89}
+                className="py-[13.12px]"
+                width={79.82}
+                height={17.75}
               />
               <Image
                 src="/shiprocket_logo 1.svg"
-                className="pt-[36.77px] pb-[39.23px]"
-                width={89.98}
-                height={20.89}
+                className="py-[13.12px]"
+                width={79.87}
+                height={17.75}
               />
               <Image
                 src="/image 59.svg"
                 className="pt-[30.14px] pb-[32.16px]"
-                width={72.14}
-                height={20.89}
+                width={64.03}
+                height={29.52}
               />
               <Image
                 src="/Clip path group.svg"
-                className="pt-[30.14px] pb-[32.16px]"
+                className="py-[7.24px]"
                 width={63.94}
                 height={20.89}
               />
               <Image
                 src="/image 60.svg"
-                className="pt-[30.14px] pb-[32.16px]"
-                width={100.57}
-                height={20.89}
-              />
-              <Image
-                src="/brand-guidelines-logo2 1.svg"
-                className="pt-[36.14px] pb-[39.16px]"
-                width={118.32}
-                height={20.89}
+                className="py-[12.62px]"
+                width={89.27}
+                height={17.75}
               />
             </div>
           </div>
@@ -326,27 +314,27 @@ export default function Home() {
       </div>
       <section className="py-[122px] relative z-[41] max-md:py-20 max-bigscreen:px-[80px] max-md:px-[40px] max-sm:px-[20px]  relative pl-[188px] pr-[80px] flex gap-[129px] max-hamburger:flex-col max-xl:gap-[50px] items-center">
         <div
-          className={`px-[18px] relative card w-[413px] max-md:w-full max-hamburger:w-[70%] max-smalllaptop:w-[48.3%] rounded-[10px] py-[20px] ${style.aicardborder}`}
+          className={`px-[18px] relative card w-[413px] max-md:w-full max-hamburger:w-[70%] max-smalllaptop:w-[48.3%] rounded-[10px] pb-[49.13px] pt-[20px] ${style.aicardborder}`}
         >
-          <div className="w-full h-[300px] top-0 left-0 bg-[#19C158A3] blur-[256px] absolute"></div>
           <div className="bg-black rounded-[9px]">
             <div
-              className={`${style.fshomecardbg} px-[18px] w-full relative rounded-[10px] py-[20px]`}
+              className={`px-[18px] w-full relative rounded-[10px] pt-[20px] pb-[49.13px]`}
             >
+              <div className={`${style.fshomecardbg} w-[413px] h-[406px] max-smalllaptop:w-full max-smalllaptop:h-full`}></div>
               <Image
                 src="/fullstack.png"
-                className="w-[100%] relative z-20 h-auto"
+                className="w-[100%] z-[2] relative h-auto"
                 width={377}
                 height={236}
               />
-              <h1 className="mt-[20.87px] mixblend relative z-20 leading-[31.36px] mb-[17.13px] tracking-[-0.84px] font-['Graphikthin'] text-[#E5E5E5] text-[28px]">
+              <h1 className="mt-[20.87px] z-[2] relative leading-[31.36px] mb-[17.13px] tracking-[-0.84px] font-['Graphikthin'] text-[#E5E5E5] text-[28px]">
                 Full Stack Development{" "}
               </h1>
-              <div className="flex mixblend relative z-20 gap-[8px]">
-                <p className="px-[8px] max-sm:px-[6px] py-[4px] rounded-[5px] text-[#797979] text-base max-sm:text-sm border-[1px] border-[#797979]">
+              <div className="flex mixblend relative z-[2] gap-[8px]">
+                <p className="px-[8px] max-sm:px-[6px] py-[4px] rounded-[5px] text-[#B1B1B1] text-base max-sm:text-sm border-[1px] border-[#B1B1B1] max-smallphone:text-[10px]">
                   Software Development{" "}
                 </p>
-                <p className="px-[8px] max-sm:px-[6px] py-[4px] rounded-[5px] text-[#797979] text-base max-sm:text-sm border-[1px] border-[#797979]">
+                <p className="px-[8px] max-sm:px-[6px] py-[4px] rounded-[5px] text-[#B1B1B1] text-base max-sm:text-sm border-[1px] border-[#B1B1B1] max-smallphone:text-[10px]">
                   Beginner friendly{" "}
                 </p>
               </div>
@@ -357,7 +345,7 @@ export default function Home() {
           <p className="text-[20px] text-[#E5E5E5] leading-[19.28px] mb-[24px]">
             Introducing
           </p>
-          <h1 className="text-[64px] font-semibold mb-[45px] text-[#E5E5E5] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] max-md:w-full italic leading-[61.68px] tracking-[-2.56px] text-[#E5E5E5]">
+          <h1 className="text-[64px] font-black mb-[45px] text-[#E5E5E5] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] max-md:w-full italic leading-[61.68px] tracking-[-2.56px] text-[#E5E5E5]">
             Quick Batch
           </h1>
           <p className="text-[20px] w-[440.78px] max-hamburger:w-full tracking-[-0.2px] font-['Graphikthin'] text-[#F7F7F7] leading-[25.28px] mb-[16px]">
@@ -369,7 +357,7 @@ export default function Home() {
             career development. All of this and a job within 6 months.
           </p>
           <div className="flex gap-[27px] max-sm:flex-col max-sm:gap-[12px] items-center">
-            <button className="text-[16px] max-sm:w-full font-semibold relative bg-[#30E29D] text-black py-[17px] px-[40px] rounded-[8px] leading-[24px]">
+            <button className="text-[16px] max-sm:w-full font-semibold relative bg-[#30E29D] text-black h-[53px] w-[167px] rounded-[8px] leading-[24px]">
               Learn more{" "}
             </button>
             <div className="flex gap-[4px] items-center">
@@ -489,7 +477,7 @@ export default function Home() {
           <h1 className="w-[665.36px] max-smalllaptop:w-full font-['Graphikthin'] max-bigscreen:w-[410px] text-[48px] max-sm:text-[32px] max-hamburger:leading-[120%] leading-[56.64px] tracking-[-1.92px] text-[#E5E5E5]">
             Refer us among your friends to get a boost in placement preference{" "}
           </h1>
-          <p className="w-[393.32px] mt-[30.06px] text-base text-[#E0E0E0] max-md:w-[450px] max-sm:w-full">
+          <p className="w-[393.32px] font-['Graphikthin'] mt-[30.06px] text-base text-[#E0E0E0] max-md:w-[450px] max-sm:w-full">
             Upskill together with your friends to our platform, while enjoying
             the special perks as a referrer.
           </p>
@@ -785,7 +773,7 @@ export default function Home() {
         </div>
       </div>
       <section className="px-[80px] max-md:px-[40px] max-sm:px-[20px] max-sm:py-0 relative py-[100px] flex flex-col justify-center items-center gap-[65px]">
-        <div className="w-[100%] overflow-hidden absolute bottom-[-200px] h-[966.17px]">
+        <div className="w-[100%] overflow-x-hidden h-[933.16px] absolute top-0">
           <div className={`${style.circle}`}></div>
         </div>
         <div className="w-[728.14px] max-hamburger:w-full">
@@ -859,7 +847,15 @@ export default function Home() {
           />
         </div>
       </section>
-      <Success />
+      <section className="relative z-20 py-[80px]">
+        <p className="text-[20px] pl-20 max-md:px-[40px] max-sm:px-[20px] leading-[19.28px] text-[#E5E5E5] opacity-80 font-['Graphikthin'] font-light mb-[20px]">
+          Success stories
+        </p>
+        <h1 className="w-[813.91px] max-hamburger:w-full ml-20 max-hamburger:px-20 max-hamburger:ml-0 max-md:px-[40px] max-sm:px-[20px] text-[64px] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] max-hamburger:tracking-normal leading-[61.68px] font-['Graphikthin'] font-light text-[#E5E5E5] mb-[58px] max-sm:mb-[50px] tracking-[-2.56px]">
+          People benefitting from our new age method of learning.{" "}
+        </h1>
+        <Success />
+      </section>
       <div className="pt-[102.57px] max-sm:py-20 max-sm:px-[20px] max-md:px-[40px] relative z-20 pb-[62.43px] pl-[80px] pr-[79px]">
         <h1 className="w-[600px] max-hamburger:w-full  max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] text-[64px] leading-[61.68px] font-['Graphikthin'] tracking-[-2.56px] max-sm:tracking-tight text-[#E5E5E5]">
           Learn from leading industry experts
@@ -1075,7 +1071,7 @@ export default function Home() {
         <h1 className="w-[665.36px] z-[2] text-[64px] max-smalllaptop:w-full font-['Graphikthin'] text-[64px] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] leading-[61.68px] mb-[32px] font-['Graphikthin'] text-[#E5E5E5] tracking-[-2.56px] max-sm:tracking-tight">
           Host a skill focused workshop at your college.{" "}
         </h1>
-        <p className="text-base max-sm:text-sm w-[258.29px] opacity-60 font-['Graphikthin']">
+        <p className="text-base max-sm:text-sm w-[258.29px] opacity-80 font-['Graphikthin']">
           Get in touch with our representative for further details.
         </p>
         <div className="flex mt-[32px] max-md:flex-col gap-[32px]">
