@@ -40,6 +40,7 @@ export default function Contact() {
   };
   const toggleMenu = () => {
     setIsOpen(!isOpen);
+    setIamOpen(false)
   };
   const handleOptionSelect = (option) => {
     sethelp(option);
@@ -47,6 +48,7 @@ export default function Contact() {
   };
   const toggleIamMenu = () => {
     setIamOpen(!iamOpen);
+    setIsOpen(false)
   };
   const handleIamOptionSelect = (option) => {
     setiam(option);
