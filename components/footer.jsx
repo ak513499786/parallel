@@ -99,7 +99,7 @@ export default function Footer() {
               className="mt-[4px] hover:underline cursor-pointer hover:decoration-solid text-[#E5E5E5] text-base"
             >
               Full Stack Development{" "}
-              <span className="italic text-base font-semibold text-[#30E29D]">QUICK BATCH</span>
+              <span className="italic text-sm font-semibold text-[#30E29D]">QUICK BATCH</span>
             </Link>
           </div>
           <div className="w-[92px] flex flex-col">

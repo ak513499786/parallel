@@ -49,7 +49,7 @@ export default function Courses() {
           </Link>
         </div>
         <Image
-          src="/hire.png"
+          src="/hirepage.png"
           className="object-contain max-md:w-full"
           width={522}
           height={493}
@@ -226,7 +226,7 @@ export default function Courses() {
             >
               hire
               <span className="font-['Graphik'] opacity-90">@</span>
-              parallel.com
+              paralleledutech.com
             </a>
           </p>
         </div>

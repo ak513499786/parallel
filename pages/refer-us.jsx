@@ -103,7 +103,7 @@ export default function Courses() {
           )}
         </div>
         <Image
-          src="/refer.png"
+          src="/referpage.png"
           className="object-contain max-md:w-full"
           width={522}
           height={493}

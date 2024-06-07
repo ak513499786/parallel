@@ -111,7 +111,7 @@ export default function Home() {
             <div className="bg-black rounded-[9px] max-bigphone:w-[300px] max-smallphone:w-full max-hamburger:w-[501px] w-[501px] max-sm:w-full">
               <div className="bg-[#30E29D1A] max-bigphone:flex-col max-bigphone:w-[300px] max-smallphone:w-full rounded-[9px] max-sm:px-[12px] pr-[22.97px] w-[501px] max-sm:w-full max-hamburger:w-[501px] pl-[11px] pt-[16.71px] pb-[15.46px] flex gap-[17px]">
                 <Image
-                  src="/fsqb.svg"
+                  src="/qb.png"
                   className="max-bigphone:w-full"
                   width={185.24}
                   height={115.89}
@@ -120,7 +120,10 @@ export default function Home() {
                   <h1 className="text-[20px] leading-[25.5px] text-[#E0E0E0] mb-[44.12px]">
                     Full stack development
                   </h1>
-                  <Link href={"/courses/full-stack-development"}>
+                  <Link
+                    className="w-[265px] max-bigphone:w-full max-sm:w-[245px]"
+                    href={"/courses/full-stack-development"}
+                  >
                     <button className="w-[265px] max-bigphone:w-full max-sm:w-[245px] h-[39px] bg-[#30E29D] rounded-[8px] font-semibold text-[#292929] text-[16px] font-[19.2px]">
                       Enroll now for 100% placement
                     </button>
@@ -490,7 +493,7 @@ export default function Home() {
           </Link>
         </div>
         <Image
-          src="/Frame 1000002723.svg"
+          src="/refer.png"
           className="mt-[18.06px] max-lg:w-full max-lg:h-auto max-smalllaptop:hidden max-md:block"
           width={522}
           height={345}
@@ -1089,27 +1092,15 @@ export default function Home() {
           </Link>
         </div>
         <Image
-          src="/workshop1.svg"
-          className="absolute max-smalllaptop:top-[50px]  max-smalllaptop:scale-100 max-smalllaptop:right-[-300px] top-[138.31px] max-xl:scale-75 max-smalllaptop:relative max-hamburger:hidden right-[101.75px] h-[329.29px] w-[449.44px] z-[10]"
-          width={107.16}
-          height={107.16}
-        />
-        <Image
-          src="/Saly-1.svg"
-          className="absolute top-[-42.91px] max-xl:scale-75  max-smalllaptop:top-[-460px] max-smalllaptop:scale-100 max-smalllaptop:right-[-80px] max-smalllaptop:relative max-hamburger:hidden right-[61.44px] h-[771.56px] w-[771.56px] z-[30]"
-          width={107.16}
+          src="/workshop.png"
+          className="w-[817.08px] max-xl:w-[600px] max-xl:top-[0px] max-smalllaptop:right-0 max-smalllaptop:left-[10%] max-hamburger:hidden max-smalllaptop:w-[60%] max-smalllaptop:relative absolute right-[20px] top-[-80px]"
+          width={817.08}
           height={107.16}
         />
         <Image
           src="/rocket.png"
           className="max-hamburger:block hidden w-[calc(100%-80px)] max-sm:w-full z-[10]"
-          width={107.16}
-          height={107.16}
-        />
-        <Image
-          src="/Ellipse 10.svg"
-          className="absolute top-[255.91px] max-xl:scale-75 max-smalllaptop:relative max-smalllaptop:top-[-920px]  max-smalllaptop:scale-100 max-smalllaptop:right-[-500px] max-hamburger:hidden right-[31.44px] h-[320.36px] w-[320.36px] z-[20]"
-          width={107.16}
+          width={507.16}
           height={107.16}
         />
       </section>

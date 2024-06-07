@@ -798,7 +798,7 @@ export default function Workshop() {
             >
               hello
               <span className="font-['Graphik'] opacity-90">@</span>
-              parallel.com
+              paralleledutech.com
             </a>
           </p>
         </div>

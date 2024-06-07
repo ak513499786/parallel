@@ -23,7 +23,7 @@ export default function Nocode() {
         <div className="w-[597.58px] max-hamburger:w-full max-hamburger:h-auto h-[374.04px] relative">
           <div className="bg-[#0E16F580] blur-[128px] max-sm:right-0 w-[600px] h-[400px] right-[-30px] top-[-30px] absolute rounded-[100%] z-10"></div>
           <Image
-            src="/AI.svg"
+            src="/lowcode.png"
             className="w-[100%] object-fit relative z-20 h-auto"
             width={377}
             height={236}
