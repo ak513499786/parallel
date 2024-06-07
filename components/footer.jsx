@@ -20,9 +20,13 @@ export default function Footer() {
             </p>
           </div>
           <div className="w-[76px]">
-            <h1 className="text-[#E5E5E5] opacity-80 mb-[10px] text-base">Follow us</h1>
+            <h1 className="text-[#E5E5E5] opacity-80 mb-[10px] text-base">
+              Follow us
+            </h1>
             <a
-              href={"https://www.instagram.com/parallel.learn/"}
+              href={
+                "https://www.instagram.com/parallel.edu_/?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D"
+              }
               target="_blank"
               className="mt-[12px] text-[#E5E5E5] text-base hover:underline cursor-pointer hover:decoration-solid"
             >
@@ -99,7 +103,9 @@ export default function Footer() {
               className="mt-[4px] hover:underline cursor-pointer hover:decoration-solid text-[#E5E5E5] text-base"
             >
               Full Stack Development{" "}
-              <span className="italic text-sm font-semibold text-[#30E29D]">QUICK BATCH</span>
+              <span className="italic text-sm font-semibold text-[#30E29D]">
+                QUICK BATCH
+              </span>
             </Link>
           </div>
           <div className="w-[92px] flex flex-col">

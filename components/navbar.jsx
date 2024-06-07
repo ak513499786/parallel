@@ -22,11 +22,9 @@ export default function Navbar() {
   const Background = useRef(null);
   const handleHamburger = () => {
     setOpenHamburger(true);
-    console.log(openHamburger);
   };
   const handleHamburgerClose = () => {
     setOpenHamburger(false);
-    console.log(openHamburger);
   };
 
   useEffect(() => {
