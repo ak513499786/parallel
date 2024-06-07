@@ -360,7 +360,7 @@ export default function Home() {
             career development. All of this and a job within 6 months.
           </p>
           <div className="flex gap-[27px] max-sm:flex-col max-sm:gap-[12px] items-center">
-            <Link className="w-full" href={"/courses/full-stack-development"}>
+            <Link className="max-sm:w-full" href={"/courses/full-stack-development"}>
               <button className="text-[16px] max-sm:w-full font-semibold relative bg-[#30E29D] text-black h-[53px] w-[167px] rounded-[8px] leading-[24px]">
                 Learn more{" "}
               </button>
