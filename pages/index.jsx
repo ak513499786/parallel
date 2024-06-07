@@ -124,7 +124,7 @@ export default function Home() {
                     className="w-[265px] max-bigphone:w-full max-sm:w-[245px]"
                     href={"/courses/full-stack-development"}
                   >
-                    <button className="w-[265px] max-bigphone:w-full max-sm:w-[245px] h-[39px] bg-[#30E29D] rounded-[8px] font-semibold text-[#292929] text-[16px] font-[19.2px]">
+                    <button className="w-full h-[39px] bg-[#30E29D] rounded-[8px] font-semibold text-[#292929] text-[16px] font-[19.2px]">
                       Enroll now for 100% placement
                     </button>
                   </Link>
@@ -359,9 +359,9 @@ export default function Home() {
             This fast-track course gets students ready on frontend, backend, and
             career development. All of this and a job within 6 months.
           </p>
-          <div className="flex gap-[27px] max-sm:flex-col max-sm:gap-[12px] items-center">
+          <div className="flex gap-[27px] max-sm:w-full max-sm:flex-col max-sm:gap-[12px] items-center w-[167px]">
             <Link href={"/courses/full-stack-development"}>
-              <button className="text-[16px] max-sm:w-full font-semibold relative bg-[#30E29D] text-black h-[53px] w-[167px] rounded-[8px] leading-[24px]">
+              <button className="text-[16px] font-semibold relative bg-[#30E29D] text-black h-[53px] w-full rounded-[8px] leading-[24px]">
                 Learn more{" "}
               </button>
             </Link>
