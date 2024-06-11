@@ -217,7 +217,7 @@ export default function Courses() {
                 &lt; 18 Hours
               </p> */}
               </div>
-              {/* <Link
+              {/* 14 w<Link
                 className="relative z-30"
                 href={"/courses/artificial-intelligence"}
               > */}

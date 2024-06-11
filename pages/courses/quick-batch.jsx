@@ -677,7 +677,7 @@ export default function Nocode() {
                     ₹15,000
                   </p>
                 </div>
-                <p className="text-[24px] leading-[28.8px]">15 Weeks</p>
+                <p className="text-[24px] leading-[28.8px]">12 Weeks</p>
               </div>
               <p className="relative z-30">
                 <button className="w-[100%] mt-[16px] h-[53px] bg-[transparent] rounded-[8px] text-[#30E29D] font-semibold border-[1px] border-[#30E29D] text-[16px] font-[19.2px]">
@@ -814,7 +814,7 @@ export default function Nocode() {
                     ₹15,000
                   </p>
                 </div>
-                <p className="text-[24px] leading-[28.8px]">14 Weeks</p>
+                <p className="text-[24px] leading-[28.8px]">12 Weeks</p>
               </div>
               <p className="relative z-30">
                 <button className="w-[100%] mt-[16px] h-[53px] bg-[transparent] rounded-[8px] text-[#30E29D] font-semibold border-[1px] border-[#30E29D] text-[16px] font-[19.2px]">
