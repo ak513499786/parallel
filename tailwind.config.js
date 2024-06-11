@@ -15,7 +15,7 @@ module.exports = {
       screens: {
         'hamburger': '981px',
         'md': '880px',
-        'bigscreen': '1360px',
+        'bigscreen': '1369px',
         'biggerscreen': '1440px',
         'smalllaptop': '1200px',
         'bigphone': '520px',

@@ -320,6 +320,44 @@
       rgba(48, 226, 157, 0) 20.34%
     );
 }
+.fmcardbg {
+  z-index: 1;
+  overflow: hidden;
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.05),
+      rgba(255, 255, 255, 0.05)
+    ),
+    radial-gradient(
+      79.59% 40.79% at 51.06% 24.98%,
+      rgba(255, 17, 17, 0.5) 0%,
+      rgba(125, 17, 17, 0) 100%
+    ),
+    linear-gradient(
+      0.91deg,
+      rgba(48, 226, 157, 0.1) -13.79%,
+      rgba(48, 226, 157, 0) 20.34%
+    );
+}
+.bmcardbg {
+  z-index: 1;
+  overflow: hidden;
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.05),
+      rgba(255, 255, 255, 0.05)
+    ),
+    radial-gradient(
+      79.59% 40.79% at 51.06% 24.98%,
+      rgba(85, 92, 255, 0.5) 0%,
+      rgba(85, 92, 255, 0) 100%
+    ),
+    linear-gradient(
+      0.91deg,
+      rgba(48, 226, 157, 0.1) -13.79%,
+      rgba(48, 226, 157, 0) 20.34%
+    );
+}
 .fshomecardbg {
   z-index: 1;
   position: absolute;

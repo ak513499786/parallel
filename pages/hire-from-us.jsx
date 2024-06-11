@@ -204,7 +204,7 @@ export default function Courses() {
           </div>
         </div>
       </section>
-      <section className="relative z-20 py-[80px]">
+      {/* <section className="relative z-20 py-[80px]">
         <p className="text-[20px] pl-20 max-md:px-[40px] max-sm:px-[20px] leading-[19.28px] text-[#E5E5E5] opacity-80 font-['Graphikthin'] font-light mb-[20px]">
           Success stories
         </p>
@@ -212,7 +212,7 @@ export default function Courses() {
           What our current partners are saying.{" "}
         </h1>
         <Success />
-      </section>{" "}
+      </section>{" "} */}
       <div className="py-[70.5px] flex justify-between max-md:flex-col gap-[20px] max-md:gap-[50px] relative z-20 px-[80px] max-sm:px-[20px] max-md:px-[40px]">
         <div className="w-[675.77px] max-md:w-full">
           <p className="text-[64px] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] mb-[41px] leading-[61.88px] tracking-[-2.56px] max-sm:tracking-tight font-['Graphikthin']">

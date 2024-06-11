@@ -128,7 +128,7 @@ export default function Navbar() {
         className="list-none flex gap-[52px] max-hamburger:opacity-0 max-xl:gap-[40px] max-hamburger:hidden max-smalllaptop:gap-[15px] max-sm:gap-[20px] max-sm:top-[101px] max-sm:h-[calc(100vh-121px)] max-hamburger:flex-col max-hamburger:absolute max-sm:h-[calc(100vh-181px)] max-hamburger:top-[150px] max-hamburger:text-right max-hamburger:w-[calc(100%-160px)] max-md:w-[calc(100%-80px)] max-sm:w-[calc(100%-40px)]"
       >
         <Link
-          href={"/courses/full-stack-development"}
+          href={"/courses/quick-batch"}
           ref={Menuitems9}
           className="text-[16px] italic text-[#30E29D] font-semibold relative leading-[24px] max-hamburger:py-0 py-[8px]"
         >
@@ -155,13 +155,13 @@ export default function Navbar() {
         >
           Courses
         </Link>
-        <Link
+        {/* <Link
           href={"/fees"}
           ref={Menuitems4}
           className="text-[16px] relative leading-[24px] py-[8px] max-hamburger:py-0"
         >
           Fees
-        </Link>
+        </Link> */}
         <Link
           href={"/hire-from-us"}
           ref={Menuitems5}

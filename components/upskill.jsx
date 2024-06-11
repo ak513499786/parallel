@@ -13,7 +13,7 @@ export default function Upskill() {
   }
   return (
     <div onMouseEnter={hoverCTA} onMouseLeave={unhoverCTA} className="relative overflow-hidden">
-      <Link href={'/signup'}
+      <Link href={'/courses/quick-batch'}
         ref={ctaanimation}
         className="py-[157px] max-hamburger:hidden max-sm:py-[20px] max-[317px]:py-[80px] max-[317px]:px-[20px] max-[445px]:py-[50px] rotate-[-9.21deg] left-[-80.38px] top-[-150%] w-[100%] z-30 absolute bg-white flex max-sm:py-0 justify-center"
       >

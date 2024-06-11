@@ -81,32 +81,41 @@ export default function Footer() {
               Courses
             </h1>
             <Link
-              href={"/courses/low-code-no-code"}
+              href={"/courses/quick-batch"}
               className="mt-[4px] hover:underline cursor-pointer hover:decoration-solid text-[#E5E5E5] text-base"
             >
-              Low-Code/No-Code Development{" "}
+              Frontend Mastery{" "}
             </Link>
             <Link
-              href={"/courses/artificial-intelligence"}
+              href={"/courses/quick-batch"}
               className="mt-[4px] hover:underline cursor-pointer hover:decoration-solid text-[#E5E5E5] text-base"
             >
-              Artificial Intelligence (AI/ML){" "}
+              Backend Mastery{" "}
             </Link>
             <Link
-              href={"/courses/data-analytics"}
-              className="mt-[4px] hover:underline cursor-pointer hover:decoration-solid text-[#E5E5E5] text-base"
-            >
-              Data Analytics{" "}
-            </Link>
-            <Link
-              href={"/courses/full-stack-development"}
+              href={"/courses/quick-batch"}
               className="mt-[4px] hover:underline cursor-pointer hover:decoration-solid text-[#E5E5E5] text-base"
             >
               Full Stack Development{" "}
-              <span className="italic text-sm font-semibold text-[#30E29D]">
-                QUICK BATCH
-              </span>
             </Link>
+            <h1 className="text-[#E5E5E5] mt-[16px] opacity-70 max-smallphone:mb-[10px] text-base">
+              Coming soon
+            </h1>
+            <p
+              className="mt-[4px] opacity-70 hover:underline cursor-pointer hover:decoration-solid text-[#E5E5E5] text-base"
+            >
+              Low-Code/No-Code Development
+            </p>
+            <p
+              className="mt-[4px] opacity-70 hover:underline cursor-pointer hover:decoration-solid text-[#E5E5E5] text-base"
+            >
+              Artificial Intelligence (AI/ML)
+            </p>
+            <p
+              className="mt-[4px] opacity-70 hover:underline cursor-pointer hover:decoration-solid text-[#E5E5E5] text-base"
+            >
+              Data Analytics
+            </p>
           </div>
           <div className="w-[92px] flex flex-col">
             <h1 className="text-[#E5E5E5] opacity-80 text-base">Company</h1>
@@ -128,24 +137,24 @@ export default function Footer() {
             >
               Courses
             </Link>
-            <Link
+            {/* <Link
               href={"/fees"}
               className="mt-[4px] hover:underline cursor-pointer hover:decoration-solid w-[92px] text-[#E5E5E5] text-base"
             >
               Fees
-            </Link>
+            </Link> */}
             <Link
               href={"/contact-us"}
               className="mt-[4px] text-[#E5E5E5] hover:underline cursor-pointer hover:decoration-solid w-[92px] text-base"
             >
               Contact Us
             </Link>
-            <Link
+            {/* <Link
               href={"/isa"}
               className="mt-[4px] hover:underline cursor-pointer hover:decoration-solid w-[92px] text-[#E5E5E5] text-base"
             >
               ISA
-            </Link>
+            </Link> */}
             <Link
               href={"/hire-from-us"}
               className="mt-[4px] text-[#E5E5E5] hover:underline cursor-pointer hover:decoration-solid w-[92px] text-base"

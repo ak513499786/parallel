@@ -83,14 +83,17 @@ export default function Home() {
       <div className="absolute w-[100%] h-[822px] top-0 left-0 overflow-hidden">
         <div className={style.backgroundbox}></div>
       </div>
-      <main className="px-[80px] z-50 relative max-md:px-[40px] max-sm:px-[20px] max-md:pt-[50px] max-sm:pb-0 max-sm:pt-[30px] flex justify-between max-hamburger:items-center max-smalllaptop:gap-[20px] max-hamburger:flex-col pb-[29.5px] pt-[76px]">
-        <div className="mt-[23px] max-hamburger:w-full max-md:mt-0">
+      <main className="px-[80px] z-50 relative max-md:px-[40px] max-sm:px-[20px] max-md:pt-[50px] max-sm:pb-0 max-sm:pt-[30px] flex justify-between max-hamburger:items-center max-smalllaptop:gap-[20px] max-hamburger:flex-col pb-[29.5px] pt-[76.5px]">
+        <div className="max-hamburger:w-full">
           <div className="relative z-30 w-full">
             <h1 className="w-[685.41px] text-[74.07px] font-medium max-hamburger:w-[100%]  max-smalllaptop:w-[510px] max-bigscreen:w-[676px] max-smalllaptop:tracking-[-4.5px] max-smalllaptop:text-[66px] max-sm:text-[60px] max-smallphone:text-[42px] max-sm:tracking-normal max-sm:mb-[12px] max-smalllaptop:leading-[102%] font-light tracking-[-3.5px] leading-[80.73px] text-[#E5E5E5] font-['Graphikmedium'] font-light mb-[20px]">
-              Upskill and get placed at{" "}
-              <span className="font-['Graphik']">₹0.</span>
+              Upskill and get placed at
+              <span className="font-['Graphik'] font-semibold">
+                {" "}
+                an affordable price.
+              </span>
             </h1>
-            <div className="flex gap-[12px] flex-wrap pt-[20px]">
+            <div className="flex gap-[12px] flex-wrap">
               <p className="px-[8px] max-sm:px-[6px] py-[4px] rounded-[5px] text-[#797979] text-base max-sm:text-sm border-[1px] border-[#797979]">
                 No-code, Low-code{" "}
               </p>
@@ -104,26 +107,26 @@ export default function Home() {
                 Full-stack Development
               </p>
             </div>
-            <p className="mt-[50px] mb-[16px] max-sm:w-full text-[16px] leading-[24px] text-[#E0E0E0]">
-              Quick batch starts on June 5th. Get placed within{" "}
+            <p className="mt-[50px] mb-[12px] max-sm:w-full text-[16px] leading-[24px] text-[#E0E0E0]">
+              Quick batch starts on June 20th. Get placed within{" "}
               <span className="text-[#30E29D]"> 6 months!</span>
             </p>
             <div className="bg-black rounded-[9px] max-bigphone:w-[300px] max-smallphone:w-full max-hamburger:w-[501px] w-[501px] max-sm:w-full">
-              <div className="bg-[#30E29D1A] max-bigphone:flex-col max-bigphone:w-[300px] max-smallphone:w-full rounded-[9px] max-sm:px-[12px] pr-[22.97px] w-[501px] max-sm:w-full max-hamburger:w-[501px] pl-[11px] pt-[16.71px] pb-[15.46px] flex gap-[17px]">
+              <div className="bg-[#30E29D1A] max-bigphone:flex-col max-bigphone:w-[300px] max-smallphone:w-full rounded-[9px] max-sm:px-[12px] pr-[22.97px] w-[501px] max-sm:w-full max-hamburger:w-[501px] pl-[11px] py-[18px] flex gap-[17px]">
                 <Image
                   src="/qb.png"
-                  className="max-bigphone:w-full"
-                  width={185.24}
-                  height={115.89}
+                  className="w-[185px] h-[134px] max-bigphone:w-full"
+                  width={185}
+                  height={134}
                 />
                 <div>
-                  <h1 className="text-[20px] leading-[25.5px] text-[#E0E0E0] mb-[44.12px]">
-                    Full stack development
+                  <h1 className="text-[16px] leading-[15.5px] text-[#E5E5E5] mb-[10px] italic font-semibold ">
+                    Quick Batch
                   </h1>
-                  <Link
-                    className="w-full"
-                    href={"/courses/full-stack-development"}
-                  >
+                  <h1 className="text-base text-[#E0E0E0] mb-[19.34px]">
+                    Courses on Frontend, Backend, and Fullstack Development.
+                  </h1>
+                  <Link className="w-full" href={"/courses/quick-batch"}>
                     <button className="w-[265px] max-bigphone:w-full max-sm:w-[245px] h-[39px] bg-[#30E29D] rounded-[8px] font-semibold text-[#292929] text-[16px] font-[19.2px]">
                       Enroll now for 100% placement
                     </button>
@@ -132,13 +135,13 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="w-[600px] max-hamburger:w-full overflow-hidden mt-[68px] max-hamburger:mt-[80px] max-md:mt-[50px] max-smalllaptop:w-[460px] relative z-30">
-            <p className="text-[16px] leading-[24px] text-[#E0E0E0]">
+          <div className="w-[600px] max-hamburger:w-full overflow-hidden mt-[46px] max-hamburger:mt-[80px] max-md:mt-[50px] max-smalllaptop:w-[460px] relative z-30">
+            <p className="text-[16px] mb-[12px] leading-[24px] text-[#E0E0E0]">
               Our placement partners
             </p>
             <div
               ref={clientanimation}
-              className="w-[1323.57px] h-[96px] flex gap-[52px]"
+              className="w-[1323.57px] h-[44px] flex gap-[52px]"
             >
               <Image
                 src="/razorimage.svg"
@@ -303,18 +306,19 @@ export default function Home() {
               </div>
             )}
           </div>
-          <Link href={"/courses/full-stack-development"}>
-            <button className="w-full h-[53px] border-[#30E29D] hover:bg-[#30E29D] hover:text-[#292929] transition-all border-[1px] rounded-[8px] font-semibold text-[#30E29D] text-[16px] font-[19.2px]">
-              Talk To Our Experts
-            </button>
-          </Link>
+          <button
+            onClick={handleSubmit}
+            className="w-full h-[53px] border-[#30E29D] hover:bg-[#30E29D] hover:text-[#292929] transition-all border-[1px] rounded-[8px] font-semibold text-[#30E29D] text-[16px] font-[19.2px]"
+          >
+            Talk To Our Experts
+          </button>
         </div>
       </main>
       <div className="absolute z-40 overflow-hidden w-[100%] h-[100vh] top-[811px] left-0 overflow-x-hidden">
         <div className={style.backgroundbox2}></div>
       </div>
-      <section className="py-[122px] relative z-[41] max-md:py-20 max-bigscreen:px-[80px] max-md:px-[40px] max-sm:px-[20px]  relative pl-[188px] pr-[80px] flex gap-[129px] max-hamburger:flex-col max-xl:gap-[50px] items-center">
-        <div
+      <section className="pt-[141px] pb-[140px] relative z-[41] max-md:py-20 max-bigscreen:pr-[80px] max-md:px-[40px] max-sm:px-[20px] max-hamburger:px-[40px] relative pl-[0px] pr-[80px] flex gap-[129px] max-hamburger:flex-col max-xl:gap-[50px]">
+        {/* <div
           className={`px-[18px] relative card w-[413px] max-md:w-full max-hamburger:w-[70%] max-smalllaptop:w-[48.3%] rounded-[10px] pb-[49.13px] pt-[20px] ${style.aicardborder}`}
         >
           <div className="bg-black rounded-[9px]">
@@ -343,12 +347,18 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </div>
-        <div className="relative z-20">
-          <p className="text-[20px] text-[#E5E5E5] leading-[19.28px] mb-[24px]">
+        </div> */}
+        <Image
+          src="/qball.png"
+          className="w-[797px] max-smalllaptop:w-[600px] h-auto max-hamburger:w-full max-md:w-full z-[2] relative h-auto"
+          width={797}
+          height={369}
+        />
+        <div className="max-hamburger:static absolute max-smalllaptop:left-[570px] max-lg:left-[540px] top-[122px] left-[730px] z-20">
+          <p className="text-[20px] font-['Graphikthin'] text-[#E5E5E5] leading-[19.28px] mb-[17px]">
             Introducing
           </p>
-          <h1 className="text-[64px] font-black mb-[45px] text-[#E5E5E5] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] max-md:w-full italic leading-[61.68px] tracking-[-2.56px] text-[#E5E5E5]">
+          <h1 className="text-[64px] font-bold font-['Graphik'] mb-[45px] text-[#E5E5E5] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] max-md:w-full italic leading-[61.68px] max-sm:tracking-tight max-md:mb-[24px] tracking-[-2.56px] text-[#E5E5E5]">
             Quick Batch
           </h1>
           <p className="text-[20px] w-[440.78px] max-hamburger:w-full tracking-[-0.2px] font-['Graphikthin'] text-[#F7F7F7] leading-[25.28px] mb-[16px]">
@@ -356,11 +366,11 @@ export default function Home() {
             within 6 months.
           </p>
           <p className="text-[16px] w-[417.46px] max-hamburger:w-full opacity-80 tracking-[-0.2px] font-['Graphikthin'] text-[#E0E0E0] leading-[24px] mb-[45px]">
-            This fast-track course gets students ready on frontend, backend, and
-            career development. All of this and a job within 6 months.
+            Become a master at Frontend, Backend, or Fullstack Development. Get
+            placed in 6 months.
           </p>
           <div className="flex gap-[27px] max-sm:flex-col max-sm:gap-[12px] items-center">
-            <Link className="max-sm:w-full" href={"/courses/full-stack-development"}>
+            <Link className="max-sm:w-full" href={"/courses/quick-batch"}>
               <button className="text-[16px] max-sm:w-full font-semibold relative bg-[#30E29D] text-black h-[53px] w-[167px] rounded-[8px] leading-[24px]">
                 Learn more{" "}
               </button>
@@ -604,6 +614,128 @@ export default function Home() {
         </h1>
         <div className="pl-[2px] justify-center mt-[93px] flex flex-wrap gap-x-[94px] gap-y-[84px] max-sm:gap-[20px]">
           <div
+            className={`px-[18px] relative card w-[413px] max-biggerscreen:w-[33%] max-md:w-full max-smalllaptop:w-[48.3%] border-white rounded-[10px] py-[20px] ${style.aicardborder}`}
+          >
+            <div className="bg-black rounded-[9px]">
+              <div
+                className={`${style.fscardbg} px-[18px] relative rounded-[10px] py-[20px]`}
+              >
+                <Image
+                  src="/fullstack.png"
+                  className="w-[100%] relative z-20 h-auto"
+                  width={377}
+                  height={236}
+                />
+                <h1 className="mt-[20.87px] leading-[31.36px] mb-[17.13px] tracking-[-0.84px] font-['Graphikthin'] text-[#E5E5E5] text-[28px]">
+                  Full Stack Development{" "}
+                </h1>
+                <div className="flex gap-[8px]">
+                  <p className="px-[8px] max-sm:px-[6px] py-[4px] rounded-[5px] text-[#797979] text-base max-sm:text-sm border-[1px] border-[#797979]">
+                    Software Development{" "}
+                  </p>
+                  <p className="px-[8px] max-sm:px-[6px] py-[4px] rounded-[5px] text-[#797979] text-base max-sm:text-sm border-[1px] border-[#797979]">
+                    Beginner friendly{" "}
+                  </p>
+                </div>
+                <div className="flex mt-[27.57px] gap-[12px]">
+                  <p className="text-[#FFFFFF] leading-[28.8px] font-['General Sans'] text-[24px]">
+                    ₹29,999
+                  </p>
+                  <p className="text-[#FF4747] text-sm">-50%</p>
+                </div>
+                <p className="line-through mt-[3px] text-[16px] font-['Graphikthin'] leading-[19.2px] opacity-60 text-[#ECECEC]">
+                  ₹60,000
+                </p>
+                <Link className="relative z-30" href={"/courses/quick-batch"}>
+                  <button className="w-[100%] mt-[14.57px] h-[53px] bg-[transparent] rounded-[8px] text-[#30E29D] button transition-all font-semibold border-[1px] border-[#30E29D] text-[16px] font-[19.2px]">
+                    Learn more{" "}
+                  </button>
+                </Link>
+              </div>
+            </div>
+          </div>
+          <div
+            className={`px-[18px] relative card w-[413px] max-biggerscreen:w-[33%] max-md:w-full max-smalllaptop:w-[48.3%] border-white rounded-[10px] py-[20px] ${style.aicardborder}`}
+          >
+            <div className="bg-black rounded-[9px]">
+              <div
+                className={`${style.bmcardbg} px-[18px] relative rounded-[10px] py-[20px]`}
+              >
+                <Image
+                  src="/backend.png"
+                  className="w-[100%] relative z-20 h-auto"
+                  width={377}
+                  height={236}
+                />
+                <h1 className="mt-[20.87px] leading-[31.36px] mb-[17.13px] tracking-[-0.84px] font-['Graphikthin'] text-[#E5E5E5] text-[28px]">
+                  Backend Mastery{" "}
+                </h1>
+                <div className="flex gap-[8px]">
+                  <p className="px-[8px] max-sm:px-[6px] py-[4px] rounded-[5px] text-[#797979] text-base max-sm:text-sm border-[1px] border-[#797979]">
+                    Software Development{" "}
+                  </p>
+                  <p className="px-[8px] max-sm:px-[6px] py-[4px] rounded-[5px] text-[#797979] text-base max-sm:text-sm border-[1px] border-[#797979]">
+                    Beginner friendly{" "}
+                  </p>
+                </div>
+                <div className="flex mt-[27.57px] gap-[12px]">
+                  <p className="text-[#FFFFFF] leading-[28.8px] font-['General Sans'] text-[24px]">
+                    ₹9,999
+                  </p>
+                  <p className="text-[#FF4747] text-sm">-33%</p>
+                </div>
+                <p className="line-through mt-[3px] text-[16px] font-['Graphikthin'] leading-[19.2px] opacity-60 text-[#ECECEC]">
+                  ₹15,000
+                </p>
+                <Link className="relative z-30" href={"/courses/quick-batch"}>
+                  <button className="w-[100%] mt-[14.57px] h-[53px] bg-[transparent] rounded-[8px] text-[#30E29D] button transition-all font-semibold border-[1px] border-[#30E29D] text-[16px] font-[19.2px]">
+                    Learn more{" "}
+                  </button>
+                </Link>
+              </div>
+            </div>
+          </div>
+          <div
+            className={`px-[18px] relative card w-[413px] max-biggerscreen:w-[33%] max-md:w-full max-smalllaptop:w-[48.3%] border-white rounded-[10px] py-[20px] ${style.aicardborder}`}
+          >
+            <div className="bg-black rounded-[9px]">
+              <div
+                className={`${style.fmcardbg} px-[18px] relative rounded-[10px] py-[20px]`}
+              >
+                <Image
+                  src="/frontend.png"
+                  className="w-[100%] relative z-20 h-auto"
+                  width={377}
+                  height={236}
+                />
+                <h1 className="mt-[20.87px] leading-[31.36px] mb-[17.13px] tracking-[-0.84px] font-['Graphikthin'] text-[#E5E5E5] text-[28px]">
+                </h1>
+                <div className="flex gap-[8px]">
+                  <p className="px-[8px] max-sm:px-[6px] py-[4px] rounded-[5px] text-[#797979] text-base max-sm:text-sm border-[1px] border-[#797979]">
+                    Software Development{" "}
+                  </p>
+                  <p className="px-[8px] max-sm:px-[6px] py-[4px] rounded-[5px] text-[#797979] text-base max-sm:text-sm border-[1px] border-[#797979]">
+                    Beginner friendly{" "}
+                  </p>
+                </div>
+                <div className="flex mt-[27.57px] gap-[12px]">
+                  <p className="text-[#FFFFFF] leading-[28.8px] font-['General Sans'] text-[24px]">
+                    ₹9,999
+                  </p>
+                  <p className="text-[#FF4747] text-sm">-33%</p>
+                </div>
+                <p className="line-through mt-[3px] text-[16px] font-['Graphikthin'] leading-[19.2px] opacity-60 text-[#ECECEC]">
+                  ₹15,000
+                </p>
+                <Link className="relative z-30" href={"/courses/quick-batch"}>
+                  <button className="w-[100%] mt-[14.57px] h-[53px] bg-[transparent] rounded-[8px] text-[#30E29D] button transition-all font-semibold border-[1px] border-[#30E29D] text-[16px] font-[19.2px]">
+                    Learn more{" "}
+                  </button>
+                </Link>
+              </div>
+            </div>
+          </div>
+          <div
             className={`px-[18px] card relative w-[413px] max-biggerscreen:w-[33%] max-md:w-full max-smalllaptop:w-[48.3%] rounded-[10px] py-[20px] ${style.aicardborder}`}
           >
             <div className="bg-black rounded-[9px]">
@@ -628,21 +760,21 @@ export default function Home() {
                   </p>
                 </div>
                 <div className="flex justify-between mt-[19px]">
-                  <h1 className="text-[#ECECEC] leading-[28.8px] text-[24px] font-medium">
+                  <h1 className="text-[#ECECEC] leading-[28.8px] text-[24px] font-medium opacity-0">
                     Free
                   </h1>
                   {/* <p className="text-[#A1A1A1] text-[16px] leading-[19.2px] mt-[10px]">
                 &lt; 18 Hours
               </p> */}
                 </div>
-                <Link
+                {/* <Link
                   className="relative z-30"
                   href={"/courses/low-code-no-code"}
-                >
-                  <button className="w-[100%] mt-[15px] h-[53px] bg-[transparent] rounded-[8px] text-[#30E29D] transition-all button font-semibold border-[1px] border-[#30E29D] text-[16px] font-[19.2px]">
-                    Coming Soon{" "}
-                  </button>
-                </Link>
+                > */}
+                <button className="w-[100%] relative z-30 mt-[15px] h-[53px] bg-[transparent] rounded-[8px] text-[#30E29D] transition-all button font-semibold border-[1px] border-[#30E29D] text-[16px] font-[19.2px]">
+                  Coming Soon{" "}
+                </button>
+                {/* </Link> */}
               </div>
             </div>
           </div>
@@ -671,21 +803,21 @@ export default function Home() {
                   </p>
                 </div>
                 <div className="flex justify-between relative z-20 mt-[49px]">
-                  <h1 className="text-[#ECECEC] leading-[28.8px] text-[24px] font-medium">
+                  <h1 className="text-[#ECECEC] leading-[28.8px] text-[24px] font-medium opacity-0">
                     Free
                   </h1>
                   {/* <p className="text-[#A1A1A1] text-[16px] leading-[19.2px] mt-[10px]">
                 &lt; 18 Hours
               </p> */}
                 </div>
-                <Link
+                {/* <Link
                   className="relative z-30"
                   href={"/courses/artificial-intelligence"}
-                >
-                  <button className="w-[100%] mt-[15px] h-[53px] bg-[transparent] rounded-[8px] text-[#30E29D] transition-all font-semibold button border-[1px] border-[#30E29D] text-[16px] font-[19.2px]">
-                    Coming Soon{" "}
-                  </button>
-                </Link>
+                > */}
+                <button className="relative z-30 w-[100%] mt-[15px] h-[53px] bg-[transparent] rounded-[8px] text-[#30E29D] transition-all font-semibold button border-[1px] border-[#30E29D] text-[16px] font-[19.2px]">
+                  Coming Soon{" "}
+                </button>
+                {/* </Link> */}
               </div>
             </div>
           </div>
@@ -714,67 +846,24 @@ export default function Home() {
                   </p>
                 </div>
                 <div className="flex justify-between mt-[49px]">
-                  <h1 className="text-[#ECECEC] leading-[28.8px] text-[24px] font-medium">
+                  <h1 className="text-[#ECECEC] leading-[28.8px] text-[24px] font-medium opacity-0">
                     Free
                   </h1>
                   {/* <p className="text-[#A1A1A1] text-[16px] leading-[19.2px] mt-[10px]">
                 &lt; 18 Hours
               </p> */}
                 </div>
-                <Link
+                {/* <Link
                   className="relative z-30"
                   href={"/courses/data-analytics"}
-                >
-                  <button className="w-[100%] mt-[15px] h-[53px] bg-[transparent] rounded-[8px] text-[#30E29D] transition-all font-semibold button border-[1px] border-[#30E29D] text-[16px] font-[19.2px]">
-                    Coming Soon{" "}
-                  </button>
-                </Link>
+                > */}
+                <button className="w-[100%] relative z-30 mt-[15px] h-[53px] bg-[transparent] rounded-[8px] text-[#30E29D] transition-all font-semibold button border-[1px] border-[#30E29D] text-[16px] font-[19.2px]">
+                  Coming Soon{" "}
+                </button>
+                {/* </Link> */}
               </div>
             </div>
           </div>
-          <div
-            className={`px-[18px] relative card w-[413px] max-biggerscreen:w-[33%] max-md:w-full max-smalllaptop:w-[48.3%] border-white rounded-[10px] py-[20px]`}
-          ></div>
-          {/* <div
-            className={`px-[18px] relative card w-[413px] max-biggerscreen:w-[33%] max-md:w-full max-smalllaptop:w-[48.3%] border-white rounded-[10px] py-[20px] ${style.aicardborder}`}
-          >
-            <div className="bg-black rounded-[9px]">
-              <div
-                className={`${style.fscardbg} px-[18px] relative rounded-[10px] py-[20px]`}
-              >
-                <Image
-                  src="/fullstack.png"
-                  className="w-[100%] relative z-20 h-auto"
-                  width={377}
-                  height={236}
-                />
-                <h1 className="mt-[20.87px] leading-[31.36px] mb-[17.13px] tracking-[-0.84px] font-['Graphikthin'] text-[#E5E5E5] text-[28px]">
-                  Full Stack Development{" "}
-                </h1>
-                <div className="flex gap-[8px]">
-                  <p className="px-[8px] max-sm:px-[6px] py-[4px] rounded-[5px] text-[#797979] text-base max-sm:text-sm border-[1px] border-[#797979]">
-                    Software Development{" "}
-                  </p>
-                  <p className="px-[8px] max-sm:px-[6px] py-[4px] rounded-[5px] text-[#797979] text-base max-sm:text-sm border-[1px] border-[#797979]">
-                    Beginner friendly{" "}
-                  </p>
-                </div>
-                <div className="flex justify-between mt-[49px]">
-                  <h1 className="text-[#ECECEC] leading-[28.8px] text-[24px] font-medium">
-                    Free
-                  </h1>
-                </div>
-                <Link
-                  className="relative z-30"
-                  href={"/courses/full-stack-development"}
-                >
-                  <button className="w-[100%] mt-[15px] h-[53px] bg-[transparent] rounded-[8px] text-[#30E29D] button transition-all font-semibold border-[1px] border-[#30E29D] text-[16px] font-[19.2px]">
-                    Coming Soon{" "}
-                  </button>
-                </Link>
-              </div>
-            </div>
-          </div> */}
         </div>
       </div>
       <section className="px-[80px] max-md:px-[40px] max-sm:px-[20px] max-sm:py-0 relative py-[100px] flex flex-col justify-center items-center gap-[65px]">
