@@ -709,6 +709,7 @@ export default function Home() {
                   height={236}
                 />
                 <h1 className="mt-[20.87px] leading-[31.36px] mb-[17.13px] tracking-[-0.84px] font-['Graphikthin'] text-[#E5E5E5] text-[28px]">
+                  Frontend Mastery{" "}
                 </h1>
                 <div className="flex gap-[8px]">
                   <p className="px-[8px] max-sm:px-[6px] py-[4px] rounded-[5px] text-[#797979] text-base max-sm:text-sm border-[1px] border-[#797979]">
