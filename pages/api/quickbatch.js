@@ -9,7 +9,7 @@ export default async function handler(req, res) {
   }
 
   try {
-    const { Name, Email, Phone_Number } = req.body;
+    const { Name, Email, Phone, courseSelected } = req.body;
 
     // Load Google Sheets credentials
     const credentialsPath = path.join(process.cwd(), "credentials.json");
@@ -23,16 +23,15 @@ export default async function handler(req, res) {
 
     const sheets = google.sheets({ version: "v4", auth });
 
-    const spreadsheetId = "1KQ8kxkt39-96MgHl1bsRep6cHUwEgFvk75C380AgXO8";
+    const spreadsheetId = "1De6M-0W0iUCCevn2wUQcliTgKHxTc8Qq7p6vgMz_OoI";
     const range = "Sheet1!A1:F1";
 
-    // Append the data to the spreadsheet
     await sheets.spreadsheets.values.append({
       spreadsheetId,
       range,
       valueInputOption: "RAW",
       resource: {
-        values: [[Name, Email, Phone_Number]],
+        values: [[Name, Email, Phone, courseSelected]],
       },
     });
 

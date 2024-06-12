@@ -5,16 +5,27 @@ import Footer from "../../components/footer";
 import Upskill from "../../components/upskill";
 import Success from "../../components/success";
 import { useState, useRef } from "react";
+import axios from "axios";
 
 export default function Nocode() {
-  const [activeSection, setActiveSection] = useState(0);
   const [courseSelected, setCourseSelected] = useState("");
-  const Main = useRef(null);
-  const scrollToMain = (index) => {
-    if (Main.current) {
-      Main.current.scrollIntoView({ behavior: "smooth" });
+  const [Name, setName] = useState("");
+  const [Phone, setPhone] = useState("");
+  const [Email, setEmail] = useState("");
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const data = {
+      Name,
+      Email,
+      Phone,
+      courseSelected
+    };
+    try {
+      const response = await axios.post("/api/quickbatch", data);
+      console.log("Data sent successfully:", response.data);
+    } catch (error) {
+      console.error("Error sending data:", error);
     }
-    setActiveSection(index);
   };
   return (
     <>
@@ -173,376 +184,6 @@ export default function Nocode() {
             </div>
           </div>
         </section>
-        {/* <section
-          ref={Main}
-          className="pt-[95px] z-[21] max-md:py-0 relative px-[80px] max-md:px-[40px] max-sm:px-[20px] pb-[37px]"
-        >
-          <h1 className="w-[630px] text-[#E5E5E5] max-md:w-full text-[64px] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] font-['Graphikthin'] leading-[61.68px] tracking-[-2.56px]">
-            What you will learn in this course.{" "}
-          </h1>
-          <div className="flex gap-[20px] mt-[60px] pl-[2px] max-hamburger:flex-col">
-            <div className="max-hamburger:flex flex-wrap">
-              <a
-                href="#week1"
-                onClick={() => scrollToMain(0)}
-                className={
-                  activeSection === 0
-                    ? "text-[20px] cursor-pointer max-md:text-base max-sm:text-sm mb-[16px] leading-[25.2px] tracking-[-0.6px] text-[#E0E0E0] font-['Graphikthin'] justify-center flex rounded-[8px] border-[1px] border-[#FFFFFF66] items-center py-[21.5px] text-center w-[303px] max-smalllaptop:w-[200px] max-md:w-[100px] max-md:py-[10px]"
-                    : "text-[20px] cursor-pointer max-md:text-base max-sm:text-sm mb-[16px] opacity-80 leading-[25.2px] tracking-[-0.6px] text-[#E0E0E0] font-['Graphikthin'] justify-center flex rounded-[8px] border-[1px] border-[#FFFFFF0D] items-center py-[21.5px] text-center w-[303px] max-smalllaptop:w-[200px] max-md:w-[100px] max-md:py-[10px]"
-                }
-              >
-                Week 1 to 5
-              </a>
-              <a
-                href="#week6"
-                onClick={() => scrollToMain(1)}
-                className={
-                  activeSection === 1
-                    ? "text-[20px] cursor-pointer max-md:text-base max-sm:text-sm mb-[16px] leading-[25.2px] tracking-[-0.6px] text-[#E0E0E0] font-['Graphikthin'] justify-center flex rounded-[8px] border-[1px] border-[#FFFFFF66] items-center py-[21.5px] text-center w-[303px] max-smalllaptop:w-[200px] max-md:w-[100px] max-md:py-[10px]"
-                    : "text-[20px] cursor-pointer max-md:text-base max-sm:text-sm mb-[16px] opacity-80 leading-[25.2px] tracking-[-0.6px] text-[#E0E0E0] font-['Graphikthin'] justify-center flex rounded-[8px] border-[1px] border-[#FFFFFF0D] items-center py-[21.5px] text-center w-[303px] max-smalllaptop:w-[200px] max-md:w-[100px] max-md:py-[10px]"
-                }
-              >
-                Week 6 to 10
-              </a>
-              <a
-                href="#week11"
-                onClick={() => scrollToMain(2)}
-                className={
-                  activeSection === 2
-                    ? "text-[20px] cursor-pointer max-md:text-base max-sm:text-sm mb-[16px] leading-[25.2px] tracking-[-0.6px] text-[#E0E0E0] font-['Graphikthin'] justify-center flex rounded-[8px] border-[1px] border-[#FFFFFF66] items-center py-[21.5px] text-center w-[303px] max-smalllaptop:w-[200px] max-md:w-[100px] max-md:py-[10px]"
-                    : "text-[20px] cursor-pointer max-md:text-base max-sm:text-sm mb-[16px] opacity-80 leading-[25.2px] tracking-[-0.6px] text-[#E0E0E0] font-['Graphikthin'] justify-center flex rounded-[8px] border-[1px] border-[#FFFFFF0D] items-center py-[21.5px] text-center w-[303px] max-smalllaptop:w-[200px] max-md:w-[100px] max-md:py-[10px]"
-                }
-              >
-                Week 11 to 20{" "}
-              </a>
-              <a
-                href="#week21"
-                onClick={() => scrollToMain(3)}
-                className={
-                  activeSection === 3
-                    ? "text-[20px] cursor-pointer max-md:text-base max-sm:text-sm mb-[16px] leading-[25.2px] tracking-[-0.6px] text-[#E0E0E0] font-['Graphikthin'] justify-center flex rounded-[8px] border-[1px] border-[#FFFFFF66] items-center py-[21.5px] text-center w-[303px] max-smalllaptop:w-[200px] max-md:w-[100px] max-md:py-[10px]"
-                    : "text-[20px] cursor-pointer max-md:text-base max-sm:text-sm mb-[16px] opacity-80 leading-[25.2px] tracking-[-0.6px] text-[#E0E0E0] font-['Graphikthin'] justify-center flex rounded-[8px] border-[1px] border-[#FFFFFF0D] items-center py-[21.5px] text-center w-[303px] max-smalllaptop:w-[200px] max-md:w-[100px] max-md:py-[10px]"
-                }
-              >
-                Week 21 to 24{" "}
-              </a>
-            </div>
-            <div className="bg-[#FFFFFF0D] pb-[30px] container scroll-smooth overflow-scroll w-[955px] max-hamburger:w-full max-biggerscreen:w-[900px] h-[663px] rounded-[8px] pl-[27px] pr-[57px] max-smalllaptop:px-[20px]">
-              <div
-                id="week1"
-                className="mt-[38.5px] py-[21px] pl-[20.38px] bg-[#FFFFFF0D] rounded-[8px] max-biggerscreen:w-full w-[870px] h-[166px] max-smalllaptop:h-auto"
-              >
-                <p className="text-[16px] leading-[20.16px] opacity-70 mb-[13px]">
-                  Week 01
-                </p>
-                <h1 className="text-[24px] leading-[30.24px] tracking-[-0.24px] text-[#E0E0E0] font-['Graphikthin']">
-                  Fundamentals of Coding and Linear DSA
-                </h1>
-                <p className="text-[16px] leading-[20.16px] opacity-70 w-[535.2px] max-smalllaptop:w-[90%] mt-[21px]">
-                  The concept of LCNC platforms, benefits, limitations, use
-                  cases across industries.
-                </p>
-              </div>
-              <div className="mt-[16px] py-[21px] pl-[20.38px] bg-[#FFFFFF0D] rounded-[8px] w-[870px] h-[166px] max-biggerscreen:w-full max-smalllaptop:h-auto">
-                <p className="text-[16px] leading-[20.16px] opacity-70 mb-[13px]">
-                  Week 02
-                </p>
-                <h1 className="text-[24px] leading-[30.24px] tracking-[-0.24px] text-[#E0E0E0] font-['Graphikthin']">
-                  Arrays and Bit Manipulation
-                </h1>
-                <p className="text-[16px] leading-[20.16px] opacity-70 w-[535.2px] max-smalllaptop:w-[90%] mt-[21px]">
-                  Traditional coding vs. LCNC development, terminology,
-                  development lifecycle.
-                </p>
-              </div>
-              <div className="mt-[16px] py-[21px] pl-[20.38px] bg-[#FFFFFF0D] rounded-[8px] w-[870px] h-[166px] max-biggerscreen:w-full max-smalllaptop:h-auto">
-                <p className="text-[16px] leading-[20.16px] opacity-70 mb-[13px]">
-                  Week 03
-                </p>
-                <h1 className="text-[24px] leading-[30.24px] tracking-[-0.24px] text-[#E0E0E0] font-['Graphikthin']">
-                  OOPS, Binary Search, Map, and Set{" "}
-                </h1>
-                <p className="text-[16px] leading-[20.16px] opacity-70 w-[535.2px] max-smalllaptop:w-[90%] mt-[21px]">
-                  Exploring popular platforms (Mendix, OutSystems, Bubble etc.),
-                  selection criteria based on needs and complexity.
-                </p>
-              </div>
-              <div className="mt-[16px] py-[21px] pl-[20.38px] bg-[#FFFFFF0D] rounded-[8px] w-[870px] h-[166px] max-biggerscreen:w-full max-smalllaptop:h-auto">
-                <p className="text-[16px] leading-[20.16px] opacity-70 mb-[13px]">
-                  Week 04
-                </p>
-                <h1 className="text-[24px] leading-[30.24px] tracking-[-0.24px] text-[#E0E0E0] font-['Graphikthin']">
-                  Stacks & Queues
-                </h1>
-                <p className="text-[16px] leading-[20.16px] opacity-70 w-[535.2px] max-smalllaptop:w-[90%] mt-[21px]">
-                  Platform interface overview, learning resources and
-                  communities.
-                </p>
-              </div>
-              <div
-                id="week6"
-                className="mt-[16px] py-[21px] pl-[20.38px] bg-[#FFFFFF0D] rounded-[8px] w-[870px] h-[166px] max-biggerscreen:w-full max-smalllaptop:h-auto"
-              >
-                <p className="text-[16px] leading-[20.16px] opacity-70 mb-[13px]">
-                  Week 05
-                </p>
-                <h1 className="text-[24px] leading-[30.24px] tracking-[-0.24px] text-[#E0E0E0] font-['Graphikthin']">
-                  Linked List and Basic Recursion
-                </h1>
-                <p className="text-[16px] leading-[20.16px] opacity-70 w-[535.2px] max-smalllaptop:w-[90%] mt-[21px]">
-                  Hands-on practice creating a basic application using the
-                  chosen platform's drag-and-drop interface and functionalities.
-                </p>
-              </div>
-              <div className="mt-[16px]  container py-[21px] pl-[20.38px] bg-[#FFFFFF0D] rounded-[8px] w-[870px] h-[166px] max-biggerscreen:w-full max-smalllaptop:h-auto">
-                <p className="text-[16px] leading-[20.16px] opacity-70 mb-[13px]">
-                  Week 06
-                </p>
-                <h1 className="text-[24px] leading-[30.24px] tracking-[-0.24px] text-[#E0E0E0] font-['Graphikthin']">
-                  Introduction to Web Development
-                </h1>
-                <p className="text-[16px] leading-[20.16px] opacity-70 w-[535.2px] max-smalllaptop:w-[90%] mt-[21px]">
-                  Understanding UI design principles, building user interfaces
-                  using layouts, components, and themes.
-                </p>
-              </div>
-              <div className="mt-[16px] py-[21px] pl-[20.38px] bg-[#FFFFFF0D] rounded-[8px] w-[870px] h-[166px] max-biggerscreen:w-full max-smalllaptop:h-auto">
-                <p className="text-[16px] leading-[20.16px] opacity-70 mb-[13px]">
-                  Week 07
-                </p>
-                <h1 className="text-[24px] leading-[30.24px] tracking-[-0.24px] text-[#E0E0E0] font-['Graphikthin']">
-                  Tailwind CSS and Bootstrap
-                </h1>
-                <p className="text-[16px] leading-[20.16px] opacity-70 w-[535.2px] max-smalllaptop:w-[90%] mt-[21px]">
-                  Creating data models, entities, attributes, relationships,
-                  working with databases within the platform.
-                </p>
-              </div>
-              <div className="mt-[16px] py-[21px] pl-[20.38px] bg-[#FFFFFF0D] rounded-[8px] w-[870px] h-[166px] max-biggerscreen:w-full max-smalllaptop:h-auto">
-                <p className="text-[16px] leading-[20.16px] opacity-70 mb-[13px]">
-                  Week 08
-                </p>
-                <h1 className="text-[24px] leading-[30.24px] tracking-[-0.24px] text-[#E0E0E0] font-['Graphikthin']">
-                  JavaScript Fundamentals
-                </h1>
-                <p className="text-[16px] leading-[20.16px] opacity-70 w-[535.2px] max-smalllaptop:w-[90%] mt-[21px]">
-                  Conditional statements, loops, expressions, building workflows
-                  and automations using the platform's logic builder.
-                </p>
-              </div>
-              <div className="mt-[16px] py-[21px] pl-[20.38px] bg-[#FFFFFF0D] rounded-[8px] w-[870px] h-[166px] max-biggerscreen:w-full max-smalllaptop:h-auto">
-                <p className="text-[16px] leading-[20.16px] opacity-70 mb-[13px]">
-                  Week 09
-                </p>
-                <h1 className="text-[24px] leading-[30.24px] tracking-[-0.24px] text-[#E0E0E0] font-['Graphikthin']">
-                  Advanced JavaScript
-                </h1>
-                <p className="text-[16px] leading-[20.16px] opacity-70 w-[535.2px] max-smalllaptop:w-[90%] mt-[21px]">
-                  Connecting to external data sources (APIs, databases) to fetch
-                  and utilize data within applications.
-                </p>
-              </div>
-              <div
-                id="week11"
-                className="mt-[16px] py-[21px] pl-[20.38px] bg-[#FFFFFF0D] rounded-[8px] w-[870px] h-[166px] max-biggerscreen:w-full max-smalllaptop:h-auto"
-              >
-                <p className="text-[16px] leading-[20.16px] opacity-70 mb-[13px]">
-                  Week 10
-                </p>
-                <h1 className="text-[24px] leading-[30.24px] tracking-[-0.24px] text-[#E0E0E0] font-['Graphikthin']">
-                  Project -1 (HTML, CSS/TailwindCSS, and JS)
-                </h1>
-                <p className="text-[16px] leading-[20.16px] opacity-70 w-[535.2px] max-smalllaptop:w-[90%] mt-[21px]">
-                  Implementing user authentication, authorization, and data
-                  security measures within the application.
-                </p>
-              </div>
-              <div className="mt-[16px] container py-[21px] pl-[20.38px] bg-[#FFFFFF0D] rounded-[8px] w-[870px] h-[166px] max-biggerscreen:w-full max-smalllaptop:h-auto">
-                <p className="text-[16px] leading-[20.16px] opacity-70 mb-[13px]">
-                  Week 11
-                </p>
-                <h1 className="text-[24px] leading-[30.24px] tracking-[-0.24px] text-[#E0E0E0] font-['Graphikthin']">
-                  Introduction to React.js
-                </h1>
-                <p className="text-[16px] leading-[20.16px] opacity-70 w-[535.2px] max-smalllaptop:w-[90%] mt-[21px]">
-                  Designing multi-step workflows, decision trees, and process
-                  automation with error handling.
-                </p>
-              </div>
-              <div className="mt-[16px] py-[21px] pl-[20.38px] bg-[#FFFFFF0D] rounded-[8px] w-[870px] h-[166px] max-biggerscreen:w-full max-smalllaptop:h-auto">
-                <p className="text-[16px] leading-[20.16px] opacity-70 mb-[13px]">
-                  Week 12
-                </p>
-                <h1 className="text-[24px] leading-[30.24px] tracking-[-0.24px] text-[#E0E0E0] font-['Graphikthin']">
-                  Advanced React.js
-                </h1>
-                <p className="text-[16px] leading-[20.16px] opacity-70 w-[535.2px] max-smalllaptop:w-[90%] mt-[21px]">
-                  Understanding considerations for mobile app development using
-                  the LCNC platform (if applicable).
-                </p>
-              </div>
-              <div className="mt-[16px] py-[21px] pl-[20.38px] bg-[#FFFFFF0D] rounded-[8px] w-[870px] h-[166px] max-biggerscreen:w-full max-smalllaptop:h-auto">
-                <p className="text-[16px] leading-[20.16px] opacity-70 mb-[13px]">
-                  Week 13
-                </p>
-                <h1 className="text-[24px] leading-[30.24px] tracking-[-0.24px] text-[#E0E0E0] font-['Graphikthin']">
-                  UI Libraries and Animation
-                </h1>
-                <p className="text-[16px] leading-[20.16px] opacity-70 w-[535.2px] max-smalllaptop:w-[90%] mt-[21px]">
-                  Identifying business processes, modeling and automating them
-                  using the platform.
-                </p>
-              </div>
-              <div className="mt-[16px] py-[21px] pl-[20.38px] bg-[#FFFFFF0D] rounded-[8px] w-[870px] h-[166px] max-biggerscreen:w-full max-smalllaptop:h-auto">
-                <p className="text-[16px] leading-[20.16px] opacity-70 mb-[13px]">
-                  Week 14
-                </p>
-                <h1 className="text-[24px] leading-[30.24px] tracking-[-0.24px] text-[#E0E0E0] font-['Graphikthin']">
-                  Advanced CSS Framework Integration
-                </h1>
-                <p className="text-[16px] leading-[20.16px] opacity-70 w-[535.2px] max-smalllaptop:w-[90%] mt-[21px]">
-                  Advanced API integration techniques, building microservices
-                  for modular application architecture.
-                </p>
-              </div>
-              <div className="mt-[16px] py-[21px] pl-[20.38px] bg-[#FFFFFF0D] rounded-[8px] w-[870px] h-[166px] max-biggerscreen:w-full max-smalllaptop:h-auto">
-                <p className="text-[16px] leading-[20.16px] opacity-70 mb-[13px]">
-                  Week 15
-                </p>
-                <h1 className="text-[24px] leading-[30.24px] tracking-[-0.24px] text-[#E0E0E0] font-['Graphikthin']">
-                  Project -2 (Reactjs, TailwindCSS, GSAP, Slider and
-                  MaterialsUI)
-                </h1>
-                <p className="text-[16px] leading-[20.16px] opacity-70 w-[535.2px] max-smalllaptop:w-[90%] mt-[21px]">
-                  Creating reusable UI components for faster development and
-                  consistency.
-                </p>
-              </div>
-              <div className="mt-[16px] py-[21px] pl-[20.38px] bg-[#FFFFFF0D] rounded-[8px] w-[870px] h-[166px] max-biggerscreen:w-full max-smalllaptop:h-auto">
-                <p className="text-[16px] leading-[20.16px] opacity-70 mb-[13px]">
-                  Week 16
-                </p>
-                <h1 className="text-[24px] leading-[30.24px] tracking-[-0.24px] text-[#E0E0E0] font-['Graphikthin']">
-                  Introduction to Redux
-                </h1>
-                <p className="text-[16px] leading-[20.16px] opacity-70 w-[535.2px] max-smalllaptop:w-[90%] mt-[21px]">
-                  Utilizing version control features within the platform for
-                  collaboration and managing code changes.
-                </p>
-              </div>
-              <div className="mt-[16px] py-[21px] pl-[20.38px] bg-[#FFFFFF0D] rounded-[8px] w-[870px] h-[166px] max-biggerscreen:w-full max-smalllaptop:h-auto">
-                <p className="text-[16px] leading-[20.16px] opacity-70 mb-[13px]">
-                  Week 17
-                </p>
-                <h1 className="text-[24px] leading-[30.24px] tracking-[-0.24px] text-[#E0E0E0] font-['Graphikthin']">
-                  React with TypeScript
-                </h1>
-                <p className="text-[16px] leading-[20.16px] opacity-70 w-[535.2px] max-smalllaptop:w-[90%] mt-[21px]">
-                  Testing strategies for low-code/no-code applications,
-                  identifying and resolving bugs effectively.
-                </p>
-              </div>
-              <div className="mt-[16px] py-[21px] pl-[20.38px] bg-[#FFFFFF0D] rounded-[8px] w-[870px] h-[166px] max-biggerscreen:w-full max-smalllaptop:h-auto">
-                <p className="text-[16px] leading-[20.16px] opacity-70 mb-[13px]">
-                  Week 18
-                </p>
-                <h1 className="text-[24px] leading-[30.24px] tracking-[-0.24px] text-[#E0E0E0] font-['Graphikthin']">
-                  Introduction to Next.js
-                </h1>
-                <p className="text-[16px] leading-[20.16px] opacity-70 w-[535.2px] max-smalllaptop:w-[90%] mt-[21px]">
-                  Publishing applications, managing deployments, monitoring
-                  application performance.
-                </p>
-              </div>
-              <div className="mt-[16px] py-[21px] pl-[20.38px] bg-[#FFFFFF0D] rounded-[8px] w-[870px] h-[166px] max-biggerscreen:w-full max-smalllaptop:h-auto">
-                <p className="text-[16px] leading-[20.16px] opacity-70 mb-[13px]">
-                  Week 19
-                </p>
-                <h1 className="text-[24px] leading-[30.24px] tracking-[-0.24px] text-[#E0E0E0] font-['Graphikthin']">
-                  Advanced Next.js
-                </h1>
-                <p className="text-[16px] leading-[20.16px] opacity-70 w-[535.2px] max-smalllaptop:w-[90%] mt-[21px]">
-                  Understanding application scalability concepts and
-                  considerations with LCNC platforms.
-                </p>
-              </div>
-              <div
-                id="week21"
-                className="mt-[16px] py-[21px] pl-[20.38px] bg-[#FFFFFF0D] rounded-[8px] w-[870px] h-[166px] max-biggerscreen:w-full max-smalllaptop:h-auto"
-              >
-                <p className="text-[16px] leading-[20.16px] opacity-70 mb-[13px]">
-                  Week 20
-                </p>
-                <h1 className="text-[24px] leading-[30.24px] tracking-[-0.24px] text-[#E0E0E0] font-['Graphikthin']">
-                  Project-3 - Building a Complete Frontend Application
-                </h1>
-                <p className="text-[16px] leading-[20.16px] opacity-70 w-[535.2px] max-smalllaptop:w-[90%] mt-[21px]">
-                  Apply learned concepts to build a comprehensive
-                  low-code/no-code application addressing a specific need.
-                </p>
-              </div>
-              <div className="mt-[16px] py-[21px] pl-[20.38px] bg-[#FFFFFF0D] rounded-[8px] w-[870px] h-[166px] max-biggerscreen:w-full max-smalllaptop:h-auto">
-                <p className="text-[16px] leading-[20.16px] opacity-70 mb-[13px]">
-                  Week 21
-                </p>
-                <h1 className="text-[24px] leading-[30.24px] tracking-[-0.24px] text-[#E0E0E0] font-['Graphikthin']">
-                  Backend Dev with Node and Express
-                </h1>
-                <p className="text-[16px] leading-[20.16px] opacity-70 w-[535.2px] max-smalllaptop:w-[90%] mt-[21px]">
-                  Advanced UI customization techniques using the platform's
-                  built-in features or integrations.
-                </p>
-              </div>
-              <div className="mt-[16px] container py-[21px] pl-[20.38px] bg-[#FFFFFF0D] rounded-[8px] w-[870px] h-[166px] max-biggerscreen:w-full max-smalllaptop:h-auto">
-                <p className="text-[16px] leading-[20.16px] opacity-70 mb-[13px]">
-                  Week 22
-                </p>
-                <h1 className="text-[24px] leading-[30.24px] tracking-[-0.24px] text-[#E0E0E0] font-['Graphikthin']">
-                  Starting with Express Framework
-                </h1>
-                <p className="text-[16px] leading-[20.16px] opacity-70 w-[535.2px] max-smalllaptop:w-[90%] mt-[21px]">
-                  Leveraging custom code extensions or plugins to extend
-                  functionalities beyond the platform's core features (if
-                  applicable to the chosen platform).
-                </p>
-              </div>
-              <div className="mt-[16px] py-[21px] pl-[20.38px] bg-[#FFFFFF0D] rounded-[8px] w-[870px] h-[166px] max-biggerscreen:w-full max-smalllaptop:h-auto">
-                <p className="text-[16px] leading-[20.16px] opacity-70 mb-[13px]">
-                  Week 23
-                </p>
-                <h1 className="text-[24px] leading-[30.24px] tracking-[-0.24px] text-[#E0E0E0] font-['Graphikthin']">
-                  SQL Databases and Full-Stack Applications
-                </h1>
-                <p className="text-[16px] leading-[20.16px] opacity-70 w-[535.2px] max-smalllaptop:w-[90%] mt-[21px]">
-                  Connecting LCNC applications with external tools and services
-                  using APIs or connectors.
-                </p>
-              </div>
-              <div className="mt-[16px] py-[21px] pl-[20.38px] bg-[#FFFFFF0D] rounded-[8px] w-[870px] h-[166px] max-biggerscreen:w-full max-smalllaptop:h-auto">
-                <p className="text-[16px] leading-[20.16px] opacity-70 mb-[13px]">
-                  Week 24
-                </p>
-                <h1 className="text-[24px] leading-[30.24px] tracking-[-0.24px] text-[#E0E0E0] font-['Graphikthin']">
-                  MongoDB with Node.js and TypeScript
-                </h1>
-                <p className="text-[16px] leading-[20.16px] opacity-70 w-[535.2px] max-smalllaptop:w-[90%] mt-[21px]">
-                  Exploring how to integrate basic AI functionalities like
-                  chatbots or data analysis features into applications (if the
-                  platform supports it).
-                </p>
-              </div>
-              <div className="mt-[16px] py-[21px] pl-[20.38px] bg-[#FFFFFF0D] rounded-[8px] w-[870px] h-[166px] max-biggerscreen:w-full max-smalllaptop:h-auto">
-                <h1 className="text-[24px] leading-[30.24px] tracking-[-0.24px] text-[#E0E0E0] font-['Graphikthin']">
-                  Full-Stack Project
-                </h1>
-                <p className="text-[16px] leading-[20.16px] opacity-70 w-[535.2px] max-smalllaptop:w-[90%] mt-[21px]">
-                  Designing applications with accessibility in mind to cater to
-                  users with disabilities.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section> */}
         <section className="pt-[124.98px] z-10 relative px-[80px] max-sm:px-[20px] max-hamburger:px-[40px] max-md:py-20 pb-[119px]">
           <h1 className="w-[630px] text-[#E5E5E5] max-md:w-full text-[64px] font-['Graphikthin'] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] leading-[61.68px] tracking-[-2.56px]">
             What you will need to finish this course.{" "}
@@ -1038,6 +679,7 @@ export default function Nocode() {
               <input
                 type="text"
                 placeholder="Enter your name"
+                onChange={(e) => setName(e.target.value)}
                 className="h-[54px] rounded-[4px] border-[1px] border-white pl-[17.51px] bg-[transparent] placeholder-[#ffffff99] text-white"
               />
             </div>
@@ -1046,6 +688,7 @@ export default function Nocode() {
               <input
                 type="email"
                 placeholder="Enter your email"
+                onChange={(e) => setEmail(e.target.value)}
                 className="h-[54px] rounded-[4px] border-[1px] border-white pl-[17.51px] bg-[transparent] placeholder-[#ffffff99] text-white"
               />
             </div>
@@ -1054,6 +697,7 @@ export default function Nocode() {
               <input
                 type="text"
                 placeholder="Enter your phone number"
+                onChange={(e) => setPhone(e.target.value)}
                 className="h-[54px] rounded-[4px] border-[1px] border-white pl-[17.51px] bg-[transparent] placeholder-[#ffffff99] text-white"
               />
             </div>
@@ -1092,7 +736,7 @@ export default function Nocode() {
                 </p>
               </div>
             </div>
-            <button className="w-full h-[53px] bg-[#30E29D] rounded-[8px] font-bold text-[#292929] text-[16px] font-[19.2px]">
+            <button onClick={handleSubmit} className="w-full h-[53px] bg-[#30E29D] rounded-[8px] font-bold text-[#292929] text-[16px] font-[19.2px]">
               Enroll now
             </button>
           </div>

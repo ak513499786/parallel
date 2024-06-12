@@ -19,7 +19,7 @@ export default function Contact() {
       Designation,
     };
     try {
-      const response = await axios.post("/api/contact-us", data);
+      const response = await axios.post("/api/hire-from-us", data);
       console.log("Data sent successfully:", response.data);
     } catch (error) {
       console.error("Error sending data:", error);
@@ -49,11 +49,11 @@ export default function Contact() {
         <div className={style.backgroundcolor2}></div>
         <div className={style.backgroundbox2}></div>
       </div>
-      <div className="py-[68.1px] max-sm:py-20 max-hamburger:px-[80px] max-md:px-[40px] max-sm:px-[20px] max-hamburger:w-full relative z-20 pl-[80px] gap-[34px] flex-col items-center flex pr-[79px]">
+      <div className="py-[68.1px] max-sm:py-20 z-40 max-hamburger:px-[80px] max-md:px-[40px] max-sm:px-[20px] max-hamburger:w-full relative z-20 pl-[80px] gap-[34px] flex-col items-center flex pr-[79px]">
         <h1 className="text-center text-[32px] leading-[37.76px] font-['Graphikthin'] tracking-[-0.64px] text-[#E5E5E5]">
           Get in touch with us{" "}
         </h1>
-        <div className="w-[442px] max-md:w-full flex flex-col z-20 gap-[32px] max-md:h-auto max-sm:gap-[20px] max-sm:p-[20px] h-[605px] px-[37px] py-[34px] rounded-[14px] bg-[#FFFFFF1A]">
+        <div className="w-[442px] max-md:w-full flex flex-col z-40 gap-[32px] max-md:h-auto max-sm:gap-[20px] max-sm:p-[20px] h-[605px] px-[37px] py-[34px] rounded-[14px] bg-[#FFFFFF1A]">
           <div className="flex flex-col gap-[16px]">
             <p className="text-[16px] leading-[19.2px]">Name</p>
             <input
