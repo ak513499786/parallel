@@ -27,7 +27,7 @@ input[type="radio"]:checked {
   padding: 0;
   scrollbar-width: none;
   box-sizing: border-box;
-  scroll-behavior: auto;
+  scroll-behavior: smooth;
 }
 *::-webkit-scrollbar {
   display: none;
@@ -72,7 +72,7 @@ input[type="number"] {
     text-wrap: balance;
   }
 }
-.mixblend{
+.mixblend {
   mix-blend-mode: color-dodge;
 }
 input {
@@ -86,10 +86,10 @@ input::placeholder {
   line-height: 21.54px;
   color: #ffffff99;
 }
-.card:hover .button{
-  background-color: #30E29D;
-  color: #1F1F1F;
+.card:hover .button {
+  background-color: #30e29d;
+  color: #1f1f1f;
 }
-.button:hover{
-  box-shadow: 1px 1px 120px #30E29D;
+.button:hover {
+  box-shadow: 1px 1px 120px #30e29d;
 }

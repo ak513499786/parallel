@@ -679,11 +679,11 @@ export default function Nocode() {
                 </div>
                 <p className="text-[24px] leading-[28.8px]">12 Weeks</p>
               </div>
-              <p className="relative z-30">
+              <a href='#form-section' className="relative z-30">
                 <button className="w-[100%] mt-[16px] h-[53px] bg-[transparent] rounded-[8px] text-[#30E29D] font-semibold border-[1px] border-[#30E29D] text-[16px] font-[19.2px]">
                   Contact us
                 </button>
-              </p>
+              </a>
             </div>
             <p className="mt-[29px] mb-[20px] text-[16px] leading-[19.2px] text-[#FFFFFF99]">
               This course includes
@@ -816,11 +816,11 @@ export default function Nocode() {
                 </div>
                 <p className="text-[24px] leading-[28.8px]">12 Weeks</p>
               </div>
-              <p className="relative z-30">
+              <a href='#form-section' className="relative z-30">
                 <button className="w-[100%] mt-[16px] h-[53px] bg-[transparent] rounded-[8px] text-[#30E29D] font-semibold border-[1px] border-[#30E29D] text-[16px] font-[19.2px]">
                   Contact us
                 </button>
-              </p>
+              </a>
             </div>
             <p className="mt-[29px] mb-[20px] text-[16px] leading-[19.2px] text-[#FFFFFF99]">
               This course includes
@@ -939,11 +939,11 @@ export default function Nocode() {
                 </div>
                 <p className="text-[24px] leading-[28.8px]">24 Weeks</p>
               </div>
-              <p className="relative z-30">
+              <a href='#form-section' className="relative z-30">
                 <button className="w-[100%] mt-[16px] h-[53px] bg-[transparent] rounded-[8px] text-[#30E29D] font-semibold border-[1px] border-[#30E29D] text-[16px] font-[19.2px]">
                   Contact us
                 </button>
-              </p>
+              </a>
             </div>
             <p className="mt-[29px] mb-[20px] text-[16px] leading-[19.2px] text-[#FFFFFF99]">
               This course includes
@@ -1013,8 +1013,8 @@ export default function Nocode() {
           </div>
         </div>
       </section>
-      <div
-        className={`pt-[87.5px] pb-[88px] flex justify-center gap-[131px] relative z-20 px-[80px] max-md:flex-col max-md:gap-[50px] max-sm:px-[20px] max-md:px-[40px] ${style.fsbg}`}
+      <div id="form-section"
+        className={`pt-[97.5px] pb-[88px] flex justify-center gap-[131px] relative z-20 px-[80px] max-md:flex-col max-md:gap-[50px] max-sm:px-[20px] max-md:px-[40px] ${style.fsbg}`}
       >
         <div className="w-[507.08px] max-md:w-full">
           <span className="italic text-base tracking-[-0.32px] font-semibold text-[#30E29D]">
