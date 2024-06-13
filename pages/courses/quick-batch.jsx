@@ -635,6 +635,18 @@ export default function Nocode() {
               <div className="flex gap-[4px]">
                 <Image src="/greencheck.svg" width={24} height={24} />
                 <p className="text-[20px] leading-[24px] text-[#FFFFFFCC]">
+                  Version Control System (Git and Github)
+                </p>
+              </div>
+              <div className="flex gap-[4px]">
+                <Image src="/greencheck.svg" width={24} height={24} />
+                <p className="text-[20px] leading-[24px] text-[#FFFFFFCC]">
+                  Deploying Projects
+                </p>
+              </div>
+              <div className="flex gap-[4px]">
+                <Image src="/greencheck.svg" width={24} height={24} />
+                <p className="text-[20px] leading-[24px] text-[#FFFFFFCC]">
                   3 Unique Projects
                 </p>
               </div>
