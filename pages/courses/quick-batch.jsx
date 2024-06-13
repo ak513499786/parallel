@@ -18,7 +18,7 @@ export default function Nocode() {
       Name,
       Email,
       Phone,
-      courseSelected
+      courseSelected,
     };
     try {
       const response = await axios.post("/api/quickbatch", data);
@@ -320,7 +320,7 @@ export default function Nocode() {
                 </div>
                 <p className="text-[24px] leading-[28.8px]">12 Weeks</p>
               </div>
-              <a href='#form-section' className="relative z-30">
+              <a href="#form-section" className="relative z-30">
                 <button className="w-[100%] mt-[16px] h-[53px] bg-[transparent] rounded-[8px] text-[#30E29D] font-semibold border-[1px] border-[#30E29D] text-[16px] font-[19.2px]">
                   Contact us
                 </button>
@@ -457,7 +457,7 @@ export default function Nocode() {
                 </div>
                 <p className="text-[24px] leading-[28.8px]">12 Weeks</p>
               </div>
-              <a href='#form-section' className="relative z-30">
+              <a href="#form-section" className="relative z-30">
                 <button className="w-[100%] mt-[16px] h-[53px] bg-[transparent] rounded-[8px] text-[#30E29D] font-semibold border-[1px] border-[#30E29D] text-[16px] font-[19.2px]">
                   Contact us
                 </button>
@@ -580,7 +580,7 @@ export default function Nocode() {
                 </div>
                 <p className="text-[24px] leading-[28.8px]">24 Weeks</p>
               </div>
-              <a href='#form-section' className="relative z-30">
+              <a href="#form-section" className="relative z-30">
                 <button className="w-[100%] mt-[16px] h-[53px] bg-[transparent] rounded-[8px] text-[#30E29D] font-semibold border-[1px] border-[#30E29D] text-[16px] font-[19.2px]">
                   Contact us
                 </button>
@@ -600,6 +600,12 @@ export default function Nocode() {
                 <Image src="/greencheck.svg" width={24} height={24} />
                 <p className="text-[20px] leading-[24px] text-[#FFFFFFCC]">
                   Everything covered in Backend Mastery Course
+                </p>
+              </div>
+              <div className="flex gap-[4px]">
+                <Image src="/greencheck.svg" width={24} height={24} />
+                <p className="text-[20px] leading-[24px] text-[#FFFFFFCC]">
+                  Version Control System (Git and Github)
                 </p>
               </div>
               <div className="flex gap-[4px]">
@@ -635,19 +641,13 @@ export default function Nocode() {
               <div className="flex gap-[4px]">
                 <Image src="/greencheck.svg" width={24} height={24} />
                 <p className="text-[20px] leading-[24px] text-[#FFFFFFCC]">
-                  Version Control System (Git and Github)
+                  3 Unique Projects
                 </p>
               </div>
               <div className="flex gap-[4px]">
                 <Image src="/greencheck.svg" width={24} height={24} />
                 <p className="text-[20px] leading-[24px] text-[#FFFFFFCC]">
                   Deploying Projects
-                </p>
-              </div>
-              <div className="flex gap-[4px]">
-                <Image src="/greencheck.svg" width={24} height={24} />
-                <p className="text-[20px] leading-[24px] text-[#FFFFFFCC]">
-                  3 Unique Projects
                 </p>
               </div>
               <div className="flex gap-[4px]">
@@ -666,7 +666,8 @@ export default function Nocode() {
           </div>
         </div>
       </section>
-      <div id="form-section"
+      <div
+        id="form-section"
         className={`pt-[97.5px] pb-[88px] flex justify-center gap-[131px] relative z-20 px-[80px] max-md:flex-col max-md:gap-[50px] max-sm:px-[20px] max-md:px-[40px] ${style.fsbg}`}
       >
         <div className="w-[507.08px] max-md:w-full">
@@ -748,7 +749,10 @@ export default function Nocode() {
                 </p>
               </div>
             </div>
-            <button onClick={handleSubmit} className="w-full h-[53px] bg-[#30E29D] rounded-[8px] font-bold text-[#292929] text-[16px] font-[19.2px]">
+            <button
+              onClick={handleSubmit}
+              className="w-full h-[53px] bg-[#30E29D] rounded-[8px] font-bold text-[#292929] text-[16px] font-[19.2px]"
+            >
               Enroll now
             </button>
           </div>
