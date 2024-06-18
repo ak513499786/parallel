@@ -766,14 +766,12 @@ export default function Workshop() {
             <div
               className={`pl-[28px] max-sm:px-[20px] max-sm:py-[16px] pb-[41.87px] pr-[29.85px] pt-[32px] rounded-[8px] ${style.bordergradient}`}
             >
-              <div className="bg-[#1F1F1F] w-[125.17px] h-[123.97px] px-[28.53px] py-[26.03px] border-[1px] rounded-[6px] border-[#FFFFFF66] ">
-                {/* {" "}
               <Image
-                src=""
-                width={47.94}
-                height={51.93}
-              /> */}
-              </div>
+                src="/ajit.png"
+                className=""
+                width={125.17}
+                height={123.97}
+              />
               <h1 className="w-[340px] max-bigscreen:w-[310px] max-xl:w-[250px] max-md:w-full max-xl:mt-[30px] font-['Graphikthin'] font-normal mt-[53.05px] mb-[18.16px] text-[32px] max-xl:text-[24px] max-xl:leading-[120%] leading-[40.32px] tracking-[-0.32px]">
                 Ajith Jagadish
               </h1>
