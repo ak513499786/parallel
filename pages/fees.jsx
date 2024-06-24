@@ -22,6 +22,7 @@ export default function Fees() {
     try {
       const response = await axios.post("/api/fees", data);
       console.log("Data sent successfully:", response.data);
+      window.alert('Thank you ' + Name + '! Your form has been submitted successfully.')
     } catch (error) {
       console.error("Error sending data:", error);
     }

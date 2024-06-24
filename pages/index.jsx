@@ -63,6 +63,7 @@ export default function Home() {
     };
     try {
       const response = await axios.post("/api/home", data);
+      window.alert('Thank you ' + Name + '! Your form has been submitted successfully.')
       console.log("Data sent successfully:", response.data);
     } catch (error) {
       console.error("Error sending data:", error);
