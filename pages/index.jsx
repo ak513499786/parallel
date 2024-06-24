@@ -63,7 +63,9 @@ export default function Home() {
     };
     try {
       const response = await axios.post("/api/home", data);
-      window.alert('Thank you ' + Name + '! Your form has been submitted successfully.')
+      window.alert(
+        "Thank you " + Name + "! Your form has been submitted successfully."
+      );
       console.log("Data sent successfully:", response.data);
     } catch (error) {
       console.error("Error sending data:", error);
@@ -963,19 +965,24 @@ export default function Home() {
             <div
               className={`pl-[28px] max-sm:px-[20px] max-sm:py-[16px] pb-[41.87px] pr-[29.85px] pt-[32px] rounded-[8px] ${style.bordergradient}`}
             >
-              <div className="bg-[#1F1F1F] w-[125.17px] h-[123.97px] px-[28.53px] py-[26.03px] border-[1px] rounded-[6px] border-[#FFFFFF66] ">
-                {/* {" "}
               <Image
-                src=""
-                width={47.94}
-                height={51.93}
-              /> */}
-              </div>
+                src="/babu.png"
+                className=""
+                width={125.17}
+                height={123.97}
+              />
               <h1 className="w-[340px] max-bigscreen:w-[310px] max-xl:w-[250px] max-md:w-full max-xl:mt-[30px] font-['Graphikthin'] font-normal mt-[53.05px] mb-[18.16px] text-[32px] max-xl:text-[24px] max-xl:leading-[120%] leading-[40.32px] tracking-[-0.32px]">
                 Buchi Babu Muvva
               </h1>
-              <p className="w-[275.15px] max-bigscreen:w-[310px] max-xl:w-full opacity-80 text-[#E0E0E0] text-base">
-                Information Technology Expert, PhD. 15+ years of experience
+              <p className="w-[354.85px] max-bigscreen:w-[310px] max-xl:w-full opacity-80 text-[#E0E0E0] text-base">
+                Dr. Butchi Babu Muvva, PhD has 30 years of diverse experience in
+                Industry and academia. He has worked with customer-focused
+                organizations spanning across different industry sectors
+                including Pharma, Automobile, IT & Education. He has worked in
+                various capacities like EDP Manager on projects related to IT
+                Implementation, Product Management, Operations planning,
+                Sourcing, and warehouse, Introduced computerization in POM area,
+                and support Quality & Business Analytics.{" "}
               </p>
             </div>
           </div>
@@ -985,19 +992,23 @@ export default function Home() {
             <div
               className={`pl-[28px] max-sm:px-[20px] max-sm:py-[16px] pb-[41.87px] pr-[29.85px] pt-[32px] rounded-[8px] ${style.bordergradient}`}
             >
-              <div className="bg-[#1F1F1F] w-[125.17px] h-[123.97px] px-[28.53px] py-[26.03px] border-[1px] rounded-[6px] border-[#FFFFFF66] ">
-                {/* {" "}
               <Image
-                src=""
-                width={47.94}
-                height={51.93}
-              /> */}
-              </div>
+                src="/syed.png"
+                className=""
+                width={125.17}
+                height={123.97}
+              />
               <h1 className="w-[340px] max-bigscreen:w-[310px] max-xl:w-[250px] max-md:w-full max-xl:mt-[30px] font-['Graphikthin'] font-normal mt-[53.05px] mb-[18.16px] text-[32px] max-xl:text-[24px] max-xl:leading-[120%] leading-[40.32px] tracking-[-0.32px]">
-                Sandeep Ravichandran
+                Saif Syed
               </h1>
-              <p className="w-[225.15px] max-bigscreen:w-[310px] max-xl:w-full opacity-80 text-[#E0E0E0] text-base">
-                AI and Data Analytics Expert. 15+ years of experience
+              <p className="w-[354.85px] max-bigscreen:w-[310px] max-xl:w-full opacity-80 text-[#E0E0E0] text-base">
+                AI and Data Analytics Expert with 10+ years of experience, he
+                has successfully scaled up software businesses from $100K to
+                $10M in revenue and specializes in building world-class tech
+                teams from the ground up. He has assisted many well-funded
+                start-ups, brands, and enterprises across the globe to meet
+                their technological requirements, and worked on projects that
+                won international design accolades.
               </p>
             </div>
           </div>
@@ -1016,8 +1027,15 @@ export default function Home() {
               <h1 className="w-[340px] max-bigscreen:w-[310px] max-xl:w-[250px] max-md:w-full max-xl:mt-[30px] font-['Graphikthin'] font-normal mt-[53.05px] mb-[18.16px] text-[32px] max-xl:text-[24px] max-xl:leading-[120%] leading-[40.32px] tracking-[-0.32px]">
                 Ajith Jagadish
               </h1>
-              <p className="w-[195.15px] max-bigscreen:w-[310px] max-xl:w-full opacity-80 text-[#E0E0E0] text-base">
-                Career & Lifestyle Coach. 12+ years of experience
+              <p className="w-[354.85px] max-bigscreen:w-[310px] max-xl:w-full opacity-80 text-[#E0E0E0] text-base">
+                Ajith Jagadish is a seasoned Health and Wellness coach with over
+                a decade of experience in Business Development and Sales. Ajith
+                combines his expertise as a certified Biomechanics Specialist
+                with his experience as an international athlete. He has
+                represented India in various Ultimate Frisbee tournaments. His
+                diverse background uniquely positions him to guide students in
+                developing their personalities, preparing for interviews, and
+                shaping successful careers.{" "}
               </p>
             </div>
           </div>
