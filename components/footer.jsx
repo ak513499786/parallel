@@ -19,7 +19,7 @@ export default function Footer() {
               560001
             </p>
           </div>
-          <div className="w-[76px]">
+          <div className="flex flex-col w-[76px]">
             <h1 className="text-[#E5E5E5] opacity-80 mb-[10px] text-base">
               Follow us
             </h1>
@@ -32,9 +32,13 @@ export default function Footer() {
             >
               Instagram
             </a>
-            <p className="mt-[4px] text-[#E5E5E5] text-base hover:underline cursor-pointer hover:decoration-solid">
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/company/parallel-edutech-pvt-ltd/"
+              className="mt-[4px] text-[#E5E5E5] text-base hover:underline cursor-pointer hover:decoration-solid"
+            >
               Linkedin
-            </p>
+            </a>
             <p className="mt-[4px] text-[#E5E5E5] text-base hover:underline cursor-pointer hover:decoration-solid">
               YouTube
             </p>
@@ -42,7 +46,7 @@ export default function Footer() {
           <div className="w-[144px]">
             <h1 className="text-[#E5E5E5] opacity-80 text-base">Contact us</h1>
             <p className="mt-[12px] text-[#E5E5E5] text-base hover:underline cursor-pointer hover:decoration-solid">
-              hello@parallel.com
+              hello@paralleledu.com
             </p>
             <p className="mt-[4px] text-[#E5E5E5] text-base">
               +91 96868 43606{" "}
@@ -101,19 +105,13 @@ export default function Footer() {
             <h1 className="text-[#E5E5E5] mt-[16px] opacity-70 max-smallphone:mb-[10px] text-base">
               Coming soon
             </h1>
-            <p
-              className="mt-[4px] opacity-70 hover:underline cursor-pointer hover:decoration-solid text-[#E5E5E5] text-base"
-            >
+            <p className="mt-[4px] opacity-70 hover:underline cursor-pointer hover:decoration-solid text-[#E5E5E5] text-base">
               Low-Code/No-Code Development
             </p>
-            <p
-              className="mt-[4px] opacity-70 hover:underline cursor-pointer hover:decoration-solid text-[#E5E5E5] text-base"
-            >
+            <p className="mt-[4px] opacity-70 hover:underline cursor-pointer hover:decoration-solid text-[#E5E5E5] text-base">
               Artificial Intelligence (AI/ML)
             </p>
-            <p
-              className="mt-[4px] opacity-70 hover:underline cursor-pointer hover:decoration-solid text-[#E5E5E5] text-base"
-            >
+            <p className="mt-[4px] opacity-70 hover:underline cursor-pointer hover:decoration-solid text-[#E5E5E5] text-base">
               Data Analytics
             </p>
           </div>

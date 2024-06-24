@@ -105,7 +105,7 @@ export default function About() {
           </div>
         </section>
       </section>
-      <section className="flex justify-center pt-[122.06px] max-md:py-0 max-sm:px-[20px] max-md:px-[40px] px-[80px] pb-[180.06px]">
+      {/* <section className="flex justify-center pt-[122.06px] max-md:py-0 max-sm:px-[20px] max-md:px-[40px] px-[80px] pb-[180.06px]">
         <div className="flex gap-[94px] max-xl:gap-[30px] max-hamburger:flex-col items-center">
           <Image
             src="/Mask group (1).svg"
@@ -134,7 +134,7 @@ export default function About() {
             </p>
           </div>
         </div>
-      </section>
+      </section> */}
       <section className="relative z-20 py-[80px]">
         <p className="text-[20px] pl-20 max-md:px-[40px] max-sm:px-[20px] leading-[19.28px] text-[#E5E5E5] opacity-80 font-['Graphikthin'] font-light mb-[20px]">
           Success stories

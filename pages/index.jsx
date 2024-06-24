@@ -111,7 +111,7 @@ export default function Home() {
               </p>
             </div>
             <p className="mt-[50px] mb-[12px] max-sm:w-full text-[16px] leading-[24px] text-[#E0E0E0]">
-              Quick batch starts on June 20th. Get placed within{" "}
+              Quick batch starts on July 15th. Get placed within{" "}
               <span className="text-[#30E29D]"> 6 months!</span>
             </p>
             <div className="bg-black rounded-[9px] max-bigphone:w-[300px] max-smallphone:w-full max-hamburger:w-[501px] w-[501px] max-sm:w-full">
@@ -291,19 +291,7 @@ export default function Home() {
                     onClick={() => handleOptionSelect("College Representative")}
                     className="pl-[17.91px] max-sm:px-[10px] max-sm:text-base max-sm:w-full w-[368px] cursor-pointer text-black border-[1px] border-b-[#0000033] py-[16px] text-[17.95px] leading-[21.54px]"
                   >
-                    College Representative{" "}
-                  </li>
-                  <li
-                    onClick={() => handleOptionSelect("Recruiter")}
-                    className="pl-[17.91px] max-sm:px-[10px] max-sm:text-base max-sm:w-full w-[368px] cursor-pointer text-black border-[1px] border-b-[#00000033] py-[16px] text-[17.95px] leading-[21.54px]"
-                  >
-                    Recruiter{" "}
-                  </li>
-                  <li
-                    onClick={() => handleOptionSelect("My Role Is Not Listed")}
-                    className="pl-[17.91px] max-sm:px-[10px] max-sm:text-base max-sm:w-full w-[368px] cursor-pointer text-black border-[1px] border-b-[#00000033] py-[16px] text-[17.95px] leading-[21.54px]"
-                  >
-                    My Role Is Not Listed{" "}
+                    Student pursuing education
                   </li>
                 </ul>
               </div>
@@ -546,12 +534,11 @@ export default function Home() {
                 />
               </div>
               <h1 className="w-[340px] max-bigscreen:w-[310px] max-xl:w-[250px] max-md:w-full max-xl:mt-[30px] font-['Graphikthin'] font-normal mt-[53.05px] mb-[18.16px] text-[32px] max-xl:text-[24px] max-xl:leading-[120%] leading-[40.32px] tracking-[-0.32px]">
-                Pay after getting placed.
+                Pay 90% less than other course providers.
               </h1>
               <p className="w-[355.15px] max-bigscreen:w-[310px] max-xl:w-full h-[136.91px] max-xl:h-[165px] max-lg:h-[200px] max-md:h-auto opacity-80 text-[#E0E0E0] text-base font-['Graphikthin']">
-                Start learning right away without having to worry about
-                finances. We believe in making quality education affordable. We
-                ask a small percentage of your CTC once you get placed.
+                We believe education should never become a business. That is the
+                only way forward. We charge fee only for sustenance.
               </p>
             </div>
           </div>
@@ -999,7 +986,7 @@ export default function Home() {
                 height={123.97}
               />
               <h1 className="w-[340px] max-bigscreen:w-[310px] max-xl:w-[250px] max-md:w-full max-xl:mt-[30px] font-['Graphikthin'] font-normal mt-[53.05px] mb-[18.16px] text-[32px] max-xl:text-[24px] max-xl:leading-[120%] leading-[40.32px] tracking-[-0.32px]">
-                Saif Syed
+                Syed Saif
               </h1>
               <p className="w-[354.85px] max-bigscreen:w-[310px] max-xl:w-full opacity-80 text-[#E0E0E0] text-base">
                 AI and Data Analytics Expert with 10+ years of experience, he

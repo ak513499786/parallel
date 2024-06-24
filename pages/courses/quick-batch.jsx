@@ -23,7 +23,9 @@ export default function Nocode() {
     try {
       const response = await axios.post("/api/quickbatch", data);
       console.log("Data sent successfully:", response.data);
-      window.alert('Thank you ' + Name + '! Your form has been submitted successfully.')
+      window.alert(
+        "Thank you " + Name + "! Your form has been submitted successfully."
+      );
     } catch (error) {
       console.error("Error sending data:", error);
     }
@@ -110,7 +112,7 @@ export default function Nocode() {
                   Next Cohort
                 </p>
                 <h1 className="w-[276.87px] relative z-[31] max-smalllaptop:leading-[120%] font-['Graphikthin'] font-normal mt-[13px] max-hamburger:mb-0 mb-[58.16px] text-[28px] leading-[35.28px] tracking-[-0.84px] text-[#E0E0E0] max-smalllaptop:text-[28px]">
-                  20th June{" "}
+                  15th July
                 </h1>
                 <p className="absolute z-[31] relative max-hamburger:relative max-hamburger:mt-[10px] max-hamburger:mb-[28.16px] bottom-[]">
                   Limited seats.{" "}
@@ -161,7 +163,7 @@ export default function Nocode() {
                   10am to 7pm{" "}
                 </h1>
                 <p className="text-[#E0E0E0] max-sm:mb-[10px]">
-                  Monday to Saturday
+                  Monday to Friday
                 </p>
               </div>
             </div>
@@ -427,6 +429,12 @@ export default function Nocode() {
                   Resume optimization and LinkedIn profile building
                 </p>
               </div>
+              <div className="flex gap-[4px]">
+                <Image src="/greencheck.svg" width={24} height={24} />
+                <p className="text-[20px] leading-[24px] text-[#FFFFFFCC]">
+                  Certificate
+                </p>
+              </div>
             </div>
           </div>
           <div className="w-[413px] max-biggerscreen:w-[33%] max-md:w-full max-smalllaptop:w-[48.3%]">
@@ -552,6 +560,12 @@ export default function Nocode() {
                   Resume optimization and LinkedIn profile building
                 </p>
               </div>
+              <div className="flex gap-[4px]">
+                <Image src="/greencheck.svg" width={24} height={24} />
+                <p className="text-[20px] leading-[24px] text-[#FFFFFFCC]">
+                  Certificate{" "}
+                </p>
+              </div>
             </div>
           </div>
           <div className="w-[413px] max-biggerscreen:w-[33%] max-md:w-full max-smalllaptop:w-[48.3%]">
@@ -606,12 +620,6 @@ export default function Nocode() {
               <div className="flex gap-[4px]">
                 <Image src="/greencheck.svg" width={24} height={24} />
                 <p className="text-[20px] leading-[24px] text-[#FFFFFFCC]">
-                  Version Control System (Git and Github)
-                </p>
-              </div>
-              <div className="flex gap-[4px]">
-                <Image src="/greencheck.svg" width={24} height={24} />
-                <p className="text-[20px] leading-[24px] text-[#FFFFFFCC]">
                   Introduction to OOP in JavaScript
                 </p>
               </div>
@@ -651,19 +659,62 @@ export default function Nocode() {
                   Deploying Projects
                 </p>
               </div>
-              <div className="flex gap-[4px]">
-                <Image src="/greencheck.svg" width={24} height={24} />
-                <p className="text-[20px] leading-[24px] text-[#FFFFFFCC]">
-                  Interview Preparation
-                </p>
-              </div>
-              <div className="flex gap-[4px]">
-                <Image src="/greencheck.svg" width={24} height={24} />
-                <p className="text-[20px] leading-[24px] text-[#FFFFFFCC]">
-                  Resume optimization and LinkedIn profile building
-                </p>
-              </div>
             </div>
+          </div>
+        </div>
+      </section>
+      <section className="pt-[72px] flex flex-col items-center justify-center gap-[94px] max-sm:gap-[32px] max-md:gap-[56px] max-lg:gap-[72px] pb-[68px] px-[80px] max-sm:px-[20px] max-md:px-[40px]">
+        <h1 className="w-[962.85px] text-center text-[#E5E5E5] max-lg:w-full text-[64px] font-['Graphikthin'] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%] leading-[61.68px] tracking-[-2.56px]">
+          You will also get the following irrespective of the course
+        </h1>
+        <div className="flex w-full gap-[20px] items-center justify-center flex-wrap max-sm:flex-col">
+          <div className=" w-[32.27%] max-hamburger:w-[45%] max-md:w-full max-md:h-auto max-md:pb-[26px] h-[233px] flex flex-col items-center pt-[39px] bg-[#FFFFFF0D] rounded-[8px]">
+            <Image src="/Frame 1000002926.svg" width={71} height={71} />
+            <h1 className="max-smalllaptop:leading-[120%] text-center font-['Graphikthin'] font-normal mt-[26px] text-[28px] leading-[35.28px] tracking-[-0.84px] text-[#E0E0E0]">
+              Career Guidance
+            </h1>
+          </div>
+          <div className=" w-[32.27%] max-hamburger:w-[45%] max-md:w-full max-md:h-auto max-md:pb-[26px] h-[233px] flex flex-col items-center pt-[39px] bg-[#FFFFFF0D] rounded-[8px]">
+            <Image src="/Frame 1000002926 (1).svg" width={71} height={71} />
+            <h1 className="max-smalllaptop:leading-[120%] text-center font-['Graphikthin'] font-normal mt-[26px] text-[28px] leading-[35.28px] tracking-[-0.84px] text-[#E0E0E0]">
+              Resume Optimization
+            </h1>
+          </div>
+          <div className=" w-[32.27%] max-hamburger:w-[45%] max-md:w-full max-md:h-auto max-md:pb-[26px] h-[233px] flex flex-col items-center pt-[39px] bg-[#FFFFFF0D] rounded-[8px]">
+            <Image src="/Frame 1000002926 (2).svg" width={71} height={71} />
+            <h1 className="max-smalllaptop:leading-[120%] text-center font-['Graphikthin'] font-normal mt-[26px] text-[28px] leading-[35.28px] tracking-[-0.84px] text-[#E0E0E0]">
+              LinkedIn Profile Optimization
+            </h1>
+          </div>
+          <div className=" w-[32.27%] max-hamburger:w-[45%] max-md:w-full max-md:h-auto max-md:pb-[26px] h-[233px] flex flex-col items-center pt-[39px] bg-[#FFFFFF0D] rounded-[8px]">
+            <Image src="/Frame 1000002926 (3).svg" width={71} height={71} />
+            <h1 className="max-smalllaptop:leading-[120%] text-center font-['Graphikthin'] font-normal mt-[26px] text-[28px] leading-[35.28px] tracking-[-0.84px] text-[#E0E0E0]">
+              Internship Opportunities
+            </h1>
+          </div>
+          <div className=" w-[32.27%] max-hamburger:w-[45%] max-md:w-full max-md:h-auto max-md:pb-[26px] h-[233px] flex flex-col items-center pt-[39px] bg-[#FFFFFF0D] rounded-[8px]">
+            <Image src="/Frame 1000002926 (4).svg" width={71} height={71} />
+            <h1 className="max-smalllaptop:leading-[120%] text-center font-['Graphikthin'] font-normal mt-[26px] text-[28px] leading-[35.28px] tracking-[-0.84px] text-[#E0E0E0]">
+              Live Mock Interview Sessions
+            </h1>
+          </div>
+          <div className=" w-[32.27%] max-hamburger:w-[45%] max-md:w-full max-md:h-auto max-md:pb-[26px] h-[233px] flex flex-col items-center pt-[39px] bg-[#FFFFFF0D] rounded-[8px]">
+            <Image src="/Frame 1000002926 (5).svg" width={71} height={71} />
+            <h1 className="max-smalllaptop:leading-[120%] text-center font-['Graphikthin'] font-normal mt-[26px] text-[28px] leading-[35.28px] tracking-[-0.84px] text-[#E0E0E0]">
+              Mentorship from Industry Experts
+            </h1>
+          </div>
+          <div className=" w-[32.27%] max-hamburger:w-[45%] max-md:w-full max-md:h-auto max-md:pb-[26px] h-[233px] flex flex-col items-center pt-[39px] bg-[#FFFFFF0D] rounded-[8px]">
+            <Image src="/Frame 1000002926 (6).svg" width={71} height={71} />
+            <h1 className="max-smalllaptop:leading-[120%] text-center font-['Graphikthin'] font-normal mt-[26px] text-[28px] leading-[35.28px] tracking-[-0.84px] text-[#E0E0E0]">
+              Prompt Engineering and Gen AI Basics
+            </h1>
+          </div>
+          <div className=" w-[32.27%] max-hamburger:w-[45%] max-md:w-full max-md:h-auto max-md:pb-[26px] h-[233px] flex flex-col items-center pt-[39px] bg-[#FFFFFF0D] rounded-[8px]">
+            <Image src="/Frame 1000002926 (7).svg" width={71} height={71} />
+            <h1 className="max-smalllaptop:leading-[120%] text-center font-['Graphikthin'] font-normal mt-[26px] text-[28px] leading-[35.28px] tracking-[-0.84px] text-[#E0E0E0]">
+              Access to Alumni Network
+            </h1>
           </div>
         </div>
       </section>
