@@ -69,7 +69,7 @@ export default function Footer() {
         <div className="flex max-hamburger:gap-[50px] max-md:flex-wrap-reverse gap-[127.27px]">
           <div className="opacity-70 hidden max-smallphone:block">
             <p className="mt-[4px] text-[#E5E5E5] text-base">
-              Copyright @ Parallel Education. All Rights Reserved{" "}
+              Copyright @ Parallel EduTech Pvt Ltd. All Rights Reserved{" "}
             </p>
             <div className="flex mt-[5.37px] gap-[13.9px]">
               <p className="text-[#E5E5E5] text-base hover:underline cursor-pointer hover:decoration-solid">
