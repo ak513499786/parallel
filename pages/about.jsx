@@ -19,8 +19,13 @@ export default function About() {
         </h1>
       </main>
       <section className="relative">
-        <div className="w-[100%] overflow-hidden absolute h-[1459px]">
-          <div className={`${style.client}`}></div>
+        <div className="w-[100%] overflow-hidden absolute h-[2459px]">
+          <div
+            className={`${style.client} max-xl:left-0`}
+            style={{
+              top: "1200px",
+            }}
+          ></div>
         </div>{" "}
         <section className="py-[241.5px] relative z-20 max-md:py-20 px-[80px] max-sm:px-[20px] max-md:px-[40px] flex justify-center">
           <div className="w-[1081.52px]">
@@ -32,12 +37,98 @@ export default function About() {
             </h1>
           </div>
         </section>
+        <section className="pt-[50.6px] max-lg:pb-[72px] max-sm:pb-[36px] pb-[306px] flex flex-col items-center px-[80px] max-sm:px-[20px] max-md:px-[40px]">
+          <h1 className="text-[28.89px] leading-[27.85px] tracking-[-0.56px] font-['Graphikthin'] max-lg:mb-[50px] max-sm:mb-[24px] mb-[79.4px] max-lg:mb-[56px] max-md:mb-[48px] max-sm:mb-[32px] text-[#E5E5E5] text-center">
+            What we stand by
+          </h1>
+          <div className="flex w-full max-xl:gap-[32px] justify-center gap-[84px] max-md:flex-col max-lg:flex-wrap">
+            <div className="w-[355px] mt-[197.48px] max-lg:mt-[110px] max-md:mt-[70px] max-sm:mt-[24px] flex flex-col gap-[16px] items-center max-hamburger:w-[45%] max-md:w-full">
+              <Image
+                src="/Business-Handshake--Streamline-Core.svg.svg"
+                className="relative z-20"
+                width={61.32}
+                height={61.32}
+              />
+              <h1 className="text-[52.43px] mt-[8px] leading-[50.53px] tracking-[-2.16px] text-[#E5E5E5] font-['Graphikthin'] text-center">
+                Transparency
+              </h1>
+              <p className="text-base text-[#E0E0E0] opacity-80 text-center">
+                We believe in building trust with our learners. That's why we
+                prioritize transparency in everything we do.
+              </p>
+              <div className="relative pt-[36px] w-full">
+                <Image
+                  src="/piller.png"
+                  className="absolute max-lg:hidden z-20"
+                  width={347.62}
+                  height={659.89}
+                />
+              </div>
+            </div>
+            <div className="w-[355px] flex flex-col gap-[16px] items-center max-hamburger:w-[45%] max-md:w-full">
+              <Image
+                src="/Star-Badge--Streamline-Core.svg.svg"
+                className="relative z-20"
+                width={61.32}
+                height={61.32}
+              />
+              <h1 className="text-[52.43px] mt-[8px] leading-[50.53px] tracking-[-2.16px] text-[#E5E5E5] font-['Graphikthin'] text-center">
+                Excellence
+              </h1>
+              <p className="text-base text-[#E0E0E0] opacity-80 text-center">
+                We are relentless in our pursuit of excellence. To ensure you
+                receive the most valuable education possible, we maintain
+                rigorous content standards.
+              </p>
+              <div
+                className="relative pt-[36px] w-[350px]"
+              >
+                <Image
+                  src="/Union2.png"
+                  className="absolute max-lg:hidden z-20"
+                  width={347.62}
+                  height={659.89}
+                />
+              </div>
+            </div>
+            <div className="w-[355px] mt-[109.12px] flex flex-col gap-[16px] items-center max-hamburger:w-[45%] max-md:w-full">
+              <Image
+                src="/Arrow-Double-Up--Streamline-Ultimate.svg.svg"
+                className="relative z-20"
+                width={61.32}
+                height={61.32}
+              />
+              <h1 className="text-[52.43px] mt-[8px] leading-[50.53px] tracking-[-2.16px] text-[#E5E5E5] font-['Graphikthin'] text-center">
+                Progress
+              </h1>
+              <p className="text-base text-[#E0E0E0] opacity-80 text-center">
+                At Parallel, affordability is just the beginning. We are deeply
+                invested in your upskilling journey and your success.
+              </p>
+              <div
+                style={{
+                  background:
+                    "linear-gradient(180deg, #C0C0C0 0%, #000000 54%);",
+                  mixBlendMode: "color-dodge",
+                }}
+                className="relative pt-[36px] w-[350px]"
+              >
+                <Image
+                  src="/Union.png"
+                  className="absolute max-lg:hidden mixblend z-20"
+                  width={347.62}
+                  height={659.89}
+                />
+              </div>
+            </div>
+          </div>
+        </section>
         <section className="px-[80px] max-sm:px-[20px] max-md:px-[40px] relative py-[100px] flex flex-col justify-center items-center gap-[65px]">
           <div className="w-[813.91px] max-hamburger:w-full">
             <p className="text-center text-[#E5E5E5] font-['Graphikthin'] font-light mb-[20px] text-[20px] leading-[19.28px]">
               Our partners
             </p>
-            <h1 className="text-center text-[#E5E5E5] relative z-20 text-[64px] font-['Graphikthin'] leading-[61.68px] font-light tracking-[-2.56px] max-hamburger:text-[45px] max-sm:text-[32px] max-hamburger:leading-[120%]">
+            <h1 className="text-center text-[#E5E5E5] relative z-20 text-[64px] font-['Graphikthin'] leading-[61.68px] font-light tracking-[-2.56px] max-hamburger:text-[45px] max-sm:text-[32px] max-sm:tracking-tight max-hamburger:leading-[120%]">
               People helping us achieve our ambitious goal.{" "}
             </h1>
           </div>
